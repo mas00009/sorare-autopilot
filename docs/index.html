@@ -81,8 +81,11 @@ a{color:var(--v); text-decoration:none}
 /* tiles */
 .tiles{display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); margin-bottom:26px}
 .tile{background:var(--card); border:1px solid var(--line); border-radius:var(--r); padding:15px 17px}
+.tile{position:relative}
+.tile .ic{position:absolute; top:12px; right:12px; width:38px; height:38px; opacity:.92;
+  pointer-events:none; filter:drop-shadow(0 3px 10px rgba(0,0,0,.55))}
 .tile .k{color:var(--faint); font-size:.7rem; text-transform:uppercase; letter-spacing:.11em; font-weight:700}
-.tile .n{display:block; white-space:nowrap; font-size:1.75rem; font-weight:780; letter-spacing:-.035em; margin-top:3px; font-variant-numeric:tabular-nums}
+.tile .n{display:block; white-space:nowrap; padding-right:44px; font-size:1.75rem; font-weight:780; letter-spacing:-.035em; margin-top:3px; font-variant-numeric:tabular-nums}
 .tile .s{color:var(--dim); font-size:.78rem}
 .tile.guard{border-color:#26406a}
 .tile.guard .n{background:linear-gradient(120deg,#7dd3fc,#a78bfa); -webkit-background-clip:text; background-clip:text; color:transparent}
@@ -216,9 +219,9 @@ function render(d){
   </div>
 
   <div class="tiles">
-    <div class="tile"><span class="k">Essence</span><span class="n">${d.balances.essence??'—'}</span>
+    <div class="tile"><img class="ic" src="img/essence.png" alt="" onerror="this.remove()"><span class="k">Essence</span><span class="n">${d.balances.essence??'—'}</span>
       <span class="s">${d.packs.lastThreeStar?'last pull '+esc(d.packs.lastThreeStar):'spent only on packs'}</span></div>
-    <div class="tile guard"><span class="k">Gems</span><span class="n">${d.balances.gems??'—'}</span>
+    <div class="tile guard"><img class="ic" src="img/gem.png" alt="" onerror="this.remove()"><span class="k">Gems</span><span class="n">${d.balances.gems??'—'}</span>
       <span class="s">never spendable by the bot</span></div>
     <div class="tile"><span class="k">Next lock</span><span class="n" style="font-size:1.05rem;letter-spacing:-.01em">${when(d.schedule.nextLock)}</span>
       <span class="s">${esc(d.schedule.reason??'')}</span></div>

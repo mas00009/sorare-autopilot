@@ -1,3 +1,5 @@
 .env
 node_modules
 state/
+codex-image-gen-output/
+.codex-image-gen-tmp/
