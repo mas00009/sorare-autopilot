@@ -266,6 +266,13 @@ function surface(s){
   const cur=s.current.length?s.current.map(p=>esc(p.name)+(p.captain?' (C)':'')).join(', ')
     :'<span class="muted">none set</span>';
   const st={LINEUP_SET:'go',PLAYABLE:'go',CLAIMABLE:'warn',LIVE:'v',FAILED:'bad'}[s.state]||'';
+  const pl=s.plan;
+  const wait = pl && pl.clearsTarget===false
+    ? `<div class="rw" style="margin-top:12px"><span style="border-style:solid;border-color:#584311;color:var(--warn)">
+         Waiting: best across the window is <b>${pl.projected}</b>, short of ${s.target} by <b>${pl.shortfall}</b>.
+         No lineup goes in until one can clear it.</span></div>` : '';
+  const lockNote = pl && pl.clearsTarget && pl.lock
+    ? `<div class="rw" style="margin-top:12px"><span>Would lock <b>${when(pl.lock)}</b>${pl.tradedPointsForTime>0?` · gave up ${pl.tradedPointsForTime} pts to lock a day later`:''}</span></div>` : '';
   let body;
   if(!s.candidates.length){
     body=`<p class="note wide" style="margin:14px 0 0">No eligible cards for this step yet.
@@ -306,7 +313,7 @@ function surface(s){
     ${dots?`<div class="steps">${dots}</div>`:''}
     ${rw?`<div class="rw">${rw}</div>`:''}
     <p class="note wide" style="margin:.2em 0 0"><strong>In now:</strong> ${cur}</p>
-    ${body}
+    ${wait}${lockNote}${body}
     ${s.rejected.length?`<h2 style="margin:20px 0 0">Held out</h2>
       <ul class="rej">${s.rejected.map(c=>`<li>${esc(c.player)}: ${esc(c.blocked)}</li>`).join('')}</ul>`:''}
   </div></section>`;

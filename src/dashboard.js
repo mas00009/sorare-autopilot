@@ -40,6 +40,17 @@ export async function build() {
     }));
 
     const usable = pool.filter((c) => !c.blocked).sort((a, b) => b.expected - a.expected);
+    let plan = null;
+    try {
+      const { pickAcrossWindow } = await import('./optimiser.js');
+      const raw = await fetchBench(b.stepId, { first: 50 });
+      const p = pickAcrossWindow(raw, { target: step?.target ?? null });
+      if (p.ok) plan = {
+        clearsTarget: p.clearsTarget, projected: p.projected, lock: p.lock ?? null,
+        shortfall: p.shortfall ?? null, tradedPointsForTime: p.tradedPointsForTime ?? 0,
+        five: p.chosen.slice(0, 5),
+      };
+    } catch {}
     const rewards = (step?.rewardConfigs ?? []).map((r) => {
       if (r.__typename === 'CardPacksRewardConfig' && r.cardPack) {
         return { kind: 'pack', cards: r.cardPack.cardsCount, worth: r.cardPack.effectivePrice, currency: r.cardPack.currency };
@@ -58,7 +69,8 @@ export async function build() {
       state: step?.state ?? null,
       target: step?.target ?? null,
       current,
-      candidates: usable.slice(0, 12),
+      plan,
+      candidates: (plan?.five?.length ? plan.five : usable).slice(0, 12),
       rejected: pool.filter((c) => c.blocked).slice(0, 15),
       projected: Number(usable.slice(0, 5).reduce((s, c) => s + c.expected, 0).toFixed(1)),
     });

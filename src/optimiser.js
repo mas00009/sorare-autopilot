@@ -242,3 +242,66 @@ export function diffLineup(currentAppearances = [], picked) {
     unchanged: [...next].filter((s) => now.has(s)),
   };
 }
+
+
+/**
+ * Choose across the whole scoring window, not just the earliest matchday.
+ *
+ * The lineup locks at the kickoff of the EARLIEST player in it. So including
+ * one player who plays on day one locks the other four on day one too, and
+ * their team news - injuries, rotation, confirmed XIs - arrives after it is
+ * too late to act on. A later lock is worth real points even when the raw
+ * projection is slightly lower.
+ *
+ * So: build a lineup for each possible lock day, then prefer the latest lock
+ * among those that clear the target. If none clear it, return the best one and
+ * say so, because entering a lineup that cannot reach the target only burns a
+ * heart.
+ */
+export function pickAcrossWindow(benchNodes, { target = null, tolerance = 0.03, ...options } = {}) {
+  const days = [...new Set(
+    benchNodes
+      .map((n) => n.player?.anyFutureGameStats?.[0]?.anyGame?.date)
+      .filter(Boolean)
+      .map((d) => d.slice(0, 10)),
+  )].sort();
+
+  const attempts = [];
+  for (const day of days) {
+    const pool = benchNodes.filter((n) => {
+      const d = n.player?.anyFutureGameStats?.[0]?.anyGame?.date;
+      return d && d.slice(0, 10) >= day;
+    });
+    const picked = pickLineup(pool, options);
+    if (!picked.ok) continue;
+    const lock = picked.chosen.map((c) => c.kickoff).filter(Boolean).sort()[0] ?? null;
+    attempts.push({ lockDay: day, lock, projected: picked.projected, picked });
+  }
+
+  if (!attempts.length) {
+    return { ok: false, reason: 'No complete lineup possible from the eligible pool.', attempts };
+  }
+
+  const clearing = target ? attempts.filter((a) => a.projected >= target) : attempts;
+
+  if (!clearing.length) {
+    const best = attempts.reduce((a, b) => (b.projected > a.projected ? b : a));
+    return {
+      ...best.picked, ok: true, clearsTarget: false,
+      lock: best.lock, lockDay: best.lockDay, attempts,
+      shortfall: target ? Number((target - best.projected).toFixed(1)) : null,
+    };
+  }
+
+  // Latest lock wins, unless an earlier one is meaningfully stronger.
+  const strongest = clearing.reduce((a, b) => (b.projected > a.projected ? b : a));
+  const latest = clearing.reduce((a, b) => (b.lockDay > a.lockDay ? b : a));
+  const chosen = latest.projected >= strongest.projected * (1 - tolerance) ? latest : strongest;
+
+  return {
+    ...chosen.picked, ok: true, clearsTarget: true,
+    lock: chosen.lock, lockDay: chosen.lockDay, attempts,
+    tradedPointsForTime: chosen !== strongest
+      ? Number((strongest.projected - chosen.projected).toFixed(1)) : 0,
+  };
+}

@@ -11,7 +11,7 @@ import {
 } from './queries.js';
 import { openPacksUntilThreeStar } from './essence.js';
 import { readState, writeState } from './client.js';
-import { pickLineup, toAppearances, diffLineup } from './optimiser.js';
+import { pickLineup, pickAcrossWindow, toAppearances, diffLineup } from './optimiser.js';
 
 const SPORT = 'FOOTBALL';
 const GEM_CURRENCIES = ['COMMON_GEM'];
@@ -206,7 +206,7 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
   const bench = await fetchBench(stepId);
   if (!bench.length) return { skipped: true, reason: 'Bench came back empty.', stepId, surface };
 
-  const picked = pickLineup(bench, options);
+  const picked = pickAcrossWindow(bench, { ...options, target: step?.target ?? null });
   if (!picked.ok) return { skipped: true, reason: picked.reason, stepId, surface, pool: picked.pool };
 
   const existing = step?.myLineups?.[0] ?? null;
@@ -282,12 +282,13 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
   // into the eligible pool, and the step is only worth spending on a team that
   // can actually clear it.
   const target = step?.target ?? null;
-  if (target && picked.projected < target * (options.targetMargin ?? 1)) {
+  if (target && picked.clearsTarget === false) {
     return {
       stepId, surface, target, dead,
       action: 'waiting-for-target',
-      reason: `Best available projects ${picked.projected} against a target of ${target}. ` +
-              'Holding until a fixture brings enough scoring into the pool.',
+      reason: `Best across the whole window projects ${picked.projected} against a target of ` +
+              `${target}, short by ${picked.shortfall}. Entering it would only lose a heart, ` +
+              'so holding until later fixtures bring enough scoring into the pool.',
       lineup: picked.chosen, projected: picked.projected,
       shortfall: Number((target - picked.projected).toFixed(1)),
       current: (existing?.taskAppearances ?? []).map((x) => x.anyPlayer?.displayName).filter(Boolean),
@@ -316,6 +317,8 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
     stepId, surface, target: step?.target,
     dead,
     action: dryRun ? 'would-submit' : 'submitted',
+    lock: picked.lock ?? null,
+    tradedPointsForTime: picked.tradedPointsForTime ?? 0,
     delta, lineup: picked.chosen, captain: picked.captain,
     projected: picked.projected, excluded: picked.excluded, raw: result,
   };
