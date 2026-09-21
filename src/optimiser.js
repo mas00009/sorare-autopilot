@@ -65,7 +65,13 @@ function fixture(node) {
   const game = stats?.anyGame;
   if (!game) return null;
   const home = game.homeTeam?.slug && game.homeTeam.slug === stats?.anyTeam?.slug;
+  const us = home ? game.homeTeam : game.awayTeam;
+  const them = home ? game.awayTeam : game.homeTeam;
   return {
+    code: us?.code ?? null,
+    opponentCode: them?.code ?? null,
+    rank: us?.domesticLeagueRanking ?? null,
+    opponentRank: them?.domesticLeagueRanking ?? null,
     gameId: game.id,
     date: game.date,
     competition: game.competition?.name ?? null,
@@ -151,6 +157,10 @@ export function describe(node, opts = DEFAULTS) {
     kickoff: stats?.anyGame?.date ?? null,
     team: fx?.team ?? null,
     opponent: fx?.opponent ?? null,
+    opponentCode: fx?.opponentCode ?? null,
+    code: fx?.code ?? null,
+    rank: fx?.rank ?? null,
+    opponentRank: fx?.opponentRank ?? null,
     home: fx?.home ?? null,
     competition: fx?.competition ?? null,
     lockedAt: node.lockedAt ?? null,

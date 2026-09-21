@@ -108,8 +108,8 @@ export const Q_BENCH = `
                   id
                   date
                   competition { name }
-                  homeTeam { slug name }
-                  awayTeam { slug name }
+                  homeTeam { slug name ... on Club { code domesticLeagueRanking } ... on NationalTeam { code } }
+                  awayTeam { slug name ... on Club { code domesticLeagueRanking } ... on NationalTeam { code } }
                 }
                 ... on PlayerGameStats {
                   footballPlayingStatusOdds(newVersion: true) { ${ODDS} }

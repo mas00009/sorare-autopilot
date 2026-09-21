@@ -81,8 +81,19 @@ export async function build() {
     for (const c of [...s.candidates, ...s.current.map(() => null).filter(Boolean)]) {
       if (!c?.kickoff || new Date(c.kickoff) <= new Date()) continue;
       const key = `${c.kickoff}|${c.team}|${c.opponent}`;
-      if (!games.has(key)) games.set(key, { kickoff: c.kickoff, team: c.team, opponent: c.opponent, home: c.home, players: [] });
-      games.get(key).players.push(c.player);
+      if (!games.has(key)) {
+        games.set(key, {
+          kickoff: c.kickoff, competition: c.competition ?? null,
+          team: c.team, code: c.code, rank: c.rank,
+          opponent: c.opponent, opponentCode: c.opponentCode, opponentRank: c.opponentRank,
+          home: c.home, players: [], points: 0, bestStarter: null, surfaces: new Set(),
+        });
+      }
+      const g = games.get(key);
+      g.players.push(c.player);
+      g.points += c.expected ?? 0;
+      if (c.starterPct != null) g.bestStarter = Math.max(g.bestStarter ?? 0, c.starterPct);
+      g.surfaces.add(s.surface);
     }
   }
 
@@ -110,7 +121,10 @@ export async function build() {
     health: { failStreak: st.failStreak ?? 0 },
     control: await (await import('./control.js')).read().catch(() => null),
     surfaces,
-    fixtures: [...games.values()].sort((a, b) => a.kickoff.localeCompare(b.kickoff)).slice(0, 20),
+    fixtures: [...games.values()]
+      .map((g) => ({ ...g, points: Number(g.points.toFixed(1)), surfaces: [...g.surfaces] }))
+      .sort((a, b) => a.kickoff.localeCompare(b.kickoff))
+      .slice(0, 24),
     accuracy: results.accuracy(rows),
     backtest: await (async () => {
       try { return JSON.parse(await fs.readFile(path.join(ROOT, 'state', 'backtest.json'), 'utf8')); }
