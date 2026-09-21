@@ -13,7 +13,6 @@ import { resolveBoards, fetchStep, fetchBench, readBalances } from './autopilot.
 import { describe } from './optimiser.js';
 import { readEssence } from './essence.js';
 import { decide } from './schedule.js';
-import * as results from './results.js';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const OUT = path.join(ROOT, 'docs', 'data.json');
@@ -99,7 +98,6 @@ export async function build() {
   }
 
   const cadence = decide({ nextKickoff: st.nextKickoff ?? null, nextLock: st.nextLock ?? null, lastRunAt: st.lastRunAt ?? null });
-  const rows = await results.read();
 
   const data = {
     generatedAt: new Date().toISOString(),
@@ -126,12 +124,6 @@ export async function build() {
       .map((g) => ({ ...g, points: Number(g.points.toFixed(1)), surfaces: [...g.surfaces] }))
       .sort((a, b) => a.kickoff.localeCompare(b.kickoff))
       .slice(0, 24),
-    accuracy: results.accuracy(rows),
-    backtest: await (async () => {
-      try { return JSON.parse(await fs.readFile(path.join(ROOT, 'state', 'backtest.json'), 'utf8')); }
-      catch { return null; }
-    })(),
-    recentResults: rows.slice(-8).reverse(),
   };
 
   // generatedAt changes on every pass, so writing unconditionally guaranteed a

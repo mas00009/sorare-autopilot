@@ -173,12 +173,6 @@ h4.sub:first-of-type{margin-top:0}
 ul.plain{margin:0;padding-left:19px;color:var(--dim);font-size:.87rem;line-height:1.6;max-width:92ch}
 ul.plain li{margin-bottom:5px}
 ul.plain b{color:var(--ink);font-weight:620}
-.k4{display:grid;gap:11px;grid-template-columns:repeat(4,1fr)}
-.k4 div{background:#0e1220;border:1px solid var(--line);border-radius:11px;padding:12px 14px}
-.k4 s{display:block;color:var(--faint);font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700;text-decoration:none}
-.k4 b{display:block;font-size:1.5rem;font-weight:780;letter-spacing:-.03em;
- line-height:1.15;margin:3px 0 2px;white-space:nowrap}
-.k4 .muted{display:block;font-size:.76rem;line-height:1.35}
 /* toggles */
 .sw{position:relative;width:46px;height:26px;border-radius:99px;background:#1c2233;
  border:1px solid var(--line2);cursor:pointer;transition:background .16s,border-color .16s;flex:none;padding:0}
@@ -214,7 +208,7 @@ ul.plain b{color:var(--ink);font-weight:620}
 .note{font-size:.84rem;color:var(--dim);max-width:104ch}
 .flash{margin-top:10px;font-size:.84rem}
 .flash.ok{color:var(--go)} .flash.err{color:var(--stop)}
-@media(max-width:900px){.xi{grid-template-columns:repeat(3,1fr)}ul.rej{columns:2}.k4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.xi{grid-template-columns:repeat(3,1fr)}ul.rej{columns:2}}
 @media(max-width:620px){
  .wrap{padding:10px 12px 24px}
  .bar{padding:4px 6px;border-radius:15px}
@@ -392,46 +386,6 @@ function fixturesPanel(d){
       <td class="pts" style="padding-top:11px">${total.toFixed(1)}</td></tr></tfoot></table></div>`;
 }
 
-function accuracyPanel(d){
-  const a=d.accuracy,b=d.backtest;
-  let h='<div class="card narrow">';
-
-  if(b){
-    const err=b.current.rmse;
-    h+=`<div class="lede">
-      <span class="score"><span class="n"><b>&plusmn;${err.toFixed(0)}</b></span>
-        <s>how far off one player can be</s></span>
-      <p><b style="color:var(--ink)">Trust the total, not the individual.</b>
-        A single player projected at 60 might score 35 or 85. Across five players those
-        misses mostly cancel out, so the team total is the number worth acting on.</p></div>
-
-    <h4 class="sub">What that means in practice</h4>
-    <ul class="plain">
-      <li><b>A 10 point gap to target is noise.</b> Do not read anything into it.</li>
-      <li><b>A 50 point gap is real.</b> That is why the bot waits rather than entering.</li>
-      <li><b>Nobody is a safe bet on their own.</b> Even the top projection can blank.</li>
-    </ul>
-
-    <h4 class="sub">Where the number comes from</h4>
-    <p class="prose sm">Checked against <b>${b.samples} real games</b> from ${b.players} of your
-      players. Each prediction used only matches played before it, so no result fed back into
-      its own forecast. Two things came out of that: recent form and the longer record deserve
-      equal weight, and <b>playing at home made no measurable difference</b>, so that assumption
-      was dropped.</p>`;
-  }
-
-  h+=`<h4 class="sub">Tested on your own results</h4>`;
-  h+= a.n?`<div class="k4">
-      <div><s>Steps finished</s><b>${a.steps}</b><span class="muted">${a.hit} reached target</span></div>
-      <div><s>Running bias</s><b>${a.bias>0?'+':''}${a.bias}</b><span class="muted">below zero means too optimistic</span></div>
-      <div><s>Average miss</s><b>${a.mae}</b><span class="muted">points per player</span></div>
-      <div><s>Blanks</s><b>${Math.round(a.blankRate*100)}%</b><span class="muted">scored nothing at all</span></div></div>`
-    : `<p class="prose sm">No step has finished yet. When one does, every player's projection is
-       stored against what they actually scored, and these figures start reporting whether the
-       bot is too optimistic, too cautious, or about right.</p>`;
-  return h+'</div>';
-}
-
 const REPO_API='https://api.github.com/repos/mas00009/sorare-autopilot/contents/docs/control.json';
 const TOKEN_KEY='sa_gh_token';
 const tok=()=>{try{return localStorage.getItem(TOKEN_KEY)||''}catch{return''}};
@@ -524,7 +478,6 @@ function render(d){
   const tabs=[...d.surfaces.map((s,i)=>({label:titled(s.surface.replace(/\s*\(.*\)/,'')),
       warn:s.plan?.clearsTarget===false||s.state==='CLAIMABLE',fn:()=>surfacePanel(s)})),
     {label:'Fixtures',fn:()=>fixturesPanel(d)},
-    {label:'Accuracy',fn:()=>accuracyPanel(d)},
     {label:'Controls',fn:()=>controlsPanel(d)}];
   if(TAB>=tabs.length)TAB=0;
 

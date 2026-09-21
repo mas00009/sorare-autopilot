@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T08:00:03.892Z",
+  "generatedAt": "2026-09-21T08:02:07.481Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-09-24T18:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1789977600393,
-    "reason": "last run 0m ago, next due in 180m (lock in 4965m)"
+    "reason": "last run 2m ago, next due in 178m (lock in 4963m)"
   },
   "packs": {
     "lastThreeStar": "Álex Baena",
@@ -528,32 +528,5 @@
         "my set"
       ]
     }
-  ],
-  "accuracy": {
-    "n": 0
-  },
-  "backtest": {
-    "at": "2026-09-21T06:14:26.144Z",
-    "players": 48,
-    "samples": 480,
-    "current": {
-      "formWeight": 0.4,
-      "homeAdvantage": 1.03,
-      "rmse": 25.051778314891965,
-      "mae": 20.07820332451508,
-      "bias": -1.4386207600656287,
-      "n": 480
-    },
-    "best": {
-      "formWeight": 0.5,
-      "homeAdvantage": 1,
-      "rmse": 24.971691278623094,
-      "mae": 19.915167838931936,
-      "bias": -0.780141828715267,
-      "n": 480
-    },
-    "improvementRmse": 0.08,
-    "note": "Walk-forward: each prediction uses only games before it. No lookahead."
-  },
-  "recentResults": []
+  ]
 }
