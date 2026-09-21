@@ -10,6 +10,7 @@ import {
   Q_MISSIONS, M_CLAIM_TASK, M_CLAIM_STEP, Q_BOARDS, M_RESTART_TRACK, M_ACK_STEP, Q_BUNDLES, M_OPEN_BUNDLE, Q_MARKET_TASKS,
 } from './queries.js';
 import { openPacksUntilThreeStar } from './essence.js';
+import { runPickers } from './picker.js';
 import { humanTask } from './report.js';
 import { readState, writeState } from './client.js';
 import { pickLineup, pickAcrossWindow, toAppearances, diffLineup } from './optimiser.js';
@@ -642,6 +643,10 @@ export async function pass({ dryRun = false, options = {} } = {}) {
   try {
     report.marketTasks = await claimMarketTasks({ dryRun });
   } catch (err) { report.marketTasks = { claimed: [], waiting: [], errors: [err.message] }; }
+
+  try {
+    report.pickers = await runPickers({ dryRun });
+  } catch (err) { report.pickers = { played: [], errors: [err.message] }; }
 
   try {
     report.freePacks = await openFreePacks({ dryRun });

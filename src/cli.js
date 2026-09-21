@@ -140,6 +140,23 @@ async function report(r) {
     for (const e of m.errors.slice(0, 3)) console.log(`  ! ${e}`);
   }
 
+  if (r.pickers) {
+    const p = r.pickers;
+    console.log('\nDecisive picker');
+    if (!p.played.length) console.log(`    ${p.reason ?? 'nothing to play'}`);
+    for (const t of p.played) {
+      if (t.picks.length) {
+        console.log(`    ${t.task}: picked ${t.picks.length}${t.dryRun ? ' (dry run)' : ''}`);
+        for (const k of t.picks) {
+          const basis = k.value != null ? `${k.value.toFixed(1)} ${k.basis}` : k.basis;
+          console.log(`      ${k.player} ${k.stars}* - ${k.fixture} (${basis})`);
+        }
+      } else console.log(`    ${t.task}: ${t.reason}`);
+      for (const e of t.errors.slice(0, 2)) console.log(`  ! ${e}`);
+    }
+    for (const e of p.errors.slice(0, 2)) console.log(`  ! ${e}`);
+  }
+
   if (r.bonusPacks?.claimed?.length) {
     console.log(`\nBonus packs spent: ${r.bonusPacks.claimed.length}`);
     for (const n of r.bonusPacks.claimed) console.log(`    ${n}`);
