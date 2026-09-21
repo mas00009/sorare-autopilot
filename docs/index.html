@@ -74,6 +74,7 @@ nav .nums .stack b{font-size:1.02rem}
 nav .nums .v{display:flex;align-items:center;gap:9px;white-space:nowrap}
 nav .nums .lock{display:flex;align-items:center;gap:9px}
 nav .nums .lock svg{width:22px;height:22px;flex:none;opacity:.9}
+nav .nums .lock img.coin{width:24px;height:28px}
 nav::-webkit-scrollbar{display:none}
 nav button{background:var(--card);border:1px solid var(--line);color:var(--dim);border-radius:99px;
  padding:8px 15px;font:inherit;font-size:.85rem;font-weight:620;white-space:nowrap;cursor:pointer}
@@ -447,9 +448,11 @@ function render(d){
     {label:'Controls',fn:()=>controlsPanel(d)}];
   if(TAB>=tabs.length)TAB=0;
 
-  const LOCKICON=`<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+  const LOCKSVG=`<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
     <circle cx="12" cy="12" r="9" stroke="#8b95ad" stroke-width="1.9"/>
     <path d="M12 6.8V12l3.4 2.1" stroke="#8b95ad" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+  window.LOCKSVG=LOCKSVG;
+  const LOCKICON=`<img class="coin" src="img/lock.png" alt="" onerror="this.outerHTML=window.LOCKSVG">`;
   const nums=`<span class="nums">
     <span class="lock">${LOCKICON}<span class="stack"><b class="cd">${cdown(d.schedule.nextLock)}</b><s>team locks in</s></span></span>
     <span class="v"><img class="coin" src="img/essence.png" alt="" onerror="this.remove()">
