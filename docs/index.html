@@ -75,6 +75,8 @@ nav button[aria-selected=true]{background:linear-gradient(140deg,#2a2160,#1b1640
 nav button .dot{display:inline-block;width:6px;height:6px;border-radius:99px;background:var(--warn);margin-left:6px;vertical-align:middle}
 
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:15px 17px}
+.card.narrow{max-width:940px}
+.card.narrow .prose{max-width:none}
 .pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:.71rem;font-weight:650;border:1px solid var(--line2);color:var(--dim);white-space:nowrap}
 .pill.go{color:var(--go);border-color:#1c4d3c;background:#0d2a21}
 .pill.warn{color:var(--warn);border-color:#584311;background:#2a2008}
@@ -130,7 +132,9 @@ code{background:#171c2b;border:1px solid var(--line2);border-radius:5px;padding:
 .k4{display:grid;gap:11px;grid-template-columns:repeat(4,1fr)}
 .k4 div{background:#0e1220;border:1px solid var(--line);border-radius:11px;padding:12px 14px}
 .k4 s{display:block;color:var(--faint);font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700;text-decoration:none}
-.k4 b{font-size:1.5rem;font-weight:780;letter-spacing:-.03em}
+.k4 b{display:block;font-size:1.5rem;font-weight:780;letter-spacing:-.03em;
+ line-height:1.15;margin:3px 0 2px;white-space:nowrap}
+.k4 .muted{display:block;font-size:.76rem;line-height:1.35}
 @media(max-width:900px){.xi{grid-template-columns:repeat(3,1fr)}ul.rej{columns:2}.k4{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){
  .wrap{padding:10px 12px 24px}
@@ -306,14 +310,14 @@ function fixturesPanel(d){
 
 function accuracyPanel(d){
   const a=d.accuracy,b=d.backtest;
-  let h='<div class="card">';
+  let h='<div class="card narrow">';
   h+= a.n?`<div class="k4">
       <div><s>Steps</s><b>${a.steps}</b><span class="muted">${a.hit} hit target</span></div>
       <div><s>Bias</s><b>${a.bias>0?'+':''}${a.bias}</b><span class="muted">under zero = over-projecting</span></div>
       <div><s>Mean error</s><b>${a.mae}</b><span class="muted">points per player</span></div>
       <div><s>Blanks</s><b>${Math.round(a.blankRate*100)}%</b><span class="muted">scored nothing</span></div></div>`
-    : `<p class="prose" style="margin:0">No finished steps recorded yet. Each one stores what every player was projected
-       to score against what they actually scored.</p>`;
+    : `<p class="prose" style="margin:0">No finished steps recorded yet. Each one stores what every player was
+       projected to score, against what they actually scored, so these weights can be checked against reality.</p>`;
   if(b) h+=`<h3 style="margin:16px 0 8px;font-size:.95rem">Backtest on past games</h3>
     <div class="k4">
       <div><s>Samples</s><b>${b.samples}</b><span class="muted">${b.players} players</span></div>
@@ -321,8 +325,8 @@ function accuracyPanel(d){
       <div><s>Best RMSE</s><b>${b.best.rmse.toFixed(1)}</b><span class="muted">form ${b.best.formWeight}, home ${b.best.homeAdvantage}</span></div>
       <div><s>Gain</s><b>${b.improvementRmse}</b><span class="muted">points of error removed</span></div></div>
     <p class="prose" style="margin:12px 0 0">Walk-forward: every prediction uses only games played before it, so nothing leaks backwards.
-      An RMSE near ${b.current.rmse.toFixed(0)} against typical scores of 40 to 70 means a single-player projection
-      is a rough guide, not a forecast. Totals across five players are steadier than any one of them.</p>`;
+      An error near ${b.current.rmse.toFixed(0)} against typical scores of 40 to 70 makes a single-player
+      projection a rough guide rather than a forecast. A five-player total is steadier than any one of them.</p>`;
   return h+'</div>';
 }
 
@@ -330,7 +334,7 @@ function controlsPanel(d){
   const ct=d.control??{};
   const rows=[['paused','Stops everything',ct.paused],['packsEnabled','Buys essence packs',ct.packsEnabled!==false],
     ['lineupsEnabled','Sets lineups',ct.lineupsEnabled!==false],['claimsEnabled','Claims rewards',ct.claimsEnabled!==false]];
-  return `<div class="card"><table><thead><tr><th>Switch</th><th>Does</th><th>Now</th></tr></thead><tbody>
+  return `<div class="card narrow"><table><thead><tr><th>Switch</th><th>Does</th><th>Now</th></tr></thead><tbody>
     ${rows.map(([k,v,on])=>`<tr><td><code>${k}</code></td><td class="muted">${v}</td>
       <td><span class="pill ${k==='paused'?(on?'bad':'go'):(on?'go':'warn')}">${on?'on':'off'}</span></td></tr>`).join('')}
     </tbody></table>
