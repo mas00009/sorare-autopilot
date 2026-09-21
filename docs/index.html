@@ -241,6 +241,7 @@ function topbar(d){
   const mark=`<img class="logo" src="img/logo.png" alt="" onerror="this.outerHTML=LOGO_SVG">`;
   return `<div class="zone brand">${mark}
       <span><h1>Sorare Autopilot</h1><span class="acct">${esc(d.account)} · ${esc(d.squad)}</span></span></div>
+    <span class="spacer"></span>
 
     <div class="zone"><span class="stack"><b class="cd">${cdown(d.schedule.nextLock)}</b><s>to lock</s></span></div>
 
@@ -251,7 +252,6 @@ function topbar(d){
       <span class="stack"><b>${d.balances.gems??'—'}</b><s>gems</s></span></div>
 
     ${fail>=3?`<div class="zone"><span class="pill bad">failing ×${fail}</span></div>`:''}
-    <span class="spacer"></span>
     <div class="zone act"><span class="pair">
       <span class="row">
         ${paused
