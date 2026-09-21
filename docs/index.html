@@ -139,7 +139,6 @@ code{background:#171c2b;border:1px solid var(--line2);border-radius:5px;padding:
   <div id="panel"></div>
 </div>
 <script>
-window.LOGO_SVG=null;
 const EDIT='https://github.com/mas00009/sorare-autopilot/edit/main/docs/control.json';
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const when=i=>i?new Date(i).toLocaleString(undefined,{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}):'—';
@@ -154,7 +153,6 @@ function bind(root){const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,
  for(const x of ns){if(!/\S/.test(x.nodeValue))continue;
   x.nodeValue=x.nodeValue.replace(JOIN,(m,a)=>a+' ').replace(/(\S+)\s+(\S+\s*)$/,'$1 $2')}}
 
-window.LOGO_SVG=LOGO_SVG;
 // Raw API values must never reach the screen. Sorare's enums are internal
 // identifiers, not English: LINEUP_SET and PRE_MATCHDAY_LOCKED mean something
 // to the API and nothing to a reader.
@@ -189,6 +187,8 @@ const LOGO_SVG=`<svg class="logo" viewBox="0 0 40 40" fill="none" aria-hidden="t
   <circle cx="20" cy="20" r="3.5" fill="url(#lg)"/>
   <path d="M20 4.6v5M20 30.4v5M4.6 20h5M30.4 20h5" stroke="url(#lg)" stroke-width="1.8" stroke-linecap="round"/>
 </svg>`;
+
+window.LOGO_SVG=LOGO_SVG;   // the inline onerror handler needs it on window
 
 function topbar(d){
   const ct=d.control??{},paused=!!ct.paused,fail=d.health.failStreak;
