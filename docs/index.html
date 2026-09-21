@@ -49,6 +49,12 @@ a{color:inherit;text-decoration:none}
 .btn:hover{filter:brightness(1.09);transform:translateY(-1px)}
 .btn.stop{background:linear-gradient(140deg,#e2536b,#b8354d);color:#fff;box-shadow:0 10px 24px -12px rgba(226,83,107,.9)}
 .btn.play{background:linear-gradient(140deg,#34d399,#0f9f72);color:#04231a;box-shadow:0 10px 24px -12px rgba(52,211,153,.9)}
+.live-pill{display:inline-flex;align-items:center;gap:11px;border-radius:12px;padding:9px 17px 9px 15px;
+ border:1px solid #1c4d3c;background:linear-gradient(140deg,#0e2e23,#0a1a15)}
+.live-pill b{color:var(--go);font-size:.98rem;font-weight:700;letter-spacing:-.015em}
+.live-pill s{color:#4b8f77}
+.live-pill.off{border-color:#5c2733;background:linear-gradient(140deg,#2a1017,#190a0e)}
+.live-pill.off b{color:var(--stop)} .live-pill.off s{color:#9c6070}
 .pair{display:flex;flex-direction:column;gap:7px}
 /* Equal columns, so the pair reads as one control rather than two odd shapes
    sized by their own labels. The caption then centres across both. */
@@ -266,17 +272,12 @@ function topbar(d){
     <span class="spacer"></span>
 
     ${fail>=3?`<div class="zone"><span class="pill bad">failing ×${fail}</span></div>`:''}
-    <div class="zone act"><span class="pair">
-      <span class="row">
-        ${paused
-          ? `<a class="btn play" href="${EDIT}" target="_blank" rel="noopener"><i class="tri"></i>Start</a>`
-          : `<span class="btn play off"><i class="live"></i>Running</span>`}
-        ${paused
-          ? `<span class="btn off"><i class="sq"></i>Stop</span>`
-          : `<a class="btn stop" href="${EDIT}" target="_blank" rel="noopener"><i class="sq"></i>Stop</a>`}
-      </span>
-      <s>${paused ? 'paused, nothing runs' : `checking every ${d.schedule.cadenceMin} min`}</s>
-    </span></div>`;
+    <div class="zone act">
+      <span class="live-pill${paused?' off':''}">
+        <span class="orb"></span>
+        <span class="stack"><b>${paused?'Paused':'Running'}</b>
+          <s>${paused?'nothing runs until resumed':`checking every ${d.schedule.cadenceMin} min`}</s></span>
+      </span></div>`;
 }
 
 /** One pill: the gap, and what the bot is doing about it. */
