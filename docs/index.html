@@ -26,10 +26,12 @@ a{color:inherit;text-decoration:none}
 .zone+.zone::before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:1px;
  background:linear-gradient(180deg,transparent,var(--line2) 22%,var(--line2) 78%,transparent)}
 .brand{gap:12px;padding-left:12px}
+.wordmark{height:46px;width:auto;display:block;flex:none;
+ filter:drop-shadow(0 4px 12px rgba(124,92,240,.3))}
+/* The fallback lockup, only rendered if the image fails to load. */
 .logo{width:40px;height:40px;flex:none;display:block;object-fit:contain;
  filter:drop-shadow(0 4px 12px rgba(124,92,240,.35))}
 .brand h1{font-size:1.06rem;line-height:1.15;white-space:nowrap}
-.brand .acct{display:block;color:var(--faint);font-size:.73rem;font-weight:550;margin-top:2px;white-space:nowrap}
 .stack{display:flex;flex-direction:column;gap:2px;min-width:0}
 .stack b{font-size:1.12rem;font-weight:760;letter-spacing:-.025em;white-space:nowrap;
  font-variant-numeric:tabular-nums;line-height:1.15}
@@ -215,6 +217,7 @@ ul.plain b{color:var(--ink);font-weight:620}
  .zone{padding:10px 12px;gap:10px}
  .zone+.zone::before{top:10px;bottom:10px}
  .brand{padding-left:8px;width:100%}
+ .wordmark{height:38px}
  .brand+.zone::before{display:none}
  .bar h1{font-size:1rem}
  .spacer{display:none}
@@ -292,9 +295,11 @@ window.LOGO_SVG=LOGO_SVG;   // the inline onerror handler needs it on window
 
 function topbar(d){
   const ct=d.control??{},paused=!!ct.paused,fail=d.health.failStreak;
-  const mark=`<img class="logo" src="img/logo.png" alt="" onerror="this.outerHTML=LOGO_SVG">`;
-  return `<div class="zone brand">${mark}
-      <span><h1>Sorare Autopilot</h1><span class="acct">${esc(d.account)} · ${esc(d.squad)}</span></span></div>
+  // One image carries the whole lockup. If it will not load, fall back to the
+  // inline emblem and live text rather than an empty bar.
+  const mark=`<img class="wordmark" src="img/wordmark.png" alt="Sorare Autopilot"
+    onerror="this.outerHTML=LOGO_SVG+'<h1>Sorare Autopilot</h1>'">`;
+  return `<div class="zone brand">${mark}</div>
     <span class="spacer"></span>
 
     ${fail>=3?`<div class="zone"><span class="pill bad">failing ×${fail}</span></div>`:''}
