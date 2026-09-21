@@ -48,6 +48,17 @@ a{color:inherit;text-decoration:none}
 .btn:hover{filter:brightness(1.09);transform:translateY(-1px)}
 .btn.stop{background:linear-gradient(140deg,#e2536b,#b8354d);color:#fff;box-shadow:0 10px 24px -12px rgba(226,83,107,.9)}
 .btn.play{background:linear-gradient(140deg,#34d399,#0f9f72);color:#04231a;box-shadow:0 10px 24px -12px rgba(52,211,153,.9)}
+.pair{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.pair .row{display:flex;gap:8px}
+.pair s{color:var(--faint);font-size:.66rem;text-transform:uppercase;letter-spacing:.12em;
+ font-weight:700;text-decoration:none;white-space:nowrap}
+.btn.off{background:#161b29;color:var(--faint);box-shadow:none;cursor:default;
+ border:1px solid var(--line2);pointer-events:none}
+.btn.off:hover{filter:none;transform:none}
+.btn .live{width:8px;height:8px;border-radius:99px;background:currentColor;
+ box-shadow:0 0 0 0 currentColor;animation:pl2 2.4s ease-out infinite}
+@keyframes pl2{0%{box-shadow:0 0 0 0 rgba(255,255,255,.45)}70%{box-shadow:0 0 0 9px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
+@media(prefers-reduced-motion:reduce){.btn .live{animation:none}}
 .sq{width:11px;height:11px;background:currentColor;border-radius:3px}
 .tri{border-left:11px solid currentColor;border-top:7px solid transparent;border-bottom:7px solid transparent}
 /* ---- tabs ---- */
@@ -111,7 +122,10 @@ code{background:#171c2b;border:1px solid var(--line2);border-radius:5px;padding:
  .bar h1{font-size:1rem}
  .spacer{display:none}
  .act{width:100%;padding:0 8px 10px}
- .btn{width:100%;justify-content:center;padding:13px}
+ .pair{align-items:stretch;width:100%}
+ .pair .row{width:100%}
+ .pair s{text-align:center}
+ .btn{flex:1;justify-content:center;padding:13px}
  .xi{grid-template-columns:repeat(2,1fr);gap:9px}
  ul.rej{columns:1}
  code{overflow-wrap:anywhere}
@@ -182,10 +196,6 @@ function topbar(d){
   return `<div class="zone brand">${mark}
       <span><h1>Sorare Autopilot</h1><span class="acct">${esc(d.account)} · ${esc(d.squad)}</span></span></div>
 
-    <div class="zone"><span class="orb"></span>
-      <span class="stack"><b>${paused?'Paused':'Running'}</b>
-        <s>${paused?'nothing runs':`every ${d.schedule.cadenceMin} min`}</s></span></div>
-
     <div class="zone"><span class="stack"><b class="cd">${cdown(d.schedule.nextLock)}</b><s>to lock</s></span></div>
 
     <div class="zone">
@@ -196,8 +206,17 @@ function topbar(d){
 
     ${fail>=3?`<div class="zone"><span class="pill bad">failing ×${fail}</span></div>`:''}
     <span class="spacer"></span>
-    <div class="zone act"><a class="btn ${paused?'play':'stop'}" href="${EDIT}" target="_blank" rel="noopener">
-      <i class="${paused?'tri':'sq'}"></i>${paused?'Resume':'Stop the bot'}</a></div>`;
+    <div class="zone act"><span class="pair">
+      <span class="row">
+        ${paused
+          ? `<a class="btn play" href="${EDIT}" target="_blank" rel="noopener"><i class="tri"></i>Start</a>`
+          : `<span class="btn play off"><i class="live"></i>Running</span>`}
+        ${paused
+          ? `<span class="btn off"><i class="sq"></i>Stop</span>`
+          : `<a class="btn stop" href="${EDIT}" target="_blank" rel="noopener"><i class="sq"></i>Stop</a>`}
+      </span>
+      <s>${paused ? 'paused, nothing runs' : `checking every ${d.schedule.cadenceMin} min`}</s>
+    </span></div>`;
 }
 
 function surfacePanel(s){
