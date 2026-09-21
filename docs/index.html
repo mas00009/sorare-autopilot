@@ -161,6 +161,9 @@ h4.sub{margin:22px 0 10px;font-size:.69rem;text-transform:uppercase;letter-spaci
  color:var(--faint);font-weight:700}
 h4.sub:first-of-type{margin-top:0}
 .prose.sm{font-size:.85rem;line-height:1.55;margin:13px 0 0}
+ul.plain{margin:0;padding-left:19px;color:var(--dim);font-size:.87rem;line-height:1.6;max-width:92ch}
+ul.plain li{margin-bottom:5px}
+ul.plain b{color:var(--ink);font-weight:620}
 .k4{display:grid;gap:11px;grid-template-columns:repeat(4,1fr)}
 .k4 div{background:#0e1220;border:1px solid var(--line);border-radius:11px;padding:12px 14px}
 .k4 s{display:block;color:var(--faint);font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700;text-decoration:none}
@@ -374,33 +377,38 @@ function accuracyPanel(d){
   let h='<div class="card narrow">';
 
   if(b){
+    const err=b.current.rmse;
     h+=`<div class="lede">
-      <span class="score"><span class="n"><b>&plusmn;${b.current.rmse.toFixed(0)}</b></span>
-        <s>typical error per player</s></span>
-      <p>Scores usually land between 40 and 70, so one projection is a rough guide rather than
-        a forecast. A five-player total is far steadier than any single name in it.</p></div>
+      <span class="score"><span class="n"><b>&plusmn;${err.toFixed(0)}</b></span>
+        <s>how far off one player can be</s></span>
+      <p><b style="color:var(--ink)">Trust the total, not the individual.</b>
+        A single player projected at 60 might score 35 or 85. Across five players those
+        misses mostly cancel out, so the team total is the number worth acting on.</p></div>
 
-    <h4 class="sub">Tuned on ${b.samples} past games</h4>
-    <div class="k4">
-      <div><s>Games measured</s><b>${b.samples}</b><span class="muted">across ${b.players} players</span></div>
-      <div><s>Recent form</s><b>${b.best.formWeight}</b><span class="muted">weight against the longer record</span></div>
-      <div><s>Home advantage</s><b>${b.best.homeAdvantage}</b><span class="muted">${b.best.homeAdvantage===1?'none found in the data':'measured, not assumed'}</span></div>
-      <div><s>Tuning gained</s><b>${b.improvementRmse}</b><span class="muted">points of error removed</span></div>
-    </div>
-    <p class="prose sm">Every prediction used only games played before it, so no result leaked
-      backwards into its own forecast. Tuning the weights barely moved the error, which says the
-      noise in a single game outweighs anything the model can learn from form alone.</p>`;
+    <h4 class="sub">What that means in practice</h4>
+    <ul class="plain">
+      <li><b>A 10 point gap to target is noise.</b> Do not read anything into it.</li>
+      <li><b>A 50 point gap is real.</b> That is why the bot waits rather than entering.</li>
+      <li><b>Nobody is a safe bet on their own.</b> Even the top projection can blank.</li>
+    </ul>
+
+    <h4 class="sub">Where the number comes from</h4>
+    <p class="prose sm">Checked against <b>${b.samples} real games</b> from ${b.players} of your
+      players. Each prediction used only matches played before it, so no result fed back into
+      its own forecast. Two things came out of that: recent form and the longer record deserve
+      equal weight, and <b>playing at home made no measurable difference</b>, so that assumption
+      was dropped.</p>`;
   }
 
-  h+=`<h4 class="sub">Live results</h4>`;
+  h+=`<h4 class="sub">Tested on your own results</h4>`;
   h+= a.n?`<div class="k4">
       <div><s>Steps finished</s><b>${a.steps}</b><span class="muted">${a.hit} reached target</span></div>
-      <div><s>Bias</s><b>${a.bias>0?'+':''}${a.bias}</b><span class="muted">below zero means over-projecting</span></div>
+      <div><s>Running bias</s><b>${a.bias>0?'+':''}${a.bias}</b><span class="muted">below zero means too optimistic</span></div>
       <div><s>Average miss</s><b>${a.mae}</b><span class="muted">points per player</span></div>
       <div><s>Blanks</s><b>${Math.round(a.blankRate*100)}%</b><span class="muted">scored nothing at all</span></div></div>`
-    : `<p class="prose sm">Nothing has finished yet. Every completed step records what each player
-       was projected to score against what they actually scored, so these numbers get tested
-       against real results rather than staying a guess.</p>`;
+    : `<p class="prose sm">No step has finished yet. When one does, every player's projection is
+       stored against what they actually scored, and these figures start reporting whether the
+       bot is too optimistic, too cautious, or about right.</p>`;
   return h+'</div>';
 }
 
