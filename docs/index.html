@@ -295,11 +295,10 @@ function surfacePanel(s){
     ${s.target?`<div class="barp"><i style="width:${pct}%"></i></div>`:''}
     ${waiting?`<div class="msg">
       <span class="big">${Math.round(pl.shortfall)}<s>points short</s></span>
-      <p>The best five across the whole window reach <b>${Math.round(pl.projected)}</b> against a target
-        of <b>${s.target}</b>. Entering that loses a heart for nothing, so nothing goes in until the pool can clear it.</p></div>`:''}
+      <p>Best five reach <b>${Math.round(pl.projected)}</b> of <b>${s.target}</b>. Entering would lose a heart, so nothing goes in yet.</p></div>`:''}
     ${pl&&pl.clearsTarget&&pl.lock?`<div class="msg good">
       <span class="big">${Math.round(pl.projected-s.target)}<s>points clear</s></span>
-      <p>Locks ${when(pl.lock)}${pl.tradedPointsForTime>0?`, giving up ${pl.tradedPointsForTime} points to lock a day later and keep reacting to team news`:''}.</p></div>`:''}
+      <p>Locks ${when(pl.lock)}${pl.tradedPointsForTime>0?`, ${pl.tradedPointsForTime} points given up to lock a day later`:''}.</p></div>`:''}
   </div>`;
 }
 
