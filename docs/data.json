@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T19:02:52.192Z",
+  "generatedAt": "2026-09-21T19:08:08.114Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-24T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790017368594,
-    "reason": "last run 0m ago, next due in 180m (lock in 4302m)"
+    "lastRunAt": 1790017684578,
+    "reason": "last run 0m ago, next due in 180m (lock in 4297m)"
   },
   "packs": {
     "lastThreeStar": "Álex Baena",
