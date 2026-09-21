@@ -386,6 +386,19 @@ export async function runMissions({ dryRun = false, claimNow = false } = {}) {
   const u = data.currentUser ?? {};
   out.unclaimedCount = u.myUnclaimedTasksCount ?? null;
 
+  // Daily Boost is the parent of the four checklist items. It pays out only
+  // when every one is done, so it is worth reporting on its own: its progress
+  // field reads a meaningless 3/1, and liveScore/scoreToReach is the real gate.
+  const boost = (u.dailies ?? []).find((t) => t?.scoreToReach != null);
+  if (boost) {
+    out.dailyBoost = {
+      name: boost.title ?? 'Daily Boost',
+      done: boost.liveScore ?? 0,
+      of: boost.scoreToReach,
+      state: boost.aasmState,
+    };
+  }
+
   const seen = new Map();
   // A collect track is never claimable itself - its currentStep is. Missing that
   // is why completed collect missions were reported as "nothing to claim".

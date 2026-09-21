@@ -140,6 +140,11 @@ async function report(r) {
     for (const e of m.errors.slice(0, 3)) console.log(`  ! ${e}`);
   }
 
+  if (r.missions?.dailyBoost) {
+    const b = r.missions.dailyBoost;
+    console.log(`\nDaily Boost: ${b.done} of ${b.of} checklist items done`);
+  }
+
   if (r.pickers) {
     const p = r.pickers;
     console.log('\nDecisive picker');

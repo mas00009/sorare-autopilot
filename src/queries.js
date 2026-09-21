@@ -158,7 +158,12 @@ export const Q_MISSIONS = `
       # The four daily checklist items live here and nowhere else. They are
       # absent from setPlayTasks, featuredTasks and dailyRunTask, which is why
       # claimable missions went unseen for so long.
-      dailies: tasks(periodicity: DAILY, sport: $sport) { id name title description aasmState }
+      dailies: tasks(periodicity: DAILY, sport: $sport) {
+        id name title description aasmState
+        # Daily Boost gates on all four checklist items, and its own progress/target
+        # reads a meaningless 3/1. liveScore against scoreToReach is the real gate.
+        ... on DailyActionTask { liveScore scoreToReach }
+      }
       weeklies: tasks(periodicity: WEEKLY, sport: $sport) { id name title description aasmState }
       setCollectionsTaskTracks(sport: $sport, first: 25) {
         ${TASK_FIELDS}
