@@ -267,7 +267,10 @@ function surface(s){
   const rw = (s.rewards??[]).map(r=>
     r.kind==='pack' ? `<span>Reward: <b>a ${r.cards}-card pack</b></span>`
     : r.kind==='essence' ? `<span>Reward: <b>${r.amount} essence</b></span>`
-    : `<span>Reward: <b>${esc(r.kind)}</b></span>`).join('');
+    : `<span>Reward: <b>${esc(({
+        InGameCurrency:'coins', Experience:'XP', CardShard:'essence',
+        AnyCard:'a card', CardPacks:'a card pack', Monetary:'cash',
+      })[r.kind] ?? r.kind.replace(/([a-z])([A-Z])/g,'$1 $2').toLowerCase())}</b></span>`).join('');
 
   return `<section><h2>${esc(s.surface)}</h2><div class="card">
     <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>
