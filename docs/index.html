@@ -104,8 +104,12 @@ nav button .dot{display:inline-block;width:6px;height:6px;border-radius:99px;bac
 .tot b{font-size:1.85rem;font-weight:800;letter-spacing:-.04em;white-space:nowrap}
 .barp{height:7px;background:#161b29;border-radius:99px;overflow:hidden;margin-top:9px;max-width:460px}
 .barp i{display:block;height:100%;background:linear-gradient(90deg,var(--v2),#5eead4)}
-.msg{margin-top:13px;max-width:780px;display:flex;gap:16px;align-items:center;border-radius:12px;
- padding:14px 17px;border:1px solid #584311;background:linear-gradient(140deg,#241b08,#171205)}
+.msg{margin-top:13px;display:flex;gap:20px;align-items:center;border-radius:12px;
+ padding:15px 20px;border:1px solid #584311;background:linear-gradient(140deg,#241b08,#171205)}
+/* The number keeps a fixed column so the copy beside it starts on one line
+   whatever the viewport, instead of shifting with the digit count. */
+.msg .big{flex:none;min-width:104px}
+.msg p{flex:1}
 .msg .big{font-size:1.5rem;font-weight:790;letter-spacing:-.03em;line-height:1.1;color:var(--warn);white-space:nowrap}
 .msg .big s{display:block;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;
  font-weight:700;color:#9a7a2a;text-decoration:none;margin-top:3px}
