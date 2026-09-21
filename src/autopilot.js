@@ -277,6 +277,23 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
     };
   }
 
+  // Entering a lineup that cannot reach the target just burns the step. When the
+  // best available five fall short, wait: later fixtures bring different players
+  // into the eligible pool, and the step is only worth spending on a team that
+  // can actually clear it.
+  const target = step?.target ?? null;
+  if (target && picked.projected < target * (options.targetMargin ?? 1)) {
+    return {
+      stepId, surface, target, dead,
+      action: 'waiting-for-target',
+      reason: `Best available projects ${picked.projected} against a target of ${target}. ` +
+              'Holding until a fixture brings enough scoring into the pool.',
+      lineup: picked.chosen, projected: picked.projected,
+      shortfall: Number((target - picked.projected).toFixed(1)),
+      current: (existing?.taskAppearances ?? []).map((x) => x.anyPlayer?.displayName).filter(Boolean),
+    };
+  }
+
   let result;
   try {
     result = await submitLineup(stepId, picked, { lineupId: existing?.id ?? null, dryRun });

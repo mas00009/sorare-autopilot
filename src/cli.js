@@ -313,6 +313,7 @@ const main = async () => {
     maxPacks: Number(opt('max-packs', 3)),
     packs: !flag('no-packs'),
     claimNow: flag('claim-now'),
+    targetMargin: Number(opt('target-margin', 1)),
   };
 
   if (cmd === 'plan') return report(await pass({ dryRun: true, options }));
