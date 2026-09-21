@@ -104,12 +104,12 @@ nav button .dot{display:inline-block;width:6px;height:6px;border-radius:99px;bac
 .tot b{font-size:1.85rem;font-weight:800;letter-spacing:-.04em;white-space:nowrap}
 .barp{height:7px;background:#161b29;border-radius:99px;overflow:hidden;margin-top:9px;max-width:460px}
 .barp i{display:block;height:100%;background:linear-gradient(90deg,var(--v2),#5eead4)}
-.msg{margin-top:13px;display:flex;gap:15px;align-items:flex-start;border-radius:12px;padding:13px 16px;
- border:1px solid #584311;background:linear-gradient(140deg,#241b08,#171205)}
+.msg{margin-top:13px;max-width:780px;display:flex;gap:16px;align-items:center;border-radius:12px;
+ padding:14px 17px;border:1px solid #584311;background:linear-gradient(140deg,#241b08,#171205)}
 .msg .big{font-size:1.5rem;font-weight:790;letter-spacing:-.03em;line-height:1.1;color:var(--warn);white-space:nowrap}
 .msg .big s{display:block;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;
  font-weight:700;color:#9a7a2a;text-decoration:none;margin-top:3px}
-.msg p{margin:0;font-size:.86rem;color:#d9c48c;max-width:62ch}
+.msg p{margin:0;font-size:.86rem;line-height:1.5;color:#d9c48c;max-width:none;text-wrap:pretty}
 .msg.good{border-color:#1c4d3c;background:linear-gradient(140deg,#0c2a20,#071711)}
 .msg.good .big{color:var(--go)} .msg.good .big s{color:#3f8e73} .msg.good p{color:#a7d8c4}
 /* Held out: one row per reason, names gathered. Repeating the same phrase once
@@ -298,9 +298,9 @@ function surfacePanel(s){
       <span class="pill ${tot>=s.target?'go':'warn'}">${tot>=s.target?'clears target':Math.round(s.target-tot)+' short'}</span>`:''}</div>
     ${s.target?`<div class="barp"><i style="width:${pct}%"></i></div>`:''}
     ${waiting?`<div class="msg">
-      <span class="big">${pl.shortfall}<s>points short</s></span>
-      <p>The best five available across the whole window reach <b>${pl.projected}</b> against a target of
-        <b>${s.target}</b>. Entering that loses a heart for nothing, so no lineup goes in until the pool can clear it.</p></div>`:''}
+      <span class="big">${Math.round(pl.shortfall)}<s>points short</s></span>
+      <p>The best five across the whole window reach <b>${Math.round(pl.projected)}</b> against a target
+        of <b>${s.target}</b>. Entering that loses a heart for nothing, so nothing goes in until the pool can clear it.</p></div>`:''}
     ${pl&&pl.clearsTarget&&pl.lock?`<div class="msg good">
       <span class="big">${Math.round(pl.projected-s.target)}<s>points clear</s></span>
       <p>Locks ${when(pl.lock)}${pl.tradedPointsForTime>0?`, giving up ${pl.tradedPointsForTime} points to lock a day later and keep reacting to team news`:''}.</p></div>`:''}
