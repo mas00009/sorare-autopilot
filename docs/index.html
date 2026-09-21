@@ -108,13 +108,18 @@ nav button .dot{display:inline-block;width:6px;height:6px;border-radius:99px;bac
 .tag,.capt{position:absolute;top:7px;border-radius:6px;padding:1px 6px;font-size:.66rem;font-weight:700}
 .tag{left:7px;background:#070911d9;border:1px solid var(--line2);color:var(--dim)}
 .capt{right:7px;background:linear-gradient(140deg,var(--v),#6d4fe0);color:#120c26}
-.tot{display:flex;flex-wrap:wrap;gap:7px 16px;align-items:baseline;margin-top:13px}
-.tot b{font-size:1.85rem;font-weight:800;letter-spacing:-.04em;white-space:nowrap}
-.barp{height:8px;background:#161b29;border-radius:99px;overflow:hidden;margin-top:11px;width:100%}
+.tot{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin:20px 0 0}
+.tot b{font-size:1.9rem;font-weight:800;letter-spacing:-.04em;white-space:nowrap;line-height:1}
+/* The label belongs to the number, so it sits close; the verdict is a separate
+   thought and gets a wider gap of its own. */
+.tot .lbl{color:var(--dim);margin-left:-5px}
+.tot .tgt{color:var(--dim)}
+.tot .verdict{margin-left:6px}
+.barp{height:8px;background:#161b29;border-radius:99px;overflow:hidden;margin:16px 0 4px;width:100%}
 .barp i{display:block;height:100%;border-radius:99px;transition:width .5s ease;
  background:linear-gradient(90deg,var(--v2),#5eead4)}
 /* The verdict lives on the totals line now, so it needs no box of its own. */
-.verdict{display:inline-flex;align-items:baseline;gap:9px;border-radius:99px;padding:5px 15px;
+.verdict{display:inline-flex;align-items:center;gap:10px;border-radius:99px;padding:7px 17px;
  font-size:.83rem;border:1px solid #584311;background:#221a07;color:#e2c581}
 .verdict b{font-size:1rem;font-weight:790;color:var(--warn);letter-spacing:-.02em}
 .verdict.good{border-color:#1c4d3c;background:#0d2a21;color:#a7d8c4}
@@ -315,8 +320,8 @@ function surfacePanel(s){
           <div class="fx">${c.opponent?`${c.home?'vs':'@'} ${esc(c.opponent)}`:'no fixture'}</div>
           <div class="fx">L15 ${c.average??'—'} · L5 ${c.formL5??'—'}</div>
           <div class="xp">${c.expected}</div></div></div>`).join('')}</div>
-    <div class="tot"><b>${tot.toFixed(0)}</b><span class="muted">projected</span>
-      ${s.target?`<span class="muted">target ${s.target}</span>${verdict(s,pl,tot)}`:''}</div>
+    <div class="tot"><b>${tot.toFixed(0)}</b><span class="lbl">projected</span>
+      ${s.target?`<span class="tgt">target ${s.target}</span>${verdict(s,pl,tot)}`:''}</div>
     ${s.target?`<div class="barp"><i style="width:${pct}%"></i></div>`:''}
 
   </div>`;
