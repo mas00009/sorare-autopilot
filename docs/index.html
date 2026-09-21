@@ -88,8 +88,7 @@ nav button[aria-selected=true]{background:linear-gradient(140deg,#2a2160,#1b1640
 nav button .dot{display:inline-block;width:6px;height:6px;border-radius:99px;background:var(--warn);margin-left:6px;vertical-align:middle}
 
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:15px 17px}
-.card.narrow{max-width:940px}
-.card.narrow .prose{max-width:none}
+.card.narrow{max-width:none}
 .pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:.71rem;font-weight:650;border:1px solid var(--line2);color:var(--dim);white-space:nowrap}
 .pill.go{color:var(--go);border-color:#1c4d3c;background:#0d2a21}
 .pill.warn{color:var(--warn);border-color:#584311;background:#2a2008}
@@ -157,7 +156,7 @@ ul.rej li{color:var(--dim);font-size:.82rem;margin-bottom:3px;break-inside:avoid
 code{background:#171c2b;border:1px solid var(--line2);border-radius:5px;padding:1px 6px;font-size:.85em}
 .lede{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;margin-bottom:20px}
 .lede .score .n b{font-size:2.3rem}
-.lede p{margin:0;flex:1;min-width:260px;color:var(--dim);font-size:.88rem;line-height:1.5}
+.lede p{margin:0;flex:1;min-width:260px;max-width:88ch;color:var(--dim);font-size:.88rem;line-height:1.5}
 h4.sub{margin:22px 0 10px;font-size:.69rem;text-transform:uppercase;letter-spacing:.13em;
  color:var(--faint);font-weight:700}
 h4.sub:first-of-type{margin-top:0}
@@ -191,7 +190,7 @@ h4.sub:first-of-type{margin-top:0}
 .tok input{width:100%;max-width:420px;background:#0c1018;border:1px solid var(--line2);color:var(--ink);
  border-radius:9px;padding:9px 12px;font:inherit;font-size:.86rem}
 .tok .go{margin-top:9px}
-.note{font-size:.84rem;color:var(--dim)}
+.note{font-size:.84rem;color:var(--dim);max-width:104ch}
 .flash{margin-top:10px;font-size:.84rem}
 .flash.ok{color:var(--go)} .flash.err{color:var(--stop)}
 @media(max-width:900px){.xi{grid-template-columns:repeat(3,1fr)}ul.rej{columns:2}.k4{grid-template-columns:repeat(2,1fr)}}
