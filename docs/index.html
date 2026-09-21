@@ -187,6 +187,15 @@ h4.sub:first-of-type{margin-top:0}
  border:1px solid var(--line2)}
 .btn.small:hover{border-color:var(--v)}
 .btn.ghosty{background:transparent;color:var(--dim)}
+.tok ol{margin:0 0 13px;padding-left:20px;color:var(--dim);font-size:.85rem;line-height:1.65;max-width:88ch}
+.tok ol li{margin-bottom:3px}
+.tok ol b{color:var(--ink);font-weight:620}
+.tok a.lnk{color:var(--v);text-decoration:underline;text-underline-offset:2px}
+.tok .row2{display:flex;gap:9px;align-items:center;flex-wrap:wrap}
+.disc{margin-top:14px;font-size:.78rem;color:var(--faint)}
+.disc button{background:none;border:0;color:var(--faint);font:inherit;text-decoration:underline;
+ text-underline-offset:2px;cursor:pointer;padding:0}
+.disc button:hover{color:var(--stop)}
 .tok input{width:100%;max-width:420px;background:#0c1018;border:1px solid var(--line2);color:var(--ink);
  border-radius:9px;padding:9px 12px;font:inherit;font-size:.86rem}
 .tok .go{margin-top:9px}
@@ -413,7 +422,8 @@ async function writeControl(patch,flash){
   const hdr={Authorization:`Bearer ${t}`,Accept:'application/vnd.github+json'};
   try{
     const cur=await fetch(REPO_API+'?t='+Date.now(),{headers:hdr});
-    if(!cur.ok) throw new Error(cur.status===401?'Token rejected':`GitHub said ${cur.status}`);
+    if(cur.status===401||cur.status===403){setTok('');render(D);throw new Error('That token was rejected. Paste a new one.')}
+    if(!cur.ok) throw new Error(`GitHub said ${cur.status}`);
     const meta=await cur.json();
     const body={...JSON.parse(atob(meta.content.replace(/\n/g,''))),...patch};
     const put=await fetch(REPO_API,{method:'PUT',headers:{...hdr,'Content-Type':'application/json'},
@@ -436,17 +446,30 @@ function controlsPanel(d){
   }).join('');
 
   const has=!!tok();
-  return `<div class="card narrow">${rows}
-    <div class="tok">
-      <h4 class="sub" style="margin-top:0">${has?'Connected':'Connect to flip these'}</h4>
-      <p class="note" style="margin:0 0 11px;max-width:66ch">${has
-        ? 'A token is saved in this browser and the switches write straight to the control file. The bot picks up a change on its next pass.'
-        : 'These switches write to a file in your GitHub repository, so they need a token with write access to it. The token is kept in this browser and sent only to GitHub. Create a fine-grained one scoped to this repository alone.'}</p>
-      ${has?`<button class="btn small ghosty" style="pointer-events:auto;cursor:pointer" id="forget">Forget this token</button>`
-           :`<input id="pat" type="password" placeholder="github_pat_..." autocomplete="off" spellcheck="false">
-             <div class="go"><button class="btn small" id="savetok">Save token</button></div>`}
-      <div class="flash" id="flash"></div>
-    </div></div>`;
+  // Once connected the setup block goes away entirely; a quiet link remains so a
+  // bad or rotated token can still be cleared.
+  const setup = has ? `<div class="disc">Connected to GitHub.
+      <button id="forget">Disconnect</button></div>`
+    : `<div class="tok">
+      <h4 class="sub" style="margin-top:0">Connect to flip these</h4>
+      <ol>
+        <li>Open <a class="lnk" href="https://github.com/settings/personal-access-tokens/new"
+            target="_blank" rel="noopener">GitHub's fine-grained token page</a>.</li>
+        <li>Name it anything. Set <b>Expiration</b> to whatever you are comfortable with.</li>
+        <li>Under <b>Repository access</b> choose <b>Only select repositories</b>, and pick
+            <b>sorare-autopilot</b>.</li>
+        <li>Under <b>Permissions &rarr; Repository permissions</b>, set <b>Contents</b> to
+            <b>Read and write</b>. Leave everything else alone.</li>
+        <li>Click <b>Generate token</b>, copy it, and paste it below.</li>
+      </ol>
+      <div class="row2">
+        <input id="pat" type="password" placeholder="github_pat_..." autocomplete="off" spellcheck="false">
+        <button class="btn small" id="savetok">Save token</button>
+      </div>
+      <div class="flash" id="flash"></div></div>`;
+
+  return `<div class="card narrow">${rows}${setup}
+    ${has?'<div class="flash" id="flash"></div>':''}</div>`;
 }
 
 function wireControls(){
