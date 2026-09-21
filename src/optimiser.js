@@ -136,6 +136,8 @@ export function describe(node, opts = DEFAULTS) {
     onGameSheet: stats?.onGameSheet ?? null,
     reliability: o?.reliability ?? null,
     formL5: node.formL5 ?? null,
+    picture: node.pictureUrl ?? null,
+    rarity: node.rarity ?? null,
     gameId: stats?.anyGame?.id ?? null,
     kickoff: stats?.anyGame?.date ?? null,
     team: fx?.team ?? null,

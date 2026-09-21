@@ -90,6 +90,7 @@ export const Q_BENCH = `
             positions
             rarity
             bonus
+            pictureUrl(derivative: "tinified")
             averageScore(type: LAST_FIFTEEN_SO5_AVERAGE_SCORE)
             formL5: averageScore(type: LAST_FIVE_SO5_AVERAGE_SCORE)
             player {

@@ -74,6 +74,11 @@ function printLineup(l) {
 async function report(r) {
   if (flag('json')) { console.log(JSON.stringify(r, null, 2)); return; }
   console.log(`\n${r.dryRun ? 'DRY RUN' : 'LIVE'}  ${r.startedAt}`);
+  if (r.paused) { console.log(`PAUSED by remote control (${r.control?.source}). Nothing was done.`); return; }
+  if (r.control && r.control.source !== 'default') {
+    const off = ['packs','lineups','claims'].filter((k) => r.control[`${k}Enabled`] === false);
+    if (off.length) console.log(`control: ${off.join(', ')} disabled`);
+  }
   // The sign-in token lapses after ~30 days. Warn well before it does, so it
   // never dies silently mid-matchday on a scheduled run.
   try {
@@ -236,6 +241,15 @@ const main = async () => {
     return;
   }
 
+  if (cmd === 'pause' || cmd === 'resume') {
+    const C = await import('./control.js');
+    const next = await C.set({ paused: cmd === 'pause' });
+    console.log(`${cmd === 'pause' ? 'PAUSED' : 'RUNNING'} locally. Push to make it take effect remotely:`);
+    console.log('  git -C ~/sorare-autopilot add docs/control.json && git -C ~/sorare-autopilot commit -m "control" && git -C ~/sorare-autopilot push');
+    console.log(JSON.stringify(next));
+    return;
+  }
+
   if (cmd === 'dashboard') {
     const { build } = await import('./dashboard.js');
     const d = await build();
@@ -343,7 +357,7 @@ const main = async () => {
     }
   }
 
-  console.log('Usage: autopilot <doctor|plan|run|when|report|accuracy|dashboard|watch|signin|create-app|auth> [--json] [--dry] [--force] [--min-starter 6000]');
+  console.log('Usage: autopilot <doctor|plan|run|when|report|accuracy|dashboard|pause|resume|watch|signin|create-app|auth> [--json] [--dry] [--force] [--min-starter 6000]');
   process.exitCode = 1;
 };
 

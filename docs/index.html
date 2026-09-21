@@ -45,6 +45,28 @@
   .rej li { color:var(--dim); font-size:.86rem; margin-bottom:3px; }
   ul.rej { list-style:none; padding:0; margin:0; columns:2; column-gap:26px; }
   @media (max-width:640px){ ul.rej{columns:1} .stamp{margin-left:0;width:100%} }
+  .xi { display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(132px,1fr)); margin:4px 0 6px; }
+  .p { background:#0f131c; border:1px solid var(--line); border-radius:10px; overflow:hidden; position:relative; }
+  .p.cap { border-color:#4c3f86; box-shadow:0 0 0 1px #4c3f86 inset; }
+  .p img { width:100%; aspect-ratio:5/7; object-fit:cover; display:block; background:#0b0d12; }
+  .p .b { padding:8px 9px 10px; }
+  .p .nm { font-weight:620; font-size:.84rem; line-height:1.25; text-wrap:balance; }
+  .p .fx { color:var(--dim); font-size:.72rem; margin-top:2px; }
+  .p .xp { margin-top:7px; font-size:1.15rem; font-weight:680; letter-spacing:-.02em; }
+  .p .xp small { font-size:.66rem; font-weight:500; color:var(--dim); letter-spacing:.06em; text-transform:uppercase; }
+  .p .tag { position:absolute; top:7px; left:7px; background:#0b0d12cc; backdrop-filter:blur(4px);
+            border:1px solid var(--line); border-radius:6px; padding:1px 6px; font-size:.68rem; }
+  .p .capt { position:absolute; top:7px; right:7px; background:var(--accent); color:#17122b;
+             border-radius:6px; padding:1px 6px; font-size:.68rem; font-weight:700; }
+  .tot { display:flex; flex-wrap:wrap; gap:18px; align-items:baseline; margin:12px 0 2px; }
+  .tot .big { font-size:2rem; font-weight:700; letter-spacing:-.03em; }
+  .bar { height:7px; background:#1b2030; border-radius:99px; overflow:hidden; margin:8px 0 2px; max-width:420px; }
+  .bar i { display:block; height:100%; background:linear-gradient(90deg,#7c5cf0,#a78bfa); }
+  .ctl { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+  .btn { display:inline-block; padding:6px 13px; border-radius:8px; border:1px solid var(--line);
+         background:#1a2030; color:var(--ink); font-size:.82rem; text-decoration:none; font-weight:560; }
+  .btn:hover { border-color:var(--accent); }
+  .btn.stop { border-color:#5e2626; color:var(--bad); }
   footer { margin-top:40px; color:var(--dim); font-size:.8rem; max-width:var(--measure); }
 </style>
 </head>
@@ -73,24 +95,35 @@ const ago = (iso) => { if (!iso) return 'never'; const m = Math.round((Date.now(
 const stateClass = (s) => ({ LINEUP_SET:'ok', PLAYABLE:'ok', CLAIMABLE:'warn',
   PRE_MATCHDAY_LOCKED:'', LOCKED:'', LIVE:'c', FAILED:'bad' }[s] ?? '');
 
-function lineupTable(s) {
+function xi(s) {
   if (!s.candidates.length) {
     return `<p class="note">No eligible cards for this step yet — it opens closer to its matchday.</p>`;
   }
-  const rows = s.candidates.slice(0, 6).map((c, i) => `
-    <tr>
-      <td><span class="pill">${esc(c.position)}</span></td>
-      <td>${esc(c.player)}${i === 0 ? ' <span class="pill c">C</span>' : ''}</td>
-      <td class="muted">${c.opponent ? `${c.home ? 'H' : 'A'} v ${esc(c.opponent)}` : '—'}</td>
-      <td class="num">${c.average ?? '—'}</td>
-      <td class="num">${c.formL5 ?? '—'}</td>
-      <td class="num">${c.starterPct != null ? Math.round(c.starterPct) + '%' : '—'}</td>
-      <td class="num"><strong>${c.expected}</strong></td>
-    </tr>`).join('');
-  return `<table>
-    <thead><tr><th></th><th>Player</th><th>Fixture</th>
-      <th class="num">L15</th><th class="num">L5</th><th class="num">Start</th><th class="num">Exp</th></tr></thead>
-    <tbody>${rows}</tbody></table>`;
+  const five = s.candidates.slice(0, 5);
+  const total = five.reduce((t, c) => t + c.expected, 0);
+  const pct = s.target ? Math.min(100, (total / s.target) * 100) : 0;
+
+  const cards = five.map((c, i) => `
+    <div class="p${i === 0 ? ' cap' : ''}">
+      ${c.picture ? `<img src="${esc(c.picture)}" alt="${esc(c.player)}" loading="lazy">`
+                  : `<div style="aspect-ratio:5/7;display:grid;place-items:center;color:var(--dim)">no art</div>`}
+      <span class="tag">${esc(c.position)}</span>
+      ${i === 0 ? '<span class="capt">C</span>' : ''}
+      <div class="b">
+        <div class="nm">${esc(c.player)}</div>
+        <div class="fx">${c.opponent ? `${c.home ? 'vs' : '@'} ${esc(c.opponent)}` : 'no fixture'}</div>
+        <div class="fx">L15 ${c.average ?? '—'} · L5 ${c.formL5 ?? '—'}${c.starterPct != null ? ` · ${Math.round(c.starterPct)}% start` : ''}</div>
+        <div class="xp">${c.expected} <small>proj</small></div>
+      </div>
+    </div>`).join('');
+
+  return `<div class="xi">${cards}</div>
+    <div class="tot">
+      <span><span class="big">${total.toFixed(0)}</span> <span class="muted">projected</span></span>
+      ${s.target ? `<span class="muted">target ${s.target}</span>
+        <span class="pill ${total >= s.target ? 'ok' : 'warn'}">${total >= s.target ? 'clears target' : `${Math.round(s.target - total)} short`}</span>` : ''}
+    </div>
+    ${s.target ? `<div class="bar"><i style="width:${pct}%"></i></div>` : ''}`;
 }
 
 function render(d) {
@@ -110,6 +143,26 @@ function render(d) {
       <span class="k">last pass ${ago(d.schedule.lastRunAt)}</span></div>
   </div>`;
 
+  const ct = d.control ?? {};
+  const offs = ['packs','lineups','claims'].filter((k) => ct[`${k}Enabled`] === false);
+  h += `<section><h2>Controls</h2><div class="card">
+    <div class="ctl">
+      <span class="pill ${ct.paused ? 'bad' : 'ok'}">${ct.paused ? 'PAUSED' : 'RUNNING'}</span>
+      ${offs.map((o) => `<span class="pill warn">${o} off</span>`).join('')}
+      <a class="btn ${ct.paused ? '' : 'stop'}"
+         href="https://github.com/mas00009/sorare-autopilot/edit/main/docs/control.json"
+         target="_blank" rel="noopener">${ct.paused ? 'Resume' : 'Stop the bot'}</a>
+      <a class="btn" href="https://github.com/mas00009/sorare-autopilot" target="_blank" rel="noopener">Repo</a>
+    </div>
+    <p class="note" style="margin:.9em 0 0">
+      Set <code>paused</code> to <code>true</code> to stop everything, or turn off
+      <code>packsEnabled</code>, <code>lineupsEnabled</code> or <code>claimsEnabled</code>
+      individually. The bot reads this at the start of every pass, so a change takes
+      effect within a few minutes. Editing needs your GitHub login, which is what keeps
+      the controls yours.
+    </p>
+  </div></section>`;
+
   for (const s of d.surfaces) {
     const cur = s.current.length
       ? s.current.map((p) => `${esc(p.name)}${p.captain ? ' (C)' : ''}`).join(', ')
@@ -121,7 +174,7 @@ function render(d) {
           <span class="pill ${stateClass(s.state)}">${esc(s.state ?? '?')}</span>
           ${s.projected ? `<span class="pill">best available ≈ ${s.projected}</span>` : ''}</h3>
         <p class="note" style="margin:.6em 0 1em"><strong>In now:</strong> ${cur}</p>
-        ${lineupTable(s)}
+        ${xi(s)}
         ${s.rejected.length ? `<h2 style="margin:18px 0 8px">Held out</h2>
           <ul class="rej">${s.rejected.map((c) => `<li>${esc(c.player)} — ${esc(c.blocked)}</li>`).join('')}</ul>` : ''}
       </div>

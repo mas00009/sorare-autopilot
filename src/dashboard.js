@@ -84,6 +84,7 @@ export async function build() {
       cycleDone: !!st.lastPackCycle,
     },
     health: { failStreak: st.failStreak ?? 0 },
+    control: await (await import('./control.js')).read().catch(() => null),
     surfaces,
     fixtures: [...games.values()].sort((a, b) => a.kickoff.localeCompare(b.kickoff)).slice(0, 20),
     accuracy: results.accuracy(rows),

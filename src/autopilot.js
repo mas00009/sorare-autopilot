@@ -439,6 +439,18 @@ export async function pass({ dryRun = false, options = {} } = {}) {
   const startedAt = new Date().toISOString();
   const report = { startedAt, dryRun };
 
+  // Remote kill switch, read before anything is touched.
+  const control = await (await import('./control.js')).read();
+  report.control = control;
+  if (control.paused) {
+    report.paused = true;
+    report.finishedAt = new Date().toISOString();
+    return report;
+  }
+  if (control.packsEnabled === false) options = { ...options, packs: false };
+  if (control.lineupsEnabled === false) options = { ...options, lineups: false };
+  if (control.claimsEnabled === false) options = { ...options, claims: false };
+
   try {
     const bal = await readBalances();
     report.nickname = bal.nickname;
@@ -453,7 +465,8 @@ export async function pass({ dryRun = false, options = {} } = {}) {
     report.squad = squad?.name ?? null;
     report.nickname = report.nickname ?? nickname;
     report.lineups = [];
-    for (const b of boards) {
+    if (options.lineups === false) report.lineups.push({ skipped: true, reason: 'Lineups disabled by remote control.' });
+    else for (const b of boards) {
       try {
         report.lineups.push(await runLineup({ dryRun, options, stepId: b.stepId, surface: b.surface }));
       } catch (err) {
@@ -466,7 +479,9 @@ export async function pass({ dryRun = false, options = {} } = {}) {
   }
 
   try {
-    report.missions = await runMissions({ dryRun, claimNow: options.claimNow });
+    report.missions = options.claims === false
+      ? { claimed: [], notReady: [], errors: [], disabled: true }
+      : await runMissions({ dryRun, claimNow: options.claimNow });
   } catch (err) {
     report.missionsError = err.message;
   }
