@@ -268,7 +268,9 @@ const main = async () => {
   if (cmd === 'dashboard') {
     const { build } = await import('./dashboard.js');
     const d = await build();
-    console.log(`docs/data.json written - ${d.surfaces.length} surfaces, ${d.fixtures.length} fixtures, ${d.accuracy.n ?? 0} projections checked`);
+    console.log(d.unchanged
+      ? 'docs/data.json unchanged - nothing to publish'
+      : `docs/data.json written - ${d.surfaces.length} surfaces, ${d.fixtures.length} fixtures`);
     return;
   }
 

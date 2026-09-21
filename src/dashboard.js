@@ -133,6 +133,19 @@ export async function build() {
     recentResults: rows.slice(-8).reverse(),
   };
 
+  // generatedAt changes on every pass, so writing unconditionally guaranteed a
+  // diff every 30 minutes, a commit, and a Pages rebuild - which queued behind
+  // real changes and made them look like they had not deployed. Only write when
+  // something other than the timestamp actually moved.
+  const meaningful = (o) => JSON.stringify({ ...o, generatedAt: null, schedule: { ...o.schedule, lastRunAt: null } });
+  let unchanged = false;
+  try {
+    const prev = JSON.parse(await fs.readFile(OUT, 'utf8'));
+    unchanged = meaningful(prev) === meaningful(data);
+  } catch { /* no previous file */ }
+
+  if (unchanged) return { ...data, unchanged: true };
+
   await fs.mkdir(path.dirname(OUT), { recursive: true });
   await fs.writeFile(OUT, JSON.stringify(data, null, 2), 'utf8');
   return data;
