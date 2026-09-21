@@ -40,8 +40,21 @@ export async function build() {
     }));
 
     const usable = pool.filter((c) => !c.blocked).sort((a, b) => b.expected - a.expected);
+    const rewards = (step?.rewardConfigs ?? []).map((r) => {
+      if (r.__typename === 'CardPacksRewardConfig' && r.cardPack) {
+        return { kind: 'pack', cards: r.cardPack.cardsCount, worth: r.cardPack.effectivePrice, currency: r.cardPack.currency };
+      }
+      if (r.__typename === 'CardShardRewardConfig') return { kind: 'essence', amount: r.quantity, rarity: r.rarity };
+      return { kind: r.__typename.replace(/RewardConfig$/, '') };
+    });
+
     surfaces.push({
       surface: b.surface,
+      level: b.level ?? null,
+      totalLevels: b.total ?? null,
+      levelsDone: b.done ?? 0,
+      ladder: b.ladder ?? [],
+      rewards,
       state: step?.state ?? null,
       target: step?.target ?? null,
       current,

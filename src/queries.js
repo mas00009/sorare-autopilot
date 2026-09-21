@@ -45,7 +45,11 @@ export const Q_STEP = `
         state
         target
         collaborative
-        displayedTypedRules { __typename }
+        rewardConfigs {
+          __typename
+          ... on CardPacksRewardConfig { cardPack { slug cardsCount currency effectivePrice } }
+          ... on CardShardRewardConfig { quantity rarity }
+        }
         myLineups {
           id
           updatable
@@ -177,8 +181,12 @@ export const Q_BOARDS = `
     currentUser {
       nickname
       squad(sport: $sport) { id name }
-      career: setBoard(mode: CAREER, sport: $sport) { id title myCurrentStep { id state target level } }
-      team:   setBoard(mode: SQUAD,  sport: $sport) { id title myCurrentStep { id state target level } }
+      career: setBoard(mode: CAREER, sport: $sport) {
+        id title myCurrentStep { id state target level } steps { id level state target }
+      }
+      team: setBoard(mode: SQUAD, sport: $sport) {
+        id title myCurrentStep { id state target level } steps { id level state target }
+      }
     }
   }
 `;

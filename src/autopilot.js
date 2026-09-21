@@ -40,11 +40,21 @@ export async function resolveBoards() {
   const d = await gql(Q_BOARDS, { sport: SPORT });
   const u = d.currentUser ?? {};
   const out = [];
+  const ladder = (b) => {
+    const steps = (b?.steps ?? []).slice().sort((x, y) => (x.level ?? 0) - (y.level ?? 0));
+    const lvl = b?.myCurrentStep?.level ?? null;
+    return {
+      level: lvl,
+      total: steps.length || null,
+      done: steps.filter((s) => s.state === 'CLAIMED').length,
+      ladder: steps.map((s) => ({ level: s.level, state: s.state, target: s.target })),
+    };
+  };
   if (u.career?.myCurrentStep?.id) {
-    out.push({ surface: 'my set', board: u.career.title ?? 'Career', stepId: u.career.myCurrentStep.id });
+    out.push({ surface: 'my set', board: u.career.title ?? 'Career', stepId: u.career.myCurrentStep.id, ...ladder(u.career) });
   }
   if (u.team?.myCurrentStep?.id) {
-    out.push({ surface: `team set (${u.squad?.name ?? 'squad'})`, board: u.team.title ?? 'Squad', stepId: u.team.myCurrentStep.id });
+    out.push({ surface: `team set (${u.squad?.name ?? 'squad'})`, board: u.team.title ?? 'Squad', stepId: u.team.myCurrentStep.id, ...ladder(u.team) });
   }
   return { boards: out, squad: u.squad ?? null, nickname: u.nickname };
 }

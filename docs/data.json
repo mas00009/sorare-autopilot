@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T05:22:14.988Z",
+  "generatedAt": "2026-09-21T05:42:16.600Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-09-24T18:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1789968096980,
-    "reason": "last run 1m ago, next due in 179m (lock in 5123m)"
+    "reason": "last run 21m ago, next due in 159m (lock in 5103m)"
   },
   "packs": {
     "lastThreeStar": "Aïssa Mandi",
@@ -25,11 +25,51 @@
     "lineupsEnabled": true,
     "claimsEnabled": true,
     "note": "Edit this file on GitHub to control the bot. It is read at the start of every pass.",
-    "source": "local"
+    "source": "github"
   },
   "surfaces": [
     {
       "surface": "my set",
+      "level": 2,
+      "totalLevels": 6,
+      "levelsDone": 2,
+      "ladder": [
+        {
+          "level": 0,
+          "state": "CLAIMED",
+          "target": 260
+        },
+        {
+          "level": 1,
+          "state": "CLAIMED",
+          "target": 300
+        },
+        {
+          "level": 2,
+          "state": "LINEUP_SET",
+          "target": 360
+        },
+        {
+          "level": 3,
+          "state": "PLAYABLE",
+          "target": 400
+        },
+        {
+          "level": 4,
+          "state": "PLAYABLE",
+          "target": 440
+        },
+        {
+          "level": 5,
+          "state": "PLAYABLE",
+          "target": 480
+        }
+      ],
+      "rewards": [
+        {
+          "kind": "InGameCurrency"
+        }
+      ],
       "state": "LINEUP_SET",
       "target": 360,
       "current": [
@@ -456,6 +496,44 @@
     },
     {
       "surface": "team set (Loadshift)",
+      "level": 1,
+      "totalLevels": 5,
+      "levelsDone": 1,
+      "ladder": [
+        {
+          "level": 0,
+          "state": "CLAIMED",
+          "target": 700
+        },
+        {
+          "level": 1,
+          "state": "PRE_MATCHDAY_LOCKED",
+          "target": 980
+        },
+        {
+          "level": 2,
+          "state": "LOCKED",
+          "target": 1060
+        },
+        {
+          "level": 3,
+          "state": "LOCKED",
+          "target": 1140
+        },
+        {
+          "level": 4,
+          "state": "LOCKED",
+          "target": 1280
+        }
+      ],
+      "rewards": [
+        {
+          "kind": "pack",
+          "cards": 5,
+          "worth": 0,
+          "currency": "COMMON_ESSENCE"
+        }
+      ],
       "state": "PRE_MATCHDAY_LOCKED",
       "target": 980,
       "current": [],

@@ -114,6 +114,13 @@ section>h2{margin-bottom:11px}
 .tag{left:8px; background:#070911d9; border:1px solid var(--line2); color:var(--dim); backdrop-filter:blur(6px)}
 .capt{right:8px; background:linear-gradient(140deg,var(--v),#6d4fe0); color:#120c26}
 
+.steps{display:flex; gap:5px; margin:10px 0 0; flex-wrap:wrap}
+.steps i{width:30px; height:6px; border-radius:99px; background:#1a2030; display:block}
+.steps i.done{background:linear-gradient(90deg,var(--v2),#5eead4)}
+.steps i.now{background:var(--v); box-shadow:0 0 10px rgba(167,139,250,.7)}
+.rw{display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 0}
+.rw span{border:1px dashed var(--line2); border-radius:9px; padding:5px 11px; font-size:.79rem; color:var(--dim)}
+.rw b{color:var(--ink); font-weight:650}
 .tot{display:flex; flex-wrap:wrap; gap:8px 18px; align-items:baseline; margin:16px 0 0}
 .tot .n{font-size:2.15rem; font-weight:800; letter-spacing:-.04em; font-variant-numeric:tabular-nums}
 .bar{height:8px; background:#161b29; border-radius:99px; overflow:hidden; margin:11px 0 0; max-width:480px}
@@ -253,9 +260,20 @@ function surface(s){
         <span class="pill ${tot>=s.target?'go':'warn'}">${tot>=s.target?'clears target':Math.round(s.target-tot)+' short'}</span>`:''}</div>
       ${s.target?`<div class="bar"><i style="width:${pct}%"></i></div>`:''}`;
   }
+  const lvl = s.level!=null && s.totalLevels
+    ? `<span class="pill v">Level ${s.level} of ${s.totalLevels}</span>` : '';
+  const dots = (s.ladder??[]).map(x=>
+    `<i class="${x.state==='CLAIMED'?'done':(x.level===s.level?'now':'')}" title="Level ${x.level} · ${x.target} pts · ${x.state}"></i>`).join('');
+  const rw = (s.rewards??[]).map(r=>
+    r.kind==='pack' ? `<span>Reward: <b>a ${r.cards}-card pack</b></span>`
+    : r.kind==='essence' ? `<span>Reward: <b>${r.amount} essence</b></span>`
+    : `<span>Reward: <b>${esc(r.kind)}</b></span>`).join('');
+
   return `<section><h2>${esc(s.surface)}</h2><div class="card">
     <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>
-      <span class="pill ${st}">${esc(s.state??'unknown')}</span></div>
+      ${lvl}<span class="pill ${st}">${esc(s.state??'unknown')}</span></div>
+    ${dots?`<div class="steps">${dots}</div>`:''}
+    ${rw?`<div class="rw">${rw}</div>`:''}
     <p class="note wide" style="margin:.2em 0 0"><strong>In now:</strong> ${cur}</p>
     ${body}
     ${s.rejected.length?`<h2 style="margin:20px 0 0">Held out</h2>
