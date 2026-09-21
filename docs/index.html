@@ -96,6 +96,15 @@ nav button .dot{display:inline-block;width:6px;height:6px;border-radius:99px;bac
 .pill.vv{color:var(--v);border-color:#3a2f6b;background:#191338}
 .head{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-bottom:10px}
 .head h3{font-size:1rem}
+/* Lives on the current step. Sorare shows them as a heart per attempt, filled
+   for the ones still left, so the dashboard reads the same way as the game. */
+.lives{margin-left:auto;display:flex;gap:5px;align-items:center;padding:5px 8px;border-radius:9px;
+  background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);flex:0 0 auto}
+.lives svg{width:17px;height:17px;display:block}
+.lives .on{fill:var(--go);stroke:rgba(0,0,0,.45);stroke-width:1}
+.lives .off{fill:none;stroke:rgba(255,255,255,.28);stroke-width:1.6}
+.lives b{font:600 .72rem/1 var(--f);color:var(--dim);letter-spacing:.02em;margin-left:3px;white-space:nowrap}
+@media(max-width:560px){.lives{padding:4px 6px;gap:4px}.lives svg{width:15px;height:15px}.lives b{display:none}}
 .steps{display:flex;gap:4px}
 .steps i{width:26px;height:5px;border-radius:99px;background:#1a2030}
 .steps i.done{background:linear-gradient(90deg,var(--v2),#5eead4)}
@@ -314,6 +323,17 @@ function verdict(s,pl,tot){
     ${gap<=0?'clears the target':'short of the target'}</span>`;
 }
 
+/* Sorare's own numbers: maxLineupsCount is the total, remainingLineupsCount the
+   ones still standing. A squad step is collaborative and has no lives, so it
+   gets nothing rather than a row of invented hearts. */
+function livesBadge(l){
+  if(!l||!l.of) return '';
+  const path='M8 14.2s-5.4-3.3-6.6-6.6C.5 5.3 2 3 4.3 3c1.5 0 2.6.9 3.2 1.8h1c.6-.9 1.7-1.8 3.2-1.8C14 3 15.5 5.3 14.6 7.6 13.4 10.9 8 14.2 8 14.2Z';
+  const h=n=>`<svg viewBox="0 0 16 16" aria-hidden="true"><path class="${n?'on':'off'}" d="${path}"/></svg>`;
+  const hearts=Array.from({length:l.of},(_,i)=>h(i<l.left)).join('');
+  return `<span class="lives" title="${l.left} of ${l.of} lives left on this step">${hearts}<b>${l.left}/${l.of}</b></span>`;
+}
+
 function surfacePanel(s){
   const pl=s.plan;
   const lvl=s.level!=null&&s.totalLevels?`<span class="pill vv">Level ${s.level} of ${s.totalLevels}</span>`:'';
@@ -324,7 +344,7 @@ function surfacePanel(s){
   const st={LINEUP_SET:'go',PLAYABLE:'go',CLAIMABLE:'warn',LIVE:'vv',FAILED:'bad'}[s.state]||'';
 
   if(!s.candidates.length) return `<div class="card">
-    <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>${lvl}<span class="pill ${st}">${esc(TITLE(human(s.state,STATE)))}</span></div>
+    <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>${lvl}<span class="pill ${st}">${esc(TITLE(human(s.state,STATE)))}</span>${livesBadge(s.lives)}</div>
     ${dots?`<div class="steps">${dots}</div>`:''}${rw?`<div style="margin-top:10px">${rw}</div>`:''}
     <p class="prose" style="margin:13px 0 0">No eligible cards yet. This step opens for entry closer to its matchday, and the bot fills it then.</p></div>`;
 
@@ -332,7 +352,7 @@ function surfacePanel(s){
   const waiting=pl&&pl.clearsTarget===false;
   return `<div class="card">
     <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>${lvl}
-      <span class="pill ${st}">${esc(TITLE(human(s.state,STATE)))}</span>${rw}</div>
+      <span class="pill ${st}">${esc(TITLE(human(s.state,STATE)))}</span>${rw}${livesBadge(s.lives)}</div>
     ${dots?`<div class="steps">${dots}</div>`:''}
     <div class="xi" style="margin-top:12px">${five.map((c,i)=>`
       <div class="p${i?'':' cap'}">

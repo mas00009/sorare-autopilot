@@ -52,8 +52,14 @@ export async function resolveBoards() {
       ladder: steps.map((s) => ({ level: s.level, state: s.state, target: s.target })),
     };
   };
+  const lives = (step) => {
+    const t = step?.myTask;
+    if (!t || t.maxLineupsCount == null) return null;      // squad steps have none
+    return { left: t.remainingLineupsCount ?? 0, of: t.maxLineupsCount };
+  };
   if (u.career?.myCurrentStep?.id) {
-    out.push({ surface: 'my set', board: u.career.title ?? 'Career', stepId: u.career.myCurrentStep.id, ...ladder(u.career) });
+    out.push({ surface: 'my set', board: u.career.title ?? 'Career', stepId: u.career.myCurrentStep.id,
+               lives: lives(u.career.myCurrentStep), ...ladder(u.career) });
   }
   if (u.team?.myCurrentStep?.id) {
     out.push({ surface: `team set (${u.squad?.name ?? 'squad'})`, board: u.team.title ?? 'Squad', stepId: u.team.myCurrentStep.id, ...ladder(u.team) });

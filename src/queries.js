@@ -192,7 +192,17 @@ export const Q_BOARDS = `
       nickname
       squad(sport: $sport) { id name }
       career: setBoard(mode: CAREER, sport: $sport) {
-        id title myCurrentStep { id state target level } steps { id level state target }
+        id title
+        myCurrentStep {
+          id state target level
+          # The hearts. The step's own task is a ThresholdPickerTask, and that is
+          # the only place the lives live - nothing on the board or step carries
+          # them. A squad step is collaborative and has none.
+          ... on CareerStep {
+            myTask { ... on ThresholdPickerTask { maxLineupsCount remainingLineupsCount } }
+          }
+        }
+        steps { id level state target }
       }
       team: setBoard(mode: SQUAD, sport: $sport) {
         id title myCurrentStep { id state target level } steps { id level state target }

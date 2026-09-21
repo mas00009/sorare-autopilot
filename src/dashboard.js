@@ -62,6 +62,7 @@ export async function build() {
     surfaces.push({
       surface: b.surface,
       level: b.level ?? null,
+      lives: b.lives ?? null,
       totalLevels: b.total ?? null,
       levelsDone: b.done ?? 0,
       ladder: b.ladder ?? [],
