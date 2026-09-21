@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T05:50:24.667Z",
+  "generatedAt": "2026-09-21T05:55:30.320Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-09-24T18:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1789969714930,
-    "reason": "last run 2m ago, next due in 178m (lock in 5095m)"
+    "reason": "last run 7m ago, next due in 173m (lock in 5089m)"
   },
   "packs": {
     "lastThreeStar": "Aïssa Mandi",
