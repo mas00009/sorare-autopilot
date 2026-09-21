@@ -374,7 +374,7 @@ function surfacePanel(s){
           <div class="xp">${c.expected}${isCap(c)&&capPts?`<em>+${capPts.toFixed(0)} C</em>`:''}</div></div></div>`).join('')}</div>
     <div class="tot">
       <span class="score"><span class="n"><b>${tot.toFixed(0)}</b>${s.target?`<i>&thinsp;/&thinsp;${s.target}</i>`:''}</span>
-        <s>${s.target?'projected of target':'projected'}${capPts?`, armband included`:''}</s></span>
+        <s>${s.target?'projected of target':'projected'}</s></span>
       ${s.target?verdict(s,pl,tot):''}</div>
     ${s.target?`<div class="barp"><i style="width:${pct}%"></i></div>`:''}
 
