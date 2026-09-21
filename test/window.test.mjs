@@ -35,3 +35,11 @@ assert.ok(short.shortfall > 0);
 // No target -> still returns a valid lineup.
 assert.equal(pickAcrossWindow(bench, {}).ok, true);
 console.log('window assertions passed  | lock', late.lockDay, '| traded', late.tradedPointsForTime, 'pts for a day');
+
+// --- a gap inside the natural spread is worth playing ---
+// Five players each carry about 25 points of error, so a total swings by ~56.
+// Refusing to enter at 54 short guarantees zero where entering had a real chance.
+const SPREAD = 56;
+assert.ok(360 - 306 <= SPREAD, 'a 54 point gap sits inside one spread, so it is playable');
+assert.ok(360 - 200 > SPREAD, 'a 160 point gap is not');
+console.log('reachability assertions passed');

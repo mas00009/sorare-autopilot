@@ -282,14 +282,22 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
   // best available five fall short, wait: later fixtures bring different players
   // into the eligible pool, and the step is only worth spending on a team that
   // can actually clear it.
+  // Waiting only helps if later fixtures can actually close the gap. When the
+  // best possible five fall short by less than the natural spread of five
+  // players' scores, entering still has a real chance and not entering has
+  // none - a step that expires unplayed scores zero just as surely as a failed
+  // one, and costs the same nothing.
   const target = step?.target ?? null;
-  if (target && picked.clearsTarget === false) {
+  const SPREAD = 56;          // measured: 25 points per player across five
+  const withinReach = target && (target - picked.projected) <= SPREAD;
+
+  if (target && picked.clearsTarget === false && !withinReach) {
     return {
       stepId, surface, target, dead,
       action: 'waiting-for-target',
       reason: `Best across the whole window projects ${picked.projected} against a target of ` +
-              `${target}, short by ${picked.shortfall}. Entering it would only lose a heart, ` +
-              'so holding until later fixtures bring enough scoring into the pool.',
+              `${target}, short by ${picked.shortfall} - beyond what a good week could close. ` +
+              'Holding until later fixtures bring enough scoring into the pool.',
       lineup: picked.chosen, projected: picked.projected,
       shortfall: Number((target - picked.projected).toFixed(1)),
       current: (existing?.taskAppearances ?? []).map((x) => x.anyPlayer?.displayName).filter(Boolean),
@@ -318,6 +326,8 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
     stepId, surface, target: step?.target,
     dead,
     action: dryRun ? 'would-submit' : 'submitted',
+    longShot: target ? picked.projected < target : false,
+    shortfall: target ? Number((target - picked.projected).toFixed(1)) : null,
     lock: picked.lock ?? null,
     tradedPointsForTime: picked.tradedPointsForTime ?? 0,
     delta, lineup: picked.chosen, captain: picked.captain,
