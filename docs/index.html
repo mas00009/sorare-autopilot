@@ -66,7 +66,11 @@ a{color:inherit;text-decoration:none}
 .sq{width:11px;height:11px;background:currentColor;border-radius:3px}
 .tri{border-left:11px solid currentColor;border-top:7px solid transparent;border-bottom:7px solid transparent}
 /* ---- tabs ---- */
-nav{display:flex;gap:7px;overflow-x:auto;margin:14px 0 12px;scrollbar-width:none}
+nav{display:flex;align-items:center;gap:7px;margin:14px 0 12px;scrollbar-width:none;flex-wrap:wrap}
+nav .tabs{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;min-width:0}
+nav .tabs::-webkit-scrollbar{display:none}
+nav .nums{margin-left:auto;display:flex;align-items:center;gap:20px;padding-right:4px}
+nav .nums .stack b{font-size:1.02rem}
 nav::-webkit-scrollbar{display:none}
 nav button{background:var(--card);border:1px solid var(--line);color:var(--dim);border-radius:99px;
  padding:8px 15px;font:inherit;font-size:.85rem;font-weight:620;white-space:nowrap;cursor:pointer}
@@ -160,6 +164,8 @@ code{background:#171c2b;border:1px solid var(--line2);border-radius:5px;padding:
  .brand+.zone::before{display:none}
  .bar h1{font-size:1rem}
  .spacer{display:none}
+ nav .nums{margin-left:0;width:100%;justify-content:space-between;gap:10px;padding:2px 2px 0}
+ nav .tabs{width:100%}
  .act{width:100%;padding:0 8px 10px}
  .pair{align-items:stretch;width:100%}
  .pair .row{width:100%}
@@ -236,14 +242,6 @@ function topbar(d){
   return `<div class="zone brand">${mark}
       <span><h1>Sorare Autopilot</h1><span class="acct">${esc(d.account)} · ${esc(d.squad)}</span></span></div>
     <span class="spacer"></span>
-
-    <div class="zone"><span class="stack"><b class="cd">${cdown(d.schedule.nextLock)}</b><s>to lock</s></span></div>
-
-    <div class="zone">
-      <img class="coin" src="img/essence.png" alt="" onerror="this.remove()">
-      <span class="stack"><b>${d.balances.essence??'—'}</b><s>essence</s></span>
-      <img class="coin" src="img/gem.png" alt="" onerror="this.remove()" style="margin-left:9px">
-      <span class="stack"><b>${d.balances.gems??'—'}</b><s>gems</s></span></div>
 
     ${fail>=3?`<div class="zone"><span class="pill bad">failing ×${fail}</span></div>`:''}
     <div class="zone act"><span class="pair">
@@ -410,8 +408,14 @@ function render(d){
     {label:'Controls',fn:()=>controlsPanel(d)}];
   if(TAB>=tabs.length)TAB=0;
 
-  document.getElementById('tabs').innerHTML=tabs.map((t,i)=>
-    `<button role="tab" aria-selected="${i===TAB}" data-i="${i}">${esc(t.label)}${t.warn?'<span class="dot"></span>':''}</button>`).join('');
+  const nums=`<span class="nums">
+    <span class="stack"><b class="cd">${cdown(d.schedule.nextLock)}</b><s>to lock</s></span>
+    <span class="v"><img class="coin" src="img/essence.png" alt="" onerror="this.remove()">
+      <span class="stack"><b>${d.balances.essence??'—'}</b><s>essence</s></span></span>
+    <span class="v"><img class="coin" src="img/gem.png" alt="" onerror="this.remove()">
+      <span class="stack"><b>${d.balances.gems??'—'}</b><s>gems</s></span></span></span>`;
+  document.getElementById('tabs').innerHTML='<span class="tabs">'+tabs.map((t,i)=>
+    `<button role="tab" aria-selected="${i===TAB}" data-i="${i}">${esc(t.label)}${t.warn?'<span class="dot"></span>':''}</button>`).join('')+'</span>'+nums;
   document.getElementById('tabs').onclick=e=>{const b=e.target.closest('button');if(!b)return;TAB=+b.dataset.i;render(D)};
 
   const p=document.getElementById('panel');
