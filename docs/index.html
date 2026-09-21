@@ -26,6 +26,8 @@ a{color:inherit;text-decoration:none}
 .zone+.zone::before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:1px;
  background:linear-gradient(180deg,transparent,var(--line2) 22%,var(--line2) 78%,transparent)}
 .brand{gap:12px;padding-left:12px}
+.xp em{font-style:normal;font-size:.72rem;font-weight:700;color:var(--go);margin-left:5px;
+ letter-spacing:.02em;white-space:nowrap}
 .wordmark{height:46px;width:auto;display:block;flex:none;
  filter:drop-shadow(0 4px 12px rgba(124,92,240,.3))}
 /* The fallback lockup, only rendered if the image fails to load. */
@@ -311,9 +313,12 @@ function topbar(d){
 
 /** One pill: the gap, and what the bot is doing about it. */
 function verdict(s,pl,tot){
+  if(pl&&pl.clearsTarget===false&&pl.withinReach===false)
+    return `<span class="verdict"><b>&minus;${Math.round(pl.shortfall)}</b>
+      Too far short to be worth a heart, so nothing goes in yet.</span>`;
   if(pl&&pl.clearsTarget===false)
     return `<span class="verdict"><b>&minus;${Math.round(pl.shortfall)}</b>
-      Entering would lose a heart, so nothing goes in yet.</span>`;
+      Short on paper, but inside a good week. Going in.</span>`;
   if(pl&&pl.clearsTarget&&pl.lock)
     return `<span class="verdict good"><b>+${Math.round(pl.projected-s.target)}</b>
       Locks ${when(pl.lock)}${pl.tradedPointsForTime>0?`, ${pl.tradedPointsForTime} points given up to lock later`:''}.</span>`;
@@ -347,23 +352,29 @@ function surfacePanel(s){
     ${dots?`<div class="steps">${dots}</div>`:''}${rw?`<div style="margin-top:10px">${rw}</div>`:''}
     <p class="prose" style="margin:13px 0 0">No eligible cards yet. This step opens for entry closer to its matchday, and the bot fills it then.</p></div>`;
 
-  const five=s.candidates.slice(0,5),tot=five.reduce((t,c)=>t+c.expected,0),pct=s.target?Math.min(100,tot/s.target*100):0;
+  const five=s.candidates.slice(0,5);
+  // The armband is not always on the biggest scorer: it pays on the raw score,
+  // so a high-bonus card can top the projection and still be the weaker captain.
+  const capSlug=pl?.captain??null, isCap=c=>capSlug?c.slug===capSlug:false;
+  const capPts=pl?.captainPoints??0;
+  const tot=five.reduce((t,c)=>t+c.expected,0)+capPts;
+  const pct=s.target?Math.min(100,tot/s.target*100):0;
   const waiting=pl&&pl.clearsTarget===false;
   return `<div class="card">
     <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>${lvl}
       <span class="pill ${st}">${esc(TITLE(human(s.state,STATE)))}</span>${rw}${livesBadge(s.lives)}</div>
     ${dots?`<div class="steps">${dots}</div>`:''}
     <div class="xi" style="margin-top:12px">${five.map((c,i)=>`
-      <div class="p${i?'':' cap'}">
+      <div class="p${isCap(c)?' cap':''}">
         ${c.picture?`<img src="${esc(c.picture)}" alt="${esc(c.player)}" loading="lazy">`:`<div style="aspect-ratio:5/7"></div>`}
-        <span class="tag">${esc(c.position)}</span>${i?'':'<span class="capt">C</span>'}
+        <span class="tag">${esc(c.position)}</span>${isCap(c)?'<span class="capt" title="Captain">C</span>':''}
         <div class="b"><div class="nm">${esc(c.player)}</div>
           <div class="fx">${c.opponent?`${c.home?'vs':'@'} ${esc(c.opponent)}`:'no fixture'}</div>
           <div class="fx">L15 ${c.average??'—'} · L5 ${c.formL5??'—'}</div>
-          <div class="xp">${c.expected}</div></div></div>`).join('')}</div>
+          <div class="xp">${c.expected}${isCap(c)&&capPts?`<em>+${capPts.toFixed(0)} C</em>`:''}</div></div></div>`).join('')}</div>
     <div class="tot">
       <span class="score"><span class="n"><b>${tot.toFixed(0)}</b>${s.target?`<i>&thinsp;/&thinsp;${s.target}</i>`:''}</span>
-        <s>${s.target?'projected of target':'projected'}</s></span>
+        <s>${s.target?'projected of target':'projected'}${capPts?`, armband included`:''}</s></span>
       ${s.target?verdict(s,pl,tot):''}</div>
     ${s.target?`<div class="barp"><i style="width:${pct}%"></i></div>`:''}
 

@@ -45,6 +45,9 @@ export const Q_STEP = `
         state
         target
         collaborative
+        # What the armband is worth on this step, from Sorare rather than a
+        # constant of ours. It has read 0.5 on both boards so far.
+        engineConfiguration { captain }
         rewardConfigs {
           __typename
           ... on CardPacksRewardConfig { cardPack { slug cardsCount currency effectivePrice } }

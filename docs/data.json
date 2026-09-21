@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T08:16:01.359Z",
+  "generatedAt": "2026-09-21T08:17:31.130Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-24T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1789978557586,
-    "reason": "last run 0m ago, next due in 180m (lock in 4949m)"
+    "lastRunAt": 1789978603966,
+    "reason": "last run 1m ago, next due in 179m (lock in 4947m)"
   },
   "packs": {
     "lastThreeStar": "Álex Baena",
@@ -110,10 +110,13 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 311.87,
+        "projected": 343.87,
         "lock": "2026-09-24T18:45:00Z",
-        "shortfall": 48.1,
+        "shortfall": 16.1,
         "tradedPointsForTime": 0,
+        "captain": "maxim-de-cuyper",
+        "captainPoints": 32,
+        "withinReach": true,
         "five": [
           {
             "id": "ComposeTeamBenchCard:6b2cf56f-d089-4080-af44-0c21f1ac7393",

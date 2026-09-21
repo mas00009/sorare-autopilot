@@ -9,7 +9,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readState } from './client.js';
-import { resolveBoards, fetchStep, fetchBench, readBalances } from './autopilot.js';
+import { resolveBoards, fetchStep, fetchBench, readBalances, SPREAD } from './autopilot.js';
 import { describe } from './optimiser.js';
 import { readEssence } from './essence.js';
 import { decide } from './schedule.js';
@@ -43,10 +43,17 @@ export async function build() {
     try {
       const { pickAcrossWindow } = await import('./optimiser.js');
       const raw = await fetchBench(b.stepId, { first: 50 });
-      const p = pickAcrossWindow(raw, { target: step?.target ?? null });
+      const p = pickAcrossWindow(raw, {
+        target: step?.target ?? null,
+        ...(step?.engineConfiguration?.captain != null ? { captainBonus: step.engineConfiguration.captain } : {}),
+      });
       if (p.ok) plan = {
         clearsTarget: p.clearsTarget, projected: p.projected, lock: p.lock ?? null,
         shortfall: p.shortfall ?? null, tradedPointsForTime: p.tradedPointsForTime ?? 0,
+        captain: p.captain?.slug ?? null, captainPoints: p.captainPoints ?? null,
+        // The same rule the bot acts on, so the page cannot say "nothing goes
+        // in yet" about a lineup the next pass will submit.
+        withinReach: step?.target ? (step.target - p.projected) <= SPREAD : true,
         five: p.chosen.slice(0, 5),
       };
     } catch {}

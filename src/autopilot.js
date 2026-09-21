@@ -38,6 +38,13 @@ export async function dailyCycleId() {
   return d.currentUser?.dailyRunTask?.id ?? null;
 }
 
+/**
+ * How far a five-card lineup can beat its own projection on a good week.
+ * Measured at 25 points a player across five. A gap inside this is worth
+ * entering; a gap beyond it only burns a heart.
+ */
+export const SPREAD = 56;
+
 export async function resolveBoards() {
   const d = await gql(Q_BOARDS, { sport: SPORT });
   const u = d.currentUser ?? {};
@@ -214,7 +221,12 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
   const bench = await fetchBench(stepId);
   if (!bench.length) return { skipped: true, reason: 'Bench came back empty.', stepId, surface };
 
-  const picked = pickAcrossWindow(bench, { ...options, target: step?.target ?? null });
+  const picked = pickAcrossWindow(bench, {
+    ...options,
+    target: step?.target ?? null,
+    // Sorare's own number for this step, when it gives one.
+    ...(step?.engineConfiguration?.captain != null ? { captainBonus: step.engineConfiguration.captain } : {}),
+  });
   if (!picked.ok) return { skipped: true, reason: picked.reason, stepId, surface, pool: picked.pool };
 
   const existing = step?.myLineups?.[0] ?? null;
@@ -295,7 +307,6 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
   // none - a step that expires unplayed scores zero just as surely as a failed
   // one, and costs the same nothing.
   const target = step?.target ?? null;
-  const SPREAD = 56;          // measured: 25 points per player across five
   const withinReach = target && (target - picked.projected) <= SPREAD;
 
   if (target && picked.clearsTarget === false && !withinReach) {
@@ -337,7 +348,7 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
     shortfall: target ? Number((target - picked.projected).toFixed(1)) : null,
     lock: picked.lock ?? null,
     tradedPointsForTime: picked.tradedPointsForTime ?? 0,
-    delta, lineup: picked.chosen, captain: picked.captain,
+    delta, lineup: picked.chosen, captain: picked.captain, captainPoints: picked.captainPoints ?? null,
     projected: picked.projected, excluded: picked.excluded, raw: result,
   };
 }

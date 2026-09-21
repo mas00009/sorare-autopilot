@@ -33,6 +33,13 @@ export const DEFAULTS = {
   /** Slot requirements. Total must equal `size`. */
   size: 5,
   require: { GK: 1, DF: 1, MD: 1, FW: 1 },
+  /**
+   * What the armband adds to the captain's own bonus multiplier, so it pays on
+   * the raw score rather than the already-bonused one. 0.5 is Sorare's own
+   * engineConfiguration.captain on both boards, and four finished lineups agree:
+   * a 1.03 card captained scored on 1.53, a 1.02 on 1.52.
+   */
+  captainBonus: 0.5,
 };
 
 const POS = { Goalkeeper: 'GK', Defender: 'DF', Midfielder: 'MD', Forward: 'FW' };
@@ -227,15 +234,23 @@ export function pickLineup(benchNodes, options = {}) {
   }
 
   chosen.sort((a, b) => b.expected - a.expected);
-  // Keepers score steadily but rarely produce the big hauls a captain multiplier
-  // is worth spending on, so captain an outfielder unless there is nobody else.
-  const captain = chosen.find((c) => c.position !== 'GK') ?? chosen[0];
-  const projected = chosen.reduce((s, c) => s + c.expected, 0);
+  // The armband pays a share of the RAW score, so what it is worth is
+  // expected/bonus, not expected. A high-bonus card can out-rank a bigger
+  // scorer on expected points and still be the weaker captain.
+  const uplift = (c) => (c.expected / bonusMultiplier(c.bonus)) * opts.captainBonus;
+  // Keepers score steadily but rarely produce the big hauls the armband is
+  // worth spending on, so captain an outfielder unless there is nobody else.
+  const eligible = chosen.filter((c) => c.position !== 'GK');
+  const captain = (eligible.length ? eligible : chosen)
+    .reduce((a, b) => (uplift(b) > uplift(a) ? b : a));
+  const captainPoints = Number(uplift(captain).toFixed(2));
+  const projected = chosen.reduce((s, c) => s + c.expected, 0) + captainPoints;
 
   return {
     ok: true,
     chosen,
     captain,
+    captainPoints,
     projected: Number(projected.toFixed(2)),
     excluded: all.filter((c) => c.blocked),
     pool: all,
