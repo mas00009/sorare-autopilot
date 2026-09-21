@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T06:13:21.662Z",
+  "generatedAt": "2026-09-21T06:14:53.543Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-09-24T18:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1789970890249,
-    "reason": "last run 5m ago, next due in 175m (lock in 5072m)"
+    "reason": "last run 7m ago, next due in 173m (lock in 5070m)"
   },
   "packs": {
     "lastThreeStar": "Aïssa Mandi",
@@ -106,35 +106,11 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 302.58,
+        "projected": 305.14,
         "lock": "2026-09-24T18:45:00Z",
-        "shortfall": 57.4,
+        "shortfall": 54.9,
         "tradedPointsForTime": 0,
         "five": [
-          {
-            "id": "ComposeTeamBenchCard:fb967f31-5da5-4a16-bcb4-4d4b6b32cafd",
-            "player": "Rúben Dias",
-            "slug": "ruben-santos-gato-alves-dias",
-            "position": "DF",
-            "average": 60,
-            "bonus": 1.01,
-            "starterPct": null,
-            "oddsKnown": false,
-            "onGameSheet": false,
-            "reliability": null,
-            "formL5": 62,
-            "picture": "https://assets.sorare.com/cardsamplepicture/51ec3fca-50ff-4975-a5a2-1a83b5c833f0/picture/tinified-7a37453263600d888145da54b161fb7d.png",
-            "rarity": "common",
-            "gameId": "Game:45281309-2115-4d3b-a3b5-da38524a79a7",
-            "kickoff": "2026-09-24T18:45:00Z",
-            "team": "Portugal",
-            "opponent": "Wales",
-            "home": true,
-            "competition": "UEFA Nations League",
-            "lockedAt": null,
-            "expected": 63.25,
-            "blocked": null
-          },
           {
             "id": "ComposeTeamBenchCard:6b2cf56f-d089-4080-af44-0c21f1ac7393",
             "player": "Maxim De Cuyper",
@@ -156,7 +132,31 @@
             "home": false,
             "competition": "UEFA Nations League",
             "lockedAt": null,
-            "expected": 63.24,
+            "expected": 65.28,
+            "blocked": null
+          },
+          {
+            "id": "ComposeTeamBenchCard:fb967f31-5da5-4a16-bcb4-4d4b6b32cafd",
+            "player": "Rúben Dias",
+            "slug": "ruben-santos-gato-alves-dias",
+            "position": "DF",
+            "average": 60,
+            "bonus": 1.01,
+            "starterPct": null,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 62,
+            "picture": "https://assets.sorare.com/cardsamplepicture/51ec3fca-50ff-4975-a5a2-1a83b5c833f0/picture/tinified-7a37453263600d888145da54b161fb7d.png",
+            "rarity": "common",
+            "gameId": "Game:45281309-2115-4d3b-a3b5-da38524a79a7",
+            "kickoff": "2026-09-24T18:45:00Z",
+            "team": "Portugal",
+            "opponent": "Wales",
+            "home": true,
+            "competition": "UEFA Nations League",
+            "lockedAt": null,
+            "expected": 61.61,
             "blocked": null
           },
           {
@@ -180,7 +180,7 @@
             "home": false,
             "competition": "UEFA Nations League",
             "lockedAt": null,
-            "expected": 60.93,
+            "expected": 61.28,
             "blocked": null
           },
           {
@@ -204,7 +204,7 @@
             "home": false,
             "competition": "UEFA Nations League",
             "lockedAt": null,
-            "expected": 58.92,
+            "expected": 59.74,
             "blocked": null
           },
           {
@@ -228,36 +228,12 @@
             "home": false,
             "competition": "UEFA Nations League",
             "lockedAt": null,
-            "expected": 56.24,
+            "expected": 57.23,
             "blocked": null
           }
         ]
       },
       "candidates": [
-        {
-          "id": "ComposeTeamBenchCard:fb967f31-5da5-4a16-bcb4-4d4b6b32cafd",
-          "player": "Rúben Dias",
-          "slug": "ruben-santos-gato-alves-dias",
-          "position": "DF",
-          "average": 60,
-          "bonus": 1.01,
-          "starterPct": null,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 62,
-          "picture": "https://assets.sorare.com/cardsamplepicture/51ec3fca-50ff-4975-a5a2-1a83b5c833f0/picture/tinified-7a37453263600d888145da54b161fb7d.png",
-          "rarity": "common",
-          "gameId": "Game:45281309-2115-4d3b-a3b5-da38524a79a7",
-          "kickoff": "2026-09-24T18:45:00Z",
-          "team": "Portugal",
-          "opponent": "Wales",
-          "home": true,
-          "competition": "UEFA Nations League",
-          "lockedAt": null,
-          "expected": 63.25,
-          "blocked": null
-        },
         {
           "id": "ComposeTeamBenchCard:6b2cf56f-d089-4080-af44-0c21f1ac7393",
           "player": "Maxim De Cuyper",
@@ -279,7 +255,31 @@
           "home": false,
           "competition": "UEFA Nations League",
           "lockedAt": null,
-          "expected": 63.24,
+          "expected": 65.28,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:fb967f31-5da5-4a16-bcb4-4d4b6b32cafd",
+          "player": "Rúben Dias",
+          "slug": "ruben-santos-gato-alves-dias",
+          "position": "DF",
+          "average": 60,
+          "bonus": 1.01,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 62,
+          "picture": "https://assets.sorare.com/cardsamplepicture/51ec3fca-50ff-4975-a5a2-1a83b5c833f0/picture/tinified-7a37453263600d888145da54b161fb7d.png",
+          "rarity": "common",
+          "gameId": "Game:45281309-2115-4d3b-a3b5-da38524a79a7",
+          "kickoff": "2026-09-24T18:45:00Z",
+          "team": "Portugal",
+          "opponent": "Wales",
+          "home": true,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 61.61,
           "blocked": null
         },
         {
@@ -303,7 +303,7 @@
           "home": false,
           "competition": "UEFA Nations League",
           "lockedAt": null,
-          "expected": 60.93,
+          "expected": 61.28,
           "blocked": null
         },
         {
@@ -327,7 +327,7 @@
           "home": false,
           "competition": "UEFA Nations League",
           "lockedAt": null,
-          "expected": 58.92,
+          "expected": 59.74,
           "blocked": null
         },
         {
@@ -351,7 +351,7 @@
           "home": false,
           "competition": "UEFA Nations League",
           "lockedAt": null,
-          "expected": 56.24,
+          "expected": 57.23,
           "blocked": null
         }
       ],
@@ -377,7 +377,7 @@
           "home": true,
           "competition": "UEFA Nations League",
           "lockedAt": null,
-          "expected": 85.3,
+          "expected": 82.82,
           "blocked": "no minutes in last 5 games"
         },
         {
@@ -453,7 +453,7 @@
           "blocked": "no minutes in last 5 games"
         }
       ],
-      "projected": 304.8
+      "projected": 306.2
     },
     {
       "surface": "team set (Loadshift)",
@@ -554,6 +554,28 @@
   "accuracy": {
     "n": 0
   },
-  "backtest": null,
+  "backtest": {
+    "at": "2026-09-21T06:14:26.144Z",
+    "players": 48,
+    "samples": 480,
+    "current": {
+      "formWeight": 0.4,
+      "homeAdvantage": 1.03,
+      "rmse": 25.051778314891965,
+      "mae": 20.07820332451508,
+      "bias": -1.4386207600656287,
+      "n": 480
+    },
+    "best": {
+      "formWeight": 0.5,
+      "homeAdvantage": 1,
+      "rmse": 24.971691278623094,
+      "mae": 19.915167838931936,
+      "bias": -0.780141828715267,
+      "n": 480
+    },
+    "improvementRmse": 0.08,
+    "note": "Walk-forward: each prediction uses only games before it. No lookahead."
+  },
   "recentResults": []
 }

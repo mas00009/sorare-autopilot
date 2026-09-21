@@ -19,9 +19,11 @@ import { resolveBoards, fetchBench } from './autopilot.js';
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const OUT = path.join(ROOT, 'state', 'backtest.json');
 
+// Note: the root field is `players(slugs:)`. There is no singular `player`.
+// Batching also cuts the request count by an order of magnitude.
 const Q = `
-  query Hist($slug: String!) {
-    player(slug: $slug) {
+  query Hist($slugs: [String!]) {
+    players(slugs: $slugs) {
       slug
       displayName
       anyGameStats(last: 25) {
@@ -88,13 +90,14 @@ export async function run({ maxPlayers = 60, log = console.log } = {}) {
   log(`collecting history for ${list.length} players`);
 
   const samples = [];
-  let done = 0;
-  for (const slug of list) {
+  const BATCH = 10;
+  for (let i = 0; i < list.length; i += BATCH) {
+    const slugs = list.slice(i, i + BATCH);
     try {
-      const d = await gql(Q, { slug });
-      samples.push(...samplesFor(d.player?.anyGameStats));
-    } catch { /* skip players whose history will not load */ }
-    if (++done % 10 === 0) log(`  ${done}/${list.length}`);
+      const d = await gql(Q, { slugs });
+      for (const pl of d.players ?? []) samples.push(...samplesFor(pl?.anyGameStats));
+    } catch (err) { log(`  batch failed: ${err.message.slice(0, 80)}`); }
+    log(`  ${Math.min(i + BATCH, list.length)}/${list.length} players, ${samples.length} samples`);
   }
   log(`${samples.length} walk-forward samples`);
   if (samples.length < 50) return { ok: false, reason: 'not enough history', samples: samples.length };

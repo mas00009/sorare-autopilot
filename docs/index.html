@@ -207,7 +207,9 @@ function accuracyPanel(d){
       <div><s>Current RMSE</s><b>${b.current.rmse.toFixed(1)}</b><span class="muted">form ${b.current.formWeight}, home ${b.current.homeAdvantage}</span></div>
       <div><s>Best RMSE</s><b>${b.best.rmse.toFixed(1)}</b><span class="muted">form ${b.best.formWeight}, home ${b.best.homeAdvantage}</span></div>
       <div><s>Gain</s><b>${b.improvementRmse}</b><span class="muted">points of error removed</span></div></div>
-    <p class="prose" style="margin:12px 0 0">Walk-forward: every prediction uses only games played before it, so nothing leaks backwards.</p>`;
+    <p class="prose" style="margin:12px 0 0">Walk-forward: every prediction uses only games played before it, so nothing leaks backwards.
+      An RMSE near ${b.current.rmse.toFixed(0)} against typical scores of 40 to 70 means a single-player projection
+      is a rough guide, not a forecast. Totals across five players are steadier than any one of them.</p>`;
   return h+'</div>';
 }
 

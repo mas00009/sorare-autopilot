@@ -15,10 +15,19 @@ export const DEFAULTS = {
   minStarterBp: 6000,
   /** A substitute appearance is worth roughly this fraction of a start. */
   substituteWeight: 0.35,
-  /** How much recent form (L5) outweighs the longer L15 record. */
-  formWeight: 0.4,
-  /** Playing at home is worth a few percent. */
-  homeAdvantage: 1.03,
+  /**
+   * Fitted on 480 walk-forward samples (see `npm run backtest`), not guessed.
+   * Recent form and the longer record turned out to deserve equal weight.
+   */
+  formWeight: 0.5,
+  /**
+   * 1.0 - no home advantage.
+   *
+   * The 1.03 here before was invented. Fitting against real history put the
+   * optimum at exactly 1.00, so for these players in these competitions a home
+   * fixture predicts nothing extra. Raising it again needs evidence, not a hunch.
+   */
+  homeAdvantage: 1.0,
   /** Most cards allowed from any single real-world match, to limit correlation. */
   maxPerGame: 2,
   /** Slot requirements. Total must equal `size`. */
