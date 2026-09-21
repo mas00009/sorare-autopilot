@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-21T07:07:57.117Z",
+  "generatedAt": "2026-09-21T07:12:35.027Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 4500,
+    "essence": 3500,
     "gems": 186
   },
   "schedule": {
     "nextLock": "2026-09-24T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1789974435343,
-    "reason": "last run 1m ago, next due in 179m (lock in 5017m)"
+    "lastRunAt": 1789974750066,
+    "reason": "last run 0m ago, next due in 180m (lock in 5012m)"
   },
   "packs": {
-    "lastThreeStar": "Aïssa Mandi",
+    "lastThreeStar": "Álex Baena",
     "cycleDone": true
   },
   "health": {
@@ -106,9 +106,9 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 305.14,
+        "projected": 311.87,
         "lock": "2026-09-24T18:45:00Z",
-        "shortfall": 54.9,
+        "shortfall": 48.1,
         "tradedPointsForTime": 0,
         "five": [
           {
@@ -137,6 +137,34 @@
             "competition": "UEFA Nations League",
             "lockedAt": null,
             "expected": 65.28,
+            "blocked": null
+          },
+          {
+            "id": "ComposeTeamBenchCard:e5e10cc7-0a01-401b-a2db-9a58b9f966f3",
+            "player": "Álex Baena",
+            "slug": "alejandro-baena-rodriguez",
+            "position": "FW",
+            "average": 58,
+            "bonus": 1.04,
+            "starterPct": null,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 65,
+            "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
+            "rarity": "common",
+            "gameId": "Game:4abe5f40-7307-4943-b382-3031309bf8a3",
+            "kickoff": "2026-09-26T18:45:00Z",
+            "team": "Spain",
+            "opponent": "England",
+            "opponentCode": "ENG",
+            "code": "ESP",
+            "rank": null,
+            "opponentRank": null,
+            "home": false,
+            "competition": "UEFA Nations League",
+            "lockedAt": null,
+            "expected": 63.96,
             "blocked": null
           },
           {
@@ -222,34 +250,6 @@
             "lockedAt": null,
             "expected": 59.74,
             "blocked": null
-          },
-          {
-            "id": "ComposeTeamBenchCard:01f226c3-48cb-4dc3-bbd6-6d89f6ed5b25",
-            "player": "Troy Parrott",
-            "slug": "troy-parrott",
-            "position": "FW",
-            "average": 48,
-            "bonus": 1.09,
-            "starterPct": null,
-            "oddsKnown": false,
-            "onGameSheet": false,
-            "reliability": null,
-            "formL5": 57,
-            "picture": "https://assets.sorare.com/cardsamplepicture/609d4f31-73e1-4025-ba51-d7d346ba5382/picture/tinified-cd8adea083e0d17ba4a930f3cc3c4d02.png",
-            "rarity": "common",
-            "gameId": "Game:bbfa930f-9bdf-442a-98a7-fb5bde3f2c80",
-            "kickoff": "2026-09-24T18:45:00Z",
-            "team": "Ireland",
-            "opponent": "Kosovo",
-            "opponentCode": "RKS",
-            "code": "IRL",
-            "rank": null,
-            "opponentRank": null,
-            "home": false,
-            "competition": "UEFA Nations League",
-            "lockedAt": null,
-            "expected": 57.23,
-            "blocked": null
           }
         ]
       },
@@ -280,6 +280,34 @@
           "competition": "UEFA Nations League",
           "lockedAt": null,
           "expected": 65.28,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:e5e10cc7-0a01-401b-a2db-9a58b9f966f3",
+          "player": "Álex Baena",
+          "slug": "alejandro-baena-rodriguez",
+          "position": "FW",
+          "average": 58,
+          "bonus": 1.04,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 65,
+          "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
+          "rarity": "common",
+          "gameId": "Game:4abe5f40-7307-4943-b382-3031309bf8a3",
+          "kickoff": "2026-09-26T18:45:00Z",
+          "team": "Spain",
+          "opponent": "England",
+          "opponentCode": "ENG",
+          "code": "ESP",
+          "rank": null,
+          "opponentRank": null,
+          "home": false,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 63.96,
           "blocked": null
         },
         {
@@ -365,37 +393,9 @@
           "lockedAt": null,
           "expected": 59.74,
           "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:01f226c3-48cb-4dc3-bbd6-6d89f6ed5b25",
-          "player": "Troy Parrott",
-          "slug": "troy-parrott",
-          "position": "FW",
-          "average": 48,
-          "bonus": 1.09,
-          "starterPct": null,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 57,
-          "picture": "https://assets.sorare.com/cardsamplepicture/609d4f31-73e1-4025-ba51-d7d346ba5382/picture/tinified-cd8adea083e0d17ba4a930f3cc3c4d02.png",
-          "rarity": "common",
-          "gameId": "Game:bbfa930f-9bdf-442a-98a7-fb5bde3f2c80",
-          "kickoff": "2026-09-24T18:45:00Z",
-          "team": "Ireland",
-          "opponent": "Kosovo",
-          "opponentCode": "RKS",
-          "code": "IRL",
-          "rank": null,
-          "opponentRank": null,
-          "home": false,
-          "competition": "UEFA Nations League",
-          "lockedAt": null,
-          "expected": 57.23,
-          "blocked": null
         }
       ],
-      "projected": 306.2
+      "projected": 311.9
     },
     {
       "surface": "team set (Loadshift)",
@@ -466,25 +466,6 @@
       ]
     },
     {
-      "kickoff": "2026-09-24T18:45:00Z",
-      "competition": "UEFA Nations League",
-      "team": "Ireland",
-      "code": "IRL",
-      "rank": null,
-      "opponent": "Kosovo",
-      "opponentCode": "RKS",
-      "opponentRank": null,
-      "home": false,
-      "players": [
-        "Troy Parrott"
-      ],
-      "points": 57.2,
-      "bestStarter": null,
-      "surfaces": [
-        "my set"
-      ]
-    },
-    {
       "kickoff": "2026-09-25T18:45:00Z",
       "competition": "UEFA Nations League",
       "team": "Belgium",
@@ -533,9 +514,10 @@
       "opponentRank": null,
       "home": false,
       "players": [
+        "Álex Baena",
         "Dani Olmo"
       ],
-      "points": 59.7,
+      "points": 123.7,
       "bestStarter": null,
       "surfaces": [
         "my set"
