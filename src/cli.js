@@ -128,6 +128,15 @@ async function report(r) {
     }
   }
 
+  if (r.freePacks) {
+    const f = r.freePacks;
+    if (f.opened.length) {
+      console.log(`\nFree packs opened: ${f.opened.length}`);
+      for (const c of f.cards) console.log(`    ${c.name} ${c.stars}*`);
+    } else if (f.waiting === 0) console.log('\nFree packs: none waiting');
+    for (const e of f.errors.slice(0, 3)) console.log(`  ! ${e}`);
+  }
+
   if (r.freeThreeStar) {
     console.log(`\nFree 3-star from a claim: ${r.freeThreeStar.name} (${r.freeThreeStar.stars}-star) - skipping essence packs.`);
   }
@@ -326,7 +335,7 @@ const main = async () => {
   const options = {
     minStarterBp: Number(opt('min-starter', 6000)),
     maxPerGame: Number(opt('max-per-game', 2)),
-    essenceFloor: Number(opt('essence-floor', 4000)),
+    essenceFloor: Number(opt('essence-floor', 1000)),
     maxPacks: Number(opt('max-packs', 3)),
     packs: !flag('no-packs'),
     claimNow: flag('claim-now'),

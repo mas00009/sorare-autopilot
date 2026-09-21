@@ -30,7 +30,6 @@ export const BLOCKED_MUTATIONS = new Set([
   'verifyMobilePurchase',
   'storeApplePurchaseToken',
   'cancelMobilePurchase',
-  'probabilisticBundlesOpen',
   'claimDeliverableItemOrder',
 ]);
 
@@ -59,6 +58,10 @@ export const ALLOWED_MUTATIONS = new Set([
   // Packs. buyCardPack is reachable ONLY after assertCostAllowed() has vetted
   // the pack's own `currency` field - COMMON_ESSENCE passes, COMMON_GEM never does.
   'buyCardPack',
+  // Opening a bundle you already hold. ProbabilisticBundle carries no price
+  // field - any cost was paid when it was acquired, so opening is free. This is
+  // the daily pack.
+  'probabilisticBundlesOpen',
   // Free daily pack pull flow
   'pullCards',
   'confirmCardPull',

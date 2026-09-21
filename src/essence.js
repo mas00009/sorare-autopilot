@@ -43,8 +43,8 @@ export const GOOD_TIERS = new Set(['IMPACT', 'STAR', 'GOAT']);
 export const TIER_STARS = { DNP: 0, ROSTER: 2, IMPACT: 3, STAR: 4, GOAT: 5 };
 
 export const PACK_DEFAULTS = {
-  /** Never spend essence below this. */
-  essenceFloor: 4000,
+  /** Never spend essence below this. Set by the account owner. */
+  essenceFloor: 1000,
   /** Hard cap on packs per cycle, whatever else happens. */
   maxPacks: 3,
 };

@@ -7,7 +7,7 @@ import { gql } from './client.js';
 import { assertCostAllowed, GuardrailError, describeSkip } from './guardrails.js';
 import {
   Q_BALANCES, Q_TRACK, Q_STEP, Q_BENCH, M_UPSERT_STEP_LINEUP,
-  Q_MISSIONS, M_CLAIM_TASK, M_CLAIM_STEP, Q_BOARDS, M_RESTART_TRACK, M_ACK_STEP,
+  Q_MISSIONS, M_CLAIM_TASK, M_CLAIM_STEP, Q_BOARDS, M_RESTART_TRACK, M_ACK_STEP, Q_BUNDLES, M_OPEN_BUNDLE,
 } from './queries.js';
 import { openPacksUntilThreeStar } from './essence.js';
 import { humanTask } from './report.js';
@@ -466,6 +466,42 @@ export function describeRewards(rewards = []) {
 }
 
 /** Claim a finished step. Uses acknowledgeStep; claimStep is deprecated. */
+/**
+ * Open any free daily pack that is sitting there.
+ *
+ * These are probabilistic bundles, listed as wheel rewards. They cost nothing to
+ * open - whatever they cost was paid when they were granted - so this runs on
+ * every pass and simply does nothing when none are waiting.
+ */
+export async function openFreePacks({ dryRun = false } = {}) {
+  const out = { opened: [], cards: [], errors: [] };
+  let d;
+  try { d = await gql(Q_BUNDLES, { sport: SPORT }); }
+  catch (err) { out.errors.push(err.message); return out; }
+
+  const bundles = (d.currentUser?.myWheelRewards?.nodes ?? [])
+    .map((n) => n.probabilisticBundle)
+    .filter((b) => b && !b.opened && b.isOpenable !== false)
+    .filter((b) => !b.openableAt || new Date(b.openableAt) <= new Date());
+
+  out.waiting = bundles.length;
+  for (const b of bundles.slice(0, 5)) {
+    if (dryRun) { out.opened.push({ id: b.id, dryRun: true }); continue; }
+    try {
+      const r = await gql(M_OPEN_BUNDLE, { input: { probabilisticBundleId: b.id } },
+                          { mutationName: 'probabilisticBundlesOpen' });
+      const errs = r.probabilisticBundlesOpen?.errors ?? [];
+      if (errs.length) { out.errors.push(errs.map((e) => e.message).join('; ')); continue; }
+      const items = r.probabilisticBundlesOpen?.probabilisticBundle?.items ?? [];
+      const cards = items.map((i) => i.card?.anyPlayer).filter(Boolean)
+        .map((p) => ({ name: p.displayName, tier: p.gameplayTier, stars: STAR[p.gameplayTier] ?? 0 }));
+      out.opened.push({ id: b.id, cards });
+      out.cards.push(...cards);
+    } catch (err) { out.errors.push(err.message); }
+  }
+  return out;
+}
+
 export async function claimStep(stepId, { dryRun = false } = {}) {
   if (dryRun) return { dryRun: true, stepId };
   const r = await gql(M_ACK_STEP, { input: { stepId } }, { mutationName: 'acknowledgeStep' });
@@ -536,11 +572,17 @@ export async function pass({ dryRun = false, options = {} } = {}) {
     report.missionsError = err.message;
   }
 
+  try {
+    report.freePacks = await openFreePacks({ dryRun });
+  } catch (err) { report.freePacks = { opened: [], cards: [], errors: [err.message] }; }
+
   // Did anything claimed this pass already give us a 3-star? If so the daily
   // collect challenge is done and there is no reason to buy packs.
-  const freeThreeStar = (report.lineups ?? [])
-    .flatMap((l) => l.rewards ?? [])
-    .find((r) => r.kind === 'card' && (r.stars ?? 0) >= 3);
+  const freeThreeStar = [
+    ...(report.lineups ?? []).flatMap((l) => l.rewards ?? [])
+      .filter((r) => r.kind === 'card').map((r) => ({ name: r.name, stars: r.stars })),
+    ...(report.freePacks?.cards ?? []),
+  ].find((c) => (c.stars ?? 0) >= 3);
 
   if (freeThreeStar) {
     const cycle = await dailyCycleId().catch(() => null);

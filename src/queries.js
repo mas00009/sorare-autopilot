@@ -252,3 +252,27 @@ export const M_ACK_STEP = `
     }
   }
 `;
+
+/** Free daily packs arrive as probabilistic bundles ("wheel rewards"). */
+export const Q_BUNDLES = `
+  query Bundles($sport: Sport!) {
+    currentUser {
+      myWheelRewards(sport: $sport) {
+        nodes { id aasmState probabilisticBundle { id isOpenable opened openableAt } }
+      }
+      claimablePacks(sport: $sport) { id }
+    }
+  }
+`;
+
+export const M_OPEN_BUNDLE = `
+  mutation OpenBundle($input: probabilisticBundlesOpenInput!) {
+    probabilisticBundlesOpen(input: $input) {
+      errors { message }
+      probabilisticBundle {
+        id opened
+        items { __typename ... on ProbabilisticBundleSlotCardItem { card { slug anyPlayer { displayName gameplayTier } } } }
+      }
+    }
+  }
+`;
