@@ -2,214 +2,274 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sorare Autopilot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --bg:#0b0d12; --card:#141822; --line:#222838; --ink:#e8ecf5; --dim:#8791a8;
-    --ok:#4ade80; --warn:#fbbf24; --bad:#f87171; --accent:#a78bfa;
-    --measure:78ch;
-  }
-  * { box-sizing:border-box; }
-  html { -webkit-text-size-adjust:100%; }
-  body {
-    margin:0; background:var(--bg); color:var(--ink);
-    font:15px/1.55 ui-sans-serif,-apple-system,"Segoe UI",Inter,system-ui,sans-serif;
-    text-wrap:pretty;
-  }
-  h1,h2,h3 { text-wrap:balance; margin:0; font-weight:650; letter-spacing:-.01em; }
-  h1 { font-size:1.35rem; }
-  h2 { font-size:.82rem; text-transform:uppercase; letter-spacing:.09em; color:var(--dim); font-weight:600; }
-  h3 { font-size:1rem; }
-  a { color:var(--accent); }
-  .wrap { max-width:1140px; margin:0 auto; padding:28px 16px 64px; }
-  header { display:flex; flex-wrap:wrap; gap:12px 20px; align-items:baseline; margin-bottom:22px; }
-  .stamp { color:var(--dim); font-size:.82rem; margin-left:auto; }
-  .grid { display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:16px 18px; }
-  .stat .n { font-size:1.7rem; font-weight:680; letter-spacing:-.02em; display:block; }
-  .stat .k { color:var(--dim); font-size:.78rem; text-transform:uppercase; letter-spacing:.07em; }
-  section { margin-top:26px; }
-  section > h2 { margin-bottom:10px; }
-  table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
-  th { text-align:left; font-weight:600; color:var(--dim); font-size:.74rem;
-       text-transform:uppercase; letter-spacing:.07em; padding:0 10px 7px 0; }
-  td { padding:7px 10px 7px 0; border-top:1px solid var(--line); }
-  td.num, th.num { text-align:right; padding-right:0; }
-  .pill { display:inline-block; padding:1px 8px; border-radius:99px; font-size:.72rem;
-          border:1px solid var(--line); color:var(--dim); white-space:nowrap; }
-  .pill.ok{color:var(--ok);border-color:#1e4d33}.pill.warn{color:var(--warn);border-color:#5c4410}
-  .pill.bad{color:var(--bad);border-color:#5e2626}.pill.c{color:var(--accent);border-color:#3d3168}
-  .muted { color:var(--dim); }
-  .note { color:var(--dim); max-width:var(--measure); text-wrap:pretty; }
-  .note.wide { max-width:none; }
-  code { background:#1b2030; border:1px solid var(--line); border-radius:4px;
-         padding:.5px 5px; font-size:.86em; white-space:nowrap; }
-  .rej li { color:var(--dim); font-size:.86rem; margin-bottom:3px; }
-  ul.rej { list-style:none; padding:0; margin:0; columns:2; column-gap:26px; }
-  @media (max-width:640px){ ul.rej{columns:1} .stamp{margin-left:0;width:100%} }
-  .xi { display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(132px,1fr)); margin:4px 0 6px; }
-  .p { background:#0f131c; border:1px solid var(--line); border-radius:10px; overflow:hidden; position:relative; }
-  .p.cap { border-color:#4c3f86; box-shadow:0 0 0 1px #4c3f86 inset; }
-  .p img { width:100%; aspect-ratio:5/7; object-fit:cover; display:block; background:#0b0d12; }
-  .p .b { padding:8px 9px 10px; }
-  .p .nm { font-weight:620; font-size:.84rem; line-height:1.25; text-wrap:balance; }
-  .p .fx { color:var(--dim); font-size:.72rem; margin-top:2px; }
-  .p .xp { margin-top:7px; font-size:1.15rem; font-weight:680; letter-spacing:-.02em; }
-  .p .xp small { font-size:.66rem; font-weight:500; color:var(--dim); letter-spacing:.06em; text-transform:uppercase; }
-  .p .tag { position:absolute; top:7px; left:7px; background:#0b0d12cc; backdrop-filter:blur(4px);
-            border:1px solid var(--line); border-radius:6px; padding:1px 6px; font-size:.68rem; }
-  .p .capt { position:absolute; top:7px; right:7px; background:var(--accent); color:#17122b;
-             border-radius:6px; padding:1px 6px; font-size:.68rem; font-weight:700; }
-  .tot { display:flex; flex-wrap:wrap; gap:18px; align-items:baseline; margin:12px 0 2px; }
-  .tot .big { font-size:2rem; font-weight:700; letter-spacing:-.03em; }
-  .bar { height:7px; background:#1b2030; border-radius:99px; overflow:hidden; margin:8px 0 2px; max-width:420px; }
-  .bar i { display:block; height:100%; background:linear-gradient(90deg,#7c5cf0,#a78bfa); }
-  .ctl { display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
-  .btn { display:inline-block; padding:6px 13px; border-radius:8px; border:1px solid var(--line);
-         background:#1a2030; color:var(--ink); font-size:.82rem; text-decoration:none; font-weight:560; }
-  .btn:hover { border-color:var(--accent); }
-  .btn.stop { border-color:#5e2626; color:var(--bad); }
-  footer { margin-top:40px; color:var(--dim); font-size:.8rem; max-width:var(--measure); }
+:root{
+  --bg:#07080d; --bg2:#0c0e16; --card:#11141f; --line:#1e2334; --line2:#2a3148;
+  --ink:#eef1f8; --dim:#8b95ad; --faint:#5c6479;
+  --go:#34d399; --warn:#fbbf24; --stop:#fb7185; --v:#a78bfa; --v2:#7c5cf0;
+  --measure:78ch; --r:14px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; color:var(--ink); font-family:Inter,ui-sans-serif,-apple-system,system-ui,sans-serif;
+  font-size:15px; line-height:1.55; text-wrap:pretty;
+  background:
+    radial-gradient(1100px 620px at 14% -8%, #1a1440 0%, transparent 62%),
+    radial-gradient(900px 520px at 88% 4%, #07253a 0%, transparent 58%),
+    var(--bg);
+  background-attachment:fixed;
+}
+h1,h2,h3{margin:0; text-wrap:balance; letter-spacing:-.022em; font-weight:700}
+h1{font-size:1.5rem}
+h2{font-size:.72rem; text-transform:uppercase; letter-spacing:.13em; color:var(--faint); font-weight:700}
+h3{font-size:1.02rem; font-weight:650}
+a{color:var(--v); text-decoration:none}
+.wrap{max-width:1180px; margin:0 auto; padding:30px 18px 80px}
+
+/* header */
+.top{display:flex; flex-wrap:wrap; align-items:center; gap:10px 16px; margin-bottom:24px}
+.brand{display:flex; align-items:center; gap:11px}
+.mark{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;font-weight:800;font-size:.9rem;
+  background:linear-gradient(140deg,var(--v2),#3ba7ff); color:#0a0713}
+.who{color:var(--dim); font-size:.85rem}
+.stamp{margin-left:auto; color:var(--faint); font-size:.8rem; font-variant-numeric:tabular-nums}
+
+/* hero control */
+.hero{
+  position:relative; overflow:hidden; border:1px solid var(--line2); border-radius:20px;
+  background:linear-gradient(160deg,#151a2b 0%,#0d1018 60%); padding:22px 24px;
+  display:flex; flex-wrap:wrap; align-items:center; gap:22px; margin-bottom:18px;
+}
+.hero::after{content:""; position:absolute; inset:0; pointer-events:none;
+  background:radial-gradient(520px 200px at 78% 0%, rgba(124,92,240,.20), transparent 70%)}
+.hero.paused::after{background:radial-gradient(520px 200px at 78% 0%, rgba(251,113,133,.16), transparent 70%)}
+.state{display:flex; align-items:center; gap:13px; min-width:210px}
+.orb{width:14px;height:14px;border-radius:99px;background:var(--go);
+  box-shadow:0 0 0 0 rgba(52,211,153,.6); animation:pulse 2.4s ease-out infinite; flex:none}
+.paused .orb{background:var(--stop); animation:none; box-shadow:0 0 14px rgba(251,113,133,.5)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(52,211,153,.55)}70%{box-shadow:0 0 0 13px rgba(52,211,153,0)}100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}}
+@media (prefers-reduced-motion:reduce){.orb{animation:none}}
+.state b{display:block; font-size:1.3rem; letter-spacing:-.02em; line-height:1.2}
+.state span{color:var(--dim); font-size:.82rem}
+.sep{width:1px; align-self:stretch; background:var(--line2); margin:2px 0}
+.count{min-width:180px}
+.count .t{font-size:1.55rem; font-weight:750; letter-spacing:-.03em; font-variant-numeric:tabular-nums; line-height:1.15}
+.count .k{color:var(--faint); font-size:.72rem; text-transform:uppercase; letter-spacing:.11em; font-weight:650}
+.acts{margin-left:auto; display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+.big{
+  display:inline-flex; align-items:center; gap:10px; border-radius:13px; padding:13px 22px;
+  font-weight:700; font-size:.95rem; border:1px solid transparent; cursor:pointer;
+  transition:transform .12s ease, filter .12s ease;
+}
+.big:hover{transform:translateY(-1px); filter:brightness(1.08)}
+.big:active{transform:translateY(0)}
+.big.stop{background:linear-gradient(140deg,#e2536b,#b8354d); color:#fff}
+.big.play{background:linear-gradient(140deg,#34d399,#0f9f72); color:#04231a}
+.ghost{border:1px solid var(--line2); color:var(--dim); border-radius:11px; padding:11px 16px; font-size:.86rem; font-weight:600}
+.ghost:hover{border-color:var(--v); color:var(--ink)}
+.ico{width:0;height:0;flex:none}
+.ico.s{width:13px;height:13px;background:currentColor;border-radius:3px}
+.ico.p{border-left:13px solid currentColor;border-top:8px solid transparent;border-bottom:8px solid transparent}
+
+/* tiles */
+.tiles{display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); margin-bottom:26px}
+.tile{background:var(--card); border:1px solid var(--line); border-radius:var(--r); padding:15px 17px}
+.tile .k{color:var(--faint); font-size:.7rem; text-transform:uppercase; letter-spacing:.11em; font-weight:700}
+.tile .n{display:block; font-size:1.75rem; font-weight:780; letter-spacing:-.035em; margin-top:3px; font-variant-numeric:tabular-nums}
+.tile .s{color:var(--dim); font-size:.78rem}
+.tile.guard{border-color:#26406a}
+.tile.guard .n{background:linear-gradient(120deg,#7dd3fc,#a78bfa); -webkit-background-clip:text; background-clip:text; color:transparent}
+
+section{margin-top:28px}
+section>h2{margin-bottom:11px}
+.card{background:var(--card); border:1px solid var(--line); border-radius:var(--r); padding:18px 20px}
+.head{display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:6px}
+.pill{display:inline-block; padding:2px 9px; border-radius:99px; font-size:.71rem; font-weight:650;
+  border:1px solid var(--line2); color:var(--dim); white-space:nowrap}
+.pill.go{color:var(--go); border-color:#1c4d3c; background:#0d2a21}
+.pill.warn{color:var(--warn); border-color:#584311; background:#2a2008}
+.pill.bad{color:var(--stop); border-color:#5c2733; background:#2a1017}
+.pill.v{color:var(--v); border-color:#3a2f6b; background:#191338}
+
+/* lineup cards */
+.xi{display:grid; gap:13px; grid-template-columns:repeat(auto-fit,minmax(146px,1fr)); margin:14px 0 4px}
+.p{position:relative; border:1px solid var(--line); border-radius:13px; overflow:hidden; background:#0b0e16;
+  transition:transform .14s ease, border-color .14s ease}
+.p:hover{transform:translateY(-3px); border-color:var(--line2)}
+.p.cap{border-color:#4a3c8f; box-shadow:0 0 22px -8px rgba(124,92,240,.75)}
+.p img{width:100%; aspect-ratio:5/7; object-fit:cover; display:block}
+.p .b{padding:10px 11px 12px; background:linear-gradient(180deg,#10131d,#0b0e16)}
+.p .nm{font-weight:680; font-size:.87rem; line-height:1.25; text-wrap:balance}
+.p .fx{color:var(--dim); font-size:.73rem; margin-top:3px}
+.p .xp{margin-top:9px; font-size:1.3rem; font-weight:780; letter-spacing:-.03em;
+  background:linear-gradient(120deg,#c4b5fd,#7dd3fc); -webkit-background-clip:text; background-clip:text; color:transparent}
+.p .xp small{-webkit-text-fill-color:var(--faint); font-size:.62rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase}
+.tag,.capt{position:absolute; top:8px; border-radius:7px; padding:2px 7px; font-size:.67rem; font-weight:700}
+.tag{left:8px; background:#070911d9; border:1px solid var(--line2); color:var(--dim); backdrop-filter:blur(6px)}
+.capt{right:8px; background:linear-gradient(140deg,var(--v),#6d4fe0); color:#120c26}
+
+.tot{display:flex; flex-wrap:wrap; gap:8px 18px; align-items:baseline; margin:16px 0 0}
+.tot .n{font-size:2.15rem; font-weight:800; letter-spacing:-.04em; font-variant-numeric:tabular-nums}
+.bar{height:8px; background:#161b29; border-radius:99px; overflow:hidden; margin:11px 0 0; max-width:480px}
+.bar i{display:block; height:100%; border-radius:99px; background:linear-gradient(90deg,var(--v2),#5eead4)}
+
+table{width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums}
+th{text-align:left; font-weight:700; color:var(--faint); font-size:.7rem; text-transform:uppercase;
+  letter-spacing:.1em; padding:0 12px 8px 0}
+td{padding:8px 12px 8px 0; border-top:1px solid var(--line)}
+tr:hover td{background:#0e1220}
+.muted{color:var(--dim)}
+ul.rej{list-style:none; padding:0; margin:12px 0 0; columns:2; column-gap:30px}
+ul.rej li{color:var(--dim); font-size:.85rem; margin-bottom:4px; break-inside:avoid}
+.note{color:var(--dim); max-width:var(--measure); text-wrap:pretty}
+.note.wide{max-width:none}
+code{background:#171c2b; border:1px solid var(--line2); border-radius:5px; padding:1px 6px; font-size:.85em; white-space:nowrap}
+footer{margin-top:44px; color:var(--faint); font-size:.82rem}
+@media (max-width:680px){ ul.rej{columns:1} .stamp{margin-left:0} .acts{margin-left:0; width:100%} .big{flex:1; justify-content:center} }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>Sorare Autopilot</h1>
-    <span class="pill" id="acct"></span>
+  <div class="top">
+    <div class="brand"><div class="mark">SA</div><h1>Sorare Autopilot</h1></div>
+    <span class="who" id="who"></span>
     <span class="stamp" id="stamp"></span>
-  </header>
+  </div>
   <div id="app"><p class="muted">Loading…</p></div>
-  <footer>
-    <p class="note wide">Built and updated by the autopilot on every pass.
+  <footer><p class="note wide">Built and updated by the autopilot on every pass.
     Projected points blend a player's recent form with how likely they are to start.
-    Treat them as estimates until the accuracy panel has a few gameweeks behind it.</p>
-  </footer>
+    Treat them as estimates until the accuracy panel has a few gameweeks behind it.</p></footer>
 </div>
 <script>
-const $ = (h) => { const t = document.createElement('template'); t.innerHTML = h.trim(); return t.content; };
-const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const when = (iso) => { if (!iso) return '—'; const d = new Date(iso);
-  return d.toLocaleString(undefined, { weekday:'short', day:'numeric', month:'short', hour:'2-digit', minute:'2-digit' }); };
-const ago = (iso) => { if (!iso) return 'never'; const m = Math.round((Date.now() - new Date(iso)) / 60000);
-  return m < 1 ? 'just now' : m < 60 ? `${m}m ago` : `${Math.round(m/60)}h ago`; };
-const stateClass = (s) => ({ LINEUP_SET:'ok', PLAYABLE:'ok', CLAIMABLE:'warn',
-  PRE_MATCHDAY_LOCKED:'', LOCKED:'', LIVE:'c', FAILED:'bad' }[s] ?? '');
+const EDIT='https://github.com/mas00009/sorare-autopilot/edit/main/docs/control.json';
+const REPO='https://github.com/mas00009/sorare-autopilot';
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const when=i=>i?new Date(i).toLocaleString(undefined,{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}):'—';
+const ago=i=>{if(!i)return'never';const m=Math.round((Date.now()-new Date(i))/6e4);
+  return m<1?'just now':m<60?m+'m ago':Math.round(m/60)+'h ago'};
+function countdown(iso){ if(!iso) return {t:'—',k:'no lock scheduled'};
+  let s=Math.floor((new Date(iso)-Date.now())/1000); if(s<0) return {t:'locked',k:'window closed'};
+  const d=Math.floor(s/86400); s-=d*86400; const h=Math.floor(s/3600); s-=h*3600; const m=Math.floor(s/60);
+  return {t:d?`${d}d ${h}h`:h?`${h}h ${String(m).padStart(2,'0')}m`:`${m}m`, k:'until lineups lock'}; }
 
-function xi(s) {
-  if (!s.candidates.length) {
-    return `<p class="note">No eligible cards for this step yet — it opens closer to its matchday.</p>`;
-  }
-  const five = s.candidates.slice(0, 5);
-  const total = five.reduce((t, c) => t + c.expected, 0);
-  const pct = s.target ? Math.min(100, (total / s.target) * 100) : 0;
+let DATA=null;
+function render(d){
+  DATA=d;
+  document.getElementById('who').textContent=`${d.account} · ${d.squad}`;
+  document.getElementById('stamp').textContent=`updated ${ago(d.generatedAt)}`;
+  const ct=d.control??{}, paused=!!ct.paused;
+  const offs=['packs','lineups','claims'].filter(k=>ct[k+'Enabled']===false);
+  const cd=countdown(d.schedule.nextLock);
+  const fail=d.health.failStreak;
 
-  const cards = five.map((c, i) => `
-    <div class="p${i === 0 ? ' cap' : ''}">
-      ${c.picture ? `<img src="${esc(c.picture)}" alt="${esc(c.player)}" loading="lazy">`
-                  : `<div style="aspect-ratio:5/7;display:grid;place-items:center;color:var(--dim)">no art</div>`}
-      <span class="tag">${esc(c.position)}</span>
-      ${i === 0 ? '<span class="capt">C</span>' : ''}
-      <div class="b">
-        <div class="nm">${esc(c.player)}</div>
-        <div class="fx">${c.opponent ? `${c.home ? 'vs' : '@'} ${esc(c.opponent)}` : 'no fixture'}</div>
-        <div class="fx">L15 ${c.average ?? '—'} · L5 ${c.formL5 ?? '—'}${c.starterPct != null ? ` · ${Math.round(c.starterPct)}% start` : ''}</div>
-        <div class="xp">${c.expected} <small>proj</small></div>
-      </div>
-    </div>`).join('');
-
-  return `<div class="xi">${cards}</div>
-    <div class="tot">
-      <span><span class="big">${total.toFixed(0)}</span> <span class="muted">projected</span></span>
-      ${s.target ? `<span class="muted">target ${s.target}</span>
-        <span class="pill ${total >= s.target ? 'ok' : 'warn'}">${total >= s.target ? 'clears target' : `${Math.round(s.target - total)} short`}</span>` : ''}
+  let h=`<div class="hero${paused?' paused':''}">
+    <div class="state"><span class="orb"></span>
+      <div><b>${paused?'Paused':'Running'}</b>
+        <span>${paused?'nothing will be done':`checking every ${d.schedule.cadenceMin} min · last pass ${ago(d.schedule.lastRunAt)}`}</span></div>
     </div>
-    ${s.target ? `<div class="bar"><i style="width:${pct}%"></i></div>` : ''}`;
-}
+    <div class="sep"></div>
+    <div class="count"><div class="t" id="cd">${cd.t}</div><div class="k">${cd.k}</div></div>
+    <div class="acts">
+      ${offs.map(o=>`<span class="pill warn">${o} off</span>`).join('')}
+      ${fail>=3?`<span class="pill bad">failing ×${fail}</span>`:''}
+      <a class="big ${paused?'play':'stop'}" href="${EDIT}" target="_blank" rel="noopener">
+        <i class="ico ${paused?'p':'s'}"></i>${paused?'Resume the bot':'Stop the bot'}</a>
+      <a class="ghost" href="${REPO}" target="_blank" rel="noopener">View the code</a>
+    </div>
+  </div>
 
-function render(d) {
-  document.getElementById('acct').textContent = `${d.account} · ${d.squad}`;
-  document.getElementById('stamp').textContent = `updated ${ago(d.generatedAt)}`;
-
-  const health = d.health.failStreak >= 3 ? `<span class="pill bad">failing ×${d.health.failStreak}</span>`
-    : d.health.failStreak > 0 ? `<span class="pill warn">1 recent failure</span>`
-    : `<span class="pill ok">healthy</span>`;
-
-  let h = `<div class="grid">
-    <div class="card stat"><span class="k">Essence</span><span class="n">${d.balances.essence ?? '—'}</span></div>
-    <div class="card stat"><span class="k">Gems (never spent)</span><span class="n">${d.balances.gems ?? '—'}</span></div>
-    <div class="card stat"><span class="k">Next lock</span><span class="n" style="font-size:1.05rem">${when(d.schedule.nextLock)}</span>
-      <span class="k">checking every ${d.schedule.cadenceMin}m</span></div>
-    <div class="card stat"><span class="k">Status</span><span class="n" style="font-size:1.05rem">${health}</span>
-      <span class="k">last pass ${ago(d.schedule.lastRunAt)}</span></div>
+  <div class="tiles">
+    <div class="tile"><span class="k">Essence</span><span class="n">${d.balances.essence??'—'}</span>
+      <span class="s">${d.packs.lastThreeStar?'last pull '+esc(d.packs.lastThreeStar):'spent only on packs'}</span></div>
+    <div class="tile guard"><span class="k">Gems</span><span class="n">${d.balances.gems??'—'}</span>
+      <span class="s">never spendable by the bot</span></div>
+    <div class="tile"><span class="k">Next lock</span><span class="n" style="font-size:1.05rem;letter-spacing:-.01em">${when(d.schedule.nextLock)}</span>
+      <span class="s">${esc(d.schedule.reason??'')}</span></div>
+    <div class="tile"><span class="k">Health</span><span class="n" style="font-size:1.2rem">${fail?`${fail} failed`:'All good'}</span>
+      <span class="s">${fail?'alerting by email':'no failures on recent passes'}</span></div>
   </div>`;
 
-  const ct = d.control ?? {};
-  const offs = ['packs','lineups','claims'].filter((k) => ct[`${k}Enabled`] === false);
-  h += `<section><h2>Controls</h2><div class="card">
-    <div class="ctl">
-      <span class="pill ${ct.paused ? 'bad' : 'ok'}">${ct.paused ? 'PAUSED' : 'RUNNING'}</span>
-      ${offs.map((o) => `<span class="pill warn">${o} off</span>`).join('')}
-      <a class="btn ${ct.paused ? '' : 'stop'}"
-         href="https://github.com/mas00009/sorare-autopilot/edit/main/docs/control.json"
-         target="_blank" rel="noopener">${ct.paused ? 'Resume the bot' : 'Stop the bot'}</a>
-      <a class="btn" href="https://github.com/mas00009/sorare-autopilot" target="_blank" rel="noopener">View the code</a>
-    </div>
-    <p class="note wide" style="margin:.9em 0 0">
-      Set <code>paused</code> to <code>true</code> and everything stops.
-      Packs, lineups and claims can each be switched off on their own.
-      The bot rereads this file every pass, so a change lands within minutes.
-      Editing it needs your GitHub login, and that is what keeps the controls yours.
-    </p>
+  for(const s of d.surfaces) h+=surface(s);
+
+  if(d.fixtures.length) h+=`<section><h2>Upcoming fixtures</h2><div class="card"><table>
+    <thead><tr><th>Kickoff</th><th>Match</th><th>Your players</th></tr></thead><tbody>
+    ${d.fixtures.map(f=>`<tr><td>${when(f.kickoff)}</td>
+      <td>${esc(f.team)} ${f.home?'vs':'@'} ${esc(f.opponent)}</td>
+      <td class="muted">${esc(f.players.join(', '))}</td></tr>`).join('')}
+    </tbody></table></div></section>`;
+
+  h+=`<section><h2>Are the projections any good?</h2><div class="card">`;
+  h+= d.accuracy.n ? `<div class="tiles" style="margin:0">
+      <div class="tile"><span class="k">Steps</span><span class="n">${d.accuracy.steps}</span><span class="s">${d.accuracy.hit} hit target</span></div>
+      <div class="tile"><span class="k">Bias</span><span class="n">${d.accuracy.bias>0?'+':''}${d.accuracy.bias}</span><span class="s">below zero means over-projecting</span></div>
+      <div class="tile"><span class="k">Mean error</span><span class="n">${d.accuracy.mae}</span><span class="s">points per player</span></div>
+      <div class="tile"><span class="k">Blanks</span><span class="n">${Math.round(d.accuracy.blankRate*100)}%</span><span class="s">scored nothing at all</span></div>
+    </div>${d.accuracy.steps<4?'<p class="note wide" style="margin:14px 0 0">Too few samples to tune the weights on yet.</p>':''}`
+    : `<p class="note wide">Nothing measured yet. Every finished step records what each player was
+       projected to score against what they actually scored. Until several have completed, the
+       projections on this page are untested estimates.</p>`;
+  h+=`</div></section>
+
+  <section><h2>How the controls work</h2><div class="card">
+    <p class="note wide" style="margin:0">Set <code>paused</code> to <code>true</code> and everything stops.
+    Packs, lineups and claims can each be switched off on their own.
+    The bot rereads that file every pass, so a change lands within minutes.
+    Editing it needs your GitHub login, and that is what keeps the controls yours.</p>
   </div></section>`;
 
-  for (const s of d.surfaces) {
-    const cur = s.current.length
-      ? s.current.map((p) => `${esc(p.name)}${p.captain ? ' (C)' : ''}`).join(', ')
-      : '<span class="muted">none set</span>';
-    h += `<section>
-      <h2>${esc(s.surface)}</h2>
-      <div class="card">
-        <h3>${s.target ? `Target ${s.target} pts` : 'Step'}
-          <span class="pill ${stateClass(s.state)}">${esc(s.state ?? '?')}</span>
-          ${s.projected ? `<span class="pill">best available ≈ ${s.projected}</span>` : ''}</h3>
-        <p class="note" style="margin:.6em 0 1em"><strong>In now:</strong> ${cur}</p>
-        ${xi(s)}
-        ${s.rejected.length ? `<h2 style="margin:18px 0 8px">Held out</h2>
-          <ul class="rej">${s.rejected.map((c) => `<li>${esc(c.player)} — ${esc(c.blocked)}</li>`).join('')}</ul>` : ''}
-      </div>
-    </section>`;
-  }
-
-  if (d.fixtures.length) {
-    h += `<section><h2>Upcoming fixtures</h2><div class="card"><table>
-      <thead><tr><th>Kickoff</th><th>Match</th><th>Your players</th></tr></thead><tbody>
-      ${d.fixtures.map((f) => `<tr><td>${when(f.kickoff)}</td>
-        <td>${esc(f.team)} ${f.home ? 'v' : '@'} ${esc(f.opponent)}</td>
-        <td class="muted">${esc(f.players.join(', '))}</td></tr>`).join('')}
-      </tbody></table></div></section>`;
-  }
-
-  h += `<section><h2>Projection accuracy</h2><div class="card">`;
-  h += d.accuracy.n
-    ? `<div class="grid">
-        <div class="stat"><span class="k">Steps</span><span class="n">${d.accuracy.steps}</span><span class="k">${d.accuracy.hit} hit target</span></div>
-        <div class="stat"><span class="k">Bias</span><span class="n">${d.accuracy.bias > 0 ? '+' : ''}${d.accuracy.bias}</span><span class="k">negative = over-projecting</span></div>
-        <div class="stat"><span class="k">Mean error</span><span class="n">${d.accuracy.mae}</span><span class="k">points per player</span></div>
-        <div class="stat"><span class="k">Blank rate</span><span class="n">${Math.round(d.accuracy.blankRate * 100)}%</span><span class="k">scored nothing</span></div>
-      </div>${d.accuracy.steps < 4 ? '<p class="note" style="margin-top:12px">Too few samples to tune anything on yet.</p>' : ''}`
-    : `<p class="note">Nothing measured yet. Each finished step records what was projected against
-       what actually scored; until several have completed, the projections above are untested.</p>`;
-  h += `</div></section>`;
-
-  document.getElementById('app').replaceChildren($(h));
+  document.getElementById('app').innerHTML=h;
+  tick();
 }
 
-fetch('data.json?t=' + Date.now())
-  .then((r) => r.json()).then(render)
-  .catch((e) => { document.getElementById('app').innerHTML =
-    `<p class="note">Could not load data.json — ${esc(e.message)}</p>`; });
+function surface(s){
+  const cur=s.current.length?s.current.map(p=>esc(p.name)+(p.captain?' (C)':'')).join(', ')
+    :'<span class="muted">none set</span>';
+  const st={LINEUP_SET:'go',PLAYABLE:'go',CLAIMABLE:'warn',LIVE:'v',FAILED:'bad'}[s.state]||'';
+  let body;
+  if(!s.candidates.length){
+    body=`<p class="note wide" style="margin:14px 0 0">No eligible cards for this step yet.
+      It opens for entry closer to its matchday, and the bot will fill it then.</p>`;
+  }else{
+    const five=s.candidates.slice(0,5), tot=five.reduce((t,c)=>t+c.expected,0);
+    const pct=s.target?Math.min(100,tot/s.target*100):0;
+    body=`<div class="xi">${five.map((c,i)=>`
+      <div class="p${i?'':' cap'}">
+        ${c.picture?`<img src="${esc(c.picture)}" alt="${esc(c.player)}" loading="lazy">`
+          :`<div style="aspect-ratio:5/7;display:grid;place-items:center;color:var(--faint);font-size:.75rem">no art</div>`}
+        <span class="tag">${esc(c.position)}</span>${i?'':'<span class="capt">C</span>'}
+        <div class="b"><div class="nm">${esc(c.player)}</div>
+          <div class="fx">${c.opponent?`${c.home?'vs':'@'} ${esc(c.opponent)}`:'no fixture'}</div>
+          <div class="fx">L15 ${c.average??'—'} · L5 ${c.formL5??'—'}${c.starterPct!=null?` · ${Math.round(c.starterPct)}% start`:''}</div>
+          <div class="xp">${c.expected} <small>proj</small></div></div>
+      </div>`).join('')}</div>
+      <div class="tot"><span class="n">${tot.toFixed(0)}</span><span class="muted">projected</span>
+        ${s.target?`<span class="muted">target ${s.target}</span>
+        <span class="pill ${tot>=s.target?'go':'warn'}">${tot>=s.target?'clears target':Math.round(s.target-tot)+' short'}</span>`:''}</div>
+      ${s.target?`<div class="bar"><i style="width:${pct}%"></i></div>`:''}`;
+  }
+  return `<section><h2>${esc(s.surface)}</h2><div class="card">
+    <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>
+      <span class="pill ${st}">${esc(s.state??'unknown')}</span></div>
+    <p class="note wide" style="margin:.2em 0 0"><strong>In now:</strong> ${cur}</p>
+    ${body}
+    ${s.rejected.length?`<h2 style="margin:20px 0 0">Held out</h2>
+      <ul class="rej">${s.rejected.map(c=>`<li>${esc(c.player)} — ${esc(c.blocked)}</li>`).join('')}</ul>`:''}
+  </div></section>`;
+}
+
+function tick(){ const el=document.getElementById('cd'); if(!el||!DATA)return;
+  el.textContent=countdown(DATA.schedule.nextLock).t; }
+setInterval(tick,30000);
+
+const load=()=>fetch('data.json?t='+Date.now()).then(r=>r.json()).then(render)
+  .catch(e=>{document.getElementById('app').innerHTML=`<p class="note">Could not load data.json — ${esc(e.message)}</p>`});
+load(); setInterval(load,120000);
 </script>
 </body>
 </html>
