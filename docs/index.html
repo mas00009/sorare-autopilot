@@ -67,11 +67,12 @@ a{color:var(--v); text-decoration:none}
   font-weight:700; font-size:.95rem; border:1px solid transparent; cursor:pointer;
   transition:transform .12s ease, filter .12s ease;
 }
+.big{white-space:nowrap}
 .big:hover{transform:translateY(-1px); filter:brightness(1.08)}
 .big:active{transform:translateY(0)}
 .big.stop{background:linear-gradient(140deg,#e2536b,#b8354d); color:#fff}
 .big.play{background:linear-gradient(140deg,#34d399,#0f9f72); color:#04231a}
-.ghost{border:1px solid var(--line2); color:var(--dim); border-radius:11px; padding:11px 16px; font-size:.86rem; font-weight:600}
+.ghost{white-space:nowrap; border:1px solid var(--line2); color:var(--dim); border-radius:11px; padding:11px 16px; font-size:.86rem; font-weight:600}
 .ghost:hover{border-color:var(--v); color:var(--ink)}
 .ico{width:0;height:0;flex:none}
 .ico.s{width:13px;height:13px;background:currentColor;border-radius:3px}
@@ -89,6 +90,8 @@ a{color:var(--v); text-decoration:none}
 section{margin-top:28px}
 section>h2{margin-bottom:11px}
 .card{background:var(--card); border:1px solid var(--line); border-radius:var(--r); padding:18px 20px}
+.card.prose{max-width:74ch}
+.card.prose .note{max-width:none}
 .head{display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:6px}
 .pill{display:inline-block; padding:2px 9px; border-radius:99px; font-size:.71rem; font-weight:650;
   border:1px solid var(--line2); color:var(--dim); white-space:nowrap}
@@ -149,9 +152,9 @@ footer{margin-top:44px; color:var(--faint); font-size:.82rem}
     <span class="stamp" id="stamp"></span>
   </div>
   <div id="app"><p class="muted">Loading…</p></div>
-  <footer><p class="note wide">Built and updated by the autopilot on every pass.
+  <footer><div class="card prose" style="background:none;border:none;padding:0"><p class="note">Built and updated by the autopilot on every pass.
     Projected points blend a player's recent form with how likely they are to start.
-    Treat them as estimates until the accuracy panel has a few gameweeks behind it.</p></footer>
+    Treat them as estimates until the accuracy panel has a few gameweeks behind it.</p></div></footer>
 </div>
 <script>
 const EDIT='https://github.com/mas00009/sorare-autopilot/edit/main/docs/control.json';
@@ -211,19 +214,19 @@ function render(d){
       <td class="muted">${esc(f.players.join(', '))}</td></tr>`).join('')}
     </tbody></table></div></section>`;
 
-  h+=`<section><h2>Are the projections any good?</h2><div class="card">`;
+  h+=`<section><h2>Are the projections any good?</h2><div class="card${d.accuracy.n?'':' prose'}">`;
   h+= d.accuracy.n ? `<div class="tiles" style="margin:0">
       <div class="tile"><span class="k">Steps</span><span class="n">${d.accuracy.steps}</span><span class="s">${d.accuracy.hit} hit target</span></div>
       <div class="tile"><span class="k">Bias</span><span class="n">${d.accuracy.bias>0?'+':''}${d.accuracy.bias}</span><span class="s">below zero means over-projecting</span></div>
       <div class="tile"><span class="k">Mean error</span><span class="n">${d.accuracy.mae}</span><span class="s">points per player</span></div>
       <div class="tile"><span class="k">Blanks</span><span class="n">${Math.round(d.accuracy.blankRate*100)}%</span><span class="s">scored nothing at all</span></div>
     </div>${d.accuracy.steps<4?'<p class="note wide" style="margin:14px 0 0">Too few samples to tune the weights on yet.</p>':''}`
-    : `<p class="note wide">Nothing measured yet. Every finished step records what each player was
+    : `<p class="note">Nothing measured yet. Every finished step records what each player was
        projected to score against what they actually scored. Until several have completed, the
        projections on this page are untested estimates.</p>`;
   h+=`</div></section>
 
-  <section><h2>How the controls work</h2><div class="card">
+  <section><h2>How the controls work</h2><div class="card prose">
     <p class="note wide" style="margin:0">Set <code>paused</code> to <code>true</code> and everything stops.
     Packs, lineups and claims can each be switched off on their own.
     The bot rereads that file every pass, so a change lands within minutes.
