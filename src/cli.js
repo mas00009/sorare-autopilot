@@ -250,6 +250,18 @@ const main = async () => {
     return;
   }
 
+  if (cmd === 'backtest') {
+    const B = await import('./backtest.js');
+    const r = await B.run({ maxPlayers: Number(opt('players', 60)) });
+    if (!r.ok && r.reason) { console.log(`not enough data: ${r.reason} (${r.samples} samples)`); return; }
+    console.log(`\n${r.samples} walk-forward samples from ${r.players} players\n`);
+    console.log(`  current  formWeight 0.40  home 1.03   RMSE ${r.current.rmse.toFixed(2)}  bias ${r.current.bias.toFixed(2)}`);
+    console.log(`  best     formWeight ${r.best.formWeight.toFixed(2)}  home ${r.best.homeAdvantage.toFixed(2)}   RMSE ${r.best.rmse.toFixed(2)}  bias ${r.best.bias.toFixed(2)}`);
+    console.log(`\n  improvement in RMSE: ${r.improvementRmse}`);
+    console.log(`  ${r.note}`);
+    return;
+  }
+
   if (cmd === 'dashboard') {
     const { build } = await import('./dashboard.js');
     const d = await build();
@@ -358,7 +370,7 @@ const main = async () => {
     }
   }
 
-  console.log('Usage: autopilot <doctor|plan|run|when|report|accuracy|dashboard|pause|resume|watch|signin|create-app|auth> [--json] [--dry] [--force] [--min-starter 6000]');
+  console.log('Usage: autopilot <doctor|plan|run|when|report|accuracy|dashboard|backtest|pause|resume|watch|signin|create-app|auth> [--json] [--dry] [--force] [--min-starter 6000]');
   process.exitCode = 1;
 };
 

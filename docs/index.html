@@ -4,345 +4,252 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sorare Autopilot</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{
-  --bg:#07080d; --bg2:#0c0e16; --card:#11141f; --line:#1e2334; --line2:#2a3148;
-  --ink:#eef1f8; --dim:#8b95ad; --faint:#5c6479;
-  --go:#34d399; --warn:#fbbf24; --stop:#fb7185; --v:#a78bfa; --v2:#7c5cf0;
-  --measure:78ch; --r:14px;
-}
+:root{--bg:#07080d;--card:#11141f;--line:#1e2334;--line2:#2a3148;--ink:#eef1f8;--dim:#8b95ad;--faint:#5c6479;
+ --go:#34d399;--warn:#fbbf24;--stop:#fb7185;--v:#a78bfa;--v2:#7c5cf0;--r:13px}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{
-  margin:0; color:var(--ink); font-family:Inter,ui-sans-serif,-apple-system,system-ui,sans-serif;
-  font-size:15px; line-height:1.55; text-wrap:pretty;
-  background:
-    radial-gradient(1100px 620px at 14% -8%, #1a1440 0%, transparent 62%),
-    radial-gradient(900px 520px at 88% 4%, #07253a 0%, transparent 58%),
-    var(--bg);
-  background-attachment:fixed;
-}
-h1,h2,h3{margin:0; text-wrap:balance; letter-spacing:-.022em; font-weight:700}
-h1{font-size:1.5rem}
-h2{font-size:.72rem; text-transform:uppercase; letter-spacing:.13em; color:var(--faint); font-weight:700}
-h3{font-size:1.02rem; font-weight:650}
-a{color:var(--v); text-decoration:none}
-.wrap{max-width:1180px; margin:0 auto; padding:30px 18px 80px}
+body{margin:0;color:var(--ink);font:15px/1.5 Inter,ui-sans-serif,-apple-system,system-ui,sans-serif;text-wrap:pretty;
+ background:radial-gradient(1000px 500px at 12% -10%,#181240 0%,transparent 60%),radial-gradient(800px 420px at 90% 0%,#062338 0%,transparent 55%),var(--bg);
+ background-attachment:fixed;min-height:100vh}
+h1,h2,h3{margin:0;text-wrap:balance;letter-spacing:-.022em;font-weight:700}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:14px 16px 28px}
 
-/* header */
-.top{display:flex; flex-wrap:wrap; align-items:center; gap:10px 16px; margin-bottom:24px}
-.brand{display:flex; align-items:center; gap:11px}
-.mark{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;font-weight:800;font-size:.9rem;
-  background:linear-gradient(140deg,var(--v2),#3ba7ff); color:#0a0713}
-.who{color:var(--dim); font-size:.85rem}
-.stamp{margin-left:auto; color:var(--faint); font-size:.8rem; font-variant-numeric:tabular-nums}
+/* ---- one bar ---- */
+.bar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+ background:linear-gradient(140deg,#151a2b,#0d1018);border:1px solid var(--line2);border-radius:16px;padding:12px 16px}
+.mark{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;font-weight:800;font-size:.85rem;
+ background:linear-gradient(140deg,var(--v2),#3ba7ff);color:#0a0713;flex:none}
+.bar h1{font-size:1.05rem;white-space:nowrap}
+.acct{color:var(--dim);font-size:.8rem;white-space:nowrap}
+.orb{width:11px;height:11px;border-radius:99px;background:var(--go);flex:none;
+ box-shadow:0 0 0 0 rgba(52,211,153,.6);animation:pl 2.4s ease-out infinite}
+.paused .orb{background:var(--stop);animation:none}
+@keyframes pl{0%{box-shadow:0 0 0 0 rgba(52,211,153,.5)}70%{box-shadow:0 0 0 11px rgba(52,211,153,0)}100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}}
+@media(prefers-reduced-motion:reduce){.orb{animation:none}}
+.st{display:flex;align-items:center;gap:8px;font-weight:650;white-space:nowrap}
+.v{display:flex;align-items:center;gap:7px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.v img{width:22px;height:26px;object-fit:contain}
+.v b{font-size:1.05rem;font-weight:750;letter-spacing:-.02em}
+.v s{color:var(--faint);font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;text-decoration:none;font-weight:700}
+.cd{font-size:1.05rem;font-weight:750;letter-spacing:-.02em;white-space:nowrap;font-variant-numeric:tabular-nums}
+.cd s{color:var(--faint);font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;text-decoration:none;font-weight:700;margin-left:5px}
+.spacer{flex:1 1 auto;min-width:0}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:10px;padding:9px 16px;font-weight:700;font-size:.87rem;
+ white-space:nowrap;transition:filter .12s,transform .12s;cursor:pointer;border:0}
+.btn:hover{filter:brightness(1.1);transform:translateY(-1px)}
+.btn.stop{background:linear-gradient(140deg,#e2536b,#b8354d);color:#fff}
+.btn.play{background:linear-gradient(140deg,#34d399,#0f9f72);color:#04231a}
+.sq{width:11px;height:11px;background:currentColor;border-radius:3px}
+.tri{border-left:11px solid currentColor;border-top:7px solid transparent;border-bottom:7px solid transparent}
 
-/* hero control */
-.hero{
-  position:relative; overflow:hidden; border:1px solid var(--line2); border-radius:20px;
-  background:linear-gradient(160deg,#151a2b 0%,#0d1018 60%); padding:22px 24px;
-  display:flex; flex-wrap:wrap; align-items:center; gap:22px; margin-bottom:18px;
-}
-.hero::after{content:""; position:absolute; inset:0; pointer-events:none;
-  background:radial-gradient(520px 200px at 78% 0%, rgba(124,92,240,.20), transparent 70%)}
-.hero.paused::after{background:radial-gradient(520px 200px at 78% 0%, rgba(251,113,133,.16), transparent 70%)}
-.state{display:flex; align-items:center; gap:13px; min-width:210px}
-.orb{width:14px;height:14px;border-radius:99px;background:var(--go);
-  box-shadow:0 0 0 0 rgba(52,211,153,.6); animation:pulse 2.4s ease-out infinite; flex:none}
-.paused .orb{background:var(--stop); animation:none; box-shadow:0 0 14px rgba(251,113,133,.5)}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(52,211,153,.55)}70%{box-shadow:0 0 0 13px rgba(52,211,153,0)}100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}}
-@media (prefers-reduced-motion:reduce){.orb{animation:none}}
-.state b{display:block; font-size:1.3rem; letter-spacing:-.02em; line-height:1.2}
-.state span{color:var(--dim); font-size:.82rem}
-.sep{width:1px; align-self:stretch; background:var(--line2); margin:2px 0}
-.count{min-width:180px}
-.count .t{font-size:1.55rem; white-space:nowrap; font-weight:750; letter-spacing:-.03em; font-variant-numeric:tabular-nums; line-height:1.15}
-.count .k{color:var(--faint); font-size:.72rem; text-transform:uppercase; letter-spacing:.11em; font-weight:650}
-.acts{margin-left:auto; display:flex; gap:10px; align-items:center; flex-wrap:wrap}
-.big{
-  display:inline-flex; align-items:center; gap:10px; border-radius:13px; padding:13px 22px;
-  font-weight:700; font-size:.95rem; border:1px solid transparent; cursor:pointer;
-  transition:transform .12s ease, filter .12s ease;
-}
-.big{white-space:nowrap}
-.big:hover{transform:translateY(-1px); filter:brightness(1.08)}
-.big:active{transform:translateY(0)}
-.big.stop{background:linear-gradient(140deg,#e2536b,#b8354d); color:#fff}
-.big.play{background:linear-gradient(140deg,#34d399,#0f9f72); color:#04231a}
-.ghost{white-space:nowrap; border:1px solid var(--line2); color:var(--dim); border-radius:11px; padding:11px 16px; font-size:.86rem; font-weight:600}
-.ghost:hover{border-color:var(--v); color:var(--ink)}
-.ico{width:0;height:0;flex:none}
-.ico.s{width:13px;height:13px;background:currentColor;border-radius:3px}
-.ico.p{border-left:13px solid currentColor;border-top:8px solid transparent;border-bottom:8px solid transparent}
+/* ---- tabs ---- */
+nav{display:flex;gap:7px;overflow-x:auto;margin:14px 0 12px;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav button{background:var(--card);border:1px solid var(--line);color:var(--dim);border-radius:99px;
+ padding:8px 15px;font:inherit;font-size:.85rem;font-weight:620;white-space:nowrap;cursor:pointer}
+nav button:hover{border-color:var(--line2);color:var(--ink)}
+nav button[aria-selected=true]{background:linear-gradient(140deg,#2a2160,#1b1640);border-color:#43368c;color:#fff}
+nav button .dot{display:inline-block;width:6px;height:6px;border-radius:99px;background:var(--warn);margin-left:6px;vertical-align:middle}
 
-/* tiles */
-.tiles{display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); margin-bottom:26px}
-.tile{background:var(--card); border:1px solid var(--line); border-radius:var(--r); padding:15px 17px}
-.tile{position:relative}
-.tile .ic{position:absolute; top:10px; right:12px; width:40px; height:46px; object-fit:contain; opacity:.92;
-  pointer-events:none; filter:drop-shadow(0 3px 10px rgba(0,0,0,.55))}
-.tile .k{color:var(--faint); font-size:.7rem; text-transform:uppercase; letter-spacing:.11em; font-weight:700}
-.tile .n{display:block; white-space:nowrap; padding-right:50px; font-size:1.75rem; font-weight:780; letter-spacing:-.035em; margin-top:3px; font-variant-numeric:tabular-nums}
-.tile .s{color:var(--dim); font-size:.78rem}
-.tile.guard{border-color:#26406a}
-.tile.guard .n{background:linear-gradient(120deg,#7dd3fc,#a78bfa); -webkit-background-clip:text; background-clip:text; color:transparent}
-
-section{margin-top:28px}
-section>h2{margin-bottom:11px}
-.card{background:var(--card); border:1px solid var(--line); border-radius:var(--r); padding:18px 20px}
-.card.prose{max-width:74ch}
-.card.prose .note{max-width:none}
-.head{display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-bottom:6px}
-.pill{display:inline-block; padding:2px 9px; border-radius:99px; font-size:.71rem; font-weight:650;
-  border:1px solid var(--line2); color:var(--dim); white-space:nowrap}
-.pill.go{color:var(--go); border-color:#1c4d3c; background:#0d2a21}
-.pill.warn{color:var(--warn); border-color:#584311; background:#2a2008}
-.pill.bad{color:var(--stop); border-color:#5c2733; background:#2a1017}
-.pill.v{color:var(--v); border-color:#3a2f6b; background:#191338}
-
-/* lineup cards */
-.xi{display:grid; gap:13px; grid-template-columns:repeat(auto-fit,minmax(146px,1fr)); margin:14px 0 4px}
-.p{position:relative; border:1px solid var(--line); border-radius:13px; overflow:hidden; background:#0b0e16;
-  transition:transform .14s ease, border-color .14s ease}
-.p:hover{transform:translateY(-3px); border-color:var(--line2)}
-.p.cap{border-color:#4a3c8f; box-shadow:0 0 22px -8px rgba(124,92,240,.75)}
-.p img{width:100%; aspect-ratio:5/7; object-fit:cover; display:block}
-.p .b{padding:10px 11px 12px; background:linear-gradient(180deg,#10131d,#0b0e16)}
-.p .nm{font-weight:680; font-size:.87rem; line-height:1.25; text-wrap:balance}
-.p .fx{color:var(--dim); font-size:.73rem; margin-top:3px}
-.p .xp{margin-top:9px; white-space:nowrap; font-size:1.3rem; font-weight:780; letter-spacing:-.03em;
-  background:linear-gradient(120deg,#c4b5fd,#7dd3fc); -webkit-background-clip:text; background-clip:text; color:transparent}
-.p .xp small{-webkit-text-fill-color:var(--faint); font-size:.62rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase}
-.tag,.capt{position:absolute; top:8px; border-radius:7px; padding:2px 7px; font-size:.67rem; font-weight:700}
-.tag{left:8px; background:#070911d9; border:1px solid var(--line2); color:var(--dim); backdrop-filter:blur(6px)}
-.capt{right:8px; background:linear-gradient(140deg,var(--v),#6d4fe0); color:#120c26}
-
-.steps{display:flex; gap:5px; margin:10px 0 0; flex-wrap:wrap}
-.steps i{width:30px; height:6px; border-radius:99px; background:#1a2030; display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:15px 17px}
+.pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:.71rem;font-weight:650;border:1px solid var(--line2);color:var(--dim);white-space:nowrap}
+.pill.go{color:var(--go);border-color:#1c4d3c;background:#0d2a21}
+.pill.warn{color:var(--warn);border-color:#584311;background:#2a2008}
+.pill.bad{color:var(--stop);border-color:#5c2733;background:#2a1017}
+.pill.vv{color:var(--v);border-color:#3a2f6b;background:#191338}
+.head{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-bottom:10px}
+.head h3{font-size:1rem}
+.steps{display:flex;gap:4px}
+.steps i{width:26px;height:5px;border-radius:99px;background:#1a2030}
 .steps i.done{background:linear-gradient(90deg,var(--v2),#5eead4)}
-.steps i.now{background:var(--v); box-shadow:0 0 10px rgba(167,139,250,.7)}
-.rw{display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 0}
-.rw span{border:1px dashed var(--line2); border-radius:9px; padding:5px 11px; font-size:.79rem; color:var(--dim)}
-.rw b{color:var(--ink); font-weight:650}
-.tot{display:flex; flex-wrap:wrap; gap:8px 18px; align-items:baseline; margin:16px 0 0}
-.tot .n{font-size:2.15rem; white-space:nowrap; font-weight:800; letter-spacing:-.04em; font-variant-numeric:tabular-nums}
-.bar{height:8px; background:#161b29; border-radius:99px; overflow:hidden; margin:11px 0 0; max-width:480px}
-.bar i{display:block; height:100%; border-radius:99px; background:linear-gradient(90deg,var(--v2),#5eead4)}
-
-table{width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums}
-th{text-align:left; font-weight:700; color:var(--faint); font-size:.7rem; text-transform:uppercase;
-  letter-spacing:.1em; padding:0 12px 8px 0}
-td{padding:8px 12px 8px 0; border-top:1px solid var(--line)}
-tr:hover td{background:#0e1220}
+.steps i.now{background:var(--v)}
+.xi{display:grid;gap:11px;grid-template-columns:repeat(5,1fr)}
+.p{position:relative;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#0b0e16}
+.p.cap{border-color:#4a3c8f;box-shadow:0 0 18px -8px rgba(124,92,240,.8)}
+.p img{width:100%;aspect-ratio:5/7;object-fit:cover;display:block}
+.p .b{padding:8px 9px 10px}
+.p .nm{font-weight:670;font-size:.83rem;line-height:1.2;text-wrap:balance}
+.p .fx{color:var(--dim);font-size:.71rem;margin-top:2px}
+.p .xp{margin-top:6px;font-size:1.15rem;font-weight:780;letter-spacing:-.03em;white-space:nowrap;
+ background:linear-gradient(120deg,#c4b5fd,#7dd3fc);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tag,.capt{position:absolute;top:7px;border-radius:6px;padding:1px 6px;font-size:.66rem;font-weight:700}
+.tag{left:7px;background:#070911d9;border:1px solid var(--line2);color:var(--dim)}
+.capt{right:7px;background:linear-gradient(140deg,var(--v),#6d4fe0);color:#120c26}
+.tot{display:flex;flex-wrap:wrap;gap:7px 16px;align-items:baseline;margin-top:13px}
+.tot b{font-size:1.85rem;font-weight:800;letter-spacing:-.04em;white-space:nowrap}
+.barp{height:7px;background:#161b29;border-radius:99px;overflow:hidden;margin-top:9px;max-width:460px}
+.barp i{display:block;height:100%;background:linear-gradient(90deg,var(--v2),#5eead4)}
+.msg{margin-top:12px;border:1px solid #584311;background:#221a07;color:var(--warn);border-radius:10px;padding:10px 13px;font-size:.86rem}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:.9rem}
+th{text-align:left;font-weight:700;color:var(--faint);font-size:.69rem;text-transform:uppercase;letter-spacing:.1em;padding:0 10px 7px 0}
+td{padding:7px 10px 7px 0;border-top:1px solid var(--line)}
 .muted{color:var(--dim)}
-ul.rej{list-style:none; padding:0; margin:12px 0 0; columns:2; column-gap:30px}
-ul.rej li{color:var(--dim); font-size:.85rem; margin-bottom:4px; break-inside:avoid}
-.note{color:var(--dim); max-width:var(--measure); text-wrap:pretty}
-.note.wide{max-width:none}
-code{background:#171c2b; border:1px solid var(--line2); border-radius:5px; padding:1px 6px; font-size:.85em; white-space:nowrap}
-footer{margin-top:44px; color:var(--faint); font-size:.82rem}
-@media (max-width:860px){ .xi{grid-template-columns:repeat(auto-fit,minmax(118px,1fr))} }
-@media (max-width:680px){
-  .wrap{padding:20px 14px 60px}
-  h1{font-size:1.25rem}
-  ul.rej{columns:1}
-  .stamp{margin-left:0; width:100%; order:3}
-  .hero{flex-direction:column; align-items:stretch; gap:16px; padding:18px; border-radius:16px}
-  .sep{display:none}
-  .state{min-width:0}
-  .count{min-width:0; display:flex; align-items:baseline; gap:10px}
-  .count .k{margin:0}
-  .acts{margin-left:0; width:100%}
-  .big{width:100%; justify-content:center; padding:15px 20px; font-size:1rem}
-  .tiles{grid-template-columns:repeat(2,1fr); gap:10px}
-  .tile{padding:13px 14px}
-  .tile .n{font-size:1.4rem}
-  .card{padding:15px 15px; border-radius:12px}
-  .xi{grid-template-columns:repeat(2,1fr); gap:10px}
-  .tot .n{font-size:1.8rem}
-  table{font-size:.86rem}
-  code{white-space:normal; overflow-wrap:anywhere}
-  th:nth-child(3),td:nth-child(3){display:none}
+ul.rej{list-style:none;padding:0;margin:11px 0 0;columns:3;column-gap:24px}
+ul.rej li{color:var(--dim);font-size:.82rem;margin-bottom:3px;break-inside:avoid}
+.prose{max-width:72ch;color:var(--dim)}
+code{background:#171c2b;border:1px solid var(--line2);border-radius:5px;padding:1px 6px;font-size:.85em}
+.k4{display:grid;gap:11px;grid-template-columns:repeat(4,1fr)}
+.k4 div{background:#0e1220;border:1px solid var(--line);border-radius:11px;padding:12px 14px}
+.k4 s{display:block;color:var(--faint);font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700;text-decoration:none}
+.k4 b{font-size:1.5rem;font-weight:780;letter-spacing:-.03em}
+@media(max-width:900px){.xi{grid-template-columns:repeat(3,1fr)}ul.rej{columns:2}.k4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){
+ .wrap{padding:10px 12px 24px}
+ .bar{gap:10px;padding:11px 13px;border-radius:14px}
+ .bar h1{font-size:.98rem}.acct{display:none}
+ .spacer{display:none}
+ .btn{width:100%;justify-content:center;padding:12px;order:9}
+ .xi{grid-template-columns:repeat(2,1fr);gap:9px}
+ ul.rej{columns:1}
+ code{overflow-wrap:anywhere}
 }
-@media (max-width:400px){ .tiles{grid-template-columns:1fr} }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="top">
-    <div class="brand"><div class="mark">SA</div><h1>Sorare Autopilot</h1></div>
-    <span class="who" id="who"></span>
-    <span class="stamp" id="stamp"></span>
-  </div>
-  <div id="app"><p class="muted">Loading…</p></div>
-  <footer><div class="card prose" style="background:none;border:none;padding:0"><p class="note">Built and updated by the autopilot on every pass.
-    Projected points blend a player's recent form with how likely they are to start.
-    Treat them as estimates until the accuracy panel has a few gameweeks behind it.</p></div></footer>
+  <div class="bar" id="bar"><span class="muted">Loading…</span></div>
+  <nav id="tabs"></nav>
+  <div id="panel"></div>
 </div>
 <script>
 const EDIT='https://github.com/mas00009/sorare-autopilot/edit/main/docs/control.json';
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const when=i=>i?new Date(i).toLocaleString(undefined,{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}):'—';
-const ago=i=>{if(!i)return'never';const m=Math.round((Date.now()-new Date(i))/6e4);
-  return m<1?'just now':m<60?m+'m ago':Math.round(m/60)+'h ago'};
-function countdown(iso){ if(!iso) return {t:'—',k:'no lock scheduled'};
-  let s=Math.floor((new Date(iso)-Date.now())/1000); if(s<0) return {t:'locked',k:'window closed'};
-  const d=Math.floor(s/86400); s-=d*86400; const h=Math.floor(s/3600); s-=h*3600; const m=Math.floor(s/60);
-  return {t:d?`${d}d ${h}h`:h?`${h}h ${String(m).padStart(2,'0')}m`:`${m}m`, k:'until lineups lock'}; }
+const ago=i=>{if(!i)return'never';const m=Math.round((Date.now()-new Date(i))/6e4);return m<1?'just now':m<60?m+'m ago':Math.round(m/60)+'h ago'};
+const cdown=i=>{if(!i)return'—';let s=Math.floor((new Date(i)-Date.now())/1000);if(s<0)return'locked';
+ const d=Math.floor(s/86400);s-=d*86400;const h=Math.floor(s/3600);const m=Math.floor((s-h*3600)/60);
+ return d?`${d}d ${h}h`:h?`${h}h ${String(m).padStart(2,'0')}m`:`${m}m`};
+const JOIN=/\b(a|an|the|of|to|in|on|at|for|and|or|but|with|is|are|be|by|as|from|that|this|it|we|you|our|your|can|will|so|not|only|no|its|their)\s+/gi;
+function bind(root){const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode(n){
+ const t=n.parentElement?.tagName;return(t==='CODE'||t==='SCRIPT'||t==='STYLE')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT}});
+ const ns=[];let n;while((n=w.nextNode()))ns.push(n);
+ for(const x of ns){if(!/\S/.test(x.nodeValue))continue;
+  x.nodeValue=x.nodeValue.replace(JOIN,(m,a)=>a+' ').replace(/(\S+)\s+(\S+\s*)$/,'$1 $2')}}
 
-let DATA=null;
-function render(d){
-  DATA=d;
-  document.getElementById('who').textContent=`${d.account} · ${d.squad}`;
-  document.getElementById('stamp').textContent=`updated ${ago(d.generatedAt)}`;
-  const ct=d.control??{}, paused=!!ct.paused;
-  const offs=['packs','lineups','claims'].filter(k=>ct[k+'Enabled']===false);
-  const cd=countdown(d.schedule.nextLock);
-  const fail=d.health.failStreak;
+let D=null,TAB=0;
 
-  let h=`<div class="hero${paused?' paused':''}">
-    <div class="state"><span class="orb"></span>
-      <div><b>${paused?'Paused':'Running'}</b>
-        <span>${paused?'nothing will be done':`checking every ${d.schedule.cadenceMin} min · last pass ${ago(d.schedule.lastRunAt)}`}</span></div>
-    </div>
-    <div class="sep"></div>
-    <div class="count"><div class="t" id="cd">${cd.t}</div><div class="k">${cd.k}</div></div>
-    <div class="acts">
-      ${offs.map(o=>`<span class="pill warn">${o} off</span>`).join('')}
-      ${fail>=3?`<span class="pill bad">failing ×${fail}</span>`:''}
-      <a class="big ${paused?'play':'stop'}" href="${EDIT}" target="_blank" rel="noopener">
-        <i class="ico ${paused?'p':'s'}"></i>${paused?'Resume the bot':'Stop the bot'}</a>
-    </div>
-  </div>
-
-  <div class="tiles">
-    <div class="tile"><img class="ic" src="img/essence.png" alt="" onerror="this.remove()"><span class="k">Essence</span><span class="n">${d.balances.essence??'—'}</span>
-      <span class="s">${d.packs.lastThreeStar?'last pull '+esc(d.packs.lastThreeStar):'spent only on packs'}</span></div>
-    <div class="tile guard"><img class="ic" src="img/gem.png" alt="" onerror="this.remove()"><span class="k">Gems</span><span class="n">${d.balances.gems??'—'}</span>
-      <span class="s">never spendable by the bot</span></div>
-    <div class="tile"><span class="k">Next lock</span><span class="n" style="font-size:1.05rem;letter-spacing:-.01em">${when(d.schedule.nextLock)}</span>
-      <span class="s">${esc(d.schedule.reason??'')}</span></div>
-    <div class="tile"><span class="k">Health</span><span class="n" style="font-size:1.2rem">${fail?`${fail} failed`:'All good'}</span>
-      <span class="s">${fail?'alerting by email':'no failures on recent passes'}</span></div>
-  </div>`;
-
-  for(const s of d.surfaces) h+=surface(s);
-
-  if(d.fixtures.length) h+=`<section><h2>Upcoming fixtures</h2><div class="card"><table>
-    <thead><tr><th>Kickoff</th><th>Match</th><th>Your players</th></tr></thead><tbody>
-    ${d.fixtures.map(f=>`<tr><td>${when(f.kickoff)}</td>
-      <td>${esc(f.team)} ${f.home?'vs':'@'} ${esc(f.opponent)}</td>
-      <td class="muted">${esc(f.players.join(', '))}</td></tr>`).join('')}
-    </tbody></table></div></section>`;
-
-  h+=`<section><h2>Are the projections any good?</h2><div class="card${d.accuracy.n?'':' prose'}">`;
-  h+= d.accuracy.n ? `<div class="tiles" style="margin:0">
-      <div class="tile"><span class="k">Steps</span><span class="n">${d.accuracy.steps}</span><span class="s">${d.accuracy.hit} hit target</span></div>
-      <div class="tile"><span class="k">Bias</span><span class="n">${d.accuracy.bias>0?'+':''}${d.accuracy.bias}</span><span class="s">below zero means over-projecting</span></div>
-      <div class="tile"><span class="k">Mean error</span><span class="n">${d.accuracy.mae}</span><span class="s">points per player</span></div>
-      <div class="tile"><span class="k">Blanks</span><span class="n">${Math.round(d.accuracy.blankRate*100)}%</span><span class="s">scored nothing at all</span></div>
-    </div>${d.accuracy.steps<4?'<p class="note wide" style="margin:14px 0 0">Too few samples to tune the weights on yet.</p>':''}`
-    : `<p class="note">Nothing measured yet. Every finished step records what each player was
-       projected to score against what they actually scored. Until several have completed, the
-       projections on this page are untested estimates.</p>`;
-  h+=`</div></section>
-
-  <section><h2>How the controls work</h2><div class="card prose">
-    <p class="note wide" style="margin:0">Set <code>paused</code> to <code>true</code> and everything stops.
-    Packs, lineups and claims can each be switched off on their own.
-    The bot rereads that file every pass, so a change lands within minutes.
-    Editing it needs your GitHub login, and that is what keeps the controls yours.</p>
-  </div></section>`;
-
-  document.getElementById('app').innerHTML=h;
-  bind(document.getElementById('app'));
-  tick();
+function topbar(d){
+  const ct=d.control??{},paused=!!ct.paused,fail=d.health.failStreak;
+  return `<div class="mark">SA</div><h1>Sorare Autopilot</h1><span class="acct">${esc(d.account)} · ${esc(d.squad)}</span>
+   <span class="st"><span class="orb"></span>${paused?'Paused':'Running'}</span>
+   <span class="cd">${cdown(d.schedule.nextLock)}<s>to lock</s></span>
+   <span class="v"><img src="img/essence.png" alt="" onerror="this.remove()"><b>${d.balances.essence??'—'}</b><s>essence</s></span>
+   <span class="v"><img src="img/gem.png" alt="" onerror="this.remove()"><b>${d.balances.gems??'—'}</b><s>gems</s></span>
+   ${fail>=3?`<span class="pill bad">failing ×${fail}</span>`:''}
+   <span class="spacer"></span>
+   <a class="btn ${paused?'play':'stop'}" href="${EDIT}" target="_blank" rel="noopener">
+     <i class="${paused?'tri':'sq'}"></i>${paused?'Resume':'Stop the bot'}</a>`;
 }
 
-function surface(s){
-  const cur=s.current.length?s.current.map(p=>esc(p.name)+(p.captain?' (C)':'')).join(', ')
-    :'<span class="muted">none set</span>';
-  const st={LINEUP_SET:'go',PLAYABLE:'go',CLAIMABLE:'warn',LIVE:'v',FAILED:'bad'}[s.state]||'';
+function surfacePanel(s){
   const pl=s.plan;
-  const wait = pl && pl.clearsTarget===false
-    ? `<div class="rw" style="margin-top:12px"><span style="border-style:solid;border-color:#584311;color:var(--warn)">
-         Waiting: best across the window is <b>${pl.projected}</b>, short of ${s.target} by <b>${pl.shortfall}</b>.
-         No lineup goes in until one can clear it.</span></div>` : '';
-  const lockNote = pl && pl.clearsTarget && pl.lock
-    ? `<div class="rw" style="margin-top:12px"><span>Would lock <b>${when(pl.lock)}</b>${pl.tradedPointsForTime>0?` · gave up ${pl.tradedPointsForTime} pts to lock a day later`:''}</span></div>` : '';
-  let body;
-  if(!s.candidates.length){
-    body=`<p class="note wide" style="margin:14px 0 0">No eligible cards for this step yet.
-      It opens for entry closer to its matchday, and the bot will fill it then.</p>`;
-  }else{
-    const five=s.candidates.slice(0,5), tot=five.reduce((t,c)=>t+c.expected,0);
-    const pct=s.target?Math.min(100,tot/s.target*100):0;
-    body=`<div class="xi">${five.map((c,i)=>`
+  const lvl=s.level!=null&&s.totalLevels?`<span class="pill vv">Level ${s.level} of ${s.totalLevels}</span>`:'';
+  const dots=(s.ladder??[]).map(x=>`<i class="${x.state==='CLAIMED'?'done':(x.level===s.level?'now':'')}" title="Level ${x.level} · ${x.target} pts"></i>`).join('');
+  const rw=(s.rewards??[]).map(r=>r.kind==='pack'?`<span class="pill">Pays a ${r.cards}-card pack</span>`
+    :r.kind==='essence'?`<span class="pill">Pays ${r.amount} essence</span>`
+    :`<span class="pill">Pays ${esc(({InGameCurrency:'coins',Experience:'XP',AnyCard:'a card',CardPacks:'a card pack'})[r.kind]??r.kind)}</span>`).join('');
+  const st={LINEUP_SET:'go',PLAYABLE:'go',CLAIMABLE:'warn',LIVE:'vv',FAILED:'bad'}[s.state]||'';
+
+  if(!s.candidates.length) return `<div class="card">
+    <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>${lvl}<span class="pill ${st}">${esc(s.state??'?')}</span></div>
+    ${dots?`<div class="steps">${dots}</div>`:''}${rw?`<div style="margin-top:10px">${rw}</div>`:''}
+    <p class="prose" style="margin:13px 0 0">No eligible cards yet. This step opens for entry closer to its matchday, and the bot fills it then.</p></div>`;
+
+  const five=s.candidates.slice(0,5),tot=five.reduce((t,c)=>t+c.expected,0),pct=s.target?Math.min(100,tot/s.target*100):0;
+  const waiting=pl&&pl.clearsTarget===false;
+  return `<div class="card">
+    <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>${lvl}
+      <span class="pill ${st}">${esc(s.state??'?')}</span>${rw}</div>
+    ${dots?`<div class="steps">${dots}</div>`:''}
+    <div class="xi" style="margin-top:12px">${five.map((c,i)=>`
       <div class="p${i?'':' cap'}">
-        ${c.picture?`<img src="${esc(c.picture)}" alt="${esc(c.player)}" loading="lazy">`
-          :`<div style="aspect-ratio:5/7;display:grid;place-items:center;color:var(--faint);font-size:.75rem">no art</div>`}
+        ${c.picture?`<img src="${esc(c.picture)}" alt="${esc(c.player)}" loading="lazy">`:`<div style="aspect-ratio:5/7"></div>`}
         <span class="tag">${esc(c.position)}</span>${i?'':'<span class="capt">C</span>'}
         <div class="b"><div class="nm">${esc(c.player)}</div>
           <div class="fx">${c.opponent?`${c.home?'vs':'@'} ${esc(c.opponent)}`:'no fixture'}</div>
-          <div class="fx">L15 ${c.average??'—'} · L5 ${c.formL5??'—'}${c.starterPct!=null?` · ${Math.round(c.starterPct)}% start`:''}</div>
-          <div class="xp">${c.expected} <small>proj</small></div></div>
-      </div>`).join('')}</div>
-      <div class="tot"><span class="n">${tot.toFixed(0)}</span><span class="muted">projected</span>
-        ${s.target?`<span class="muted">target ${s.target}</span>
-        <span class="pill ${tot>=s.target?'go':'warn'}">${tot>=s.target?'clears target':Math.round(s.target-tot)+' short'}</span>`:''}</div>
-      ${s.target?`<div class="bar"><i style="width:${pct}%"></i></div>`:''}`;
-  }
-  const lvl = s.level!=null && s.totalLevels
-    ? `<span class="pill v">Level ${s.level} of ${s.totalLevels}</span>` : '';
-  const dots = (s.ladder??[]).map(x=>
-    `<i class="${x.state==='CLAIMED'?'done':(x.level===s.level?'now':'')}" title="Level ${x.level} · ${x.target} pts · ${x.state}"></i>`).join('');
-  const rw = (s.rewards??[]).map(r=>
-    r.kind==='pack' ? `<span>Reward: <b>a ${r.cards}-card pack</b></span>`
-    : r.kind==='essence' ? `<span>Reward: <b>${r.amount} essence</b></span>`
-    : `<span>Reward: <b>${esc(({
-        InGameCurrency:'coins', Experience:'XP', CardShard:'essence',
-        AnyCard:'a card', CardPacks:'a card pack', Monetary:'cash',
-      })[r.kind] ?? r.kind.replace(/([a-z])([A-Z])/g,'$1 $2').toLowerCase())}</b></span>`).join('');
-
-  return `<section><h2>${esc(s.surface)}</h2><div class="card">
-    <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>
-      ${lvl}<span class="pill ${st}">${esc(s.state??'unknown')}</span></div>
-    ${dots?`<div class="steps">${dots}</div>`:''}
-    ${rw?`<div class="rw">${rw}</div>`:''}
-    <p class="note wide" style="margin:.2em 0 0"><strong>In now:</strong> ${cur}</p>
-    ${wait}${lockNote}${body}
-    ${s.rejected.length?`<h2 style="margin:20px 0 0">Held out</h2>
-      <ul class="rej">${s.rejected.map(c=>`<li>${esc(c.player)}: ${esc(c.blocked)}</li>`).join('')}</ul>`:''}
-  </div></section>`;
+          <div class="fx">L15 ${c.average??'—'} · L5 ${c.formL5??'—'}</div>
+          <div class="xp">${c.expected}</div></div></div>`).join('')}</div>
+    <div class="tot"><b>${tot.toFixed(0)}</b><span class="muted">projected</span>
+      ${s.target?`<span class="muted">target ${s.target}</span>
+      <span class="pill ${tot>=s.target?'go':'warn'}">${tot>=s.target?'clears target':Math.round(s.target-tot)+' short'}</span>`:''}</div>
+    ${s.target?`<div class="barp"><i style="width:${pct}%"></i></div>`:''}
+    ${waiting?`<div class="msg">Waiting. Best across the window projects <b>${pl.projected}</b>, short by <b>${pl.shortfall}</b>.
+      Nothing goes in until it can clear the target, because a failed step costs a heart.</div>`:''}
+    ${pl&&pl.clearsTarget&&pl.lock?`<div class="msg" style="border-color:#1c4d3c;background:#0d2a21;color:var(--go)">
+      Would lock ${when(pl.lock)}${pl.tradedPointsForTime>0?` · gave up ${pl.tradedPointsForTime} pts to lock a day later`:''}.</div>`:''}
+    ${s.rejected.length?`<ul class="rej">${s.rejected.slice(0,9).map(c=>`<li>${esc(c.player)}: ${esc(c.blocked)}</li>`).join('')}</ul>`:''}
+  </div>`;
 }
 
-const JOIN=/\b(a|an|the|of|to|in|on|at|for|and|or|but|with|each|their|its|is|are|was|be|by|as|from|that|this|it|we|you|our|your|what|which|who|can|will|so|not|only|every|any)\s+/gi;
-function bind(root){
-  const walk=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode(n){
-    const t=n.parentElement?.tagName;
-    return (t==='CODE'||t==='SCRIPT'||t==='STYLE')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT;
-  }});
-  const nodes=[]; let n; while((n=walk.nextNode())) nodes.push(n);
-  for(const node of nodes){
-    if(!/\S/.test(node.nodeValue)) continue;
-    let v=node.nodeValue.replace(JOIN,(m,w)=>w+'\u00a0');
-    // Keep the last two words together so no paragraph ends on a single word.
-    v=v.replace(/(\S+)\s+(\S+\s*)$/,'$1\u00a0$2');
-    node.nodeValue=v;
-  }
+function fixturesPanel(d){
+  if(!d.fixtures.length) return `<div class="card"><p class="prose" style="margin:0">No upcoming fixtures for your players in this window.</p></div>`;
+  return `<div class="card"><table><thead><tr><th>Kickoff</th><th>Match</th><th>Your players</th></tr></thead><tbody>
+    ${d.fixtures.map(f=>`<tr><td>${when(f.kickoff)}</td><td>${esc(f.team)} ${f.home?'vs':'@'} ${esc(f.opponent)}</td>
+      <td class="muted">${esc(f.players.join(', '))}</td></tr>`).join('')}</tbody></table></div>`;
 }
 
-function tick(){ const el=document.getElementById('cd'); if(!el||!DATA)return;
-  el.textContent=countdown(DATA.schedule.nextLock).t; }
-setInterval(tick,30000);
+function accuracyPanel(d){
+  const a=d.accuracy,b=d.backtest;
+  let h='<div class="card">';
+  h+= a.n?`<div class="k4">
+      <div><s>Steps</s><b>${a.steps}</b><span class="muted">${a.hit} hit target</span></div>
+      <div><s>Bias</s><b>${a.bias>0?'+':''}${a.bias}</b><span class="muted">under zero = over-projecting</span></div>
+      <div><s>Mean error</s><b>${a.mae}</b><span class="muted">points per player</span></div>
+      <div><s>Blanks</s><b>${Math.round(a.blankRate*100)}%</b><span class="muted">scored nothing</span></div></div>`
+    : `<p class="prose" style="margin:0">No finished steps recorded yet. Each one stores what every player was projected
+       to score against what they actually scored.</p>`;
+  if(b) h+=`<h3 style="margin:16px 0 8px;font-size:.95rem">Backtest on past games</h3>
+    <div class="k4">
+      <div><s>Samples</s><b>${b.samples}</b><span class="muted">${b.players} players</span></div>
+      <div><s>Current RMSE</s><b>${b.current.rmse.toFixed(1)}</b><span class="muted">form ${b.current.formWeight}, home ${b.current.homeAdvantage}</span></div>
+      <div><s>Best RMSE</s><b>${b.best.rmse.toFixed(1)}</b><span class="muted">form ${b.best.formWeight}, home ${b.best.homeAdvantage}</span></div>
+      <div><s>Gain</s><b>${b.improvementRmse}</b><span class="muted">points of error removed</span></div></div>
+    <p class="prose" style="margin:12px 0 0">Walk-forward: every prediction uses only games played before it, so nothing leaks backwards.</p>`;
+  return h+'</div>';
+}
 
+function controlsPanel(d){
+  const ct=d.control??{};
+  const rows=[['paused','Stops everything',ct.paused],['packsEnabled','Buys essence packs',ct.packsEnabled!==false],
+    ['lineupsEnabled','Sets lineups',ct.lineupsEnabled!==false],['claimsEnabled','Claims rewards',ct.claimsEnabled!==false]];
+  return `<div class="card"><table><thead><tr><th>Switch</th><th>Does</th><th>Now</th></tr></thead><tbody>
+    ${rows.map(([k,v,on])=>`<tr><td><code>${k}</code></td><td class="muted">${v}</td>
+      <td><span class="pill ${k==='paused'?(on?'bad':'go'):(on?'go':'warn')}">${on?'on':'off'}</span></td></tr>`).join('')}
+    </tbody></table>
+    <p class="prose" style="margin:13px 0 0">The bot rereads these every pass, so a change lands within minutes.
+      Editing needs your GitHub login, and that is what keeps the controls yours.</p>
+    <p style="margin:12px 0 0"><a class="btn stop" href="${EDIT}" target="_blank" rel="noopener">Edit the controls</a></p></div>`;
+}
+
+function render(d){
+  D=d;
+  document.getElementById('bar').className='bar'+(d.control?.paused?' paused':'');
+  document.getElementById('bar').innerHTML=topbar(d);
+
+  const tabs=[...d.surfaces.map((s,i)=>({label:s.surface.replace(/\s*\(.*\)/,''),
+      warn:s.plan?.clearsTarget===false||s.state==='CLAIMABLE',fn:()=>surfacePanel(s)})),
+    {label:'Fixtures',fn:()=>fixturesPanel(d)},
+    {label:'Accuracy',fn:()=>accuracyPanel(d)},
+    {label:'Controls',fn:()=>controlsPanel(d)}];
+  if(TAB>=tabs.length)TAB=0;
+
+  document.getElementById('tabs').innerHTML=tabs.map((t,i)=>
+    `<button role="tab" aria-selected="${i===TAB}" data-i="${i}">${esc(t.label)}${t.warn?'<span class="dot"></span>':''}</button>`).join('');
+  document.getElementById('tabs').onclick=e=>{const b=e.target.closest('button');if(!b)return;TAB=+b.dataset.i;render(D)};
+
+  const p=document.getElementById('panel');
+  p.innerHTML=tabs[TAB].fn();
+  bind(p);
+}
+
+setInterval(()=>{if(D){const el=document.querySelector('.cd');
+  if(el)el.firstChild.nodeValue=cdown(D.schedule.nextLock)}},30000);
 const load=()=>fetch('data.json?t='+Date.now()).then(r=>r.json()).then(render)
-  .catch(e=>{document.getElementById('app').innerHTML=`<p class="note">Could not load data.json. ${esc(e.message)}</p>`});
-bind(document.querySelector('footer'));
-load(); setInterval(load,120000);
+  .catch(e=>{document.getElementById('bar').innerHTML=`<span class="muted">Could not load data.json. ${esc(e.message)}</span>`});
+load();setInterval(load,120000);
 </script>
 </body>
 </html>

@@ -113,6 +113,10 @@ export async function build() {
     surfaces,
     fixtures: [...games.values()].sort((a, b) => a.kickoff.localeCompare(b.kickoff)).slice(0, 20),
     accuracy: results.accuracy(rows),
+    backtest: await (async () => {
+      try { return JSON.parse(await fs.readFile(path.join(ROOT, 'state', 'backtest.json'), 'utf8')); }
+      catch { return null; }
+    })(),
     recentResults: rows.slice(-8).reverse(),
   };
 
