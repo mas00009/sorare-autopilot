@@ -125,6 +125,20 @@ table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font
 th{text-align:left;font-weight:700;color:var(--faint);font-size:.69rem;text-transform:uppercase;letter-spacing:.1em;padding:0 10px 7px 0}
 td{padding:7px 10px 7px 0;border-top:1px solid var(--line)}
 .muted{color:var(--dim)}
+.fx-tbl td,.fx-tbl th{padding:8px 12px 8px 0}
+.fx-tbl .ko b{display:block;font-weight:640}
+.fx-tbl .ko s{color:var(--faint);font-size:.75rem;text-decoration:none}
+.fx-tbl .m{font-weight:600;white-space:nowrap}
+.fx-tbl .m .at{color:var(--faint);font-weight:500;padding:0 5px}
+.fx-tbl .rk{display:inline-block;margin-left:5px;font-size:.68rem;color:var(--faint);
+ border:1px solid var(--line2);border-radius:5px;padding:0 4px;vertical-align:middle}
+.fx-tbl .hm{font-size:.68rem;color:var(--faint);border:1px solid var(--line2);
+ border-radius:5px;padding:0 5px;margin-left:7px}
+.fx-tbl .pl{color:var(--dim);font-size:.85rem}
+.fx-tbl .pts{text-align:right;font-weight:750;white-space:nowrap;
+ background:linear-gradient(120deg,#c4b5fd,#7dd3fc);-webkit-background-clip:text;background-clip:text;color:transparent}
+.fx-tbl .cmp{color:var(--faint);font-size:.78rem;white-space:nowrap}
+@media(max-width:760px){.fx-tbl .cmp,.fx-tbl th.cmp{display:none}}
 ul.rej{list-style:none;padding:0;margin:11px 0 0;columns:3;column-gap:24px}
 ul.rej li{color:var(--dim);font-size:.82rem;margin-bottom:3px;break-inside:avoid}
 .prose{max-width:72ch;color:var(--dim)}
@@ -303,9 +317,25 @@ function surfacePanel(s){
 
 function fixturesPanel(d){
   if(!d.fixtures.length) return `<div class="card"><p class="prose" style="margin:0">No upcoming fixtures for your players in this window.</p></div>`;
-  return `<div class="card"><table><thead><tr><th>Kickoff</th><th>Match</th><th>Your players</th></tr></thead><tbody>
-    ${d.fixtures.map(f=>`<tr><td>${when(f.kickoff)}</td><td>${esc(f.team)} ${f.home?'vs':'@'} ${esc(f.opponent)}</td>
-      <td class="muted">${esc(f.players.join(', '))}</td></tr>`).join('')}</tbody></table></div>`;
+  const day=i=>new Date(i).toLocaleDateString(undefined,{weekday:'short',day:'numeric',month:'short'});
+  const time=i=>new Date(i).toLocaleTimeString(undefined,{hour:'2-digit',minute:'2-digit'});
+  const rk=n=>n?`<span class="rk">#${n}</span>`:'';
+  const total=d.fixtures.reduce((t,f)=>t+(f.points||0),0);
+  return `<div class="card"><table class="fx-tbl">
+    <thead><tr><th>Kickoff</th><th>Match</th><th class="cmp">Competition</th>
+      <th>Your players</th><th style="text-align:right">Projected</th></tr></thead><tbody>
+    ${d.fixtures.map(f=>`<tr>
+      <td class="ko"><b>${day(f.kickoff)}</b><s>${time(f.kickoff)}</s></td>
+      <td class="m">${esc(f.code||f.team)}${rk(f.rank)}<span class="at">${f.home?'v':'@'}</span>${esc(f.opponentCode||f.opponent)}${rk(f.opponentRank)}
+        <span class="hm">${f.home?'Home':'Away'}</span></td>
+      <td class="cmp">${esc(f.competition||'—')}</td>
+      <td class="pl">${esc(f.players.join(', '))}</td>
+      <td class="pts">${f.points?f.points.toFixed(1):'—'}</td></tr>`).join('')}
+    </tbody><tfoot><tr><td colspan="4" class="muted" style="padding-top:11px">
+      ${d.fixtures.length} fixtures with your players</td>
+      <td class="pts" style="padding-top:11px">${total.toFixed(1)}</td></tr></tfoot></table>
+    <p class="note" style="margin:12px 0 0;font-size:.82rem">League position shows for club fixtures.
+      International sides have none, so it stays blank through this window.</p></div>`;
 }
 
 function accuracyPanel(d){
