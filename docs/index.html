@@ -135,6 +135,28 @@ code{background:#171c2b;border:1px solid var(--line2);border-radius:5px;padding:
 .k4 b{display:block;font-size:1.5rem;font-weight:780;letter-spacing:-.03em;
  line-height:1.15;margin:3px 0 2px;white-space:nowrap}
 .k4 .muted{display:block;font-size:.76rem;line-height:1.35}
+/* toggles */
+.sw{position:relative;width:46px;height:26px;border-radius:99px;background:#1c2233;
+ border:1px solid var(--line2);cursor:pointer;transition:background .16s,border-color .16s;flex:none;padding:0}
+.sw::after{content:"";position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:99px;
+ background:#6b7690;transition:transform .16s,background .16s}
+.sw[aria-checked=true]{background:#123a2c;border-color:#1c6b4f}
+.sw[aria-checked=true]::after{transform:translateX(20px);background:var(--go)}
+.sw.danger[aria-checked=true]{background:#3a1420;border-color:#6b1c31}
+.sw.danger[aria-checked=true]::after{background:var(--stop)}
+.sw:disabled{opacity:.45;cursor:progress}
+.ctl-row{display:flex;align-items:center;gap:14px;padding:11px 0;border-top:1px solid var(--line)}
+.ctl-row:first-of-type{border-top:0}
+.ctl-row .t{flex:1;min-width:0}
+.ctl-row .t b{display:block;font-size:.92rem;font-weight:640}
+.ctl-row .t s{display:block;color:var(--dim);font-size:.79rem;text-decoration:none;margin-top:1px}
+.tok{margin-top:14px;border-top:1px solid var(--line);padding-top:13px}
+.tok input{width:100%;max-width:420px;background:#0c1018;border:1px solid var(--line2);color:var(--ink);
+ border-radius:9px;padding:9px 12px;font:inherit;font-size:.86rem}
+.tok .go{margin-top:9px}
+.note{font-size:.84rem;color:var(--dim)}
+.flash{margin-top:10px;font-size:.84rem}
+.flash.ok{color:var(--go)} .flash.err{color:var(--stop)}
 @media(max-width:900px){.xi{grid-template-columns:repeat(3,1fr)}ul.rej{columns:2}.k4{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){
  .wrap{padding:10px 12px 24px}
@@ -330,17 +352,73 @@ function accuracyPanel(d){
   return h+'</div>';
 }
 
+const REPO_API='https://api.github.com/repos/mas00009/sorare-autopilot/contents/docs/control.json';
+const TOKEN_KEY='sa_gh_token';
+const tok=()=>{try{return localStorage.getItem(TOKEN_KEY)||''}catch{return''}};
+const setTok=v=>{try{v?localStorage.setItem(TOKEN_KEY,v):localStorage.removeItem(TOKEN_KEY)}catch{}};
+
+const SWITCHES=[
+  ['paused','Pause everything','Nothing runs at all while this is on',true],
+  ['packsEnabled','Buy essence packs','Opens packs to the daily 3-star',false],
+  ['lineupsEnabled','Set lineups','Picks and enters teams',false],
+  ['claimsEnabled','Claim rewards','Collects finished steps and missions',false],
+];
+
+async function writeControl(patch,flash){
+  const t=tok();
+  if(!t){flash('Add a GitHub token below first, then try again.','err');return false}
+  const hdr={Authorization:`Bearer ${t}`,Accept:'application/vnd.github+json'};
+  try{
+    const cur=await fetch(REPO_API+'?t='+Date.now(),{headers:hdr});
+    if(!cur.ok) throw new Error(cur.status===401?'Token rejected':`GitHub said ${cur.status}`);
+    const meta=await cur.json();
+    const body={...JSON.parse(atob(meta.content.replace(/\n/g,''))),...patch};
+    const put=await fetch(REPO_API,{method:'PUT',headers:{...hdr,'Content-Type':'application/json'},
+      body:JSON.stringify({message:`controls: ${Object.keys(patch).join(', ')}`,
+        content:btoa(JSON.stringify(body,null,2)+'\n'),sha:meta.sha})});
+    if(!put.ok) throw new Error(`GitHub said ${put.status}`);
+    D.control={...D.control,...patch};
+    flash('Saved. The bot picks it up on its next pass, within a few minutes.','ok');
+    return true;
+  }catch(e){flash(e.message,'err');return false}
+}
+
 function controlsPanel(d){
   const ct=d.control??{};
-  const rows=[['paused','Stops everything',ct.paused],['packsEnabled','Buys essence packs',ct.packsEnabled!==false],
-    ['lineupsEnabled','Sets lineups',ct.lineupsEnabled!==false],['claimsEnabled','Claims rewards',ct.claimsEnabled!==false]];
-  return `<div class="card narrow"><table><thead><tr><th>Switch</th><th>Does</th><th>Now</th></tr></thead><tbody>
-    ${rows.map(([k,v,on])=>`<tr><td><code>${k}</code></td><td class="muted">${v}</td>
-      <td><span class="pill ${k==='paused'?(on?'bad':'go'):(on?'go':'warn')}">${on?'on':'off'}</span></td></tr>`).join('')}
-    </tbody></table>
-    <p class="prose" style="margin:13px 0 0">The bot rereads these every pass, so a change lands within minutes.
-      Editing needs your GitHub login, and that is what keeps the controls yours.</p>
-    <p style="margin:12px 0 0"><a class="btn stop" href="${EDIT}" target="_blank" rel="noopener">Edit the controls</a></p></div>`;
+  const rows=SWITCHES.map(([k,label,desc,danger])=>{
+    const on=k==='paused'?!!ct.paused:ct[k]!==false;
+    return `<div class="ctl-row">
+      <button class="sw${danger?' danger':''}" role="switch" aria-checked="${on}" data-k="${k}" aria-label="${esc(label)}"></button>
+      <span class="t"><b>${esc(label)}</b><s>${esc(desc)}</s></span></div>`;
+  }).join('');
+
+  const has=!!tok();
+  return `<div class="card narrow">${rows}
+    <div class="tok">
+      <p class="note" style="margin:0 0 9px">${has
+        ? 'A GitHub token is saved in this browser, so the switches write straight to the control file.'
+        : 'To flip these from here, paste a GitHub token with write access to this repository. It is stored only in this browser and never leaves it, apart from going to GitHub.'}</p>
+      ${has?`<button class="btn off" style="pointer-events:auto;cursor:pointer" id="forget">Forget the token</button>`
+           :`<input id="pat" type="password" placeholder="github_pat_..." autocomplete="off" spellcheck="false">
+             <div class="go"><button class="btn play" id="savetok">Save the token</button></div>`}
+      <div class="flash" id="flash"></div>
+    </div></div>`;
+}
+
+function wireControls(){
+  const flash=(m,c)=>{const el=document.getElementById('flash');if(el){el.textContent=m;el.className='flash '+(c||'')}};
+  document.querySelectorAll('.sw').forEach(sw=>sw.onclick=async()=>{
+    const k=sw.dataset.k,next=sw.getAttribute('aria-checked')!=='true';
+    sw.disabled=true;flash('Saving…','');
+    const ok=await writeControl({[k]:next},flash);
+    if(ok)sw.setAttribute('aria-checked',String(next));
+    sw.disabled=false;
+  });
+  const s=document.getElementById('savetok');
+  if(s)s.onclick=()=>{const v=document.getElementById('pat').value.trim();
+    if(!v){flash('Paste a token first.','err');return}setTok(v);render(D)};
+  const f=document.getElementById('forget');
+  if(f)f.onclick=()=>{setTok('');render(D)};
 }
 
 function render(d){
@@ -362,6 +440,7 @@ function render(d){
   const p=document.getElementById('panel');
   p.innerHTML=tabs[TAB].fn();
   bind(p);
+  if(tabs[TAB].label==='Controls')wireControls();
 }
 
 setInterval(()=>{if(D){const el=document.querySelector('.cd');
