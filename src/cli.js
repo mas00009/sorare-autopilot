@@ -92,7 +92,8 @@ async function report(r) {
   } catch {}
   if (r.nickname) console.log(`Account: ${r.nickname}`);
   if (r.gems?.length) {
-    console.log(`Gems: ${r.gems.map((g) => `${g.amount} ${g.currency}`).join(', ')}  (untouched)`);
+    const gems = r.gems.reduce((t, g) => t + g.amount, 0);
+    console.log(`Gems: ${gems}  (never spendable)`);
   }
   if (r.balanceError) console.log(`Balances: ${r.balanceError}`);
   for (const l of r.lineups ?? (r.lineup ? [r.lineup] : [])) printLineup(l);
@@ -218,7 +219,9 @@ const main = async () => {
   if (cmd === 'doctor') {
     const bal = await readBalances();
     console.log(`Authenticated as ${bal.nickname}`);
-    console.log('Balances:', bal.all.map((b) => `${b.amount} ${b.currency}`).join(', ') || '(none)');
+    const nice = (c) => c.toLowerCase().replace(/_/g, ' ');
+    console.log('Balances:', bal.all.filter((b) => b.amount > 0)
+      .map((b) => `${b.amount} ${nice(b.currency)}`).join(', ') || '(none)');
     const s = await resolveLiveStep();
     console.log(`Squad: ${s.squad?.name ?? '(none)'}`);
     console.log(`Live step: ${s.stepId ?? '(none open)'}`);

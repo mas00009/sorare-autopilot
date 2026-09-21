@@ -26,7 +26,8 @@ a{color:inherit;text-decoration:none}
 .zone+.zone::before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:1px;
  background:linear-gradient(180deg,transparent,var(--line2) 22%,var(--line2) 78%,transparent)}
 .brand{gap:12px;padding-left:12px}
-.logo{width:38px;height:38px;flex:none;display:block}
+.logo{width:40px;height:40px;flex:none;display:block;object-fit:contain;
+ filter:drop-shadow(0 4px 12px rgba(124,92,240,.35))}
 .brand h1{font-size:1.06rem;line-height:1.15;white-space:nowrap}
 .brand .acct{display:block;color:var(--faint);font-size:.73rem;font-weight:550;margin-top:2px;white-space:nowrap}
 .stack{display:flex;flex-direction:column;gap:2px;min-width:0}
@@ -124,6 +125,7 @@ code{background:#171c2b;border:1px solid var(--line2);border-radius:5px;padding:
   <div id="panel"></div>
 </div>
 <script>
+window.LOGO_SVG=null;
 const EDIT='https://github.com/mas00009/sorare-autopilot/edit/main/docs/control.json';
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const when=i=>i?new Date(i).toLocaleString(undefined,{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}):'—';
@@ -138,9 +140,29 @@ function bind(root){const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,
  for(const x of ns){if(!/\S/.test(x.nodeValue))continue;
   x.nodeValue=x.nodeValue.replace(JOIN,(m,a)=>a+' ').replace(/(\S+)\s+(\S+\s*)$/,'$1 $2')}}
 
+window.LOGO_SVG=LOGO_SVG;
+// Raw API values must never reach the screen. Sorare's enums are internal
+// identifiers, not English: LINEUP_SET and PRE_MATCHDAY_LOCKED mean something
+// to the API and nothing to a reader.
+const STATE={
+  PLAYABLE:'Open for entry', LINEUP_SET:'Lineup in', CLAIMABLE:'Reward ready',
+  CLAIMED:'Claimed', LIVE:'Playing now', LOCKED:'Locked',
+  PRE_MATCHDAY_LOCKED:'Not open yet', FAILED:'Missed the target',
+};
+const TASK={
+  DAILY_ACTION:'Daily training', DECISIVE_PLAYER_PICKER:'Decisive player picker',
+  CARDS_COUNT_TARGET:'Collect cards', COMPLETE_COLLECTIONS_COUNT_TARGET:'Complete a collection',
+  TASK_APPEARANCE_SCORE:'Player hits 100 points', TASKS_TRACK:'Collection track',
+};
+const REWARD={InGameCurrency:'coins', Experience:'XP', CardShard:'essence',
+  AnyCard:'a card', CardPacks:'a card pack', Monetary:'cash'};
+const human=(v,map)=>map[v]??String(v??'')
+  .toLowerCase().replace(/_/g,' ').replace(/^./,c=>c.toUpperCase());
+const titled=s=>String(s??'').replace(/\b([a-z])/g,(m,c)=>c.toUpperCase());
+
 let D=null,TAB=0;
 
-const LOGO=`<svg class="logo" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+const LOGO_SVG=`<svg class="logo" viewBox="0 0 40 40" fill="none" aria-hidden="true">
   <defs>
     <linearGradient id="lg" x1="4" y1="3" x2="36" y2="37" gradientUnits="userSpaceOnUse">
       <stop stop-color="#8b6cff"/><stop offset=".55" stop-color="#5b8dff"/><stop offset="1" stop-color="#2fd4c4"/>
@@ -156,7 +178,8 @@ const LOGO=`<svg class="logo" viewBox="0 0 40 40" fill="none" aria-hidden="true"
 
 function topbar(d){
   const ct=d.control??{},paused=!!ct.paused,fail=d.health.failStreak;
-  return `<div class="zone brand">${LOGO}
+  const mark=`<img class="logo" src="img/logo.png" alt="" onerror="this.outerHTML=LOGO_SVG">`;
+  return `<div class="zone brand">${mark}
       <span><h1>Sorare Autopilot</h1><span class="acct">${esc(d.account)} · ${esc(d.squad)}</span></span></div>
 
     <div class="zone"><span class="orb"></span>
@@ -183,11 +206,11 @@ function surfacePanel(s){
   const dots=(s.ladder??[]).map(x=>`<i class="${x.state==='CLAIMED'?'done':(x.level===s.level?'now':'')}" title="Level ${x.level} · ${x.target} pts"></i>`).join('');
   const rw=(s.rewards??[]).map(r=>r.kind==='pack'?`<span class="pill">Pays a ${r.cards}-card pack</span>`
     :r.kind==='essence'?`<span class="pill">Pays ${r.amount} essence</span>`
-    :`<span class="pill">Pays ${esc(({InGameCurrency:'coins',Experience:'XP',AnyCard:'a card',CardPacks:'a card pack'})[r.kind]??r.kind)}</span>`).join('');
+    :`<span class="pill">Pays ${esc(human(r.kind,REWARD))}</span>`).join('');
   const st={LINEUP_SET:'go',PLAYABLE:'go',CLAIMABLE:'warn',LIVE:'vv',FAILED:'bad'}[s.state]||'';
 
   if(!s.candidates.length) return `<div class="card">
-    <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>${lvl}<span class="pill ${st}">${esc(s.state??'?')}</span></div>
+    <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>${lvl}<span class="pill ${st}">${esc(human(s.state,STATE))}</span></div>
     ${dots?`<div class="steps">${dots}</div>`:''}${rw?`<div style="margin-top:10px">${rw}</div>`:''}
     <p class="prose" style="margin:13px 0 0">No eligible cards yet. This step opens for entry closer to its matchday, and the bot fills it then.</p></div>`;
 
@@ -195,7 +218,7 @@ function surfacePanel(s){
   const waiting=pl&&pl.clearsTarget===false;
   return `<div class="card">
     <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>${lvl}
-      <span class="pill ${st}">${esc(s.state??'?')}</span>${rw}</div>
+      <span class="pill ${st}">${esc(human(s.state,STATE))}</span>${rw}</div>
     ${dots?`<div class="steps">${dots}</div>`:''}
     <div class="xi" style="margin-top:12px">${five.map((c,i)=>`
       <div class="p${i?'':' cap'}">
@@ -264,7 +287,7 @@ function render(d){
   document.getElementById('bar').className='bar'+(d.control?.paused?' paused':'');
   document.getElementById('bar').innerHTML=topbar(d);
 
-  const tabs=[...d.surfaces.map((s,i)=>({label:s.surface.replace(/\s*\(.*\)/,''),
+  const tabs=[...d.surfaces.map((s,i)=>({label:titled(s.surface.replace(/\s*\(.*\)/,'')),
       warn:s.plan?.clearsTarget===false||s.state==='CLAIMABLE',fn:()=>surfacePanel(s)})),
     {label:'Fixtures',fn:()=>fixturesPanel(d)},
     {label:'Accuracy',fn:()=>accuracyPanel(d)},

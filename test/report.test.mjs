@@ -47,3 +47,12 @@ assert.deepEqual(await trackHealth({ errors: ['x'] }, { failStreak: 5, failAlert
 assert.deepEqual(await trackHealth({ errors: [] }, { failStreak: 5, failAlerted: true }, mk().write), { recovered: true });
 assert.deepEqual(await trackHealth({ errors: ['x'] }, { failStreak: 0 }, mk().write), {}, 'one failure is not an alert');
 console.log('health assertions passed');
+
+// --- no raw API identifiers in anything a person reads ---
+import { humanTask } from '../src/report.js';
+assert.equal(humanTask('DAILY_ACTION'), 'Daily training');
+assert.equal(humanTask('CARDS_COUNT_TARGET'), 'Collect cards');
+// Unmapped values must still be readable, never SCREAMING_SNAKE.
+assert.equal(humanTask('SOME_NEW_TASK'), 'Some new task');
+assert.ok(!/_/.test(humanTask('ANOTHER_ONE_HERE')), 'underscores must never survive');
+console.log('naming assertions passed');

@@ -10,6 +10,7 @@ import {
   Q_MISSIONS, M_CLAIM_TASK, M_CLAIM_STEP, Q_BOARDS, M_RESTART_TRACK, M_ACK_STEP,
 } from './queries.js';
 import { openPacksUntilThreeStar } from './essence.js';
+import { humanTask } from './report.js';
 import { readState, writeState } from './client.js';
 import { pickLineup, pickAcrossWindow, toAppearances, diffLineup } from './optimiser.js';
 
@@ -198,7 +199,7 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
       skipped: true, stepId, surface,
       action: waiting ? 'waiting' : 'closed',
       reason: waiting
-        ? `Step is ${step.state} - not open for entry yet. Will fill it as soon as it opens.`
+        ? 'Not open for entry yet. It will be filled as soon as it opens.'
         : `Step is ${step.state} - past the point of changes.`,
     };
   }
@@ -339,7 +340,7 @@ const CLAIMABLE_STATE = 'COMPLETED';
 function tidy(task) {
   return {
     id: task.id,
-    name: task.name ?? '(unnamed)',
+    name: humanTask(task.name) ?? '(unnamed)',
     description: (task.description ?? '').trim() || null,
     state: task.aasmState,
   };
@@ -429,6 +430,15 @@ export async function runMissions({ dryRun = false, claimNow = false } = {}) {
 }
 
 const STAR = { DNP: 0, ROSTER: 2, IMPACT: 3, STAR: 4, GOAT: 5 };
+
+/** Step states are API enums; never print them raw. */
+const STATE_NAMES = {
+  PLAYABLE: 'open for entry', LINEUP_SET: 'lineup in', CLAIMABLE: 'reward ready',
+  CLAIMED: 'claimed', LIVE: 'playing now', LOCKED: 'locked',
+  PRE_MATCHDAY_LOCKED: 'not open yet', FAILED: 'missed the target',
+};
+export const humanState = (s) => STATE_NAMES[s]
+  ?? String(s ?? '').toLowerCase().replace(/_/g, ' ');
 
 /** Flatten acknowledgeStep rewards into something readable and checkable. */
 export function describeRewards(rewards = []) {

@@ -103,6 +103,21 @@ export async function trackHealth(entry, state, write) {
   return {};
 }
 
+/**
+ * Sorare's task identifiers are internal names, not English. Anything a person
+ * reads - the dashboard, the daily email - gets the readable form.
+ */
+const TASK_NAMES = {
+  DAILY_ACTION: 'Daily training',
+  DECISIVE_PLAYER_PICKER: 'Decisive player picker',
+  CARDS_COUNT_TARGET: 'Collect cards',
+  COMPLETE_COLLECTIONS_COUNT_TARGET: 'Complete a collection',
+  TASK_APPEARANCE_SCORE: 'Player hits 100 points',
+  TASKS_TRACK: 'Collection track',
+};
+export const humanTask = (n) => TASK_NAMES[n]
+  ?? String(n ?? '').toLowerCase().replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase());
+
 /** Append this pass to today's journal. */
 export async function journal(report) {
   await fs.mkdir(DIR, { recursive: true });
