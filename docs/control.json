@@ -2,6 +2,6 @@
   "paused": false,
   "packsEnabled": true,
   "lineupsEnabled": true,
-  "claimsEnabled": true,
+  "claimsEnabled": false,
   "note": "Edit this file on GitHub to control the bot. It is read at the start of every pass."
 }
