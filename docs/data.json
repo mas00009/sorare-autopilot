@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T07:54:47.233Z",
+  "generatedAt": "2026-09-21T08:00:03.892Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-24T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1789977283741,
-    "reason": "last run 0m ago, next due in 180m (lock in 4970m)"
+    "lastRunAt": 1789977600393,
+    "reason": "last run 0m ago, next due in 180m (lock in 4965m)"
   },
   "packs": {
     "lastThreeStar": "Álex Baena",
@@ -31,6 +31,10 @@
     {
       "surface": "my set",
       "level": 2,
+      "lives": {
+        "left": 3,
+        "of": 4
+      },
       "totalLevels": 6,
       "levelsDone": 2,
       "ladder": [
@@ -400,6 +404,7 @@
     {
       "surface": "team set (Loadshift)",
       "level": 1,
+      "lives": null,
       "totalLevels": 5,
       "levelsDone": 1,
       "ladder": [
