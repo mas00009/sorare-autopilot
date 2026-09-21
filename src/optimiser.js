@@ -34,6 +34,12 @@ export const DEFAULTS = {
   size: 5,
   require: { GK: 1, DF: 1, MD: 1, FW: 1 },
   /**
+   * The fifth slot. Sorare's own So5AppearancesRule names it "extra" and lists
+   * Defender, Midfielder, Forward - a second keeper is not a legal lineup, and
+   * the flex fill used to be free to pick one.
+   */
+  flexPositions: ['DF', 'MD', 'FW'],
+  /**
    * What the armband adds to the captain's own bonus multiplier, so it pays on
    * the raw score rather than the already-bonused one. 0.5 is Sorare's own
    * engineConfiguration.captain on both boards, and four finished lineups agree:
@@ -225,6 +231,7 @@ export function pickLineup(benchNodes, options = {}) {
 
   for (const c of usable) {
     if (chosen.length >= opts.size) break;
+    if (opts.flexPositions && !opts.flexPositions.includes(c.position)) continue;
     if (!canTake(c)) continue;
     take(c);
   }
