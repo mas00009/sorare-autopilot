@@ -26,7 +26,7 @@ a{color:inherit;text-decoration:none}
 .zone+.zone::before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:1px;
  background:linear-gradient(180deg,transparent,var(--line2) 22%,var(--line2) 78%,transparent)}
 .brand{gap:12px;padding-left:12px}
-.xp em{font-style:normal;font-size:.72rem;font-weight:700;color:var(--go);margin-left:5px;
+.xp em{font-style:normal;font-size:.72rem;font-weight:700;color:#f9a03c;margin-left:5px;
  letter-spacing:.02em;white-space:nowrap}
 .wordmark{height:46px;width:auto;display:block;flex:none;
  filter:drop-shadow(0 4px 12px rgba(124,92,240,.3))}
@@ -115,16 +115,22 @@ nav button .dot{display:inline-block;width:6px;height:6px;border-radius:99px;bac
 .steps i.now{background:var(--v)}
 .xi{display:grid;gap:11px;grid-template-columns:repeat(5,1fr)}
 .p{position:relative;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#0b0e16}
-.p.cap{border-color:#4a3c8f;box-shadow:0 0 18px -8px rgba(124,92,240,.8)}
+.p.cap{border-color:#b45f16;box-shadow:0 0 20px -7px rgba(249,146,36,.85)}
 .p img{width:100%;aspect-ratio:5/7;object-fit:cover;display:block}
 .p .b{padding:8px 9px 10px}
 .p .nm{font-weight:670;font-size:.83rem;line-height:1.2;text-wrap:balance}
 .p .fx{color:var(--dim);font-size:.71rem;margin-top:2px}
 .p .xp{margin-top:6px;font-size:1.15rem;font-weight:780;letter-spacing:-.03em;white-space:nowrap;
  background:linear-gradient(120deg,#c4b5fd,#7dd3fc);-webkit-background-clip:text;background-clip:text;color:transparent}
-.tag,.capt{position:absolute;top:7px;border-radius:6px;padding:1px 6px;font-size:.66rem;font-weight:700}
-.tag{left:7px;background:#070911d9;border:1px solid var(--line2);color:var(--dim)}
-.capt{right:7px;background:linear-gradient(140deg,var(--v),#6d4fe0);color:#120c26}
+.tag{position:absolute;top:7px;left:7px;border-radius:6px;padding:1px 6px;font-size:.66rem;font-weight:700;
+ background:#070911d9;border:1px solid var(--line2);color:var(--dim)}
+/* The armband. Violet lost against the card art, which is mostly blue and
+   violet itself, so this is orange and sits on its own disc. */
+.capt{position:absolute;top:6px;right:6px;width:24px;height:24px;border-radius:50%;
+ display:grid;place-items:center;font:800 .82rem/1 var(--f,inherit);
+ background:linear-gradient(145deg,#ffb020,#f26d0d);color:#2a1400;
+ border:1.5px solid rgba(255,255,255,.9);
+ box-shadow:0 2px 8px rgba(0,0,0,.65),0 0 14px -2px rgba(249,146,36,.85)}
 .tot{display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;margin:20px 0 0}
 /* Score and target are one fact, so they read as a fraction under one label
    rather than three items floating at equal distance. */
