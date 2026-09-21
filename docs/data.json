@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T06:36:24.943Z",
+  "generatedAt": "2026-09-21T06:41:31.670Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-09-24T18:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1789971714518,
-    "reason": "last run 15m ago, next due in 165m (lock in 5049m)"
+    "reason": "last run 20m ago, next due in 160m (lock in 5043m)"
   },
   "packs": {
     "lastThreeStar": "Aïssa Mandi",
@@ -129,6 +129,10 @@
             "kickoff": "2026-09-25T18:45:00Z",
             "team": "Belgium",
             "opponent": "Italy",
+            "opponentCode": "ITA",
+            "code": "BEL",
+            "rank": null,
+            "opponentRank": null,
             "home": false,
             "competition": "UEFA Nations League",
             "lockedAt": null,
@@ -153,6 +157,10 @@
             "kickoff": "2026-09-24T18:45:00Z",
             "team": "Portugal",
             "opponent": "Wales",
+            "opponentCode": "WAL",
+            "code": "POR",
+            "rank": null,
+            "opponentRank": null,
             "home": true,
             "competition": "UEFA Nations League",
             "lockedAt": null,
@@ -177,6 +185,10 @@
             "kickoff": "2026-09-25T18:45:00Z",
             "team": "Romania",
             "opponent": "Sweden",
+            "opponentCode": "SWE",
+            "code": "ROU",
+            "rank": null,
+            "opponentRank": null,
             "home": false,
             "competition": "UEFA Nations League",
             "lockedAt": null,
@@ -201,6 +213,10 @@
             "kickoff": "2026-09-26T18:45:00Z",
             "team": "Spain",
             "opponent": "England",
+            "opponentCode": "ENG",
+            "code": "ESP",
+            "rank": null,
+            "opponentRank": null,
             "home": false,
             "competition": "UEFA Nations League",
             "lockedAt": null,
@@ -225,6 +241,10 @@
             "kickoff": "2026-09-24T18:45:00Z",
             "team": "Ireland",
             "opponent": "Kosovo",
+            "opponentCode": "RKS",
+            "code": "IRL",
+            "rank": null,
+            "opponentRank": null,
             "home": false,
             "competition": "UEFA Nations League",
             "lockedAt": null,
@@ -252,6 +272,10 @@
           "kickoff": "2026-09-25T18:45:00Z",
           "team": "Belgium",
           "opponent": "Italy",
+          "opponentCode": "ITA",
+          "code": "BEL",
+          "rank": null,
+          "opponentRank": null,
           "home": false,
           "competition": "UEFA Nations League",
           "lockedAt": null,
@@ -276,6 +300,10 @@
           "kickoff": "2026-09-24T18:45:00Z",
           "team": "Portugal",
           "opponent": "Wales",
+          "opponentCode": "WAL",
+          "code": "POR",
+          "rank": null,
+          "opponentRank": null,
           "home": true,
           "competition": "UEFA Nations League",
           "lockedAt": null,
@@ -300,6 +328,10 @@
           "kickoff": "2026-09-25T18:45:00Z",
           "team": "Romania",
           "opponent": "Sweden",
+          "opponentCode": "SWE",
+          "code": "ROU",
+          "rank": null,
+          "opponentRank": null,
           "home": false,
           "competition": "UEFA Nations League",
           "lockedAt": null,
@@ -324,6 +356,10 @@
           "kickoff": "2026-09-26T18:45:00Z",
           "team": "Spain",
           "opponent": "England",
+          "opponentCode": "ENG",
+          "code": "ESP",
+          "rank": null,
+          "opponentRank": null,
           "home": false,
           "competition": "UEFA Nations League",
           "lockedAt": null,
@@ -348,6 +384,10 @@
           "kickoff": "2026-09-24T18:45:00Z",
           "team": "Ireland",
           "opponent": "Kosovo",
+          "opponentCode": "RKS",
+          "code": "IRL",
+          "rank": null,
+          "opponentRank": null,
           "home": false,
           "competition": "UEFA Nations League",
           "lockedAt": null,
@@ -408,47 +448,97 @@
   "fixtures": [
     {
       "kickoff": "2026-09-24T18:45:00Z",
+      "competition": "UEFA Nations League",
       "team": "Portugal",
+      "code": "POR",
+      "rank": null,
       "opponent": "Wales",
+      "opponentCode": "WAL",
+      "opponentRank": null,
       "home": true,
       "players": [
         "Rúben Dias"
+      ],
+      "points": 61.6,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
       ]
     },
     {
       "kickoff": "2026-09-24T18:45:00Z",
+      "competition": "UEFA Nations League",
       "team": "Ireland",
+      "code": "IRL",
+      "rank": null,
       "opponent": "Kosovo",
+      "opponentCode": "RKS",
+      "opponentRank": null,
       "home": false,
       "players": [
         "Troy Parrott"
+      ],
+      "points": 57.2,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
       ]
     },
     {
       "kickoff": "2026-09-25T18:45:00Z",
+      "competition": "UEFA Nations League",
       "team": "Belgium",
+      "code": "BEL",
+      "rank": null,
       "opponent": "Italy",
+      "opponentCode": "ITA",
+      "opponentRank": null,
       "home": false,
       "players": [
         "Maxim De Cuyper"
+      ],
+      "points": 65.3,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
       ]
     },
     {
       "kickoff": "2026-09-25T18:45:00Z",
+      "competition": "UEFA Nations League",
       "team": "Romania",
+      "code": "ROU",
+      "rank": null,
       "opponent": "Sweden",
+      "opponentCode": "SWE",
+      "opponentRank": null,
       "home": false,
       "players": [
         "Ionuț Radu"
+      ],
+      "points": 61.3,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
       ]
     },
     {
       "kickoff": "2026-09-26T18:45:00Z",
+      "competition": "UEFA Nations League",
       "team": "Spain",
+      "code": "ESP",
+      "rank": null,
       "opponent": "England",
+      "opponentCode": "ENG",
+      "opponentRank": null,
       "home": false,
       "players": [
         "Dani Olmo"
+      ],
+      "points": 59.7,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
       ]
     }
   ],
