@@ -20,5 +20,15 @@ NODE="$(command -v node || echo /usr/local/bin/node)"
   echo ""
   echo "======== $(date '+%Y-%m-%d %H:%M:%S %Z') ========"
   "$NODE" src/cli.js run 2>&1
-  echo "---- exit $? ----"
+  code=$?
+  echo "---- exit $code ----"
+
+  # Refresh the published dashboard. Only pushes when something actually changed,
+  # so a quiet pass leaves no commit noise.
+  "$NODE" src/cli.js dashboard >/dev/null 2>&1
+  if [ -n "$(git -C "$DIR" status --porcelain docs/data.json)" ]; then
+    git -C "$DIR" add docs/data.json
+    git -C "$DIR" -c user.email=mmohammad@freelancer.com -c user.name="Sorare Autopilot" \
+      commit -q -m "dashboard: $(date -u +%Y-%m-%dT%H:%MZ)" && git -C "$DIR" push -q origin main 2>&1
+  fi
 } >> "$LOG" 2>&1

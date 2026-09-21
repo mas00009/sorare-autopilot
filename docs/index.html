@@ -59,7 +59,7 @@ a{color:var(--v); text-decoration:none}
 .state span{color:var(--dim); font-size:.82rem}
 .sep{width:1px; align-self:stretch; background:var(--line2); margin:2px 0}
 .count{min-width:180px}
-.count .t{font-size:1.55rem; font-weight:750; letter-spacing:-.03em; font-variant-numeric:tabular-nums; line-height:1.15}
+.count .t{font-size:1.55rem; white-space:nowrap; font-weight:750; letter-spacing:-.03em; font-variant-numeric:tabular-nums; line-height:1.15}
 .count .k{color:var(--faint); font-size:.72rem; text-transform:uppercase; letter-spacing:.11em; font-weight:650}
 .acts{margin-left:auto; display:flex; gap:10px; align-items:center; flex-wrap:wrap}
 .big{
@@ -81,7 +81,7 @@ a{color:var(--v); text-decoration:none}
 .tiles{display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(178px,1fr)); margin-bottom:26px}
 .tile{background:var(--card); border:1px solid var(--line); border-radius:var(--r); padding:15px 17px}
 .tile .k{color:var(--faint); font-size:.7rem; text-transform:uppercase; letter-spacing:.11em; font-weight:700}
-.tile .n{display:block; font-size:1.75rem; font-weight:780; letter-spacing:-.035em; margin-top:3px; font-variant-numeric:tabular-nums}
+.tile .n{display:block; white-space:nowrap; font-size:1.75rem; font-weight:780; letter-spacing:-.035em; margin-top:3px; font-variant-numeric:tabular-nums}
 .tile .s{color:var(--dim); font-size:.78rem}
 .tile.guard{border-color:#26406a}
 .tile.guard .n{background:linear-gradient(120deg,#7dd3fc,#a78bfa); -webkit-background-clip:text; background-clip:text; color:transparent}
@@ -107,7 +107,7 @@ section>h2{margin-bottom:11px}
 .p .b{padding:10px 11px 12px; background:linear-gradient(180deg,#10131d,#0b0e16)}
 .p .nm{font-weight:680; font-size:.87rem; line-height:1.25; text-wrap:balance}
 .p .fx{color:var(--dim); font-size:.73rem; margin-top:3px}
-.p .xp{margin-top:9px; font-size:1.3rem; font-weight:780; letter-spacing:-.03em;
+.p .xp{margin-top:9px; white-space:nowrap; font-size:1.3rem; font-weight:780; letter-spacing:-.03em;
   background:linear-gradient(120deg,#c4b5fd,#7dd3fc); -webkit-background-clip:text; background-clip:text; color:transparent}
 .p .xp small{-webkit-text-fill-color:var(--faint); font-size:.62rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase}
 .tag,.capt{position:absolute; top:8px; border-radius:7px; padding:2px 7px; font-size:.67rem; font-weight:700}
@@ -122,7 +122,7 @@ section>h2{margin-bottom:11px}
 .rw span{border:1px dashed var(--line2); border-radius:9px; padding:5px 11px; font-size:.79rem; color:var(--dim)}
 .rw b{color:var(--ink); font-weight:650}
 .tot{display:flex; flex-wrap:wrap; gap:8px 18px; align-items:baseline; margin:16px 0 0}
-.tot .n{font-size:2.15rem; font-weight:800; letter-spacing:-.04em; font-variant-numeric:tabular-nums}
+.tot .n{font-size:2.15rem; white-space:nowrap; font-weight:800; letter-spacing:-.04em; font-variant-numeric:tabular-nums}
 .bar{height:8px; background:#161b29; border-radius:99px; overflow:hidden; margin:11px 0 0; max-width:480px}
 .bar i{display:block; height:100%; border-radius:99px; background:linear-gradient(90deg,var(--v2),#5eead4)}
 
@@ -231,6 +231,7 @@ function render(d){
   </div></section>`;
 
   document.getElementById('app').innerHTML=h;
+  bind(document.getElementById('app'));
   tick();
 }
 
@@ -280,8 +281,24 @@ function surface(s){
     <p class="note wide" style="margin:.2em 0 0"><strong>In now:</strong> ${cur}</p>
     ${body}
     ${s.rejected.length?`<h2 style="margin:20px 0 0">Held out</h2>
-      <ul class="rej">${s.rejected.map(c=>`<li>${esc(c.player)} — ${esc(c.blocked)}</li>`).join('')}</ul>`:''}
+      <ul class="rej">${s.rejected.map(c=>`<li>${esc(c.player)}: ${esc(c.blocked)}</li>`).join('')}</ul>`:''}
   </div></section>`;
+}
+
+const JOIN=/\b(a|an|the|of|to|in|on|at|for|and|or|but|with|each|their|its|is|are|was|be|by|as|from|that|this|it|we|you|our|your|what|which|who|can|will|so|not|only|every|any)\s+/gi;
+function bind(root){
+  const walk=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode(n){
+    const t=n.parentElement?.tagName;
+    return (t==='CODE'||t==='SCRIPT'||t==='STYLE')?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT;
+  }});
+  const nodes=[]; let n; while((n=walk.nextNode())) nodes.push(n);
+  for(const node of nodes){
+    if(!/\S/.test(node.nodeValue)) continue;
+    let v=node.nodeValue.replace(JOIN,(m,w)=>w+'\u00a0');
+    // Keep the last two words together so no paragraph ends on a single word.
+    v=v.replace(/(\S+)\s+(\S+\s*)$/,'$1\u00a0$2');
+    node.nodeValue=v;
+  }
 }
 
 function tick(){ const el=document.getElementById('cd'); if(!el||!DATA)return;
@@ -289,7 +306,8 @@ function tick(){ const el=document.getElementById('cd'); if(!el||!DATA)return;
 setInterval(tick,30000);
 
 const load=()=>fetch('data.json?t='+Date.now()).then(r=>r.json()).then(render)
-  .catch(e=>{document.getElementById('app').innerHTML=`<p class="note">Could not load data.json — ${esc(e.message)}</p>`});
+  .catch(e=>{document.getElementById('app').innerHTML=`<p class="note">Could not load data.json. ${esc(e.message)}</p>`});
+bind(document.querySelector('footer'));
 load(); setInterval(load,120000);
 </script>
 </body>
