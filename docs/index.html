@@ -108,14 +108,12 @@ nav button .dot{display:inline-block;width:6px;height:6px;border-radius:99px;bac
  padding:15px 20px;border:1px solid #584311;background:linear-gradient(140deg,#241b08,#171205)}
 /* The number keeps a fixed column so the copy beside it starts on one line
    whatever the viewport, instead of shifting with the digit count. */
-.msg .big{flex:none;min-width:104px}
+.msg .big{flex:none;min-width:78px}
 .msg p{flex:1}
 .msg .big{font-size:1.5rem;font-weight:790;letter-spacing:-.03em;line-height:1.1;color:var(--warn);white-space:nowrap}
-.msg .big s{display:block;font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;
- font-weight:700;color:#9a7a2a;text-decoration:none;margin-top:3px}
 .msg p{margin:0;font-size:.86rem;line-height:1.5;color:#d9c48c;max-width:none;text-wrap:pretty}
 .msg.good{border-color:#1c4d3c;background:linear-gradient(140deg,#0c2a20,#071711)}
-.msg.good .big{color:var(--go)} .msg.good .big s{color:#3f8e73} .msg.good p{color:#a7d8c4}
+.msg.good .big{color:var(--go)} .msg.good p{color:#a7d8c4}
 table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:.9rem}
 th{text-align:left;font-weight:700;color:var(--faint);font-size:.69rem;text-transform:uppercase;letter-spacing:.1em;padding:0 10px 7px 0}
 td{padding:7px 10px 7px 0;border-top:1px solid var(--line)}
@@ -294,10 +292,10 @@ function surfacePanel(s){
       <span class="pill ${tot>=s.target?'go':'warn'}">${tot>=s.target?'clears target':Math.round(s.target-tot)+' short'}</span>`:''}</div>
     ${s.target?`<div class="barp"><i style="width:${pct}%"></i></div>`:''}
     ${waiting?`<div class="msg">
-      <span class="big">${Math.round(pl.shortfall)}<s>points short</s></span>
+      <span class="big">&minus;${Math.round(pl.shortfall)}</span>
       <p>Best five reach <b>${Math.round(pl.projected)}</b> of <b>${s.target}</b>. Entering would lose a heart, so nothing goes in yet.</p></div>`:''}
     ${pl&&pl.clearsTarget&&pl.lock?`<div class="msg good">
-      <span class="big">${Math.round(pl.projected-s.target)}<s>points clear</s></span>
+      <span class="big">+${Math.round(pl.projected-s.target)}</span>
       <p>Locks ${when(pl.lock)}${pl.tradedPointsForTime>0?`, ${pl.tradedPointsForTime} points given up to lock a day later`:''}.</p></div>`:''}
   </div>`;
 }
