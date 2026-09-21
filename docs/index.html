@@ -208,10 +208,11 @@ const TASK={
   TASK_APPEARANCE_SCORE:'Player hits 100 points', TASKS_TRACK:'Collection track',
 };
 const REWARD={InGameCurrency:'coins', Experience:'XP', CardShard:'essence',
-  AnyCard:'a card', CardPacks:'a card pack', Monetary:'cash'};
+  AnyCard:'card', CardPacks:'card pack', Monetary:'cash'};
 const human=(v,map)=>map[v]??String(v??'')
   .toLowerCase().replace(/_/g,' ').replace(/^./,c=>c.toUpperCase());
 const titled=s=>String(s??'').replace(/\b([a-z])/g,(m,c)=>c.toUpperCase());
+const TITLE=s=>String(s??'').replace(/\b[a-z]/g,c=>c.toUpperCase()).replace(/\bXp\b/,'XP');
 
 let D=null,TAB=0;
 
@@ -264,13 +265,13 @@ function surfacePanel(s){
   const pl=s.plan;
   const lvl=s.level!=null&&s.totalLevels?`<span class="pill vv">Level ${s.level} of ${s.totalLevels}</span>`:'';
   const dots=(s.ladder??[]).map(x=>`<i class="${x.state==='CLAIMED'?'done':(x.level===s.level?'now':'')}" title="Level ${x.level} · ${x.target} pts"></i>`).join('');
-  const rw=(s.rewards??[]).map(r=>r.kind==='pack'?`<span class="pill">Pays a ${r.cards}-card pack</span>`
-    :r.kind==='essence'?`<span class="pill">Pays ${r.amount} essence</span>`
-    :`<span class="pill">Pays ${esc(human(r.kind,REWARD))}</span>`).join('');
+  const rw=(s.rewards??[]).map(r=>r.kind==='pack'?`<span class="pill">${TITLE(`Pays ${r.cards}-card pack`)}</span>`
+    :r.kind==='essence'?`<span class="pill">${TITLE(`Pays ${r.amount} essence`)}</span>`
+    :`<span class="pill">${esc(TITLE('Pays '+human(r.kind,REWARD)))}</span>`).join('');
   const st={LINEUP_SET:'go',PLAYABLE:'go',CLAIMABLE:'warn',LIVE:'vv',FAILED:'bad'}[s.state]||'';
 
   if(!s.candidates.length) return `<div class="card">
-    <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>${lvl}<span class="pill ${st}">${esc(human(s.state,STATE))}</span></div>
+    <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>${lvl}<span class="pill ${st}">${esc(TITLE(human(s.state,STATE)))}</span></div>
     ${dots?`<div class="steps">${dots}</div>`:''}${rw?`<div style="margin-top:10px">${rw}</div>`:''}
     <p class="prose" style="margin:13px 0 0">No eligible cards yet. This step opens for entry closer to its matchday, and the bot fills it then.</p></div>`;
 
@@ -278,7 +279,7 @@ function surfacePanel(s){
   const waiting=pl&&pl.clearsTarget===false;
   return `<div class="card">
     <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>${lvl}
-      <span class="pill ${st}">${esc(human(s.state,STATE))}</span>${rw}</div>
+      <span class="pill ${st}">${esc(TITLE(human(s.state,STATE)))}</span>${rw}</div>
     ${dots?`<div class="steps">${dots}</div>`:''}
     <div class="xi" style="margin-top:12px">${five.map((c,i)=>`
       <div class="p${i?'':' cap'}">
