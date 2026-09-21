@@ -1,0 +1,25 @@
+{
+  "name": "sorare-autopilot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Autonomous lineup + mission runner for Sorare Set mode. Never spends gems.",
+  "bin": {
+    "autopilot": "./src/cli.js"
+  },
+  "scripts": {
+    "plan": "node src/cli.js plan",
+    "run": "node src/cli.js run",
+    "watch": "node src/cli.js watch",
+    "doctor": "node src/cli.js doctor",
+    "signin": "node src/cli.js signin",
+    "auth": "node src/cli.js auth",
+    "create-app": "node src/cli.js create-app"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2"
+  }
+}

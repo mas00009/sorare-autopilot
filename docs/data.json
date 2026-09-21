@@ -1,0 +1,509 @@
+{
+  "generatedAt": "2026-09-21T05:18:50.938Z",
+  "account": "Mas0009",
+  "squad": "Loadshift",
+  "balances": {
+    "essence": 4500,
+    "gems": 186
+  },
+  "schedule": {
+    "nextLock": "2026-09-24T18:45:00Z",
+    "cadenceMin": 180,
+    "lastRunAt": 1789967619136,
+    "reason": "last run 5m ago, next due in 175m (lock in 5126m)"
+  },
+  "packs": {
+    "lastThreeStar": "Aïssa Mandi",
+    "cycleDone": true
+  },
+  "health": {
+    "failStreak": 0
+  },
+  "surfaces": [
+    {
+      "surface": "my set",
+      "state": "LINEUP_SET",
+      "target": 360,
+      "current": [
+        {
+          "name": "Emil Audero",
+          "captain": false,
+          "locked": true,
+          "nextGame": "2026-10-10T12:00:00Z"
+        },
+        {
+          "name": "Rúben Dias",
+          "captain": false,
+          "locked": true,
+          "nextGame": "2026-09-24T18:45:00Z"
+        },
+        {
+          "name": "Cristian Cásseres Jr.",
+          "captain": false,
+          "locked": true,
+          "nextGame": "2026-10-10T18:45:00Z"
+        },
+        {
+          "name": "Iñigo Vicente",
+          "captain": false,
+          "locked": true,
+          "nextGame": "2026-10-11T19:00:00Z"
+        },
+        {
+          "name": "Matthias Ginter",
+          "captain": true,
+          "locked": true,
+          "nextGame": "2026-10-11T15:30:00Z"
+        }
+      ],
+      "candidates": [
+        {
+          "id": "ComposeTeamBenchCard:fb967f31-5da5-4a16-bcb4-4d4b6b32cafd",
+          "player": "Rúben Dias",
+          "slug": "ruben-santos-gato-alves-dias",
+          "position": "DF",
+          "average": 60,
+          "bonus": 1.01,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 62,
+          "gameId": "Game:45281309-2115-4d3b-a3b5-da38524a79a7",
+          "kickoff": "2026-09-24T18:45:00Z",
+          "team": "Portugal",
+          "opponent": "Wales",
+          "home": true,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 63.25,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:6b2cf56f-d089-4080-af44-0c21f1ac7393",
+          "player": "Maxim De Cuyper",
+          "slug": "maxim-de-cuyper",
+          "position": "DF",
+          "average": 54,
+          "bonus": 1.02,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 74,
+          "gameId": "Game:a5bd39e4-9ddb-4380-a77c-16f6e56de2a1",
+          "kickoff": "2026-09-25T18:45:00Z",
+          "team": "Belgium",
+          "opponent": "Italy",
+          "home": false,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 63.24,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:a9318d79-df6b-43d6-89ba-cb2be388113a",
+          "player": "Ionuț Radu",
+          "slug": "ionu-andrei-radu",
+          "position": "GK",
+          "average": 50,
+          "bonus": 1.19,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 53,
+          "gameId": "Game:8404e26d-3cc2-4b0c-bcf7-d4b01abaace8",
+          "kickoff": "2026-09-25T18:45:00Z",
+          "team": "Romania",
+          "opponent": "Sweden",
+          "home": false,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 60.93,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:67e56064-0b0b-44e2-b7ef-ab444c21c166",
+          "player": "Dani Olmo",
+          "slug": "daniel-olmo-carvajal",
+          "position": "MD",
+          "average": 54,
+          "bonus": 1.03,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 62,
+          "gameId": "Game:4abe5f40-7307-4943-b382-3031309bf8a3",
+          "kickoff": "2026-09-26T18:45:00Z",
+          "team": "Spain",
+          "opponent": "England",
+          "home": false,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 58.92,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:a12c7beb-0f38-4c78-82e9-6b85ef916d01",
+          "player": "Carl Starfelt",
+          "slug": "carl-starfelt",
+          "position": "DF",
+          "average": 49,
+          "bonus": 1.04,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 63,
+          "gameId": "Game:8404e26d-3cc2-4b0c-bcf7-d4b01abaace8",
+          "kickoff": "2026-09-25T18:45:00Z",
+          "team": "Sweden",
+          "opponent": "Romania",
+          "home": true,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 58.49,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:109cbd5f-7a3b-4ede-87fc-f900111ceee1",
+          "player": "Daniel Svensson",
+          "slug": "daniel-svensson-2002-02-12",
+          "position": "DF",
+          "average": 49,
+          "bonus": 1.02,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 62,
+          "gameId": "Game:8404e26d-3cc2-4b0c-bcf7-d4b01abaace8",
+          "kickoff": "2026-09-25T18:45:00Z",
+          "team": "Sweden",
+          "opponent": "Romania",
+          "home": true,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 56.94,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:4278d0d6-6601-45ff-bd99-f2fa5b904622",
+          "player": "James Trafford",
+          "slug": "james-trafford",
+          "position": "GK",
+          "average": 51,
+          "bonus": 1.02,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 58,
+          "gameId": "Game:4abe5f40-7307-4943-b382-3031309bf8a3",
+          "kickoff": "2026-09-26T18:45:00Z",
+          "team": "England",
+          "opponent": "Spain",
+          "home": true,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 56.52,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:01f226c3-48cb-4dc3-bbd6-6d89f6ed5b25",
+          "player": "Troy Parrott",
+          "slug": "troy-parrott",
+          "position": "FW",
+          "average": 48,
+          "bonus": 1.09,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 57,
+          "gameId": "Game:bbfa930f-9bdf-442a-98a7-fb5bde3f2c80",
+          "kickoff": "2026-09-24T18:45:00Z",
+          "team": "Ireland",
+          "opponent": "Kosovo",
+          "home": false,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 56.24,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:12b90d6e-87c1-4d30-8ee9-9fb44d5a772d",
+          "player": "Aymeric Laporte",
+          "slug": "aymeric-laporte",
+          "position": "DF",
+          "average": 59,
+          "bonus": 1.04,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 46,
+          "gameId": "Game:4abe5f40-7307-4943-b382-3031309bf8a3",
+          "kickoff": "2026-09-26T18:45:00Z",
+          "team": "Spain",
+          "opponent": "England",
+          "home": false,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 55.95,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:6d8abcc2-ffbe-4261-a5ee-42f982fff8d0",
+          "player": "Jaka Bijol",
+          "slug": "jaka-bijol",
+          "position": "DF",
+          "average": 52,
+          "bonus": 1.02,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 50,
+          "gameId": "Game:444ce61e-b0dd-4592-8de4-436b68f30ff7",
+          "kickoff": "2026-09-26T13:00:00Z",
+          "team": "Slovenia",
+          "opponent": "Scotland",
+          "home": true,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 53.79,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:497aff71-1f5a-4637-a5e5-8568f1d5ce39",
+          "player": "Troy Parrott",
+          "slug": "troy-parrott",
+          "position": "FW",
+          "average": 48,
+          "bonus": 1.04,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 57,
+          "gameId": "Game:bbfa930f-9bdf-442a-98a7-fb5bde3f2c80",
+          "kickoff": "2026-09-24T18:45:00Z",
+          "team": "Ireland",
+          "opponent": "Kosovo",
+          "home": false,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 53.66,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:65348b8c-2156-4f59-9f91-fdf5d853afcb",
+          "player": "Lewis Hall",
+          "slug": "lewis-hall-2004-09-08",
+          "position": "DF",
+          "average": 45,
+          "bonus": 1.03,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 58,
+          "gameId": "Game:4abe5f40-7307-4943-b382-3031309bf8a3",
+          "kickoff": "2026-09-26T18:45:00Z",
+          "team": "England",
+          "opponent": "Spain",
+          "home": true,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 53.26,
+          "blocked": null
+        }
+      ],
+      "rejected": [
+        {
+          "id": "ComposeTeamBenchCard:7df3e90b-938e-4805-8f50-719e27c96b9c",
+          "player": "Sander Tangvik",
+          "slug": "sander-tangvik",
+          "position": "GK",
+          "average": 82,
+          "bonus": 1.01,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 0,
+          "gameId": "Game:0c7d452f-17c0-4250-8272-6e6e5785e302",
+          "kickoff": "2026-09-24T18:45:00Z",
+          "team": "Norway",
+          "opponent": "Denmark",
+          "home": true,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 85.3,
+          "blocked": "no minutes in last 5 games"
+        },
+        {
+          "id": "ComposeTeamBenchCard:e103ec35-b99b-4c79-9b1b-2e3895f36ab2",
+          "player": "Karl Darlow",
+          "slug": "karl-darlow",
+          "position": "GK",
+          "average": 54,
+          "bonus": 1.02,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 0,
+          "gameId": "Game:45281309-2115-4d3b-a3b5-da38524a79a7",
+          "kickoff": "2026-09-24T18:45:00Z",
+          "team": "Wales",
+          "opponent": "Portugal",
+          "home": false,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 55.08,
+          "blocked": "no minutes in last 5 games"
+        },
+        {
+          "id": "ComposeTeamBenchCard:ce5adb74-b9e6-4951-94b9-3b7b95ac6964",
+          "player": "Dominik Livaković",
+          "slug": "dominik-livakovic",
+          "position": "GK",
+          "average": 50,
+          "bonus": 1.03,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 0,
+          "gameId": "Game:3cf981e0-ba13-4f90-814f-6b83f58069e0",
+          "kickoff": "2026-09-26T18:45:00Z",
+          "team": "Croatia",
+          "opponent": "Czechia",
+          "home": false,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 51.5,
+          "blocked": "no minutes in last 5 games"
+        },
+        {
+          "id": "ComposeTeamBenchCard:aba81700-dc1e-4904-b177-8bc3bb00b233",
+          "player": "Mike Penders",
+          "slug": "mike-penders",
+          "position": "GK",
+          "average": 47,
+          "bonus": 1.02,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 0,
+          "gameId": "Game:a5bd39e4-9ddb-4380-a77c-16f6e56de2a1",
+          "kickoff": "2026-09-25T18:45:00Z",
+          "team": "Belgium",
+          "opponent": "Italy",
+          "home": false,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 47.94,
+          "blocked": "no minutes in last 5 games"
+        }
+      ],
+      "projected": 304.8
+    },
+    {
+      "surface": "team set (Loadshift)",
+      "state": "PRE_MATCHDAY_LOCKED",
+      "target": 980,
+      "current": [],
+      "candidates": [],
+      "rejected": [],
+      "projected": 0
+    }
+  ],
+  "fixtures": [
+    {
+      "kickoff": "2026-09-24T18:45:00Z",
+      "team": "Portugal",
+      "opponent": "Wales",
+      "home": true,
+      "players": [
+        "Rúben Dias"
+      ]
+    },
+    {
+      "kickoff": "2026-09-24T18:45:00Z",
+      "team": "Ireland",
+      "opponent": "Kosovo",
+      "home": false,
+      "players": [
+        "Troy Parrott",
+        "Troy Parrott"
+      ]
+    },
+    {
+      "kickoff": "2026-09-25T18:45:00Z",
+      "team": "Belgium",
+      "opponent": "Italy",
+      "home": false,
+      "players": [
+        "Maxim De Cuyper"
+      ]
+    },
+    {
+      "kickoff": "2026-09-25T18:45:00Z",
+      "team": "Romania",
+      "opponent": "Sweden",
+      "home": false,
+      "players": [
+        "Ionuț Radu"
+      ]
+    },
+    {
+      "kickoff": "2026-09-25T18:45:00Z",
+      "team": "Sweden",
+      "opponent": "Romania",
+      "home": true,
+      "players": [
+        "Carl Starfelt",
+        "Daniel Svensson"
+      ]
+    },
+    {
+      "kickoff": "2026-09-26T13:00:00Z",
+      "team": "Slovenia",
+      "opponent": "Scotland",
+      "home": true,
+      "players": [
+        "Jaka Bijol"
+      ]
+    },
+    {
+      "kickoff": "2026-09-26T18:45:00Z",
+      "team": "Spain",
+      "opponent": "England",
+      "home": false,
+      "players": [
+        "Dani Olmo",
+        "Aymeric Laporte"
+      ]
+    },
+    {
+      "kickoff": "2026-09-26T18:45:00Z",
+      "team": "England",
+      "opponent": "Spain",
+      "home": true,
+      "players": [
+        "James Trafford",
+        "Lewis Hall"
+      ]
+    }
+  ],
+  "accuracy": {
+    "n": 0
+  },
+  "recentResults": []
+}
