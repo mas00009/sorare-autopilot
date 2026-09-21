@@ -71,7 +71,6 @@ export async function build() {
       current,
       plan,
       candidates: (plan?.five?.length ? plan.five : usable).slice(0, 12),
-      rejected: pool.filter((c) => c.blocked).slice(0, 15),
       projected: Number(usable.slice(0, 5).reduce((s, c) => s + c.expected, 0).toFixed(1)),
     });
   }

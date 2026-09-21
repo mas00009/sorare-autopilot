@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T06:31:17.922Z",
+  "generatedAt": "2026-09-21T06:34:39.868Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-09-24T18:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1789971714518,
-    "reason": "last run 9m ago, next due in 171m (lock in 5054m)"
+    "reason": "last run 13m ago, next due in 167m (lock in 5050m)"
   },
   "packs": {
     "lastThreeStar": "Aïssa Mandi",
@@ -355,104 +355,6 @@
           "blocked": null
         }
       ],
-      "rejected": [
-        {
-          "id": "ComposeTeamBenchCard:7df3e90b-938e-4805-8f50-719e27c96b9c",
-          "player": "Sander Tangvik",
-          "slug": "sander-tangvik",
-          "position": "GK",
-          "average": 82,
-          "bonus": 1.01,
-          "starterPct": null,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 0,
-          "picture": "https://assets.sorare.com/cardsamplepicture/1a06b299-928e-439b-8103-ebc23083ebba/picture/tinified-da8c2f4b5a555057301bdf036b47540f.png",
-          "rarity": "common",
-          "gameId": "Game:0c7d452f-17c0-4250-8272-6e6e5785e302",
-          "kickoff": "2026-09-24T18:45:00Z",
-          "team": "Norway",
-          "opponent": "Denmark",
-          "home": true,
-          "competition": "UEFA Nations League",
-          "lockedAt": null,
-          "expected": 82.82,
-          "blocked": "no minutes in last 5 games"
-        },
-        {
-          "id": "ComposeTeamBenchCard:e103ec35-b99b-4c79-9b1b-2e3895f36ab2",
-          "player": "Karl Darlow",
-          "slug": "karl-darlow",
-          "position": "GK",
-          "average": 54,
-          "bonus": 1.02,
-          "starterPct": null,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 0,
-          "picture": "https://assets.sorare.com/cardsamplepicture/b0612bd5-e7f8-4f96-b605-997513f905cc/picture/tinified-a6a30676558d4fac0536655f53c56857.png",
-          "rarity": "common",
-          "gameId": "Game:45281309-2115-4d3b-a3b5-da38524a79a7",
-          "kickoff": "2026-09-24T18:45:00Z",
-          "team": "Wales",
-          "opponent": "Portugal",
-          "home": false,
-          "competition": "UEFA Nations League",
-          "lockedAt": null,
-          "expected": 55.08,
-          "blocked": "no minutes in last 5 games"
-        },
-        {
-          "id": "ComposeTeamBenchCard:ce5adb74-b9e6-4951-94b9-3b7b95ac6964",
-          "player": "Dominik Livaković",
-          "slug": "dominik-livakovic",
-          "position": "GK",
-          "average": 50,
-          "bonus": 1.03,
-          "starterPct": null,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 0,
-          "picture": "https://assets.sorare.com/cardsamplepicture/f1ac1f31-fbd2-49d6-a5f9-d2bb546f70e4/picture/tinified-f12cb937a5b53cf1d89880ec5a55d13c.png",
-          "rarity": "common",
-          "gameId": "Game:3cf981e0-ba13-4f90-814f-6b83f58069e0",
-          "kickoff": "2026-09-26T18:45:00Z",
-          "team": "Croatia",
-          "opponent": "Czechia",
-          "home": false,
-          "competition": "UEFA Nations League",
-          "lockedAt": null,
-          "expected": 51.5,
-          "blocked": "no minutes in last 5 games"
-        },
-        {
-          "id": "ComposeTeamBenchCard:aba81700-dc1e-4904-b177-8bc3bb00b233",
-          "player": "Mike Penders",
-          "slug": "mike-penders",
-          "position": "GK",
-          "average": 47,
-          "bonus": 1.02,
-          "starterPct": null,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 0,
-          "picture": "https://assets.sorare.com/cardsamplepicture/3ee9b5b0-22ec-4c9c-b3aa-d26929b69ca5/picture/tinified-aac3e1164cecff2de148c656cf479f45.png",
-          "rarity": "common",
-          "gameId": "Game:a5bd39e4-9ddb-4380-a77c-16f6e56de2a1",
-          "kickoff": "2026-09-25T18:45:00Z",
-          "team": "Belgium",
-          "opponent": "Italy",
-          "home": false,
-          "competition": "UEFA Nations League",
-          "lockedAt": null,
-          "expected": 47.94,
-          "blocked": "no minutes in last 5 games"
-        }
-      ],
       "projected": 306.2
     },
     {
@@ -500,7 +402,6 @@
       "current": [],
       "plan": null,
       "candidates": [],
-      "rejected": [],
       "projected": 0
     }
   ],

@@ -112,15 +112,6 @@ nav button .dot{display:inline-block;width:6px;height:6px;border-radius:99px;bac
 .msg p{margin:0;font-size:.86rem;line-height:1.5;color:#d9c48c;max-width:none;text-wrap:pretty}
 .msg.good{border-color:#1c4d3c;background:linear-gradient(140deg,#0c2a20,#071711)}
 .msg.good .big{color:var(--go)} .msg.good .big s{color:#3f8e73} .msg.good p{color:#a7d8c4}
-/* Held out: one row per reason, names gathered. Repeating the same phrase once
-   per player was four lines saying one thing. */
-.held{margin-top:15px;border-top:1px solid var(--line);padding-top:12px}
-.held h4{margin:0 0 8px;font-size:.68rem;text-transform:uppercase;letter-spacing:.12em;
- color:var(--faint);font-weight:700}
-.held dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:5px 16px;align-items:baseline}
-.held dt{font-size:.78rem;color:var(--warn);white-space:nowrap}
-.held dd{margin:0;font-size:.82rem;color:var(--dim)}
-@media(max-width:620px){.held dl{grid-template-columns:1fr;gap:1px 0}.held dd{margin-bottom:7px}}
 table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:.9rem}
 th{text-align:left;font-weight:700;color:var(--faint);font-size:.69rem;text-transform:uppercase;letter-spacing:.1em;padding:0 10px 7px 0}
 td{padding:7px 10px 7px 0;border-top:1px solid var(--line)}
@@ -304,23 +295,7 @@ function surfacePanel(s){
     ${pl&&pl.clearsTarget&&pl.lock?`<div class="msg good">
       <span class="big">${Math.round(pl.projected-s.target)}<s>points clear</s></span>
       <p>Locks ${when(pl.lock)}${pl.tradedPointsForTime>0?`, giving up ${pl.tradedPointsForTime} points to lock a day later and keep reacting to team news`:''}.</p></div>`:''}
-    ${heldOut(s.rejected)}
   </div>`;
-}
-
-/** Gather the held-out players under their reason instead of repeating it. */
-function heldOut(rejected){
-  if(!rejected||!rejected.length) return '';
-  const by=new Map();
-  for(const c of rejected){
-    const r=(c.blocked??'unavailable').replace(/^only /,'').replace(/\s*\(.*\)$/,'');
-    if(!by.has(r)) by.set(r,[]);
-    by.get(r).push(c.player);
-  }
-  const rows=[...by.entries()].sort((a,b)=>b[1].length-a[1].length);
-  const n=rejected.length;
-  return `<div class="held"><h4>Held out · ${n}</h4><dl>${rows.map(([r,ns])=>
-    `<dt>${esc(r.charAt(0).toUpperCase()+r.slice(1))}</dt><dd>${esc(ns.join(', '))}</dd>`).join('')}</dl></div>`;
 }
 
 function fixturesPanel(d){
