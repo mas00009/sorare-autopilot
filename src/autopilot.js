@@ -7,7 +7,7 @@ import { gql } from './client.js';
 import { assertCostAllowed, GuardrailError, describeSkip } from './guardrails.js';
 import {
   Q_BALANCES, Q_TRACK, Q_STEP, Q_BENCH, M_UPSERT_STEP_LINEUP,
-  Q_MISSIONS, M_CLAIM_TASK, M_CLAIM_STEP, Q_BOARDS, M_RESTART_TRACK, M_ACK_STEP, Q_BUNDLES, M_OPEN_BUNDLE,
+  Q_MISSIONS, M_CLAIM_TASK, M_CLAIM_STEP, Q_BOARDS, M_RESTART_TRACK, M_ACK_STEP, Q_BUNDLES, M_OPEN_BUNDLE, Q_MARKET_TASKS,
 } from './queries.js';
 import { openPacksUntilThreeStar } from './essence.js';
 import { humanTask } from './report.js';
@@ -350,7 +350,7 @@ const CLAIMABLE_STATE = 'COMPLETED';
 function tidy(task) {
   return {
     id: task.id,
-    name: humanTask(task.name) ?? '(unnamed)',
+    name: task.title || humanTask(task.name) || '(unnamed)',
     description: (task.description ?? '').trim() || null,
     state: task.aasmState,
   };
@@ -393,6 +393,8 @@ export async function runMissions({ dryRun = false, claimNow = false } = {}) {
     .filter(Boolean);
 
   for (const t of [
+    ...(u.dailies ?? []),
+    ...(u.weeklies ?? []),
     ...(u.setPlayTasks ?? []),
     ...(u.featuredTasks ?? []),
     ...collectSteps,
@@ -473,6 +475,71 @@ export function describeRewards(rewards = []) {
  * open - whatever they cost was paid when they were granted - so this runs on
  * every pass and simply does nothing when none are waiting.
  */
+/**
+ * Claim the daily free pack and anything the wheel is offering.
+ * COMPLETED means ready to take; CLAIMED means already taken today.
+ */
+/**
+ * Reads the market task board.
+ *
+ * Bonus packs are NOT claimed here. A completed 10/10 counter is a free pack
+ * sitting in the bank, and the only thing the daily challenge needs is one
+ * 3-star player. So the counters are held as reserve and spent one at a time,
+ * by claimBonusPack(), and only on a day that has not produced a 3-star from
+ * anything free. Holding them is safe because essence packs are only bought
+ * once the reserve is exhausted, so no pack is ever bought in a group that
+ * still has an unclaimed counter.
+ */
+export async function claimMarketTasks({ dryRun = false } = {}) {
+  const out = { claimed: [], waiting: [], reserve: [], errors: [] };
+  let d;
+  try { d = await gql(Q_MARKET_TASKS, { sport: SPORT, rarity: 'common' }); }
+  catch (err) { out.errors.push(err.message); return out; }
+
+  const m = d.market ?? {};
+  const bonus = (m.setSections ?? [])
+    .filter((g) => g?.boughtPacksCountTask)
+    .map((g) => ({ ...g.boughtPacksCountTask, title: `${g.title} bonus pack` }));
+
+  for (const t of bonus) {
+    if (t.aasmState === 'CLAIMED') continue;
+    if (t.aasmState === 'COMPLETED') out.reserve.push({ id: t.id, name: t.title, ready: true });
+    else out.waiting.push({ name: t.title, state: t.aasmState, progress: `${t.progress}/${t.target}` });
+  }
+
+  const tasks = [m.myCommonDailyClaimTask, ...(m.myWheelTasks ?? [])].filter(Boolean);
+  for (const t of tasks) {
+    const label = t.title || humanTask(t.name);
+    if (t.aasmState === 'CLAIMED') continue;               // already taken this cycle
+    if (t.aasmState !== 'COMPLETED') {
+      out.waiting.push({ name: label, state: t.aasmState, progress: `${t.progress}/${t.target}` });
+      continue;
+    }
+    if (dryRun) { out.claimed.push({ name: label, dryRun: true }); continue; }
+    try {
+      const r = await gql(M_CLAIM_TASK, { input: { taskId: t.id } }, { mutationName: 'claimTask' });
+      const errs = r.claimTask?.errors ?? [];
+      if (errs.length) out.errors.push(`${label}: ${errs.map((e) => e.message).join('; ')}`);
+      else out.claimed.push({ name: label });
+    } catch (err) { out.errors.push(`${label}: ${err.message}`); }
+  }
+  return out;
+}
+
+/** Spends exactly one held bonus counter. Returns null when the reserve is empty. */
+export async function claimBonusPack(reserve = [], { dryRun = false } = {}) {
+  const next = reserve.find((r) => r.ready);
+  if (!next) return null;
+  if (dryRun) return { name: next.name, dryRun: true };
+  try {
+    const r = await gql(M_CLAIM_TASK, { input: { taskId: next.id } }, { mutationName: 'claimTask' });
+    const errs = r.claimTask?.errors ?? [];
+    next.ready = false;
+    if (errs.length) return { name: next.name, error: errs.map((e) => e.message).join('; ') };
+    return { name: next.name };
+  } catch (err) { next.ready = false; return { name: next.name, error: err.message }; }
+}
+
 export async function openFreePacks({ dryRun = false } = {}) {
   const out = { opened: [], cards: [], errors: [] };
   let d;
@@ -573,16 +640,44 @@ export async function pass({ dryRun = false, options = {} } = {}) {
   }
 
   try {
+    report.marketTasks = await claimMarketTasks({ dryRun });
+  } catch (err) { report.marketTasks = { claimed: [], waiting: [], errors: [err.message] }; }
+
+  try {
     report.freePacks = await openFreePacks({ dryRun });
   } catch (err) { report.freePacks = { opened: [], cards: [], errors: [err.message] }; }
 
   // Did anything claimed this pass already give us a 3-star? If so the daily
-  // collect challenge is done and there is no reason to buy packs.
-  const freeThreeStar = [
+  // collect challenge is done, and there is no reason to spend a bonus pack or
+  // any essence.
+  const claimedCards = () => [
     ...(report.lineups ?? []).flatMap((l) => l.rewards ?? [])
       .filter((r) => r.kind === 'card').map((r) => ({ name: r.name, stars: r.stars })),
     ...(report.freePacks?.cards ?? []),
-  ].find((c) => (c.stars ?? 0) >= 3);
+    ...(report.bonusPacks?.cards ?? []),
+  ];
+  let freeThreeStar = claimedCards().find((c) => (c.stars ?? 0) >= 3);
+
+  // Still short. Spend the held bonus packs one at a time, cheapest first: each
+  // one is free, so every counter is tried before a single essence is touched.
+  const reserve = report.marketTasks?.reserve ?? [];
+  if (!freeThreeStar && reserve.some((r) => r.ready)) {
+    report.bonusPacks = { claimed: [], cards: [], errors: [] };
+    while (!freeThreeStar && reserve.some((r) => r.ready)) {
+      const got = await claimBonusPack(reserve, { dryRun });
+      if (!got) break;
+      if (got.error) { report.bonusPacks.errors.push(`${got.name}: ${got.error}`); continue; }
+      report.bonusPacks.claimed.push(got.name);
+      if (dryRun) break;
+      const opened = await openFreePacks({ dryRun });
+      report.bonusPacks.cards.push(...(opened.cards ?? []));
+      report.bonusPacks.errors.push(...(opened.errors ?? []));
+      freeThreeStar = claimedCards().find((c) => (c.stars ?? 0) >= 3);
+    }
+    report.bonusHeld = reserve.filter((r) => r.ready).length;
+  } else {
+    report.bonusHeld = reserve.filter((r) => r.ready).length;
+  }
 
   if (freeThreeStar) {
     const cycle = await dailyCycleId().catch(() => null);

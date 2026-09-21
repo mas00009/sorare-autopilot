@@ -128,6 +128,28 @@ async function report(r) {
     }
   }
 
+  if (r.marketTasks) {
+    const m = r.marketTasks;
+    if (m.claimed.length) {
+      console.log(`\nDaily pack and wheel: claimed ${m.claimed.length}`);
+      for (const t of m.claimed) console.log(`    ${t.name}${t.dryRun ? ' (dry run)' : ''}`);
+    } else console.log('\nDaily pack and bonuses: nothing ready to claim');
+    if (m.waiting.length) {
+      for (const w of m.waiting.slice(0, 5)) console.log(`    ${w.name}: ${w.progress ?? w.state.toLowerCase()}`);
+    }
+    for (const e of m.errors.slice(0, 3)) console.log(`  ! ${e}`);
+  }
+
+  if (r.bonusPacks?.claimed?.length) {
+    console.log(`\nBonus packs spent: ${r.bonusPacks.claimed.length}`);
+    for (const n of r.bonusPacks.claimed) console.log(`    ${n}`);
+    for (const c of r.bonusPacks.cards) console.log(`    -> ${c.name} ${c.stars}*`);
+    for (const e of r.bonusPacks.errors.slice(0, 3)) console.log(`  ! ${e}`);
+  }
+  if (r.bonusHeld) {
+    console.log(`\nBonus packs held in reserve: ${r.bonusHeld} (saved for a day with no free 3-star)`);
+  }
+
   if (r.freePacks) {
     const f = r.freePacks;
     if (f.opened.length) {

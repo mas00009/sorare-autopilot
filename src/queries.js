@@ -155,6 +155,11 @@ export const Q_MISSIONS = `
       dailyRunTask(sport: $sport) { ${TASK_FIELDS} }
       setPlayTasks(sport: $sport, first: 20) { ${TASK_FIELDS} }
       featuredTasks(sport: $sport) { ${TASK_FIELDS} }
+      # The four daily checklist items live here and nowhere else. They are
+      # absent from setPlayTasks, featuredTasks and dailyRunTask, which is why
+      # claimable missions went unseen for so long.
+      dailies: tasks(periodicity: DAILY, sport: $sport) { id name title description aasmState }
+      weeklies: tasks(periodicity: WEEKLY, sport: $sport) { id name title description aasmState }
       setCollectionsTaskTracks(sport: $sport, first: 25) {
         ${TASK_FIELDS}
         ... on TasksTrack { currentStep { ${TASK_FIELDS} } }
@@ -272,6 +277,34 @@ export const M_OPEN_BUNDLE = `
       probabilisticBundle {
         id opened
         items { __typename ... on ProbabilisticBundleSlotCardItem { card { slug anyPlayer { displayName gameplayTier } } } }
+      }
+    }
+  }
+`;
+
+/**
+ * The daily free pack and the wheel live on MarketRoot, not CurrentUser.
+ * Looking for them under currentUser is why they were invisible for so long:
+ * every task query there returns them as absent rather than as an error.
+ */
+export const Q_MARKET_TASKS = `
+  query MarketTasks($sport: Sport!, $rarity: Rarity!) {
+    market {
+      myCommonDailyClaimTask(sport: $sport) {
+        id name title description aasmState progress target
+      }
+      myWheelTasks(sport: $sport, rarity: $rarity) {
+        id name title description aasmState progress target
+      }
+      # The bonus pack after every 10 is a per-group counter, not a wheel task.
+      # It must be claimed before the next pack in that group is opened or the
+      # counter stops advancing.
+      setSections(sport: $sport) {
+        ... on CardPackGroup {
+          slug
+          title
+          boughtPacksCountTask { id name title aasmState progress target }
+        }
       }
     }
   }
