@@ -111,16 +111,14 @@ nav button .dot{display:inline-block;width:6px;height:6px;border-radius:99px;bac
 .tot b{font-size:1.85rem;font-weight:800;letter-spacing:-.04em;white-space:nowrap}
 .barp{height:7px;background:#161b29;border-radius:99px;overflow:hidden;margin-top:9px;max-width:460px}
 .barp i{display:block;height:100%;background:linear-gradient(90deg,var(--v2),#5eead4)}
-.msg{margin-top:13px;display:flex;gap:20px;align-items:center;border-radius:12px;
- padding:15px 20px;border:1px solid #584311;background:linear-gradient(140deg,#241b08,#171205)}
+/* The verdict lives on the totals line now, so it needs no box of its own. */
+.verdict{display:inline-flex;align-items:baseline;gap:9px;border-radius:99px;padding:5px 15px;
+ font-size:.83rem;border:1px solid #584311;background:#221a07;color:#e2c581}
+.verdict b{font-size:1rem;font-weight:790;color:var(--warn);letter-spacing:-.02em}
+.verdict.good{border-color:#1c4d3c;background:#0d2a21;color:#a7d8c4}
+.verdict.good b{color:var(--go)}
 /* The number keeps a fixed column so the copy beside it starts on one line
    whatever the viewport, instead of shifting with the digit count. */
-.msg .big{flex:none;min-width:78px}
-.msg p{flex:1}
-.msg .big{font-size:1.5rem;font-weight:790;letter-spacing:-.03em;line-height:1.1;color:var(--warn);white-space:nowrap}
-.msg p{margin:0;font-size:.86rem;line-height:1.5;color:#d9c48c;max-width:none;text-wrap:pretty}
-.msg.good{border-color:#1c4d3c;background:linear-gradient(140deg,#0c2a20,#071711)}
-.msg.good .big{color:var(--go)} .msg.good p{color:#a7d8c4}
 table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:.9rem}
 th{text-align:left;font-weight:700;color:var(--faint);font-size:.69rem;text-transform:uppercase;letter-spacing:.1em;padding:0 10px 7px 0}
 td{padding:7px 10px 7px 0;border-top:1px solid var(--line)}
@@ -274,6 +272,19 @@ function topbar(d){
     </span></div>`;
 }
 
+/** One pill: the gap, and what the bot is doing about it. */
+function verdict(s,pl,tot){
+  if(pl&&pl.clearsTarget===false)
+    return `<span class="verdict"><b>&minus;${Math.round(pl.shortfall)}</b>
+      Entering would lose a heart, so nothing goes in yet.</span>`;
+  if(pl&&pl.clearsTarget&&pl.lock)
+    return `<span class="verdict good"><b>+${Math.round(pl.projected-s.target)}</b>
+      Locks ${when(pl.lock)}${pl.tradedPointsForTime>0?`, ${pl.tradedPointsForTime} points given up to lock later`:''}.</span>`;
+  const gap=Math.round(s.target-tot);
+  return `<span class="verdict${gap<=0?' good':''}"><b>${gap<=0?'+'+Math.abs(gap):'&minus;'+gap}</b>
+    ${gap<=0?'clears the target':'short of the target'}</span>`;
+}
+
 function surfacePanel(s){
   const pl=s.plan;
   const lvl=s.level!=null&&s.totalLevels?`<span class="pill vv">Level ${s.level} of ${s.totalLevels}</span>`:'';
@@ -303,15 +314,9 @@ function surfacePanel(s){
           <div class="fx">L15 ${c.average??'—'} · L5 ${c.formL5??'—'}</div>
           <div class="xp">${c.expected}</div></div></div>`).join('')}</div>
     <div class="tot"><b>${tot.toFixed(0)}</b><span class="muted">projected</span>
-      ${s.target?`<span class="muted">target ${s.target}</span>
-      <span class="pill ${tot>=s.target?'go':'warn'}">${tot>=s.target?'clears target':Math.round(s.target-tot)+' short'}</span>`:''}</div>
+      ${s.target?`<span class="muted">target ${s.target}</span>${verdict(s,pl,tot)}`:''}</div>
     ${s.target?`<div class="barp"><i style="width:${pct}%"></i></div>`:''}
-    ${waiting?`<div class="msg">
-      <span class="big">&minus;${Math.round(pl.shortfall)}</span>
-      <p>Best five reach <b>${Math.round(pl.projected)}</b> of <b>${s.target}</b>. Entering would lose a heart, so nothing goes in yet.</p></div>`:''}
-    ${pl&&pl.clearsTarget&&pl.lock?`<div class="msg good">
-      <span class="big">+${Math.round(pl.projected-s.target)}</span>
-      <p>Locks ${when(pl.lock)}${pl.tradedPointsForTime>0?`, ${pl.tradedPointsForTime} points given up to lock a day later`:''}.</p></div>`:''}
+
   </div>`;
 }
 
