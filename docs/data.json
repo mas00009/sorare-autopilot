@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T17:31:48.462Z",
+  "generatedAt": "2026-09-22T17:37:07.389Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-24T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790098304824,
-    "reason": "last run 0m ago, next due in 180m (lock in 2953m)"
+    "lastRunAt": 1790098623309,
+    "reason": "last run 0m ago, next due in 180m (lock in 2948m)"
   },
   "packs": {
     "lastThreeStar": "Andrés Castrín",
@@ -211,28 +211,28 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 319.53,
+        "projected": 318.82,
         "lock": "2026-09-24T18:45:00Z",
-        "shortfall": 40.5,
+        "shortfall": 41.2,
         "tradedPointsForTime": 0,
-        "captain": "daniel-olmo-carvajal",
-        "captainPoints": 29,
+        "captain": "thomas-jorgensen",
+        "captainPoints": 28.75,
         "withinReach": true,
         "enteredProjected": 345.33,
         "five": [
           {
-            "id": "ComposeTeamBenchCard:67e56064-0b0b-44e2-b7ef-ab444c21c166",
-            "player": "Dani Olmo",
-            "slug": "daniel-olmo-carvajal",
-            "position": "MD",
-            "average": 54,
-            "bonus": 1.03,
+            "id": "ComposeTeamBenchCard:12b90d6e-87c1-4d30-8ee9-9fb44d5a772d",
+            "player": "Aymeric Laporte",
+            "slug": "aymeric-laporte",
+            "position": "DF",
+            "average": 61,
+            "bonus": 1.04,
             "starterPct": null,
             "oddsKnown": false,
             "onGameSheet": false,
             "reliability": null,
-            "formL5": 62,
-            "picture": "https://assets.sorare.com/cardsamplepicture/6b7262e1-5d82-4855-9bb7-a77e9857ae2b/picture/tinified-f17e5fea82558e8f8ef2b6b428e79f41.png",
+            "formL5": 53,
+            "picture": "https://assets.sorare.com/cardsamplepicture/2e0f0c68-9798-48c3-a1fe-e35b06ff458d/picture/tinified-f73a11ebd48693396a69f9a118fe327a.png",
             "rarity": "common",
             "gameId": "Game:4abe5f40-7307-4943-b382-3031309bf8a3",
             "kickoff": "2026-09-26T18:45:00Z",
@@ -245,7 +245,7 @@
             "home": false,
             "competition": "UEFA Nations League",
             "lockedAt": null,
-            "expected": 59.74,
+            "expected": 59.28,
             "blocked": null
           },
           {
@@ -364,18 +364,18 @@
       },
       "candidates": [
         {
-          "id": "ComposeTeamBenchCard:67e56064-0b0b-44e2-b7ef-ab444c21c166",
-          "player": "Dani Olmo",
-          "slug": "daniel-olmo-carvajal",
-          "position": "MD",
-          "average": 54,
-          "bonus": 1.03,
+          "id": "ComposeTeamBenchCard:12b90d6e-87c1-4d30-8ee9-9fb44d5a772d",
+          "player": "Aymeric Laporte",
+          "slug": "aymeric-laporte",
+          "position": "DF",
+          "average": 61,
+          "bonus": 1.04,
           "starterPct": null,
           "oddsKnown": false,
           "onGameSheet": false,
           "reliability": null,
-          "formL5": 62,
-          "picture": "https://assets.sorare.com/cardsamplepicture/6b7262e1-5d82-4855-9bb7-a77e9857ae2b/picture/tinified-f17e5fea82558e8f8ef2b6b428e79f41.png",
+          "formL5": 53,
+          "picture": "https://assets.sorare.com/cardsamplepicture/2e0f0c68-9798-48c3-a1fe-e35b06ff458d/picture/tinified-f73a11ebd48693396a69f9a118fe327a.png",
           "rarity": "common",
           "gameId": "Game:4abe5f40-7307-4943-b382-3031309bf8a3",
           "kickoff": "2026-09-26T18:45:00Z",
@@ -388,7 +388,7 @@
           "home": false,
           "competition": "UEFA Nations League",
           "lockedAt": null,
-          "expected": 59.74,
+          "expected": 59.28,
           "blocked": null
         },
         {
@@ -504,7 +504,7 @@
           "blocked": null
         }
       ],
-      "projected": 291.6
+      "projected": 294.2
     },
     {
       "surface": "team set (Loadshift)",
@@ -630,9 +630,9 @@
       "opponentRank": null,
       "home": false,
       "players": [
-        "Dani Olmo"
+        "Aymeric Laporte"
       ],
-      "points": 59.7,
+      "points": 59.3,
       "bestStarter": null,
       "surfaces": [
         "my set"
