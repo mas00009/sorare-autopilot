@@ -264,9 +264,31 @@ export function pickLineup(benchNodes, options = {}) {
   };
 }
 
-/** Build the AppearanceInput[] that upsertStepLineup expects. */
+/**
+ * Build the AppearanceInput[] that upsertStepLineup expects.
+ *
+ * The index is the SLOT, not a ranking. Sorare's So5AppearancesRule orders them
+ * goalkeeper, defender, midfielder, forward, extra, and validates each one
+ * against that slot's positions - submitting the five sorted by projection gets
+ * "Appearance goalkeeper should be one of Goalkeeper". So the lineup is laid
+ * out into its slots first, best card into each, and whoever is left takes the
+ * extra.
+ */
+export const SLOT_ORDER = ['GK', 'DF', 'MD', 'FW'];
+
+export function orderForSlots(chosen, slots = SLOT_ORDER) {
+  const pool = [...chosen];
+  const out = [];
+  for (const pos of slots) {
+    const i = pool.findIndex((c) => c.position === pos);
+    if (i === -1) continue;                       // formation without this slot
+    out.push(pool.splice(i, 1)[0]);
+  }
+  return [...out, ...pool];                       // the extra slot takes the rest
+}
+
 export function toAppearances(picked) {
-  return picked.chosen.map((c, i) => ({
+  return orderForSlots(picked.chosen).map((c, i) => ({
     index: i,
     composeTeamBenchObjectId: c.id,
     captain: c.id === picked.captain.id,

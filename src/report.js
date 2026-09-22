@@ -115,6 +115,12 @@ const TASK_NAMES = {
   TASK_APPEARANCE_SCORE: 'Player hits 100 points',
   TASKS_TRACK: 'Collection track',
 };
+/** A player slug reads badly in a report; this is the readable fallback. */
+export const humanSlug = (s) => String(s ?? '')
+  .split('-').filter(Boolean)
+  .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+  .join(' ');
+
 export const humanTask = (n) => TASK_NAMES[n]
   ?? String(n ?? '').toLowerCase().replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase());
 
@@ -123,12 +129,18 @@ export async function journal(report) {
   await fs.mkdir(DIR, { recursive: true });
   const entry = {
     at: report.startedAt,
-    lineups: (report.lineups ?? []).map((l) => ({
-      surface: l.surface, action: l.action ?? (l.skipped ? 'skipped' : null),
-      reason: l.reason ?? null,
-      in: l.delta?.in ?? [], out: l.delta?.out ?? [],
-      projected: l.projected ?? null,
-    })),
+    lineups: (report.lineups ?? []).map((l) => {
+      // The delta carries slugs. Resolve them to the names on the cards while
+      // the lineup is still in hand, so the report never has to guess.
+      const names = new Map((l.lineup ?? []).map((c) => [c.slug, c.player]));
+      const named = (slugs) => (slugs ?? []).map((s) => names.get(s) ?? humanSlug(s));
+      return {
+        surface: l.surface, action: l.action ?? (l.skipped ? 'skipped' : null),
+        reason: l.reason ?? null,
+        in: named(l.delta?.in), out: named(l.delta?.out),
+        projected: l.projected ?? null,
+      };
+    }),
     claimed: (report.missions?.claimed ?? []).map((t) => ({ name: t.name, description: t.description ?? null })),
     rewards: report.missions?.balanceDelta ?? [],
     stepClaims: (report.lineups ?? [])
@@ -156,12 +168,12 @@ export function bigPulls(entry) {
  *   2. SMTP - blocked here, but kept in case the block is ever lifted
  *   3. Outbox - queued for the scheduled task to pick up
  */
-export async function deliver(subject, body, env = process.env) {
+export async function deliver(subject, body, { html = null, env = process.env } = {}) {
   const to = env.REPORT_TO;
   if (to) {
     try {
       const gmail = await import('./gmail.js');
-      const res = await gmail.send({ to, subject, body });
+      const res = await gmail.send({ to, subject, body, html });
       if (res.sent) return res;
       var gmailReason = res.reason;
     } catch (err) { var gmailReason = err.message; }
@@ -194,19 +206,30 @@ async function readDay(date) {
   } catch { return []; }
 }
 
+/**
+ * Everything a day's digest reports, read once. The text and HTML mails both
+ * render this, so the two can never drift apart.
+ */
+export function digestData(entries) {
+  const claimRows = entries.flatMap((e) => e.claimed ?? [])
+    .map((c) => (typeof c === 'string' ? { name: c, description: null } : c));
+  return {
+    passes: entries.length,
+    changes: entries.flatMap((e) => e.lineups.filter((l) => l.in?.length || l.out?.length)),
+    claims: [...new Map(claimRows.map((c) => [c.name, c])).values()],
+    rewards: entries.flatMap((e) => e.rewards ?? []),
+    stepClaims: entries.flatMap((e) => e.stepClaims ?? []),
+    spent: entries.reduce((s, e) => s + (e.essenceSpent ?? 0), 0),
+    pulls: entries.flatMap((e) => e.pulls ?? []),
+    errors: entries.flatMap((e) => e.errors ?? []),
+    restarts: entries.flatMap((e) => e.lineups.filter((l) => l.action === 'restarted')),
+  };
+}
+
 /** Human-readable digest for a day. */
 export function digest(date, entries) {
   const L = [];
-  const changes = entries.flatMap((e) => e.lineups.filter((l) => l.in?.length || l.out?.length));
-  const claimRows = entries.flatMap((e) => e.claimed ?? [])
-    .map((c) => (typeof c === 'string' ? { name: c, description: null } : c));
-  const claims = [...new Map(claimRows.map((c) => [c.name, c])).values()];
-  const rewards = entries.flatMap((e) => e.rewards ?? []);
-  const stepClaims = entries.flatMap((e) => e.stepClaims ?? []);
-  const spent = entries.reduce((s, e) => s + (e.essenceSpent ?? 0), 0);
-  const pulls = entries.flatMap((e) => e.pulls ?? []);
-  const errors = entries.flatMap((e) => e.errors ?? []);
-  const restarts = entries.flatMap((e) => e.lineups.filter((l) => l.action === 'restarted'));
+  const { changes, claims, rewards, stepClaims, spent, pulls, errors, restarts } = digestData(entries);
 
   L.push(`Sorare Autopilot - ${date}`, '', `${entries.length} pass${entries.length === 1 ? '' : 'es'}.`, '');
 
@@ -257,7 +280,121 @@ export async function maybeSendDigest(now = new Date()) {
   const entries = await readDay(date);
   if (!entries.length) return { sent: false, reason: 'no activity to report' };
 
-  const res = await deliver(`Sorare Autopilot - daily report ${date}`, digest(date, entries));
+  const res = await deliver(
+    `Sorare Autopilot - daily report ${date}`,
+    digest(date, entries),
+    { html: digestHtml(date, entries) },
+  );
   if (res.sent || res.queued) await fs.writeFile(marker, '', 'utf8');
   return { ...res, date };
+}
+
+/* ------------------------------------------------------------------ *
+ * HTML mail.
+ *
+ * Email clients strip <style> blocks and ignore flexbox and grid, so this is
+ * tables and inline styles on purpose - the plain-text digest above stays the
+ * fallback and carries the same facts.
+ * ------------------------------------------------------------------ */
+
+const SITE = 'https://mas00009.github.io/sorare-autopilot/';
+const esc = (v) => String(v ?? '').replace(/[&<>"]/g, (c) => (
+  { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+const C = {
+  ink: '#10131c', dim: '#5d6577', faint: '#8d95a6', line: '#e4e7ee',
+  panel: '#f6f7fa', go: '#0f9d63', warn: '#b45309', stop: '#be3455', v: '#6d4fe0',
+};
+
+const section = (title, inner) => inner ? `
+  <tr><td style="padding:22px 26px 0">
+    <div style="font:700 11px/1 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      letter-spacing:.13em;text-transform:uppercase;color:${C.faint};padding-bottom:9px">${esc(title)}</div>
+    ${inner}
+  </td></tr>` : '';
+
+const row = (left, right = '') => `
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+    style="border-collapse:collapse"><tr>
+    <td style="font:400 14px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:${C.ink};padding:7px 0;border-bottom:1px solid ${C.line}">${left}</td>
+    ${right ? `<td align="right" style="font:600 13px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:${C.dim};padding:7px 0;border-bottom:1px solid ${C.line};white-space:nowrap">${right}</td>` : ''}
+  </tr></table>`;
+
+const chip = (text, colour) => `<span style="display:inline-block;padding:2px 8px;border-radius:99px;
+  background:${colour}1a;color:${colour};font:700 11px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  white-space:nowrap">${esc(text)}</span>`;
+
+const stat = (n, label, colour = C.ink) => `
+  <td width="33%" align="center" style="padding:14px 8px;background:${C.panel};border-radius:10px">
+    <div style="font:800 24px/1 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:${colour};letter-spacing:-.02em">${esc(n)}</div>
+    <div style="font:600 10px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      letter-spacing:.1em;text-transform:uppercase;color:${C.faint};padding-top:5px">${esc(label)}</div></td>`;
+
+/** The same digest as an HTML mail. `d` is what digestData() returns. */
+export function digestHtml(date, entries) {
+  const d = digestData(entries);
+  const pretty = new Date(`${date}T12:00:00Z`).toLocaleDateString('en-AU',
+    { weekday: 'long', day: 'numeric', month: 'long' });
+
+  const lineups = d.changes.map((c) => row(
+    `<b>${esc(c.surface)}</b> &nbsp;${esc(c.action)}` +
+    (c.in?.length ? `<div style="color:${C.dim};font-size:13px;padding-top:3px">in: ${esc(c.in.join(', '))}</div>` : '') +
+    (c.out?.length ? `<div style="color:${C.dim};font-size:13px;padding-top:2px">out: ${esc(c.out.join(', '))}</div>` : ''),
+    c.projected ? `${Math.round(c.projected)} pts` : '')).join('');
+
+  const claims = [
+    ...d.claims.map((c) => row(esc(c.name))),
+    ...d.stepClaims.map((s) => row(`<b>${esc(s.surface)}</b> &nbsp;${esc(s.reason ?? s.action)}`)),
+  ].join('');
+
+  const best = [...d.pulls].sort((a, b) => (b.stars ?? 0) - (a.stars ?? 0)).slice(0, 10);
+  const pulls = best.map((c) => row(
+    esc(c.name),
+    chip(`${c.stars}-star`, (c.stars ?? 0) >= 4 ? C.v : (c.stars ?? 0) >= 3 ? C.go : C.faint))).join('');
+
+  const errors = [...new Set(d.errors.map(String))].slice(0, 8)
+    .map((e) => row(`<span style="color:${C.stop}">${esc(e)}</span>`)).join('');
+
+  const received = d.rewards.length
+    ? [...d.rewards.reduce((m, r) => m.set(r.currency, (m.get(r.currency) ?? 0) + r.change), new Map())]
+        .map(([cur, chg]) => row(esc(cur), `${chg > 0 ? '+' : ''}${chg}`)).join('')
+    : '';
+
+  return `<!doctype html><html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="margin:0;padding:0;background:#eef0f5">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+  style="background:#eef0f5;padding:26px 12px"><tr><td align="center">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"
+  style="width:600px;max-width:100%;background:#ffffff;border-radius:16px;overflow:hidden;
+  border:1px solid ${C.line}">
+
+  <tr><td style="background:#11141f;padding:20px 26px">
+    <img src="${SITE}img/wordmark.png" alt="Sorare Autopilot" width="190"
+      style="display:block;width:190px;height:auto;border:0">
+    <div style="font:500 13px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:#8b95ad;padding-top:8px">${esc(pretty)}</div></td></tr>
+
+  <tr><td style="padding:22px 26px 0">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="6" border="0"><tr>
+      ${stat(d.passes, 'passes')}
+      ${stat(d.changes.length, 'lineup changes', d.changes.length ? C.v : C.ink)}
+      ${stat(d.spent.toLocaleString('en-AU'), 'essence spent', d.spent ? C.warn : C.ink)}
+    </tr></table></td></tr>
+
+  ${section('Lineups', lineups || row(`<span style="color:${C.dim}">No changes today.</span>`))}
+  ${section('Claimed', claims || row(`<span style="color:${C.dim}">Nothing was claimable.</span>`))}
+  ${section('Received', received)}
+  ${section('Pulled from packs', pulls)}
+  ${section('Errors', errors)}
+
+  <tr><td style="padding:24px 26px 26px">
+    <a href="${SITE}" style="display:inline-block;background:${C.v};color:#ffffff;text-decoration:none;
+      padding:11px 20px;border-radius:9px;font:700 14px/1 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+      Open the dashboard</a></td></tr>
+
+</table></td></tr></table></body></html>`;
 }

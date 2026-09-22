@@ -229,7 +229,16 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
   });
   if (!picked.ok) return { skipped: true, reason: picked.reason, stepId, surface, pool: picked.pool };
 
-  const existing = step?.myLineups?.[0] ?? null;
+  // A step keeps every attempt it has ever held, so myLineups[0] is often a
+  // spent one. A CANCELLED, FAILED, EXPIRED or SUCCESSFUL lineup is finished -
+  // that attempt cost a heart and cannot be edited, and passing its id to
+  // upsertStepLineup makes Sorare answer "final". The live attempt is the one
+  // Sorare still marks updatable; when there is none, the next lineup is a new
+  // one and gets no lineupId.
+  const SPENT = new Set(['CANCELLED', 'FAILED', 'EXPIRED', 'SUCCESSFUL']);
+  const lineups = step?.myLineups ?? [];
+  const existing = lineups.find((l) => l.updatable && !SPENT.has(l.aasmState)) ?? null;
+  const spentAttempts = lineups.filter((l) => SPENT.has(l.aasmState)).length;
 
   // Before kickoff nears, Sorare publishes no starter odds. Picking on raw
   // averages alone is guesswork - it will happily bench a settled XI for a
@@ -344,6 +353,7 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
     stepId, surface, target: step?.target,
     dead,
     action: dryRun ? 'would-submit' : 'submitted',
+    fresh: !existing, spentAttempts,
     longShot: target ? picked.projected < target : false,
     shortfall: target ? Number((target - picked.projected).toFixed(1)) : null,
     lock: picked.lock ?? null,

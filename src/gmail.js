@@ -56,7 +56,7 @@ const b64url = (s) => Buffer.from(s, 'utf8').toString('base64')
 /** Encode a header value that may contain non-ASCII. */
 const mimeWord = (s) => (/^[\x20-\x7E]*$/.test(s) ? s : `=?UTF-8?B?${Buffer.from(s, 'utf8').toString('base64')}?=`);
 
-export async function send({ to, subject, body, from = null }) {
+export async function send({ to, subject, body, html = null, from = null }) {
   const c = await loadCreds();
   if (!(c.GMAIL_REFRESH_TOKEN && c.GMAIL_CLIENT_ID && c.GMAIL_CLIENT_SECRET)) {
     return { sent: false, reason: `no Gmail OAuth credentials at ${CREDS}` };
@@ -67,14 +67,24 @@ export async function send({ to, subject, body, from = null }) {
   try { token = await accessToken(c); }
   catch (err) { return { sent: false, reason: err.message }; }
 
-  const raw = b64url(
+  const head =
     `From: Sorare Autopilot <${sender}>\r\n` +
     `To: ${to}\r\n` +
     `Subject: ${mimeWord(subject)}\r\n` +
-    `MIME-Version: 1.0\r\n` +
-    `Content-Type: text/plain; charset=UTF-8\r\n\r\n` +
-    body,
-  );
+    `MIME-Version: 1.0\r\n`;
+
+  // multipart/alternative: the plain text is the fallback for clients that will
+  // not render HTML, so both halves always carry the same facts.
+  const bound = `sa_${Date.now().toString(36)}`;
+  const raw = b64url(html
+    ? head +
+      `Content-Type: multipart/alternative; boundary="${bound}"\r\n\r\n` +
+      `--${bound}\r\n` +
+      `Content-Type: text/plain; charset=UTF-8\r\n\r\n${body}\r\n\r\n` +
+      `--${bound}\r\n` +
+      `Content-Type: text/html; charset=UTF-8\r\n\r\n${html}\r\n\r\n` +
+      `--${bound}--\r\n`
+    : head + `Content-Type: text/plain; charset=UTF-8\r\n\r\n` + body);
 
   const res = await fetch(SEND_URL, {
     method: 'POST',
