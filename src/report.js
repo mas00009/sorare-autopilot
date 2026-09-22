@@ -350,29 +350,27 @@ const chip = (text, colour) => `<span style="display:inline-block;padding:2px 8p
   background:${colour}1a;color:${colour};font:700 11px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
   white-space:nowrap">${esc(text)}</span>`;
 
-const stat = (n, label, colour = C.ink) => `
-  <td width="33%" align="center" style="padding:14px 8px;background:${C.panel};border-radius:10px">
-    <div style="font:800 24px/1 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      color:${colour};letter-spacing:-.02em">${esc(n)}</div>
-    <div style="font:600 10px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      letter-spacing:.1em;text-transform:uppercase;color:${C.faint};padding-top:5px">${esc(label)}</div></td>`;
+const stat = (n, label, colour = C.ink, { width = '20%', size = 19, html = null } = {}) => `
+  <td width="${width}" align="center" style="padding:13px 4px;background:${C.panel};border-radius:10px">
+    <div style="font:800 ${size}px/1 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:${colour};letter-spacing:-.02em;white-space:nowrap">${html ?? esc(n)}</div>
+    <div style="font:600 9px/1.3 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      letter-spacing:.08em;text-transform:uppercase;color:${C.faint};padding-top:5px;
+      white-space:nowrap">${esc(label)}</div></td>`;
 
 const num = (v) => (v == null ? '-' : Number(v).toLocaleString('en-AU'));
 
 /**
- * The score, as its own row of tiles above the balances: what the team is
- * projected to make, what the step asks for, and the gap between them.
+ * The score. Projected and target share one tile as a fraction, because they
+ * only mean anything read together; the gap gets its own.
  */
 function scoreTiles(team) {
   const proj = team?.enteredProjection ?? null;
   if (!proj || !team?.target) return '';
   const gap = Math.round(proj - team.target);
-  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="6" border="0"
-    style="margin-bottom:6px"><tr>
-      ${stat(Math.round(proj), 'projected', C.ink)}
-      ${stat(team.target, 'target', C.ink)}
-      ${stat(`${gap > 0 ? '+' : ''}${gap}`, gap >= 0 ? 'clear' : 'short', gap >= 0 ? C.go : C.warn)}
-    </tr></table>`;
+  const score = `${Math.round(proj)}<span style="color:${C.faint};font-weight:600"> / ${team.target}</span>`;
+  return stat(null, 'projected of target', C.ink, { html: score })
+    + stat(`${gap > 0 ? '+' : ''}${gap}`, gap >= 0 ? 'clear' : 'short', gap >= 0 ? C.go : C.warn);
 }
 
 /**
@@ -454,8 +452,8 @@ export function digestHtml(date, entries) {
       color:#8b95ad;padding-top:8px">${esc(pretty)}</div></td></tr>
 
   <tr><td style="padding:22px 26px 0">
-    ${scoreTiles(d.team)}
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="6" border="0"><tr>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="5" border="0"><tr>
+      ${scoreTiles(d.team)}
       ${stat(num(d.essence), 'essence left', C.go)}
       ${stat(num(d.gems), 'gems', C.v)}
       ${stat(num(d.spent), 'essence spent', d.spent ? C.warn : C.ink)}
