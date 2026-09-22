@@ -360,23 +360,19 @@ const stat = (n, label, colour = C.ink) => `
 const num = (v) => (v == null ? '-' : Number(v).toLocaleString('en-AU'));
 
 /**
- * The score line, in the header where it is read first.
- * Green when the team clears its target, amber when it is short.
+ * The score, as its own row of tiles above the balances: what the team is
+ * projected to make, what the step asks for, and the gap between them.
  */
-function headline(team) {
+function scoreTiles(team) {
   const proj = team?.enteredProjection ?? null;
   if (!proj || !team?.target) return '';
-  const clear = proj >= team.target;
-  return `<div style="padding-top:13px">
-    <span style="font:800 21px/1 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      color:#ffffff;letter-spacing:-.02em">${Math.round(proj)}</span>
-    <span style="font:600 14px/1 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      color:#8b95ad">projected of ${team.target}</span>
-    <span style="display:inline-block;margin-left:8px;padding:3px 9px;border-radius:99px;
-      background:${clear ? '#0f9d63' : '#8a5a12'};color:#ffffff;
-      font:700 11px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
-      ${clear ? `+${Math.round(proj - team.target)} clear` : `${Math.round(proj - team.target)} short`}</span>
-  </div>`;
+  const gap = Math.round(proj - team.target);
+  return `<table role="presentation" width="100%" cellpadding="0" cellspacing="6" border="0"
+    style="margin-bottom:6px"><tr>
+      ${stat(Math.round(proj), 'projected', C.ink)}
+      ${stat(team.target, 'target', C.ink)}
+      ${stat(`${gap > 0 ? '+' : ''}${gap}`, gap >= 0 ? 'clear' : 'short', gap >= 0 ? C.go : C.warn)}
+    </tr></table>`;
 }
 
 /**
@@ -455,10 +451,10 @@ export function digestHtml(date, entries) {
     <img src="${SITE}img/wordmark.png" alt="Sorare Autopilot" width="190"
       style="display:block;width:190px;height:auto;border:0">
     <div style="font:500 13px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      color:#8b95ad;padding-top:8px">${esc(pretty)}</div>
-    ${headline(d.team)}</td></tr>
+      color:#8b95ad;padding-top:8px">${esc(pretty)}</div></td></tr>
 
   <tr><td style="padding:22px 26px 0">
+    ${scoreTiles(d.team)}
     <table role="presentation" width="100%" cellpadding="0" cellspacing="6" border="0"><tr>
       ${stat(num(d.essence), 'essence left', C.go)}
       ${stat(num(d.gems), 'gems', C.v)}
