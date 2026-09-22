@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T07:08:24.351Z",
+  "generatedAt": "2026-09-22T07:13:45.333Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,11 +9,11 @@
   "schedule": {
     "nextLock": "2026-09-24T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790060899222,
-    "reason": "last run 0m ago, next due in 180m (lock in 3577m)"
+    "lastRunAt": 1790061220556,
+    "reason": "last run 0m ago, next due in 180m (lock in 3571m)"
   },
   "packs": {
-    "lastThreeStar": "Ionuț Radu",
+    "lastThreeStar": "Andrés Castrín",
     "cycleDone": true
   },
   "health": {
@@ -211,9 +211,9 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 316.97,
+        "projected": 317.49,
         "lock": "2026-09-24T18:45:00Z",
-        "shortfall": 43,
+        "shortfall": 42.5,
         "tradedPointsForTime": 0,
         "captain": "daniel-olmo-carvajal",
         "captainPoints": 29,
@@ -282,7 +282,7 @@
             "slug": "troy-parrott",
             "position": "FW",
             "average": 48,
-            "bonus": 1.09,
+            "bonus": 1.1,
             "starterPct": null,
             "oddsKnown": false,
             "onGameSheet": false,
@@ -301,7 +301,7 @@
             "home": false,
             "competition": "UEFA Nations League",
             "lockedAt": null,
-            "expected": 57.23,
+            "expected": 57.75,
             "blocked": null
           },
           {
@@ -425,7 +425,7 @@
           "slug": "troy-parrott",
           "position": "FW",
           "average": 48,
-          "bonus": 1.09,
+          "bonus": 1.1,
           "starterPct": null,
           "oddsKnown": false,
           "onGameSheet": false,
@@ -444,7 +444,7 @@
           "home": false,
           "competition": "UEFA Nations League",
           "lockedAt": null,
-          "expected": 57.23,
+          "expected": 57.75,
           "blocked": null
         },
         {
@@ -504,7 +504,7 @@
           "blocked": null
         }
       ],
-      "projected": 288.6
+      "projected": 289.1
     },
     {
       "surface": "team set (Loadshift)",
@@ -575,7 +575,7 @@
       "players": [
         "Troy Parrott"
       ],
-      "points": 57.2,
+      "points": 57.8,
       "bestStarter": null,
       "surfaces": [
         "my set"
