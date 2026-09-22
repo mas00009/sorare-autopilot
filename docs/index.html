@@ -319,6 +319,13 @@ function topbar(d){
 
 /** One pill: the gap, and what the bot is doing about it. */
 function verdict(s,pl,tot){
+  // With a team entered, the gap on screen is that team's gap.
+  if(s.entered?.projected!=null&&s.target){
+    const gap=Math.round(s.entered.projected-s.target);
+    return gap>=0
+      ? `<span class="verdict good"><b>+${gap}</b> Clear of target. Locks ${pl?.lock?when(pl.lock):'at the first kickoff'}.</span>`
+      : `<span class="verdict"><b>&minus;${Math.abs(gap)}</b> Short on paper, but inside a good week. It is in.</span>`;
+  }
   if(pl&&pl.clearsTarget===false&&pl.withinReach===false)
     return `<span class="verdict"><b>&minus;${Math.round(pl.shortfall)}</b>
       Too far short to be worth a heart, so nothing goes in yet.</span>`;
@@ -358,12 +365,16 @@ function surfacePanel(s){
     ${dots?`<div class="steps">${dots}</div>`:''}${rw?`<div style="margin-top:10px">${rw}</div>`:''}
     <p class="prose" style="margin:13px 0 0">No eligible cards yet. This step opens for entry closer to its matchday, and the bot fills it then.</p></div>`;
 
-  const five=s.candidates.slice(0,5);
+  // The entered team when there is one; the plan only stands in for an empty step.
+  const five=(s.entered?.five?.length ? s.entered.five : s.candidates).slice(0,5);
   // The armband is not always on the biggest scorer: it pays on the raw score,
   // so a high-bonus card can top the projection and still be the weaker captain.
-  const capSlug=pl?.captain??null, isCap=c=>capSlug?c.slug===capSlug:false;
-  const capPts=pl?.captainPoints??0;
-  const tot=five.reduce((t,c)=>t+c.expected,0)+capPts;
+  const capSlug=s.entered?.five?.length
+    ? (s.entered.five.find(c=>c.captain)?.slug??null)
+    : (pl?.captain??null);
+  const isCap=c=>capSlug?c.slug===capSlug:false;
+  const capPts=s.entered?.five?.length?0:(pl?.captainPoints??0);
+  const tot=s.entered?.projected??(five.reduce((t,c)=>t+c.expected,0)+capPts);
   const pct=s.target?Math.min(100,tot/s.target*100):0;
   const waiting=pl&&pl.clearsTarget===false;
   return `<div class="card">

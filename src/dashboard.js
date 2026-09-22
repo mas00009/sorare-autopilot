@@ -9,7 +9,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readState } from './client.js';
-import { resolveBoards, fetchStep, fetchBench, readBalances, SPREAD } from './autopilot.js';
+import { resolveBoards, fetchStep, fetchBench, readBalances, enteredTeam, SPREAD } from './autopilot.js';
 import { describe } from './optimiser.js';
 import { readEssence } from './essence.js';
 import { decide } from './schedule.js';
@@ -39,6 +39,12 @@ export async function build() {
     }));
 
     const usable = pool.filter((c) => !c.blocked).sort((a, b) => b.expected - a.expected);
+
+    // What is entered beats what could be picked. The plan is the alternative
+    // the optimiser would build if the step were empty; showing it as "the
+    // team" put five players on the page who were not in the lineup.
+    const live = await enteredTeam({ step, stepId: b.stepId, surface: b.surface }).catch(() => null);
+
     let plan = null;
     try {
       const { pickAcrossWindow } = await import('./optimiser.js');
@@ -54,6 +60,9 @@ export async function build() {
         // The same rule the bot acts on, so the page cannot say "nothing goes
         // in yet" about a lineup the next pass will submit.
         withinReach: step?.target ? (step.target - p.projected) <= SPREAD : true,
+        // When a team is entered, the gap that matters is ITS gap, not the
+        // alternative's - otherwise the page reports a shortfall nobody has.
+        enteredProjected: live?.projected ?? null,
         five: p.chosen.slice(0, 5),
       };
     } catch {}
@@ -67,6 +76,7 @@ export async function build() {
 
     surfaces.push({
       surface: b.surface,
+      entered: live ? { five: live.five, projected: live.projected } : null,
       level: b.level ?? null,
       lives: b.lives ?? null,
       totalLevels: b.total ?? null,

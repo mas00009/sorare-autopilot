@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T01:05:41.593Z",
+  "generatedAt": "2026-09-22T01:09:11.531Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-24T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790039137515,
-    "reason": "last run 0m ago, next due in 180m (lock in 3939m)"
+    "lastRunAt": 1790039275068,
+    "reason": "last run 1m ago, next due in 179m (lock in 3936m)"
   },
   "packs": {
     "lastThreeStar": "Álex Baena",
@@ -30,6 +30,106 @@
   "surfaces": [
     {
       "surface": "my set",
+      "entered": {
+        "five": [
+          {
+            "name": "Ionuț Radu",
+            "player": "Ionuț Radu",
+            "slug": "ionu-andrei-radu",
+            "pos": "GK",
+            "position": "GK",
+            "pic": "https://assets.sorare.com/cardsamplepicture/da67d3d8-a319-4a6d-a18c-4408d31321d6/picture/tinified-351affefa6ba8f2bec4f184a8e8b7941.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/da67d3d8-a319-4a6d-a18c-4408d31321d6/picture/tinified-351affefa6ba8f2bec4f184a8e8b7941.png",
+            "captain": false,
+            "exp": 61.28,
+            "expected": 61.28,
+            "opp": "Sweden",
+            "opponent": "Sweden",
+            "home": false,
+            "average": 50,
+            "formL5": 53,
+            "locked": false,
+            "kickoff": "2026-09-25T18:45:00Z"
+          },
+          {
+            "name": "Maxim De Cuyper",
+            "player": "Maxim De Cuyper",
+            "slug": "maxim-de-cuyper",
+            "pos": "DF",
+            "position": "DF",
+            "pic": "https://assets.sorare.com/cardsamplepicture/91f935bd-5e32-4847-84aa-f740d44c0b77/picture/tinified-16504a398794b5385dbcd2debae138b3.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/91f935bd-5e32-4847-84aa-f740d44c0b77/picture/tinified-16504a398794b5385dbcd2debae138b3.png",
+            "captain": true,
+            "exp": 65.28,
+            "expected": 65.28,
+            "opp": "Italy",
+            "opponent": "Italy",
+            "home": false,
+            "average": 54,
+            "formL5": 74,
+            "locked": false,
+            "kickoff": "2026-09-25T18:45:00Z"
+          },
+          {
+            "name": "Dani Olmo",
+            "player": "Dani Olmo",
+            "slug": "daniel-olmo-carvajal",
+            "pos": "MD",
+            "position": "MD",
+            "pic": "https://assets.sorare.com/cardsamplepicture/6b7262e1-5d82-4855-9bb7-a77e9857ae2b/picture/tinified-f17e5fea82558e8f8ef2b6b428e79f41.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/6b7262e1-5d82-4855-9bb7-a77e9857ae2b/picture/tinified-f17e5fea82558e8f8ef2b6b428e79f41.png",
+            "captain": false,
+            "exp": 59.74,
+            "expected": 59.74,
+            "opp": "England",
+            "opponent": "England",
+            "home": false,
+            "average": 54,
+            "formL5": 62,
+            "locked": false,
+            "kickoff": "2026-09-26T18:45:00Z"
+          },
+          {
+            "name": "Álex Baena",
+            "player": "Álex Baena",
+            "slug": "alejandro-baena-rodriguez",
+            "pos": "FW",
+            "position": "FW",
+            "pic": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
+            "captain": false,
+            "exp": 63.96,
+            "expected": 63.96,
+            "opp": "England",
+            "opponent": "England",
+            "home": false,
+            "average": 58,
+            "formL5": 65,
+            "locked": false,
+            "kickoff": "2026-09-26T18:45:00Z"
+          },
+          {
+            "name": "Rúben Dias",
+            "player": "Rúben Dias",
+            "slug": "ruben-santos-gato-alves-dias",
+            "pos": "DF",
+            "position": "DF",
+            "pic": "https://assets.sorare.com/cardsamplepicture/51ec3fca-50ff-4975-a5a2-1a83b5c833f0/picture/tinified-7a37453263600d888145da54b161fb7d.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/51ec3fca-50ff-4975-a5a2-1a83b5c833f0/picture/tinified-7a37453263600d888145da54b161fb7d.png",
+            "captain": false,
+            "exp": 61.61,
+            "expected": 61.61,
+            "opp": "Wales",
+            "opponent": "Wales",
+            "home": true,
+            "average": 60,
+            "formL5": 62,
+            "locked": false,
+            "kickoff": "2026-09-24T18:45:00Z"
+          }
+        ],
+        "projected": 343.87
+      },
       "level": 2,
       "lives": {
         "left": 2,
@@ -117,6 +217,7 @@
         "captain": "carl-starfelt",
         "captainPoints": 28,
         "withinReach": true,
+        "enteredProjected": 343.87,
         "five": [
           {
             "id": "ComposeTeamBenchCard:a12c7beb-0f38-4c78-82e9-6b85ef916d01",
@@ -406,6 +507,7 @@
     },
     {
       "surface": "team set (Loadshift)",
+      "entered": null,
       "level": 1,
       "lives": null,
       "totalLevels": 5,

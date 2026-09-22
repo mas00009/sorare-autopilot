@@ -392,11 +392,11 @@ function teamCards(team) {
         </td></tr>
         <tr><td style="padding:7px 8px 9px;background:#ffffff">
           <div style="font:700 11px/1.25 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-            color:${C.ink}">${esc(c.name)}</div>
+            color:${C.ink};height:28px;overflow:hidden">${esc(c.name)}</div>
           <div style="font:500 10px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
             color:${C.faint};padding-top:2px">${esc(c.pos)}${c.opp ? ` &middot; ${c.home ? 'vs' : '@'} ${esc(c.opp)}` : ''}</div>
-          ${c.exp != null || c.captain ? `<div style="font:800 14px/1 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-            color:${c.captain ? '#e07b12' : C.v};padding-top:5px">${c.exp != null ? esc(Math.round(c.exp)) : ''}${c.captain ? ' <span style="font-size:10px">(C)</span>' : ''}</div>` : ''}
+          <div style="font:800 14px/1 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+            color:${c.captain ? '#e07b12' : C.v};padding-top:5px;height:14px">${c.exp != null ? esc(Math.round(c.exp)) : '&nbsp;'}${c.captain ? ' <span style="font-size:10px">(C)</span>' : ''}</div>
         </td></tr>
       </table></td>`).join('');
 

@@ -44,6 +44,9 @@ export async function dailyCycleId() {
  * Measured at 25 points a player across five. A gap inside this is worth
  * entering; a gap beyond it only burns a heart.
  */
+/** A finished attempt: it cost a heart and can no longer be edited. */
+export const SPENT_LINEUP = new Set(['CANCELLED', 'FAILED', 'EXPIRED', 'SUCCESSFUL']);
+
 export const SPREAD = 56;
 
 /** Fallback when the step does not name one; see optimiser DEFAULTS. */
@@ -108,6 +111,88 @@ export async function fetchBench(stepId, { first = 50, positions = null, include
   };
   const d = await gql(Q_BENCH, { id: stepId, filters, first });
   return d.currentUser?.step?.myFilteredBench?.nodes ?? [];
+}
+
+/**
+ * The team actually entered on a step, scored.
+ *
+ * Both the daily mail and the dashboard need this, and neither can get it from
+ * the ordinary bench: entered players are marked "used" and drop off it. The
+ * figures from the moment of submission are kept in state and reused while the
+ * same five are in; when there is no snapshot they are re-scored from a bench
+ * fetched with includeUsed.
+ *
+ * @returns {{five: object[], projected: number|null}|null}
+ */
+export async function enteredTeam({ step, stepId, surface, lineup = null, options = {} }) {
+  const live = lineup ?? (step?.myLineups ?? []).find(
+    (l) => l.updatable && !SPENT_LINEUP.has(l.aasmState));
+  const appearances = live?.taskAppearances ?? [];
+  if (!appearances.length) return null;
+
+  const snap = surface ? (await readState()).entered?.[surface] ?? null : null;
+  const snapBy = new Map((snap?.five ?? []).map((c) => [c.slug, c]));
+
+  const five = appearances.map((a) => {
+    const was = snapBy.get(a.anyPlayer?.slug) ?? {};
+    return {
+      name: a.anyPlayer?.displayName ?? a.anyPlayer?.slug,
+      player: a.anyPlayer?.displayName ?? a.anyPlayer?.slug,   // the dashboard's name for it
+      slug: a.anyPlayer?.slug,
+      pos: normalisePosition(a.position),
+      position: normalisePosition(a.position),
+      pic: a.pictureUrl ?? null,
+      picture: a.pictureUrl ?? null,
+      captain: !!a.captain,
+      exp: was.exp ?? null,
+      expected: was.exp ?? null,
+      opp: was.opp ?? null,
+      opponent: was.opp ?? null,
+      home: was.home ?? null,
+      average: was.average ?? null,
+      formL5: was.formL5 ?? null,
+      locked: !!a.locked,
+      kickoff: a.anyPlayer?.anyFutureGameStats?.[0]?.anyGame?.date ?? null,
+    };
+  });
+
+  const sameFive = five.length === (snap?.five ?? []).length
+    && five.every((c) => snapBy.has(c.slug));
+  // A snapshot written before the form figures existed is incomplete; fall
+  // through and re-score rather than render a card with blanks on it.
+  if (sameFive && five.every((c) => c.average != null)) {
+    return { five, projected: snap.projected ?? null };
+  }
+
+  try {
+    // describe() needs the full weights; the bare options leave formWeight
+    // undefined and every score comes back NaN.
+    const opts = { ...DEFAULTS, ...options };
+    const used = await fetchBench(stepId, { first: 50, includeUsed: true });
+    const want = new Set(five.map((c) => c.slug));
+    const scored = new Map(used
+      .filter((n) => want.has(n.player?.slug))
+      .map((n) => [n.player.slug, describe(n, opts)]));
+    if (scored.size !== five.length) return { five, projected: null };
+
+    let total = 0;
+    for (const c of five) {
+      const d = scored.get(c.slug);
+      c.exp = c.expected = d.expected;
+      c.opp = c.opponent = d.opponent;
+      c.home = d.home;
+      c.average = d.average; c.formL5 = d.formL5;
+      c.kickoff = c.kickoff ?? d.kickoff;
+      total += d.expected;
+    }
+    const cap = five.find((c) => c.captain);
+    const capCard = cap ? scored.get(cap.slug) : null;
+    const capBonus = step?.engineConfiguration?.captain ?? CAPTAIN_BONUS;
+    if (capCard) total += (capCard.expected / bonusMultiplier(capCard.bonus)) * capBonus;
+    return { five, projected: Number(total.toFixed(2)) };
+  } catch {
+    return { five, projected: null };            // names and art, no figures
+  }
 }
 
 export async function submitLineup(stepId, picked, { lineupId = null, dryRun = false } = {}) {
@@ -222,7 +307,31 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
     };
   }
 
-  const bench = await fetchBench(stepId);
+  // The pool has to include the cards already in this step's lineup.
+  //
+  // Sorare marks an entered card "used" and drops it from the bench, so a
+  // plain fetch shows the optimiser everything EXCEPT its own team. It then
+  // builds the best five from what is left - necessarily worse - sees a full
+  // swap against the lineup, and enters the weaker side. That is how a 344
+  // team got replaced by a 308 one. Fetching the used cards separately and
+  // keeping only this lineup's own means the comparison is like for like,
+  // without offering up cards spent on the other board.
+  const liveLineup = (step?.myLineups ?? []).find(
+    (l) => l.updatable && !SPENT_LINEUP.has(l.aasmState)) ?? null;
+  const mine = new Set((liveLineup?.taskAppearances ?? [])
+    .map((a) => a.anyPlayer?.slug).filter(Boolean));
+
+  const free = await fetchBench(stepId);
+  const mineNodes = mine.size
+    ? (await fetchBench(stepId, { includeUsed: true })).filter((n) => mine.has(n.player?.slug))
+    : [];
+  const seen = new Set();
+  const bench = [...mineNodes, ...free].filter((n) => {
+    const k = n.player?.slug;
+    if (!k || seen.has(k)) return false;
+    seen.add(k);
+    return true;
+  });
   if (!bench.length) return { skipped: true, reason: 'Bench came back empty.', stepId, surface };
 
   const picked = pickAcrossWindow(bench, {
@@ -239,10 +348,9 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
   // upsertStepLineup makes Sorare answer "final". The live attempt is the one
   // Sorare still marks updatable; when there is none, the next lineup is a new
   // one and gets no lineupId.
-  const SPENT = new Set(['CANCELLED', 'FAILED', 'EXPIRED', 'SUCCESSFUL']);
   const lineups = step?.myLineups ?? [];
-  const existing = lineups.find((l) => l.updatable && !SPENT.has(l.aasmState)) ?? null;
-  const spentAttempts = lineups.filter((l) => SPENT.has(l.aasmState)).length;
+  const existing = lineups.find((l) => l.updatable && !SPENT_LINEUP.has(l.aasmState)) ?? null;
+  const spentAttempts = lineups.filter((l) => SPENT_LINEUP.has(l.aasmState)).length;
 
   // Before kickoff nears, Sorare publishes no starter odds. Picking on raw
   // averages alone is guesswork - it will happily bench a settled XI for a
@@ -293,71 +401,10 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
   // five are the next-best alternative, not what is entered, so the report has
   // to be handed the real one or it shows a lineup nobody submitted.
   //
-  // Sorare does not return a projection for a lineup, and the entered players
-  // are "used" so they no longer appear on the bench to be re-scored. The
-  // figures from the moment it was submitted are kept in state instead, and
-  // reused while the same five are still in.
-  const snap = (await readState()).entered?.[surface] ?? null;
-  const snapBy = new Map((snap?.five ?? []).map((c) => [c.slug, c]));
-  const inPlay = (existing?.taskAppearances ?? []).map((a) => {
-    const was = snapBy.get(a.anyPlayer?.slug) ?? {};
-    return {
-      name: a.anyPlayer?.displayName ?? a.anyPlayer?.slug,
-      slug: a.anyPlayer?.slug,
-      pos: normalisePosition(a.position),
-      pic: a.pictureUrl ?? null,
-      captain: !!a.captain,
-      exp: was.exp ?? null,
-      opp: was.opp ?? null,
-      home: was.home ?? null,
-    };
-  });
-  let sameFive = inPlay.length === (snap?.five ?? []).length
-    && inPlay.every((c) => snapBy.has(c.slug));
-  let enteredProjection = sameFive ? snap.projected : null;
+  const entered = await enteredTeam({ step, stepId, surface, lineup: existing, options });
+  const inPlay = entered?.five ?? [];
+  const enteredProjection = entered?.projected ?? null;
 
-  // No snapshot - the lineup predates it, or state was lost. Score the entered
-  // players directly. They are "used", so they only come back with
-  // includeUsed, which is why the ordinary bench fetch cannot see them.
-  if (inPlay.length && !sameFive) {
-    try {
-      // describe() needs the full weights; the bare options leave formWeight
-      // undefined and every score comes back NaN.
-      const opts = { ...DEFAULTS, ...options };
-      const used = await fetchBench(stepId, { first: 50, includeUsed: true });
-      const want = new Set(inPlay.map((c) => c.slug));
-      const scored = new Map(used
-        .filter((n) => want.has(n.player?.slug))
-        .map((n) => [n.player.slug, describe(n, opts)]));
-      if (scored.size === inPlay.length) {
-        let total = 0;
-        for (const c of inPlay) {
-          const d = scored.get(c.slug);
-          c.exp = d.expected; c.opp = d.opponent; c.home = d.home;
-          total += d.expected;
-        }
-        const cap = inPlay.find((c) => c.captain);
-        const capCard = cap ? scored.get(cap.slug) : null;
-        const capBonus = step?.engineConfiguration?.captain ?? CAPTAIN_BONUS;
-        if (capCard) total += (capCard.expected / bonusMultiplier(capCard.bonus)) * capBonus;
-        enteredProjection = Number(total.toFixed(2));
-        sameFive = true;
-      }
-    } catch { /* the mail simply shows no figure */ }
-  }
-
-
-  const anyOdds = picked.chosen.some((c) => c.oddsKnown);
-  if (existing && dead.length === 0 && !anyOdds && !options.forceWithoutOdds) {
-    return {
-      stepId, surface, target: step?.target,
-      action: 'hold',
-      reason: 'Every held player has a fixture in this window and no odds are out yet - leaving it alone.',
-      lineup: picked.chosen, projected: picked.projected, wouldBe: picked.chosen,
-      inPlay, enteredProjection,
-      current: (existing.taskAppearances ?? []).map((a) => a.anyPlayer?.displayName).filter(Boolean),
-    };
-  }
   const delta = diffLineup(existing?.taskAppearances ?? [], picked);
   const changed = delta.in.length > 0 || delta.out.length > 0 || !existing;
 
@@ -423,6 +470,7 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
           target: step?.target ?? null,
           five: picked.chosen.map((c) => ({
             slug: c.slug, exp: c.expected, opp: c.opponent ?? null, home: c.home ?? null,
+            average: c.average ?? null, formL5: c.formL5 ?? null, kickoff: c.kickoff ?? null,
           })),
         },
       },
