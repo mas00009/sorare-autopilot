@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-22T07:03:01.685Z",
+  "generatedAt": "2026-09-22T07:08:24.351Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 1000,
+    "essence": 2500,
     "gems": 186
   },
   "schedule": {
     "nextLock": "2026-09-24T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790060577926,
-    "reason": "last run 0m ago, next due in 180m (lock in 3582m)"
+    "lastRunAt": 1790060899222,
+    "reason": "last run 0m ago, next due in 180m (lock in 3577m)"
   },
   "packs": {
-    "lastThreeStar": "Álex Baena",
+    "lastThreeStar": "Ionuț Radu",
     "cycleDone": true
   },
   "health": {
@@ -211,9 +211,9 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 316.41,
+        "projected": 316.97,
         "lock": "2026-09-24T18:45:00Z",
-        "shortfall": 43.6,
+        "shortfall": 43,
         "tradedPointsForTime": 0,
         "captain": "daniel-olmo-carvajal",
         "captainPoints": 29,
@@ -254,7 +254,7 @@
             "slug": "carl-starfelt",
             "position": "DF",
             "average": 49,
-            "bonus": 1.04,
+            "bonus": 1.05,
             "starterPct": null,
             "oddsKnown": false,
             "onGameSheet": false,
@@ -273,7 +273,7 @@
             "home": true,
             "competition": "UEFA Nations League",
             "lockedAt": null,
-            "expected": 58.24,
+            "expected": 58.8,
             "blocked": null
           },
           {
@@ -397,7 +397,7 @@
           "slug": "carl-starfelt",
           "position": "DF",
           "average": 49,
-          "bonus": 1.04,
+          "bonus": 1.05,
           "starterPct": null,
           "oddsKnown": false,
           "onGameSheet": false,
@@ -416,7 +416,7 @@
           "home": true,
           "competition": "UEFA Nations League",
           "lockedAt": null,
-          "expected": 58.24,
+          "expected": 58.8,
           "blocked": null
         },
         {
@@ -504,7 +504,7 @@
           "blocked": null
         }
       ],
-      "projected": 287.4
+      "projected": 288.6
     },
     {
       "surface": "team set (Loadshift)",
@@ -595,7 +595,7 @@
         "Carl Starfelt",
         "Daniel Svensson"
       ],
-      "points": 114.8,
+      "points": 115.4,
       "bestStarter": null,
       "surfaces": [
         "my set"
