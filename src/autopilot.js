@@ -13,7 +13,8 @@ import { openPacksUntilThreeStar } from './essence.js';
 import { runPickers } from './picker.js';
 import { humanTask } from './report.js';
 import { readState, writeState } from './client.js';
-import { pickLineup, pickAcrossWindow, toAppearances, diffLineup } from './optimiser.js';
+import { pickLineup, pickAcrossWindow, toAppearances, diffLineup, normalisePosition,
+         describe, bonusMultiplier, DEFAULTS } from './optimiser.js';
 
 const SPORT = 'FOOTBALL';
 const GEM_CURRENCIES = ['COMMON_GEM'];
@@ -44,6 +45,9 @@ export async function dailyCycleId() {
  * entering; a gap beyond it only burns a heart.
  */
 export const SPREAD = 56;
+
+/** Fallback when the step does not name one; see optimiser DEFAULTS. */
+const CAPTAIN_BONUS = DEFAULTS.captainBonus;
 
 export async function resolveBoards() {
   const d = await gql(Q_BOARDS, { sport: SPORT });
@@ -89,7 +93,7 @@ export async function fetchStep(stepId) {
   return d.currentUser?.step ?? null;
 }
 
-export async function fetchBench(stepId, { first = 50, positions = null } = {}) {
+export async function fetchBench(stepId, { first = 50, positions = null, includeUsed = false } = {}) {
   const filters = {
     // Sorare's own defaults do the hard filtering for us:
     //   includeUnavailablePlayers:false -> no injured or suspended
@@ -98,7 +102,7 @@ export async function fetchBench(stepId, { first = 50, positions = null } = {}) 
     includeUnavailablePlayers: false,
     includeNoGame: false,
     includePostExpiration: false,
-    includeUsed: false,
+    includeUsed,
     sortType: { type: 'LAST_FIFTEEN_SO5_AVERAGE_SCORE', direction: 'DESC' },
     ...(positions ? { positions } : {}),
   };
@@ -285,6 +289,64 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
   });
   const dead = held.filter((h) => !h.inWindow || h.injured);
 
+  // The team that is actually in the step, with its art. On a hold the picked
+  // five are the next-best alternative, not what is entered, so the report has
+  // to be handed the real one or it shows a lineup nobody submitted.
+  //
+  // Sorare does not return a projection for a lineup, and the entered players
+  // are "used" so they no longer appear on the bench to be re-scored. The
+  // figures from the moment it was submitted are kept in state instead, and
+  // reused while the same five are still in.
+  const snap = (await readState()).entered?.[surface] ?? null;
+  const snapBy = new Map((snap?.five ?? []).map((c) => [c.slug, c]));
+  const inPlay = (existing?.taskAppearances ?? []).map((a) => {
+    const was = snapBy.get(a.anyPlayer?.slug) ?? {};
+    return {
+      name: a.anyPlayer?.displayName ?? a.anyPlayer?.slug,
+      slug: a.anyPlayer?.slug,
+      pos: normalisePosition(a.position),
+      pic: a.pictureUrl ?? null,
+      captain: !!a.captain,
+      exp: was.exp ?? null,
+      opp: was.opp ?? null,
+      home: was.home ?? null,
+    };
+  });
+  let sameFive = inPlay.length === (snap?.five ?? []).length
+    && inPlay.every((c) => snapBy.has(c.slug));
+  let enteredProjection = sameFive ? snap.projected : null;
+
+  // No snapshot - the lineup predates it, or state was lost. Score the entered
+  // players directly. They are "used", so they only come back with
+  // includeUsed, which is why the ordinary bench fetch cannot see them.
+  if (inPlay.length && !sameFive) {
+    try {
+      // describe() needs the full weights; the bare options leave formWeight
+      // undefined and every score comes back NaN.
+      const opts = { ...DEFAULTS, ...options };
+      const used = await fetchBench(stepId, { first: 50, includeUsed: true });
+      const want = new Set(inPlay.map((c) => c.slug));
+      const scored = new Map(used
+        .filter((n) => want.has(n.player?.slug))
+        .map((n) => [n.player.slug, describe(n, opts)]));
+      if (scored.size === inPlay.length) {
+        let total = 0;
+        for (const c of inPlay) {
+          const d = scored.get(c.slug);
+          c.exp = d.expected; c.opp = d.opponent; c.home = d.home;
+          total += d.expected;
+        }
+        const cap = inPlay.find((c) => c.captain);
+        const capCard = cap ? scored.get(cap.slug) : null;
+        const capBonus = step?.engineConfiguration?.captain ?? CAPTAIN_BONUS;
+        if (capCard) total += (capCard.expected / bonusMultiplier(capCard.bonus)) * capBonus;
+        enteredProjection = Number(total.toFixed(2));
+        sameFive = true;
+      }
+    } catch { /* the mail simply shows no figure */ }
+  }
+
+
   const anyOdds = picked.chosen.some((c) => c.oddsKnown);
   if (existing && dead.length === 0 && !anyOdds && !options.forceWithoutOdds) {
     return {
@@ -292,6 +354,7 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
       action: 'hold',
       reason: 'Every held player has a fixture in this window and no odds are out yet - leaving it alone.',
       lineup: picked.chosen, projected: picked.projected, wouldBe: picked.chosen,
+      inPlay, enteredProjection,
       current: (existing.taskAppearances ?? []).map((a) => a.anyPlayer?.displayName).filter(Boolean),
     };
   }
@@ -349,11 +412,34 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
     }
     throw err;
   }
+  if (!dryRun) {
+    const prev = (await readState()).entered ?? {};
+    await writeState({
+      entered: {
+        ...prev,
+        [surface]: {
+          at: new Date().toISOString(),
+          projected: picked.projected,
+          target: step?.target ?? null,
+          five: picked.chosen.map((c) => ({
+            slug: c.slug, exp: c.expected, opp: c.opponent ?? null, home: c.home ?? null,
+          })),
+        },
+      },
+    });
+  }
+
   return {
     stepId, surface, target: step?.target,
     dead,
     action: dryRun ? 'would-submit' : 'submitted',
     fresh: !existing, spentAttempts,
+    inPlay: picked.chosen.map((c) => ({
+      name: c.player, slug: c.slug, pos: c.position, pic: c.picture,
+      exp: c.expected, opp: c.opponent ?? null, home: c.home ?? null,
+      captain: c.slug === picked.captain?.slug,
+    })),
+    enteredProjection: picked.projected,
     longShot: target ? picked.projected < target : false,
     shortfall: target ? Number((target - picked.projected).toFixed(1)) : null,
     lock: picked.lock ?? null,

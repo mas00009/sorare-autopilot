@@ -139,6 +139,19 @@ export async function journal(report) {
         reason: l.reason ?? null,
         in: named(l.delta?.in), out: named(l.delta?.out),
         projected: l.projected ?? null,
+        target: l.target ?? null,
+        // The team as it stood on this pass, slim enough to keep on every line.
+        // Without it the daily mail would have to re-fetch a lineup that has
+        // since moved on, or show nothing.
+        // What is actually entered wins. Only when nothing is entered does the
+        // pick stand in, because then it is what the next pass will submit.
+        five: (l.inPlay?.length ? l.inPlay : (l.lineup ?? []).slice(0, 5).map((c) => ({
+          name: c.player, slug: c.slug, pos: c.position, pic: c.picture,
+          exp: c.expected, opp: c.opponent ?? null, home: c.home ?? null,
+          captain: c.slug === l.captain?.slug,
+        }))),
+        entered: !!l.inPlay?.length,
+        enteredProjection: l.enteredProjection ?? null,
       };
     }),
     claimed: (report.missions?.claimed ?? []).map((t) => ({ name: t.name, description: t.description ?? null })),
@@ -223,6 +236,11 @@ export function digestData(entries) {
     pulls: entries.flatMap((e) => e.pulls ?? []),
     errors: entries.flatMap((e) => e.errors ?? []),
     restarts: entries.flatMap((e) => e.lineups.filter((l) => l.action === 'restarted')),
+    // The last pass of the day that actually held a team is the one worth
+    // showing: it is what is sitting in the step now.
+    team: [...entries].reverse()
+      .flatMap((e) => e.lineups ?? [])
+      .find((l) => (l.five ?? []).length) ?? null,
   };
 }
 
@@ -333,6 +351,47 @@ const stat = (n, label, colour = C.ink) => `
     <div style="font:600 10px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
       letter-spacing:.1em;text-transform:uppercase;color:${C.faint};padding-top:5px">${esc(label)}</div></td>`;
 
+/**
+ * The lineup, drawn the way the dashboard draws it.
+ *
+ * Mail cannot hold a real screenshot without an attachment the client may not
+ * show, so the cards are rebuilt from the same Sorare art the page uses: one
+ * table cell per card, fixed widths, no flex.
+ */
+function teamCards(team) {
+  if (!team?.five?.length) return '';
+  const cells = team.five.map((c) => `
+    <td width="20%" valign="top" style="padding:0 3px">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+        style="border:1px solid ${c.captain ? '#e8a33d' : C.line};border-radius:10px;overflow:hidden">
+        <tr><td style="padding:0;line-height:0;position:relative">
+          ${c.pic ? `<img src="${esc(c.pic)}" width="106" alt="${esc(c.name)}"
+            style="display:block;width:100%;height:auto;border:0">` : ''}
+        </td></tr>
+        <tr><td style="padding:7px 8px 9px;background:#ffffff">
+          <div style="font:700 11px/1.25 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+            color:${C.ink}">${esc(c.name)}</div>
+          <div style="font:500 10px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+            color:${C.faint};padding-top:2px">${esc(c.pos)}${c.opp ? ` &middot; ${c.home ? 'vs' : '@'} ${esc(c.opp)}` : ''}</div>
+          ${c.exp != null || c.captain ? `<div style="font:800 14px/1 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+            color:${c.captain ? '#e07b12' : C.v};padding-top:5px">${c.exp != null ? esc(Math.round(c.exp)) : ''}${c.captain ? ' <span style="font-size:10px">(C)</span>' : ''}</div>` : ''}
+        </td></tr>
+      </table></td>`).join('');
+
+  // On a hold, `projected` belongs to the alternative pick. The entered team's
+  // own figure is the one that means anything here.
+  const proj = team.enteredProjection ?? (team.entered ? null : team.projected);
+  const head = team.target && proj
+    ? `<div style="font:400 13px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+        color:${C.dim};padding-bottom:9px">
+        <b style="color:${C.ink};font-size:15px">${Math.round(proj)}</b> projected
+        against a target of <b style="color:${C.ink}">${team.target}</b></div>`
+    : '';
+
+  return `${head}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
+    style="border-collapse:separate"><tr>${cells}</tr></table>`;
+}
+
 /** The same digest as an HTML mail. `d` is what digestData() returns. */
 export function digestHtml(date, entries) {
   const d = digestData(entries);
@@ -385,6 +444,7 @@ export function digestHtml(date, entries) {
       ${stat(d.spent.toLocaleString('en-AU'), 'essence spent', d.spent ? C.warn : C.ink)}
     </tr></table></td></tr>
 
+  ${section(d.team?.surface ? `The team - ${d.team.surface}` : 'The team', teamCards(d.team))}
   ${section('Lineups', lineups || row(`<span style="color:${C.dim}">No changes today.</span>`))}
   ${section('Claimed', claims || row(`<span style="color:${C.dim}">Nothing was claimable.</span>`))}
   ${section('Received', received)}

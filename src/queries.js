@@ -64,6 +64,8 @@ export const Q_STEP = `
               captain
               locked
               lockedAt
+              position
+              pictureUrl(derivative: "tinified")
               anyCard { slug }
               anyPlayer {
                 slug
