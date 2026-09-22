@@ -160,6 +160,10 @@ export async function journal(report) {
       .filter((l) => l.action === 'claimed' || l.action === 'restarted')
       .map((l) => ({ surface: l.surface, action: l.action, reason: l.reason })),
     essenceSpent: report.packs?.spent ?? 0,
+    // The balances as they stood at the end of this pass, so the daily mail can
+    // say where things actually are rather than only what moved.
+    essence: report.packs?.essenceAfter ?? report.packs?.essenceBefore ?? null,
+    gems: (report.gems ?? []).reduce((n, b) => n + (b.amount ?? 0), 0) || null,
     pulls: (report.packs?.opened ?? []).flatMap((o) => o.cards ?? []),
     errors: [report.lineupError, report.missionsError, ...(report.missions?.errors ?? [])].filter(Boolean),
   };
@@ -233,6 +237,8 @@ export function digestData(entries) {
     rewards: entries.flatMap((e) => e.rewards ?? []),
     stepClaims: entries.flatMap((e) => e.stepClaims ?? []),
     spent: entries.reduce((s, e) => s + (e.essenceSpent ?? 0), 0),
+    essence: [...entries].reverse().map((e) => e.essence).find((v) => v != null) ?? null,
+    gems: [...entries].reverse().map((e) => e.gems).find((v) => v != null) ?? null,
     pulls: entries.flatMap((e) => e.pulls ?? []),
     errors: entries.flatMap((e) => e.errors ?? []),
     restarts: entries.flatMap((e) => e.lineups.filter((l) => l.action === 'restarted')),
@@ -351,6 +357,28 @@ const stat = (n, label, colour = C.ink) => `
     <div style="font:600 10px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
       letter-spacing:.1em;text-transform:uppercase;color:${C.faint};padding-top:5px">${esc(label)}</div></td>`;
 
+const num = (v) => (v == null ? '-' : Number(v).toLocaleString('en-AU'));
+
+/**
+ * The score line, in the header where it is read first.
+ * Green when the team clears its target, amber when it is short.
+ */
+function headline(team) {
+  const proj = team?.enteredProjection ?? null;
+  if (!proj || !team?.target) return '';
+  const clear = proj >= team.target;
+  return `<div style="padding-top:13px">
+    <span style="font:800 21px/1 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:#ffffff;letter-spacing:-.02em">${Math.round(proj)}</span>
+    <span style="font:600 14px/1 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:#8b95ad">projected of ${team.target}</span>
+    <span style="display:inline-block;margin-left:8px;padding:3px 9px;border-radius:99px;
+      background:${clear ? '#0f9d63' : '#8a5a12'};color:#ffffff;
+      font:700 11px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
+      ${clear ? `+${Math.round(proj - team.target)} clear` : `${Math.round(proj - team.target)} short`}</span>
+  </div>`;
+}
+
 /**
  * The lineup, drawn the way the dashboard draws it.
  *
@@ -378,15 +406,7 @@ function teamCards(team) {
         </td></tr>
       </table></td>`).join('');
 
-  // On a hold, `projected` belongs to the alternative pick. The entered team's
-  // own figure is the one that means anything here.
-  const proj = team.enteredProjection ?? (team.entered ? null : team.projected);
-  const head = team.target && proj
-    ? `<div style="font:400 13px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-        color:${C.dim};padding-bottom:9px">
-        <b style="color:${C.ink};font-size:15px">${Math.round(proj)}</b> projected
-        against a target of <b style="color:${C.ink}">${team.target}</b></div>`
-    : '';
+  const head = '';   // the score line lives in the header now
 
   return `${head}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
     style="border-collapse:separate"><tr>${cells}</tr></table>`;
@@ -435,13 +455,14 @@ export function digestHtml(date, entries) {
     <img src="${SITE}img/wordmark.png" alt="Sorare Autopilot" width="190"
       style="display:block;width:190px;height:auto;border:0">
     <div style="font:500 13px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      color:#8b95ad;padding-top:8px">${esc(pretty)}</div></td></tr>
+      color:#8b95ad;padding-top:8px">${esc(pretty)}</div>
+    ${headline(d.team)}</td></tr>
 
   <tr><td style="padding:22px 26px 0">
     <table role="presentation" width="100%" cellpadding="0" cellspacing="6" border="0"><tr>
-      ${stat(d.passes, 'passes')}
-      ${stat(d.changes.length, 'lineup changes', d.changes.length ? C.v : C.ink)}
-      ${stat(d.spent.toLocaleString('en-AU'), 'essence spent', d.spent ? C.warn : C.ink)}
+      ${stat(num(d.essence), 'essence left', C.go)}
+      ${stat(num(d.gems), 'gems', C.v)}
+      ${stat(num(d.spent), 'essence spent', d.spent ? C.warn : C.ink)}
     </tr></table></td></tr>
 
   ${section(d.team?.surface ? `The team - ${d.team.surface}` : 'The team', teamCards(d.team))}
