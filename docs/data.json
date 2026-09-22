@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T17:26:32.069Z",
+  "generatedAt": "2026-09-22T17:31:48.462Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-24T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790097988186,
-    "reason": "last run 0m ago, next due in 180m (lock in 2958m)"
+    "lastRunAt": 1790098304824,
+    "reason": "last run 0m ago, next due in 180m (lock in 2953m)"
   },
   "packs": {
     "lastThreeStar": "Andrés Castrín",
@@ -211,9 +211,9 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 317.49,
+        "projected": 319.53,
         "lock": "2026-09-24T18:45:00Z",
-        "shortfall": 42.5,
+        "shortfall": 40.5,
         "tradedPointsForTime": 0,
         "captain": "daniel-olmo-carvajal",
         "captainPoints": 29,
@@ -277,6 +277,34 @@
             "blocked": null
           },
           {
+            "id": "ComposeTeamBenchCard:46a2fdd7-97cf-46fa-b766-0a89d2c6422a",
+            "player": "Thomas Jørgensen",
+            "slug": "thomas-jorgensen",
+            "position": "MD",
+            "average": 58,
+            "bonus": 1.02,
+            "starterPct": null,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 57,
+            "picture": "https://assets.sorare.com/cardsamplepicture/18eab137-3462-4ce7-be88-be38f807502f/picture/tinified-e4d219f07bfc1e1ef5a8f8115077a497.png",
+            "rarity": "common",
+            "gameId": "Game:0c7d452f-17c0-4250-8272-6e6e5785e302",
+            "kickoff": "2026-09-24T18:45:00Z",
+            "team": "Denmark",
+            "opponent": "Norway",
+            "opponentCode": "NOR",
+            "code": "DEN",
+            "rank": null,
+            "opponentRank": null,
+            "home": false,
+            "competition": "UEFA Nations League",
+            "lockedAt": null,
+            "expected": 58.65,
+            "blocked": null
+          },
+          {
             "id": "ComposeTeamBenchCard:01f226c3-48cb-4dc3-bbd6-6d89f6ed5b25",
             "player": "Troy Parrott",
             "slug": "troy-parrott",
@@ -302,34 +330,6 @@
             "competition": "UEFA Nations League",
             "lockedAt": null,
             "expected": 57.75,
-            "blocked": null
-          },
-          {
-            "id": "ComposeTeamBenchCard:109cbd5f-7a3b-4ede-87fc-f900111ceee1",
-            "player": "Daniel Svensson",
-            "slug": "daniel-svensson-2002-02-12",
-            "position": "DF",
-            "average": 49,
-            "bonus": 1.02,
-            "starterPct": null,
-            "oddsKnown": false,
-            "onGameSheet": false,
-            "reliability": null,
-            "formL5": 62,
-            "picture": "https://assets.sorare.com/cardsamplepicture/6457f23e-4d79-4b4d-81b3-08631c1aae13/picture/tinified-30817ab9961b8df4af37142044e31341.png",
-            "rarity": "common",
-            "gameId": "Game:8404e26d-3cc2-4b0c-bcf7-d4b01abaace8",
-            "kickoff": "2026-09-25T18:45:00Z",
-            "team": "Sweden",
-            "opponent": "Romania",
-            "opponentCode": "ROU",
-            "code": "SWE",
-            "rank": null,
-            "opponentRank": null,
-            "home": true,
-            "competition": "UEFA Nations League",
-            "lockedAt": null,
-            "expected": 56.61,
             "blocked": null
           },
           {
@@ -420,6 +420,34 @@
           "blocked": null
         },
         {
+          "id": "ComposeTeamBenchCard:46a2fdd7-97cf-46fa-b766-0a89d2c6422a",
+          "player": "Thomas Jørgensen",
+          "slug": "thomas-jorgensen",
+          "position": "MD",
+          "average": 58,
+          "bonus": 1.02,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 57,
+          "picture": "https://assets.sorare.com/cardsamplepicture/18eab137-3462-4ce7-be88-be38f807502f/picture/tinified-e4d219f07bfc1e1ef5a8f8115077a497.png",
+          "rarity": "common",
+          "gameId": "Game:0c7d452f-17c0-4250-8272-6e6e5785e302",
+          "kickoff": "2026-09-24T18:45:00Z",
+          "team": "Denmark",
+          "opponent": "Norway",
+          "opponentCode": "NOR",
+          "code": "DEN",
+          "rank": null,
+          "opponentRank": null,
+          "home": false,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 58.65,
+          "blocked": null
+        },
+        {
           "id": "ComposeTeamBenchCard:01f226c3-48cb-4dc3-bbd6-6d89f6ed5b25",
           "player": "Troy Parrott",
           "slug": "troy-parrott",
@@ -445,34 +473,6 @@
           "competition": "UEFA Nations League",
           "lockedAt": null,
           "expected": 57.75,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:109cbd5f-7a3b-4ede-87fc-f900111ceee1",
-          "player": "Daniel Svensson",
-          "slug": "daniel-svensson-2002-02-12",
-          "position": "DF",
-          "average": 49,
-          "bonus": 1.02,
-          "starterPct": null,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 62,
-          "picture": "https://assets.sorare.com/cardsamplepicture/6457f23e-4d79-4b4d-81b3-08631c1aae13/picture/tinified-30817ab9961b8df4af37142044e31341.png",
-          "rarity": "common",
-          "gameId": "Game:8404e26d-3cc2-4b0c-bcf7-d4b01abaace8",
-          "kickoff": "2026-09-25T18:45:00Z",
-          "team": "Sweden",
-          "opponent": "Romania",
-          "opponentCode": "ROU",
-          "code": "SWE",
-          "rank": null,
-          "opponentRank": null,
-          "home": true,
-          "competition": "UEFA Nations League",
-          "lockedAt": null,
-          "expected": 56.61,
           "blocked": null
         },
         {
@@ -504,7 +504,7 @@
           "blocked": null
         }
       ],
-      "projected": 289.1
+      "projected": 291.6
     },
     {
       "surface": "team set (Loadshift)",
@@ -565,6 +565,25 @@
     {
       "kickoff": "2026-09-24T18:45:00Z",
       "competition": "UEFA Nations League",
+      "team": "Denmark",
+      "code": "DEN",
+      "rank": null,
+      "opponent": "Norway",
+      "opponentCode": "NOR",
+      "opponentRank": null,
+      "home": false,
+      "players": [
+        "Thomas Jørgensen"
+      ],
+      "points": 58.6,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
+      ]
+    },
+    {
+      "kickoff": "2026-09-24T18:45:00Z",
+      "competition": "UEFA Nations League",
       "team": "Ireland",
       "code": "IRL",
       "rank": null,
@@ -592,10 +611,9 @@
       "opponentRank": null,
       "home": true,
       "players": [
-        "Carl Starfelt",
-        "Daniel Svensson"
+        "Carl Starfelt"
       ],
-      "points": 115.4,
+      "points": 58.8,
       "bestStarter": null,
       "surfaces": [
         "my set"
