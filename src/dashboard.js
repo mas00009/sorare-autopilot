@@ -77,6 +77,10 @@ export async function build() {
     surfaces.push({
       surface: b.surface,
       entered: live ? { five: live.five, projected: live.projected } : null,
+      squad: step?.minimumLineupsToStartStep != null
+        ? { lineupsIn: step.totalLineups ?? 0, needed: step.minimumLineupsToStartStep,
+            scoreSoFar: step.totalScore ?? 0 }
+        : null,
       level: b.level ?? null,
       lives: b.lives ?? null,
       totalLevels: b.total ?? null,

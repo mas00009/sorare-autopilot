@@ -48,6 +48,10 @@ export const Q_STEP = `
         # What the armband is worth on this step, from Sorare rather than a
         # constant of ours. It has read 0.5 on both boards so far.
         engineConfiguration { captain }
+        # A squad step is collaborative: it needs a minimum number of lineups
+        # from the squad before it starts at all, and the target is the sum of
+        # everyone's scores rather than one lineup's.
+        ... on SquadStep { totalLineups totalScore minimumLineupsToStartStep }
         rewardConfigs {
           __typename
           ... on CardPacksRewardConfig { cardPack { slug cardsCount currency effectivePrice } }

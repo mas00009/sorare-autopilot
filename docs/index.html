@@ -363,6 +363,10 @@ function surfacePanel(s){
   if(!s.candidates.length) return `<div class="card">
     <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>${lvl}<span class="pill ${st}">${esc(TITLE(human(s.state,STATE)))}</span>${livesBadge(s.lives)}</div>
     ${dots?`<div class="steps">${dots}</div>`:''}${rw?`<div style="margin-top:10px">${rw}</div>`:''}
+    ${s.squad ? `<p class="prose" style="margin:13px 0 0">A squad step needs
+      <b>${s.squad.needed}</b> lineups from the team before it counts, and
+      <b>${s.squad.lineupsIn}</b> ${s.squad.lineupsIn === 1 ? 'is' : 'are'} in so far.
+      The ${esc(String(s.target))}-point target is the squad's combined score, not one lineup's.</p>` : ''}
     <p class="prose" style="margin:13px 0 0">No eligible cards yet. This step opens for entry closer to its matchday, and the bot fills it then.</p></div>`;
 
   // The entered team when there is one; the plan only stands in for an empty step.

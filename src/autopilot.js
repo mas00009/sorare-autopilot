@@ -413,6 +413,7 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
       stepId, surface, target: step?.target,
       action: 'none', reason: 'Live lineup already optimal.',
       lineup: picked.chosen, projected: picked.projected,
+      inPlay, enteredProjection,
     };
   }
 
@@ -432,6 +433,7 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
     return {
       stepId, surface, target, dead,
       action: 'waiting-for-target',
+      inPlay, enteredProjection,
       reason: `Best across the whole window projects ${picked.projected} against a target of ` +
               `${target}, short by ${picked.shortfall} - beyond what a good week could close. ` +
               'Holding until later fixtures bring enough scoring into the pool.',
@@ -454,6 +456,7 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
         action: 'locked',
         reason: 'Sorare has marked this lineup final - it can no longer be changed.',
         lineup: picked.chosen, projected: picked.projected,
+        inPlay, enteredProjection,
         current: (existing?.taskAppearances ?? []).map((a) => a.anyPlayer?.displayName).filter(Boolean),
       };
     }
