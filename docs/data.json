@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T02:19:24.029Z",
+  "generatedAt": "2026-09-22T02:24:40.115Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-24T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790043559546,
-    "reason": "last run 0m ago, next due in 180m (lock in 3866m)"
+    "lastRunAt": 1790043876028,
+    "reason": "last run 0m ago, next due in 180m (lock in 3860m)"
   },
   "packs": {
     "lastThreeStar": "Álex Baena",
@@ -71,21 +71,21 @@
             "kickoff": "2026-09-25T18:45:00Z"
           },
           {
-            "name": "Dani Olmo",
-            "player": "Dani Olmo",
-            "slug": "daniel-olmo-carvajal",
+            "name": "James Garner",
+            "player": "James Garner",
+            "slug": "james-garner",
             "pos": "MD",
             "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/6b7262e1-5d82-4855-9bb7-a77e9857ae2b/picture/tinified-f17e5fea82558e8f8ef2b6b428e79f41.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/6b7262e1-5d82-4855-9bb7-a77e9857ae2b/picture/tinified-f17e5fea82558e8f8ef2b6b428e79f41.png",
+            "pic": "https://assets.sorare.com/cardsamplepicture/8e01df69-aec7-4c02-8ec5-5945b8f017ad/picture/tinified-b1c14e546df4980ec4cb18086f500906.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/8e01df69-aec7-4c02-8ec5-5945b8f017ad/picture/tinified-b1c14e546df4980ec4cb18086f500906.png",
             "captain": false,
-            "exp": 59.74,
-            "expected": 59.74,
-            "opp": "England",
-            "opponent": "England",
-            "home": false,
-            "average": 54,
-            "formL5": 62,
+            "exp": 61.2,
+            "expected": 61.2,
+            "opp": "Spain",
+            "opponent": "Spain",
+            "home": true,
+            "average": 59,
+            "formL5": 61,
             "locked": false,
             "kickoff": "2026-09-26T18:45:00Z"
           },
@@ -128,7 +128,7 @@
             "kickoff": "2026-09-24T18:45:00Z"
           }
         ],
-        "projected": 343.87
+        "projected": 345.33
       },
       "squad": null,
       "level": 2,
@@ -191,7 +191,7 @@
           "nextGame": "2026-09-25T18:45:00Z"
         },
         {
-          "name": "Dani Olmo",
+          "name": "James Garner",
           "captain": false,
           "locked": false,
           "nextGame": "2026-09-26T18:45:00Z"
@@ -211,15 +211,43 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 308.19,
+        "projected": 316.41,
         "lock": "2026-09-24T18:45:00Z",
-        "shortfall": 51.8,
+        "shortfall": 43.6,
         "tradedPointsForTime": 0,
-        "captain": "carl-starfelt",
-        "captainPoints": 28,
+        "captain": "daniel-olmo-carvajal",
+        "captainPoints": 29,
         "withinReach": true,
-        "enteredProjected": 343.87,
+        "enteredProjected": 345.33,
         "five": [
+          {
+            "id": "ComposeTeamBenchCard:67e56064-0b0b-44e2-b7ef-ab444c21c166",
+            "player": "Dani Olmo",
+            "slug": "daniel-olmo-carvajal",
+            "position": "MD",
+            "average": 54,
+            "bonus": 1.03,
+            "starterPct": null,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 62,
+            "picture": "https://assets.sorare.com/cardsamplepicture/6b7262e1-5d82-4855-9bb7-a77e9857ae2b/picture/tinified-f17e5fea82558e8f8ef2b6b428e79f41.png",
+            "rarity": "common",
+            "gameId": "Game:4abe5f40-7307-4943-b382-3031309bf8a3",
+            "kickoff": "2026-09-26T18:45:00Z",
+            "team": "Spain",
+            "opponent": "England",
+            "opponentCode": "ENG",
+            "code": "ESP",
+            "rank": null,
+            "opponentRank": null,
+            "home": false,
+            "competition": "UEFA Nations League",
+            "lockedAt": null,
+            "expected": 59.74,
+            "blocked": null
+          },
           {
             "id": "ComposeTeamBenchCard:a12c7beb-0f38-4c78-82e9-6b85ef916d01",
             "player": "Carl Starfelt",
@@ -331,38 +359,38 @@
             "lockedAt": null,
             "expected": 55.59,
             "blocked": null
-          },
-          {
-            "id": "ComposeTeamBenchCard:3fcb8bcb-83d8-4b03-89ca-9c930de8a5db",
-            "player": "Morten Hjulmand",
-            "slug": "morten-hjulmand",
-            "position": "MD",
-            "average": 53,
-            "bonus": 1.04,
-            "starterPct": null,
-            "oddsKnown": false,
-            "onGameSheet": false,
-            "reliability": null,
-            "formL5": 48,
-            "picture": "https://assets.sorare.com/cardsamplepicture/a806b93c-285f-4648-aa0c-d1e3fb95cb12/picture/tinified-264bf46f26a58db15dd4868b9521faea.png",
-            "rarity": "common",
-            "gameId": "Game:0c7d452f-17c0-4250-8272-6e6e5785e302",
-            "kickoff": "2026-09-24T18:45:00Z",
-            "team": "Denmark",
-            "opponent": "Norway",
-            "opponentCode": "NOR",
-            "code": "DEN",
-            "rank": null,
-            "opponentRank": null,
-            "home": false,
-            "competition": "UEFA Nations League",
-            "lockedAt": null,
-            "expected": 52.52,
-            "blocked": null
           }
         ]
       },
       "candidates": [
+        {
+          "id": "ComposeTeamBenchCard:67e56064-0b0b-44e2-b7ef-ab444c21c166",
+          "player": "Dani Olmo",
+          "slug": "daniel-olmo-carvajal",
+          "position": "MD",
+          "average": 54,
+          "bonus": 1.03,
+          "starterPct": null,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 62,
+          "picture": "https://assets.sorare.com/cardsamplepicture/6b7262e1-5d82-4855-9bb7-a77e9857ae2b/picture/tinified-f17e5fea82558e8f8ef2b6b428e79f41.png",
+          "rarity": "common",
+          "gameId": "Game:4abe5f40-7307-4943-b382-3031309bf8a3",
+          "kickoff": "2026-09-26T18:45:00Z",
+          "team": "Spain",
+          "opponent": "England",
+          "opponentCode": "ENG",
+          "code": "ESP",
+          "rank": null,
+          "opponentRank": null,
+          "home": false,
+          "competition": "UEFA Nations League",
+          "lockedAt": null,
+          "expected": 59.74,
+          "blocked": null
+        },
         {
           "id": "ComposeTeamBenchCard:a12c7beb-0f38-4c78-82e9-6b85ef916d01",
           "player": "Carl Starfelt",
@@ -474,37 +502,9 @@
           "lockedAt": null,
           "expected": 55.59,
           "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:3fcb8bcb-83d8-4b03-89ca-9c930de8a5db",
-          "player": "Morten Hjulmand",
-          "slug": "morten-hjulmand",
-          "position": "MD",
-          "average": 53,
-          "bonus": 1.04,
-          "starterPct": null,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 48,
-          "picture": "https://assets.sorare.com/cardsamplepicture/a806b93c-285f-4648-aa0c-d1e3fb95cb12/picture/tinified-264bf46f26a58db15dd4868b9521faea.png",
-          "rarity": "common",
-          "gameId": "Game:0c7d452f-17c0-4250-8272-6e6e5785e302",
-          "kickoff": "2026-09-24T18:45:00Z",
-          "team": "Denmark",
-          "opponent": "Norway",
-          "opponentCode": "NOR",
-          "code": "DEN",
-          "rank": null,
-          "opponentRank": null,
-          "home": false,
-          "competition": "UEFA Nations League",
-          "lockedAt": null,
-          "expected": 52.52,
-          "blocked": null
         }
       ],
-      "projected": 282.3
+      "projected": 287.4
     },
     {
       "surface": "team set (Loadshift)",
@@ -582,25 +582,6 @@
       ]
     },
     {
-      "kickoff": "2026-09-24T18:45:00Z",
-      "competition": "UEFA Nations League",
-      "team": "Denmark",
-      "code": "DEN",
-      "rank": null,
-      "opponent": "Norway",
-      "opponentCode": "NOR",
-      "opponentRank": null,
-      "home": false,
-      "players": [
-        "Morten Hjulmand"
-      ],
-      "points": 52.5,
-      "bestStarter": null,
-      "surfaces": [
-        "my set"
-      ]
-    },
-    {
       "kickoff": "2026-09-25T18:45:00Z",
       "competition": "UEFA Nations League",
       "team": "Sweden",
@@ -615,6 +596,25 @@
         "Daniel Svensson"
       ],
       "points": 114.8,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
+      ]
+    },
+    {
+      "kickoff": "2026-09-26T18:45:00Z",
+      "competition": "UEFA Nations League",
+      "team": "Spain",
+      "code": "ESP",
+      "rank": null,
+      "opponent": "England",
+      "opponentCode": "ENG",
+      "opponentRank": null,
+      "home": false,
+      "players": [
+        "Dani Olmo"
+      ],
+      "points": 59.7,
       "bestStarter": null,
       "surfaces": [
         "my set"
