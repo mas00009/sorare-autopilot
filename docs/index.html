@@ -152,6 +152,7 @@ nav button[data-warn]::after{content:"";width:6px;height:6px;border-radius:99px;
 .pool{margin:10px 0 0;color:var(--dim);font-size:.82rem;line-height:1.5;text-wrap:pretty}
 .pool b{color:var(--ink)}
 .barp.sm{height:4px;margin-top:5px;max-width:160px}
+.fx-tbl .prog{white-space:nowrap;font-variant-numeric:tabular-nums}
 /* Score and target are one fact, so they read as a fraction under one label
    rather than three items floating at equal distance. */
 .score{display:flex;flex-direction:column;gap:3px}
@@ -263,7 +264,9 @@ h4.sub:first-of-type{margin-top:0}
  /* Four tabs fit the width, so Controls is never clipped. */
  nav{gap:6px;margin:10px 0 9px}
  nav .tabs{width:100%;gap:5px;overflow:visible}
- nav .tabs button{padding:7px 10px;font-size:.74rem;flex:1 1 auto;white-space:nowrap}
+ /* Five tabs on a 375px screen: 4px less padding each is the difference
+    between Controls fitting and Controls clipping by a pixel. */
+ nav .tabs button{padding:7px 7px;font-size:.72rem;flex:1 1 auto;white-space:nowrap;min-width:0}
  nav .nums{margin-left:0;width:100%;justify-content:space-between;gap:8px;padding:1px 2px 0}
  nav .nums .stack b{font-size:.92rem}
  nav .nums .v{gap:6px}
@@ -539,7 +542,7 @@ function gemsPanel(d){
   const step=(s)=>`<tr><td><b>Level ${s.level}</b>${s.current?' <span class="pill go">now</span>':''}</td>
     <td>${s.target} pts</td><td class="pts">${s.gems?`${s.gems} gems`:''}${s.usd?`${s.gems?' + ':''}$${s.usd.toLocaleString('en-US')}`:''}</td></tr>`;
   const coll=(c)=>`<tr><td><b>${esc(c.title)}</b><div class="fx">${c.competition?esc(c.competition):''}${c.teams?.length?` · ${esc(c.teams.join(', '))}`:''}</div></td>
-    <td>${c.progress} / ${c.target}<div class="barp sm"><i style="width:${Math.min(100,100*c.progress/c.target)}%"></i></div></td>
+    <td class="prog">${c.progress}/${c.target}<div class="barp sm"><i style="width:${Math.min(100,100*c.progress/c.target)}%"></i></div></td>
     <td class="pts">${c.gems} gems</td></tr>`;
   return `<div class="card text">
     <div class="head"><h3>${g.balance!=null?`${g.balance.toLocaleString()} gems banked`:'Gems'}</h3>
