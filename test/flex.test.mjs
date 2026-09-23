@@ -52,3 +52,20 @@ test('the armband goes on the best raw scorer, not the best projection', () => {
   const flat = picked.chosen.reduce((s, c) => s + c.expected, 0);
   assert.ok(picked.projected > flat, 'the armband must be in the projection');
 });
+
+test('appearances go out in slot order, not ranking order', async () => {
+  const { toAppearances } = await import('../src/optimiser.js');
+  // Ranked by projection the keeper is third, but the goalkeeper slot is index 0.
+  const picked = {
+    chosen: [
+      { id: 'a', position: 'DF' }, { id: 'b', position: 'FW' },
+      { id: 'c', position: 'GK' }, { id: 'd', position: 'MD' },
+      { id: 'e', position: 'DF' },
+    ],
+    captain: { id: 'b' },
+  };
+  const out = toAppearances(picked);
+  assert.deepEqual(out.map((a) => a.composeTeamBenchObjectId), ['c', 'a', 'd', 'b', 'e']);
+  assert.deepEqual(out.map((a) => a.index), [0, 1, 2, 3, 4]);
+  assert.equal(out.find((a) => a.captain).composeTeamBenchObjectId, 'b');
+});
