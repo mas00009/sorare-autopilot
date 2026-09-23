@@ -7,7 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#07080d;--card:#11141f;--line:#1e2334;--line2:#2a3148;--ink:#eef1f8;--dim:#8b95ad;--faint:#5c6479;
+:root{--bg:#07080d;--card:#11141f;--line:#1e2334;--line2:#2a3148;--ink:#eef1f8;--dim:#8b95ad;--faint:#767f94;
  --go:#34d399;--warn:#fbbf24;--stop:#fb7185;--v:#a78bfa;--v2:#7c5cf0;--r:13px}
 *{box-sizing:border-box}
 body{margin:0;color:var(--ink);font:15px/1.5 Inter,ui-sans-serif,-apple-system,system-ui,sans-serif;text-wrap:pretty;
@@ -85,14 +85,20 @@ nav .nums .lock{display:flex;align-items:center;gap:9px}
 nav .nums .lock svg{width:22px;height:22px;flex:none;opacity:.9}
 nav .nums .lock img.coin{width:24px;height:28px}
 nav::-webkit-scrollbar{display:none}
-nav button{background:var(--card);border:1px solid var(--line);color:var(--dim);border-radius:99px;
+/* A flex row, so the status dot shares the label's line box instead of sitting
+   in its own inline box beside it. */
+nav button{display:inline-flex;align-items:center;justify-content:center;gap:6px;
+ background:var(--card);border:1px solid var(--line);color:var(--dim);border-radius:99px;
  padding:8px 15px;font:inherit;font-size:.85rem;font-weight:620;white-space:nowrap;cursor:pointer}
 nav button:hover{border-color:var(--line2);color:var(--ink)}
 nav button[aria-selected=true]{background:linear-gradient(140deg,#2a2160,#1b1640);border-color:#43368c;color:#fff}
-nav button .dot{display:inline-block;width:6px;height:6px;border-radius:99px;background:var(--warn);margin-left:6px;vertical-align:middle}
+/* The attention marker is decoration, so it is drawn rather than inserted as an
+   empty element: it stays out of the button's text content, and the label keeps
+   a single text box instead of measuring as two. */
+nav button[data-warn]::after{content:"";width:6px;height:6px;border-radius:99px;
+ background:var(--warn);flex:none}
 
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:15px 17px}
-.card.narrow{max-width:none}
 .pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:.71rem;font-weight:650;border:1px solid var(--line2);color:var(--dim);white-space:nowrap}
 .pill.go{color:var(--go);border-color:#1c4d3c;background:#0d2a21}
 .pill.warn{color:var(--warn);border-color:#584311;background:#2a2008}
@@ -177,18 +183,15 @@ td{padding:7px 10px 7px 0;border-top:1px solid var(--line)}
 @media(max-width:760px){.fx-tbl .cmp,.fx-tbl th.cmp{display:none}}
 ul.rej{list-style:none;padding:0;margin:11px 0 0;columns:3;column-gap:24px}
 ul.rej li{color:var(--dim);font-size:.82rem;margin-bottom:3px;break-inside:avoid}
-.prose{max-width:104ch;color:var(--dim);text-wrap:pretty}
+/* The cap is on the column that holds the text, never on the text itself -
+   a capped paragraph sits narrower than the rules and cards around it. */
+.card.text{max-width:900px}
+.prose{color:var(--dim);text-wrap:pretty}
 code{background:#171c2b;border:1px solid var(--line2);border-radius:5px;padding:1px 6px;font-size:.85em}
-.lede{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;margin-bottom:20px}
-.lede .score .n b{font-size:2.3rem}
-.lede p{margin:0;flex:1;min-width:260px;max-width:88ch;color:var(--dim);font-size:.88rem;line-height:1.5}
 h4.sub{margin:22px 0 10px;font-size:.69rem;text-transform:uppercase;letter-spacing:.13em;
  color:var(--faint);font-weight:700}
 h4.sub:first-of-type{margin-top:0}
 .prose.sm{font-size:.85rem;line-height:1.55;margin:13px 0 0}
-ul.plain{margin:0;padding-left:19px;color:var(--dim);font-size:.87rem;line-height:1.6;max-width:92ch}
-ul.plain li{margin-bottom:5px}
-ul.plain b{color:var(--ink);font-weight:620}
 /* toggles */
 .sw{position:relative;width:46px;height:26px;border-radius:99px;background:#1c2233;
  border:1px solid var(--line2);cursor:pointer;transition:background .16s,border-color .16s;flex:none;padding:0}
@@ -209,7 +212,7 @@ ul.plain b{color:var(--ink);font-weight:620}
  border:1px solid var(--line2)}
 .btn.small:hover{border-color:var(--v)}
 .btn.ghosty{background:transparent;color:var(--dim)}
-.tok ol{margin:0 0 13px;padding-left:20px;color:var(--dim);font-size:.85rem;line-height:1.65;max-width:88ch}
+.tok ol{margin:0 0 13px;padding-left:20px;color:var(--dim);font-size:.85rem;line-height:1.65}
 .tok ol li{margin-bottom:3px}
 .tok ol b{color:var(--ink);font-weight:620}
 .tok a.lnk{color:var(--v);text-decoration:underline;text-underline-offset:2px}
@@ -221,7 +224,6 @@ ul.plain b{color:var(--ink);font-weight:620}
 .tok input{width:100%;max-width:420px;background:#0c1018;border:1px solid var(--line2);color:var(--ink);
  border-radius:9px;padding:9px 12px;font:inherit;font-size:.86rem}
 .tok .go{margin-top:9px}
-.note{font-size:.84rem;color:var(--dim);max-width:104ch}
 .flash{margin-top:10px;font-size:.84rem}
 .flash.ok{color:var(--go)} .flash.err{color:var(--stop)}
 /* The eleven is five cards, and it reads as a lineup only while they sit on one
@@ -234,31 +236,69 @@ ul.plain b{color:var(--ink);font-weight:620}
  .p .xp{font-size:1rem}
 }
 @media(max-width:620px){
- .wrap{padding:10px 12px 24px}
- .bar{padding:4px 6px;border-radius:15px}
- .zone{padding:10px 12px;gap:10px}
- .zone+.zone::before{top:10px;bottom:10px}
- .brand{padding-left:8px;width:100%}
- .wordmark{height:38px}
- .brand+.zone::before{display:none}
- .bar h1{font-size:1rem}
+ /* One phone screen, one row per thing. Everything scales down together; the
+    lineup, the tab row and the header never rewrap or clip. */
+ .wrap{padding:9px 10px 20px}
+
+ /* Header: the wordmark and the Live pill share the row rather than the
+    wordmark claiming the full width and pushing the pill onto its own line. */
+ .bar{padding:3px 5px;border-radius:14px;min-height:0;flex-wrap:nowrap}
+ .zone{padding:8px 8px;gap:8px}
+ .brand{padding-left:5px;min-width:0;flex:1 1 auto}
+ .wordmark{height:29px}
+ .zone+.zone::before{display:none}
+ .act{padding:8px 4px 8px 0;flex:0 0 auto}
+ .live-pill{padding:6px 13px 6px 11px;gap:7px}
+ .live-pill b{font-size:.8rem}
+ .orb{width:7px;height:7px}
+
+ /* Four tabs fit the width, so Controls is never clipped. */
+ nav{gap:6px;margin:10px 0 9px}
+ nav .tabs{width:100%;gap:5px;overflow:visible}
+ nav .tabs button{padding:7px 10px;font-size:.74rem;flex:1 1 auto;white-space:nowrap}
+ nav .nums{margin-left:0;width:100%;justify-content:space-between;gap:8px;padding:1px 2px 0}
+ nav .nums .stack b{font-size:.92rem}
+ nav .nums .v{gap:6px}
+ .coin{width:19px;height:19px}
  .spacer{display:none}
- nav .nums{margin-left:0;width:100%;justify-content:space-between;gap:10px;padding:2px 2px 0}
- nav .tabs{width:100%}
- .act{width:100%;padding:0 8px 10px}
+
+ /* The eleven: five cards on one line, shrunk rather than rewrapped. Both
+    text lines are held to one line each and every card is the same height. */
+ .card{padding:12px 11px}
+ .head{gap:6px;margin-bottom:8px}
+ .head h3{font-size:.92rem}
+ .xi{gap:4px;margin-top:9px}
+ .p{border-radius:8px}
+ .p .b{padding:5px 4px 6px}
+ .p .nm{font-size:.56rem;line-height:1.2;height:2.4em;overflow:hidden;text-wrap:balance}
+ .p .fx{font-size:.5rem;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ .p .xp{font-size:.76rem;margin-top:3px}
+ .p .xp em{font-size:.52rem;margin-left:2px}
+ .tag{top:4px;left:4px;padding:0 4px;font-size:.5rem}
+ .capt{top:3px;right:3px;width:15px;height:15px;font-size:.58rem;border-width:1px}
+
+ .score .n b{font-size:1.6rem}
+ .score .n i{font-size:1.1rem}
+ .tot{gap:8px 12px;margin-top:14px}
+ .verdict{font-size:.78rem}
+
+ /* The fixtures table ran 516px wide on a 375px screen, so the projected
+    column sat off the edge and the page scrolled sideways. The players cell
+    gives up its width first, since the fixture and its points are the point. */
+ .fx-tbl{font-size:.78rem}
+ .fx-tbl td,.fx-tbl th{padding:7px 7px 7px 0}
+ .fx-tbl th{font-size:.58rem;letter-spacing:.07em}
+ .fx-tbl .ko{white-space:nowrap;font-size:.72rem}
+ .fx-tbl .ko s{font-size:.66rem}
+ .fx-tbl .m{font-size:.76rem}
+ .fx-tbl .hm,.fx-tbl .rk{display:none}
+ .fx-tbl .pl{font-size:.7rem;max-width:88px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ .fx-tbl .pts{font-size:.82rem;padding-right:0}
+
  .pair{align-items:stretch;width:100%}
  .pair .row{width:100%}
  .pair s{text-align:center}
  .btn{flex:1;justify-content:center;padding:13px}
- .xi{gap:4px}
- .p{border-radius:8px}
- .p .b{padding:5px 5px 6px}
- .p .nm{font-size:.58rem;line-height:1.18;text-wrap:balance}
- .p .fx{font-size:.52rem;margin-top:1px}
- .p .xp{font-size:.78rem;margin-top:3px}
- .p .xp em{font-size:.55rem;margin-left:2px}
- .tag{top:4px;left:4px;padding:0 4px;font-size:.5rem}
- .capt{top:3px;right:3px;width:15px;height:15px;font-size:.58rem;border-width:1px}
  ul.rej{columns:1}
  code{overflow-wrap:anywhere}
 }
@@ -321,7 +361,7 @@ const LOGO_SVG=`<svg class="logo" viewBox="0 0 40 40" fill="none" aria-hidden="t
   <path d="M20 4.6v5M20 30.4v5M4.6 20h5M30.4 20h5" stroke="url(#lg)" stroke-width="1.8" stroke-linecap="round"/>
 </svg>`;
 
-window.LOGO_SVG=LOGO_SVG;   // the inline onerror handler needs it on window
+window.LOGO_SVG=LOGO_SVG; // the inline onerror handler needs it on window
 
 function topbar(d){
   const ct=d.control??{},paused=!!ct.paused,fail=d.health.failStreak;
@@ -382,13 +422,14 @@ function surfacePanel(s){
     :`<span class="pill">${esc(TITLE('Pays '+human(r.kind,REWARD)))}</span>`).join('');
   const st={LINEUP_SET:'go',PLAYABLE:'go',CLAIMABLE:'warn',LIVE:'vv',FAILED:'bad'}[s.state]||'';
 
-  if(!s.candidates.length) return `<div class="card">
+  if(!s.candidates.length) return `<div class="card text">
     <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>${lvl}<span class="pill ${st}">${esc(TITLE(human(s.state,STATE)))}</span>${livesBadge(s.lives)}</div>
     ${dots?`<div class="steps">${dots}</div>`:''}${rw?`<div style="margin-top:10px">${rw}</div>`:''}
     ${s.squad ? `<p class="prose" style="margin:13px 0 0">A squad step needs
       <b>${s.squad.needed}</b> lineups from the team before it counts, and
       <b>${s.squad.lineupsIn}</b> ${s.squad.lineupsIn === 1 ? 'is' : 'are'} in so far.
-      The ${esc(String(s.target))}-point target is the squad's combined score, not one lineup's.</p>` : ''}
+      The <b style="white-space:nowrap">${esc(String(s.target))}-point</b> target is the squad's
+      combined score, not one lineup's.</p>` : ''}
     <p class="prose" style="margin:13px 0 0">No eligible cards yet. This step opens for entry closer to its matchday, and the bot fills it then.</p></div>`;
 
   // The entered team when there is one; the plan only stands in for an empty step.
@@ -409,7 +450,7 @@ function surfacePanel(s){
     ${dots?`<div class="steps">${dots}</div>`:''}
     <div class="xi" style="margin-top:12px">${five.map((c,i)=>`
       <div class="p${isCap(c)?' cap':''}">
-        ${c.picture?`<img src="${esc(c.picture)}" alt="${esc(c.player)}" loading="lazy">`:`<div style="aspect-ratio:5/7"></div>`}
+        ${c.picture?`<img src="${esc(c.picture)}" alt="${esc(c.player)}" decoding="async">`:`<div style="aspect-ratio:5/7"></div>`}
         <span class="tag">${esc(c.position)}</span>${isCap(c)?'<span class="capt" title="Captain">C</span>':''}
         <div class="b"><div class="nm">${esc(c.player)}</div>
           <div class="fx">${c.opponent?`${c.home?'vs':'@'} ${esc(c.opponent)}`:'no fixture'}</div>
@@ -509,7 +550,7 @@ function controlsPanel(d){
       </div>
       <div class="flash" id="flash"></div></div>`;
 
-  return `<div class="card narrow">${rows}${setup}
+  return `<div class="card text">${rows}${setup}
     ${has?'<div class="flash" id="flash"></div>':''}</div>`;
 }
 
@@ -552,7 +593,7 @@ function render(d){
     <span class="v"><img class="coin" src="img/gem.png" alt="" onerror="this.remove()">
       <span class="stack"><b>${d.balances.gems??'—'}</b><s>gems</s></span></span></span>`;
   document.getElementById('tabs').innerHTML='<span class="tabs">'+tabs.map((t,i)=>
-    `<button role="tab" aria-selected="${i===TAB}" data-i="${i}">${esc(t.label)}${t.warn?'<span class="dot"></span>':''}</button>`).join('')+'</span>'+nums;
+    `<button role="tab" aria-selected="${i===TAB}" data-i="${i}"${t.warn?' data-warn':''}>${esc(t.label)}</button>`).join('')+'</span>'+nums;
   document.getElementById('tabs').onclick=e=>{const b=e.target.closest('button');if(!b)return;TAB=+b.dataset.i;render(D)};
 
   const p=document.getElementById('panel');
