@@ -149,3 +149,28 @@ test('recent start rate stands in for availability until odds are published', as
   assert.ok(expectedPoints(withOdds) > expectedPoints(fringe) * 3, 'odds should override a poor start rate');
   assert.equal(DEFAULTS.substituteWeight, 0.35);
 });
+
+test('bookmaker odds: de-vigged, matched by name, applied by position, never to internationals', async () => {
+  const { implied, sameTeam, oddsFactor } = await import('../src/odds.js');
+  const ev = { home_team: 'Rayo Vallecano', away_team: 'Athletic Bilbao', bookmakers: [
+    { markets: [{ key: 'h2h', outcomes: [{ name: 'Athletic Bilbao', price: 2.31 }, { name: 'Rayo Vallecano', price: 3.08 }, { name: 'Draw', price: 3.42 }] }] },
+    { markets: [{ key: 'h2h', outcomes: [{ name: 'Athletic Bilbao', price: 2.25 }, { name: 'Rayo Vallecano', price: 3.20 }, { name: 'Draw', price: 3.40 }] }] },
+  ] };
+  const p = implied(ev);
+  assert.ok(Math.abs(p.pHome + p.pDraw + p.pAway - 1) < 1e-9, 'probabilities sum to one after removing the overround');
+  assert.ok(p.pAway > p.pHome, 'the shorter price is the favourite');
+  assert.equal(p.books, 2);
+
+  // Sorare's names against the bookmakers' names.
+  assert.ok(sameTeam('Athletic Club', 'Athletic Bilbao'));
+  assert.ok(sameTeam('RC Celta', 'Celta Vigo'));
+  assert.ok(sameTeam('Manchester United FC', 'Manchester United'));
+  assert.ok(!sameTeam('Manchester United FC', 'Manchester City'));
+  assert.ok(!sameTeam('Real Madrid', 'Real Sociedad'));
+
+  // Defenders gain most from a favourite; forwards a little; a typical fixture is x1.
+  assert.ok(oddsFactor('DF', { pWin: 0.65, pDraw: 0.2 }) > oddsFactor('FW', { pWin: 0.65 }) && oddsFactor('FW', { pWin: 0.65 }) > 1);
+  assert.ok(oddsFactor('DF', { pWin: 0.2, pDraw: 0.25 }) < 1);
+  assert.ok(Math.abs(oddsFactor('FW', { pWin: 0.36 }) - 1) < 1e-9, 'mean win chance changes nothing');
+  assert.equal(oddsFactor('DF', null), 1, 'no odds, no change');
+});

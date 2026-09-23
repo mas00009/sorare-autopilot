@@ -10,6 +10,7 @@ import {
 } from './queries.js';
 import { openPacksUntilThreeStar } from './essence.js';
 import { runPickers } from './picker.js';
+import { fixtureOdds } from './odds.js';
 import { humanTask } from './report.js';
 import { readState, writeState } from './client.js';
 import { pickLineup, pickAcrossWindow, toAppearances, diffLineup, normalisePosition,
@@ -47,7 +48,7 @@ export async function dailyCycleId() {
 export const SPENT_LINEUP = new Set(['CANCELLED', 'FAILED', 'EXPIRED', 'SUCCESSFUL']);
 
 /** Shape version of the entered-lineup snapshot kept in state. */
-const SNAPSHOT_V = 2;
+const SNAPSHOT_V = 3;
 
 export const SPREAD = 56;
 
@@ -113,7 +114,31 @@ export async function fetchBench(stepId, { first = 50, positions = null, include
   };
   const d = await gql(Q_BENCH, { id: stepId, filters, first });
   const nodes = d.currentUser?.step?.myFilteredBench?.nodes ?? [];
-  return withStartRates(nodes);
+  return withOdds(await withStartRates(nodes));
+}
+
+/**
+ * Attach bookmaker odds to each club fixture on the bench. One credit per
+ * league per day (see odds.js); national-team fixtures are skipped, they use
+ * FIFA points. Without a key the bench is returned untouched.
+ */
+async function withOdds(nodes) {
+  const apiKey = process.env.ODDS_API_KEY;
+  if (!apiKey) return nodes;
+  const out = [];
+  for (const n of nodes) {
+    const g = n.player?.anyFutureGameStats?.[0];
+    const game = g?.anyGame;
+    if (!game || g?.anyTeam?.__typename === 'NationalTeam') { out.push(n); continue; }
+    try {
+      const odds = await fixtureOdds({
+        competition: game.competition?.name, homeTeam: game.homeTeam?.name, awayTeam: game.awayTeam?.name,
+        team: g.anyTeam?.name, date: game.date,
+      }, { apiKey });
+      out.push(odds ? { ...n, matchOdds: odds } : n);
+    } catch { out.push(n); }
+  }
+  return out;
 }
 
 /**
@@ -195,6 +220,9 @@ export async function enteredTeam({ step, stepId, surface, lineup = null, option
       average: was.average ?? null,
       formL5: was.formL5 ?? null,
       intl: !!was.intl,
+      pWin: was.pWin ?? null,
+      pLose: was.pLose ?? null,
+      marketFactor: was.marketFactor ?? null,
       oppRank: was.oppRank ?? null,
       ownRank: was.ownRank ?? null,
       oppFactor: was.oppFactor ?? null,
@@ -230,6 +258,7 @@ export async function enteredTeam({ step, stepId, surface, lineup = null, option
       c.home = d.home;
       c.average = d.average; c.formL5 = d.formL5;
       c.intl = d.intl; c.oppRank = d.oppRank; c.ownRank = d.ownRank; c.oppFactor = d.oppFactor;
+      c.pWin = d.pWin; c.pLose = d.pLose; c.marketFactor = d.marketFactor;
       c.kickoff = c.kickoff ?? d.kickoff;
       total += d.expected;
     }
@@ -527,6 +556,7 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
             average: c.average ?? null, formL5: c.formL5 ?? null, kickoff: c.kickoff ?? null,
             intl: !!c.intl, oppRank: c.oppRank ?? null, ownRank: c.ownRank ?? null,
             oppFactor: c.oppFactor ?? null,
+            pWin: c.pWin ?? null, pLose: c.pLose ?? null, marketFactor: c.marketFactor ?? null,
           })),
         },
       },

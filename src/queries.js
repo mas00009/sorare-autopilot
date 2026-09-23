@@ -112,7 +112,7 @@ export const Q_BENCH = `
               activeInjuries { active kind status expectedEndDate }
               anyFutureGameStats(first: 1) {
                 onGameSheet
-                anyTeam { slug name }
+                anyTeam { slug name __typename }
                 anyGame {
                   id
                   date

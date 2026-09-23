@@ -172,8 +172,13 @@ re-tests them by accident:
   gain is 0.3-0.5% of error - real, and far below what would move the replay.
   The stronger signal was availability: players on 65%+ favourites started
   22% of the time against 37% for heavy underdogs. Big clubs rotate. That is
-  already carried by Sorare's starter odds and the start-rate prior. Not
-  wired; would need The Odds API (free tier covers it) for upcoming fixtures.
+  already carried by Sorare's starter odds and the start-rate prior. Wired
+  through The Odds API on the free plan: one credit per league per day, only
+  leagues on the bench, cached for the day, hard ceiling of 450 a month
+  (`state/odds/usage.json`). Every fetch is also appended to
+  `state/odds/log.jsonl` so the simulator can be re-run on real pre-match odds
+  once enough have built up. Needs `ODDS_API_KEY` in `.env`; without it the
+  bot runs exactly as before.
 - **Tested and rejected:** home advantage (twice), Elo, friendlies as
   different from competitive, score-per-90 times expected minutes, captain by
   haul rate or by L5, one or three cards a match as the default, lock-day

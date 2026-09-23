@@ -11,6 +11,7 @@
  */
 
 import { opponentEdge, OPPONENT_DEFAULTS } from './opponents.js';
+import { oddsFactor, ODDS_DEFAULTS } from './odds.js';
 
 export const DEFAULTS = {
   /** Reject anyone below this starter probability, in basis points. */
@@ -56,6 +57,12 @@ export const DEFAULTS = {
    * nothing for club games, so club league position is deliberately ignored.
    */
   opponent: OPPONENT_DEFAULTS,
+  /**
+   * Bookmaker odds for club fixtures. See odds.js: measured on 3,567 club
+   * appearances against real closing odds; a small, real effect on defenders
+   * and forwards. Never applied to the same card as the FIFA factor.
+   */
+  odds: ODDS_DEFAULTS,
 };
 
 const POS = { Goalkeeper: 'GK', Defender: 'DF', Midfielder: 'MD', Forward: 'FW' };
@@ -177,7 +184,8 @@ export function expectedPoints(node, opts = DEFAULTS) {
   const edge = opts.opponent === false
     ? null
     : opponentEdge(fx?.team, fx?.opponent, normalisePosition(node.position), opts.opponent ?? OPPONENT_DEFAULTS);
-  return avg * bonus * availability * venue * (edge?.factor ?? 1);
+  const market = opts.odds === false ? 1 : oddsFactor(normalisePosition(node.position), node.matchOdds ?? null, opts.odds ?? ODDS_DEFAULTS);
+  return avg * bonus * availability * venue * (edge?.factor ?? 1) * market;
 }
 
 /** The ranking edge for a bench node, or null when it is a club fixture. */
@@ -220,6 +228,11 @@ export function describe(node, opts = DEFAULTS) {
     ownRank: oppEdge(node)?.mine?.rank ?? null,
     oppFactor: oppEdge(node) ? Number(oppEdge(node).factor.toFixed(3)) : null,
     mismatch: !!oppEdge(node)?.mismatch,
+    // Bookmaker view of the fixture, club games only. The dashboard shows it.
+    pWin: node.matchOdds?.pWin != null ? Number(node.matchOdds.pWin.toFixed(3)) : null,
+    pLose: node.matchOdds?.pLose != null ? Number(node.matchOdds.pLose.toFixed(3)) : null,
+    oddsBooks: node.matchOdds?.books ?? null,
+    marketFactor: node.matchOdds ? Number(oddsFactor(normalisePosition(node.position), node.matchOdds, opts.odds ?? ODDS_DEFAULTS).toFixed(3)) : null,
     lockedAt: node.lockedAt ?? null,
     expected: Number(expectedPoints(node, opts).toFixed(2)),
     blocked: blockReason(node, opts),

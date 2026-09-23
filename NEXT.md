@@ -21,6 +21,14 @@ So the next real gain is the card pool:
 - Track pool strength over time. The dashboard shows it per window; a trend
   would show whether packs are actually moving it.
 
+## Odds log
+
+`state/odds/log.jsonl` accumulates every pre-match odds snapshot the bot
+fetches. After two or three months there will be enough to replay the
+simulator against real odds rather than the football-data.co.uk join, and to
+check whether the measured DF/FW factors hold. Do that before touching the
+weights in `src/odds.js`.
+
 ## Small things
 
 - `data/fifa-rankings.json` is the 20 July 2026 table. FIFA's next update is

@@ -117,6 +117,8 @@ export async function build() {
           // For an international the ranking is the FIFA one, which is the only
           // measure of who is playing the weaker side.
           intl: !!c.intl, ownRank: c.ownRank ?? null, oppRank: c.oppRank ?? null,
+          // Bookmakers' view for club games: the chance this side wins.
+          pWin: c.pWin ?? null, pLose: c.pLose ?? null,
           oppFactor: c.oppFactor ?? null,
           home: c.home, players: [], points: 0, bestStarter: null, surfaces: new Set(),
         });
@@ -150,6 +152,10 @@ export async function build() {
       cycleDone: !!st.lastPackCycle,
     },
     health: { failStreak: st.failStreak ?? 0 },
+    odds: await (async () => {
+      try { const { usage } = await import('./odds.js'); const u = await usage(); return { configured: !!process.env.ODDS_API_KEY, ...u }; }
+      catch { return { configured: !!process.env.ODDS_API_KEY }; }
+    })(),
     control: await (await import('./control.js')).read().catch(() => null),
     surfaces,
     fixtures: [...games.values()]
