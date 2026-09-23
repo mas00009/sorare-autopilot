@@ -73,17 +73,60 @@ test('appearances go out in slot order, not ranking order', async () => {
 test('opponent strength applies to internationals and not to clubs', async () => {
   const { opponentEdge, opponentFactor } = await import('../src/opponents.js');
   // Measured on this account's own history: internationals only.
-  assert.equal(opponentFactor('Real Madrid', 'Getafe CF'), 1, 'club games get no factor');
-  assert.equal(opponentEdge('Real Madrid', 'Getafe CF'), null);
+  assert.equal(opponentFactor('Real Madrid', 'Getafe CF', 'DF'), 1, 'club games get no factor');
+  assert.equal(opponentEdge('Real Madrid', 'Getafe CF', 'DF'), null);
 
-  const soft = opponentEdge('Spain', 'San Marino');
-  const hard = opponentEdge('Wales', 'Spain');
-  assert.ok(soft.factor > 1.1, `facing the weakest side should pay: ${soft.factor}`);
-  assert.ok(hard.factor < 0.9, `facing the strongest should cost: ${hard.factor}`);
+  // Clamped at 400 points, so an extreme mismatch cannot run away with the projection.
+  const soft = opponentEdge('Spain', 'San Marino', 'DF');
+  const hard = opponentEdge('Wales', 'Spain', 'DF');
+  assert.ok(soft.factor > 1.1, `a defender facing the weakest side should pay: ${soft.factor}`);
+  assert.ok(hard.factor < 0.9, `a defender facing the strongest should cost: ${hard.factor}`);
+  assert.equal(soft.factor, opponentEdge('Argentina', 'San Marino', 'DF').factor);
+  assert.equal(soft.mismatch, true);
+  assert.equal(opponentEdge('Norway', 'Denmark', 'DF').mismatch, false);
 
-  // Clamped, so an extreme mismatch cannot run away with the projection.
-  assert.equal(soft.factor, opponentEdge('Argentina', 'San Marino').factor);
+  // The effect is a clean-sheet effect: it pays defenders, less for midfield,
+  // and forwards get nothing at all.
+  const df = opponentEdge('Spain', 'San Marino', 'DF').factor;
+  const md = opponentEdge('Spain', 'San Marino', 'MD').factor;
+  const fw = opponentEdge('Spain', 'San Marino', 'FW').factor;
+  assert.ok(df > md && md > fw, `expected DF > MD > FW: ${df} ${md} ${fw}`);
+  assert.equal(fw, 1);
 
   // Names Sorare spells differently still resolve.
-  assert.ok(opponentEdge('Türkiye', 'England'), 'alias should resolve');
+  assert.ok(opponentEdge('Türkiye', 'England', 'DF'), 'alias should resolve');
+});
+
+test('a third defensive card from a mismatch is allowed only when the plain pick is short', async () => {
+  const { pickAcrossWindow } = await import('../src/optimiser.js');
+  const nat = (slug, position, avg, team, opp, home = true) => ({
+    id: slug, position, bonus: 1.02, rarity: 'common', averageScore: avg, formL5: avg,
+    player: { slug, displayName: slug, activeInjuries: [],
+      anyFutureGameStats: [{ onGameSheet: true, anyTeam: { slug: team.toLowerCase(), name: team },
+        anyGame: { id: `${team}-${opp}`, date: '2026-10-01T18:00:00Z', competition: { name: 'WC' },
+          homeTeam: { slug: (home ? team : opp).toLowerCase(), name: home ? team : opp },
+          awayTeam: { slug: (home ? opp : team).toLowerCase(), name: home ? opp : team } },
+        footballPlayingStatusOdds: { starterOddsBasisPoints: 9000, substituteOddsBasisPoints: 500,
+          nonPlayingOddsBasisPoints: 500, reliability: 1 } }] },
+  });
+  // Spain host San Marino: three Spanish defenders/midfielders are the best cards.
+  const bench = [
+    nat('es-gk', 'Goalkeeper', 60, 'Spain', 'San Marino'),
+    nat('es-df1', 'Defender', 60, 'Spain', 'San Marino'),
+    nat('es-df2', 'Defender', 59, 'Spain', 'San Marino'),
+    nat('es-md', 'Midfielder', 58, 'Spain', 'San Marino'),
+    nat('ot-fw', 'Forward', 50, 'Norway', 'Denmark'),
+    nat('ot-df', 'Defender', 40, 'Norway', 'Denmark'),
+    nat('ot-md', 'Midfielder', 40, 'Wales', 'Portugal'),
+  ];
+  const fromSpain = (p) => p.chosen.filter((c) => c.team === 'Spain').length;
+  // Short of a huge target: the stacked lineup projects higher, so it is taken.
+  const short = pickAcrossWindow(bench, { target: 999 });
+  assert.equal(short.ok, true, short.reason);
+  assert.equal(fromSpain(short), 3, 'short of target, a third from the mismatch is allowed');
+  assert.equal(short.stacked, true);
+  // Clearing comfortably: the plain two-per-match lineup is kept for its lower risk.
+  const clear = pickAcrossWindow(bench, { target: 100 });
+  assert.equal(fromSpain(clear), 2, 'clear of target, correlation is only risk');
+  assert.ok(!clear.stacked);
 });

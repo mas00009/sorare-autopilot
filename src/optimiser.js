@@ -32,6 +32,8 @@ export const DEFAULTS = {
   homeAdvantage: 1.0,
   /** Most cards allowed from any single real-world match, to limit correlation. */
   maxPerGame: 2,
+  /** Allow a third defensive card from a side facing a minnow. See pickLineup. */
+  stackMismatch: false,
   /** Slot requirements. Total must equal `size`. */
   size: 5,
   require: { GK: 1, DF: 1, MD: 1, FW: 1 },
@@ -158,14 +160,14 @@ export function expectedPoints(node, opts = DEFAULTS) {
   // against a minnow.
   const edge = opts.opponent === false
     ? null
-    : opponentEdge(fx?.team, fx?.opponent, opts.opponent ?? OPPONENT_DEFAULTS);
+    : opponentEdge(fx?.team, fx?.opponent, normalisePosition(node.position), opts.opponent ?? OPPONENT_DEFAULTS);
   return avg * bonus * availability * venue * (edge?.factor ?? 1);
 }
 
 /** The ranking edge for a bench node, or null when it is a club fixture. */
 const oppEdge = (node) => {
   const fx = fixture(node);
-  return opponentEdge(fx?.team, fx?.opponent);
+  return opponentEdge(fx?.team, fx?.opponent, normalisePosition(node.position));
 };
 
 export function describe(node, opts = DEFAULTS) {
@@ -200,6 +202,7 @@ export function describe(node, opts = DEFAULTS) {
     oppRank: oppEdge(node)?.theirs?.rank ?? null,
     ownRank: oppEdge(node)?.mine?.rank ?? null,
     oppFactor: oppEdge(node) ? Number(oppEdge(node).factor.toFixed(3)) : null,
+    mismatch: !!oppEdge(node)?.mismatch,
     lockedAt: node.lockedAt ?? null,
     expected: Number(expectedPoints(node, opts).toFixed(2)),
     blocked: blockReason(node, opts),
@@ -223,11 +226,27 @@ export function pickLineup(benchNodes, options = {}) {
   const chosen = [];
   const perGame = new Map();
 
+  // Two from any one match, to cap how much one game can sink the lineup -
+  // team-mates' scores move together (residual correlation 0.23-0.28).
+  //
+  // The exception is a mismatch. When a side is far ahead on FIFA points the
+  // game is a likely clean sheet, and it is the defenders and midfielders who
+  // cash that in, so a third from THAT team is allowed for those positions.
+  // Correlation is the point: under a threshold target, when the projection is
+  // short, team-mates rising together is how the target gets cleared. The
+  // caller (pickAcrossWindow) only takes the stacked lineup when the unstacked
+  // one would not clear, so a lineup that already clears keeps the lower risk.
+  // The data behind the mismatch rule is thin - one match in the history had
+  // three of this account's players facing a minnow - so it is reasoned from
+  // the clean-sheet finding rather than measured on its own.
+  const STACK_POS = new Set(['GK', 'DF', 'MD']);
+  const capFor = (c) => (opts.stackMismatch && c.mismatch && STACK_POS.has(c.position)
+    ? opts.maxPerGame + 1 : opts.maxPerGame);
   const canTake = (c) => {
     if (chosen.some((x) => x.id === c.id)) return false;
     if (chosen.some((x) => x.slug === c.slug)) return false; // no duplicate players
     const n = perGame.get(c.gameId) ?? 0;
-    return n < opts.maxPerGame;
+    return n < capFor(c);
   };
   const take = (c) => {
     chosen.push(c);
@@ -359,8 +378,16 @@ export function pickAcrossWindow(benchNodes, { target = null, tolerance = 0.03, 
       const d = n.player?.anyFutureGameStats?.[0]?.anyGame?.date;
       return d && d.slice(0, 10) >= day;
     });
-    const picked = pickLineup(pool, options);
+    // Plain first. Only when it falls short is a stacked lineup - a third
+    // defender or midfielder from a side facing a minnow - considered, and
+    // only kept when it projects higher: short of the target, team-mates
+    // moving together is help; clear of it, it is only risk.
+    let picked = pickLineup(pool, { ...options, stackMismatch: false });
     if (!picked.ok) continue;
+    if (target && picked.projected < target) {
+      const stacked = pickLineup(pool, { ...options, stackMismatch: true });
+      if (stacked.ok && stacked.projected > picked.projected) picked = { ...stacked, stacked: true };
+    }
     const lock = picked.chosen.map((c) => c.kickoff).filter(Boolean).sort()[0] ?? null;
     attempts.push({ lockDay: day, lock, projected: picked.projected, picked });
   }

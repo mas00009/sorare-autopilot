@@ -1,5 +1,5 @@
 {
- "_comment": "FIFA men's world ranking. Sorare exposes domesticLeagueRanking for clubs but nothing at all for national teams, so international opponent strength has to come from here. Refresh after each FIFA update; the scheduled job reads this file and never reaches the network for it.",
+ "_comment": "FIFA men's world ranking. Sorare exposes domesticLeagueRanking for clubs but nothing at all for national teams, so international opponent strength has to come from here. Refresh after each FIFA update; the scheduled job reads this file and never reaches the network for it. World Football Elo was tested as an alternative on the same history and predicted slightly worse (residual correlation 0.091 v 0.114), so FIFA points stay and no Elo table is kept.",
  "source": "https://www.fotmob.com/fifaranking/men",
  "asOf": "2026-07-20",
  "nextUpdate": "2026-10-07",
