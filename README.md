@@ -164,6 +164,16 @@ re-tests them by accident:
   ahead is allowed, and taken only when the plain lineup falls short - under a
   threshold, correlation helps when short and only adds risk when clear. This
   one is reasoned from the clean-sheet finding, not measured on its own.
+- **Bookmaker odds for club fixtures: real, but small.** 3,567 club
+  appearances joined to closing 1X2 and over/under odds (football-data.co.uk).
+  A favourite's defenders do score more (correlation 0.13, t=3.2; haul rate
+  15% as a heavy underdog to 30% as a favourite) and so do its forwards
+  (0.10, t=2.3), where the league table showed nothing. As a multiplier the
+  gain is 0.3-0.5% of error - real, and far below what would move the replay.
+  The stronger signal was availability: players on 65%+ favourites started
+  22% of the time against 37% for heavy underdogs. Big clubs rotate. That is
+  already carried by Sorare's starter odds and the start-rate prior. Not
+  wired; would need The Odds API (free tier covers it) for upcoming fixtures.
 - **Tested and rejected:** home advantage (twice), Elo, friendlies as
   different from competitive, score-per-90 times expected minutes, captain by
   haul rate or by L5, one or three cards a match as the default, lock-day
