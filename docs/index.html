@@ -114,7 +114,13 @@ nav button .dot{display:inline-block;width:6px;height:6px;border-radius:99px;bac
 .steps i.done{background:linear-gradient(90deg,var(--v2),#5eead4)}
 .steps i.now{background:var(--v)}
 .xi{display:grid;gap:11px;grid-template-columns:repeat(5,1fr)}
-.p{position:relative;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#0b0e16}
+.p{position:relative;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#0b0e16;
+ /* Grid items size to their content by default, so a long surname widened the
+    track and pushed the fifth card off the screen. */
+ min-width:0}
+/* min-width:0 alone stops the track growing. Breaking words as well turned
+   "Starfelt" into "Starf elt", which is worse than a clipped edge. */
+.p .nm,.p .fx{overflow-wrap:normal;word-break:keep-all}
 .p.cap{border-color:#b45f16;box-shadow:0 0 20px -7px rgba(249,146,36,.85)}
 .p img{width:100%;aspect-ratio:5/7;object-fit:cover;display:block}
 .p .b{padding:8px 9px 10px}
@@ -218,7 +224,15 @@ ul.plain b{color:var(--ink);font-weight:620}
 .note{font-size:.84rem;color:var(--dim);max-width:104ch}
 .flash{margin-top:10px;font-size:.84rem}
 .flash.ok{color:var(--go)} .flash.err{color:var(--stop)}
-@media(max-width:900px){.xi{grid-template-columns:repeat(3,1fr)}ul.rej{columns:2}}
+/* The eleven is five cards, and it reads as a lineup only while they sit on one
+   row. So the row never rewraps - the cards shrink with the viewport. */
+@media(max-width:900px){
+ ul.rej{columns:2}
+ .xi{gap:7px}
+ .p .nm{font-size:.76rem}
+ .p .fx{font-size:.66rem}
+ .p .xp{font-size:1rem}
+}
 @media(max-width:620px){
  .wrap{padding:10px 12px 24px}
  .bar{padding:4px 6px;border-radius:15px}
@@ -236,7 +250,15 @@ ul.plain b{color:var(--ink);font-weight:620}
  .pair .row{width:100%}
  .pair s{text-align:center}
  .btn{flex:1;justify-content:center;padding:13px}
- .xi{grid-template-columns:repeat(2,1fr);gap:9px}
+ .xi{gap:4px}
+ .p{border-radius:8px}
+ .p .b{padding:5px 5px 6px}
+ .p .nm{font-size:.58rem;line-height:1.18;text-wrap:balance}
+ .p .fx{font-size:.52rem;margin-top:1px}
+ .p .xp{font-size:.78rem;margin-top:3px}
+ .p .xp em{font-size:.55rem;margin-left:2px}
+ .tag{top:4px;left:4px;padding:0 4px;font-size:.5rem}
+ .capt{top:3px;right:3px;width:15px;height:15px;font-size:.58rem;border-width:1px}
  ul.rej{columns:1}
  code{overflow-wrap:anywhere}
 }
