@@ -107,6 +107,10 @@ export async function build() {
           kickoff: c.kickoff, competition: c.competition ?? null,
           team: c.team, code: c.code, rank: c.rank,
           opponent: c.opponent, opponentCode: c.opponentCode, opponentRank: c.opponentRank,
+          // For an international the ranking is the FIFA one, which is the only
+          // measure of who is playing the weaker side.
+          intl: !!c.intl, ownRank: c.ownRank ?? null, oppRank: c.oppRank ?? null,
+          oppFactor: c.oppFactor ?? null,
           home: c.home, players: [], points: 0, bestStarter: null, surfaces: new Set(),
         });
       }

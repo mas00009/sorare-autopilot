@@ -10,6 +10,8 @@
  * night before and left alone.
  */
 
+import { opponentEdge, OPPONENT_DEFAULTS } from './opponents.js';
+
 export const DEFAULTS = {
   /** Reject anyone below this starter probability, in basis points. */
   minStarterBp: 6000,
@@ -46,6 +48,12 @@ export const DEFAULTS = {
    * a 1.03 card captained scored on 1.53, a 1.02 on 1.52.
    */
   captainBonus: 0.5,
+  /**
+   * Opponent strength, for international fixtures only. See opponents.js: the
+   * effect is real and holdout-validated for internationals, and measured at
+   * nothing for club games, so club league position is deliberately ignored.
+   */
+  opponent: OPPONENT_DEFAULTS,
 };
 
 const POS = { Goalkeeper: 'GK', Defender: 'DF', Midfielder: 'MD', Forward: 'FW' };
@@ -145,8 +153,20 @@ export function expectedPoints(node, opts = DEFAULTS) {
   const availability = o
     ? o.starterOddsBasisPoints / 10000 + opts.substituteWeight * (o.substituteOddsBasisPoints / 10000)
     : 1;
-  return avg * bonus * availability * venue;
+  // How well they do GIVEN they play. Whether they play is the availability
+  // term above, which is the half that matters when a big nation rotates
+  // against a minnow.
+  const edge = opts.opponent === false
+    ? null
+    : opponentEdge(fx?.team, fx?.opponent, opts.opponent ?? OPPONENT_DEFAULTS);
+  return avg * bonus * availability * venue * (edge?.factor ?? 1);
 }
+
+/** The ranking edge for a bench node, or null when it is a club fixture. */
+const oppEdge = (node) => {
+  const fx = fixture(node);
+  return opponentEdge(fx?.team, fx?.opponent);
+};
 
 export function describe(node, opts = DEFAULTS) {
   const o = odds(node);
@@ -176,6 +196,10 @@ export function describe(node, opts = DEFAULTS) {
     opponentRank: fx?.opponentRank ?? null,
     home: fx?.home ?? null,
     competition: fx?.competition ?? null,
+    intl: !!oppEdge(node),
+    oppRank: oppEdge(node)?.theirs?.rank ?? null,
+    ownRank: oppEdge(node)?.mine?.rank ?? null,
+    oppFactor: oppEdge(node) ? Number(oppEdge(node).factor.toFixed(3)) : null,
     lockedAt: node.lockedAt ?? null,
     expected: Number(expectedPoints(node, opts).toFixed(2)),
     blocked: blockReason(node, opts),

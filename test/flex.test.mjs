@@ -69,3 +69,21 @@ test('appearances go out in slot order, not ranking order', async () => {
   assert.deepEqual(out.map((a) => a.index), [0, 1, 2, 3, 4]);
   assert.equal(out.find((a) => a.captain).composeTeamBenchObjectId, 'b');
 });
+
+test('opponent strength applies to internationals and not to clubs', async () => {
+  const { opponentEdge, opponentFactor } = await import('../src/opponents.js');
+  // Measured on this account's own history: internationals only.
+  assert.equal(opponentFactor('Real Madrid', 'Getafe CF'), 1, 'club games get no factor');
+  assert.equal(opponentEdge('Real Madrid', 'Getafe CF'), null);
+
+  const soft = opponentEdge('Spain', 'San Marino');
+  const hard = opponentEdge('Wales', 'Spain');
+  assert.ok(soft.factor > 1.1, `facing the weakest side should pay: ${soft.factor}`);
+  assert.ok(hard.factor < 0.9, `facing the strongest should cost: ${hard.factor}`);
+
+  // Clamped, so an extreme mismatch cannot run away with the projection.
+  assert.equal(soft.factor, opponentEdge('Argentina', 'San Marino').factor);
+
+  // Names Sorare spells differently still resolve.
+  assert.ok(opponentEdge('Türkiye', 'England'), 'alias should resolve');
+});

@@ -47,6 +47,9 @@ export async function dailyCycleId() {
 /** A finished attempt: it cost a heart and can no longer be edited. */
 export const SPENT_LINEUP = new Set(['CANCELLED', 'FAILED', 'EXPIRED', 'SUCCESSFUL']);
 
+/** Shape version of the entered-lineup snapshot kept in state. */
+const SNAPSHOT_V = 2;
+
 export const SPREAD = 56;
 
 /** Fallback when the step does not name one; see optimiser DEFAULTS. */
@@ -151,6 +154,10 @@ export async function enteredTeam({ step, stepId, surface, lineup = null, option
       home: was.home ?? null,
       average: was.average ?? null,
       formL5: was.formL5 ?? null,
+      intl: !!was.intl,
+      oppRank: was.oppRank ?? null,
+      ownRank: was.ownRank ?? null,
+      oppFactor: was.oppFactor ?? null,
       locked: !!a.locked,
       kickoff: a.anyPlayer?.anyFutureGameStats?.[0]?.anyGame?.date ?? null,
     };
@@ -158,9 +165,9 @@ export async function enteredTeam({ step, stepId, surface, lineup = null, option
 
   const sameFive = five.length === (snap?.five ?? []).length
     && five.every((c) => snapBy.has(c.slug));
-  // A snapshot written before the form figures existed is incomplete; fall
-  // through and re-score rather than render a card with blanks on it.
-  if (sameFive && five.every((c) => c.average != null)) {
+  // A snapshot from an older shape is incomplete; fall through and re-score
+  // rather than render a card with blanks on it.
+  if (sameFive && snap?.v === SNAPSHOT_V && five.every((c) => c.average != null)) {
     return { five, projected: snap.projected ?? null };
   }
 
@@ -182,6 +189,7 @@ export async function enteredTeam({ step, stepId, surface, lineup = null, option
       c.opp = c.opponent = d.opponent;
       c.home = d.home;
       c.average = d.average; c.formL5 = d.formL5;
+      c.intl = d.intl; c.oppRank = d.oppRank; c.ownRank = d.ownRank; c.oppFactor = d.oppFactor;
       c.kickoff = c.kickoff ?? d.kickoff;
       total += d.expected;
     }
@@ -468,12 +476,17 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
       entered: {
         ...prev,
         [surface]: {
+          // Bumped whenever the shape gains a field, so a snapshot written by
+          // an older version is re-scored rather than rendered with blanks.
+          v: SNAPSHOT_V,
           at: new Date().toISOString(),
           projected: picked.projected,
           target: step?.target ?? null,
           five: picked.chosen.map((c) => ({
             slug: c.slug, exp: c.expected, opp: c.opponent ?? null, home: c.home ?? null,
             average: c.average ?? null, formL5: c.formL5 ?? null, kickoff: c.kickoff ?? null,
+            intl: !!c.intl, oppRank: c.oppRank ?? null, ownRank: c.ownRank ?? null,
+            oppFactor: c.oppFactor ?? null,
           })),
         },
       },

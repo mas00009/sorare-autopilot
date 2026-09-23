@@ -132,6 +132,8 @@ nav button[data-warn]::after{content:"";width:6px;height:6px;border-radius:99px;
 .p .b{padding:8px 9px 10px}
 .p .nm{font-weight:670;font-size:.83rem;line-height:1.2;text-wrap:balance}
 .p .fx{color:var(--dim);font-size:.71rem;margin-top:2px}
+/* The opponent's world ranking, so the softest fixture is visible at a glance. */
+.p .wr{color:var(--faint);font-size:.9em;margin-left:4px}
 .p .xp{margin-top:6px;font-size:1.15rem;font-weight:780;letter-spacing:-.03em;white-space:nowrap;
  background:linear-gradient(120deg,#c4b5fd,#7dd3fc);-webkit-background-clip:text;background-clip:text;color:transparent}
 .tag{position:absolute;top:7px;left:7px;border-radius:6px;padding:1px 6px;font-size:.66rem;font-weight:700;
@@ -453,7 +455,7 @@ function surfacePanel(s){
         ${c.picture?`<img src="${esc(c.picture)}" alt="${esc(c.player)}" decoding="async">`:`<div style="aspect-ratio:5/7"></div>`}
         <span class="tag">${esc(c.position)}</span>${isCap(c)?'<span class="capt" title="Captain">C</span>':''}
         <div class="b"><div class="nm">${esc(c.player)}</div>
-          <div class="fx">${c.opponent?`${c.home?'vs':'@'} ${esc(c.opponent)}`:'no fixture'}</div>
+          <div class="fx">${c.opponent?`${c.home?'vs':'@'} ${esc(c.opponent)}${c.oppRank?`<span class="wr" title="FIFA world ranking">#${c.oppRank}</span>`:''}`:'no fixture'}</div>
           <div class="fx">L15 ${c.average??'—'} · L5 ${c.formL5??'—'}</div>
           <div class="xp">${c.expected}${isCap(c)&&capPts?`<em>+${capPts.toFixed(0)} C</em>`:''}</div></div></div>`).join('')}</div>
     <div class="tot">
@@ -469,14 +471,18 @@ function fixturesPanel(d){
   if(!d.fixtures.length) return `<div class="card"><p class="prose" style="margin:0">No upcoming fixtures for your players in this window.</p></div>`;
   const day=i=>new Date(i).toLocaleDateString(undefined,{weekday:'short',day:'numeric',month:'short'});
   const time=i=>new Date(i).toLocaleTimeString(undefined,{hour:'2-digit',minute:'2-digit'});
-  const rk=n=>n?`<span class="rk">#${n}</span>`:'';
+  // A club's number is its league position; a nation's is its FIFA world rank.
+  // They are not the same measure, so the tooltip says which one it is.
+  const rk=(n,world)=>n
+    ? `<span class="rk" title="${world?'FIFA world ranking':'position in its own league'}">#${n}</span>`
+    : '';
   const total=d.fixtures.reduce((t,f)=>t+(f.points||0),0);
   return `<div class="card"><table class="fx-tbl">
     <thead><tr><th>Kickoff</th><th>Match</th><th class="cmp">Competition</th>
       <th>Your players</th><th style="text-align:right">Projected</th></tr></thead><tbody>
     ${d.fixtures.map(f=>`<tr>
       <td class="ko"><b>${day(f.kickoff)}</b><s>${time(f.kickoff)}</s></td>
-      <td class="m">${esc(f.code||f.team)}${rk(f.rank)}<span class="at">${f.home?'v':'@'}</span>${esc(f.opponentCode||f.opponent)}${rk(f.opponentRank)}
+      <td class="m">${esc(f.code||f.team)}${rk(f.intl?f.ownRank:f.rank,f.intl)}<span class="at">${f.home?'v':'@'}</span>${esc(f.opponentCode||f.opponent)}${rk(f.intl?f.oppRank:f.opponentRank,f.intl)}
         <span class="hm">${f.home?'Home':'Away'}</span></td>
       <td class="cmp">${esc(f.competition||'—')}</td>
       <td class="pl">${esc(f.players.join(', '))}</td>
