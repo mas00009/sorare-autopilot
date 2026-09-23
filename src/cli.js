@@ -189,6 +189,7 @@ async function report(r) {
     const p = r.packs;
     console.log('\nPacks');
     console.log(`  essence ${p.essenceBefore} -> ${p.essenceAfter}${p.spent ? `  (spent ${p.spent})` : ''}`);
+    if (p.packChoice?.why) console.log(`  pack: ${p.packChoice.slug} - ${p.packChoice.why}`);
     for (const o of p.opened) {
       if (o.dryRun) { console.log(`  would buy ${o.slug} for ${o.price} ${o.currency}`); continue; }
       const cards = (o.cards ?? []).map((c) => `${c.name} ${c.stars}*`).join(', ');

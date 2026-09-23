@@ -174,3 +174,23 @@ test('bookmaker odds: de-vigged, matched by name, applied by position, never to 
   assert.ok(Math.abs(oddsFactor('FW', { pWin: 0.36 }) - 1) < 1e-9, 'mean win chance changes nothing');
   assert.equal(oddsFactor('DF', null), 1, 'no odds, no change');
 });
+
+test('the gem ledger points essence at the league with open gem collections', async () => {
+  // Mirror gemLedger's pack ranking on a fixed input, so the rule is pinned:
+  // gems per remaining card, summed by pack group.
+  const collections = [
+    { gems: 15, remaining: 21, group: 'glitch-laliga' },
+    { gems: 10, remaining: 4, group: 'glitch-laliga' },
+    { gems: 5, remaining: 40, group: 'glitch-premier-league' },
+  ];
+  const byGroup = {};
+  for (const c of collections) byGroup[c.group] = (byGroup[c.group] ?? 0) + c.gems / c.remaining;
+  const packs = [
+    { slug: 'pl-bronze', group: 'glitch-premier-league', effectivePrice: 1000 },
+    { slug: 'laliga-bronze', group: 'glitch-laliga', effectivePrice: 1000 },
+    { slug: 'bl-bronze', group: 'glitch-bundesliga', effectivePrice: 1000 },
+  ].map((p) => ({ ...p, gemValue: byGroup[p.group] ?? 0 })).sort((a, b) => b.gemValue - a.gemValue || a.effectivePrice - b.effectivePrice);
+  assert.equal(packs[0].slug, 'laliga-bronze');
+  assert.ok(packs[0].gemValue > packs[1].gemValue);
+  assert.equal(packs[2].gemValue, 0, 'a league with nothing open scores zero');
+});

@@ -134,6 +134,28 @@ Sorare's T&Cs don't explicitly address automated lineup submission. They offer
 self-service API credentials, so API use is clearly intended, but the automation
 question is unaddressed rather than permitted. Your call.
 
+## What the bot is for
+
+Gems, never spent here, banked for NBA mode; the ladder's cash steps as the
+long shot. An audit of every reward on both boards and all 360 seasonal tasks
+found the gem sources are exactly these:
+
+| source | pays |
+|---|---|
+| Hot Streaks L2, 360 pts | 10 gems |
+| Hot Streaks L3, 400 pts | 30 gems |
+| Hot Streaks L4, 440 pts | $100 + 1000 essence |
+| Hot Streaks L5, 480 pts | $1000 + 1000 essence |
+| Collect Spanish players in LaLiga | 15 gems |
+| Collect Big 3 LaLiga | 10 gems |
+
+L0 and L1 pay essence (2000 and 5000), the team set pays card packs, and
+everything else pays XP, craft clues or packs. So the bot steers the one thing
+it can - essence - at LaLiga packs while those collections are open
+(`src/gems.js`), and the lineup work is aimed at the ladder. The Gems tab shows
+all of it. Whether L0/L1 pay their essence again after a ladder restart is
+not yet known; check it the first time the ladder is restarted.
+
 ## What the research found
 
 Every weight in the optimiser was measured against this account's own history -

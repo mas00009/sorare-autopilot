@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T04:11:42.766Z",
+  "generatedAt": "2026-09-23T04:12:47.418Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-09-24T18:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1790136696059,
-    "reason": "last run 0m ago, next due in 180m (lock in 2313m)"
+    "reason": "last run 1m ago, next due in 179m (lock in 2312m)"
   },
   "packs": {
     "lastThreeStar": "Andrés Castrín",
@@ -18,6 +18,77 @@
   },
   "health": {
     "failStreak": 0
+  },
+  "gems": {
+    "balance": 186,
+    "level": 2,
+    "ladder": [
+      {
+        "level": 2,
+        "state": "LINEUP_SET",
+        "target": 360,
+        "gems": 10,
+        "usd": 0,
+        "current": true
+      },
+      {
+        "level": 3,
+        "state": "PLAYABLE",
+        "target": 400,
+        "gems": 30,
+        "usd": 0,
+        "current": false
+      },
+      {
+        "level": 4,
+        "state": "PLAYABLE",
+        "target": 440,
+        "gems": 0,
+        "usd": 100,
+        "current": false
+      },
+      {
+        "level": 5,
+        "state": "PLAYABLE",
+        "target": 480,
+        "gems": 0,
+        "usd": 1000,
+        "current": false
+      }
+    ],
+    "collections": [
+      {
+        "title": "Collect Spanish players in LaLiga",
+        "gems": 15,
+        "progress": 170,
+        "target": 191,
+        "remaining": 21,
+        "competition": "LALIGA EA Sports",
+        "group": "glitch-laliga",
+        "teams": []
+      },
+      {
+        "title": "Collect Big 3 LaLiga",
+        "gems": 10,
+        "progress": 33,
+        "target": 37,
+        "remaining": 4,
+        "competition": "LALIGA EA Sports",
+        "group": "glitch-laliga",
+        "teams": [
+          "Real Madrid",
+          "FC Barcelona",
+          "Atlético de Madrid"
+        ]
+      }
+    ],
+    "preferredPack": {
+      "group": "LaLiga Packs",
+      "slug": "glitch-glitch-laliga-bronze-laliga"
+    },
+    "ladderGemsAhead": 40,
+    "ladderCashAhead": 1100,
+    "collectionGemsOpen": 25
   },
   "odds": {
     "configured": true,

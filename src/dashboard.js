@@ -152,6 +152,13 @@ export async function build() {
       cycleDone: !!st.lastPackCycle,
     },
     health: { failStreak: st.failStreak ?? 0 },
+    gems: await (async () => {
+      try { const { gemLedger } = await import('./gems.js'); const g = await gemLedger();
+        return { balance: g.gems, level: g.level, ladder: g.ladder, collections: g.collections,
+          preferredPack: g.preferredPack ? { group: g.preferredPack.groupTitle, slug: g.preferredPack.slug } : null,
+          ladderGemsAhead: g.ladderGemsAhead, ladderCashAhead: g.ladderCashAhead, collectionGemsOpen: g.collectionGemsOpen }; }
+      catch { return null; }
+    })(),
     odds: await (async () => {
       try { const { usage } = await import('./odds.js'); const u = await usage(); return { configured: !!process.env.ODDS_API_KEY, ...u }; }
       catch { return { configured: !!process.env.ODDS_API_KEY }; }

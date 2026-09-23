@@ -21,6 +21,14 @@ So the next real gain is the card pool:
 - Track pool strength over time. The dashboard shows it per window; a trend
   would show whether packs are actually moving it.
 
+## When the ladder first fails
+
+Four lives a step; when they run out the step is FAILED and the bot restarts
+the track. Nobody knows yet whether L0 (2000 essence) and L1 (5000) pay again
+on the second run. If they do, a restart is a 7,000-essence event and the
+"do not waste a heart" caution is wrong: hearts are cheap and every window
+should be entered. Read the rewards on the restarted L0 before touching that.
+
 ## Odds log
 
 `state/odds/log.jsonl` accumulates every pre-match odds snapshot the bot

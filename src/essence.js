@@ -55,9 +55,23 @@ export async function readEssence() {
   return { chestId: chest?.id ?? null, amount: chest?.cardShardsCount ?? 0 };
 }
 
+/**
+ * The pack to buy. Sorare's recommendation, unless the gem ledger names an
+ * essence pack whose league has open gem-paying collections - then that one,
+ * because the owner's goal is gems and a pack from the right league moves
+ * those collections while still giving the daily 3-star its chance. Falls
+ * back to the recommendation if the ledger cannot be read.
+ */
 export async function readPack() {
+  try {
+    const { gemLedger } = await import('./gems.js');
+    const led = await gemLedger();
+    const p = led.preferredPack;
+    if (p && p.gemValue > 0) return { ...p, why: `advances ${led.collections.filter((c) => c.group === p.group).map((c) => `${c.title} (${c.progress}/${c.target}, ${c.gems} gems)`).join(' and ')}` };
+  } catch { /* fall through to the recommendation */ }
   const d = await gql(Q_PACK, { sport: SPORT });
-  return d.market?.recommendedCardPack ?? null;
+  const rec = d.market?.recommendedCardPack ?? null;
+  return rec ? { ...rec, why: "Sorare's recommended pack" } : null;
 }
 
 /** gameplayTier lives on the player, not the card. */
@@ -119,8 +133,9 @@ export async function openPacksUntilThreeStar({
     // The hard gate: the pack's own currency, vetted before anything is sent.
     assertCostAllowed({ currency: pack.currency, amount: pack.effectivePrice });
 
+    out.packChoice = { slug: pack.slug, why: pack.why ?? null };
     if (dryRun) {
-      out.opened.push({ slug: pack.slug, price: pack.effectivePrice, currency: pack.currency, dryRun: true });
+      out.opened.push({ slug: pack.slug, price: pack.effectivePrice, currency: pack.currency, dryRun: true, why: pack.why ?? null });
       out.stopped = 'dry run - nothing bought';
       break;
     }
