@@ -1,43 +1,32 @@
-# Next session: make the bot actually PLAY
+# Where things stand
 
-It reads, picks and claims. It does not perform daily tasks. Start here.
+The bot reads, picks, submits, holds, claims, opens packs, plays the picker and
+mails a report. The daily checklist and the bonus-pack counters are all found
+and wired (see `src/autopilot.js` and `src/picker.js` for the traps). What is
+left is judgement, not plumbing.
 
-## 1. The free daily pack  (PARTLY FOUND)
+## The number that matters
 
-`currentUser.packs(sport:)` returns Pack objects with `claimed` and
-`cardPack { effectivePrice currency }`. **Two of the six packs there have
-`effectivePrice: 0`** - free packs do come through the normal pack system, they
-are just not listed in `market.setSections` (all 12 of those are 1000 essence or
-10-50 gems).
+`node src/cli.js simulate` replays 44 past rounds through the real picker.
+Every model variant clears the 360 target 6-10% of the time, and an oracle that
+knows exactly who will play manages 11%. The pool holds about three regular
+starters averaging 60+ a round; the target needs five. See the README.
 
-Right now `packs` shows 0 unclaimed, yet the site still offers the daily pack. So
-the pack object probably does not exist until something *grants* it. Look for the
-grant: a mutation that awards the daily pack, or a zero-price slug passed to
-`buyCardPack`. Once it exists, `claimCardsFromPack(packId, chosenCardSlugs)`
-opens it.
+So the next real gain is the card pool:
 
-Also wired and ready: `openFreePacks()` in `src/autopilot.js` handles
-probabilistic bundles (`myWheelRewards` -> `probabilisticBundlesOpen`). All 50 of
-those are already opened, so it finds nothing, but the path works and
-`probabilisticBundlesOpen` is now allow-listed (the type carries no price field,
-so opening is free).
+- The essence pack loop stops at the first 3-star. Consider valuing a pull by
+  whether the player is a regular starter (start rate) with a 60+ average, not
+  by star tier alone - that is what the simulator says a target-clearing team
+  is made of.
+- Track pool strength over time. The dashboard shows it per window; a trend
+  would show whether packs are actually moving it.
 
-## 2. The Decisive Player Picker  (NOT BUILT - biggest remaining gap)
+## Small things
 
-`setPlayTasks` returns one task, `DECISIVE_PLAYER_PICKER`, state READY, progress 0.
-It needs picks submitted, so the mutation is `upsertTaskLineup(taskId,
-taskAppearances, targetScore)` or `upsertTaskAppearances(taskId, taskAppearances)`.
-Read `ManagerTaskInterface` (it has `target` and `progress`) and the task's own
-compose bench to see which players are selectable, then submit.
-
-## 3. The bonus pack after every 10  (STILL NOT FOUND)
-
-Never located. It only becomes visible once packs are being opened regularly.
-Must be claimed BEFORE the next pack or the counter stops advancing.
-
-## Settled today
-
-- Essence floor lowered to **1000** at the owner's instruction (was 4000, which
-  blocked all buying at a 4500 balance).
-- Target rule fixed: a gap smaller than the spread of five players (~56 points)
-  is now played. Refusing to enter guaranteed zero where entering had ~17%.
+- `data/fifa-rankings.json` is the 20 July 2026 table. FIFA's next update is
+  7 October 2026; refresh it then (`WebFetch` of fotmob's ranking page, same
+  format).
+- The Decisive Picker plays itself the first day the slate includes a club this
+  account holds a card for. Nothing to build; watch the daily report.
+- The team set needs three squad lineups before it counts. Nothing the bot can
+  do about the other two.

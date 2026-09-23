@@ -40,6 +40,12 @@ export async function build() {
 
     const usable = pool.filter((c) => !c.blocked).sort((a, b) => b.expected - a.expected);
 
+    // How much the pool can actually do here. Replaying 44 rounds showed the
+    // target is cleared about one time in ten regardless of the model, because
+    // the pool rarely holds five regular starters who average 60+ when they
+    // play. This number says whether this window is one of the rare ones.
+    const strong = pool.filter((c) => !c.blocked && (c.startRate ?? 1) >= 0.7 && (c.average ?? 0) >= 60).length;
+
     // What is entered beats what could be picked. The plan is the alternative
     // the optimiser would build if the step were empty; showing it as "the
     // team" put five players on the page who were not in the lineup.
@@ -77,6 +83,7 @@ export async function build() {
     surfaces.push({
       surface: b.surface,
       entered: live ? { five: live.five, projected: live.projected } : null,
+      poolStrength: { strong, needed: 5 },
       squad: step?.minimumLineupsToStartStep != null
         ? { lineupsIn: step.totalLineups ?? 0, needed: step.minimumLineupsToStartStep,
             scoreSoFar: step.totalScore ?? 0 }

@@ -146,6 +146,9 @@ nav button[data-warn]::after{content:"";width:6px;height:6px;border-radius:99px;
  border:1.5px solid rgba(255,255,255,.9);
  box-shadow:0 2px 8px rgba(0,0,0,.65),0 0 14px -2px rgba(249,146,36,.85)}
 .tot{display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;margin:20px 0 0}
+/* One honest line under the bar about what the pool can do this window. */
+.pool{margin:10px 0 0;color:var(--dim);font-size:.82rem;line-height:1.5;text-wrap:pretty}
+.pool b{color:var(--ink)}
 /* Score and target are one fact, so they read as a fraction under one label
    rather than three items floating at equal distance. */
 .score{display:flex;flex-direction:column;gap:3px}
@@ -463,6 +466,9 @@ function surfacePanel(s){
         <s>${s.target?'projected of target':'projected'}</s></span>
       ${s.target?verdict(s,pl,tot):''}</div>
     ${s.target?`<div class="barp"><i style="width:${pct}%"></i></div>`:''}
+    ${s.poolStrength?`<p class="pool">${s.poolStrength.strong>=s.poolStrength.needed
+      ?`<b>${s.poolStrength.strong}</b> regular starters averaging 60+ are available this window. That is enough to build a team that can reach ${s.target}.`
+      :`Only <b>${s.poolStrength.strong}</b> regular starter${s.poolStrength.strong===1?'':'s'} averaging 60+ ${s.poolStrength.strong===1?'is':'are'} available this window, and reaching ${s.target} takes five. The rest of the team is carried by form and luck.`}</p>`:''}
 
   </div>`;
 }

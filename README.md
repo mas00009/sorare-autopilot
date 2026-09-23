@@ -63,6 +63,8 @@ npm run doctor     # check auth, print balances, find the live step
 npm run plan       # full dry run: decides and prints, submits nothing
 npm run run        # one real pass: submits and claims
 npm run watch      # repeat until the step locks
+node src/cli.js simulate            # replay past rounds through the optimiser
+node src/cli.js simulate --refresh  # ...after pulling fresh history first
 ```
 
 Useful flags:
@@ -132,10 +134,45 @@ Sorare's T&Cs don't explicitly address automated lineup submission. They offer
 self-service API credentials, so API use is clearly intended, but the automation
 question is unaddressed rather than permitted. Your call.
 
+## What the research found
+
+Every weight in the optimiser was measured against this account's own history -
+6,920 appearances from 464 players, walk-forward, scored on real results - and
+the simulator replays 44 past rounds through the real picker so any change can
+be judged on realised points rather than on a hunch. The findings, so nobody
+re-tests them by accident:
+
+- **The pool is the limit, not the model.** Every variant lands within noise
+  (mean 259-272 raw points a round; 6-10% of lineups clear 360). The pool holds
+  on average 2.9 regular starters averaging 60+ when they play, and 360 needs
+  five. Only 13 of 44 rounds had five available. An oracle that knew exactly who
+  would play still cleared 360 just 11% of the time. Better cards beat better
+  maths from here.
+- **Start rate as availability, until odds land.** Sorare publishes starter
+  odds only near kickoff. Before that, a player's last-ten start rate stands in.
+  It lifted lineups clearing 300 from 20% to 33% and is what stops a 30%
+  starter with a good average from making the team.
+- **Opponent strength is a defensive effect, internationals only.** Defenders
+  gain from a soft opponent (about 0.04 per 100 FIFA points, MAE 17.26 to
+  17.02), midfield a little, forwards nothing at all. Applied per position.
+  For club fixtures the league table predicts nothing (0.7% across the whole
+  table, holdout unchanged) and is deliberately not used. FIFA points beat Elo
+  as the measure. `data/fifa-rankings.json` needs refreshing after each FIFA
+  update.
+- **Stacking a mismatch.** Two cards a match is the rule (team-mates'
+  residuals correlate 0.23-0.28). A third GK/DF/MD from a side 200+ FIFA points
+  ahead is allowed, and taken only when the plain lineup falls short - under a
+  threshold, correlation helps when short and only adds risk when clear. This
+  one is reasoned from the clean-sheet finding, not measured on its own.
+- **Tested and rejected:** home advantage (twice), Elo, friendlies as
+  different from competitive, score-per-90 times expected minutes, captain by
+  haul rate or by L5, one or three cards a match as the default, lock-day
+  tolerance changes. None moved the replay.
+
 ## Tests
 
 ```bash
-node test/optimiser.test.mjs
+node --test test/*.test.mjs
 ```
 
 Runs offline against a fixture modelled on a real gameweek, including an injured

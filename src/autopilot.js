@@ -6,8 +6,7 @@
 import { gql } from './client.js';
 import { assertCostAllowed, GuardrailError, describeSkip } from './guardrails.js';
 import {
-  Q_BALANCES, Q_TRACK, Q_STEP, Q_BENCH, M_UPSERT_STEP_LINEUP,
-  Q_MISSIONS, M_CLAIM_TASK, M_CLAIM_STEP, Q_BOARDS, M_RESTART_TRACK, M_ACK_STEP, Q_BUNDLES, M_OPEN_BUNDLE, Q_MARKET_TASKS,
+  Q_BALANCES, Q_TRACK, Q_STEP, Q_BENCH, M_UPSERT_STEP_LINEUP, Q_MISSIONS, M_CLAIM_TASK, M_CLAIM_STEP, Q_BOARDS, M_RESTART_TRACK, M_ACK_STEP, Q_BUNDLES, M_OPEN_BUNDLE, Q_MARKET_TASKS, Q_START_RATES,
 } from './queries.js';
 import { openPacksUntilThreeStar } from './essence.js';
 import { runPickers } from './picker.js';
@@ -113,7 +112,48 @@ export async function fetchBench(stepId, { first = 50, positions = null, include
     ...(positions ? { positions } : {}),
   };
   const d = await gql(Q_BENCH, { id: stepId, filters, first });
-  return d.currentUser?.step?.myFilteredBench?.nodes ?? [];
+  const nodes = d.currentUser?.step?.myFilteredBench?.nodes ?? [];
+  return withStartRates(nodes);
+}
+
+/**
+ * Attach each bench card's recent start and play rates.
+ *
+ * Sorare publishes starter odds only as kickoff nears. Days out - exactly when
+ * the lock day is chosen - every card looks equally available, and that is how
+ * a benched keeper with a good career average gets picked. The player's own
+ * last ten games are the best stand-in: replaying 44 rounds, weighting by
+ * start rate lifted lineups clearing 300 from 20% to 33%. Once real odds
+ * land they take over; see optimiser expectedPoints().
+ *
+ * One request per ten players, cached for the day so a pass costs at most a
+ * handful of calls.
+ */
+const RATE_CACHE = { day: null, rates: new Map() };
+async function withStartRates(nodes) {
+  const day = new Date().toISOString().slice(0, 10);
+  if (RATE_CACHE.day !== day) { RATE_CACHE.day = day; RATE_CACHE.rates.clear(); }
+  const want = [...new Set(nodes.map((n) => n.player?.slug).filter(Boolean))]
+    .filter((slug) => !RATE_CACHE.rates.has(slug));
+  for (let i = 0; i < want.length; i += 10) {
+    const slugs = want.slice(i, i + 10);
+    try {
+      const d = await gql(Q_START_RATES, { slugs });
+      for (const p of d.players ?? []) {
+        const g = p.anyGameStats ?? [];
+        const n = g.length || 1;
+        RATE_CACHE.rates.set(p.slug, {
+          startRate: g.filter((x) => x.gameStarted).length / n,
+          playRate: g.filter((x) => x.playedInGame).length / n,
+          games: g.length,
+        });
+      }
+    } catch { /* the prior is optional; the pick still works without it */ }
+  }
+  return nodes.map((n) => {
+    const r = RATE_CACHE.rates.get(n.player?.slug);
+    return r && r.games >= 3 ? { ...n, startRate: r.startRate, playRate: r.playRate } : n;
+  });
 }
 
 /**

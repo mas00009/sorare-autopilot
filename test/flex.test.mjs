@@ -130,3 +130,22 @@ test('a third defensive card from a mismatch is allowed only when the plain pick
   assert.equal(fromSpain(clear), 2, 'clear of target, correlation is only risk');
   assert.ok(!clear.stacked);
 });
+
+test('recent start rate stands in for availability until odds are published', async () => {
+  const { priorAvailability, expectedPoints, DEFAULTS } = await import('../src/optimiser.js');
+  const base = { averageScore: 60, formL5: 60, bonus: 1.0, position: 'DF',
+    player: { anyFutureGameStats: [{ anyGame: { date: '2026-10-01T18:00:00Z', homeTeam: { slug: 'a', name: 'A' }, awayTeam: { slug: 'b', name: 'B' } }, anyTeam: { slug: 'a', name: 'A' } }] } };
+  // No history: nothing to go on, so fully available.
+  assert.equal(priorAvailability(base), 1);
+  // A regular starter is barely dimmed; a bench player is heavily dimmed but never zeroed.
+  const regular = { ...base, startRate: 0.9, playRate: 1.0 };
+  const fringe = { ...base, startRate: 0.1, playRate: 0.5 };
+  assert.ok(priorAvailability(regular) > 0.9 && priorAvailability(regular) <= 1);
+  assert.ok(priorAvailability(fringe) < 0.3 && priorAvailability(fringe) >= 0.05);
+  assert.ok(expectedPoints(regular) > expectedPoints(fringe) * 3);
+  // Published odds take over from the prior.
+  const withOdds = { ...fringe, player: { anyFutureGameStats: [{ ...fringe.player.anyFutureGameStats[0],
+    footballPlayingStatusOdds: { starterOddsBasisPoints: 9500, substituteOddsBasisPoints: 300, nonPlayingOddsBasisPoints: 200, reliability: 1 } }] } };
+  assert.ok(expectedPoints(withOdds) > expectedPoints(fringe) * 3, 'odds should override a poor start rate');
+  assert.equal(DEFAULTS.substituteWeight, 0.35);
+});

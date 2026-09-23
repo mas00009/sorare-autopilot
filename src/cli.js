@@ -318,6 +318,19 @@ const main = async () => {
     return;
   }
 
+  if (cmd === 'simulate') {
+    const Sim = await import('./simulate.js');
+    if (flag('refresh')) {
+      const r = await Sim.refreshHistory();
+      console.log(`history refreshed: ${r.players} players`);
+    }
+    const report = await Sim.simulate({ target: Number(opt('target', 360)) });
+    if (flag('json')) { console.log(JSON.stringify(report, null, 1)); return; }
+    Sim.print(report);
+    console.log('\n  Saved to state/simulation.json. Run after any optimiser change; a change that does not move these numbers is not an improvement.');
+    return;
+  }
+
   if (cmd === 'dashboard') {
     const { build } = await import('./dashboard.js');
     const d = await build();
@@ -428,7 +441,7 @@ const main = async () => {
     }
   }
 
-  console.log('Usage: autopilot <doctor|plan|run|when|report|accuracy|dashboard|backtest|pause|resume|watch|signin|create-app|auth> [--json] [--dry] [--force] [--min-starter 6000]');
+  console.log('Usage: autopilot <doctor|plan|run|when|report|accuracy|dashboard|backtest|simulate|pause|resume|watch|signin|create-app|auth> [--json] [--dry] [--force] [--min-starter 6000] [--refresh] [--target 360]');
   process.exitCode = 1;
 };
 
