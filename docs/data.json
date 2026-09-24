@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T12:37:36.552Z",
+  "generatedAt": "2026-09-24T12:38:24.883Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-24T18:45:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1790253421595,
-    "reason": "last run 1m ago, next due in 59m (lock in 367m)"
+    "lastRunAt": 1790253497717,
+    "reason": "last run 0m ago, next due in 60m (lock in 367m)"
   },
   "packs": {
     "lastThreeStar": "Andrés Castrín",
