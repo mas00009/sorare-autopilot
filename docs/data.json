@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T20:49:12.032Z",
+  "generatedAt": "2026-09-24T20:54:35.075Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-25T16:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790282945355,
-    "reason": "last run 0m ago, next due in 180m (lock in 1151m)"
+    "lastRunAt": 1790283268651,
+    "reason": "last run 0m ago, next due in 180m (lock in 1145m)"
   },
   "packs": {
     "lastThreeStar": "Andrés Castrín",
@@ -598,14 +598,14 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 4,
+        "lineupsIn": 0,
         "needed": 3,
-        "scoreSoFar": 980.5192
+        "scoreSoFar": 0
       },
-      "level": 1,
+      "level": 2,
       "lives": null,
       "totalLevels": 5,
-      "levelsDone": 1,
+      "levelsDone": 2,
       "ladder": [
         {
           "level": 0,
@@ -614,12 +614,12 @@
         },
         {
           "level": 1,
-          "state": "LINEUP_SET",
+          "state": "CLAIMED",
           "target": 980
         },
         {
           "level": 2,
-          "state": "LOCKED",
+          "state": "PRE_MATCHDAY_LOCKED",
           "target": 1060
         },
         {
@@ -641,40 +641,9 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
-      "target": 980,
-      "current": [
-        {
-          "name": "Odysseas",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-09-27T18:45:00Z"
-        },
-        {
-          "name": "Rúben Dias",
-          "captain": true,
-          "locked": true,
-          "nextGame": "2026-09-27T18:45:00Z"
-        },
-        {
-          "name": "Thomas Jørgensen",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-09-27T16:00:00Z"
-        },
-        {
-          "name": "Patrick Dorgu",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-09-27T16:00:00Z"
-        },
-        {
-          "name": "Renato Veiga",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-09-27T18:45:00Z"
-        }
-      ],
+      "state": "PRE_MATCHDAY_LOCKED",
+      "target": 1060,
+      "current": [],
       "plan": null,
       "candidates": [],
       "projected": 0
