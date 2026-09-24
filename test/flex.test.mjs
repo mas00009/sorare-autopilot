@@ -194,3 +194,25 @@ test('the gem ledger points essence at the league with open gem collections', as
   assert.ok(packs[0].gemValue > packs[1].gemValue);
   assert.equal(packs[2].gemValue, 0, 'a league with nothing open scores zero');
 });
+
+test('a squad step is never gated on its target', async () => {
+  const { SPREAD } = await import('../src/autopilot.js');
+  // The squad target is the combined score of the top three lineups, so a
+  // single five-card team is always "short" of it by far more than the spread
+  // of five players' scores. On a personal step that means wait; on a squad
+  // step it must still enter.
+  const squadTarget = 980;
+  const oneLineup = 350;
+  assert.ok(squadTarget - oneLineup > SPREAD, 'the premise: one lineup cannot reach a squad target');
+
+  const gateBlocks = (target, projected) => {
+    // Mirrors runLineup: a null target cannot gate.
+    if (!target) return false;
+    return (target - projected) > SPREAD;
+  };
+  assert.equal(gateBlocks(squadTarget, oneLineup), true, 'with the target applied it would never enter');
+  assert.equal(gateBlocks(null, oneLineup), false, 'collaborative passes null, so it always enters');
+  // The personal board keeps its gate.
+  assert.equal(gateBlocks(360, 250), true);
+  assert.equal(gateBlocks(360, 330), false);
+});

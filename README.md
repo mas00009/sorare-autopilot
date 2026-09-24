@@ -156,6 +156,18 @@ it can - essence - at LaLiga packs while those collections are open
 all of it. Whether L0/L1 pay their essence again after a ladder restart is
 not yet known; check it the first time the ladder is restarted.
 
+## The two boards behave differently
+
+The personal board (Hot Streaks) is gated: a lineup that cannot reach the
+step's target is not entered, because a failed step costs a life. The squad
+board (Loadshift) is not gated and always enters the strongest five, because
+its target is the combined score of the squad's top three lineups - 980
+against a five-card team that projects around 300. Holding back there
+contributes nothing and helps nobody.
+
+Sorare's own `collaborative` field reads FALSE on a SquadStep, so it cannot be
+used to tell them apart. The step's `__typename` is the honest signal.
+
 ## What the research found
 
 Every weight in the optimiser was measured against this account's own history -

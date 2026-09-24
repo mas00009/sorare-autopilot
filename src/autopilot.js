@@ -411,9 +411,23 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
   });
   if (!bench.length) return { skipped: true, reason: 'Bench came back empty.', stepId, surface };
 
+  // A squad step's target is the combined score of the squad's top three
+  // lineups, not this one's. Measuring one lineup against it is meaningless -
+  // 980 against a five-card team that projects 350 - so the target is not
+  // passed to the picker and the gate below does not apply. The right move on
+  // a squad step is always to enter the strongest five and let the squad add
+  // up.
+  //
+  // Note the step's own `collaborative` field reads FALSE on a SquadStep, so
+  // it cannot be used. The type is the honest signal, and
+  // minimumLineupsToStartStep exists only on SquadStep as a second check.
+  const collaborative = step?.__typename === 'SquadStep'
+    || step?.minimumLineupsToStartStep != null
+    || step?.collaborative === true;
+
   const picked = pickAcrossWindow(bench, {
     ...options,
-    target: step?.target ?? null,
+    target: collaborative ? null : (step?.target ?? null),
     // Sorare's own number for this step, when it gives one.
     ...(step?.engineConfiguration?.captain != null ? { captainBonus: step.engineConfiguration.captain } : {}),
   });
@@ -503,7 +517,7 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
   // players' scores, entering still has a real chance and not entering has
   // none - a step that expires unplayed scores zero just as surely as a failed
   // one, and costs the same nothing.
-  const target = step?.target ?? null;
+  const target = collaborative ? null : (step?.target ?? null);
   const withinReach = target && (target - picked.projected) <= SPREAD;
 
   if (target && picked.clearsTarget === false && !withinReach) {
@@ -567,7 +581,7 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
     stepId, surface, target: step?.target,
     dead,
     action: dryRun ? 'would-submit' : 'submitted',
-    fresh: !existing, spentAttempts,
+    fresh: !existing, spentAttempts, collaborative,
     inPlay: picked.chosen.map((c) => ({
       name: c.player, slug: c.slug, pos: c.position, pic: c.picture,
       exp: c.expected, opp: c.opponent ?? null, home: c.home ?? null,

@@ -84,6 +84,9 @@ export async function build() {
       surface: b.surface,
       entered: live ? { five: live.five, projected: live.projected } : null,
       poolStrength: { strong, needed: 5 },
+      // A squad target is the combined score of the top three lineups, so the
+      // page must not read it as this lineup's gap.
+      collaborative: step?.__typename === 'SquadStep' || step?.minimumLineupsToStartStep != null,
       squad: step?.minimumLineupsToStartStep != null
         ? { lineupsIn: step.totalLineups ?? 0, needed: step.minimumLineupsToStartStep,
             scoreSoFar: step.totalScore ?? 0 }

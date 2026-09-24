@@ -40,6 +40,7 @@ export const Q_STEP = `
   query Step($id: String!) {
     currentUser {
       step(id: $id) {
+        __typename
         id
         level
         state

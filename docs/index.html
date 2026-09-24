@@ -392,6 +392,13 @@ function topbar(d){
 
 /** One pill: the gap, and what the bot is doing about it. */
 function verdict(s,pl,tot){
+  // A squad target is the whole squad's combined score, so this lineup has no
+  // gap to report against it - only its own contribution.
+  if(s.collaborative){
+    const p=s.entered?.projected??tot;
+    return `<span class="verdict good"><b>${Math.round(p)}</b>
+      into the squad's ${s.target}. Always entered: the target is the team's combined score.</span>`;
+  }
   // With a team entered, the gap on screen is that team's gap.
   if(s.entered?.projected!=null&&s.target){
     const gap=Math.round(s.entered.projected-s.target);
@@ -436,7 +443,7 @@ function surfacePanel(s){
   if(!s.candidates.length) return `<div class="card text">
     <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>${lvl}<span class="pill ${st}">${esc(TITLE(human(s.state,STATE)))}</span>${livesBadge(s.lives)}</div>
     ${dots?`<div class="steps">${dots}</div>`:''}${rw?`<div style="margin-top:10px">${rw}</div>`:''}
-    ${s.squad ? `<p class="prose" style="margin:13px 0 0">A squad step needs
+    ${s.squad && s.squad.lineupsIn < s.squad.needed ? `<p class="prose" style="margin:13px 0 0">A squad step needs
       <b>${s.squad.needed}</b> lineups from the team before it counts, and
       <b>${s.squad.lineupsIn}</b> ${s.squad.lineupsIn === 1 ? 'is' : 'are'} in so far.
       The <b style="white-space:nowrap">${esc(String(s.target))}-point</b> target is the squad's
@@ -472,7 +479,7 @@ function surfacePanel(s){
         <s>${s.target?'projected of target':'projected'}</s></span>
       ${s.target?verdict(s,pl,tot):''}</div>
     ${s.target?`<div class="barp"><i style="width:${pct}%"></i></div>`:''}
-    ${s.poolStrength?`<p class="pool">${s.poolStrength.strong>=s.poolStrength.needed
+    ${s.poolStrength&&!s.collaborative?`<p class="pool">${s.poolStrength.strong>=s.poolStrength.needed
       ?`<b>${s.poolStrength.strong}</b> regular starters averaging 60+ are available this window. That is enough to build a team that can reach ${s.target}.`
       :`Only <b>${s.poolStrength.strong}</b> regular starter${s.poolStrength.strong===1?'':'s'} averaging 60+ ${s.poolStrength.strong===1?'is':'are'} available this window, and reaching ${s.target} takes five. The rest of the team is carried by form and luck.`}</p>`:''}
 
