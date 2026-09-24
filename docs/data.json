@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T20:38:26.185Z",
+  "generatedAt": "2026-09-24T20:43:49.041Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-25T16:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790282300141,
-    "reason": "last run 0m ago, next due in 180m (lock in 1162m)"
+    "lastRunAt": 1790282622324,
+    "reason": "last run 0m ago, next due in 180m (lock in 1156m)"
   },
   "packs": {
     "lastThreeStar": "Andrés Castrín",
@@ -25,7 +25,7 @@
     "ladder": [
       {
         "level": 2,
-        "state": "LIVE",
+        "state": "LINEUP_SET",
         "target": 360,
         "gems": 10,
         "usd": 0,
@@ -134,7 +134,7 @@
         },
         {
           "level": 2,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 360
         },
         {
@@ -158,7 +158,7 @@
           "kind": "InGameCurrency"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 360,
       "current": [
         {
@@ -600,7 +600,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 956.8504
+        "scoreSoFar": 980.5192
       },
       "level": 1,
       "lives": null,
@@ -614,7 +614,7 @@
         },
         {
           "level": 1,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 980
         },
         {
@@ -641,7 +641,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 980,
       "current": [
         {
