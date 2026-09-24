@@ -71,6 +71,19 @@ export const Q_STEP = `
               lockedAt
               position
               pictureUrl(derivative: "tinified")
+              # The appearance's OWN game and score. A card's "next fixture"
+              # rolls forward the moment its match kicks off, so after that
+              # the bench would name the wrong opponent for a card already in
+              # the lineup - and this is what it actually scored.
+              score(withBonus: true)
+              scoreStatus
+              game {
+                ... on Game {
+                  id date
+                  homeTeam { ... on TeamInterface { slug name } }
+                  awayTeam { ... on TeamInterface { slug name } }
+                }
+              }
               anyCard { slug }
               anyPlayer {
                 slug

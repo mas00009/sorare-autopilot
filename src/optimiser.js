@@ -35,6 +35,8 @@ export const DEFAULTS = {
   maxPerGame: 2,
   /** Allow a third defensive card from a side facing a minnow. See pickLineup. */
   stackMismatch: false,
+  /** Never two cards from opposite sides of the same match. See pickLineup. */
+  oneSidePerMatch: true,
   /** Slot requirements. Total must equal `size`. */
   size: 5,
   require: { GK: 1, DF: 1, MD: 1, FW: 1 },
@@ -106,6 +108,7 @@ function fixture(node) {
     date: game.date,
     competition: game.competition?.name ?? null,
     team: stats?.anyTeam?.name ?? null,
+    teamSlug: stats?.anyTeam?.slug ?? null,
     opponent: (home ? game.awayTeam?.name : game.homeTeam?.name) ?? null,
     home: !!home,
   };
@@ -216,6 +219,7 @@ export function describe(node, opts = DEFAULTS) {
     gameId: stats?.anyGame?.id ?? null,
     kickoff: stats?.anyGame?.date ?? null,
     team: fx?.team ?? null,
+    teamSlug: fx?.teamSlug ?? null,
     opponent: fx?.opponent ?? null,
     opponentCode: fx?.opponentCode ?? null,
     code: fx?.code ?? null,
@@ -272,15 +276,25 @@ export function pickLineup(benchNodes, options = {}) {
   const STACK_POS = new Set(['GK', 'DF', 'MD']);
   const capFor = (c) => (opts.stackMismatch && c.mismatch && STACK_POS.has(c.position)
     ? opts.maxPerGame + 1 : opts.maxPerGame);
+  // One side per match. A defender from one team and a forward from the
+  // other are betting against each other: the forward's goal is the
+  // defender's lost clean sheet, so at most one of them comes off. Two cards
+  // from the same match must be from the same side, or the second one goes
+  // to another match.
+  const sideOf = new Map();                    // gameId -> teamSlug already in the lineup
   const canTake = (c) => {
     if (chosen.some((x) => x.id === c.id)) return false;
     if (chosen.some((x) => x.slug === c.slug)) return false; // no duplicate players
     const n = perGame.get(c.gameId) ?? 0;
-    return n < capFor(c);
+    if (n >= capFor(c)) return false;
+    const side = sideOf.get(c.gameId);
+    if (opts.oneSidePerMatch !== false && side && c.teamSlug && side !== c.teamSlug) return false;
+    return true;
   };
   const take = (c) => {
     chosen.push(c);
     perGame.set(c.gameId, (perGame.get(c.gameId) ?? 0) + 1);
+    if (c.gameId && c.teamSlug && !sideOf.has(c.gameId)) sideOf.set(c.gameId, c.teamSlug);
   };
 
   for (const [pos, count] of Object.entries(opts.require)) {

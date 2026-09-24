@@ -26,6 +26,8 @@ a{color:inherit;text-decoration:none}
 .zone+.zone::before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:1px;
  background:linear-gradient(180deg,transparent,var(--line2) 22%,var(--line2) 78%,transparent)}
 .brand{gap:12px;padding-left:12px}
+.xp.done{background:none;-webkit-text-fill-color:var(--go);color:var(--go)}
+.xp.done em{color:var(--faint);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.58rem}
 .xp em{font-style:normal;font-size:.72rem;font-weight:700;color:#f9a03c;margin-left:5px;
  letter-spacing:.02em;white-space:nowrap}
 .wordmark{height:46px;width:auto;display:block;flex:none;
@@ -152,6 +154,21 @@ nav button[data-warn]::after{content:"";width:6px;height:6px;border-radius:99px;
 .pool{margin:10px 0 0;color:var(--dim);font-size:.82rem;line-height:1.5;text-wrap:pretty}
 .pool b{color:var(--ink)}
 .barp.sm{height:4px;margin-top:5px;max-width:160px}
+/* Results: one row per lineup, five compact cards with the score each made. */
+.res{padding:14px 0;border-top:1px solid var(--line)}
+.res:first-child{padding-top:0;border-top:0}
+.res .head{margin-bottom:9px}
+.rgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.rp{position:relative;background:#0e1220;border:1px solid var(--line);border-radius:9px;padding:8px 9px;min-width:0}
+.rp.cap{border-color:#b45f16}
+.rp .nm{font-size:.74rem;font-weight:620;line-height:1.2;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rp .nm .capt{position:static;display:inline-grid;width:14px;height:14px;font-size:.55rem;margin-right:5px;vertical-align:-2px}
+.rp .sc{margin-top:4px;font-size:1.05rem;font-weight:780;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.rp .sc.big{color:var(--go)}.rp .sc.low{color:var(--stop)}.rp .sc.pending{color:var(--faint)}
+/* Five names across a phone do not fit; the surname does. */
+.rp .nm .short{display:none}
+@media(max-width:620px){.rgrid{gap:4px}.rp{padding:6px 5px}.rp .nm{font-size:.62rem}.rp .sc{font-size:.85rem}.rp .nm .capt{width:11px;height:11px;font-size:.45rem;margin-right:3px}
+ .rp .nm .full{display:none}.rp .nm .short{display:inline}}
 .fx-tbl .prog{white-space:nowrap;font-variant-numeric:tabular-nums}
 /* Score and target are one fact, so they read as a fraction under one label
    rather than three items floating at equal distance. */
@@ -473,10 +490,12 @@ function surfacePanel(s){
         <div class="b"><div class="nm">${esc(c.player)}</div>
           <div class="fx">${c.opponent?`${c.home?'vs':'@'} ${esc(c.opponent)}${c.oppRank?`<span class="wr" title="FIFA world ranking">#${c.oppRank}</span>`:''}${c.pWin!=null?`<span class="wr ${c.pWin>=.5?'fav':c.pWin<.25?'dog':''}" title="Bookmakers' chance this side wins">${Math.round(c.pWin*100)}%</span>`:''}`:'no fixture'}</div>
           <div class="fx">L15 ${c.average??'—'} · L5 ${c.formL5??'—'}</div>
-          <div class="xp">${c.expected}${isCap(c)&&capPts?`<em>+${capPts.toFixed(0)} C</em>`:''}</div></div></div>`).join('')}</div>
+          ${c.actual!=null
+            ?`<div class="xp done">${Math.round(c.actual)}<em>scored</em></div>`
+            :`<div class="xp">${c.expected}${isCap(c)&&capPts?`<em>+${capPts.toFixed(0)} C</em>`:''}</div>`}</div></div>`).join('')}</div>
     <div class="tot">
-      <span class="score"><span class="n"><b>${tot.toFixed(0)}</b>${s.target?`<i>&thinsp;/&thinsp;${s.target}</i>`:''}</span>
-        <s>${s.target?'projected of target':'projected'}</s></span>
+      <span class="score"><span class="n"><b>${(s.entered?.played?s.entered.expectedFinal:tot).toFixed(0)}</b>${s.target?`<i>&thinsp;/&thinsp;${s.target}</i>`:''}</span>
+        <s>${s.entered?.played?`${Math.round(s.entered.scoredSoFar)} scored so far, ${s.entered.played} of 5 played`:(s.target?'projected of target':'projected')}</s></span>
       ${s.target?verdict(s,pl,tot):''}</div>
     ${s.target?`<div class="barp"><i style="width:${pct}%"></i></div>`:''}
     ${s.poolStrength&&!s.collaborative?`<p class="pool">${s.poolStrength.strong>=s.poolStrength.needed
@@ -541,6 +560,25 @@ async function writeControl(patch,flash){
     flash('Saved. The bot picks it up on its next pass, within a few minutes.','ok');
     return true;
   }catch(e){flash(e.message,'err');return false}
+}
+
+/** Every lineup entered, newest first, with what each card scored. */
+function resultsPanel(d){
+  const outcome=(l)=>{
+    if(!l.finished) return `<span class="pill vv">${l.scored?`${l.scored} of ${l.players.length} played`:'not started'}</span>`;
+    if(l.collaborative) return l.cleared?`<span class="pill go">squad cleared</span>`:`<span class="pill bad">squad short</span>`;
+    return l.cleared?`<span class="pill go">cleared</span>`:`<span class="pill bad">missed</span>`;
+  };
+  const card=(p)=>`<div class="rp${p.captain?' cap':''}">
+      <div class="nm" title="${esc(p.name)}">${p.captain?'<span class="capt" title="Captain">C</span>':''}<span class="full">${esc(p.name)}</span><span class="short">${esc(p.name.split(' ').pop())}</span></div>
+      <div class="sc ${p.score==null||p.status!=='FINAL'&&!(p.score>0)?'pending':p.score>=60?'big':p.score<20?'low':''}">${p.status==='FINAL'||(p.score>0)?Math.round(p.score):'–'}</div>
+    </div>`;
+  const row=(l)=>`<div class="res">
+    <div class="head"><h3>${esc(titled(l.surface.replace(/\s*\(.*\)/,'')))} · Level ${l.level}</h3>
+      <span class="pill">Target ${l.target}</span>${outcome(l)}
+      <span class="score" style="margin-left:auto"><span class="n"><b>${Math.round(l.score)}</b>${l.collaborative&&l.squadScore!=null?`<i>&thinsp;·&thinsp;squad ${Math.round(l.squadScore)}</i>`:''}</span></span></div>
+    <div class="rgrid">${l.players.map(card).join('')}</div></div>`;
+  return `<div class="card">${d.results.map(row).join('')}</div>`;
 }
 
 /** Every route from here to gems, and where the essence is going. */
@@ -624,6 +662,7 @@ function render(d){
   const tabs=[...d.surfaces.map((s,i)=>({label:titled(s.surface.replace(/\s*\(.*\)/,'')),
       warn:s.plan?.clearsTarget===false||s.state==='CLAIMABLE',fn:()=>surfacePanel(s)})),
     {label:'Fixtures',fn:()=>fixturesPanel(d)},
+    ...(d.results?.length?[{label:'Results',fn:()=>resultsPanel(d)}]:[]),
     ...(d.gems?[{label:'Gems',fn:()=>gemsPanel(d)}]:[]),
     {label:'Controls',fn:()=>controlsPanel(d)}];
   if(TAB>=tabs.length)TAB=0;

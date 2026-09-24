@@ -143,6 +143,7 @@ export const VARIANTS = {
   'no opponent factor': { opts: { opponent: false } },
   'form weight 0.25': { opts: { formWeight: 0.25 } },
   'form weight 0.75': { opts: { formWeight: 0.75 } },
+  'sides mixed in a match (old rule)': { opts: { oneSidePerMatch: false } },
   'one card per match': { opts: { maxPerGame: 1 } },
   'three cards per match': { opts: { maxPerGame: 3 } },
   'plain pick, no lock-day logic': { plain: true },

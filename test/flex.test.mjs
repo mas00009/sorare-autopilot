@@ -216,3 +216,54 @@ test('a squad step is never gated on its target', async () => {
   assert.equal(gateBlocks(360, 250), true);
   assert.equal(gateBlocks(360, 330), false);
 });
+
+test('never a defender from one side and an attacker from the other in the same match', async () => {
+  const { pickLineup } = await import('../src/optimiser.js');
+  const card = (slug, position, avg, team, home, away) => ({
+    id: slug, position, bonus: 1.02, rarity: 'common', averageScore: avg, formL5: avg,
+    player: { slug, displayName: slug, activeInjuries: [],
+      anyFutureGameStats: [{ onGameSheet: true, anyTeam: { slug: team, name: team },
+        anyGame: { id: `${home}-${away}`, date: '2026-10-01T18:00:00Z', competition: { name: 'x' },
+          homeTeam: { slug: home, name: home }, awayTeam: { slug: away, name: away } },
+        footballPlayingStatusOdds: { starterOddsBasisPoints: 9000, substituteOddsBasisPoints: 500,
+          nonPlayingOddsBasisPoints: 500, reliability: 1 } }] },
+  });
+  // The best DF is from the home side and the best FW from the away side of
+  // the SAME match. They cannot both be picked; the FW must come from elsewhere.
+  const bench = [
+    card('gk', 'Goalkeeper', 55, 'c', 'c', 'd'),
+    card('df-home', 'Defender', 70, 'a', 'a', 'b'),
+    card('fw-away', 'Forward', 69, 'b', 'a', 'b'),
+    card('md', 'Midfielder', 50, 'e', 'e', 'f'),
+    card('fw-other', 'Forward', 40, 'g', 'g', 'h'),
+    card('df-other', 'Defender', 45, 'i', 'i', 'j'),
+    card('md-away', 'Midfielder', 60, 'b', 'a', 'b'),
+  ];
+  const p = pickLineup(bench);
+  assert.equal(p.ok, true, p.reason);
+  const slugs = p.chosen.map((c) => c.slug);
+  assert.ok(slugs.includes('df-home'));
+  assert.ok(!slugs.includes('fw-away'), 'the away forward faces our defender');
+  assert.ok(!slugs.includes('md-away'), 'so does the away midfielder');
+  assert.ok(slugs.includes('fw-other'));
+  // Switched off, the old behaviour returns: the away midfielder (60) joins
+  // the home defender from the same match. (The away forward is then kept
+  // out only by the two-per-match cap, not by the side rule.)
+  const loose = pickLineup(bench, { oneSidePerMatch: false });
+  assert.ok(loose.chosen.map((c) => c.slug).includes('md-away'));
+});
+
+test('a locked lineup is still the live lineup', async () => {
+  const { liveLineupOf } = await import('../src/autopilot.js');
+  // Locked: updatable false, state READY - the five are in and scoring.
+  const locked = { myLineups: [
+    { id: 'now', aasmState: 'READY', updatable: false },
+    { id: 'old', aasmState: 'CANCELLED', updatable: false },
+  ] };
+  assert.equal(liveLineupOf(locked)?.id, 'now', 'locking must not make the bot forget its team');
+  // Editable: same answer.
+  assert.equal(liveLineupOf({ myLineups: [{ id: 'now', aasmState: 'READY', updatable: true }] })?.id, 'now');
+  // Only spent attempts: nothing live, so a fresh lineup is next.
+  assert.equal(liveLineupOf({ myLineups: [{ id: 'old', aasmState: 'CANCELLED', updatable: false }] }), null);
+  assert.equal(liveLineupOf({ myLineups: [] }), null);
+});

@@ -160,6 +160,9 @@ export async function journal(report) {
       .filter((l) => l.action === 'claimed' || l.action === 'restarted')
       .map((l) => ({ surface: l.surface, action: l.action, reason: l.reason })),
     essenceSpent: report.packs?.spent ?? 0,
+    // Lineups that reached a final state on this pass, with Sorare's scores,
+    // so the daily mail can show what each card made.
+    finished: (report.finishedLineups ?? []),
     // The balances as they stood at the end of this pass, so the daily mail can
     // say where things actually are rather than only what moved.
     essence: report.packs?.essenceAfter ?? report.packs?.essenceBefore ?? null,
@@ -232,6 +235,7 @@ export function digestData(entries) {
     .map((c) => (typeof c === 'string' ? { name: c, description: null } : c));
   return {
     passes: entries.length,
+    finished: [...new Map(entries.flatMap((e) => e.finished ?? []).map((l) => [l.lineupId, l])).values()],
     changes: entries.flatMap((e) => e.lineups.filter((l) => l.in?.length || l.out?.length)),
     claims: [...new Map(claimRows.map((c) => [c.name, c])).values()],
     rewards: entries.flatMap((e) => e.rewards ?? []),
@@ -460,6 +464,18 @@ export function digestHtml(date, entries) {
     </tr></table></td></tr>
 
   ${section(d.team?.surface ? `The team - ${d.team.surface}` : 'The team', teamCards(d.team))}
+  ${section('Results', d.finished.map((l) => {
+    const cells = l.players.map((p) => `<td width="20%" align="center" style="padding:6px 2px;border-top:1px solid ${C.line}">
+        <div style="font:600 11px/1.25 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:${C.ink};white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${p.captain ? '<span style="color:#e07b12">C</span> ' : ''}${esc(p.name)}</div>
+        <div style="font:800 15px/1.2 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:${(p.score ?? 0) >= 60 ? C.go : (p.score ?? 0) < 20 ? C.stop : C.ink}">${Math.round(p.score ?? 0)}</div></td>`).join('');
+    const verdict = l.collaborative
+      ? (l.cleared ? chip('squad cleared', C.go) : chip('squad short', C.stop))
+      : (l.cleared ? chip('cleared', C.go) : chip('missed', C.stop));
+    return `<div style="font:400 13px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:${C.ink};padding:8px 0 2px">
+        <b>${esc(l.surface)}</b> &nbsp;level ${l.level} &nbsp;${verdict}
+        <span style="float:right;font-weight:700">${Math.round(l.score)} / ${l.target}${l.collaborative && l.squadScore != null ? ` <span style="color:${C.dim};font-weight:500">(squad ${Math.round(l.squadScore)})</span>` : ''}</span></div>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse"><tr>${cells}</tr></table>`;
+  }).join(''))}
   ${section('Lineups', lineups || row(`<span style="color:${C.dim}">No changes today.</span>`))}
   ${section('Claimed', claims || row(`<span style="color:${C.dim}">Nothing was claimable.</span>`))}
   ${section('Received', received)}

@@ -82,7 +82,8 @@ export async function build() {
 
     surfaces.push({
       surface: b.surface,
-      entered: live ? { five: live.five, projected: live.projected } : null,
+      entered: live ? { five: live.five, projected: live.projected,
+        scoredSoFar: live.scoredSoFar ?? 0, played: live.played ?? 0, expectedFinal: live.expectedFinal ?? live.projected } : null,
       poolStrength: { strong, needed: 5 },
       // A squad target is the combined score of the top three lineups, so the
       // page must not read it as this lineup's gap.
@@ -155,6 +156,11 @@ export async function build() {
       cycleDone: !!st.lastPackCycle,
     },
     health: { failStreak: st.failStreak ?? 0 },
+    // Every lineup ever entered on both boards, with Sorare's own scores.
+    results: await (async () => {
+      try { const { allLineups } = await import('./lineups.js'); return await allLineups(); }
+      catch { return []; }
+    })(),
     gems: await (async () => {
       try { const { gemLedger } = await import('./gems.js'); const g = await gemLedger();
         return { balance: g.gems, level: g.level, ladder: g.ladder, collections: g.collections,

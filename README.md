@@ -168,6 +168,25 @@ contributes nothing and helps nobody.
 Sorare's own `collaborative` field reads FALSE on a SquadStep, so it cannot be
 used to tell them apart. The step's `__typename` is the honest signal.
 
+## Results
+
+The Results tab lists every lineup ever entered on both boards, newest first,
+with Sorare's own score for each card and the lineup against its target; on
+the squad board the squad's combined score sits beside it, since that is what
+the target is measured against. The daily mail carries the same for any
+lineup that finished that day. All of it is read live from the boards
+(`src/lineups.js`), never from anything the bot wrote down.
+
+## One side per match
+
+Two cards from the same match must be from the same side. A defender from one
+team and a forward from the other are betting against each other - the
+forward's goal is the defender's lost clean sheet - so at most one of them
+comes off. The picker takes the second card from another match instead.
+Replayed over 44 rounds the rule is neutral on realised points (268.1 against
+267.3 with sides mixed), so it costs nothing and removes a bet that cannot
+pay both ways.
+
 ## What the research found
 
 Every weight in the optimiser was measured against this account's own history -

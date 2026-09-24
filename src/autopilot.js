@@ -48,7 +48,21 @@ export async function dailyCycleId() {
 export const SPENT_LINEUP = new Set(['CANCELLED', 'FAILED', 'EXPIRED', 'SUCCESSFUL']);
 
 /** Shape version of the entered-lineup snapshot kept in state. */
-const SNAPSHOT_V = 3;
+const SNAPSHOT_V = 4;
+
+/**
+ * The lineup that is actually in the step, or null.
+ *
+ * A lineup is live from the moment it is entered until it reaches a final
+ * state. Locking does NOT end it: once the first kickoff passes, `updatable`
+ * turns false but the five are still in and still scoring. Requiring
+ * `updatable` here meant the bot forgot its own team the instant it locked,
+ * picked an alternative from the cards left over, and reported that instead -
+ * on the page, in the mail, and in the journal - while the real five played.
+ */
+export function liveLineupOf(step) {
+  return (step?.myLineups ?? []).find((l) => !SPENT_LINEUP.has(l.aasmState)) ?? null;
+}
 
 export const SPREAD = 56;
 
@@ -192,9 +206,41 @@ async function withStartRates(nodes) {
  *
  * @returns {{five: object[], projected: number|null}|null}
  */
+/**
+ * Once a card's match has kicked off the bench names its NEXT fixture, so the
+ * appearance's own game wins for opponent and kickoff wherever it is known.
+ */
+function settle(five) {
+  for (const c of five) {
+    const g = c.game ?? null;
+    if (g && c.teamSlug) {
+      const isHome = g.homeTeam?.slug === c.teamSlug;
+      c.opp = c.opponent = isHome ? g.awayTeam?.name : g.homeTeam?.name;
+      c.home = isHome;
+    }
+    if (g?.date) c.kickoff = g.date;
+    delete c.game;
+  }
+  return five;
+}
+
+/**
+ * What the lineup has made so far plus what the unplayed cards project: the
+ * honest running total while a step is in play. Sorare's per-card score
+ * already carries the card bonus; the captain's armband is on top of it.
+ */
+function liveTotal(five, capBonus) {
+  let scoredSoFar = 0, remaining = 0, played = 0;
+  for (const c of five) {
+    const cap = c.captain ? capBonus : 0;
+    if (c.actual != null) { scoredSoFar += c.actual * (1 + cap); played += 1; }
+    else if (c.exp != null) remaining += c.exp * (1 + cap);   // exp carries the card bonus; close enough for a running total
+  }
+  return { scoredSoFar: Number(scoredSoFar.toFixed(2)), played, expectedFinal: Number((scoredSoFar + remaining).toFixed(2)) };
+}
+
 export async function enteredTeam({ step, stepId, surface, lineup = null, options = {} }) {
-  const live = lineup ?? (step?.myLineups ?? []).find(
-    (l) => l.updatable && !SPENT_LINEUP.has(l.aasmState));
+  const live = lineup ?? liveLineupOf(step);
   const appearances = live?.taskAppearances ?? [];
   if (!appearances.length) return null;
 
@@ -203,7 +249,15 @@ export async function enteredTeam({ step, stepId, surface, lineup = null, option
 
   const five = appearances.map((a) => {
     const was = snapBy.get(a.anyPlayer?.slug) ?? {};
+    // The appearance's own match, not the player's next one.
+    const g = a.game ?? null;
+    const teamSlug = was.teamSlug ?? null;
+    const played = a.scoreStatus === 'FINAL' || (a.score ?? 0) > 0;
     return {
+      actual: played ? Number(a.score.toFixed(2)) : null,
+      scoreStatus: a.scoreStatus ?? null,
+      game: g,
+      teamSlug,
       name: a.anyPlayer?.displayName ?? a.anyPlayer?.slug,
       player: a.anyPlayer?.displayName ?? a.anyPlayer?.slug,   // the dashboard's name for it
       slug: a.anyPlayer?.slug,
@@ -236,7 +290,8 @@ export async function enteredTeam({ step, stepId, surface, lineup = null, option
   // A snapshot from an older shape is incomplete; fall through and re-score
   // rather than render a card with blanks on it.
   if (sameFive && snap?.v === SNAPSHOT_V && five.every((c) => c.average != null)) {
-    return { five, projected: snap.projected ?? null };
+    const capBonus = step?.engineConfiguration?.captain ?? CAPTAIN_BONUS;
+    return { five: settle(five), projected: snap.projected ?? null, ...liveTotal(five, capBonus) };
   }
 
   try {
@@ -248,7 +303,7 @@ export async function enteredTeam({ step, stepId, surface, lineup = null, option
     const scored = new Map(used
       .filter((n) => want.has(n.player?.slug))
       .map((n) => [n.player.slug, describe(n, opts)]));
-    if (scored.size !== five.length) return { five, projected: null };
+    if (scored.size !== five.length) return { five: settle(five), projected: null };
 
     let total = 0;
     for (const c of five) {
@@ -256,7 +311,7 @@ export async function enteredTeam({ step, stepId, surface, lineup = null, option
       c.exp = c.expected = d.expected;
       c.opp = c.opponent = d.opponent;
       c.home = d.home;
-      c.average = d.average; c.formL5 = d.formL5;
+      c.average = d.average; c.formL5 = d.formL5; c.teamSlug = c.teamSlug ?? d.teamSlug ?? null;
       c.intl = d.intl; c.oppRank = d.oppRank; c.ownRank = d.ownRank; c.oppFactor = d.oppFactor;
       c.pWin = d.pWin; c.pLose = d.pLose; c.marketFactor = d.marketFactor;
       c.kickoff = c.kickoff ?? d.kickoff;
@@ -266,9 +321,9 @@ export async function enteredTeam({ step, stepId, surface, lineup = null, option
     const capCard = cap ? scored.get(cap.slug) : null;
     const capBonus = step?.engineConfiguration?.captain ?? CAPTAIN_BONUS;
     if (capCard) total += (capCard.expected / bonusMultiplier(capCard.bonus)) * capBonus;
-    return { five, projected: Number(total.toFixed(2)) };
+    return { five: settle(five), projected: Number(total.toFixed(2)), ...liveTotal(five, capBonus) };
   } catch {
-    return { five, projected: null };            // names and art, no figures
+    return { five: settle(five), projected: null }; // names and art, no figures
   }
 }
 
@@ -393,8 +448,7 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
   // team got replaced by a 308 one. Fetching the used cards separately and
   // keeping only this lineup's own means the comparison is like for like,
   // without offering up cards spent on the other board.
-  const liveLineup = (step?.myLineups ?? []).find(
-    (l) => l.updatable && !SPENT_LINEUP.has(l.aasmState)) ?? null;
+  const liveLineup = liveLineupOf(step);
   const mine = new Set((liveLineup?.taskAppearances ?? [])
     .map((a) => a.anyPlayer?.slug).filter(Boolean));
 
@@ -440,7 +494,7 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
   // Sorare still marks updatable; when there is none, the next lineup is a new
   // one and gets no lineupId.
   const lineups = step?.myLineups ?? [];
-  const existing = lineups.find((l) => l.updatable && !SPENT_LINEUP.has(l.aasmState)) ?? null;
+  const existing = liveLineupOf(step);
   const spentAttempts = lineups.filter((l) => SPENT_LINEUP.has(l.aasmState)).length;
 
   // Before kickoff nears, Sorare publishes no starter odds. Picking on raw
@@ -495,6 +549,20 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
   const entered = await enteredTeam({ step, stepId, surface, lineup: existing, options });
   const inPlay = entered?.five ?? [];
   const enteredProjection = entered?.projected ?? null;
+
+  // Locked: the five are in and scoring, and nothing can change until the
+  // step resolves. Say so and stop - a pick against the leftover cards here
+  // is not a plan, it is a different team that was never entered.
+  if (existing && existing.updatable === false) {
+    return {
+      stepId, surface, target: step?.target, dead,
+      action: 'locked',
+      reason: 'Lineup is locked and playing - it can no longer be changed.',
+      inPlay, enteredProjection, collaborative,
+      lineup: picked.chosen, projected: enteredProjection ?? picked.projected,
+      current: inPlay.map((c) => c.name),
+    };
+  }
 
   const delta = diffLineup(existing?.taskAppearances ?? [], picked);
   const changed = delta.in.length > 0 || delta.out.length > 0 || !existing;
@@ -571,6 +639,7 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
             intl: !!c.intl, oppRank: c.oppRank ?? null, ownRank: c.ownRank ?? null,
             oppFactor: c.oppFactor ?? null,
             pWin: c.pWin ?? null, pLose: c.pLose ?? null, marketFactor: c.marketFactor ?? null,
+            teamSlug: c.teamSlug ?? null,
           })),
         },
       },
@@ -975,6 +1044,20 @@ export async function pass({ dryRun = false, options = {} } = {}) {
       report.packs = { stopped: err.message, opened: [] };
     }
   }
+
+  // Lineups that reached a final state since the last pass, with Sorare's
+  // scores, for the daily mail. Compared against state so each is reported
+  // exactly once.
+  try {
+    const { allLineups } = await import('./lineups.js');
+    const all = await allLineups();
+    const st = await readState();
+    const reported = new Set(st.reportedLineups ?? []);
+    report.finishedLineups = all.filter((l) => l.finished && !reported.has(l.lineupId));
+    if (!dryRun && report.finishedLineups.length) {
+      await writeState({ reportedLineups: [...reported, ...report.finishedLineups.map((l) => l.lineupId)].slice(-200) });
+    }
+  } catch (err) { report.finishedError = err.message; }
 
   // Record finished steps so projections can be checked against real scores.
   try {
