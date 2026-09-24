@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T23:50:32.129Z",
+  "generatedAt": "2026-09-24T23:55:55.001Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-25T16:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790283268651,
-    "reason": "last run 176m ago, next due in 4m (lock in 969m)"
+    "lastRunAt": 1790294147467,
+    "reason": "last run 0m ago, next due in 180m (lock in 964m)"
   },
   "packs": {
     "lastThreeStar": "Andrés Castrín",
@@ -19,6 +19,442 @@
   "health": {
     "failStreak": 0
   },
+  "results": [
+    {
+      "surface": "my set",
+      "level": 2,
+      "target": 360,
+      "stepState": "LINEUP_SET",
+      "collaborative": false,
+      "squadLineups": null,
+      "squadScore": null,
+      "lineupId": "Tasks::TaskLineup:383b0d37-0b5c-40b9-b4d2-80825834d0e2",
+      "state": "READY",
+      "score": 88.55,
+      "finished": false,
+      "cleared": false,
+      "players": [
+        {
+          "name": "Ionuț Radu",
+          "slug": "ionu-andrei-radu",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-09-25T18:45:00Z"
+        },
+        {
+          "name": "Maxim De Cuyper",
+          "slug": "maxim-de-cuyper",
+          "position": "Defender",
+          "captain": true,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-09-25T18:45:00Z"
+        },
+        {
+          "name": "James Garner",
+          "slug": "james-garner",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-09-26T18:45:00Z"
+        },
+        {
+          "name": "Álex Baena",
+          "slug": "alejandro-baena-rodriguez",
+          "position": "Forward",
+          "captain": false,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-09-26T18:45:00Z"
+        },
+        {
+          "name": "Rúben Dias",
+          "slug": "ruben-santos-gato-alves-dias",
+          "position": "Defender",
+          "captain": false,
+          "score": 88.56,
+          "status": "FINAL",
+          "kickoff": "2026-09-27T18:45:00Z"
+        }
+      ],
+      "scored": 1
+    },
+    {
+      "surface": "my set",
+      "level": 2,
+      "target": 360,
+      "stepState": "LINEUP_SET",
+      "collaborative": false,
+      "squadLineups": null,
+      "squadScore": null,
+      "lineupId": "Tasks::TaskLineup:ebc9a683-5ee5-4aec-bfec-a0faec353c04",
+      "state": "CANCELLED",
+      "score": 239.39,
+      "finished": true,
+      "cleared": false,
+      "players": [
+        {
+          "name": "Emil Audero",
+          "slug": "emil-audero-mulyadi",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 48.94,
+          "status": "FINAL",
+          "kickoff": "2026-10-10T12:00:00Z"
+        },
+        {
+          "name": "Rúben Dias",
+          "slug": "ruben-santos-gato-alves-dias",
+          "position": "Defender",
+          "captain": false,
+          "score": 0.46,
+          "status": "FINAL",
+          "kickoff": "2026-09-27T18:45:00Z"
+        },
+        {
+          "name": "Cristian Cásseres Jr.",
+          "slug": "cristian-sleiker-casseres-yepes",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 77.62,
+          "status": "FINAL",
+          "kickoff": "2026-10-10T18:45:00Z"
+        },
+        {
+          "name": "Iñigo Vicente",
+          "slug": "inigo-vicente-elorduy",
+          "position": "Forward",
+          "captain": false,
+          "score": 43.06,
+          "status": "FINAL",
+          "kickoff": "2026-10-11T19:00:00Z"
+        },
+        {
+          "name": "Matthias Ginter",
+          "slug": "matthias-ginter",
+          "position": "Defender",
+          "captain": true,
+          "score": 69.31,
+          "status": "FINAL",
+          "kickoff": "2026-10-11T15:30:00Z"
+        }
+      ],
+      "scored": 5
+    },
+    {
+      "surface": "my set",
+      "level": 1,
+      "target": 300,
+      "stepState": "CLAIMED",
+      "collaborative": false,
+      "squadLineups": null,
+      "squadScore": null,
+      "lineupId": "Tasks::TaskLineup:75bbd9e3-91a1-47d7-8f66-1f51f3afc299",
+      "state": "SUCCESSFUL",
+      "score": 314.09,
+      "finished": true,
+      "cleared": true,
+      "players": [
+        {
+          "name": "Odysseas",
+          "slug": "odisseas-vlachodimos",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 75.29,
+          "status": "FINAL",
+          "kickoff": "2026-09-27T18:45:00Z"
+        },
+        {
+          "name": "Andrés Castrín",
+          "slug": "andres-castrin",
+          "position": "Defender",
+          "captain": false,
+          "score": 76.82,
+          "status": "FINAL",
+          "kickoff": "2026-10-12T19:00:00Z"
+        },
+        {
+          "name": "Lucien Agoumé",
+          "slug": "lucien-agoume",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 60.56,
+          "status": "FINAL",
+          "kickoff": "2026-10-12T19:00:00Z"
+        },
+        {
+          "name": "Pierre-Emerick Aubameyang",
+          "slug": "pierre-emerick-aubameyang",
+          "position": "Forward",
+          "captain": true,
+          "score": 62.22,
+          "status": "FINAL",
+          "kickoff": "2026-10-11T14:15:00Z"
+        },
+        {
+          "name": "Iñigo Vicente",
+          "slug": "inigo-vicente-elorduy",
+          "position": "Forward",
+          "captain": false,
+          "score": 39.21,
+          "status": "FINAL",
+          "kickoff": "2026-10-11T19:00:00Z"
+        }
+      ],
+      "scored": 5
+    },
+    {
+      "surface": "team set (Loadshift)",
+      "level": 1,
+      "target": 980,
+      "stepState": "CLAIMED",
+      "collaborative": true,
+      "squadLineups": 4,
+      "squadScore": 980.5192,
+      "lineupId": "Tasks::TaskLineup:d951676d-4ff0-478c-98f9-57cf4571f93f",
+      "state": "SUCCESSFUL",
+      "score": 287.73,
+      "finished": true,
+      "cleared": true,
+      "players": [
+        {
+          "name": "Odysseas",
+          "slug": "odisseas-vlachodimos",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 0,
+          "status": "FINAL",
+          "kickoff": "2026-09-27T18:45:00Z"
+        },
+        {
+          "name": "Rúben Dias",
+          "slug": "ruben-santos-gato-alves-dias",
+          "position": "Defender",
+          "captain": true,
+          "score": 132.4,
+          "status": "FINAL",
+          "kickoff": "2026-09-27T18:45:00Z"
+        },
+        {
+          "name": "Thomas Jørgensen",
+          "slug": "thomas-jorgensen",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 36.01,
+          "status": "FINAL",
+          "kickoff": "2026-09-27T16:00:00Z"
+        },
+        {
+          "name": "Patrick Dorgu",
+          "slug": "patrick-chinazaekpere-dorgu",
+          "position": "Forward",
+          "captain": false,
+          "score": 57.53,
+          "status": "FINAL",
+          "kickoff": "2026-09-27T16:00:00Z"
+        },
+        {
+          "name": "Renato Veiga",
+          "slug": "renato-de-palma-veiga",
+          "position": "Defender",
+          "captain": false,
+          "score": 61.8,
+          "status": "FINAL",
+          "kickoff": "2026-09-27T18:45:00Z"
+        }
+      ],
+      "scored": 5
+    },
+    {
+      "surface": "my set",
+      "level": 0,
+      "target": 260,
+      "stepState": "CLAIMED",
+      "collaborative": false,
+      "squadLineups": null,
+      "squadScore": null,
+      "lineupId": "Tasks::TaskLineup:99c5ed8c-cd48-4b78-8ea5-362602b5b82d",
+      "state": "SUCCESSFUL",
+      "score": 393.34,
+      "finished": true,
+      "cleared": true,
+      "players": [
+        {
+          "name": "Julen Agirrezabala",
+          "slug": "julen-agirrezabala-astulez",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 63.76,
+          "status": "FINAL",
+          "kickoff": "2026-10-11T19:00:00Z"
+        },
+        {
+          "name": "Andrés Castrín",
+          "slug": "andres-castrin",
+          "position": "Defender",
+          "captain": false,
+          "score": 103,
+          "status": "FINAL",
+          "kickoff": "2026-10-12T19:00:00Z"
+        },
+        {
+          "name": "Cristian Cásseres Jr.",
+          "slug": "cristian-sleiker-casseres-yepes",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 102,
+          "status": "FINAL",
+          "kickoff": "2026-10-10T18:45:00Z"
+        },
+        {
+          "name": "Lucas Boyé",
+          "slug": "lucas-ariel-boye",
+          "position": "Forward",
+          "captain": true,
+          "score": 45.9,
+          "status": "FINAL",
+          "kickoff": "2026-10-10T14:15:00Z"
+        },
+        {
+          "name": "Pierre-Emerick Aubameyang",
+          "slug": "pierre-emerick-aubameyang",
+          "position": "Forward",
+          "captain": false,
+          "score": 78.69,
+          "status": "FINAL",
+          "kickoff": "2026-10-11T14:15:00Z"
+        }
+      ],
+      "scored": 5
+    },
+    {
+      "surface": "my set",
+      "level": 0,
+      "target": 260,
+      "stepState": "CLAIMED",
+      "collaborative": false,
+      "squadLineups": null,
+      "squadScore": null,
+      "lineupId": "Tasks::TaskLineup:b4e25113-c236-4f30-8c19-9cb563ac490e",
+      "state": "CANCELLED",
+      "score": 219.21,
+      "finished": true,
+      "cleared": false,
+      "players": [
+        {
+          "name": "Mio Backhaus",
+          "slug": "mio-backhaus",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 68.54,
+          "status": "FINAL",
+          "kickoff": "2026-10-11T15:30:00Z"
+        },
+        {
+          "name": "Nahuel Tenaglia",
+          "slug": "nahuel-tenaglia",
+          "position": "Defender",
+          "captain": false,
+          "score": 36.96,
+          "status": "FINAL",
+          "kickoff": "2026-10-10T14:15:00Z"
+        },
+        {
+          "name": "Maximilian Eggestein",
+          "slug": "maximilian-eggestein",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 73.54,
+          "status": "FINAL",
+          "kickoff": "2026-10-11T15:30:00Z"
+        },
+        {
+          "name": "Chupe",
+          "slug": "carlos-ruiz-rubio",
+          "position": "Forward",
+          "captain": false,
+          "score": 40.17,
+          "status": "FINAL",
+          "kickoff": "2026-10-09T19:00:00Z"
+        },
+        {
+          "name": "Florian Lejeune",
+          "slug": "florian-lejeune",
+          "position": "Defender",
+          "captain": true,
+          "score": 0,
+          "status": "FINAL",
+          "kickoff": "2026-10-10T12:00:00Z"
+        }
+      ],
+      "scored": 5
+    },
+    {
+      "surface": "team set (Loadshift)",
+      "level": 0,
+      "target": 700,
+      "stepState": "CLAIMED",
+      "collaborative": true,
+      "squadLineups": 5,
+      "squadScore": 919.7636,
+      "lineupId": "Tasks::TaskLineup:1e930dd9-7e23-4285-8d31-b2ddd4a04160",
+      "state": "SUCCESSFUL",
+      "score": 216.21,
+      "finished": true,
+      "cleared": true,
+      "players": [
+        {
+          "name": "James Trafford",
+          "slug": "james-trafford",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 74.26,
+          "status": "FINAL",
+          "kickoff": "2026-09-26T18:45:00Z"
+        },
+        {
+          "name": "Rúben Dias",
+          "slug": "ruben-santos-gato-alves-dias",
+          "position": "Defender",
+          "captain": true,
+          "score": 0.69,
+          "status": "FINAL",
+          "kickoff": "2026-09-27T18:45:00Z"
+        },
+        {
+          "name": "Adam Wharton",
+          "slug": "adam-wharton",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 45.9,
+          "status": "FINAL",
+          "kickoff": "2026-10-11T13:00:00Z"
+        },
+        {
+          "name": "Pierre-Emerick Aubameyang",
+          "slug": "pierre-emerick-aubameyang",
+          "position": "Forward",
+          "captain": false,
+          "score": 39.21,
+          "status": "FINAL",
+          "kickoff": "2026-10-11T14:15:00Z"
+        },
+        {
+          "name": "Cristian Romero",
+          "slug": "cristian-gabriel-romero",
+          "position": "Defender",
+          "captain": false,
+          "score": 56.16,
+          "status": "FINAL",
+          "kickoff": "2026-10-10T14:15:00Z"
+        }
+      ],
+      "scored": 5
+    }
+  ],
   "gems": {
     "balance": 186,
     "level": 2,
@@ -107,7 +543,141 @@
   "surfaces": [
     {
       "surface": "my set",
-      "entered": null,
+      "entered": {
+        "five": [
+          {
+            "name": "Ionuț Radu",
+            "player": "Ionuț Radu",
+            "slug": "ionu-andrei-radu",
+            "pos": "GK",
+            "position": "GK",
+            "pic": "https://assets.sorare.com/cardsamplepicture/da67d3d8-a319-4a6d-a18c-4408d31321d6/picture/tinified-351affefa6ba8f2bec4f184a8e8b7941.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/da67d3d8-a319-4a6d-a18c-4408d31321d6/picture/tinified-351affefa6ba8f2bec4f184a8e8b7941.png",
+            "captain": false,
+            "exp": 56.13,
+            "expected": 56.13,
+            "opp": "Sweden",
+            "opponent": "Sweden",
+            "home": false,
+            "average": 53,
+            "formL5": 57,
+            "intl": true,
+            "pWin": null,
+            "pLose": null,
+            "marketFactor": null,
+            "oppRank": 37,
+            "ownRank": 52,
+            "oppFactor": 0.972,
+            "locked": true,
+            "kickoff": "2026-09-25T18:45:00Z"
+          },
+          {
+            "name": "Maxim De Cuyper",
+            "player": "Maxim De Cuyper",
+            "slug": "maxim-de-cuyper",
+            "pos": "DF",
+            "position": "DF",
+            "pic": "https://assets.sorare.com/cardsamplepicture/91f935bd-5e32-4847-84aa-f740d44c0b77/picture/tinified-16504a398794b5385dbcd2debae138b3.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/91f935bd-5e32-4847-84aa-f740d44c0b77/picture/tinified-16504a398794b5385dbcd2debae138b3.png",
+            "captain": true,
+            "exp": 62.33,
+            "expected": 62.33,
+            "opp": "Italy",
+            "opponent": "Italy",
+            "home": false,
+            "average": 56,
+            "formL5": 71,
+            "intl": true,
+            "pWin": null,
+            "pLose": null,
+            "marketFactor": null,
+            "oppRank": 15,
+            "ownRank": 8,
+            "oppFactor": 1.029,
+            "locked": true,
+            "kickoff": "2026-09-25T18:45:00Z"
+          },
+          {
+            "name": "James Garner",
+            "player": "James Garner",
+            "slug": "james-garner",
+            "pos": "MD",
+            "position": "MD",
+            "pic": "https://assets.sorare.com/cardsamplepicture/8e01df69-aec7-4c02-8ec5-5945b8f017ad/picture/tinified-b1c14e546df4980ec4cb18086f500906.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/8e01df69-aec7-4c02-8ec5-5945b8f017ad/picture/tinified-b1c14e546df4980ec4cb18086f500906.png",
+            "captain": false,
+            "exp": 53.1,
+            "expected": 53.1,
+            "opp": "Spain",
+            "opponent": "Spain",
+            "home": true,
+            "average": 59,
+            "formL5": 54,
+            "intl": true,
+            "pWin": null,
+            "pLose": null,
+            "marketFactor": null,
+            "oppRank": 1,
+            "ownRank": 4,
+            "oppFactor": 0.985,
+            "locked": true,
+            "kickoff": "2026-09-26T18:45:00Z"
+          },
+          {
+            "name": "Álex Baena",
+            "player": "Álex Baena",
+            "slug": "alejandro-baena-rodriguez",
+            "pos": "FW",
+            "position": "FW",
+            "pic": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
+            "captain": false,
+            "exp": 50.22,
+            "expected": 50.22,
+            "opp": "England",
+            "opponent": "England",
+            "home": false,
+            "average": 57,
+            "formL5": 54,
+            "intl": true,
+            "pWin": null,
+            "pLose": null,
+            "marketFactor": null,
+            "oppRank": 4,
+            "ownRank": 1,
+            "oppFactor": 1,
+            "locked": true,
+            "kickoff": "2026-09-26T18:45:00Z"
+          },
+          {
+            "name": "Rúben Dias",
+            "player": "Rúben Dias",
+            "slug": "ruben-santos-gato-alves-dias",
+            "pos": "DF",
+            "position": "DF",
+            "pic": "https://assets.sorare.com/cardsamplepicture/51ec3fca-50ff-4975-a5a2-1a83b5c833f0/picture/tinified-7a37453263600d888145da54b161fb7d.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/51ec3fca-50ff-4975-a5a2-1a83b5c833f0/picture/tinified-7a37453263600d888145da54b161fb7d.png",
+            "captain": false,
+            "exp": 55.93,
+            "expected": 55.93,
+            "opp": "Norway",
+            "opponent": "Norway",
+            "home": false,
+            "average": 55,
+            "formL5": 50,
+            "intl": true,
+            "pWin": null,
+            "pLose": null,
+            "marketFactor": null,
+            "oppRank": 19,
+            "ownRank": 7,
+            "oppFactor": 1.055,
+            "locked": true,
+            "kickoff": "2026-09-27T18:45:00Z"
+          }
+        ],
+        "projected": 308.26
+      },
       "poolStrength": {
         "strong": 1,
         "needed": 5
@@ -201,7 +771,7 @@
         "captain": "thomas-jorgensen",
         "captainPoints": 27.43,
         "withinReach": false,
-        "enteredProjected": null,
+        "enteredProjected": 308.26,
         "five": [
           {
             "id": "ComposeTeamBenchCard:12b90d6e-87c1-4d30-8ee9-9fb44d5a772d",
@@ -221,6 +791,7 @@
             "gameId": "Game:4abe5f40-7307-4943-b382-3031309bf8a3",
             "kickoff": "2026-09-26T18:45:00Z",
             "team": "Spain",
+            "teamSlug": "spain",
             "opponent": "England",
             "opponentCode": "ENG",
             "code": "ESP",
@@ -259,6 +830,7 @@
             "gameId": "Game:8404e26d-3cc2-4b0c-bcf7-d4b01abaace8",
             "kickoff": "2026-09-25T18:45:00Z",
             "team": "Romania",
+            "teamSlug": "romania",
             "opponent": "Sweden",
             "opponentCode": "SWE",
             "code": "ROU",
@@ -297,6 +869,7 @@
             "gameId": "Game:ccc2f03d-2571-4e62-8dc3-11ee4e0f517e",
             "kickoff": "2026-09-27T16:00:00Z",
             "team": "Denmark",
+            "teamSlug": "denmark",
             "opponent": "Wales",
             "opponentCode": "WAL",
             "code": "DEN",
@@ -335,6 +908,7 @@
             "gameId": "Game:8582372c-e9b9-4653-a38f-66555708bb9d",
             "kickoff": "2026-09-27T18:45:00Z",
             "team": "Portugal",
+            "teamSlug": "portugal",
             "opponent": "Norway",
             "opponentCode": "NOR",
             "code": "POR",
@@ -373,6 +947,7 @@
             "gameId": "Game:4abe5f40-7307-4943-b382-3031309bf8a3",
             "kickoff": "2026-09-26T18:45:00Z",
             "team": "Spain",
+            "teamSlug": "spain",
             "opponent": "England",
             "opponentCode": "ENG",
             "code": "ESP",
@@ -414,6 +989,7 @@
           "gameId": "Game:4abe5f40-7307-4943-b382-3031309bf8a3",
           "kickoff": "2026-09-26T18:45:00Z",
           "team": "Spain",
+          "teamSlug": "spain",
           "opponent": "England",
           "opponentCode": "ENG",
           "code": "ESP",
@@ -452,6 +1028,7 @@
           "gameId": "Game:8404e26d-3cc2-4b0c-bcf7-d4b01abaace8",
           "kickoff": "2026-09-25T18:45:00Z",
           "team": "Romania",
+          "teamSlug": "romania",
           "opponent": "Sweden",
           "opponentCode": "SWE",
           "code": "ROU",
@@ -490,6 +1067,7 @@
           "gameId": "Game:ccc2f03d-2571-4e62-8dc3-11ee4e0f517e",
           "kickoff": "2026-09-27T16:00:00Z",
           "team": "Denmark",
+          "teamSlug": "denmark",
           "opponent": "Wales",
           "opponentCode": "WAL",
           "code": "DEN",
@@ -528,6 +1106,7 @@
           "gameId": "Game:8582372c-e9b9-4653-a38f-66555708bb9d",
           "kickoff": "2026-09-27T18:45:00Z",
           "team": "Portugal",
+          "teamSlug": "portugal",
           "opponent": "Norway",
           "opponentCode": "NOR",
           "code": "POR",
@@ -566,6 +1145,7 @@
           "gameId": "Game:4abe5f40-7307-4943-b382-3031309bf8a3",
           "kickoff": "2026-09-26T18:45:00Z",
           "team": "Spain",
+          "teamSlug": "spain",
           "opponent": "England",
           "opponentCode": "ENG",
           "code": "ESP",
