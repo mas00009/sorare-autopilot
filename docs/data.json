@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T14:58:08.279Z",
+  "generatedAt": "2026-09-25T15:03:38.042Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-25T16:00:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1790348280699,
-    "reason": "last run 0m ago, next due in 5m (lock in 62m)"
+    "lastRunAt": 1790348610552,
+    "reason": "last run 0m ago, next due in 5m (lock in 56m)"
   },
   "packs": {
     "lastThreeStar": "Andrés Castrín",
@@ -1198,7 +1198,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 0
+        "scoreSoFar": 113.05
       },
       "level": 2,
       "lives": null,
@@ -1605,7 +1605,7 @@
           "starterPct": null,
           "startRate": 0.6,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 49,
           "picture": "https://assets.sorare.com/cardsamplepicture/c750a0dc-a117-4e5d-8bb7-530234c97bb4/picture/tinified-a02be62598cd909395736173b5a66ca9.png",
