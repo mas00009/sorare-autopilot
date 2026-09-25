@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T20:41:57.638Z",
+  "generatedAt": "2026-09-25T20:47:23.574Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-26T13:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790368909938,
-    "reason": "last run 0m ago, next due in 180m (lock in 978m)"
+    "lastRunAt": 1790369235984,
+    "reason": "last run 0m ago, next due in 180m (lock in 973m)"
   },
   "packs": {
     "lastThreeStar": "Andrés Castrín",
@@ -40,7 +40,7 @@
           "position": "Goalkeeper",
           "captain": false,
           "score": 34.44,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-09-28T18:45:00Z"
         },
         {
@@ -49,7 +49,7 @@
           "position": "Defender",
           "captain": true,
           "score": 87.43,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-09-28T18:45:00Z"
         },
         {
@@ -547,7 +547,7 @@
         "five": [
           {
             "actual": 34.44,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "romania",
             "name": "Ionuț Radu",
             "player": "Ionuț Radu",
@@ -576,7 +576,7 @@
           },
           {
             "actual": 87.43,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "belgium",
             "name": "Maxim De Cuyper",
             "player": "Maxim De Cuyper",
@@ -1198,7 +1198,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 1081.6298
+        "scoreSoFar": 1088.5712
       },
       "level": 2,
       "lives": null,
