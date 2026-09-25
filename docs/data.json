@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T17:54:23.701Z",
+  "generatedAt": "2026-09-25T17:59:54.104Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-25T18:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1790358854982,
-    "reason": "last run 0m ago, next due in 5m (lock in 51m)"
+    "lastRunAt": 1790359186415,
+    "reason": "last run 0m ago, next due in 5m (lock in 45m)"
   },
   "packs": {
     "lastThreeStar": "Andrés Castrín",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:383b0d37-0b5c-40b9-b4d2-80825834d0e2",
       "state": "READY",
-      "score": 130.55,
+      "score": 183.75,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,8 +48,8 @@
           "slug": "maxim-de-cuyper",
           "position": "Defender",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 53.2,
+          "status": "REVIEWING",
           "kickoff": "2026-09-25T18:45:00Z"
         },
         {
@@ -80,7 +80,7 @@
           "kickoff": "2026-09-27T18:45:00Z"
         }
       ],
-      "scored": 2
+      "scored": 3
     },
     {
       "surface": "my set",
@@ -575,8 +575,8 @@
             "kickoff": "2026-09-25T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 53.2,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "belgium",
             "name": "Maxim De Cuyper",
             "player": "Maxim De Cuyper",
@@ -692,9 +692,9 @@
           }
         ],
         "projected": 311.99,
-        "scoredSoFar": 130.56,
-        "played": 2,
-        "expectedFinal": 327.38
+        "scoredSoFar": 210.36,
+        "played": 3,
+        "expectedFinal": 313.68
       },
       "poolStrength": {
         "strong": 1,
@@ -1198,7 +1198,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 652.884
+        "scoreSoFar": 726.026
       },
       "level": 2,
       "lives": null,
@@ -1293,7 +1293,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 71,
           "picture": "https://assets.sorare.com/cardsamplepicture/91f935bd-5e32-4847-84aa-f740d44c0b77/picture/tinified-16504a398794b5385dbcd2debae138b3.png",
@@ -1371,7 +1371,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 55,
           "picture": "https://assets.sorare.com/cardsamplepicture/14a419d8-5d77-4f75-8258-2910a2f906ea/picture/tinified-d8e982bf30beb7a61f444bb61800cd53.png",
