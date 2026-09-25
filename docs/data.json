@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T19:16:07.498Z",
+  "generatedAt": "2026-09-25T19:21:30.092Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-09-25T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790363760339,
+    "lastRunAt": 1790364081354,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:383b0d37-0b5c-40b9-b4d2-80825834d0e2",
       "state": "READY",
-      "score": 197.03,
+      "score": 197.88,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,7 +48,7 @@
           "slug": "maxim-de-cuyper",
           "position": "Defender",
           "captain": true,
-          "score": 68.4,
+          "score": 69.25,
           "status": "REVIEWING",
           "kickoff": "2026-09-28T18:45:00Z"
         },
@@ -529,8 +529,8 @@
   "odds": {
     "configured": true,
     "month": "2026-09",
-    "used": 1,
-    "remaining": 499
+    "used": 4,
+    "remaining": 496
   },
   "control": {
     "paused": false,
@@ -575,7 +575,7 @@
             "kickoff": "2026-09-25T18:45:00Z"
           },
           {
-            "actual": 68.4,
+            "actual": 69.25,
             "scoreStatus": "REVIEWING",
             "teamSlug": "belgium",
             "name": "Maxim De Cuyper",
@@ -692,9 +692,9 @@
           }
         ],
         "projected": 305.9,
-        "scoredSoFar": 231.24,
+        "scoredSoFar": 232.51,
         "played": 3,
-        "expectedFinal": 334.56
+        "expectedFinal": 335.83
       },
       "poolStrength": {
         "strong": 1,
@@ -1185,7 +1185,7 @@
           "blocked": null
         }
       ],
-      "projected": 276.1
+      "projected": 282.9
     },
     {
       "surface": "team set (Loadshift)",
@@ -1198,7 +1198,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 819.651
+        "scoreSoFar": 832.2524
       },
       "level": 2,
       "lives": null,
