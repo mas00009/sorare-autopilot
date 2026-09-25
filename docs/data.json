@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T22:30:24.755Z",
+  "generatedAt": "2026-09-25T22:35:49.970Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-26T13:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790375417842,
-    "reason": "last run 0m ago, next due in 180m (lock in 870m)"
+    "lastRunAt": 1790375743017,
+    "reason": "last run 0m ago, next due in 180m (lock in 864m)"
   },
   "packs": {
     "lastThreeStar": "Andrés Castrín",
@@ -1196,14 +1196,14 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 5,
+        "lineupsIn": 0,
         "needed": 3,
-        "scoreSoFar": 923.8618
+        "scoreSoFar": 0
       },
-      "level": 2,
+      "level": 3,
       "lives": null,
       "totalLevels": 5,
-      "levelsDone": 2,
+      "levelsDone": 3,
       "ladder": [
         {
           "level": 0,
@@ -1217,12 +1217,12 @@
         },
         {
           "level": 2,
-          "state": "FAILED",
+          "state": "CLAIMED",
           "target": 1060
         },
         {
           "level": 3,
-          "state": "LOCKED",
+          "state": "PRE_MATCHDAY_LOCKED",
           "target": 1140
         },
         {
@@ -1239,8 +1239,8 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "FAILED",
-      "target": 1060,
+      "state": "PRE_MATCHDAY_LOCKED",
+      "target": 1140,
       "current": [],
       "plan": null,
       "candidates": [],
