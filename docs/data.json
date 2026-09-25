@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T20:36:30.487Z",
+  "generatedAt": "2026-09-25T20:41:57.638Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 186
   },
   "schedule": {
-    "nextLock": "2026-09-25T18:45:00Z",
+    "nextLock": "2026-09-26T13:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790368583160,
-    "reason": "last run 0m ago, next due in 180m"
+    "lastRunAt": 1790368909938,
+    "reason": "last run 0m ago, next due in 180m (lock in 978m)"
   },
   "packs": {
     "lastThreeStar": "Andrés Castrín",
@@ -24,13 +24,13 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:383b0d37-0b5c-40b9-b4d2-80825834d0e2",
       "state": "READY",
-      "score": 212.24,
+      "score": 210.42,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "ionu-andrei-radu",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 35.04,
+          "score": 34.44,
           "status": "REVIEWING",
           "kickoff": "2026-09-28T18:45:00Z"
         },
@@ -48,7 +48,7 @@
           "slug": "maxim-de-cuyper",
           "position": "Defender",
           "captain": true,
-          "score": 88.65,
+          "score": 87.43,
           "status": "REVIEWING",
           "kickoff": "2026-09-28T18:45:00Z"
         },
@@ -86,7 +86,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -461,7 +461,7 @@
     "ladder": [
       {
         "level": 2,
-        "state": "LIVE",
+        "state": "LINEUP_SET",
         "target": 360,
         "gems": 10,
         "usd": 0,
@@ -546,7 +546,7 @@
       "entered": {
         "five": [
           {
-            "actual": 35.04,
+            "actual": 34.44,
             "scoreStatus": "REVIEWING",
             "teamSlug": "romania",
             "name": "Ionuț Radu",
@@ -575,7 +575,7 @@
             "kickoff": "2026-09-25T18:45:00Z"
           },
           {
-            "actual": 88.65,
+            "actual": 87.43,
             "scoreStatus": "REVIEWING",
             "teamSlug": "belgium",
             "name": "Maxim De Cuyper",
@@ -692,9 +692,9 @@
           }
         ],
         "projected": 305.9,
-        "scoredSoFar": 256.58,
+        "scoredSoFar": 254.15,
         "played": 3,
-        "expectedFinal": 359.9
+        "expectedFinal": 357.47
       },
       "poolStrength": {
         "strong": 1,
@@ -722,7 +722,7 @@
         },
         {
           "level": 2,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 360
         },
         {
@@ -746,7 +746,7 @@
           "kind": "InGameCurrency"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 360,
       "current": [
         {
@@ -1198,7 +1198,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 1093.7484
+        "scoreSoFar": 1081.6298
       },
       "level": 2,
       "lives": null,
