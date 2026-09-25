@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T17:43:22.634Z",
+  "generatedAt": "2026-09-25T17:48:52.316Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-25T18:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1790358194989,
-    "reason": "last run 0m ago, next due in 5m (lock in 62m)"
+    "lastRunAt": 1790358524295,
+    "reason": "last run 0m ago, next due in 5m (lock in 56m)"
   },
   "packs": {
     "lastThreeStar": "Andrés Castrín",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:383b0d37-0b5c-40b9-b4d2-80825834d0e2",
       "state": "READY",
-      "score": 88.55,
+      "score": 130.55,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,8 +39,8 @@
           "slug": "ionu-andrei-radu",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 42,
+          "status": "REVIEWING",
           "kickoff": "2026-09-25T18:45:00Z"
         },
         {
@@ -80,7 +80,7 @@
           "kickoff": "2026-09-27T18:45:00Z"
         }
       ],
-      "scored": 1
+      "scored": 2
     },
     {
       "surface": "my set",
@@ -546,8 +546,8 @@
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 42,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "romania",
             "name": "Ionuț Radu",
             "player": "Ionuț Radu",
@@ -692,9 +692,9 @@
           }
         ],
         "projected": 311.99,
-        "scoredSoFar": 88.56,
-        "played": 1,
-        "expectedFinal": 341.5
+        "scoredSoFar": 130.56,
+        "played": 2,
+        "expectedFinal": 327.38
       },
       "poolStrength": {
         "strong": 1,
@@ -879,7 +879,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 57,
             "picture": "https://assets.sorare.com/cardsamplepicture/79f36680-211d-45ad-87e7-41bce11c6812/picture/tinified-ef109a9b20017a9f3874cd75a81c4b50.png",
@@ -1077,7 +1077,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 57,
           "picture": "https://assets.sorare.com/cardsamplepicture/79f36680-211d-45ad-87e7-41bce11c6812/picture/tinified-ef109a9b20017a9f3874cd75a81c4b50.png",
@@ -1198,7 +1198,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 227.392
+        "scoreSoFar": 593.383
       },
       "level": 2,
       "lives": null,
@@ -1254,7 +1254,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 57,
           "picture": "https://assets.sorare.com/cardsamplepicture/da67d3d8-a319-4a6d-a18c-4408d31321d6/picture/tinified-351affefa6ba8f2bec4f184a8e8b7941.png",
@@ -1332,7 +1332,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 57,
           "picture": "https://assets.sorare.com/cardsamplepicture/79f36680-211d-45ad-87e7-41bce11c6812/picture/tinified-ef109a9b20017a9f3874cd75a81c4b50.png",
@@ -1410,7 +1410,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 65,
           "picture": "https://assets.sorare.com/cardsamplepicture/6457f23e-4d79-4b4d-81b3-08631c1aae13/picture/tinified-30817ab9961b8df4af37142044e31341.png",
@@ -1449,7 +1449,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 46,
           "picture": "https://assets.sorare.com/cardsamplepicture/f8f748b7-9349-4768-8946-73ccf9d42895/picture/tinified-90a28f2981bdc154ab660bb2b482c4e8.png",
@@ -1488,7 +1488,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 42,
           "picture": "https://assets.sorare.com/cardsamplepicture/17e6c169-6407-43c4-af91-f50fd1f2a79e/picture/tinified-c12f4473ee6fb7babdd59fb754d02b7a.png",
@@ -1527,7 +1527,7 @@
           "starterPct": null,
           "startRate": 0.5,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 52,
           "picture": "https://assets.sorare.com/cardsamplepicture/c44dea97-7af4-434c-9678-1757454a82c5/picture/tinified-05dd74bf927a918eba426e1583f03be6.png",
@@ -1566,7 +1566,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 46,
           "picture": "https://assets.sorare.com/cardsamplepicture/bb2370ad-f6f3-4859-af2f-bbdd9810330b/picture/tinified-227e327349fc51d540c9efa0251af3b2.png",
@@ -1644,7 +1644,7 @@
           "starterPct": null,
           "startRate": 0.5,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 40,
           "picture": "https://assets.sorare.com/cardsamplepicture/f3c87d8e-fbd8-4ad9-991a-0e84e113e782/picture/tinified-fc37ea56002e6d3f4c8e43300eced6a1.png",
@@ -1683,7 +1683,7 @@
           "starterPct": null,
           "startRate": 0.3,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 67,
           "picture": "https://assets.sorare.com/cardsamplepicture/1aef490b-d04b-4617-8c9f-c9a8b34ecb1f/picture/tinified-943ac4ebaac18ff2f4ff0c7e31819f8a.png",
