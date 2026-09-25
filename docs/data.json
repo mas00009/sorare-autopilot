@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T18:54:42.104Z",
+  "generatedAt": "2026-09-25T19:00:03.434Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-09-25T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790362474980,
+    "lastRunAt": 1790362796474,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:383b0d37-0b5c-40b9-b4d2-80825834d0e2",
       "state": "READY",
-      "score": 188.55,
+      "score": 182.36,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "ionu-andrei-radu",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 46.8,
+          "score": 46.32,
           "status": "REVIEWING",
           "kickoff": "2026-09-28T18:45:00Z"
         },
@@ -48,7 +48,7 @@
           "slug": "maxim-de-cuyper",
           "position": "Defender",
           "captain": true,
-          "score": 53.2,
+          "score": 47.48,
           "status": "REVIEWING",
           "kickoff": "2026-09-28T18:45:00Z"
         },
@@ -546,7 +546,7 @@
       "entered": {
         "five": [
           {
-            "actual": 46.8,
+            "actual": 46.32,
             "scoreStatus": "REVIEWING",
             "teamSlug": "romania",
             "name": "Ionuț Radu",
@@ -575,7 +575,7 @@
             "kickoff": "2026-09-25T18:45:00Z"
           },
           {
-            "actual": 53.2,
+            "actual": 47.48,
             "scoreStatus": "REVIEWING",
             "teamSlug": "belgium",
             "name": "Maxim De Cuyper",
@@ -692,9 +692,9 @@
           }
         ],
         "projected": 305.9,
-        "scoredSoFar": 215.16,
+        "scoredSoFar": 206.1,
         "played": 3,
-        "expectedFinal": 318.48
+        "expectedFinal": 309.42
       },
       "poolStrength": {
         "strong": 1,
@@ -1198,7 +1198,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 636.6796
+        "scoreSoFar": 641.5904
       },
       "level": 2,
       "lives": null,
