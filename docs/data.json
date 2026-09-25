@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T19:10:45.051Z",
+  "generatedAt": "2026-09-25T19:16:07.498Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-09-25T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790363438499,
+    "lastRunAt": 1790363760339,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:383b0d37-0b5c-40b9-b4d2-80825834d0e2",
       "state": "READY",
-      "score": 198.19,
+      "score": 197.03,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,7 +48,7 @@
           "slug": "maxim-de-cuyper",
           "position": "Defender",
           "captain": true,
-          "score": 69.56,
+          "score": 68.4,
           "status": "REVIEWING",
           "kickoff": "2026-09-28T18:45:00Z"
         },
@@ -575,7 +575,7 @@
             "kickoff": "2026-09-25T18:45:00Z"
           },
           {
-            "actual": 69.56,
+            "actual": 68.4,
             "scoreStatus": "REVIEWING",
             "teamSlug": "belgium",
             "name": "Maxim De Cuyper",
@@ -692,9 +692,9 @@
           }
         ],
         "projected": 305.9,
-        "scoredSoFar": 232.98,
+        "scoredSoFar": 231.24,
         "played": 3,
-        "expectedFinal": 336.3
+        "expectedFinal": 334.56
       },
       "poolStrength": {
         "strong": 1,
@@ -1198,7 +1198,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 827.832
+        "scoreSoFar": 819.651
       },
       "level": 2,
       "lives": null,
