@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T18:49:20.555Z",
+  "generatedAt": "2026-09-25T18:54:42.104Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-09-25T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790362153074,
+    "lastRunAt": 1790362474980,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -1198,7 +1198,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 634.738
+        "scoreSoFar": 636.6796
       },
       "level": 2,
       "lives": null,
@@ -1243,87 +1243,8 @@
       "target": 1060,
       "current": [],
       "plan": null,
-      "candidates": [
-        {
-          "id": "ComposeTeamBenchCard:3ee67de1-0d21-4e30-92ae-57f776f6a91f",
-          "player": "Milos Kerkez",
-          "slug": "milos-kerkez",
-          "position": "DF",
-          "average": 43,
-          "bonus": 1.02,
-          "starterPct": null,
-          "startRate": 0.7,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 46,
-          "picture": "https://assets.sorare.com/cardsamplepicture/bb2370ad-f6f3-4859-af2f-bbdd9810330b/picture/tinified-227e327349fc51d540c9efa0251af3b2.png",
-          "rarity": "common",
-          "gameId": "Game:f83a2cb8-daec-429a-8515-2680bde74b33",
-          "kickoff": "2026-09-28T18:45:00Z",
-          "team": "Hungary",
-          "teamSlug": "hungary",
-          "opponent": "Northern Ireland",
-          "opponentCode": "NIR",
-          "code": "HUN",
-          "rank": null,
-          "opponentRank": null,
-          "home": false,
-          "competition": "UEFA Nations League",
-          "intl": true,
-          "oppRank": 70,
-          "ownRank": 39,
-          "oppFactor": 1.056,
-          "mismatch": false,
-          "pWin": null,
-          "pLose": null,
-          "oddsBooks": null,
-          "marketFactor": null,
-          "lockedAt": null,
-          "expected": 36.92,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:cec693a8-efa2-4d5a-84d8-46c2fad36d4c",
-          "player": "Alex Tóth",
-          "slug": "alex-toth",
-          "position": "MD",
-          "average": 38,
-          "bonus": 1.02,
-          "starterPct": null,
-          "startRate": 0.3,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 34,
-          "picture": "https://assets.sorare.com/cardsamplepicture/e1f562ff-9d3c-4ba0-a9c6-d60adae26a73/picture/tinified-1673aa9fc733427500619df1e11725e9.png",
-          "rarity": "common",
-          "gameId": "Game:f83a2cb8-daec-429a-8515-2680bde74b33",
-          "kickoff": "2026-09-28T18:45:00Z",
-          "team": "Hungary",
-          "teamSlug": "hungary",
-          "opponent": "Northern Ireland",
-          "opponentCode": "NIR",
-          "code": "HUN",
-          "rank": null,
-          "opponentRank": null,
-          "home": false,
-          "competition": "UEFA Nations League",
-          "intl": true,
-          "oppRank": 70,
-          "ownRank": 39,
-          "oppFactor": 1.028,
-          "mismatch": false,
-          "pWin": null,
-          "pLose": null,
-          "oddsBooks": null,
-          "marketFactor": null,
-          "lockedAt": null,
-          "expected": 13.97,
-          "blocked": null
-        }
-      ],
-      "projected": 50.9
+      "candidates": [],
+      "projected": 0
     }
   ],
   "fixtures": [
@@ -1426,32 +1347,6 @@
       "bestStarter": null,
       "surfaces": [
         "my set"
-      ]
-    },
-    {
-      "kickoff": "2026-09-28T18:45:00Z",
-      "competition": "UEFA Nations League",
-      "team": "Hungary",
-      "code": "HUN",
-      "rank": null,
-      "opponent": "Northern Ireland",
-      "opponentCode": "NIR",
-      "opponentRank": null,
-      "intl": true,
-      "ownRank": 39,
-      "oppRank": 70,
-      "pWin": null,
-      "pLose": null,
-      "oppFactor": 1.056,
-      "home": false,
-      "players": [
-        "Milos Kerkez",
-        "Alex Tóth"
-      ],
-      "points": 50.9,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
       ]
     }
   ]
