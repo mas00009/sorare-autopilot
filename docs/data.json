@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T07:08:15.056Z",
+  "generatedAt": "2026-09-25T07:13:47.374Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-25T16:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1790320087295,
-    "reason": "last run 0m ago, next due in 60m (lock in 532m)"
+    "lastRunAt": 1790320420206,
+    "reason": "last run 0m ago, next due in 60m (lock in 526m)"
   },
   "packs": {
     "lastThreeStar": "Andrés Castrín",
@@ -782,9 +782,9 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 297.23,
+        "projected": 297.77,
         "lock": "2026-09-25T18:45:00Z",
-        "shortfall": 62.8,
+        "shortfall": 62.2,
         "tradedPointsForTime": 0,
         "captain": "thomas-jorgensen",
         "captainPoints": 27.43,
@@ -797,7 +797,7 @@
             "slug": "aymeric-laporte",
             "position": "DF",
             "average": 61,
-            "bonus": 1.04,
+            "bonus": 1.05,
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
@@ -827,7 +827,7 @@
             "oddsBooks": null,
             "marketFactor": null,
             "lockedAt": null,
-            "expected": 57.05,
+            "expected": 57.59,
             "blocked": null
           },
           {
@@ -995,7 +995,7 @@
           "slug": "aymeric-laporte",
           "position": "DF",
           "average": 61,
-          "bonus": 1.04,
+          "bonus": 1.05,
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
@@ -1025,7 +1025,7 @@
           "oddsBooks": null,
           "marketFactor": null,
           "lockedAt": null,
-          "expected": 57.05,
+          "expected": 57.59,
           "blocked": null
         },
         {
@@ -1185,7 +1185,7 @@
           "blocked": null
         }
       ],
-      "projected": 276.5
+      "projected": 277.1
     },
     {
       "surface": "team set (Loadshift)",
@@ -1919,7 +1919,7 @@
         "Aymeric Laporte",
         "Oyarzabal"
       ],
-      "points": 102.3,
+      "points": 102.8,
       "bestStarter": null,
       "surfaces": [
         "my set"
