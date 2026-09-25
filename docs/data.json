@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T07:13:47.374Z",
+  "generatedAt": "2026-09-25T07:19:20.687Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-25T16:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1790320420206,
-    "reason": "last run 0m ago, next due in 60m (lock in 526m)"
+    "lastRunAt": 1790320753290,
+    "reason": "last run 0m ago, next due in 60m (lock in 521m)"
   },
   "packs": {
     "lastThreeStar": "Andrés Castrín",
@@ -496,9 +496,9 @@
       {
         "title": "Collect Spanish players in LaLiga",
         "gems": 15,
-        "progress": 179,
+        "progress": 180,
         "target": 191,
-        "remaining": 12,
+        "remaining": 11,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": []
