@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T15:58:45.293Z",
+  "generatedAt": "2026-09-25T16:04:16.835Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 186
   },
   "schedule": {
-    "nextLock": "2026-09-25T16:00:00Z",
-    "cadenceMin": 180,
-    "lastRunAt": 1790351917417,
-    "reason": "last run 0m ago, next due in 180m (lock in 1m)"
+    "nextLock": "2026-09-25T18:45:00Z",
+    "cadenceMin": 15,
+    "lastRunAt": 1790352249142,
+    "reason": "last run 0m ago, next due in 15m (lock in 161m)"
   },
   "packs": {
     "lastThreeStar": "Andrés Castrín",
@@ -1596,45 +1596,6 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:c6e2f899-a308-4466-a14e-93cc11dee22f",
-          "player": "Daniel Ballard",
-          "slug": "daniel-ballard",
-          "position": "DF",
-          "average": 38,
-          "bonus": 1.07,
-          "starterPct": null,
-          "startRate": 0.6,
-          "oddsKnown": false,
-          "onGameSheet": true,
-          "reliability": null,
-          "formL5": 49,
-          "picture": "https://assets.sorare.com/cardsamplepicture/c750a0dc-a117-4e5d-8bb7-530234c97bb4/picture/tinified-a02be62598cd909395736173b5a66ca9.png",
-          "rarity": "common",
-          "gameId": "Game:2fe05bca-b7d3-4fe4-a09e-380ea921b989",
-          "kickoff": "2026-09-25T16:00:00Z",
-          "team": "Northern Ireland",
-          "teamSlug": "northern-ireland",
-          "opponent": "Georgia",
-          "opponentCode": "GEO",
-          "code": "NIR",
-          "rank": null,
-          "opponentRank": null,
-          "home": false,
-          "competition": "UEFA Nations League",
-          "intl": true,
-          "oppRank": 72,
-          "ownRank": 70,
-          "oppFactor": 1.004,
-          "mismatch": false,
-          "pWin": null,
-          "pLose": null,
-          "oddsBooks": null,
-          "marketFactor": null,
-          "lockedAt": null,
-          "expected": 29.67,
-          "blocked": null
-        },
-        {
           "id": "ComposeTeamBenchCard:69957f18-2b74-4385-b400-85708a6f5ec5",
           "player": "Jules Koundé",
           "slug": "jules-kounde",
@@ -1711,37 +1672,51 @@
           "lockedAt": null,
           "expected": 25.29,
           "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:a12c7beb-0f38-4c78-82e9-6b85ef916d01",
+          "player": "Carl Starfelt",
+          "slug": "carl-starfelt",
+          "position": "DF",
+          "average": 49,
+          "bonus": 1.05,
+          "starterPct": null,
+          "startRate": 0.3,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 67,
+          "picture": "https://assets.sorare.com/cardsamplepicture/1aef490b-d04b-4617-8c9f-c9a8b34ecb1f/picture/tinified-943ac4ebaac18ff2f4ff0c7e31819f8a.png",
+          "rarity": "common",
+          "gameId": "Game:8404e26d-3cc2-4b0c-bcf7-d4b01abaace8",
+          "kickoff": "2026-09-25T18:45:00Z",
+          "team": "Sweden",
+          "teamSlug": "sweden",
+          "opponent": "Romania",
+          "opponentCode": "ROU",
+          "code": "SWE",
+          "rank": null,
+          "opponentRank": null,
+          "home": true,
+          "competition": "UEFA Nations League",
+          "intl": true,
+          "oppRank": 52,
+          "ownRank": 37,
+          "oppFactor": 1.028,
+          "mismatch": false,
+          "pWin": null,
+          "pLose": null,
+          "oddsBooks": null,
+          "marketFactor": null,
+          "lockedAt": null,
+          "expected": 23.16,
+          "blocked": null
         }
       ],
       "projected": 280.6
     }
   ],
   "fixtures": [
-    {
-      "kickoff": "2026-09-25T16:00:00Z",
-      "competition": "UEFA Nations League",
-      "team": "Northern Ireland",
-      "code": "NIR",
-      "rank": null,
-      "opponent": "Georgia",
-      "opponentCode": "GEO",
-      "opponentRank": null,
-      "intl": true,
-      "ownRank": 70,
-      "oppRank": 72,
-      "pWin": null,
-      "pLose": null,
-      "oppFactor": 1.004,
-      "home": false,
-      "players": [
-        "Daniel Ballard"
-      ],
-      "points": 29.7,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
     {
       "kickoff": "2026-09-25T18:45:00Z",
       "competition": "UEFA Nations League",
@@ -1816,9 +1791,10 @@
       "players": [
         "Daniel Svensson",
         "Victor Lindelöf",
-        "Viktor Gyökeres"
+        "Viktor Gyökeres",
+        "Carl Starfelt"
       ],
-      "points": 112.2,
+      "points": 135.4,
       "bestStarter": null,
       "surfaces": [
         "team set (Loadshift)"
