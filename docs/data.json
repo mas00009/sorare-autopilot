@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T18:10:04.359Z",
+  "generatedAt": "2026-09-26T18:15:53.634Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-26T18:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1790446196671,
-    "reason": "last run 0m ago, next due in 5m (lock in 35m)"
+    "lastRunAt": 1790446545933,
+    "reason": "last run 0m ago, next due in 5m (lock in 29m)"
   },
   "packs": {
     "lastThreeStar": "Álex Baena",
@@ -1889,7 +1889,7 @@
           "starterPct": null,
           "startRate": 0.6,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 45,
           "picture": "https://assets.sorare.com/cardsamplepicture/2063a879-81ce-4476-bab3-7b9be475460f/picture/tinified-94af46c8543836548db89535fb5abd3b.png",
