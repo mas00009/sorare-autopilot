@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T19:13:27.439Z",
+  "generatedAt": "2026-09-26T19:19:07.476Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-09-26T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790449999955,
+    "lastRunAt": 1790450340662,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 802.9156,
+      "squadScore": 830.007,
       "lineupId": "Tasks::TaskLineup:5c2c89f0-3106-45f7-b1cf-32dee2b095e0",
       "state": "READY",
-      "score": 281.36,
+      "score": 291.13,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "stole-dimitrievski",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 43.79,
+          "score": 49.77,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -48,7 +48,7 @@
           "slug": "aymeric-laporte",
           "position": "Defender",
           "captain": true,
-          "score": 57.51,
+          "score": 59.64,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -57,7 +57,7 @@
           "slug": "daniel-olmo-carvajal",
           "position": "Midfielder",
           "captain": false,
-          "score": 46.14,
+          "score": 47.79,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -677,8 +677,8 @@
             "pic": "https://assets.sorare.com/cardsamplepicture/8e01df69-aec7-4c02-8ec5-5945b8f017ad/picture/tinified-b1c14e546df4980ec4cb18086f500906.png",
             "picture": "https://assets.sorare.com/cardsamplepicture/8e01df69-aec7-4c02-8ec5-5945b8f017ad/picture/tinified-b1c14e546df4980ec4cb18086f500906.png",
             "captain": false,
-            "exp": 58.19,
-            "expected": 58.19,
+            "exp": 51.97,
+            "expected": 51.97,
             "opp": "Spain",
             "opponent": "Spain",
             "home": true,
@@ -706,8 +706,8 @@
             "pic": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
             "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
             "captain": false,
-            "exp": 50.22,
-            "expected": 50.22,
+            "exp": 44.44,
+            "expected": 44.44,
             "opp": "England",
             "opponent": "England",
             "home": false,
@@ -753,10 +753,10 @@
             "kickoff": "2026-09-24T18:45:00Z"
           }
         ],
-        "projected": 310.99,
+        "projected": 298.99,
         "scoredSoFar": 254.15,
         "played": 3,
-        "expectedFinal": 362.56
+        "expectedFinal": 350.56
       },
       "poolStrength": {
         "strong": 2,
@@ -851,7 +851,7 @@
         "captain": "aymeric-laporte",
         "captainPoints": 29.56,
         "withinReach": true,
-        "enteredProjected": 310.99,
+        "enteredProjected": 298.99,
         "five": [
           {
             "id": "ComposeTeamBenchCard:12b90d6e-87c1-4d30-8ee9-9fb44d5a772d",
@@ -1254,7 +1254,7 @@
       "entered": {
         "five": [
           {
-            "actual": 43.79,
+            "actual": 49.77,
             "scoreStatus": "REVIEWING",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
@@ -1283,7 +1283,7 @@
             "kickoff": "2026-09-26T18:45:00Z"
           },
           {
-            "actual": 57.51,
+            "actual": 59.64,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Aymeric Laporte",
@@ -1312,7 +1312,7 @@
             "kickoff": "2026-09-26T18:45:00Z"
           },
           {
-            "actual": 46.14,
+            "actual": 47.79,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Dani Olmo",
@@ -1400,9 +1400,9 @@
           }
         ],
         "projected": 233.54,
-        "scoredSoFar": 310.13,
+        "scoredSoFar": 320.96,
         "played": 5,
-        "expectedFinal": 310.13
+        "expectedFinal": 320.96
       },
       "poolStrength": {
         "strong": 0,
@@ -1412,7 +1412,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 802.9156
+        "scoreSoFar": 830.007
       },
       "level": 3,
       "lives": null,
