@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T11:58:26.905Z",
+  "generatedAt": "2026-09-26T12:04:19.781Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-26T13:00:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1790423899380,
-    "reason": "last run 0m ago, next due in 5m (lock in 62m)"
+    "lastRunAt": 1790424252499,
+    "reason": "last run 0m ago, next due in 5m (lock in 56m)"
   },
   "packs": {
     "lastThreeStar": "Álex Baena",
@@ -27,10 +27,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 0,
+      "squadScore": 35.7,
       "lineupId": "Tasks::TaskLineup:5c2c89f0-3106-45f7-b1cf-32dee2b095e0",
       "state": "READY",
-      "score": 0,
+      "score": 35.7,
       "finished": false,
       "cleared": false,
       "players": [
@@ -75,12 +75,12 @@
           "slug": "jaka-bijol",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 35.7,
+          "status": "REVIEWING",
           "kickoff": "2026-09-26T13:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 1
     },
     {
       "surface": "my set",
@@ -1370,8 +1370,8 @@
             "kickoff": "2026-09-26T16:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 35.7,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "slovenia",
             "name": "Jaka Bijol",
             "player": "Jaka Bijol",
@@ -1400,9 +1400,9 @@
           }
         ],
         "projected": 233.54,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 234.91
+        "scoredSoFar": 35.7,
+        "played": 1,
+        "expectedFinal": 232.05
       },
       "poolStrength": {
         "strong": 0,
@@ -1412,7 +1412,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 0
+        "scoreSoFar": 35.7
       },
       "level": 3,
       "lives": null,
