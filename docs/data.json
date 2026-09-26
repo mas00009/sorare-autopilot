@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T17:40:52.673Z",
+  "generatedAt": "2026-09-26T17:46:42.189Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-26T18:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1790444444158,
-    "reason": "last run 0m ago, next due in 5m (lock in 64m)"
+    "lastRunAt": 1790444793849,
+    "reason": "last run 0m ago, next due in 5m (lock in 58m)"
   },
   "packs": {
     "lastThreeStar": "Álex Baena",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 326.4904,
+      "squadScore": 695.6004,
       "lineupId": "Tasks::TaskLineup:5c2c89f0-3106-45f7-b1cf-32dee2b095e0",
       "state": "READY",
-      "score": 134.45,
+      "score": 260.66,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,8 +39,8 @@
           "slug": "stole-dimitrievski",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-09-26T18:45:00Z"
         },
         {
@@ -48,8 +48,8 @@
           "slug": "aymeric-laporte",
           "position": "Defender",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 54.25,
+          "status": "REVIEWING",
           "kickoff": "2026-09-26T18:45:00Z"
         },
         {
@@ -57,8 +57,8 @@
           "slug": "daniel-olmo-carvajal",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-09-26T18:45:00Z"
         },
         {
@@ -66,7 +66,7 @@
           "slug": "orri-steinn-oskarsson",
           "position": "Forward",
           "captain": false,
-          "score": 42.84,
+          "score": 42,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -80,7 +80,7 @@
           "kickoff": "2026-09-29T18:45:00Z"
         }
       ],
-      "scored": 2
+      "scored": 5
     },
     {
       "surface": "my set",
@@ -941,7 +941,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 53,
             "picture": "https://assets.sorare.com/cardsamplepicture/2e0f0c68-9798-48c3-a1fe-e35b06ff458d/picture/tinified-f73a11ebd48693396a69f9a118fe327a.png",
@@ -1139,7 +1139,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 53,
           "picture": "https://assets.sorare.com/cardsamplepicture/2e0f0c68-9798-48c3-a1fe-e35b06ff458d/picture/tinified-f73a11ebd48693396a69f9a118fe327a.png",
@@ -1254,8 +1254,8 @@
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
             "player": "Stole Dimitrievski",
@@ -1283,8 +1283,8 @@
             "kickoff": "2026-09-26T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 54.25,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Aymeric Laporte",
             "player": "Aymeric Laporte",
@@ -1312,8 +1312,8 @@
             "kickoff": "2026-09-26T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Dani Olmo",
             "player": "Dani Olmo",
@@ -1341,7 +1341,7 @@
             "kickoff": "2026-09-26T18:45:00Z"
           },
           {
-            "actual": 42.84,
+            "actual": 42,
             "scoreStatus": "REVIEWING",
             "teamSlug": "iceland",
             "name": "Orri Óskarsson",
@@ -1400,9 +1400,9 @@
           }
         ],
         "projected": 233.54,
-        "scoredSoFar": 134.46,
-        "played": 2,
-        "expectedFinal": 304.15
+        "scoredSoFar": 287.8,
+        "played": 5,
+        "expectedFinal": 287.8
       },
       "poolStrength": {
         "strong": 0,
@@ -1412,7 +1412,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 326.4904
+        "scoreSoFar": 695.6004
       },
       "level": 3,
       "lives": null,
@@ -1499,7 +1499,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 54,
           "picture": "https://assets.sorare.com/cardsamplepicture/8e01df69-aec7-4c02-8ec5-5945b8f017ad/picture/tinified-b1c14e546df4980ec4cb18086f500906.png",
@@ -1538,7 +1538,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 54,
           "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
@@ -1577,7 +1577,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 64,
           "picture": "https://assets.sorare.com/cardsamplepicture/418ce897-50f2-4892-b85d-9828d1928be6/picture/tinified-0a6111eb5e1033485f2f18709c5b83e8.png",
@@ -1616,7 +1616,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 39,
           "picture": "https://assets.sorare.com/cardsamplepicture/86c1e3b7-cdca-466b-a6e1-e56cf452fc76/picture/tinified-3e6dbdaec3d7427cb7eeebbe25f7a249.png",
@@ -1655,7 +1655,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 42,
           "picture": "https://assets.sorare.com/cardsamplepicture/29470820-1e49-4736-8dbe-8b21c3f4d214/picture/tinified-c7105426f3ab1ccdf9a472c02dbf05d5.png",
@@ -1694,7 +1694,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 39,
           "picture": "https://assets.sorare.com/cardsamplepicture/fddb79c0-9d3a-45af-9d78-879fe5c84822/picture/tinified-39e9e5fcf53c00d4a524f829b7ddc0bc.png",
@@ -1733,7 +1733,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 44,
           "picture": "https://assets.sorare.com/cardsamplepicture/a27bc2c8-2943-4639-95b3-cf6abedb429b/picture/tinified-cb56cd6b5650a52dc42c4ac5348f0320.png",
@@ -1772,7 +1772,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 39,
           "picture": "https://assets.sorare.com/cardsamplepicture/108306a1-a01a-46a9-ab6a-cbee13e699f2/picture/tinified-1f234d64d3a376de0cc444e45951aabc.png",
@@ -1811,7 +1811,7 @@
           "starterPct": null,
           "startRate": 0.5,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 61,
           "picture": "https://assets.sorare.com/cardsamplepicture/03a5cbf9-1ce5-4f9d-8a41-442c008abee3/picture/tinified-b37f7ccb93f8fa5aeba4979bb6f13779.png",
@@ -1850,7 +1850,7 @@
           "starterPct": null,
           "startRate": 0.4,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 50,
           "picture": "https://assets.sorare.com/cardsamplepicture/ee9b17c6-4e53-4e3d-a536-ca7527c795e6/picture/tinified-3d6b0e83fca9106d82b9a679c47acf5d.png",
@@ -1928,7 +1928,7 @@
           "starterPct": null,
           "startRate": 0.3,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 48,
           "picture": "https://assets.sorare.com/cardsamplepicture/4908072b-2a7c-4270-a08e-3f431d8c5593/picture/tinified-fc32a5df6c1f43908cd3bc2b6cf3558a.png",
