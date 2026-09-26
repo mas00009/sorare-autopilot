@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T19:36:05.308Z",
+  "generatedAt": "2026-09-26T19:41:44.792Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-09-26T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790451357687,
+    "lastRunAt": 1790451696829,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -1283,7 +1283,7 @@
             "kickoff": "2026-09-26T18:45:00Z"
           },
           {
-            "actual": 52.11,
+            "actual": 45.91,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Aymeric Laporte",
@@ -1400,9 +1400,9 @@
           }
         ],
         "projected": 233.54,
-        "scoredSoFar": 309.26,
+        "scoredSoFar": 299.97,
         "played": 5,
-        "expectedFinal": 309.26
+        "expectedFinal": 299.97
       },
       "poolStrength": {
         "strong": 0,
@@ -1412,7 +1412,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 885.4422
+        "scoreSoFar": 881.4094
       },
       "level": 3,
       "lives": null,
