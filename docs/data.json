@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T16:02:15.864Z",
+  "generatedAt": "2026-09-26T16:08:05.083Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-26T18:45:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1790438528156,
-    "reason": "last run 0m ago, next due in 15m (lock in 163m)"
+    "lastRunAt": 1790438876117,
+    "reason": "last run 0m ago, next due in 15m (lock in 157m)"
   },
   "packs": {
     "lastThreeStar": "Álex Baena",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 219.2264,
+      "squadScore": 220.0554,
       "lineupId": "Tasks::TaskLineup:5c2c89f0-3106-45f7-b1cf-32dee2b095e0",
       "state": "READY",
-      "score": 128.57,
+      "score": 128.89,
       "finished": false,
       "cleared": false,
       "players": [
@@ -66,7 +66,7 @@
           "slug": "orri-steinn-oskarsson",
           "position": "Forward",
           "captain": false,
-          "score": 36.96,
+          "score": 37.28,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -1341,7 +1341,7 @@
             "kickoff": "2026-09-26T18:45:00Z"
           },
           {
-            "actual": 36.96,
+            "actual": 37.28,
             "scoreStatus": "REVIEWING",
             "teamSlug": "iceland",
             "name": "Orri Óskarsson",
@@ -1400,9 +1400,9 @@
           }
         ],
         "projected": 233.54,
-        "scoredSoFar": 128.58,
+        "scoredSoFar": 128.9,
         "played": 2,
-        "expectedFinal": 298.27
+        "expectedFinal": 298.6
       },
       "poolStrength": {
         "strong": 0,
@@ -1412,7 +1412,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 219.2264
+        "scoreSoFar": 221.8154
       },
       "level": 3,
       "lives": null,
