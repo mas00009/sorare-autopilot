@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T14:46:39.925Z",
+  "generatedAt": "2026-09-26T14:52:25.351Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-26T18:45:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1790433992169,
-    "reason": "last run 0m ago, next due in 60m (lock in 238m)"
+    "lastRunAt": 1790434337081,
+    "reason": "last run 0m ago, next due in 60m (lock in 233m)"
   },
   "packs": {
     "lastThreeStar": "Álex Baena",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 89.0052,
+      "squadScore": 89.5152,
       "lineupId": "Tasks::TaskLineup:5c2c89f0-3106-45f7-b1cf-32dee2b095e0",
       "state": "READY",
-      "score": 89,
+      "score": 89.51,
       "finished": false,
       "cleared": false,
       "players": [
@@ -75,7 +75,7 @@
           "slug": "jaka-bijol",
           "position": "Defender",
           "captain": false,
-          "score": 89.01,
+          "score": 89.52,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         }
@@ -1370,7 +1370,7 @@
             "kickoff": "2026-09-26T16:00:00Z"
           },
           {
-            "actual": 89.01,
+            "actual": 89.52,
             "scoreStatus": "REVIEWING",
             "teamSlug": "slovenia",
             "name": "Jaka Bijol",
@@ -1400,9 +1400,9 @@
           }
         ],
         "projected": 233.54,
-        "scoredSoFar": 89.01,
+        "scoredSoFar": 89.52,
         "played": 1,
-        "expectedFinal": 285.36
+        "expectedFinal": 285.87
       },
       "poolStrength": {
         "strong": 0,
@@ -1412,7 +1412,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 89.0052
+        "scoreSoFar": 89.5152
       },
       "level": 3,
       "lives": null,
