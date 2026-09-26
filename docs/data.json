@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T19:58:37.357Z",
+  "generatedAt": "2026-09-26T20:04:18.722Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-09-26T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790452709849,
+    "lastRunAt": 1790453050678,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 927.3106,
+      "squadScore": 947.3738,
       "lineupId": "Tasks::TaskLineup:5c2c89f0-3106-45f7-b1cf-32dee2b095e0",
       "state": "READY",
-      "score": 325.76,
+      "score": 324.52,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "stole-dimitrievski",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 51.77,
+          "score": 51.66,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -57,7 +57,7 @@
           "slug": "daniel-olmo-carvajal",
           "position": "Midfielder",
           "captain": false,
-          "score": 47.07,
+          "score": 45.94,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -92,7 +92,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:383b0d37-0b5c-40b9-b4d2-80825834d0e2",
       "state": "READY",
-      "score": 210.42,
+      "score": 246.93,
       "finished": false,
       "cleared": false,
       "players": [
@@ -128,7 +128,7 @@
           "slug": "alejandro-baena-rodriguez",
           "position": "Forward",
           "captain": false,
-          "score": 0,
+          "score": 36.5,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -142,7 +142,7 @@
           "kickoff": "2026-09-27T18:45:00Z"
         }
       ],
-      "scored": 3
+      "scored": 4
     },
     {
       "surface": "my set",
@@ -695,7 +695,7 @@
             "kickoff": "2026-09-26T18:45:00Z"
           },
           {
-            "actual": null,
+            "actual": 36.5,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Álex Baena",
@@ -706,8 +706,8 @@
             "pic": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
             "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
             "captain": false,
-            "exp": 44.44,
-            "expected": 44.44,
+            "exp": 46.46,
+            "expected": 46.46,
             "opp": "England",
             "opponent": "England",
             "home": false,
@@ -753,10 +753,10 @@
             "kickoff": "2026-09-24T18:45:00Z"
           }
         ],
-        "projected": 298.99,
-        "scoredSoFar": 254.15,
-        "played": 3,
-        "expectedFinal": 350.56
+        "projected": 301.01,
+        "scoredSoFar": 290.64,
+        "played": 4,
+        "expectedFinal": 342.62
       },
       "poolStrength": {
         "strong": 3,
@@ -851,7 +851,7 @@
         "captain": "cristian-sleiker-casseres-yepes",
         "captainPoints": 37.19,
         "withinReach": true,
-        "enteredProjected": 298.99,
+        "enteredProjected": 301.01,
         "five": [
           {
             "id": "ComposeTeamBenchCard:6f868d5a-36ed-4efd-b8fe-fd80e46ce31a",
@@ -1254,7 +1254,7 @@
       "entered": {
         "five": [
           {
-            "actual": 51.77,
+            "actual": 51.66,
             "scoreStatus": "REVIEWING",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
@@ -1312,7 +1312,7 @@
             "kickoff": "2026-09-26T18:45:00Z"
           },
           {
-            "actual": 47.07,
+            "actual": 45.94,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Dani Olmo",
@@ -1400,9 +1400,9 @@
           }
         ],
         "projected": 233.54,
-        "scoredSoFar": 372.28,
+        "scoredSoFar": 371.04,
         "played": 5,
-        "expectedFinal": 372.28
+        "expectedFinal": 371.04
       },
       "poolStrength": {
         "strong": 0,
@@ -1412,7 +1412,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 927.3106
+        "scoreSoFar": 947.3738
       },
       "level": 3,
       "lives": null,
