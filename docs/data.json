@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T20:38:17.082Z",
+  "generatedAt": "2026-09-26T20:44:00.787Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 186
   },
   "schedule": {
-    "nextLock": "2026-09-26T18:45:00Z",
+    "nextLock": "2026-09-27T16:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790455089630,
-    "reason": "last run 0m ago, next due in 180m"
+    "lastRunAt": 1790455433491,
+    "reason": "last run 0m ago, next due in 180m (lock in 1156m)"
   },
   "packs": {
     "lastThreeStar": "Álex Baena",
@@ -24,13 +24,13 @@
       "surface": "team set (Loadshift)",
       "level": 3,
       "target": 1140,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 1073.9892,
+      "squadScore": 1085.2296,
       "lineupId": "Tasks::TaskLineup:5c2c89f0-3106-45f7-b1cf-32dee2b095e0",
       "state": "READY",
-      "score": 365.97,
+      "score": 367.65,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "stole-dimitrievski",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 53.45,
+          "score": 55.13,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -86,13 +86,13 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:383b0d37-0b5c-40b9-b4d2-80825834d0e2",
       "state": "READY",
-      "score": 332.68,
+      "score": 331.22,
       "finished": false,
       "cleared": false,
       "players": [
@@ -119,7 +119,7 @@
           "slug": "james-garner",
           "position": "Midfielder",
           "captain": false,
-          "score": 34.37,
+          "score": 34.48,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -128,7 +128,7 @@
           "slug": "alejandro-baena-rodriguez",
           "position": "Forward",
           "captain": false,
-          "score": 87.88,
+          "score": 86.32,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -148,7 +148,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -523,7 +523,7 @@
     "ladder": [
       {
         "level": 2,
-        "state": "LIVE",
+        "state": "LINEUP_SET",
         "target": 360,
         "gems": 10,
         "usd": 0,
@@ -666,7 +666,7 @@
             "kickoff": "2026-09-25T18:45:00Z"
           },
           {
-            "actual": 34.37,
+            "actual": 34.48,
             "scoreStatus": "REVIEWING",
             "teamSlug": "england",
             "name": "James Garner",
@@ -695,7 +695,7 @@
             "kickoff": "2026-09-26T18:45:00Z"
           },
           {
-            "actual": 87.88,
+            "actual": 86.32,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Álex Baena",
@@ -754,9 +754,9 @@
           }
         ],
         "projected": 303.19,
-        "scoredSoFar": 376.4,
+        "scoredSoFar": 374.94,
         "played": 5,
-        "expectedFinal": 376.4
+        "expectedFinal": 374.94
       },
       "poolStrength": {
         "strong": 3,
@@ -784,7 +784,7 @@
         },
         {
           "level": 2,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 360
         },
         {
@@ -808,7 +808,7 @@
           "kind": "InGameCurrency"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 360,
       "current": [
         {
@@ -1254,7 +1254,7 @@
       "entered": {
         "five": [
           {
-            "actual": 53.45,
+            "actual": 55.13,
             "scoreStatus": "REVIEWING",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
@@ -1400,9 +1400,9 @@
           }
         ],
         "projected": 233.54,
-        "scoredSoFar": 415.01,
+        "scoredSoFar": 416.69,
         "played": 5,
-        "expectedFinal": 415.01
+        "expectedFinal": 416.69
       },
       "poolStrength": {
         "strong": 0,
@@ -1412,7 +1412,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 1073.9892
+        "scoreSoFar": 1085.2296
       },
       "level": 3,
       "lives": null,
@@ -1436,7 +1436,7 @@
         },
         {
           "level": 3,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 1140
         },
         {
@@ -1453,7 +1453,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 1140,
       "current": [
         {
