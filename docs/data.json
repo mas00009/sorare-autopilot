@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T20:21:18.922Z",
+  "generatedAt": "2026-09-26T20:26:57.659Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-09-26T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790454071353,
+    "lastRunAt": 1790454409920,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 1046.9396,
+      "squadScore": 1056.5228,
       "lineupId": "Tasks::TaskLineup:5c2c89f0-3106-45f7-b1cf-32dee2b095e0",
       "state": "READY",
-      "score": 359.5,
+      "score": 363.22,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "stole-dimitrievski",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 50.3,
+          "score": 50.51,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -48,7 +48,7 @@
           "slug": "aymeric-laporte",
           "position": "Defender",
           "captain": true,
-          "score": 97,
+          "score": 98.24,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -57,7 +57,7 @@
           "slug": "daniel-olmo-carvajal",
           "position": "Midfielder",
           "captain": false,
-          "score": 78.28,
+          "score": 80.55,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -92,7 +92,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:383b0d37-0b5c-40b9-b4d2-80825834d0e2",
       "state": "READY",
-      "score": 331.96,
+      "score": 332.27,
       "finished": false,
       "cleared": false,
       "players": [
@@ -119,7 +119,7 @@
           "slug": "james-garner",
           "position": "Midfielder",
           "captain": false,
-          "score": 33.76,
+          "score": 33.97,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -128,7 +128,7 @@
           "slug": "alejandro-baena-rodriguez",
           "position": "Forward",
           "captain": false,
-          "score": 87.78,
+          "score": 87.88,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -666,7 +666,7 @@
             "kickoff": "2026-09-25T18:45:00Z"
           },
           {
-            "actual": 33.76,
+            "actual": 33.97,
             "scoreStatus": "REVIEWING",
             "teamSlug": "england",
             "name": "James Garner",
@@ -695,7 +695,7 @@
             "kickoff": "2026-09-26T18:45:00Z"
           },
           {
-            "actual": 87.78,
+            "actual": 87.88,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Álex Baena",
@@ -754,9 +754,9 @@
           }
         ],
         "projected": 303.19,
-        "scoredSoFar": 375.69,
+        "scoredSoFar": 376,
         "played": 5,
-        "expectedFinal": 375.69
+        "expectedFinal": 376
       },
       "poolStrength": {
         "strong": 3,
@@ -1254,7 +1254,7 @@
       "entered": {
         "five": [
           {
-            "actual": 50.3,
+            "actual": 50.51,
             "scoreStatus": "REVIEWING",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
@@ -1283,7 +1283,7 @@
             "kickoff": "2026-09-26T18:45:00Z"
           },
           {
-            "actual": 97,
+            "actual": 98.24,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Aymeric Laporte",
@@ -1312,7 +1312,7 @@
             "kickoff": "2026-09-26T18:45:00Z"
           },
           {
-            "actual": 78.28,
+            "actual": 80.55,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Dani Olmo",
@@ -1400,9 +1400,9 @@
           }
         ],
         "projected": 233.54,
-        "scoredSoFar": 408.02,
+        "scoredSoFar": 412.36,
         "played": 5,
-        "expectedFinal": 408.02
+        "expectedFinal": 412.36
       },
       "poolStrength": {
         "strong": 0,
@@ -1412,7 +1412,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 1046.9396
+        "scoreSoFar": 1056.5228
       },
       "level": 3,
       "lives": null,
