@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T14:58:15.732Z",
+  "generatedAt": "2026-09-26T15:04:04.835Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-26T16:00:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1790434687000,
-    "reason": "last run 0m ago, next due in 5m (lock in 62m)"
+    "lastRunAt": 1790435035663,
+    "reason": "last run 0m ago, next due in 5m (lock in 56m)"
   },
   "packs": {
     "lastThreeStar": "Álex Baena",
@@ -27,10 +27,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 91.6164,
+      "squadScore": 219.0164,
       "lineupId": "Tasks::TaskLineup:5c2c89f0-3106-45f7-b1cf-32dee2b095e0",
       "state": "READY",
-      "score": 91.61,
+      "score": 128.36,
       "finished": false,
       "cleared": false,
       "players": [
@@ -66,8 +66,8 @@
           "slug": "orri-steinn-oskarsson",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-09-26T16:00:00Z"
         },
         {
@@ -76,11 +76,11 @@
           "position": "Defender",
           "captain": false,
           "score": 91.62,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-09-29T18:45:00Z"
         }
       ],
-      "scored": 1
+      "scored": 2
     },
     {
       "surface": "my set",
@@ -1341,8 +1341,8 @@
             "kickoff": "2026-09-26T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "iceland",
             "name": "Orri Óskarsson",
             "player": "Orri Óskarsson",
@@ -1371,7 +1371,7 @@
           },
           {
             "actual": 91.62,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "slovenia",
             "name": "Jaka Bijol",
             "player": "Jaka Bijol",
@@ -1400,9 +1400,9 @@
           }
         ],
         "projected": 233.54,
-        "scoredSoFar": 91.62,
-        "played": 1,
-        "expectedFinal": 287.97
+        "scoredSoFar": 128.37,
+        "played": 2,
+        "expectedFinal": 298.06
       },
       "poolStrength": {
         "strong": 0,
@@ -1412,7 +1412,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 91.6164
+        "scoreSoFar": 219.0164
       },
       "level": 3,
       "lives": null,
