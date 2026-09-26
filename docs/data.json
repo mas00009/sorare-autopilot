@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T19:24:44.481Z",
+  "generatedAt": "2026-09-26T19:30:26.995Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-09-26T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790450677256,
+    "lastRunAt": 1790451019412,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 851.2544,
+      "squadScore": 881.8292,
       "lineupId": "Tasks::TaskLineup:5c2c89f0-3106-45f7-b1cf-32dee2b095e0",
       "state": "READY",
-      "score": 297.33,
+      "score": 286.01,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "stole-dimitrievski",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 49.56,
+          "score": 55.23,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -48,7 +48,7 @@
           "slug": "aymeric-laporte",
           "position": "Defender",
           "captain": true,
-          "score": 64.51,
+          "score": 51.12,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -57,7 +57,7 @@
           "slug": "daniel-olmo-carvajal",
           "position": "Midfielder",
           "captain": false,
-          "score": 49.34,
+          "score": 45.73,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -1254,7 +1254,7 @@
       "entered": {
         "five": [
           {
-            "actual": 49.56,
+            "actual": 55.23,
             "scoreStatus": "REVIEWING",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
@@ -1283,7 +1283,7 @@
             "kickoff": "2026-09-26T18:45:00Z"
           },
           {
-            "actual": 64.51,
+            "actual": 51.12,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Aymeric Laporte",
@@ -1312,7 +1312,7 @@
             "kickoff": "2026-09-26T18:45:00Z"
           },
           {
-            "actual": 49.34,
+            "actual": 45.73,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Dani Olmo",
@@ -1400,9 +1400,9 @@
           }
         ],
         "projected": 233.54,
-        "scoredSoFar": 329.61,
+        "scoredSoFar": 311.58,
         "played": 5,
-        "expectedFinal": 329.61
+        "expectedFinal": 311.58
       },
       "poolStrength": {
         "strong": 0,
@@ -1412,7 +1412,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 851.2544
+        "scoreSoFar": 881.8292
       },
       "level": 3,
       "lives": null,
