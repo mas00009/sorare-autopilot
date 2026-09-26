@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T19:19:07.476Z",
+  "generatedAt": "2026-09-26T19:24:44.481Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-09-26T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790450340662,
+    "lastRunAt": 1790450677256,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 830.007,
+      "squadScore": 851.2544,
       "lineupId": "Tasks::TaskLineup:5c2c89f0-3106-45f7-b1cf-32dee2b095e0",
       "state": "READY",
-      "score": 291.13,
+      "score": 297.33,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "stole-dimitrievski",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 49.77,
+          "score": 49.56,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -48,7 +48,7 @@
           "slug": "aymeric-laporte",
           "position": "Defender",
           "captain": true,
-          "score": 59.64,
+          "score": 64.51,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -57,7 +57,7 @@
           "slug": "daniel-olmo-carvajal",
           "position": "Midfielder",
           "captain": false,
-          "score": 47.79,
+          "score": 49.34,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -759,7 +759,7 @@
         "expectedFinal": 350.56
       },
       "poolStrength": {
-        "strong": 2,
+        "strong": 3,
         "needed": 5
       },
       "collaborative": false,
@@ -844,15 +844,54 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 318.31,
-        "lock": "2026-09-27T18:45:00Z",
-        "shortfall": 41.7,
+        "projected": 344.76,
+        "lock": "2026-09-28T18:45:00Z",
+        "shortfall": 15.2,
         "tradedPointsForTime": 0,
-        "captain": "aymeric-laporte",
-        "captainPoints": 29.56,
+        "captain": "cristian-sleiker-casseres-yepes",
+        "captainPoints": 37.19,
         "withinReach": true,
         "enteredProjected": 298.99,
         "five": [
+          {
+            "id": "ComposeTeamBenchCard:6f868d5a-36ed-4efd-b8fe-fd80e46ce31a",
+            "player": "Cristian Cásseres Jr.",
+            "slug": "cristian-sleiker-casseres-yepes",
+            "position": "MD",
+            "average": 67,
+            "bonus": 1.02,
+            "starterPct": null,
+            "startRate": 1,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 86,
+            "picture": "https://assets.sorare.com/cardsamplepicture/c2d84e0c-57e8-4225-a3c3-d58f1103d23e/picture/tinified-70b75d69f7cba066a485aba14009f488.png",
+            "rarity": "common",
+            "gameId": "Game:b8e4c516-4f1a-4084-8eef-1de9bb2f42ce",
+            "kickoff": "2026-10-10T18:45:00Z",
+            "team": "Toulouse FC",
+            "teamSlug": "toulouse-toulouse",
+            "opponent": "AS Monaco",
+            "opponentCode": "ASM",
+            "code": "TFC",
+            "rank": 13,
+            "opponentRank": 1,
+            "home": false,
+            "competition": "Ligue 1",
+            "intl": false,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "mismatch": false,
+            "pWin": 0.221,
+            "pLose": 0.533,
+            "oddsBooks": 20,
+            "marketFactor": 0.972,
+            "lockedAt": null,
+            "expected": 75.86,
+            "blocked": null
+          },
           {
             "id": "ComposeTeamBenchCard:12b90d6e-87c1-4d30-8ee9-9fb44d5a772d",
             "player": "Aymeric Laporte",
@@ -971,45 +1010,6 @@
             "blocked": null
           },
           {
-            "id": "ComposeTeamBenchCard:a6be9ca0-2ba3-48fd-ae84-fc950a4459b1",
-            "player": "Renato Veiga",
-            "slug": "renato-de-palma-veiga",
-            "position": "DF",
-            "average": 52,
-            "bonus": 1.03,
-            "starterPct": null,
-            "startRate": 1,
-            "oddsKnown": false,
-            "onGameSheet": false,
-            "reliability": null,
-            "formL5": 53,
-            "picture": "https://assets.sorare.com/cardsamplepicture/52a7a606-d9e8-404a-ad71-d3cef34a8c2e/picture/tinified-942dd9d9d147d525ae66199b213992f4.png",
-            "rarity": "common",
-            "gameId": "Game:8582372c-e9b9-4653-a38f-66555708bb9d",
-            "kickoff": "2026-09-27T18:45:00Z",
-            "team": "Portugal",
-            "teamSlug": "portugal",
-            "opponent": "Norway",
-            "opponentCode": "NOR",
-            "code": "POR",
-            "rank": null,
-            "opponentRank": null,
-            "home": false,
-            "competition": "UEFA Nations League",
-            "intl": true,
-            "oppRank": 19,
-            "ownRank": 7,
-            "oppFactor": 1.055,
-            "mismatch": false,
-            "pWin": null,
-            "pLose": null,
-            "oddsBooks": null,
-            "marketFactor": null,
-            "lockedAt": null,
-            "expected": 57.04,
-            "blocked": null
-          },
-          {
             "id": "ComposeTeamBenchCard:984d8ca7-ffc1-4ab9-9118-354f70d85571",
             "player": "Emiliano Buendía",
             "slug": "emiliano-buendia",
@@ -1051,6 +1051,45 @@
         ]
       },
       "candidates": [
+        {
+          "id": "ComposeTeamBenchCard:6f868d5a-36ed-4efd-b8fe-fd80e46ce31a",
+          "player": "Cristian Cásseres Jr.",
+          "slug": "cristian-sleiker-casseres-yepes",
+          "position": "MD",
+          "average": 67,
+          "bonus": 1.02,
+          "starterPct": null,
+          "startRate": 1,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 86,
+          "picture": "https://assets.sorare.com/cardsamplepicture/c2d84e0c-57e8-4225-a3c3-d58f1103d23e/picture/tinified-70b75d69f7cba066a485aba14009f488.png",
+          "rarity": "common",
+          "gameId": "Game:b8e4c516-4f1a-4084-8eef-1de9bb2f42ce",
+          "kickoff": "2026-10-10T18:45:00Z",
+          "team": "Toulouse FC",
+          "teamSlug": "toulouse-toulouse",
+          "opponent": "AS Monaco",
+          "opponentCode": "ASM",
+          "code": "TFC",
+          "rank": 13,
+          "opponentRank": 1,
+          "home": false,
+          "competition": "Ligue 1",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.221,
+          "pLose": 0.533,
+          "oddsBooks": 20,
+          "marketFactor": 0.972,
+          "lockedAt": null,
+          "expected": 75.86,
+          "blocked": null
+        },
         {
           "id": "ComposeTeamBenchCard:12b90d6e-87c1-4d30-8ee9-9fb44d5a772d",
           "player": "Aymeric Laporte",
@@ -1169,45 +1208,6 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:a6be9ca0-2ba3-48fd-ae84-fc950a4459b1",
-          "player": "Renato Veiga",
-          "slug": "renato-de-palma-veiga",
-          "position": "DF",
-          "average": 52,
-          "bonus": 1.03,
-          "starterPct": null,
-          "startRate": 1,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 53,
-          "picture": "https://assets.sorare.com/cardsamplepicture/52a7a606-d9e8-404a-ad71-d3cef34a8c2e/picture/tinified-942dd9d9d147d525ae66199b213992f4.png",
-          "rarity": "common",
-          "gameId": "Game:8582372c-e9b9-4653-a38f-66555708bb9d",
-          "kickoff": "2026-09-27T18:45:00Z",
-          "team": "Portugal",
-          "teamSlug": "portugal",
-          "opponent": "Norway",
-          "opponentCode": "NOR",
-          "code": "POR",
-          "rank": null,
-          "opponentRank": null,
-          "home": false,
-          "competition": "UEFA Nations League",
-          "intl": true,
-          "oppRank": 19,
-          "ownRank": 7,
-          "oppFactor": 1.055,
-          "mismatch": false,
-          "pWin": null,
-          "pLose": null,
-          "oddsBooks": null,
-          "marketFactor": null,
-          "lockedAt": null,
-          "expected": 57.04,
-          "blocked": null
-        },
-        {
           "id": "ComposeTeamBenchCard:984d8ca7-ffc1-4ab9-9118-354f70d85571",
           "player": "Emiliano Buendía",
           "slug": "emiliano-buendia",
@@ -1247,14 +1247,14 @@
           "blocked": null
         }
       ],
-      "projected": 294.3
+      "projected": 310.2
     },
     {
       "surface": "team set (Loadshift)",
       "entered": {
         "five": [
           {
-            "actual": 49.77,
+            "actual": 49.56,
             "scoreStatus": "REVIEWING",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
@@ -1283,7 +1283,7 @@
             "kickoff": "2026-09-26T18:45:00Z"
           },
           {
-            "actual": 59.64,
+            "actual": 64.51,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Aymeric Laporte",
@@ -1312,7 +1312,7 @@
             "kickoff": "2026-09-26T18:45:00Z"
           },
           {
-            "actual": 47.79,
+            "actual": 49.34,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Dani Olmo",
@@ -1400,9 +1400,9 @@
           }
         ],
         "projected": 233.54,
-        "scoredSoFar": 320.96,
+        "scoredSoFar": 329.61,
         "played": 5,
-        "expectedFinal": 320.96
+        "expectedFinal": 329.61
       },
       "poolStrength": {
         "strong": 0,
@@ -1412,7 +1412,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 830.007
+        "scoreSoFar": 851.2544
       },
       "level": 3,
       "lives": null,
@@ -1493,31 +1493,6 @@
     }
   ],
   "fixtures": [
-    {
-      "kickoff": "2026-09-27T18:45:00Z",
-      "competition": "UEFA Nations League",
-      "team": "Portugal",
-      "code": "POR",
-      "rank": null,
-      "opponent": "Norway",
-      "opponentCode": "NOR",
-      "opponentRank": null,
-      "intl": true,
-      "ownRank": 7,
-      "oppRank": 19,
-      "pWin": null,
-      "pLose": null,
-      "oppFactor": 1.055,
-      "home": false,
-      "players": [
-        "Renato Veiga"
-      ],
-      "points": 57,
-      "bestStarter": null,
-      "surfaces": [
-        "my set"
-      ]
-    },
     {
       "kickoff": "2026-09-28T18:45:00Z",
       "competition": "UEFA Nations League",
@@ -1613,6 +1588,31 @@
         "Emiliano Buendía"
       ],
       "points": 53,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
+      ]
+    },
+    {
+      "kickoff": "2026-10-10T18:45:00Z",
+      "competition": "Ligue 1",
+      "team": "Toulouse FC",
+      "code": "TFC",
+      "rank": 13,
+      "opponent": "AS Monaco",
+      "opponentCode": "ASM",
+      "opponentRank": 1,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.221,
+      "pLose": 0.533,
+      "oppFactor": null,
+      "home": false,
+      "players": [
+        "Cristian Cásseres Jr."
+      ],
+      "points": 75.9,
       "bestStarter": null,
       "surfaces": [
         "my set"
