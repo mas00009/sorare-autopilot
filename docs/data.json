@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T23:59:00.149Z",
+  "generatedAt": "2026-09-26T00:04:12.686Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-09-26T13:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1790375743017,
-    "reason": "last run 83m ago, next due in 97m (lock in 781m)"
+    "reason": "last run 88m ago, next due in 92m (lock in 776m)"
   },
   "packs": {
     "lastThreeStar": "Andrés Castrín",
@@ -529,8 +529,8 @@
   "odds": {
     "configured": true,
     "month": "2026-09",
-    "used": 4,
-    "remaining": 496
+    "used": 7,
+    "remaining": 493
   },
   "control": {
     "paused": false,
@@ -1185,7 +1185,7 @@
           "blocked": null
         }
       ],
-      "projected": 282.9
+      "projected": 282.5
     },
     {
       "surface": "team set (Loadshift)",
