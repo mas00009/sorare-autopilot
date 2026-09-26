@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T20:32:38.205Z",
+  "generatedAt": "2026-09-26T20:38:17.082Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-09-26T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790454750753,
+    "lastRunAt": 1790455089630,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 1070.2434,
+      "squadScore": 1073.9892,
       "lineupId": "Tasks::TaskLineup:5c2c89f0-3106-45f7-b1cf-32dee2b095e0",
       "state": "READY",
-      "score": 364.36,
+      "score": 365.97,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "stole-dimitrievski",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 53.76,
+          "score": 53.45,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -48,7 +48,7 @@
           "slug": "aymeric-laporte",
           "position": "Defender",
           "captain": true,
-          "score": 96.13,
+          "score": 98.05,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -92,7 +92,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:383b0d37-0b5c-40b9-b4d2-80825834d0e2",
       "state": "READY",
-      "score": 330.64,
+      "score": 332.68,
       "finished": false,
       "cleared": false,
       "players": [
@@ -119,7 +119,7 @@
           "slug": "james-garner",
           "position": "Midfielder",
           "captain": false,
-          "score": 32.33,
+          "score": 34.37,
           "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
@@ -666,7 +666,7 @@
             "kickoff": "2026-09-25T18:45:00Z"
           },
           {
-            "actual": 32.33,
+            "actual": 34.37,
             "scoreStatus": "REVIEWING",
             "teamSlug": "england",
             "name": "James Garner",
@@ -754,9 +754,9 @@
           }
         ],
         "projected": 303.19,
-        "scoredSoFar": 374.36,
+        "scoredSoFar": 376.4,
         "played": 5,
-        "expectedFinal": 374.36
+        "expectedFinal": 376.4
       },
       "poolStrength": {
         "strong": 3,
@@ -1254,7 +1254,7 @@
       "entered": {
         "five": [
           {
-            "actual": 53.76,
+            "actual": 53.45,
             "scoreStatus": "REVIEWING",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
@@ -1283,7 +1283,7 @@
             "kickoff": "2026-09-26T18:45:00Z"
           },
           {
-            "actual": 96.13,
+            "actual": 98.05,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Aymeric Laporte",
@@ -1400,9 +1400,9 @@
           }
         ],
         "projected": 233.54,
-        "scoredSoFar": 412.44,
+        "scoredSoFar": 415.01,
         "played": 5,
-        "expectedFinal": 412.44
+        "expectedFinal": 415.01
       },
       "poolStrength": {
         "strong": 0,
@@ -1412,7 +1412,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 1070.2434
+        "scoreSoFar": 1073.9892
       },
       "level": 3,
       "lives": null,
