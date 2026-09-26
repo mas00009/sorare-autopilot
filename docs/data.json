@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T10:54:42.235Z",
+  "generatedAt": "2026-09-26T11:00:29.119Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-26T13:00:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1790420073378,
-    "reason": "last run 0m ago, next due in 15m (lock in 125m)"
+    "lastRunAt": 1790420421515,
+    "reason": "last run 0m ago, next due in 15m (lock in 120m)"
   },
   "packs": {
     "lastThreeStar": "Álex Baena",
@@ -26,7 +26,7 @@
       "target": 1140,
       "stepState": "LINEUP_SET",
       "collaborative": true,
-      "squadLineups": 4,
+      "squadLineups": 5,
       "squadScore": 0,
       "lineupId": "Tasks::TaskLineup:5c2c89f0-3106-45f7-b1cf-32dee2b095e0",
       "state": "READY",
@@ -1410,7 +1410,7 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 4,
+        "lineupsIn": 5,
         "needed": 3,
         "scoreSoFar": 0
       },
