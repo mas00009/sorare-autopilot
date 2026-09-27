@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T18:44:28.071Z",
+  "generatedAt": "2026-09-27T18:49:59.256Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790534662016,
-    "reason": "last run 0m ago, next due in 180m (lock in 18436m)"
+    "lastRunAt": 1790534993155,
+    "reason": "last run 0m ago, next due in 180m (lock in 18430m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -201,7 +201,7 @@
           "captain": false,
           "score": 88.56,
           "status": "FINAL",
-          "kickoff": "2026-09-27T18:45:00Z"
+          "kickoff": "2026-10-01T18:45:00Z"
         }
       ],
       "scored": 5
@@ -236,7 +236,7 @@
           "captain": false,
           "score": 0.46,
           "status": "FINAL",
-          "kickoff": "2026-09-27T18:45:00Z"
+          "kickoff": "2026-10-01T18:45:00Z"
         },
         {
           "name": "Cristian Cásseres Jr.",
@@ -289,7 +289,7 @@
           "captain": false,
           "score": 75.29,
           "status": "FINAL",
-          "kickoff": "2026-09-27T18:45:00Z"
+          "kickoff": "2026-10-01T18:45:00Z"
         },
         {
           "name": "Andrés Castrín",
@@ -351,7 +351,7 @@
           "captain": false,
           "score": 0,
           "status": "FINAL",
-          "kickoff": "2026-09-27T18:45:00Z"
+          "kickoff": "2026-10-01T18:45:00Z"
         },
         {
           "name": "Rúben Dias",
@@ -360,7 +360,7 @@
           "captain": true,
           "score": 132.4,
           "status": "FINAL",
-          "kickoff": "2026-09-27T18:45:00Z"
+          "kickoff": "2026-10-01T18:45:00Z"
         },
         {
           "name": "Thomas Jørgensen",
@@ -387,7 +387,7 @@
           "captain": false,
           "score": 61.8,
           "status": "FINAL",
-          "kickoff": "2026-09-27T18:45:00Z"
+          "kickoff": "2026-10-01T18:45:00Z"
         }
       ],
       "scored": 5
@@ -546,7 +546,7 @@
           "captain": true,
           "score": 0.69,
           "status": "FINAL",
-          "kickoff": "2026-09-27T18:45:00Z"
+          "kickoff": "2026-10-01T18:45:00Z"
         },
         {
           "name": "Adam Wharton",
@@ -906,12 +906,12 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 297.47,
-        "lock": "2026-09-27T18:45:00Z",
-        "shortfall": 62.5,
+        "projected": 298.52,
+        "lock": "2026-09-29T18:45:00Z",
+        "shortfall": 61.5,
         "tradedPointsForTime": 0,
-        "captain": "aymeric-laporte",
-        "captainPoints": 29.56,
+        "captain": "ruben-santos-gato-alves-dias",
+        "captainPoints": 29.89,
         "withinReach": false,
         "enteredProjected": 362.33,
         "five": [
@@ -964,33 +964,33 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": true,
+            "onGameSheet": false,
             "reliability": null,
             "formL5": 54,
             "picture": "https://assets.sorare.com/cardsamplepicture/51ec3fca-50ff-4975-a5a2-1a83b5c833f0/picture/tinified-7a37453263600d888145da54b161fb7d.png",
             "rarity": "common",
-            "gameId": "Game:8582372c-e9b9-4653-a38f-66555708bb9d",
-            "kickoff": "2026-09-27T18:45:00Z",
+            "gameId": "Game:b872365c-5b4d-40cc-89c2-4af0eb25bcfd",
+            "kickoff": "2026-10-01T18:45:00Z",
             "team": "Portugal",
             "teamSlug": "portugal",
-            "opponent": "Norway",
-            "opponentCode": "NOR",
+            "opponent": "Denmark",
+            "opponentCode": "DEN",
             "code": "POR",
             "rank": null,
             "opponentRank": null,
             "home": false,
             "competition": "UEFA Nations League",
             "intl": true,
-            "oppRank": 19,
+            "oppRank": 21,
             "ownRank": 7,
-            "oppFactor": 1.055,
+            "oppFactor": 1.068,
             "mismatch": false,
             "pWin": null,
             "pLose": null,
             "oddsBooks": null,
             "marketFactor": null,
             "lockedAt": null,
-            "expected": 59.66,
+            "expected": 60.38,
             "blocked": null
           },
           {
@@ -1162,33 +1162,33 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": true,
+          "onGameSheet": false,
           "reliability": null,
           "formL5": 54,
           "picture": "https://assets.sorare.com/cardsamplepicture/51ec3fca-50ff-4975-a5a2-1a83b5c833f0/picture/tinified-7a37453263600d888145da54b161fb7d.png",
           "rarity": "common",
-          "gameId": "Game:8582372c-e9b9-4653-a38f-66555708bb9d",
-          "kickoff": "2026-09-27T18:45:00Z",
+          "gameId": "Game:b872365c-5b4d-40cc-89c2-4af0eb25bcfd",
+          "kickoff": "2026-10-01T18:45:00Z",
           "team": "Portugal",
           "teamSlug": "portugal",
-          "opponent": "Norway",
-          "opponentCode": "NOR",
+          "opponent": "Denmark",
+          "opponentCode": "DEN",
           "code": "POR",
           "rank": null,
           "opponentRank": null,
           "home": false,
           "competition": "UEFA Nations League",
           "intl": true,
-          "oppRank": 19,
+          "oppRank": 21,
           "ownRank": 7,
-          "oppFactor": 1.055,
+          "oppFactor": 1.068,
           "mismatch": false,
           "pWin": null,
           "pLose": null,
           "oddsBooks": null,
           "marketFactor": null,
           "lockedAt": null,
-          "expected": 59.66,
+          "expected": 60.38,
           "blocked": null
         },
         {
@@ -1309,7 +1309,7 @@
           "blocked": null
         }
       ],
-      "projected": 293.2
+      "projected": 293.9
     },
     {
       "surface": "team set (Loadshift)",
@@ -1404,31 +1404,6 @@
   ],
   "fixtures": [
     {
-      "kickoff": "2026-09-27T18:45:00Z",
-      "competition": "UEFA Nations League",
-      "team": "Portugal",
-      "code": "POR",
-      "rank": null,
-      "opponent": "Norway",
-      "opponentCode": "NOR",
-      "opponentRank": null,
-      "intl": true,
-      "ownRank": 7,
-      "oppRank": 19,
-      "pWin": null,
-      "pLose": null,
-      "oppFactor": 1.055,
-      "home": false,
-      "players": [
-        "Rúben Dias"
-      ],
-      "points": 59.7,
-      "bestStarter": null,
-      "surfaces": [
-        "my set"
-      ]
-    },
-    {
       "kickoff": "2026-09-29T18:45:00Z",
       "competition": "UEFA Nations League",
       "team": "Spain",
@@ -1474,6 +1449,31 @@
         "James Trafford"
       ],
       "points": 41.9,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
+      ]
+    },
+    {
+      "kickoff": "2026-10-01T18:45:00Z",
+      "competition": "UEFA Nations League",
+      "team": "Portugal",
+      "code": "POR",
+      "rank": null,
+      "opponent": "Denmark",
+      "opponentCode": "DEN",
+      "opponentRank": null,
+      "intl": true,
+      "ownRank": 7,
+      "oppRank": 21,
+      "pWin": null,
+      "pLose": null,
+      "oppFactor": 1.068,
+      "home": false,
+      "players": [
+        "Rúben Dias"
+      ],
+      "points": 60.4,
       "bestStarter": null,
       "surfaces": [
         "my set"
