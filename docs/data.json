@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-09-27T07:09:54.131Z",
+  "generatedAt": "2026-09-27T07:15:35.705Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
     "essence": 5500,
-    "gems": 186
+    "gems": 196
   },
   "schedule": {
     "nextLock": "2026-09-27T18:45:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1790492988470,
-    "reason": "last run 0m ago, next due in 60m (lock in 695m)"
+    "lastRunAt": 1790493329856,
+    "reason": "last run 0m ago, next due in 60m (lock in 689m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -580,7 +580,7 @@
     }
   ],
   "gems": {
-    "balance": 186,
+    "balance": 196,
     "level": 2,
     "ladder": [
       {
@@ -629,10 +629,10 @@
       },
       {
         "title": "Collect Big 3 LaLiga",
-        "gems": 10,
+        "gems": 30,
         "progress": 37,
-        "target": 37,
-        "remaining": 0,
+        "target": 50,
+        "remaining": 13,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": [
@@ -648,7 +648,7 @@
     },
     "ladderGemsAhead": 40,
     "ladderCashAhead": 1100,
-    "collectionGemsOpen": 25
+    "collectionGemsOpen": 45
   },
   "odds": {
     "configured": true,
@@ -1309,7 +1309,7 @@
           "blocked": null
         }
       ],
-      "projected": 287.3
+      "projected": 284.2
     },
     {
       "surface": "team set (Loadshift)",
