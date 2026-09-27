@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T19:17:23.519Z",
+  "generatedAt": "2026-09-27T19:22:52.340Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790536637363,
-    "reason": "last run 0m ago, next due in 180m (lock in 18403m)"
+    "lastRunAt": 1790536966218,
+    "reason": "last run 0m ago, next due in 180m (lock in 18397m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -124,13 +124,13 @@
           "kickoff": "2026-10-10T18:45:00Z"
         },
         {
-          "name": "Emiliano Buendía",
-          "slug": "emiliano-buendia",
+          "name": "Iñigo Vicente",
+          "slug": "inigo-vicente-elorduy",
           "position": "Forward",
           "captain": false,
           "score": 0,
           "status": "PENDING",
-          "kickoff": "2026-10-10T14:00:00Z"
+          "kickoff": "2026-10-11T19:00:00Z"
         },
         {
           "name": "Sergio Gómez",
@@ -759,31 +759,31 @@
           {
             "actual": null,
             "scoreStatus": "PENDING",
-            "teamSlug": "aston-villa-birmingham",
-            "name": "Emiliano Buendía",
-            "player": "Emiliano Buendía",
-            "slug": "emiliano-buendia",
+            "teamSlug": "racing-santander-santander",
+            "name": "Iñigo Vicente",
+            "player": "Iñigo Vicente",
+            "slug": "inigo-vicente-elorduy",
             "pos": "FW",
             "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/fc7c6891-6864-48f4-8d75-592f5782333e/picture/tinified-7ca33683a069ad99e5fc888f47e7d30a.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/fc7c6891-6864-48f4-8d75-592f5782333e/picture/tinified-7ca33683a069ad99e5fc888f47e7d30a.png",
+            "pic": "https://assets.sorare.com/cardsamplepicture/430d8e95-0c8d-4d1a-b168-2a8cf77777f0/picture/tinified-d6dfa0252f3298f6f372dd4377979957.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/430d8e95-0c8d-4d1a-b168-2a8cf77777f0/picture/tinified-d6dfa0252f3298f6f372dd4377979957.png",
             "captain": false,
-            "exp": 52.97,
-            "expected": 52.97,
-            "opp": "Brentford FC",
-            "opponent": "Brentford FC",
+            "exp": 60.6,
+            "expected": 60.6,
+            "opp": "Valencia CF",
+            "opponent": "Valencia CF",
             "home": true,
-            "average": 57,
-            "formL5": 54,
+            "average": 72,
+            "formL5": 60,
             "intl": false,
-            "pWin": 0.364,
-            "pLose": 0.368,
-            "marketFactor": 1.001,
+            "pWin": 0.434,
+            "pLose": 0.298,
+            "marketFactor": 1.015,
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
             "locked": false,
-            "kickoff": "2026-10-10T14:00:00Z"
+            "kickoff": "2026-10-11T19:00:00Z"
           },
           {
             "actual": null,
@@ -815,10 +815,10 @@
             "kickoff": "2026-10-11T14:15:00Z"
           }
         ],
-        "projected": 362.33,
+        "projected": 369.96,
         "scoredSoFar": 0,
         "played": 0,
-        "expectedFinal": 363.48
+        "expectedFinal": 371.11
       },
       "poolStrength": {
         "strong": 2,
@@ -892,10 +892,10 @@
           "nextGame": "2026-10-10T18:45:00Z"
         },
         {
-          "name": "Emiliano Buendía",
+          "name": "Iñigo Vicente",
           "captain": false,
           "locked": false,
-          "nextGame": "2026-10-10T14:00:00Z"
+          "nextGame": "2026-10-11T19:00:00Z"
         },
         {
           "name": "Sergio Gómez",
@@ -906,14 +906,14 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 298.52,
+        "projected": 305.03,
         "lock": "2026-09-29T18:45:00Z",
-        "shortfall": 61.5,
+        "shortfall": 55,
         "tradedPointsForTime": 0,
         "captain": "ruben-santos-gato-alves-dias",
         "captainPoints": 29.89,
-        "withinReach": false,
-        "enteredProjected": 362.33,
+        "withinReach": true,
+        "enteredProjected": 369.96,
         "five": [
           {
             "id": "ComposeTeamBenchCard:12b90d6e-87c1-4d30-8ee9-9fb44d5a772d",
@@ -1033,42 +1033,42 @@
             "blocked": null
           },
           {
-            "id": "ComposeTeamBenchCard:8f8f090f-b44f-4c60-b093-f5d03656c7f2",
-            "player": "Álex Baena",
-            "slug": "alejandro-baena-rodriguez",
+            "id": "ComposeTeamBenchCard:984d8ca7-ffc1-4ab9-9118-354f70d85571",
+            "player": "Emiliano Buendía",
+            "slug": "emiliano-buendia",
             "position": "FW",
             "average": 57,
-            "bonus": 1.04,
+            "bonus": 1.02,
             "starterPct": null,
-            "startRate": 0.7,
+            "startRate": 0.9,
             "oddsKnown": false,
             "onGameSheet": false,
             "reliability": null,
             "formL5": 54,
-            "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/fc7c6891-6864-48f4-8d75-592f5782333e/picture/tinified-7ca33683a069ad99e5fc888f47e7d30a.png",
             "rarity": "common",
-            "gameId": "Game:7d2d3a08-ef8d-413e-9dde-69fed897e53f",
-            "kickoff": "2026-09-29T18:45:00Z",
-            "team": "Spain",
-            "teamSlug": "spain",
-            "opponent": "Croatia",
-            "opponentCode": "CRO",
-            "code": "ESP",
-            "rank": null,
-            "opponentRank": null,
+            "gameId": "Game:fe13dfb3-97fd-45af-ae74-2a707f31ae86",
+            "kickoff": "2026-10-10T14:00:00Z",
+            "team": "Aston Villa FC",
+            "teamSlug": "aston-villa-birmingham",
+            "opponent": "Brentford FC",
+            "opponentCode": "BRE",
+            "code": "AST",
+            "rank": 16,
+            "opponentRank": 4,
             "home": true,
-            "competition": "UEFA Nations League",
-            "intl": true,
-            "oppRank": 13,
-            "ownRank": 1,
-            "oppFactor": 1,
-            "mismatch": true,
-            "pWin": null,
-            "pLose": null,
-            "oddsBooks": null,
-            "marketFactor": null,
+            "competition": "Premier League",
+            "intl": false,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "mismatch": false,
+            "pWin": 0.364,
+            "pLose": 0.368,
+            "oddsBooks": 21,
+            "marketFactor": 1.001,
             "lockedAt": null,
-            "expected": 46.46,
+            "expected": 52.97,
             "blocked": null
           },
           {
@@ -1231,42 +1231,42 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:8f8f090f-b44f-4c60-b093-f5d03656c7f2",
-          "player": "Álex Baena",
-          "slug": "alejandro-baena-rodriguez",
+          "id": "ComposeTeamBenchCard:984d8ca7-ffc1-4ab9-9118-354f70d85571",
+          "player": "Emiliano Buendía",
+          "slug": "emiliano-buendia",
           "position": "FW",
           "average": 57,
-          "bonus": 1.04,
+          "bonus": 1.02,
           "starterPct": null,
-          "startRate": 0.7,
+          "startRate": 0.9,
           "oddsKnown": false,
           "onGameSheet": false,
           "reliability": null,
           "formL5": 54,
-          "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
+          "picture": "https://assets.sorare.com/cardsamplepicture/fc7c6891-6864-48f4-8d75-592f5782333e/picture/tinified-7ca33683a069ad99e5fc888f47e7d30a.png",
           "rarity": "common",
-          "gameId": "Game:7d2d3a08-ef8d-413e-9dde-69fed897e53f",
-          "kickoff": "2026-09-29T18:45:00Z",
-          "team": "Spain",
-          "teamSlug": "spain",
-          "opponent": "Croatia",
-          "opponentCode": "CRO",
-          "code": "ESP",
-          "rank": null,
-          "opponentRank": null,
+          "gameId": "Game:fe13dfb3-97fd-45af-ae74-2a707f31ae86",
+          "kickoff": "2026-10-10T14:00:00Z",
+          "team": "Aston Villa FC",
+          "teamSlug": "aston-villa-birmingham",
+          "opponent": "Brentford FC",
+          "opponentCode": "BRE",
+          "code": "AST",
+          "rank": 16,
+          "opponentRank": 4,
           "home": true,
-          "competition": "UEFA Nations League",
-          "intl": true,
-          "oppRank": 13,
-          "ownRank": 1,
-          "oppFactor": 1,
-          "mismatch": true,
-          "pWin": null,
-          "pLose": null,
-          "oddsBooks": null,
-          "marketFactor": null,
+          "competition": "Premier League",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.364,
+          "pLose": 0.368,
+          "oddsBooks": 21,
+          "marketFactor": 1.001,
           "lockedAt": null,
-          "expected": 46.46,
+          "expected": 52.97,
           "blocked": null
         },
         {
@@ -1309,7 +1309,7 @@
           "blocked": null
         }
       ],
-      "projected": 293.9
+      "projected": 292.4
     },
     {
       "surface": "team set (Loadshift)",
@@ -1420,10 +1420,9 @@
       "oppFactor": 1.109,
       "home": true,
       "players": [
-        "Aymeric Laporte",
-        "Álex Baena"
+        "Aymeric Laporte"
       ],
-      "points": 108.5,
+      "points": 62.1,
       "bestStarter": null,
       "surfaces": [
         "my set"
@@ -1499,6 +1498,31 @@
         "Kaishu Sano"
       ],
       "points": 57.8,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
+      ]
+    },
+    {
+      "kickoff": "2026-10-10T14:00:00Z",
+      "competition": "Premier League",
+      "team": "Aston Villa FC",
+      "code": "AST",
+      "rank": 16,
+      "opponent": "Brentford FC",
+      "opponentCode": "BRE",
+      "opponentRank": 4,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.364,
+      "pLose": 0.368,
+      "oppFactor": null,
+      "home": true,
+      "players": [
+        "Emiliano Buendía"
+      ],
+      "points": 53,
       "bestStarter": null,
       "surfaces": [
         "my set"
