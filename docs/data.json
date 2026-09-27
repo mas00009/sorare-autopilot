@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-09-27T06:58:14.713Z",
+  "generatedAt": "2026-09-27T07:04:05.551Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 6500,
+    "essence": 5500,
     "gems": 186
   },
   "schedule": {
     "nextLock": "2026-09-27T18:45:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1790492288578,
-    "reason": "last run 0m ago, next due in 60m (lock in 707m)"
+    "lastRunAt": 1790492637863,
+    "reason": "last run 0m ago, next due in 60m (lock in 701m)"
   },
   "packs": {
-    "lastThreeStar": "Álex Baena",
+    "lastThreeStar": "Dela",
     "cycleDone": true
   },
   "health": {
@@ -620,9 +620,9 @@
       {
         "title": "Collect Spanish players in LaLiga",
         "gems": 15,
-        "progress": 183,
+        "progress": 184,
         "target": 191,
-        "remaining": 8,
+        "remaining": 7,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": []
