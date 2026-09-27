@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T17:49:04.748Z",
+  "generatedAt": "2026-09-27T17:54:39.346Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790531338579,
-    "reason": "last run 0m ago, next due in 180m (lock in 18491m)"
+    "lastRunAt": 1790531672960,
+    "reason": "last run 0m ago, next due in 180m (lock in 18485m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -964,7 +964,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 54,
             "picture": "https://assets.sorare.com/cardsamplepicture/51ec3fca-50ff-4975-a5a2-1a83b5c833f0/picture/tinified-7a37453263600d888145da54b161fb7d.png",
@@ -1162,7 +1162,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 54,
           "picture": "https://assets.sorare.com/cardsamplepicture/51ec3fca-50ff-4975-a5a2-1a83b5c833f0/picture/tinified-7a37453263600d888145da54b161fb7d.png",
