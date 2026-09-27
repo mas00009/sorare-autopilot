@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T20:50:35.567Z",
+  "generatedAt": "2026-09-27T20:56:06.013Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790542229451,
-    "reason": "last run 0m ago, next due in 180m (lock in 18309m)"
+    "lastRunAt": 1790542559602,
+    "reason": "last run 0m ago, next due in 180m (lock in 18304m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -20,68 +20,6 @@
     "failStreak": 0
   },
   "results": [
-    {
-      "surface": "team set (Loadshift)",
-      "level": 3,
-      "target": 1140,
-      "stepState": "FAILED",
-      "collaborative": true,
-      "squadLineups": 5,
-      "squadScore": 1085.2296,
-      "lineupId": "Tasks::TaskLineup:5c2c89f0-3106-45f7-b1cf-32dee2b095e0",
-      "state": "FAILED",
-      "score": 367.65,
-      "finished": true,
-      "cleared": false,
-      "players": [
-        {
-          "name": "Stole Dimitrievski",
-          "slug": "stole-dimitrievski",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 55.13,
-          "status": "FINAL",
-          "kickoff": "2026-09-29T18:45:00Z"
-        },
-        {
-          "name": "Aymeric Laporte",
-          "slug": "aymeric-laporte",
-          "position": "Defender",
-          "captain": true,
-          "score": 98.05,
-          "status": "FINAL",
-          "kickoff": "2026-09-29T18:45:00Z"
-        },
-        {
-          "name": "Dani Olmo",
-          "slug": "daniel-olmo-carvajal",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 80.55,
-          "status": "FINAL",
-          "kickoff": "2026-09-29T18:45:00Z"
-        },
-        {
-          "name": "Orri Óskarsson",
-          "slug": "orri-steinn-oskarsson",
-          "position": "Forward",
-          "captain": false,
-          "score": 42.32,
-          "status": "FINAL",
-          "kickoff": "2026-09-29T18:45:00Z"
-        },
-        {
-          "name": "Jaka Bijol",
-          "slug": "jaka-bijol",
-          "position": "Defender",
-          "captain": false,
-          "score": 91.62,
-          "status": "FINAL",
-          "kickoff": "2026-09-29T18:45:00Z"
-        }
-      ],
-      "scored": 5
-    },
     {
       "surface": "my set",
       "level": 2,
@@ -331,68 +269,6 @@
       "scored": 5
     },
     {
-      "surface": "team set (Loadshift)",
-      "level": 1,
-      "target": 980,
-      "stepState": "CLAIMED",
-      "collaborative": true,
-      "squadLineups": 4,
-      "squadScore": 980.5192,
-      "lineupId": "Tasks::TaskLineup:d951676d-4ff0-478c-98f9-57cf4571f93f",
-      "state": "SUCCESSFUL",
-      "score": 287.73,
-      "finished": true,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Odysseas",
-          "slug": "odisseas-vlachodimos",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 0,
-          "status": "FINAL",
-          "kickoff": "2026-10-01T18:45:00Z"
-        },
-        {
-          "name": "Rúben Dias",
-          "slug": "ruben-santos-gato-alves-dias",
-          "position": "Defender",
-          "captain": true,
-          "score": 132.4,
-          "status": "FINAL",
-          "kickoff": "2026-10-01T18:45:00Z"
-        },
-        {
-          "name": "Thomas Jørgensen",
-          "slug": "thomas-jorgensen",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 36.01,
-          "status": "FINAL",
-          "kickoff": "2026-10-01T18:45:00Z"
-        },
-        {
-          "name": "Patrick Dorgu",
-          "slug": "patrick-chinazaekpere-dorgu",
-          "position": "Forward",
-          "captain": false,
-          "score": 57.53,
-          "status": "FINAL",
-          "kickoff": "2026-10-01T18:45:00Z"
-        },
-        {
-          "name": "Renato Veiga",
-          "slug": "renato-de-palma-veiga",
-          "position": "Defender",
-          "captain": false,
-          "score": 61.8,
-          "status": "FINAL",
-          "kickoff": "2026-10-01T18:45:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
       "surface": "my set",
       "level": 0,
       "target": 260,
@@ -512,68 +388,6 @@
           "score": 0,
           "status": "FINAL",
           "kickoff": "2026-10-10T12:00:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
-      "surface": "team set (Loadshift)",
-      "level": 0,
-      "target": 700,
-      "stepState": "CLAIMED",
-      "collaborative": true,
-      "squadLineups": 5,
-      "squadScore": 919.7636,
-      "lineupId": "Tasks::TaskLineup:1e930dd9-7e23-4285-8d31-b2ddd4a04160",
-      "state": "SUCCESSFUL",
-      "score": 216.21,
-      "finished": true,
-      "cleared": true,
-      "players": [
-        {
-          "name": "James Trafford",
-          "slug": "james-trafford",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 74.26,
-          "status": "FINAL",
-          "kickoff": "2026-09-29T18:45:00Z"
-        },
-        {
-          "name": "Rúben Dias",
-          "slug": "ruben-santos-gato-alves-dias",
-          "position": "Defender",
-          "captain": true,
-          "score": 0.69,
-          "status": "FINAL",
-          "kickoff": "2026-10-01T18:45:00Z"
-        },
-        {
-          "name": "Adam Wharton",
-          "slug": "adam-wharton",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 45.9,
-          "status": "FINAL",
-          "kickoff": "2026-10-11T13:00:00Z"
-        },
-        {
-          "name": "Pierre-Emerick Aubameyang",
-          "slug": "pierre-emerick-aubameyang",
-          "position": "Forward",
-          "captain": false,
-          "score": 39.21,
-          "status": "FINAL",
-          "kickoff": "2026-10-11T14:15:00Z"
-        },
-        {
-          "name": "Cristian Romero",
-          "slug": "cristian-gabriel-romero",
-          "position": "Defender",
-          "captain": false,
-          "score": 56.16,
-          "status": "FINAL",
-          "kickoff": "2026-10-10T14:15:00Z"
         }
       ],
       "scored": 5
@@ -1320,14 +1134,14 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 5,
+        "lineupsIn": 0,
         "needed": 3,
-        "scoreSoFar": 1085.2296
+        "scoreSoFar": 0
       },
-      "level": 3,
+      "level": 1,
       "lives": null,
       "totalLevels": 5,
-      "levelsDone": 3,
+      "levelsDone": 1,
       "ladder": [
         {
           "level": 0,
@@ -1336,17 +1150,17 @@
         },
         {
           "level": 1,
-          "state": "CLAIMED",
+          "state": "PRE_MATCHDAY_LOCKED",
           "target": 980
         },
         {
           "level": 2,
-          "state": "CLAIMED",
+          "state": "LOCKED",
           "target": 1060
         },
         {
           "level": 3,
-          "state": "FAILED",
+          "state": "LOCKED",
           "target": 1140
         },
         {
@@ -1363,40 +1177,9 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "FAILED",
-      "target": 1140,
-      "current": [
-        {
-          "name": "Stole Dimitrievski",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-09-29T18:45:00Z"
-        },
-        {
-          "name": "Aymeric Laporte",
-          "captain": true,
-          "locked": true,
-          "nextGame": "2026-09-29T18:45:00Z"
-        },
-        {
-          "name": "Dani Olmo",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-09-29T18:45:00Z"
-        },
-        {
-          "name": "Orri Óskarsson",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-09-29T18:45:00Z"
-        },
-        {
-          "name": "Jaka Bijol",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-09-29T18:45:00Z"
-        }
-      ],
+      "state": "PRE_MATCHDAY_LOCKED",
+      "target": 980,
+      "current": [],
       "plan": null,
       "candidates": [],
       "projected": 0
