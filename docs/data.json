@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T23:55:52.490Z",
+  "generatedAt": "2026-09-27T00:01:28.221Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-27T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790466946547,
-    "reason": "last run 0m ago, next due in 180m (lock in 1129m)"
+    "lastRunAt": 1790467281024,
+    "reason": "last run 0m ago, next due in 180m (lock in 1124m)"
   },
   "packs": {
     "lastThreeStar": "Álex Baena",
@@ -653,8 +653,8 @@
   "odds": {
     "configured": true,
     "month": "2026-09",
-    "used": 8,
-    "remaining": 492
+    "used": 12,
+    "remaining": 488
   },
   "control": {
     "paused": false,
@@ -1309,7 +1309,7 @@
           "blocked": null
         }
       ],
-      "projected": 287.2
+      "projected": 287.3
     },
     {
       "surface": "team set (Loadshift)",
