@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-09-28T07:09:31.368Z",
+  "generatedAt": "2026-09-28T07:15:04.945Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
     "essence": 3000,
-    "gems": 196
+    "gems": 211
   },
   "schedule": {
     "nextLock": "2026-09-28T16:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1790579362496,
-    "reason": "last run 0m ago, next due in 60m (lock in 530m)"
+    "lastRunAt": 1790579697909,
+    "reason": "last run 0m ago, next due in 60m (lock in 525m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -212,7 +212,7 @@
       "target": 980,
       "stepState": "LINEUP_SET",
       "collaborative": true,
-      "squadLineups": 1,
+      "squadLineups": 2,
       "squadScore": 0,
       "lineupId": "Tasks::TaskLineup:1f699ea2-1706-4696-b6a1-205761268252",
       "state": "READY",
@@ -456,7 +456,7 @@
     }
   ],
   "gems": {
-    "balance": 196,
+    "balance": 211,
     "level": 2,
     "ladder": [
       {
@@ -494,16 +494,6 @@
     ],
     "collections": [
       {
-        "title": "Collect Spanish players in LaLiga",
-        "gems": 15,
-        "progress": 191,
-        "target": 191,
-        "remaining": 0,
-        "competition": "LALIGA EA Sports",
-        "group": "glitch-laliga",
-        "teams": []
-      },
-      {
         "title": "Collect Big 3 LaLiga",
         "gems": 30,
         "progress": 37,
@@ -516,6 +506,16 @@
           "FC Barcelona",
           "Atlético de Madrid"
         ]
+      },
+      {
+        "title": "Collect Spanish players in LaLiga",
+        "gems": 30,
+        "progress": 191,
+        "target": 279,
+        "remaining": 88,
+        "competition": "LALIGA EA Sports",
+        "group": "glitch-laliga",
+        "teams": []
       }
     ],
     "preferredPack": {
@@ -524,7 +524,7 @@
     },
     "ladderGemsAhead": 40,
     "ladderCashAhead": 1100,
-    "collectionGemsOpen": 45
+    "collectionGemsOpen": 60
   },
   "odds": {
     "configured": true,
@@ -1348,7 +1348,7 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 1,
+        "lineupsIn": 2,
         "needed": 3,
         "scoreSoFar": 0
       },
