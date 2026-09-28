@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T23:57:44.359Z",
+  "generatedAt": "2026-09-28T00:02:57.411Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1790553458286,
-    "reason": "last run 0m ago, next due in 180m (lock in 18122m)"
+    "reason": "last run 5m ago, next due in 175m (lock in 18117m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -467,8 +467,8 @@
   "odds": {
     "configured": true,
     "month": "2026-09",
-    "used": 12,
-    "remaining": 488
+    "used": 16,
+    "remaining": 484
   },
   "control": {
     "paused": false,
@@ -879,7 +879,7 @@
             "mismatch": false,
             "pWin": 0.364,
             "pLose": 0.368,
-            "oddsBooks": 21,
+            "oddsBooks": 22,
             "marketFactor": 1.001,
             "lockedAt": null,
             "expected": 52.97,
@@ -1077,7 +1077,7 @@
           "mismatch": false,
           "pWin": 0.364,
           "pLose": 0.368,
-          "oddsBooks": 21,
+          "oddsBooks": 22,
           "marketFactor": 1.001,
           "lockedAt": null,
           "expected": 52.97,
