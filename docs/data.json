@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T17:25:34.107Z",
+  "generatedAt": "2026-09-28T17:31:04.322Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790616326886,
-    "reason": "last run 0m ago, next due in 180m (lock in 17074m)"
+    "lastRunAt": 1790616656990,
+    "reason": "last run 0m ago, next due in 180m (lock in 17069m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 184.032,
+      "squadScore": 182.839,
       "lineupId": "Tasks::TaskLineup:1f699ea2-1706-4696-b6a1-205761268252",
       "state": "READY",
-      "score": 44.51,
+      "score": 44.19,
       "finished": false,
       "cleared": false,
       "players": [
@@ -243,7 +243,7 @@
           "slug": "andrija-bulatovic",
           "position": "Midfielder",
           "captain": false,
-          "score": 44.51,
+          "score": 44.19,
           "status": "REVIEWING",
           "kickoff": "2026-10-02T16:00:00Z"
         },
@@ -1250,7 +1250,7 @@
             "kickoff": "2026-09-28T18:45:00Z"
           },
           {
-            "actual": 44.51,
+            "actual": 44.19,
             "scoreStatus": "REVIEWING",
             "teamSlug": "montenegro",
             "name": "Andrija Bulatović",
@@ -1338,9 +1338,9 @@
           }
         ],
         "projected": 258.95,
-        "scoredSoFar": 44.51,
+        "scoredSoFar": 44.19,
         "played": 1,
-        "expectedFinal": 265.24
+        "expectedFinal": 264.92
       },
       "poolStrength": {
         "strong": 0,
@@ -1350,7 +1350,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 184.032
+        "scoreSoFar": 182.839
       },
       "level": 1,
       "lives": null,
