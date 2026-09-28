@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T20:52:04.033Z",
+  "generatedAt": "2026-09-28T20:57:15.721Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1790628717164,
-    "reason": "last run 0m ago, next due in 180m (lock in 16868m)"
+    "reason": "last run 5m ago, next due in 175m (lock in 16863m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -510,9 +510,9 @@
       {
         "title": "Collect Spanish players in LaLiga",
         "gems": 30,
-        "progress": 192,
+        "progress": 193,
         "target": 279,
-        "remaining": 87,
+        "remaining": 86,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": []
@@ -782,9 +782,9 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 316.62,
+        "projected": 318.26,
         "lock": "2026-09-29T18:45:00Z",
-        "shortfall": 43.4,
+        "shortfall": 41.7,
         "tradedPointsForTime": 0,
         "captain": "maxim-de-cuyper",
         "captainPoints": 29.78,
@@ -836,7 +836,7 @@
             "slug": "maxim-de-cuyper",
             "position": "DF",
             "average": 56,
-            "bonus": 1.02,
+            "bonus": 1.03,
             "starterPct": null,
             "startRate": 0.8,
             "oddsKnown": false,
@@ -866,7 +866,7 @@
             "oddsBooks": null,
             "marketFactor": null,
             "lockedAt": null,
-            "expected": 60.75,
+            "expected": 61.34,
             "blocked": null
           },
           {
@@ -914,7 +914,7 @@
             "slug": "zion-suzuki",
             "position": "GK",
             "average": 56,
-            "bonus": 1.02,
+            "bonus": 1.03,
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
@@ -944,7 +944,7 @@
             "oddsBooks": 22,
             "marketFactor": 1.017,
             "lockedAt": null,
-            "expected": 53.22,
+            "expected": 53.75,
             "blocked": null
           },
           {
@@ -953,7 +953,7 @@
             "slug": "emiliano-buendia",
             "position": "FW",
             "average": 57,
-            "bonus": 1.02,
+            "bonus": 1.03,
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
@@ -983,7 +983,7 @@
             "oddsBooks": 22,
             "marketFactor": 1.001,
             "lockedAt": null,
-            "expected": 52.97,
+            "expected": 53.49,
             "blocked": null
           }
         ]
@@ -1034,7 +1034,7 @@
           "slug": "maxim-de-cuyper",
           "position": "DF",
           "average": 56,
-          "bonus": 1.02,
+          "bonus": 1.03,
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
@@ -1064,7 +1064,7 @@
           "oddsBooks": null,
           "marketFactor": null,
           "lockedAt": null,
-          "expected": 60.75,
+          "expected": 61.34,
           "blocked": null
         },
         {
@@ -1112,7 +1112,7 @@
           "slug": "zion-suzuki",
           "position": "GK",
           "average": 56,
-          "bonus": 1.02,
+          "bonus": 1.03,
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
@@ -1142,7 +1142,7 @@
           "oddsBooks": 22,
           "marketFactor": 1.017,
           "lockedAt": null,
-          "expected": 53.22,
+          "expected": 53.75,
           "blocked": null
         },
         {
@@ -1151,7 +1151,7 @@
           "slug": "emiliano-buendia",
           "position": "FW",
           "average": 57,
-          "bonus": 1.02,
+          "bonus": 1.03,
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
@@ -1181,11 +1181,11 @@
           "oddsBooks": 22,
           "marketFactor": 1.001,
           "lockedAt": null,
-          "expected": 52.97,
+          "expected": 53.49,
           "blocked": null
         }
       ],
-      "projected": 299.3
+      "projected": 299.9
     },
     {
       "surface": "team set (Loadshift)",
@@ -1292,7 +1292,7 @@
       "players": [
         "Maxim De Cuyper"
       ],
-      "points": 60.8,
+      "points": 61.3,
       "bestStarter": null,
       "surfaces": [
         "my set"
@@ -1343,7 +1343,7 @@
         "Zion Suzuki",
         "Emiliano Buendía"
       ],
-      "points": 106.2,
+      "points": 107.2,
       "bestStarter": null,
       "surfaces": [
         "my set"
