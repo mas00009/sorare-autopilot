@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T20:30:25.757Z",
+  "generatedAt": "2026-09-28T20:35:49.895Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 211
   },
   "schedule": {
-    "nextLock": "2026-10-10T14:00:00Z",
+    "nextLock": "2026-09-29T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790627419374,
-    "reason": "last run 0m ago, next due in 180m (lock in 16890m)"
+    "lastRunAt": 1790627743572,
+    "reason": "last run 0m ago, next due in 180m (lock in 1329m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -35,13 +35,13 @@
       "cleared": false,
       "players": [
         {
-          "name": "James Trafford",
-          "slug": "james-trafford",
+          "name": "Zion Suzuki",
+          "slug": "zion-suzuki",
           "position": "Goalkeeper",
           "captain": false,
           "score": 0,
           "status": "PENDING",
-          "kickoff": "2026-09-29T18:45:00Z"
+          "kickoff": "2026-10-10T14:00:00Z"
         },
         {
           "name": "Matthias Ginter",
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 947.7264,
+      "squadScore": 956.6676,
       "lineupId": "Tasks::TaskLineup:1f699ea2-1706-4696-b6a1-205761268252",
       "state": "READY",
-      "score": 159.02,
+      "score": 166.5,
       "finished": false,
       "cleared": false,
       "players": [
@@ -225,7 +225,7 @@
           "slug": "ionu-andrei-radu",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
+          "score": 3.96,
           "status": "REVIEWING",
           "kickoff": "2026-10-02T18:45:00Z"
         },
@@ -234,7 +234,7 @@
           "slug": "maxim-de-cuyper",
           "position": "Defender",
           "captain": true,
-          "score": 49.37,
+          "score": 51.86,
           "status": "REVIEWING",
           "kickoff": "2026-10-02T18:45:00Z"
         },
@@ -252,7 +252,7 @@
           "slug": "viktor-gyokeres",
           "position": "Forward",
           "captain": false,
-          "score": 66.74,
+          "score": 67.77,
           "status": "REVIEWING",
           "kickoff": "2026-10-02T18:45:00Z"
         },
@@ -266,7 +266,7 @@
           "kickoff": "2026-10-02T18:45:00Z"
         }
       ],
-      "scored": 3
+      "scored": 4
     },
     {
       "surface": "my set",
@@ -548,31 +548,31 @@
           {
             "actual": null,
             "scoreStatus": "PENDING",
-            "teamSlug": "england",
-            "name": "James Trafford",
-            "player": "James Trafford",
-            "slug": "james-trafford",
+            "teamSlug": "aston-villa-birmingham",
+            "name": "Zion Suzuki",
+            "player": "Zion Suzuki",
+            "slug": "zion-suzuki",
             "pos": "GK",
             "position": "GK",
-            "pic": "https://assets.sorare.com/cardsamplepicture/03a5cbf9-1ce5-4f9d-8a41-442c008abee3/picture/tinified-b37f7ccb93f8fa5aeba4979bb6f13779.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/03a5cbf9-1ce5-4f9d-8a41-442c008abee3/picture/tinified-b37f7ccb93f8fa5aeba4979bb6f13779.png",
+            "pic": "https://assets.sorare.com/cardsamplepicture/5c1b2cb2-6b15-4016-8e17-e4daa4221290/picture/tinified-596d7f1653c75ea02cd01a3829b1fafe.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/5c1b2cb2-6b15-4016-8e17-e4daa4221290/picture/tinified-596d7f1653c75ea02cd01a3829b1fafe.png",
             "captain": false,
-            "exp": 41.89,
-            "expected": 41.89,
-            "opp": "Czechia",
-            "opponent": "Czechia",
-            "home": false,
-            "average": 57,
-            "formL5": 61,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 48,
-            "ownRank": 4,
-            "oppFactor": 1.16,
+            "exp": 53.22,
+            "expected": 53.22,
+            "opp": "Brentford FC",
+            "opponent": "Brentford FC",
+            "home": true,
+            "average": 56,
+            "formL5": 58,
+            "intl": false,
+            "pWin": 0.364,
+            "pLose": 0.368,
+            "marketFactor": 1.017,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
             "locked": false,
-            "kickoff": "2026-09-29T18:45:00Z"
+            "kickoff": "2026-10-10T14:00:00Z"
           },
           {
             "actual": null,
@@ -691,10 +691,10 @@
             "kickoff": "2026-10-11T14:15:00Z"
           }
         ],
-        "projected": 358.38,
+        "projected": 369.71,
         "scoredSoFar": 0,
         "played": 0,
-        "expectedFinal": 359.53
+        "expectedFinal": 370.86
       },
       "poolStrength": {
         "strong": 2,
@@ -750,10 +750,10 @@
       "target": 360,
       "current": [
         {
-          "name": "James Trafford",
+          "name": "Zion Suzuki",
           "captain": false,
           "locked": false,
-          "nextGame": "2026-09-29T18:45:00Z"
+          "nextGame": "2026-10-10T14:00:00Z"
         },
         {
           "name": "Matthias Ginter",
@@ -782,14 +782,14 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 316.62,
+        "projected": 305.29,
         "lock": "2026-09-29T18:45:00Z",
-        "shortfall": 43.4,
+        "shortfall": 54.7,
         "tradedPointsForTime": 0,
         "captain": "maxim-de-cuyper",
         "captainPoints": 29.78,
         "withinReach": true,
-        "enteredProjected": 358.38,
+        "enteredProjected": 369.71,
         "five": [
           {
             "id": "ComposeTeamBenchCard:12b90d6e-87c1-4d30-8ee9-9fb44d5a772d",
@@ -909,45 +909,6 @@
             "blocked": null
           },
           {
-            "id": "ComposeTeamBenchCard:69ce92cc-015b-45c9-bf03-60e6d367f52f",
-            "player": "Zion Suzuki",
-            "slug": "zion-suzuki",
-            "position": "GK",
-            "average": 56,
-            "bonus": 1.02,
-            "starterPct": null,
-            "startRate": 0.9,
-            "oddsKnown": false,
-            "onGameSheet": false,
-            "reliability": null,
-            "formL5": 58,
-            "picture": "https://assets.sorare.com/cardsamplepicture/5c1b2cb2-6b15-4016-8e17-e4daa4221290/picture/tinified-596d7f1653c75ea02cd01a3829b1fafe.png",
-            "rarity": "common",
-            "gameId": "Game:fe13dfb3-97fd-45af-ae74-2a707f31ae86",
-            "kickoff": "2026-10-10T14:00:00Z",
-            "team": "Aston Villa FC",
-            "teamSlug": "aston-villa-birmingham",
-            "opponent": "Brentford FC",
-            "opponentCode": "BRE",
-            "code": "AST",
-            "rank": 16,
-            "opponentRank": 4,
-            "home": true,
-            "competition": "Premier League",
-            "intl": false,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "mismatch": false,
-            "pWin": 0.364,
-            "pLose": 0.368,
-            "oddsBooks": 22,
-            "marketFactor": 1.017,
-            "lockedAt": null,
-            "expected": 53.22,
-            "blocked": null
-          },
-          {
             "id": "ComposeTeamBenchCard:984d8ca7-ffc1-4ab9-9118-354f70d85571",
             "player": "Emiliano Buendía",
             "slug": "emiliano-buendia",
@@ -984,6 +945,45 @@
             "marketFactor": 1.001,
             "lockedAt": null,
             "expected": 52.97,
+            "blocked": null
+          },
+          {
+            "id": "ComposeTeamBenchCard:4278d0d6-6601-45ff-bd99-f2fa5b904622",
+            "player": "James Trafford",
+            "slug": "james-trafford",
+            "position": "GK",
+            "average": 57,
+            "bonus": 1.02,
+            "starterPct": null,
+            "startRate": 0.6,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 61,
+            "picture": "https://assets.sorare.com/cardsamplepicture/03a5cbf9-1ce5-4f9d-8a41-442c008abee3/picture/tinified-b37f7ccb93f8fa5aeba4979bb6f13779.png",
+            "rarity": "common",
+            "gameId": "Game:f4bc9f49-e1cc-4581-8e7c-b2f5810a315a",
+            "kickoff": "2026-09-29T18:45:00Z",
+            "team": "England",
+            "teamSlug": "england",
+            "opponent": "Czechia",
+            "opponentCode": "CZE",
+            "code": "ENG",
+            "rank": null,
+            "opponentRank": null,
+            "home": false,
+            "competition": "UEFA Nations League",
+            "intl": true,
+            "oppRank": 48,
+            "ownRank": 4,
+            "oppFactor": 1.16,
+            "mismatch": true,
+            "pWin": null,
+            "pLose": null,
+            "oddsBooks": null,
+            "marketFactor": null,
+            "lockedAt": null,
+            "expected": 41.89,
             "blocked": null
           }
         ]
@@ -1107,45 +1107,6 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:69ce92cc-015b-45c9-bf03-60e6d367f52f",
-          "player": "Zion Suzuki",
-          "slug": "zion-suzuki",
-          "position": "GK",
-          "average": 56,
-          "bonus": 1.02,
-          "starterPct": null,
-          "startRate": 0.9,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 58,
-          "picture": "https://assets.sorare.com/cardsamplepicture/5c1b2cb2-6b15-4016-8e17-e4daa4221290/picture/tinified-596d7f1653c75ea02cd01a3829b1fafe.png",
-          "rarity": "common",
-          "gameId": "Game:fe13dfb3-97fd-45af-ae74-2a707f31ae86",
-          "kickoff": "2026-10-10T14:00:00Z",
-          "team": "Aston Villa FC",
-          "teamSlug": "aston-villa-birmingham",
-          "opponent": "Brentford FC",
-          "opponentCode": "BRE",
-          "code": "AST",
-          "rank": 16,
-          "opponentRank": 4,
-          "home": true,
-          "competition": "Premier League",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.364,
-          "pLose": 0.368,
-          "oddsBooks": 22,
-          "marketFactor": 1.017,
-          "lockedAt": null,
-          "expected": 53.22,
-          "blocked": null
-        },
-        {
           "id": "ComposeTeamBenchCard:984d8ca7-ffc1-4ab9-9118-354f70d85571",
           "player": "Emiliano Buendía",
           "slug": "emiliano-buendia",
@@ -1183,6 +1144,45 @@
           "lockedAt": null,
           "expected": 52.97,
           "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:4278d0d6-6601-45ff-bd99-f2fa5b904622",
+          "player": "James Trafford",
+          "slug": "james-trafford",
+          "position": "GK",
+          "average": 57,
+          "bonus": 1.02,
+          "starterPct": null,
+          "startRate": 0.6,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 61,
+          "picture": "https://assets.sorare.com/cardsamplepicture/03a5cbf9-1ce5-4f9d-8a41-442c008abee3/picture/tinified-b37f7ccb93f8fa5aeba4979bb6f13779.png",
+          "rarity": "common",
+          "gameId": "Game:f4bc9f49-e1cc-4581-8e7c-b2f5810a315a",
+          "kickoff": "2026-09-29T18:45:00Z",
+          "team": "England",
+          "teamSlug": "england",
+          "opponent": "Czechia",
+          "opponentCode": "CZE",
+          "code": "ENG",
+          "rank": null,
+          "opponentRank": null,
+          "home": false,
+          "competition": "UEFA Nations League",
+          "intl": true,
+          "oppRank": 48,
+          "ownRank": 4,
+          "oppFactor": 1.16,
+          "mismatch": true,
+          "pWin": null,
+          "pLose": null,
+          "oddsBooks": null,
+          "marketFactor": null,
+          "lockedAt": null,
+          "expected": 41.89,
+          "blocked": null
         }
       ],
       "projected": 299.3
@@ -1192,7 +1192,7 @@
       "entered": {
         "five": [
           {
-            "actual": null,
+            "actual": 3.96,
             "scoreStatus": "REVIEWING",
             "teamSlug": "romania",
             "name": "Ionuț Radu",
@@ -1221,7 +1221,7 @@
             "kickoff": "2026-09-28T18:45:00Z"
           },
           {
-            "actual": 49.37,
+            "actual": 51.86,
             "scoreStatus": "REVIEWING",
             "teamSlug": "belgium",
             "name": "Maxim De Cuyper",
@@ -1279,7 +1279,7 @@
             "kickoff": "2026-09-28T16:00:00Z"
           },
           {
-            "actual": 66.74,
+            "actual": 67.77,
             "scoreStatus": "REVIEWING",
             "teamSlug": "sweden",
             "name": "Viktor Gyökeres",
@@ -1338,9 +1338,9 @@
           }
         ],
         "projected": 258.95,
-        "scoredSoFar": 183.7,
-        "played": 3,
-        "expectedFinal": 294.26
+        "scoredSoFar": 192.43,
+        "played": 4,
+        "expectedFinal": 235.75
       },
       "poolStrength": {
         "strong": 0,
@@ -1350,7 +1350,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 947.7264
+        "scoreSoFar": 956.6676
       },
       "level": 1,
       "lives": null,
@@ -1457,6 +1457,31 @@
       ]
     },
     {
+      "kickoff": "2026-09-29T18:45:00Z",
+      "competition": "UEFA Nations League",
+      "team": "England",
+      "code": "ENG",
+      "rank": null,
+      "opponent": "Czechia",
+      "opponentCode": "CZE",
+      "opponentRank": null,
+      "intl": true,
+      "ownRank": 4,
+      "oppRank": 48,
+      "pWin": null,
+      "pLose": null,
+      "oppFactor": 1.16,
+      "home": false,
+      "players": [
+        "James Trafford"
+      ],
+      "points": 41.9,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
+      ]
+    },
+    {
       "kickoff": "2026-10-02T18:45:00Z",
       "competition": "UEFA Nations League",
       "team": "Belgium",
@@ -1523,10 +1548,9 @@
       "oppFactor": null,
       "home": true,
       "players": [
-        "Zion Suzuki",
         "Emiliano Buendía"
       ],
-      "points": 106.2,
+      "points": 53,
       "bestStarter": null,
       "surfaces": [
         "my set"
