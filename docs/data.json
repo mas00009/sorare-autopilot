@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T07:15:04.945Z",
+  "generatedAt": "2026-09-28T07:20:39.507Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-28T16:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1790579697909,
-    "reason": "last run 0m ago, next due in 60m (lock in 525m)"
+    "lastRunAt": 1790580032146,
+    "reason": "last run 0m ago, next due in 60m (lock in 519m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -212,7 +212,7 @@
       "target": 980,
       "stepState": "LINEUP_SET",
       "collaborative": true,
-      "squadLineups": 2,
+      "squadLineups": 3,
       "squadScore": 0,
       "lineupId": "Tasks::TaskLineup:1f699ea2-1706-4696-b6a1-205761268252",
       "state": "READY",
@@ -510,9 +510,9 @@
       {
         "title": "Collect Spanish players in LaLiga",
         "gems": 30,
-        "progress": 191,
+        "progress": 192,
         "target": 279,
-        "remaining": 88,
+        "remaining": 87,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": []
@@ -1348,7 +1348,7 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 2,
+        "lineupsIn": 3,
         "needed": 3,
         "scoreSoFar": 0
       },
@@ -1427,9 +1427,9 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 185.08,
+        "projected": 185.26,
         "lock": "2026-09-28T16:00:00Z",
-        "shortfall": 794.9,
+        "shortfall": 794.7,
         "tradedPointsForTime": 0,
         "captain": "daniel-svensson-2002-02-12",
         "captainPoints": 20.09,
@@ -1559,7 +1559,7 @@
             "slug": "giorgi-kochorashvili",
             "position": "MD",
             "average": 43,
-            "bonus": 1.04,
+            "bonus": 1.05,
             "starterPct": null,
             "startRate": 0.3,
             "oddsKnown": false,
@@ -1589,7 +1589,7 @@
             "oddsBooks": null,
             "marketFactor": null,
             "lockedAt": null,
-            "expected": 17.81,
+            "expected": 17.99,
             "blocked": null
           },
           {
@@ -1757,7 +1757,7 @@
           "slug": "giorgi-kochorashvili",
           "position": "MD",
           "average": 43,
-          "bonus": 1.04,
+          "bonus": 1.05,
           "starterPct": null,
           "startRate": 0.3,
           "oddsKnown": false,
@@ -1787,7 +1787,7 @@
           "oddsBooks": null,
           "marketFactor": null,
           "lockedAt": null,
-          "expected": 17.81,
+          "expected": 17.99,
           "blocked": null
         },
         {
@@ -1853,7 +1853,7 @@
       "players": [
         "Kochorashvili"
       ],
-      "points": 17.8,
+      "points": 18,
       "bestStarter": null,
       "surfaces": [
         "team set (Loadshift)"
