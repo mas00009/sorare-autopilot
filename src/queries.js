@@ -57,6 +57,8 @@ export const Q_STEP = `
           __typename
           ... on CardPacksRewardConfig { cardPack { slug cardsCount currency effectivePrice } }
           ... on CardShardRewardConfig { quantity rarity }
+          ... on InGameCurrencyRewardConfig { amount currency }
+          ... on MonetaryRewardConfig { amount { usdCents } }
         }
         myLineups {
           id
@@ -358,8 +360,9 @@ export const Q_START_RATES = `
   query StartRates($slugs: [String!]) {
     players(slugs: $slugs) {
       slug
-      anyGameStats(last: 10) {
+      anyGameStats(last: 14) {
         playedInGame
+        anyTeam { __typename }
         ... on PlayerGameStats { gameStarted }
       }
     }

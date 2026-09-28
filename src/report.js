@@ -12,6 +12,7 @@
  * delivery is skipped.
  */
 import fs from 'node:fs/promises';
+import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
@@ -334,158 +335,113 @@ const C = {
   panel: '#f6f7fa', go: '#0f9d63', warn: '#b45309', stop: '#be3455', v: '#6d4fe0',
 };
 
-const section = (title, inner) => inner ? `
-  <tr><td style="padding:22px 26px 0">
-    <div style="font:700 11px/1 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      letter-spacing:.13em;text-transform:uppercase;color:${C.faint};padding-bottom:9px">${esc(title)}</div>
-    ${inner}
-  </td></tr>` : '';
-
-const row = (left, right = '') => `
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-    style="border-collapse:collapse"><tr>
-    <td style="font:400 14px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      color:${C.ink};padding:7px 0;border-bottom:1px solid ${C.line}">${left}</td>
-    ${right ? `<td align="right" style="font:600 13px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      color:${C.dim};padding:7px 0;border-bottom:1px solid ${C.line};white-space:nowrap">${right}</td>` : ''}
-  </tr></table>`;
-
-const chip = (text, colour) => `<span style="display:inline-block;padding:2px 8px;border-radius:99px;
-  background:${colour}1a;color:${colour};font:700 11px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-  white-space:nowrap">${esc(text)}</span>`;
-
-const stat = (n, label, colour = C.ink, { width = '20%', size = 19, html = null } = {}) => `
-  <td width="${width}" align="center" style="padding:13px 4px;background:${C.panel};border-radius:10px">
-    <div style="font:800 ${size}px/1 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      color:${colour};letter-spacing:-.02em;white-space:nowrap">${html ?? esc(n)}</div>
-    <div style="font:600 9px/1.3 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      letter-spacing:.08em;text-transform:uppercase;color:${C.faint};padding-top:5px;
-      white-space:nowrap">${esc(label)}</div></td>`;
-
 const num = (v) => (v == null ? '-' : Number(v).toLocaleString('en-AU'));
 
 /**
- * The score. Projected and target share one tile as a fraction, because they
- * only mean anything read together; the gap gets its own.
- */
-function scoreTiles(team) {
-  const proj = team?.enteredProjection ?? null;
-  if (!proj || !team?.target) return '';
-  const gap = Math.round(proj - team.target);
-  const score = `${Math.round(proj)}<span style="color:${C.faint};font-weight:600"> / ${team.target}</span>`;
-  return stat(null, 'projected of target', C.ink, { html: score })
-    + stat(`${gap > 0 ? '+' : ''}${gap}`, gap >= 0 ? 'clear' : 'short', gap >= 0 ? C.go : C.warn);
-}
-
-/**
- * The lineup, drawn the way the dashboard draws it.
+ * The daily mail.
  *
- * Mail cannot hold a real screenshot without an attachment the client may not
- * show, so the cards are rebuilt from the same Sorare art the page uses: one
- * table cell per card, fixed widths, no flex.
+ * It reads the same snapshot the dashboard is built from (docs/data.json), so
+ * the two never describe a board differently, plus the day's journal for what
+ * was spent, pulled and claimed. One block per board, each opening with the
+ * status sentence a person can read; then the day's money; then anything
+ * that went wrong. Nothing that needs the reader to know what the bot calls
+ * things.
  */
-function teamCards(team) {
-  if (!team?.five?.length) return '';
-  const cells = team.five.map((c) => `
-    <td width="20%" valign="top" style="padding:0 3px">
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-        style="border:1px solid ${c.captain ? '#e8a33d' : C.line};border-radius:10px;overflow:hidden">
-        <tr><td style="padding:0;line-height:0;position:relative">
-          ${c.pic ? `<img src="${esc(c.pic)}" width="106" alt="${esc(c.name)}"
-            style="display:block;width:100%;height:auto;border:0">` : ''}
-        </td></tr>
-        <tr><td style="padding:7px 8px 9px;background:#ffffff">
-          <div style="font:700 11px/1.25 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-            color:${C.ink};height:28px;overflow:hidden">${esc(c.name)}</div>
-          <div style="font:500 10px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-            color:${C.faint};padding-top:2px">${esc(c.pos)}${c.opp ? ` &middot; ${c.home ? 'vs' : '@'} ${esc(c.opp)}` : ''}</div>
-          <div style="font:800 14px/1 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-            color:${c.captain ? '#e07b12' : C.v};padding-top:5px;height:14px">${c.exp != null ? esc(Math.round(c.exp)) : '&nbsp;'}${c.captain ? ' <span style="font-size:10px">(C)</span>' : ''}</div>
-        </td></tr>
-      </table></td>`).join('');
-
-  const head = '';   // the score line lives in the header now
-
-  return `${head}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-    style="border-collapse:separate"><tr>${cells}</tr></table>`;
-}
-
-/** The same digest as an HTML mail. `d` is what digestData() returns. */
-export function digestHtml(date, entries) {
+export function digestHtml(date, entries, snapshot = null) {
   const d = digestData(entries);
+  const snap = snapshot ?? readSnapshotSync();
   const pretty = new Date(`${date}T12:00:00Z`).toLocaleDateString('en-AU',
     { weekday: 'long', day: 'numeric', month: 'long' });
+  const F = "-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif";
+  const P = (txt, extra = '') => `<p style="margin:0;font:400 14px/1.55 ${F};color:${C.ink};${extra}">${txt}</p>`;
+  const H = (txt) => `<div style="font:700 11px/1 ${F};letter-spacing:.13em;text-transform:uppercase;color:${C.faint};padding-bottom:9px">${esc(txt)}</div>`;
+  const tone = { good: C.go, warn: C.warn, bad: C.stop, neutral: C.dim };
 
-  const lineups = d.changes.map((c) => row(
-    `<b>${esc(c.surface)}</b> &nbsp;${esc(c.action)}` +
-    (c.in?.length ? `<div style="color:${C.dim};font-size:13px;padding-top:3px">in: ${esc(c.in.join(', '))}</div>` : '') +
-    (c.out?.length ? `<div style="color:${C.dim};font-size:13px;padding-top:2px">out: ${esc(c.out.join(', '))}</div>` : ''),
-    c.projected ? `${Math.round(c.projected)} pts` : '')).join('');
+  /* ---- one block per board ------------------------------------------- */
+  const boards = (snap?.surfaces ?? []).map((s) => {
+    const name = s.surface.replace(/\s*\(.*\)/, '').replace(/\b\w/g, (c) => c.toUpperCase());
+    const level = s.level != null && s.totalLevels ? `Level ${s.level} of ${s.totalLevels}` : '';
+    const lives = s.lives ? `${s.lives.left} of ${s.lives.of} lives` : '';
+    const pays = (s.rewards ?? []).map((r) => r.kind === 'gems' ? `${r.amount} gems` : r.kind === 'cash' ? `$${r.usd}` : r.kind === 'essence' ? `${r.amount} essence` : r.kind === 'pack' ? `a ${r.cards}-card pack` : null).filter(Boolean).join(' + ');
+    const meta = [level, s.target ? (s.isSquad ? `squad needs ${s.target}` : `needs ${s.target}`) : '', pays ? `pays ${pays}` : '', lives].filter(Boolean).join(' · ');
+    const five = s.entered?.five ?? [];
+    const cells = five.map((c) => `<td width="20%" valign="top" style="padding:0 3px">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid ${c.captain ? '#e8a33d' : C.line};border-radius:10px;overflow:hidden">
+        <tr><td style="padding:0;line-height:0">${c.pic ? `<img src="${esc(c.pic)}" width="106" alt="${esc(c.name)}" style="display:block;width:100%;height:auto;border:0">` : ''}</td></tr>
+        <tr><td style="padding:7px 8px 9px;background:#ffffff">
+          <div style="font:700 11px/1.25 ${F};color:${C.ink};height:28px;overflow:hidden">${esc(c.name)}</div>
+          <div style="font:500 10px/1.4 ${F};color:${C.faint};padding-top:2px;height:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(c.pos ?? '')}${c.opp ? ` &middot; ${c.home ? 'vs' : '@'} ${esc(shortTeam(c.opp))}` : ''}</div>
+          ${c.actual != null
+            ? `<div style="font:800 14px/1 ${F};color:${C.go};padding-top:5px">${Math.round(c.actual)} <span style="font:600 9px/1 ${F};color:${C.faint};letter-spacing:.06em">SCORED</span></div>`
+            : `<div style="font:800 14px/1 ${F};color:${c.captain ? '#e07b12' : C.v};padding-top:5px">${c.exp != null ? Math.round(c.exp) : '&nbsp;'} <span style="font:600 9px/1 ${F};color:${C.faint};letter-spacing:.06em">${c.exp != null ? 'EXPECTED' : ''}</span>${c.captain ? ' <span style="font-size:10px">(C)</span>' : ''}</div>`}
+        </td></tr></table></td>`).join('');
+    const finished = d.finished.filter((l) => l.surface === s.surface);
+    const results = finished.map((l) => {
+      const verdict = l.collaborative
+        ? (l.cleared ? `The squad reached ${Math.round(l.squadScore)}, over the ${l.target} it needed.` : `The squad made ${Math.round(l.squadScore)}, short of the ${l.target} it needed.`)
+        : (l.cleared ? `Passed with ${Math.round(l.score)} against ${l.target}.` : `Missed: ${Math.round(l.score)} against ${l.target}.`);
+      const line = l.players.map((p) => `${p.captain ? '(C) ' : ''}${esc(p.name.split(' ').pop())} ${Math.round(p.score ?? 0)}`).join(' &middot; ');
+      return `<div style="margin-top:12px;padding:10px 12px;background:${C.panel};border-radius:10px">
+        ${P(`<b>Result, level ${l.level}:</b> ${verdict}`)}
+        <div style="font:500 12px/1.5 ${F};color:${C.dim};padding-top:3px">${line}</div></div>`;
+    }).join('');
+    return `<tr><td style="padding:22px 26px 0">
+      ${H(name)}
+      ${meta ? `<div style="font:500 12px/1.4 ${F};color:${C.dim};margin:-4px 0 10px">${esc(meta)}</div>` : ''}
+      <div style="padding:10px 12px;border-left:3px solid ${tone[s.tone] ?? C.dim};background:${C.panel};border-radius:0 10px 10px 0">${P(esc(s.status ?? ''))}</div>
+      ${five.length ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;margin-top:12px"><tr>${cells}</tr></table>` : ''}
+      ${results}
+    </td></tr>`;
+  }).join('');
 
-  const claims = [
-    ...d.claims.map((c) => row(esc(c.name))),
-    ...d.stepClaims.map((s) => row(`<b>${esc(s.surface)}</b> &nbsp;${esc(s.reason ?? s.action)}`)),
-  ].join('');
-
-  const best = [...d.pulls].sort((a, b) => (b.stars ?? 0) - (a.stars ?? 0)).slice(0, 10);
-  const pulls = best.map((c) => row(
-    esc(c.name),
-    chip(`${c.stars}-star`, (c.stars ?? 0) >= 4 ? C.v : (c.stars ?? 0) >= 3 ? C.go : C.faint))).join('');
-
-  const errors = [...new Set(d.errors.map(String))].slice(0, 8)
-    .map((e) => row(`<span style="color:${C.stop}">${esc(e)}</span>`)).join('');
-
-  const received = d.rewards.length
-    ? [...d.rewards.reduce((m, r) => m.set(r.currency, (m.get(r.currency) ?? 0) + r.change), new Map())]
-        .map(([cur, chg]) => row(esc(cur), `${chg > 0 ? '+' : ''}${chg}`)).join('')
+  /* ---- the day's money ------------------------------------------------ */
+  // Name the pulls worth naming; count the rest. Twenty two-star names in a
+  // row is noise, and the 3-star is the only one the day was about.
+  const best = [...d.pulls].sort((a, b) => (b.stars ?? 0) - (a.stars ?? 0));
+  const good = best.filter((c) => (c.stars ?? 0) >= 3);
+  const rest = best.length - good.length;
+  const pulls = best.length
+    ? (good.map((c) => `${esc(c.name)} <span style="color:${(c.stars ?? 0) >= 4 ? C.v : C.go};font-weight:700">${c.stars}&#9733;</span>`).join(', ')
+       + (rest ? `${good.length ? ' and ' : ''}${rest} card${rest === 1 ? '' : 's'} of 2 stars or under` : ''))
     : '';
+  const claims = [...d.claims.map((c) => c.name), ...d.stepClaims.map((s) => `${s.surface}: ${s.reason ?? s.action}`)];
+  const moneyLines = [
+    `You have <b>${num(snap?.balances?.essence ?? d.essence)}</b> essence and <b>${num(snap?.balances?.gems ?? d.gems)}</b> gems.`,
+    d.spent ? `Spent <b>${num(d.spent)}</b> essence on packs today${pulls ? `, which pulled: ${pulls}.` : '.'}` : 'No essence spent today.',
+    claims.length ? `Claimed: ${claims.map(esc).join('; ')}.` : 'Nothing was ready to claim.',
+  ];
+  const gemsNote = snap?.gems ? `${snap.gems.ladderGemsAhead + snap.gems.collectionGemsOpen} more gems are in reach: ${snap.gems.ladderGemsAhead} on the ladder and ${snap.gems.collectionGemsOpen} from the LaLiga collections${snap.gems.collections?.length ? ` (${snap.gems.collections.map((c) => `${c.progress}/${c.target}`).join(', ')})` : ''}.` : '';
+  const errors = [...new Set(d.errors.map(String))].slice(0, 6);
 
   return `<!doctype html><html><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"></head>
 <body style="margin:0;padding:0;background:#eef0f5">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-  style="background:#eef0f5;padding:26px 12px"><tr><td align="center">
-<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0"
-  style="width:600px;max-width:100%;background:#ffffff;border-radius:16px;overflow:hidden;
-  border:1px solid ${C.line}">
-
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#eef0f5;padding:26px 12px"><tr><td align="center">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;max-width:100%;background:#ffffff;border-radius:16px;overflow:hidden;border:1px solid ${C.line}">
   <tr><td style="background:#11141f;padding:20px 26px">
-    <img src="${SITE}img/wordmark.png" alt="Sorare Autopilot" width="190"
-      style="display:block;width:190px;height:auto;border:0">
-    <div style="font:500 13px/1.4 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      color:#8b95ad;padding-top:8px">${esc(pretty)}</div></td></tr>
-
+    <img src="${SITE}img/wordmark.png" alt="Sorare Autopilot" width="190" style="display:block;width:190px;height:auto;border:0">
+    <div style="font:500 13px/1.4 ${F};color:#8b95ad;padding-top:8px">${esc(pretty)}</div></td></tr>
+  ${boards}
   <tr><td style="padding:22px 26px 0">
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="5" border="0"><tr>
-      ${scoreTiles(d.team)}
-      ${stat(num(d.essence), 'essence left', C.go)}
-      ${stat(num(d.gems), 'gems', C.v)}
-      ${stat(num(d.spent), 'essence spent', d.spent ? C.warn : C.ink)}
-    </tr></table></td></tr>
-
-  ${section(d.team?.surface ? `The team - ${d.team.surface}` : 'The team', teamCards(d.team))}
-  ${section('Results', d.finished.map((l) => {
-    const cells = l.players.map((p) => `<td width="20%" align="center" style="padding:6px 2px;border-top:1px solid ${C.line}">
-        <div style="font:600 11px/1.25 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:${C.ink};white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${p.captain ? '<span style="color:#e07b12">C</span> ' : ''}${esc(p.name)}</div>
-        <div style="font:800 15px/1.2 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:${(p.score ?? 0) >= 60 ? C.go : (p.score ?? 0) < 20 ? C.stop : C.ink}">${Math.round(p.score ?? 0)}</div></td>`).join('');
-    const verdict = l.collaborative
-      ? (l.cleared ? chip('squad cleared', C.go) : chip('squad short', C.stop))
-      : (l.cleared ? chip('cleared', C.go) : chip('missed', C.stop));
-    return `<div style="font:400 13px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:${C.ink};padding:8px 0 2px">
-        <b>${esc(l.surface)}</b> &nbsp;level ${l.level} &nbsp;${verdict}
-        <span style="float:right;font-weight:700">${Math.round(l.score)} / ${l.target}${l.collaborative && l.squadScore != null ? ` <span style="color:${C.dim};font-weight:500">(squad ${Math.round(l.squadScore)})</span>` : ''}</span></div>
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse"><tr>${cells}</tr></table>`;
-  }).join(''))}
-  ${section('Lineups', lineups || row(`<span style="color:${C.dim}">No changes today.</span>`))}
-  ${section('Claimed', claims || row(`<span style="color:${C.dim}">Nothing was claimable.</span>`))}
-  ${section('Received', received)}
-  ${section('Pulled from packs', pulls)}
-  ${section('Errors', errors)}
-
+    ${H('Essence and gems')}
+    ${moneyLines.map((l) => P(l, 'padding:3px 0')).join('')}
+    ${gemsNote ? P(gemsNote, `padding:3px 0;color:${C.dim}`) : ''}
+  </td></tr>
+  ${errors.length ? `<tr><td style="padding:22px 26px 0">${H('Problems')}${errors.map((e) => P(`<span style="color:${C.stop}">${esc(e)}</span>`, 'padding:2px 0')).join('')}</td></tr>` : ''}
   <tr><td style="padding:24px 26px 26px">
-    <a href="${SITE}" style="display:inline-block;background:${C.v};color:#ffffff;text-decoration:none;
-      padding:11px 20px;border-radius:9px;font:700 14px/1 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif">
-      Open the dashboard</a></td></tr>
-
+    <a href="${SITE}" style="display:inline-block;background:${C.v};color:#ffffff;text-decoration:none;padding:11px 20px;border-radius:9px;font:700 14px/1 ${F}">Open the dashboard</a></td></tr>
 </table></td></tr></table></body></html>`;
+}
+
+/** "Real Club Deportivo de La Coruña" does not fit a 106px card; "La Coruña" does. */
+function shortTeam(name) {
+  return String(name ?? '')
+    .replace(/^(Real Club Deportivo de|Real Club Deportivo|Real Sociedad de Fútbol|RCD|CA|CD|UD|SD|FC|RC|AS|SS|US|AC|SSC|Club Atlético de|Atlético de|Deportivo)\s+/i, '')
+    .replace(/\s+(FC|CF|AFC|SC|BC|CFC|Calcio|Spor Kulübü)$/i, '')
+    .trim();
+}
+
+/** The dashboard's snapshot, if it exists. The mail is built from it. */
+function readSnapshotSync() {
+  try { return JSON.parse(readFileSync(path.join(ROOT, 'docs', 'data.json'), 'utf8')); } catch { return null; }
 }

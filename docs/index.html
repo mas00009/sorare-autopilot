@@ -182,6 +182,8 @@ nav button[data-warn]::after{content:"";width:6px;height:6px;border-radius:99px;
 .barp i{display:block;height:100%;border-radius:99px;transition:width .5s ease;
  background:linear-gradient(90deg,var(--v2),#5eead4)}
 /* The verdict lives on the totals line now, so it needs no box of its own. */
+.verdict.quiet{background:rgba(255,255,255,.04);border-color:var(--line);color:var(--dim)}
+.verdict.bad{background:rgba(251,113,133,.1);border-color:#5c2733;color:#fda4af}
 .verdict{display:inline-flex;align-items:center;gap:10px;border-radius:99px;padding:7px 17px;
  font-size:.83rem;border:1px solid #584311;background:#221a07;color:#e2c581}
 .verdict b{font-size:1rem;font-weight:790;color:var(--warn);letter-spacing:-.02em}
@@ -407,36 +409,6 @@ function topbar(d){
       </span></div>`;
 }
 
-/** One pill: the gap, and what the bot is doing about it. */
-function verdict(s,pl,tot){
-  // A squad target is the whole squad's combined score, so this lineup has no
-  // gap to report against it - only its own contribution.
-  if(s.collaborative){
-    const p=s.entered?.projected??tot;
-    return `<span class="verdict good"><b>${Math.round(p)}</b>
-      into the squad's ${s.target}. Always entered: the target is the team's combined score.</span>`;
-  }
-  // With a team entered, the gap on screen is that team's gap.
-  if(s.entered?.projected!=null&&s.target){
-    const gap=Math.round(s.entered.projected-s.target);
-    return gap>=0
-      ? `<span class="verdict good"><b>+${gap}</b> Clear of target. Locks ${pl?.lock?when(pl.lock):'at the first kickoff'}.</span>`
-      : `<span class="verdict"><b>&minus;${Math.abs(gap)}</b> Short on paper, but inside a good week. It is in.</span>`;
-  }
-  if(pl&&pl.clearsTarget===false&&pl.withinReach===false)
-    return `<span class="verdict"><b>&minus;${Math.round(pl.shortfall)}</b>
-      Too far short to be worth a heart, so nothing goes in yet.</span>`;
-  if(pl&&pl.clearsTarget===false)
-    return `<span class="verdict"><b>&minus;${Math.round(pl.shortfall)}</b>
-      Short on paper, but inside a good week. Going in.</span>`;
-  if(pl&&pl.clearsTarget&&pl.lock)
-    return `<span class="verdict good"><b>+${Math.round(pl.projected-s.target)}</b>
-      Locks ${when(pl.lock)}${pl.tradedPointsForTime>0?`, ${pl.tradedPointsForTime} points given up to lock later`:''}.</span>`;
-  const gap=Math.round(s.target-tot);
-  return `<span class="verdict${gap<=0?' good':''}"><b>${gap<=0?'+'+Math.abs(gap):'&minus;'+gap}</b>
-    ${gap<=0?'clears the target':'short of the target'}</span>`;
-}
-
 /* Sorare's own numbers: maxLineupsCount is the total, remainingLineupsCount the
    ones still standing. A squad step is collaborative and has no lives, so it
    gets nothing rather than a row of invented hearts. */
@@ -448,24 +420,33 @@ function livesBadge(l){
   return `<span class="lives" title="${l.left} of ${l.of} lives left on this step">${hearts}<b>${l.left}/${l.of}</b></span>`;
 }
 
+/** The board's status, as one sentence written once on the server (dashboard.js). */
+function verdict(s){
+  const cls={good:'verdict good',warn:'verdict',bad:'verdict bad',neutral:'verdict quiet'}[s.tone]||'verdict quiet';
+  return `<span class="${cls}">${esc(s.status||'')}</span>`;
+}
+
 function surfacePanel(s){
   const pl=s.plan;
   const lvl=s.level!=null&&s.totalLevels?`<span class="pill vv">Level ${s.level} of ${s.totalLevels}</span>`:'';
   const dots=(s.ladder??[]).map(x=>`<i class="${x.state==='CLAIMED'?'done':(x.level===s.level?'now':'')}" title="Level ${x.level} · ${x.target} pts"></i>`).join('');
-  const rw=(s.rewards??[]).map(r=>r.kind==='pack'?`<span class="pill">${TITLE(`Pays ${r.cards}-card pack`)}</span>`
-    :r.kind==='essence'?`<span class="pill">${TITLE(`Pays ${r.amount} essence`)}</span>`
-    :`<span class="pill">${esc(TITLE('Pays '+human(r.kind,REWARD)))}</span>`).join('');
+  const rw=(s.rewards??[]).map(r=>r.kind==='pack'?`<span class="pill">Pays a ${r.cards}-card pack</span>`
+    :r.kind==='essence'?`<span class="pill">Pays ${r.amount.toLocaleString()} essence</span>`
+    :r.kind==='gems'?`<span class="pill vv">Pays ${r.amount} gems</span>`
+    :r.kind==='cash'?`<span class="pill go">Pays $${r.usd.toLocaleString('en-US')}</span>`
+    :`<span class="pill">${esc('Pays '+human(r.kind,REWARD))}</span>`).join('');
   const st={LINEUP_SET:'go',PLAYABLE:'go',CLAIMABLE:'warn',LIVE:'vv',FAILED:'bad'}[s.state]||'';
 
   if(!s.candidates.length) return `<div class="card text">
-    <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>${lvl}<span class="pill ${st}">${esc(TITLE(human(s.state,STATE)))}</span>${livesBadge(s.lives)}</div>
+    <div class="head"><h3>${s.target?(s.isSquad?`Squad needs ${s.target}`:`Needs ${s.target} points`):'Step'}</h3>${lvl}${livesBadge(s.lives)}</div>
     ${dots?`<div class="steps">${dots}</div>`:''}${rw?`<div style="margin-top:10px">${rw}</div>`:''}
+    <p class="prose" style="margin:13px 0 0">${esc(s.status||'')}</p>
     ${s.squad && s.squad.lineupsIn < s.squad.needed ? `<p class="prose" style="margin:13px 0 0">A squad step needs
       <b>${s.squad.needed}</b> lineups from the team before it counts, and
       <b>${s.squad.lineupsIn}</b> ${s.squad.lineupsIn === 1 ? 'is' : 'are'} in so far.
       The <b style="white-space:nowrap">${esc(String(s.target))}-point</b> target is the squad's
       combined score, not one lineup's.</p>` : ''}
-    <p class="prose" style="margin:13px 0 0">No eligible cards yet. This step opens for entry closer to its matchday, and the bot fills it then.</p></div>`;
+    </div>`;
 
   // The entered team when there is one; the plan only stands in for an empty step.
   const five=(s.entered?.five?.length ? s.entered.five : s.candidates).slice(0,5);
@@ -480,8 +461,7 @@ function surfacePanel(s){
   const pct=s.target?Math.min(100,tot/s.target*100):0;
   const waiting=pl&&pl.clearsTarget===false;
   return `<div class="card">
-    <div class="head"><h3>${s.target?`Target ${s.target} points`:'Step'}</h3>${lvl}
-      <span class="pill ${st}">${esc(TITLE(human(s.state,STATE)))}</span>${rw}${livesBadge(s.lives)}</div>
+    <div class="head"><h3>${s.target?(s.isSquad?`Squad needs ${s.target}`:`Needs ${s.target} points`):'Step'}</h3>${lvl}${rw}${livesBadge(s.lives)}</div>
     ${dots?`<div class="steps">${dots}</div>`:''}
     <div class="xi" style="margin-top:12px">${five.map((c,i)=>`
       <div class="p${isCap(c)?' cap':''}">
@@ -496,11 +476,9 @@ function surfacePanel(s){
     <div class="tot">
       <span class="score"><span class="n"><b>${(s.entered?.played?s.entered.expectedFinal:tot).toFixed(0)}</b>${s.target?`<i>&thinsp;/&thinsp;${s.target}</i>`:''}</span>
         <s>${s.entered?.played?`${Math.round(s.entered.scoredSoFar)} scored so far, ${s.entered.played} of 5 played`:(s.target?'projected of target':'projected')}</s></span>
-      ${s.target?verdict(s,pl,tot):''}</div>
+      ${verdict(s)}</div>
     ${s.target?`<div class="barp"><i style="width:${pct}%"></i></div>`:''}
-    ${s.poolStrength&&!s.collaborative?`<p class="pool">${s.poolStrength.strong>=s.poolStrength.needed
-      ?`<b>${s.poolStrength.strong}</b> regular starters averaging 60+ are available this window. That is enough to build a team that can reach ${s.target}.`
-      :`Only <b>${s.poolStrength.strong}</b> regular starter${s.poolStrength.strong===1?'':'s'} averaging 60+ ${s.poolStrength.strong===1?'is':'are'} available this window, and reaching ${s.target} takes five. The rest of the team is carried by form and luck.`}</p>`:''}
+    ${s.poolStrength&&!s.collaborative?`<p class="pool">Reaching ${s.target} usually takes five regular starters who average 60 or more. This week you have <b>${s.poolStrength.strong}</b>.</p>`:''}
 
   </div>`;
 }

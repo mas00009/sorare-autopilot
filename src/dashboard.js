@@ -77,11 +77,42 @@ export async function build() {
         return { kind: 'pack', cards: r.cardPack.cardsCount, worth: r.cardPack.effectivePrice, currency: r.cardPack.currency };
       }
       if (r.__typename === 'CardShardRewardConfig') return { kind: 'essence', amount: r.quantity, rarity: r.rarity };
+      if (r.__typename === 'InGameCurrencyRewardConfig') return { kind: r.currency === 'COMMON_GEM' ? 'gems' : 'currency', amount: r.amount, currency: r.currency };
+      if (r.__typename === 'MonetaryRewardConfig') return { kind: 'cash', usd: (r.amount?.usdCents ?? 0) / 100 };
       return { kind: r.__typename.replace(/RewardConfig$/, '') };
     });
 
+    // One sentence a person can read, written once here and used by the page
+    // and the mail alike, so the two never explain the same board differently.
+    const lockAt = live?.five?.map((c) => c.kickoff).filter(Boolean).sort()[0] ?? plan?.lock ?? null;
+    const whenLock = (iso) => (iso ? new Date(iso).toLocaleString('en-AU', { weekday: 'short', hour: '2-digit', minute: '2-digit', timeZone: 'Australia/Sydney' }) + ' Sydney' : 'at the first kickoff');
+    const isSquad = step?.__typename === 'SquadStep' || step?.minimumLineupsToStartStep != null;
+    const played = live?.played ?? 0;
+    const locked = !!live && (live.five ?? []).some((c) => c.locked) || played > 0;
+    const target = step?.target ?? null;
+    let status, tone = 'neutral';
+    if (step?.state === 'CLAIMABLE') { status = 'Passed. The reward is waiting and will be claimed after the daily reset.'; tone = 'good'; }
+    else if (step?.state === 'FAILED') { status = 'Missed the target. A fresh team goes in when the step reopens.'; tone = 'bad'; }
+    else if (step?.state === 'PRE_MATCHDAY_LOCKED' || (!live && step?.state === 'LOCKED')) { status = 'Not open for entry yet. A team goes in the moment it opens.'; }
+    else if (live && isSquad && locked) { status = `Locked and playing. ${Math.round(live.scoredSoFar)} scored so far, ${played} of 5 played. The squad's top three lineups together need ${target}${step?.totalScore ? `; the squad has ${Math.round(step.totalScore)} so far` : ''}.`; tone = 'good'; }
+    else if (live && isSquad) { status = `Team entered, locks ${whenLock(lockAt)}. The squad's top three lineups together need ${target}; this one is expected to add about ${Math.round(live.projected ?? 0)}.`; tone = 'good'; }
+    else if (live && locked) {
+      const gap = Math.round((live.expectedFinal ?? live.projected ?? 0) - target);
+      status = `Locked and playing. ${Math.round(live.scoredSoFar)} scored so far, ${played} of 5 played. On course for about ${Math.round(live.expectedFinal ?? live.projected ?? 0)}; needs ${target}${gap >= 0 ? ` (${gap} over)` : ` (${-gap} short)`}.`;
+      tone = gap >= 0 ? 'good' : 'warn';
+    }
+    else if (live) {
+      const gap = Math.round((live.projected ?? 0) - target);
+      status = `Team entered, locks ${whenLock(lockAt)}. Expected about ${Math.round(live.projected ?? 0)}; needs ${target}${gap >= 0 ? ` (${gap} over)` : ` (${-gap} short)`}. It keeps being updated until it locks.`;
+      tone = gap >= 0 ? 'good' : 'warn';
+    }
+    else if (plan && target && plan.withinReach === false) { status = `No team entered. The best available is expected to make ${Math.round(plan.projected)}, ${Math.round(target - plan.projected)} short of ${target} - too far to risk a life. Checked again every pass as fixtures change.`; tone = 'warn'; }
+    else if (plan) { status = `No team in yet. The next pass enters the best available, expected about ${Math.round(plan.projected)} against ${target}.`; }
+    else { status = 'No eligible cards for this step yet.'; }
+
     surfaces.push({
       surface: b.surface,
+      status, tone, lockAt, isSquad,
       entered: live ? { five: live.five, projected: live.projected,
         scoredSoFar: live.scoredSoFar ?? 0, played: live.played ?? 0, expectedFinal: live.expectedFinal ?? live.projected } : null,
       poolStrength: { strong, needed: 5 },
