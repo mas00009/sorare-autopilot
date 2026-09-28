@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T19:09:36.627Z",
+  "generatedAt": "2026-09-28T19:14:58.230Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790622570005,
-    "reason": "last run 0m ago, next due in 180m (lock in 16970m)"
+    "lastRunAt": 1790622892315,
+    "reason": "last run 0m ago, next due in 180m (lock in 16965m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 655.9668,
+      "squadScore": 647.1492,
       "lineupId": "Tasks::TaskLineup:1f699ea2-1706-4696-b6a1-205761268252",
       "state": "READY",
-      "score": 108.59,
+      "score": 108.02,
       "finished": false,
       "cleared": false,
       "players": [
@@ -225,7 +225,7 @@
           "slug": "ionu-andrei-radu",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 30.36,
+          "score": 30.72,
           "status": "REVIEWING",
           "kickoff": "2026-10-02T18:45:00Z"
         },
@@ -252,7 +252,7 @@
           "slug": "viktor-gyokeres",
           "position": "Forward",
           "captain": false,
-          "score": 35.33,
+          "score": 34.4,
           "status": "REVIEWING",
           "kickoff": "2026-10-02T18:45:00Z"
         },
@@ -1192,7 +1192,7 @@
       "entered": {
         "five": [
           {
-            "actual": 30.36,
+            "actual": 30.72,
             "scoreStatus": "REVIEWING",
             "teamSlug": "romania",
             "name": "Ionuț Radu",
@@ -1279,7 +1279,7 @@
             "kickoff": "2026-09-28T16:00:00Z"
           },
           {
-            "actual": 35.33,
+            "actual": 34.4,
             "scoreStatus": "REVIEWING",
             "teamSlug": "sweden",
             "name": "Viktor Gyökeres",
@@ -1338,9 +1338,9 @@
           }
         ],
         "projected": 258.95,
-        "scoredSoFar": 108.6,
+        "scoredSoFar": 108.03,
         "played": 3,
-        "expectedFinal": 236.55
+        "expectedFinal": 235.98
       },
       "poolStrength": {
         "strong": 0,
@@ -1350,7 +1350,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 655.9668
+        "scoreSoFar": 647.1492
       },
       "level": 1,
       "lives": null,
