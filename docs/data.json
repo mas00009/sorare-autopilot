@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T15:57:49.890Z",
+  "generatedAt": "2026-09-28T16:03:18.385Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 211
   },
   "schedule": {
-    "nextLock": "2026-09-28T16:00:00Z",
+    "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790611062919,
-    "reason": "last run 0m ago, next due in 180m (lock in 2m)"
+    "lastRunAt": 1790611390964,
+    "reason": "last run 0m ago, next due in 180m (lock in 17157m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -210,13 +210,13 @@
       "surface": "team set (Loadshift)",
       "level": 1,
       "target": 980,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 113.75,
+      "squadScore": 114.178,
       "lineupId": "Tasks::TaskLineup:1f699ea2-1706-4696-b6a1-205761268252",
       "state": "READY",
-      "score": 37.45,
+      "score": 37.87,
       "finished": false,
       "cleared": false,
       "players": [
@@ -243,9 +243,9 @@
           "slug": "andrija-bulatovic",
           "position": "Midfielder",
           "captain": false,
-          "score": 37.45,
+          "score": 37.88,
           "status": "REVIEWING",
-          "kickoff": "2026-09-28T16:00:00Z"
+          "kickoff": "2026-10-02T16:00:00Z"
         },
         {
           "name": "Viktor Gyökeres",
@@ -1250,7 +1250,7 @@
             "kickoff": "2026-09-28T18:45:00Z"
           },
           {
-            "actual": 37.45,
+            "actual": 37.88,
             "scoreStatus": "REVIEWING",
             "teamSlug": "montenegro",
             "name": "Andrija Bulatović",
@@ -1275,7 +1275,7 @@
             "oppRank": 107,
             "ownRank": 80,
             "oppFactor": 1.022,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-09-28T16:00:00Z"
           },
           {
@@ -1338,9 +1338,9 @@
           }
         ],
         "projected": 258.95,
-        "scoredSoFar": 37.45,
+        "scoredSoFar": 37.88,
         "played": 1,
-        "expectedFinal": 258.18
+        "expectedFinal": 258.61
       },
       "poolStrength": {
         "strong": 0,
@@ -1350,7 +1350,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 113.75
+        "scoreSoFar": 114.178
       },
       "level": 1,
       "lives": null,
@@ -1364,7 +1364,7 @@
         },
         {
           "level": 1,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 980
         },
         {
@@ -1391,7 +1391,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 980,
       "current": [
         {
@@ -1409,8 +1409,8 @@
         {
           "name": "Andrija Bulatović",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-09-28T16:00:00Z"
+          "locked": true,
+          "nextGame": "2026-10-02T16:00:00Z"
         },
         {
           "name": "Viktor Gyökeres",
@@ -1427,9 +1427,9 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 185.26,
-        "lock": "2026-09-28T16:00:00Z",
-        "shortfall": 794.7,
+        "projected": 185.42,
+        "lock": "2026-09-28T18:45:00Z",
+        "shortfall": 794.6,
         "tradedPointsForTime": 0,
         "captain": "daniel-svensson-2002-02-12",
         "captainPoints": 20.09,
@@ -1563,33 +1563,33 @@
             "starterPct": null,
             "startRate": 0.3,
             "oddsKnown": false,
-            "onGameSheet": true,
+            "onGameSheet": false,
             "reliability": null,
             "formL5": 45,
             "picture": "https://assets.sorare.com/cardsamplepicture/dec12747-5fe0-4ae2-bf1f-8ac532bbe414/picture/tinified-df19e64a13e5bc503b973eae05212650.png",
             "rarity": "common",
-            "gameId": "Game:36ffe5bb-e956-4156-a91b-7c837b0cd984",
-            "kickoff": "2026-09-28T16:00:00Z",
+            "gameId": "Game:d45c4752-fbd8-4393-8136-d1efae602972",
+            "kickoff": "2026-10-02T18:45:00Z",
             "team": "Georgia",
             "teamSlug": "georgia",
-            "opponent": "Ukraine",
-            "opponentCode": "UKR",
+            "opponent": "Hungary",
+            "opponentCode": "HUN",
             "code": "GEO",
             "rank": null,
             "opponentRank": null,
-            "home": true,
+            "home": false,
             "competition": "UEFA Nations League",
             "intl": true,
-            "oppRank": 33,
+            "oppRank": 39,
             "ownRank": 72,
-            "oppFactor": 0.961,
+            "oppFactor": 0.97,
             "mismatch": false,
             "pWin": null,
             "pLose": null,
             "oddsBooks": null,
             "marketFactor": null,
             "lockedAt": null,
-            "expected": 17.99,
+            "expected": 18.15,
             "blocked": null
           },
           {
@@ -1761,33 +1761,33 @@
           "starterPct": null,
           "startRate": 0.3,
           "oddsKnown": false,
-          "onGameSheet": true,
+          "onGameSheet": false,
           "reliability": null,
           "formL5": 45,
           "picture": "https://assets.sorare.com/cardsamplepicture/dec12747-5fe0-4ae2-bf1f-8ac532bbe414/picture/tinified-df19e64a13e5bc503b973eae05212650.png",
           "rarity": "common",
-          "gameId": "Game:36ffe5bb-e956-4156-a91b-7c837b0cd984",
-          "kickoff": "2026-09-28T16:00:00Z",
+          "gameId": "Game:d45c4752-fbd8-4393-8136-d1efae602972",
+          "kickoff": "2026-10-02T18:45:00Z",
           "team": "Georgia",
           "teamSlug": "georgia",
-          "opponent": "Ukraine",
-          "opponentCode": "UKR",
+          "opponent": "Hungary",
+          "opponentCode": "HUN",
           "code": "GEO",
           "rank": null,
           "opponentRank": null,
-          "home": true,
+          "home": false,
           "competition": "UEFA Nations League",
           "intl": true,
-          "oppRank": 33,
+          "oppRank": 39,
           "ownRank": 72,
-          "oppFactor": 0.961,
+          "oppFactor": 0.97,
           "mismatch": false,
           "pWin": null,
           "pLose": null,
           "oddsBooks": null,
           "marketFactor": null,
           "lockedAt": null,
-          "expected": 17.99,
+          "expected": 18.15,
           "blocked": null
         },
         {
@@ -1834,31 +1834,6 @@
     }
   ],
   "fixtures": [
-    {
-      "kickoff": "2026-09-28T16:00:00Z",
-      "competition": "UEFA Nations League",
-      "team": "Georgia",
-      "code": "GEO",
-      "rank": null,
-      "opponent": "Ukraine",
-      "opponentCode": "UKR",
-      "opponentRank": null,
-      "intl": true,
-      "ownRank": 72,
-      "oppRank": 33,
-      "pWin": null,
-      "pLose": null,
-      "oppFactor": 0.961,
-      "home": true,
-      "players": [
-        "Kochorashvili"
-      ],
-      "points": 18,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
     {
       "kickoff": "2026-09-28T18:45:00Z",
       "competition": "UEFA Nations League",
@@ -2008,6 +1983,31 @@
       "bestStarter": null,
       "surfaces": [
         "my set"
+      ]
+    },
+    {
+      "kickoff": "2026-10-02T18:45:00Z",
+      "competition": "UEFA Nations League",
+      "team": "Georgia",
+      "code": "GEO",
+      "rank": null,
+      "opponent": "Hungary",
+      "opponentCode": "HUN",
+      "opponentRank": null,
+      "intl": true,
+      "ownRank": 72,
+      "oppRank": 39,
+      "pWin": null,
+      "pLose": null,
+      "oppFactor": 0.97,
+      "home": false,
+      "players": [
+        "Kochorashvili"
+      ],
+      "points": 18.1,
+      "bestStarter": null,
+      "surfaces": [
+        "team set (Loadshift)"
       ]
     },
     {
