@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T17:41:59.769Z",
+  "generatedAt": "2026-09-28T17:47:27.891Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790617312537,
-    "reason": "last run 0m ago, next due in 180m (lock in 17058m)"
+    "lastRunAt": 1790617640523,
+    "reason": "last run 0m ago, next due in 180m (lock in 17053m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 183.612,
+      "squadScore": 584.456,
       "lineupId": "Tasks::TaskLineup:1f699ea2-1706-4696-b6a1-205761268252",
       "state": "READY",
-      "score": 43.65,
+      "score": 120.95,
       "finished": false,
       "cleared": false,
       "players": [
@@ -225,8 +225,8 @@
           "slug": "ionu-andrei-radu",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 42,
+          "status": "REVIEWING",
           "kickoff": "2026-09-28T18:45:00Z"
         },
         {
@@ -243,7 +243,7 @@
           "slug": "andrija-bulatovic",
           "position": "Midfielder",
           "captain": false,
-          "score": 43.66,
+          "score": 42.91,
           "status": "REVIEWING",
           "kickoff": "2026-10-02T16:00:00Z"
         },
@@ -252,8 +252,8 @@
           "slug": "viktor-gyokeres",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-09-28T18:45:00Z"
         },
         {
@@ -266,7 +266,7 @@
           "kickoff": "2026-09-28T18:45:00Z"
         }
       ],
-      "scored": 1
+      "scored": 3
     },
     {
       "surface": "my set",
@@ -1192,8 +1192,8 @@
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 42,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "romania",
             "name": "Ionuț Radu",
             "player": "Ionuț Radu",
@@ -1250,7 +1250,7 @@
             "kickoff": "2026-09-28T18:45:00Z"
           },
           {
-            "actual": 43.66,
+            "actual": 42.91,
             "scoreStatus": "REVIEWING",
             "teamSlug": "montenegro",
             "name": "Andrija Bulatović",
@@ -1279,8 +1279,8 @@
             "kickoff": "2026-09-28T16:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "sweden",
             "name": "Viktor Gyökeres",
             "player": "Viktor Gyökeres",
@@ -1338,9 +1338,9 @@
           }
         ],
         "projected": 258.95,
-        "scoredSoFar": 43.66,
-        "played": 1,
-        "expectedFinal": 264.39
+        "scoredSoFar": 120.96,
+        "played": 3,
+        "expectedFinal": 248.91
       },
       "poolStrength": {
         "strong": 0,
@@ -1350,7 +1350,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 183.612
+        "scoreSoFar": 584.456
       },
       "level": 1,
       "lives": null,
@@ -1446,7 +1446,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 57,
             "picture": "https://assets.sorare.com/cardsamplepicture/79f36680-211d-45ad-87e7-41bce11c6812/picture/tinified-ef109a9b20017a9f3874cd75a81c4b50.png",
@@ -1485,7 +1485,7 @@
             "starterPct": null,
             "startRate": 0.6,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 65,
             "picture": "https://assets.sorare.com/cardsamplepicture/6457f23e-4d79-4b4d-81b3-08631c1aae13/picture/tinified-30817ab9961b8df4af37142044e31341.png",
@@ -1524,7 +1524,7 @@
             "starterPct": null,
             "startRate": 0.7,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 46,
             "picture": "https://assets.sorare.com/cardsamplepicture/bb2370ad-f6f3-4859-af2f-bbdd9810330b/picture/tinified-227e327349fc51d540c9efa0251af3b2.png",
@@ -1563,7 +1563,7 @@
             "starterPct": null,
             "startRate": 0.3,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 31,
             "picture": "https://assets.sorare.com/cardsamplepicture/27e170d6-0dcf-49cd-8919-56cf703adb4e/picture/tinified-a7791845d986415986fa9d70dd4d9ec3.png",
@@ -1644,7 +1644,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 57,
           "picture": "https://assets.sorare.com/cardsamplepicture/79f36680-211d-45ad-87e7-41bce11c6812/picture/tinified-ef109a9b20017a9f3874cd75a81c4b50.png",
@@ -1683,7 +1683,7 @@
           "starterPct": null,
           "startRate": 0.6,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 65,
           "picture": "https://assets.sorare.com/cardsamplepicture/6457f23e-4d79-4b4d-81b3-08631c1aae13/picture/tinified-30817ab9961b8df4af37142044e31341.png",
@@ -1722,7 +1722,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 46,
           "picture": "https://assets.sorare.com/cardsamplepicture/bb2370ad-f6f3-4859-af2f-bbdd9810330b/picture/tinified-227e327349fc51d540c9efa0251af3b2.png",
@@ -1761,7 +1761,7 @@
           "starterPct": null,
           "startRate": 0.3,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 31,
           "picture": "https://assets.sorare.com/cardsamplepicture/27e170d6-0dcf-49cd-8919-56cf703adb4e/picture/tinified-a7791845d986415986fa9d70dd4d9ec3.png",
