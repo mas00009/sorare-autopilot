@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T18:58:50.068Z",
+  "generatedAt": "2026-09-28T19:04:12.608Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790621923346,
-    "reason": "last run 0m ago, next due in 180m (lock in 16981m)"
+    "lastRunAt": 1790622245942,
+    "reason": "last run 0m ago, next due in 180m (lock in 16976m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 633.1422,
+      "squadScore": 642.6982,
       "lineupId": "Tasks::TaskLineup:1f699ea2-1706-4696-b6a1-205761268252",
       "state": "READY",
-      "score": 114.39,
+      "score": 108.39,
       "finished": false,
       "cleared": false,
       "players": [
@@ -225,7 +225,7 @@
           "slug": "ionu-andrei-radu",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 36.36,
+          "score": 30.36,
           "status": "REVIEWING",
           "kickoff": "2026-10-02T18:45:00Z"
         },
@@ -1192,7 +1192,7 @@
       "entered": {
         "five": [
           {
-            "actual": 36.36,
+            "actual": 30.36,
             "scoreStatus": "REVIEWING",
             "teamSlug": "romania",
             "name": "Ionuț Radu",
@@ -1338,9 +1338,9 @@
           }
         ],
         "projected": 258.95,
-        "scoredSoFar": 114.39,
+        "scoredSoFar": 108.39,
         "played": 3,
-        "expectedFinal": 242.34
+        "expectedFinal": 236.34
       },
       "poolStrength": {
         "strong": 0,
@@ -1350,7 +1350,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 633.1422
+        "scoreSoFar": 642.6982
       },
       "level": 1,
       "lives": null,
