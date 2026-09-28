@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T23:48:22.180Z",
+  "generatedAt": "2026-09-28T23:53:46.176Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 211
   },
   "schedule": {
-    "nextLock": "2026-10-10T14:00:00Z",
+    "nextLock": "2026-09-29T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790628717164,
-    "reason": "last run 176m ago, next due in 4m (lock in 16692m)"
+    "lastRunAt": 1790639619897,
+    "reason": "last run 0m ago, next due in 180m (lock in 1131m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -35,19 +35,19 @@
       "cleared": false,
       "players": [
         {
-          "name": "James Trafford",
-          "slug": "james-trafford",
+          "name": "Zion Suzuki",
+          "slug": "zion-suzuki",
           "position": "Goalkeeper",
           "captain": false,
           "score": 0,
           "status": "PENDING",
-          "kickoff": "2026-09-29T18:45:00Z"
+          "kickoff": "2026-10-10T14:00:00Z"
         },
         {
           "name": "Matthias Ginter",
           "slug": "matthias-ginter",
           "position": "Defender",
-          "captain": true,
+          "captain": false,
           "score": 0,
           "status": "PENDING",
           "kickoff": "2026-10-11T15:30:00Z"
@@ -56,7 +56,7 @@
           "name": "Cristian Cásseres Jr.",
           "slug": "cristian-sleiker-casseres-yepes",
           "position": "Midfielder",
-          "captain": false,
+          "captain": true,
           "score": 0,
           "status": "PENDING",
           "kickoff": "2026-10-10T18:45:00Z"
@@ -71,13 +71,13 @@
           "kickoff": "2026-10-11T19:00:00Z"
         },
         {
-          "name": "Sergio Gómez",
-          "slug": "sergio-gomez-martin",
-          "position": "Defender",
+          "name": "Tom Zimmerschied",
+          "slug": "tom-zimmerschied",
+          "position": "Midfielder",
           "captain": false,
           "score": 0,
           "status": "PENDING",
-          "kickoff": "2026-10-11T14:15:00Z"
+          "kickoff": "2026-10-10T13:30:00Z"
         }
       ],
       "scored": 0
@@ -543,40 +543,40 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Team entered, locks Wed 04:45 am Sydney. Expected about 358; needs 360 (2 short). It keeps being updated until it locks.",
-      "tone": "warn",
-      "lockAt": "2026-09-29T18:45:00Z",
+      "status": "Team entered, locks Sun 12:30 am Sydney. Expected about 362; needs 360 (2 over). It keeps being updated until it locks.",
+      "tone": "good",
+      "lockAt": "2026-10-10T13:30:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
             "actual": null,
             "scoreStatus": "PENDING",
-            "teamSlug": "england",
-            "name": "James Trafford",
-            "player": "James Trafford",
-            "slug": "james-trafford",
+            "teamSlug": "aston-villa-birmingham",
+            "name": "Zion Suzuki",
+            "player": "Zion Suzuki",
+            "slug": "zion-suzuki",
             "pos": "GK",
             "position": "GK",
-            "pic": "https://assets.sorare.com/cardsamplepicture/03a5cbf9-1ce5-4f9d-8a41-442c008abee3/picture/tinified-b37f7ccb93f8fa5aeba4979bb6f13779.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/03a5cbf9-1ce5-4f9d-8a41-442c008abee3/picture/tinified-b37f7ccb93f8fa5aeba4979bb6f13779.png",
+            "pic": "https://assets.sorare.com/cardsamplepicture/5c1b2cb2-6b15-4016-8e17-e4daa4221290/picture/tinified-596d7f1653c75ea02cd01a3829b1fafe.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/5c1b2cb2-6b15-4016-8e17-e4daa4221290/picture/tinified-596d7f1653c75ea02cd01a3829b1fafe.png",
             "captain": false,
-            "exp": 41.89,
-            "expected": 41.89,
-            "opp": "Czechia",
-            "opponent": "Czechia",
-            "home": false,
-            "average": 57,
-            "formL5": 61,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 48,
-            "ownRank": 4,
-            "oppFactor": 1.16,
+            "exp": 47.77,
+            "expected": 47.77,
+            "opp": "Brentford FC",
+            "opponent": "Brentford FC",
+            "home": true,
+            "average": 56,
+            "formL5": 58,
+            "intl": false,
+            "pWin": 0.364,
+            "pLose": 0.368,
+            "marketFactor": 1.017,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
             "locked": false,
-            "kickoff": "2026-09-29T18:45:00Z"
+            "kickoff": "2026-10-10T14:00:00Z"
           },
           {
             "actual": null,
@@ -589,9 +589,9 @@
             "position": "DF",
             "pic": "https://assets.sorare.com/cardsamplepicture/1241e5e4-f470-4d16-bbd9-823be35742d3/picture/tinified-d387555ae31e4da0f014b04d01d418a9.png",
             "picture": "https://assets.sorare.com/cardsamplepicture/1241e5e4-f470-4d16-bbd9-823be35742d3/picture/tinified-d387555ae31e4da0f014b04d01d418a9.png",
-            "captain": true,
-            "exp": 78.72,
-            "expected": 78.72,
+            "captain": false,
+            "exp": 70.85,
+            "expected": 70.85,
             "opp": "FC Schalke 04",
             "opponent": "FC Schalke 04",
             "home": true,
@@ -618,7 +618,7 @@
             "position": "MD",
             "pic": "https://assets.sorare.com/cardsamplepicture/c2d84e0c-57e8-4225-a3c3-d58f1103d23e/picture/tinified-70b75d69f7cba066a485aba14009f488.png",
             "picture": "https://assets.sorare.com/cardsamplepicture/c2d84e0c-57e8-4225-a3c3-d58f1103d23e/picture/tinified-70b75d69f7cba066a485aba14009f488.png",
-            "captain": false,
+            "captain": true,
             "exp": 75.61,
             "expected": 75.61,
             "opp": "AS Monaco",
@@ -648,8 +648,8 @@
             "pic": "https://assets.sorare.com/cardsamplepicture/430d8e95-0c8d-4d1a-b168-2a8cf77777f0/picture/tinified-d6dfa0252f3298f6f372dd4377979957.png",
             "picture": "https://assets.sorare.com/cardsamplepicture/430d8e95-0c8d-4d1a-b168-2a8cf77777f0/picture/tinified-d6dfa0252f3298f6f372dd4377979957.png",
             "captain": false,
-            "exp": 60.57,
-            "expected": 60.57,
+            "exp": 65.09,
+            "expected": 65.09,
             "opp": "Valencia CF",
             "opponent": "Valencia CF",
             "home": true,
@@ -668,37 +668,37 @@
           {
             "actual": null,
             "scoreStatus": "PENDING",
-            "teamSlug": "real-sociedad-donostia-san-sebastian",
-            "name": "Sergio Gómez",
-            "player": "Sergio Gómez",
-            "slug": "sergio-gomez-martin",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/bb8e179a-f62c-4661-b1a4-1c90addb9864/picture/tinified-6fda950b16a66e4b41f955f2c978d7fc.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/bb8e179a-f62c-4661-b1a4-1c90addb9864/picture/tinified-6fda950b16a66e4b41f955f2c978d7fc.png",
+            "teamSlug": "elversberg-saarbrucken",
+            "name": "Tom Zimmerschied",
+            "player": "Tom Zimmerschied",
+            "slug": "tom-zimmerschied",
+            "pos": "MD",
+            "position": "MD",
+            "pic": "https://assets.sorare.com/cardsamplepicture/99f5d345-cf0f-4e1f-b6e6-5473e9be1f39/picture/tinified-a3c7dcd0075c27b637401c19dc64b529.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/99f5d345-cf0f-4e1f-b6e6-5473e9be1f39/picture/tinified-a3c7dcd0075c27b637401c19dc64b529.png",
             "captain": false,
-            "exp": 63.38,
-            "expected": 63.38,
-            "opp": "Real Club Deportivo de La Coruña",
-            "opponent": "Real Club Deportivo de La Coruña",
-            "home": true,
-            "average": 58,
-            "formL5": 60,
+            "exp": 65.32,
+            "expected": 65.32,
+            "opp": "1. FC Union Berlin",
+            "opponent": "1. FC Union Berlin",
+            "home": false,
+            "average": 56,
+            "formL5": 73,
             "intl": false,
-            "pWin": 0.545,
-            "pLose": 0.206,
-            "marketFactor": 1.094,
+            "pWin": 0.324,
+            "pLose": 0.424,
+            "marketFactor": 0.993,
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
             "locked": false,
-            "kickoff": "2026-10-11T14:15:00Z"
+            "kickoff": "2026-10-10T13:30:00Z"
           }
         ],
-        "projected": 358.38,
+        "projected": 361.7,
         "scoredSoFar": 0,
         "played": 0,
-        "expectedFinal": 359.53
+        "expectedFinal": 362.44
       },
       "poolStrength": {
         "strong": 2,
@@ -756,20 +756,20 @@
       "target": 360,
       "current": [
         {
-          "name": "James Trafford",
+          "name": "Zion Suzuki",
           "captain": false,
           "locked": false,
-          "nextGame": "2026-09-29T18:45:00Z"
+          "nextGame": "2026-10-10T14:00:00Z"
         },
         {
           "name": "Matthias Ginter",
-          "captain": true,
+          "captain": false,
           "locked": false,
           "nextGame": "2026-10-11T15:30:00Z"
         },
         {
           "name": "Cristian Cásseres Jr.",
-          "captain": false,
+          "captain": true,
           "locked": false,
           "nextGame": "2026-10-10T18:45:00Z"
         },
@@ -780,22 +780,22 @@
           "nextGame": "2026-10-11T19:00:00Z"
         },
         {
-          "name": "Sergio Gómez",
+          "name": "Tom Zimmerschied",
           "captain": false,
           "locked": false,
-          "nextGame": "2026-10-11T14:15:00Z"
+          "nextGame": "2026-10-10T13:30:00Z"
         }
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 329.5,
+        "projected": 288.71,
         "lock": "2026-09-29T18:45:00Z",
-        "shortfall": 30.5,
+        "shortfall": 71.3,
         "tradedPointsForTime": 0,
         "captain": "maxim-de-cuyper",
         "captainPoints": 33.12,
-        "withinReach": true,
-        "enteredProjected": 358.38,
+        "withinReach": false,
+        "enteredProjected": 361.7,
         "five": [
           {
             "id": "ComposeTeamBenchCard:6b2cf56f-d089-4080-af44-0c21f1ac7393",
@@ -837,7 +837,7 @@
             "blocked": null
           },
           {
-            "id": "ComposeTeamBenchCard:7b6a2c4d-3530-4d5f-acfa-63a6c2f4c207",
+            "id": "ComposeTeamBenchCard:b9a43a86-f5ea-4cc8-ad37-8f8e03d45639",
             "player": "Tom Zimmerschied",
             "slug": "tom-zimmerschied",
             "position": "MD",
@@ -954,42 +954,42 @@
             "blocked": null
           },
           {
-            "id": "ComposeTeamBenchCard:69ce92cc-015b-45c9-bf03-60e6d367f52f",
-            "player": "Zion Suzuki",
-            "slug": "zion-suzuki",
+            "id": "ComposeTeamBenchCard:4278d0d6-6601-45ff-bd99-f2fa5b904622",
+            "player": "James Trafford",
+            "slug": "james-trafford",
             "position": "GK",
-            "average": 56,
-            "bonus": 1.03,
+            "average": 57,
+            "bonus": 1.02,
             "starterPct": null,
-            "startRate": 0.8,
+            "startRate": 0.1,
             "oddsKnown": false,
             "onGameSheet": false,
             "reliability": null,
-            "formL5": 58,
-            "picture": "https://assets.sorare.com/cardsamplepicture/5c1b2cb2-6b15-4016-8e17-e4daa4221290/picture/tinified-596d7f1653c75ea02cd01a3829b1fafe.png",
+            "formL5": 61,
+            "picture": "https://assets.sorare.com/cardsamplepicture/03a5cbf9-1ce5-4f9d-8a41-442c008abee3/picture/tinified-b37f7ccb93f8fa5aeba4979bb6f13779.png",
             "rarity": "common",
-            "gameId": "Game:fe13dfb3-97fd-45af-ae74-2a707f31ae86",
-            "kickoff": "2026-10-10T14:00:00Z",
-            "team": "Aston Villa FC",
-            "teamSlug": "aston-villa-birmingham",
-            "opponent": "Brentford FC",
-            "opponentCode": "BRE",
-            "code": "AST",
-            "rank": 16,
-            "opponentRank": 4,
-            "home": true,
-            "competition": "Premier League",
-            "intl": false,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "mismatch": false,
-            "pWin": 0.364,
-            "pLose": 0.368,
-            "oddsBooks": 22,
-            "marketFactor": 1.017,
+            "gameId": "Game:f4bc9f49-e1cc-4581-8e7c-b2f5810a315a",
+            "kickoff": "2026-09-29T18:45:00Z",
+            "team": "England",
+            "teamSlug": "england",
+            "opponent": "Czechia",
+            "opponentCode": "CZE",
+            "code": "ENG",
+            "rank": null,
+            "opponentRank": null,
+            "home": false,
+            "competition": "UEFA Nations League",
+            "intl": true,
+            "oppRank": 48,
+            "ownRank": 4,
+            "oppFactor": 1.16,
+            "mismatch": true,
+            "pWin": null,
+            "pLose": null,
+            "oddsBooks": null,
+            "marketFactor": null,
             "lockedAt": null,
-            "expected": 47.77,
+            "expected": 6.98,
             "blocked": null
           }
         ]
@@ -1035,7 +1035,7 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:7b6a2c4d-3530-4d5f-acfa-63a6c2f4c207",
+          "id": "ComposeTeamBenchCard:b9a43a86-f5ea-4cc8-ad37-8f8e03d45639",
           "player": "Tom Zimmerschied",
           "slug": "tom-zimmerschied",
           "position": "MD",
@@ -1152,46 +1152,46 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:69ce92cc-015b-45c9-bf03-60e6d367f52f",
-          "player": "Zion Suzuki",
-          "slug": "zion-suzuki",
+          "id": "ComposeTeamBenchCard:4278d0d6-6601-45ff-bd99-f2fa5b904622",
+          "player": "James Trafford",
+          "slug": "james-trafford",
           "position": "GK",
-          "average": 56,
-          "bonus": 1.03,
+          "average": 57,
+          "bonus": 1.02,
           "starterPct": null,
-          "startRate": 0.8,
+          "startRate": 0.1,
           "oddsKnown": false,
           "onGameSheet": false,
           "reliability": null,
-          "formL5": 58,
-          "picture": "https://assets.sorare.com/cardsamplepicture/5c1b2cb2-6b15-4016-8e17-e4daa4221290/picture/tinified-596d7f1653c75ea02cd01a3829b1fafe.png",
+          "formL5": 61,
+          "picture": "https://assets.sorare.com/cardsamplepicture/03a5cbf9-1ce5-4f9d-8a41-442c008abee3/picture/tinified-b37f7ccb93f8fa5aeba4979bb6f13779.png",
           "rarity": "common",
-          "gameId": "Game:fe13dfb3-97fd-45af-ae74-2a707f31ae86",
-          "kickoff": "2026-10-10T14:00:00Z",
-          "team": "Aston Villa FC",
-          "teamSlug": "aston-villa-birmingham",
-          "opponent": "Brentford FC",
-          "opponentCode": "BRE",
-          "code": "AST",
-          "rank": 16,
-          "opponentRank": 4,
-          "home": true,
-          "competition": "Premier League",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.364,
-          "pLose": 0.368,
-          "oddsBooks": 22,
-          "marketFactor": 1.017,
+          "gameId": "Game:f4bc9f49-e1cc-4581-8e7c-b2f5810a315a",
+          "kickoff": "2026-09-29T18:45:00Z",
+          "team": "England",
+          "teamSlug": "england",
+          "opponent": "Czechia",
+          "opponentCode": "CZE",
+          "code": "ENG",
+          "rank": null,
+          "opponentRank": null,
+          "home": false,
+          "competition": "UEFA Nations League",
+          "intl": true,
+          "oppRank": 48,
+          "ownRank": 4,
+          "oppFactor": 1.16,
+          "mismatch": true,
+          "pWin": null,
+          "pLose": null,
+          "oddsBooks": null,
+          "marketFactor": null,
           "lockedAt": null,
-          "expected": 47.77,
+          "expected": 6.98,
           "blocked": null
         }
       ],
-      "projected": 315.1
+      "projected": 316.3
     },
     {
       "surface": "team set (Loadshift)",
@@ -1285,6 +1285,31 @@
       ]
     },
     {
+      "kickoff": "2026-09-29T18:45:00Z",
+      "competition": "UEFA Nations League",
+      "team": "England",
+      "code": "ENG",
+      "rank": null,
+      "opponent": "Czechia",
+      "opponentCode": "CZE",
+      "opponentRank": null,
+      "intl": true,
+      "ownRank": 4,
+      "oppRank": 48,
+      "pWin": null,
+      "pLose": null,
+      "oppFactor": 1.16,
+      "home": false,
+      "players": [
+        "James Trafford"
+      ],
+      "points": 7,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
+      ]
+    },
+    {
       "kickoff": "2026-10-02T18:45:00Z",
       "competition": "UEFA Nations League",
       "team": "Belgium",
@@ -1329,31 +1354,6 @@
         "Tom Zimmerschied"
       ],
       "points": 65.3,
-      "bestStarter": null,
-      "surfaces": [
-        "my set"
-      ]
-    },
-    {
-      "kickoff": "2026-10-10T14:00:00Z",
-      "competition": "Premier League",
-      "team": "Aston Villa FC",
-      "code": "AST",
-      "rank": 16,
-      "opponent": "Brentford FC",
-      "opponentCode": "BRE",
-      "opponentRank": 4,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.364,
-      "pLose": 0.368,
-      "oppFactor": null,
-      "home": true,
-      "players": [
-        "Zion Suzuki"
-      ],
-      "points": 47.8,
       "bestStarter": null,
       "surfaces": [
         "my set"
