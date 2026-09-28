@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T17:47:27.891Z",
+  "generatedAt": "2026-09-28T17:52:58.782Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 211
   },
   "schedule": {
-    "nextLock": "2026-10-10T14:00:00Z",
-    "cadenceMin": 180,
-    "lastRunAt": 1790617640523,
-    "reason": "last run 0m ago, next due in 180m (lock in 17053m)"
+    "nextLock": "2026-09-28T18:45:00Z",
+    "cadenceMin": 5,
+    "lastRunAt": 1790617971146,
+    "reason": "last run 0m ago, next due in 5m (lock in 52m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -210,10 +210,10 @@
       "surface": "team set (Loadshift)",
       "level": 1,
       "target": 980,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 584.456,
+      "squadScore": 589.252,
       "lineupId": "Tasks::TaskLineup:1f699ea2-1706-4696-b6a1-205761268252",
       "state": "READY",
       "score": 120.95,
@@ -1350,7 +1350,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 584.456
+        "scoreSoFar": 589.252
       },
       "level": 1,
       "lives": null,
@@ -1364,7 +1364,7 @@
         },
         {
           "level": 1,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 980
         },
         {
@@ -1391,7 +1391,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 980,
       "current": [
         {
