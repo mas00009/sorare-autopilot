@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T15:02:15.677Z",
+  "generatedAt": "2026-09-28T15:07:50.610Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-28T16:00:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1790607728218,
-    "reason": "last run 0m ago, next due in 5m (lock in 58m)"
+    "lastRunAt": 1790608063164,
+    "reason": "last run 0m ago, next due in 5m (lock in 52m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -213,10 +213,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 76.3,
+      "squadScore": 113.75,
       "lineupId": "Tasks::TaskLineup:1f699ea2-1706-4696-b6a1-205761268252",
       "state": "READY",
-      "score": 0,
+      "score": 37.45,
       "finished": false,
       "cleared": false,
       "players": [
@@ -243,8 +243,8 @@
           "slug": "andrija-bulatovic",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 37.45,
+          "status": "REVIEWING",
           "kickoff": "2026-09-28T16:00:00Z"
         },
         {
@@ -266,7 +266,7 @@
           "kickoff": "2026-09-28T18:45:00Z"
         }
       ],
-      "scored": 0
+      "scored": 1
     },
     {
       "surface": "my set",
@@ -1250,8 +1250,8 @@
             "kickoff": "2026-09-28T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 37.45,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "montenegro",
             "name": "Andrija Bulatović",
             "player": "Andrija Bulatović",
@@ -1338,9 +1338,9 @@
           }
         ],
         "projected": 258.95,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 259.5
+        "scoredSoFar": 37.45,
+        "played": 1,
+        "expectedFinal": 258.18
       },
       "poolStrength": {
         "strong": 0,
@@ -1350,7 +1350,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 76.3
+        "scoreSoFar": 113.75
       },
       "level": 1,
       "lives": null,
