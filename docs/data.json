@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T18:48:05.765Z",
+  "generatedAt": "2026-09-28T18:53:27.760Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790621279024,
-    "reason": "last run 0m ago, next due in 180m (lock in 16992m)"
+    "lastRunAt": 1790621601664,
+    "reason": "last run 0m ago, next due in 180m (lock in 16987m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 587.092,
+      "squadScore": 594.602,
       "lineupId": "Tasks::TaskLineup:1f699ea2-1706-4696-b6a1-205761268252",
       "state": "READY",
-      "score": 120.35,
+      "score": 118.96,
       "finished": false,
       "cleared": false,
       "players": [
@@ -225,7 +225,7 @@
           "slug": "ionu-andrei-radu",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 41.4,
+          "score": 41.04,
           "status": "REVIEWING",
           "kickoff": "2026-10-02T18:45:00Z"
         },
@@ -235,7 +235,7 @@
           "position": "Defender",
           "captain": true,
           "score": 0,
-          "status": "PENDING",
+          "status": "REVIEWING",
           "kickoff": "2026-10-02T18:45:00Z"
         },
         {
@@ -252,7 +252,7 @@
           "slug": "viktor-gyokeres",
           "position": "Forward",
           "captain": false,
-          "score": 36.05,
+          "score": 35.02,
           "status": "REVIEWING",
           "kickoff": "2026-10-02T18:45:00Z"
         },
@@ -1192,7 +1192,7 @@
       "entered": {
         "five": [
           {
-            "actual": 42,
+            "actual": 41.04,
             "scoreStatus": "REVIEWING",
             "teamSlug": "romania",
             "name": "Ionuț Radu",
@@ -1222,7 +1222,7 @@
           },
           {
             "actual": null,
-            "scoreStatus": "PENDING",
+            "scoreStatus": "REVIEWING",
             "teamSlug": "belgium",
             "name": "Maxim De Cuyper",
             "player": "Maxim De Cuyper",
@@ -1279,7 +1279,7 @@
             "kickoff": "2026-09-28T16:00:00Z"
           },
           {
-            "actual": 36.05,
+            "actual": 35.02,
             "scoreStatus": "REVIEWING",
             "teamSlug": "sweden",
             "name": "Viktor Gyökeres",
@@ -1338,9 +1338,9 @@
           }
         ],
         "projected": 258.95,
-        "scoredSoFar": 120.96,
+        "scoredSoFar": 118.97,
         "played": 3,
-        "expectedFinal": 248.91
+        "expectedFinal": 246.92
       },
       "poolStrength": {
         "strong": 0,
@@ -1350,7 +1350,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 587.092
+        "scoreSoFar": 594.602
       },
       "level": 1,
       "lives": null,
@@ -1426,126 +1426,8 @@
         }
       ],
       "plan": null,
-      "candidates": [
-        {
-          "id": "ComposeTeamBenchCard:09304a8a-5b09-4498-b2e8-20db41f4330c",
-          "player": "Maarten Vandevoordt",
-          "slug": "maarten-vandevoordt",
-          "position": "GK",
-          "average": 55,
-          "bonus": 1.02,
-          "starterPct": null,
-          "startRate": 0.8,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 55,
-          "picture": "https://assets.sorare.com/cardsamplepicture/14a419d8-5d77-4f75-8258-2910a2f906ea/picture/tinified-d8e982bf30beb7a61f444bb61800cd53.png",
-          "rarity": "common",
-          "gameId": "Game:a99d691f-6996-41c2-98e4-4a8882aa9d74",
-          "kickoff": "2026-10-02T18:45:00Z",
-          "team": "Belgium",
-          "teamSlug": "belgium",
-          "opponent": "Türkiye",
-          "opponentCode": "TUR",
-          "code": "BEL",
-          "rank": null,
-          "opponentRank": null,
-          "home": true,
-          "competition": "UEFA Nations League",
-          "intl": true,
-          "oppRank": 27,
-          "ownRank": 8,
-          "oppFactor": 1.078,
-          "mismatch": false,
-          "pWin": null,
-          "pLose": null,
-          "oddsBooks": null,
-          "marketFactor": null,
-          "lockedAt": null,
-          "expected": 48.38,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:69957f18-2b74-4385-b400-85708a6f5ec5",
-          "player": "Jules Koundé",
-          "slug": "jules-kounde",
-          "position": "DF",
-          "average": 48,
-          "bonus": 1.03,
-          "starterPct": null,
-          "startRate": 0.3,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 52,
-          "picture": "https://assets.sorare.com/cardsamplepicture/43ff667a-992e-4491-8689-ab4f4a62981f/picture/tinified-3678fdd18923d615ac5e6edd1c9ec995.png",
-          "rarity": "common",
-          "gameId": "Game:81c1a493-5177-44a6-b42b-686371ab93a8",
-          "kickoff": "2026-10-02T18:45:00Z",
-          "team": "France",
-          "teamSlug": "france",
-          "opponent": "Italy",
-          "opponentCode": "ITA",
-          "code": "FRA",
-          "rank": null,
-          "opponentRank": null,
-          "home": true,
-          "competition": "UEFA Nations League",
-          "intl": true,
-          "oppRank": 15,
-          "ownRank": 3,
-          "oppFactor": 1.098,
-          "mismatch": true,
-          "pWin": null,
-          "pLose": null,
-          "oddsBooks": null,
-          "marketFactor": null,
-          "lockedAt": null,
-          "expected": 24.87,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:6b6017f3-3e1d-498c-8e9e-088d8325c890",
-          "player": "Matias Fernandez-Pardo",
-          "slug": "mathias-fernandez-pardo",
-          "position": "MD",
-          "average": 34,
-          "bonus": 1.03,
-          "starterPct": null,
-          "startRate": 0.2,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 34,
-          "picture": "https://assets.sorare.com/cardsamplepicture/33593747-95f2-4897-a5f6-b5e2bf0c3ee1/picture/tinified-97d31f9e45aea9060689d5ddbfd308e6.png",
-          "rarity": "common",
-          "gameId": "Game:a99d691f-6996-41c2-98e4-4a8882aa9d74",
-          "kickoff": "2026-10-02T18:45:00Z",
-          "team": "Belgium",
-          "teamSlug": "belgium",
-          "opponent": "Türkiye",
-          "opponentCode": "TUR",
-          "code": "BEL",
-          "rank": null,
-          "opponentRank": null,
-          "home": true,
-          "competition": "UEFA Nations League",
-          "intl": true,
-          "oppRank": 27,
-          "ownRank": 8,
-          "oppFactor": 1.039,
-          "mismatch": false,
-          "pWin": null,
-          "pLose": null,
-          "oddsBooks": null,
-          "marketFactor": null,
-          "lockedAt": null,
-          "expected": 11.1,
-          "blocked": null
-        }
-      ],
-      "projected": 84.3
+      "candidates": [],
+      "projected": 0
     }
   ],
   "fixtures": [
@@ -1616,40 +1498,12 @@
       "oppFactor": 1.078,
       "home": true,
       "players": [
-        "Maxim De Cuyper",
-        "Maarten Vandevoordt",
-        "Matias Fernandez-Pardo"
+        "Maxim De Cuyper"
       ],
-      "points": 124.8,
+      "points": 65.3,
       "bestStarter": null,
       "surfaces": [
-        "my set",
-        "team set (Loadshift)"
-      ]
-    },
-    {
-      "kickoff": "2026-10-02T18:45:00Z",
-      "competition": "UEFA Nations League",
-      "team": "France",
-      "code": "FRA",
-      "rank": null,
-      "opponent": "Italy",
-      "opponentCode": "ITA",
-      "opponentRank": null,
-      "intl": true,
-      "ownRank": 3,
-      "oppRank": 15,
-      "pWin": null,
-      "pLose": null,
-      "oppFactor": 1.098,
-      "home": true,
-      "players": [
-        "Jules Koundé"
-      ],
-      "points": 24.9,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
+        "my set"
       ]
     },
     {
