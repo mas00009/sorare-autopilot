@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T20:42:19.910Z",
+  "generatedAt": "2026-09-29T20:47:44.969Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T13:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790714533444,
-    "reason": "last run 0m ago, next due in 180m (lock in 15408m)"
+    "lastRunAt": 1790714858474,
+    "reason": "last run 0m ago, next due in 180m (lock in 15402m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -81,68 +81,6 @@
         }
       ],
       "scored": 0
-    },
-    {
-      "surface": "team set (Loadshift)",
-      "level": 2,
-      "target": 1060,
-      "stepState": "LINEUP_SET",
-      "collaborative": true,
-      "squadLineups": 6,
-      "squadScore": 1226.2356,
-      "lineupId": "Tasks::TaskLineup:b6725d3f-e731-4e8f-83b1-64b50be6f8fd",
-      "state": "READY",
-      "score": 235.47,
-      "finished": false,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Stole Dimitrievski",
-          "slug": "stole-dimitrievski",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 39.9,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-03T18:45:00Z"
-        },
-        {
-          "name": "Aymeric Laporte",
-          "slug": "aymeric-laporte",
-          "position": "Defender",
-          "captain": true,
-          "score": 0,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-03T18:45:00Z"
-        },
-        {
-          "name": "Dani Olmo",
-          "slug": "daniel-olmo-carvajal",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 0,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-03T18:45:00Z"
-        },
-        {
-          "name": "Dan Ndoye",
-          "slug": "dan-ndoye",
-          "position": "Forward",
-          "captain": false,
-          "score": 94.25,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-03T18:45:00Z"
-        },
-        {
-          "name": "Trent Alexander-Arnold",
-          "slug": "trent-alexander-arnold",
-          "position": "Defender",
-          "captain": false,
-          "score": 101.33,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-03T16:00:00Z"
-        }
-      ],
-      "scored": 3
     },
     {
       "surface": "my set",
@@ -264,6 +202,68 @@
           "score": 69.31,
           "status": "FINAL",
           "kickoff": "2026-10-11T15:30:00Z"
+        }
+      ],
+      "scored": 5
+    },
+    {
+      "surface": "team set (Loadshift)",
+      "level": 2,
+      "target": 1060,
+      "stepState": "CLAIMED",
+      "collaborative": true,
+      "squadLineups": 6,
+      "squadScore": 1226.2356,
+      "lineupId": "Tasks::TaskLineup:b6725d3f-e731-4e8f-83b1-64b50be6f8fd",
+      "state": "SUCCESSFUL",
+      "score": 235.47,
+      "finished": true,
+      "cleared": true,
+      "players": [
+        {
+          "name": "Stole Dimitrievski",
+          "slug": "stole-dimitrievski",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 39.9,
+          "status": "FINAL",
+          "kickoff": "2026-10-03T18:45:00Z"
+        },
+        {
+          "name": "Aymeric Laporte",
+          "slug": "aymeric-laporte",
+          "position": "Defender",
+          "captain": true,
+          "score": 0,
+          "status": "FINAL",
+          "kickoff": "2026-10-03T18:45:00Z"
+        },
+        {
+          "name": "Dani Olmo",
+          "slug": "daniel-olmo-carvajal",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 0,
+          "status": "FINAL",
+          "kickoff": "2026-10-03T18:45:00Z"
+        },
+        {
+          "name": "Dan Ndoye",
+          "slug": "dan-ndoye",
+          "position": "Forward",
+          "captain": false,
+          "score": 94.25,
+          "status": "FINAL",
+          "kickoff": "2026-10-03T18:45:00Z"
+        },
+        {
+          "name": "Trent Alexander-Arnold",
+          "slug": "trent-alexander-arnold",
+          "position": "Defender",
+          "captain": false,
+          "score": 101.33,
+          "status": "FINAL",
+          "kickoff": "2026-10-03T16:00:00Z"
         }
       ],
       "scored": 5
@@ -1257,177 +1257,25 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 235 scored so far, 3 of 5 played. The squad's top three lineups together need 1060; the squad has 1226 so far.",
-      "tone": "good",
-      "lockAt": "2026-09-29T18:45:00Z",
+      "status": "Not open for entry yet. A team goes in the moment it opens.",
+      "tone": "neutral",
+      "lockAt": null,
       "isSquad": true,
-      "entered": {
-        "five": [
-          {
-            "actual": 39.9,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "north-macedonia",
-            "name": "Stole Dimitrievski",
-            "player": "Stole Dimitrievski",
-            "slug": "stole-dimitrievski",
-            "pos": "GK",
-            "position": "GK",
-            "pic": "https://assets.sorare.com/cardsamplepicture/a27bc2c8-2943-4639-95b3-cf6abedb429b/picture/tinified-cb56cd6b5650a52dc42c4ac5348f0320.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/a27bc2c8-2943-4639-95b3-cf6abedb429b/picture/tinified-cb56cd6b5650a52dc42c4ac5348f0320.png",
-            "captain": false,
-            "exp": 47.93,
-            "expected": 47.93,
-            "opp": "Slovenia",
-            "opponent": "Slovenia",
-            "home": false,
-            "average": 47,
-            "formL5": 47,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 56,
-            "ownRank": 69,
-            "oppFactor": 0.971,
-            "locked": true,
-            "kickoff": "2026-09-29T18:45:00Z"
-          },
-          {
-            "actual": null,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "spain",
-            "name": "Aymeric Laporte",
-            "player": "Aymeric Laporte",
-            "slug": "aymeric-laporte",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/2e0f0c68-9798-48c3-a1fe-e35b06ff458d/picture/tinified-f73a11ebd48693396a69f9a118fe327a.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/2e0f0c68-9798-48c3-a1fe-e35b06ff458d/picture/tinified-f73a11ebd48693396a69f9a118fe327a.png",
-            "captain": true,
-            "exp": 70.43,
-            "expected": 70.43,
-            "opp": "Croatia",
-            "opponent": "Croatia",
-            "home": true,
-            "average": 62,
-            "formL5": 63,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 13,
-            "ownRank": 1,
-            "oppFactor": 1.109,
-            "locked": true,
-            "kickoff": "2026-09-29T18:45:00Z"
-          },
-          {
-            "actual": null,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "spain",
-            "name": "Dani Olmo",
-            "player": "Dani Olmo",
-            "slug": "daniel-olmo-carvajal",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/6b7262e1-5d82-4855-9bb7-a77e9857ae2b/picture/tinified-f17e5fea82558e8f8ef2b6b428e79f41.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/6b7262e1-5d82-4855-9bb7-a77e9857ae2b/picture/tinified-f17e5fea82558e8f8ef2b6b428e79f41.png",
-            "captain": false,
-            "exp": 58.33,
-            "expected": 58.33,
-            "opp": "Croatia",
-            "opponent": "Croatia",
-            "home": true,
-            "average": 56,
-            "formL5": 63,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 13,
-            "ownRank": 1,
-            "oppFactor": 1.055,
-            "locked": true,
-            "kickoff": "2026-09-29T18:45:00Z"
-          },
-          {
-            "actual": 94.25,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "switzerland",
-            "name": "Dan Ndoye",
-            "player": "Dan Ndoye",
-            "slug": "dan-ndoye",
-            "pos": "FW",
-            "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/29470820-1e49-4736-8dbe-8b21c3f4d214/picture/tinified-c7105426f3ab1ccdf9a472c02dbf05d5.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/29470820-1e49-4736-8dbe-8b21c3f4d214/picture/tinified-c7105426f3ab1ccdf9a472c02dbf05d5.png",
-            "captain": false,
-            "exp": 42.68,
-            "expected": 42.68,
-            "opp": "Scotland",
-            "opponent": "Scotland",
-            "home": false,
-            "average": 51,
-            "formL5": 45,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 42,
-            "ownRank": 14,
-            "oppFactor": 1,
-            "locked": true,
-            "kickoff": "2026-09-29T18:45:00Z"
-          },
-          {
-            "actual": 101.33,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "england",
-            "name": "Trent Alexander-Arnold",
-            "player": "Trent Alexander-Arnold",
-            "slug": "trent-alexander-arnold",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/4908072b-2a7c-4270-a08e-3f431d8c5593/picture/tinified-fc32a5df6c1f43908cd3bc2b6cf3558a.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/4908072b-2a7c-4270-a08e-3f431d8c5593/picture/tinified-fc32a5df6c1f43908cd3bc2b6cf3558a.png",
-            "captain": false,
-            "exp": 37.95,
-            "expected": 37.95,
-            "opp": "Czechia",
-            "opponent": "Czechia",
-            "home": false,
-            "average": 52,
-            "formL5": 51,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 48,
-            "ownRank": 4,
-            "oppFactor": 1.16,
-            "locked": true,
-            "kickoff": "2026-09-29T18:45:00Z"
-          }
-        ],
-        "projected": 290.86,
-        "scoredSoFar": 235.48,
-        "played": 3,
-        "expectedFinal": 399.46
-      },
+      "entered": null,
       "poolStrength": {
         "strong": 0,
         "needed": 5
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 6,
+        "lineupsIn": 0,
         "needed": 3,
-        "scoreSoFar": 1226.2356
+        "scoreSoFar": 0
       },
-      "level": 2,
+      "level": 3,
       "lives": null,
       "totalLevels": 5,
-      "levelsDone": 2,
+      "levelsDone": 3,
       "ladder": [
         {
           "level": 0,
@@ -1441,12 +1289,12 @@
         },
         {
           "level": 2,
-          "state": "LINEUP_SET",
+          "state": "CLAIMED",
           "target": 1060
         },
         {
           "level": 3,
-          "state": "LOCKED",
+          "state": "PRE_MATCHDAY_LOCKED",
           "target": 1140
         },
         {
@@ -1463,40 +1311,9 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
-      "target": 1060,
-      "current": [
-        {
-          "name": "Stole Dimitrievski",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-03T18:45:00Z"
-        },
-        {
-          "name": "Aymeric Laporte",
-          "captain": true,
-          "locked": true,
-          "nextGame": "2026-10-03T18:45:00Z"
-        },
-        {
-          "name": "Dani Olmo",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-03T18:45:00Z"
-        },
-        {
-          "name": "Dan Ndoye",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-03T18:45:00Z"
-        },
-        {
-          "name": "Trent Alexander-Arnold",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-03T16:00:00Z"
-        }
-      ],
+      "state": "PRE_MATCHDAY_LOCKED",
+      "target": 1140,
+      "current": [],
       "plan": null,
       "candidates": [],
       "projected": 0
