@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T23:58:56.474Z",
+  "generatedAt": "2026-09-29T00:04:09.756Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-09-29T18:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1790639619897,
-    "reason": "last run 5m ago, next due in 175m (lock in 1126m)"
+    "reason": "last run 10m ago, next due in 170m (lock in 1121m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -529,8 +529,8 @@
   "odds": {
     "configured": true,
     "month": "2026-09",
-    "used": 16,
-    "remaining": 484
+    "used": 20,
+    "remaining": 480
   },
   "control": {
     "paused": false,
@@ -868,7 +868,7 @@
             "oppFactor": null,
             "mismatch": false,
             "pWin": 0.324,
-            "pLose": 0.424,
+            "pLose": 0.425,
             "oddsBooks": 21,
             "marketFactor": 0.993,
             "lockedAt": null,
@@ -1066,7 +1066,7 @@
           "oppFactor": null,
           "mismatch": false,
           "pWin": 0.324,
-          "pLose": 0.424,
+          "pLose": 0.425,
           "oddsBooks": 21,
           "marketFactor": 0.993,
           "lockedAt": null,
@@ -1347,7 +1347,7 @@
       "ownRank": null,
       "oppRank": null,
       "pWin": 0.324,
-      "pLose": 0.424,
+      "pLose": 0.425,
       "oppFactor": null,
       "home": false,
       "players": [
