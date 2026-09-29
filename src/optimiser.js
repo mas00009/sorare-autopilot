@@ -405,33 +405,35 @@ export function diffLineup(currentAppearances = [], picked) {
 
 
 /**
- * Choose across the whole scoring window, not just the earliest matchday.
+ * Choose across the whole scoring window, for the step to resolve SOON.
  *
- * The lineup locks at the kickoff of the EARLIEST player in it. So including
- * one player who plays on day one locks the other four on day one too, and
- * their team news - injuries, rotation, confirmed XIs - arrives after it is
- * too late to act on. A later lock is worth real points even when the raw
- * projection is slightly lower.
+ * A lineup is done when its last card has played, and the step only moves on
+ * - pass or fail - once it is done. On an international break the same five
+ * can be built to finish on 3 October or on 12 October, and the owner's view
+ * is clear: a step that sits open for ten days is a waste whichever way it
+ * ends, because a fail restarts the ladder and the early levels are quick.
  *
- * So: build a lineup for each possible lock day, then prefer the latest lock
- * among those that clear the target. If none clear it, return the best one and
- * say so, because entering a lineup that cannot reach the target only burns a
- * heart.
+ * One candidate per FINISH day - the best five from cards that have all
+ * played by the end of that day. (Building by lock day instead, cards on or
+ * after a day, lets the late fixtures into every candidate, so everything
+ * finishes at the end of the window and there is nothing to choose between;
+ * that is how a 378 team finishing on the 3rd sat unseen behind a 361 team
+ * finishing on the 12th.)
+ *
+ * Then: the earliest-finishing side that clears the target. If none clears,
+ * the strongest within reach - or an earlier finish that is nearly as strong,
+ * within the tolerance. Never a much weaker side just to finish a day sooner:
+ * 305 on the 2nd against 393 on the 11th is throwing the level, not finishing
+ * it. `reach` is the same spread the caller gates on, so anything chosen here
+ * is something the gate will enter.
  */
-export function pickAcrossWindow(benchNodes, { target = null, tolerance = 0.03, ...options } = {}) {
-  const days = [...new Set(
-    benchNodes
-      .map((n) => n.player?.anyFutureGameStats?.[0]?.anyGame?.date)
-      .filter(Boolean)
-      .map((d) => d.slice(0, 10)),
-  )].sort();
+export function pickAcrossWindow(benchNodes, { target = null, tolerance = 0.03, reach = 56, ...options } = {}) {
+  const dayOf = (n) => n.player?.anyFutureGameStats?.[0]?.anyGame?.date?.slice(0, 10);
+  const days = [...new Set(benchNodes.map(dayOf).filter(Boolean))].sort();
 
   const attempts = [];
   for (const day of days) {
-    const pool = benchNodes.filter((n) => {
-      const d = n.player?.anyFutureGameStats?.[0]?.anyGame?.date;
-      return d && d.slice(0, 10) >= day;
-    });
+    const pool = benchNodes.filter((n) => { const d = dayOf(n); return d && d <= day; });
     // Plain first. Only when it falls short is a stacked lineup - a third
     // defender or midfielder from a side facing a minnow - considered, and
     // only kept when it projects higher: short of the target, team-mates
@@ -442,34 +444,42 @@ export function pickAcrossWindow(benchNodes, { target = null, tolerance = 0.03, 
       const stacked = pickLineup(pool, { ...options, stackMismatch: true });
       if (stacked.ok && stacked.projected > picked.projected) picked = { ...stacked, stacked: true };
     }
-    const lock = picked.chosen.map((c) => c.kickoff).filter(Boolean).sort()[0] ?? null;
-    attempts.push({ lockDay: day, lock, projected: picked.projected, picked });
+    const kicks = picked.chosen.map((c) => c.kickoff).filter(Boolean).sort();
+    const lock = kicks[0] ?? null;
+    const finish = kicks[kicks.length - 1] ?? null;
+    attempts.push({ lockDay: lock?.slice(0, 10) ?? day, lock, finish, finishDay: finish?.slice(0, 10) ?? day, projected: picked.projected, picked });
   }
 
   if (!attempts.length) {
     return { ok: false, reason: 'No complete lineup possible from the eligible pool.', attempts };
   }
 
-  const clearing = target ? attempts.filter((a) => a.projected >= target) : attempts;
-
-  if (!clearing.length) {
-    const best = attempts.reduce((a, b) => (b.projected > a.projected ? b : a));
-    return {
-      ...best.picked, ok: true, clearsTarget: false,
-      lock: best.lock, lockDay: best.lockDay, attempts,
-      shortfall: target ? Number((target - best.projected).toFixed(1)) : null,
-    };
+  // Keep the strongest candidate per finish day.
+  const byFinish = new Map();
+  for (const a of attempts) {
+    const cur = byFinish.get(a.finishDay);
+    if (!cur || a.projected > cur.projected) byFinish.set(a.finishDay, a);
   }
+  const byDay = [...byFinish.values()].sort((x, y) => x.finishDay.localeCompare(y.finishDay));
+  const strongest = attempts.reduce((a, b) => (b.projected > a.projected ? b : a));
+  const done = (chosen) => ({
+    ...chosen.picked, ok: true,
+    clearsTarget: target ? chosen.projected >= target : true,
+    shortfall: target && chosen.projected < target ? Number((target - chosen.projected).toFixed(1)) : null,
+    lock: chosen.lock, lockDay: chosen.lockDay, finish: chosen.finish, finishDay: chosen.finishDay, attempts,
+    tradedPointsForTime: chosen !== strongest ? Number((strongest.projected - chosen.projected).toFixed(1)) : 0,
+  });
 
-  // Latest lock wins, unless an earlier one is meaningfully stronger.
-  const strongest = clearing.reduce((a, b) => (b.projected > a.projected ? b : a));
-  const latest = clearing.reduce((a, b) => (b.lockDay > a.lockDay ? b : a));
-  const chosen = latest.projected >= strongest.projected * (1 - tolerance) ? latest : strongest;
+  if (!target) return done(strongest);
 
-  return {
-    ...chosen.picked, ok: true, clearsTarget: true,
-    lock: chosen.lock, lockDay: chosen.lockDay, attempts,
-    tradedPointsForTime: chosen !== strongest
-      ? Number((strongest.projected - chosen.projected).toFixed(1)) : 0,
-  };
+  const clearing = byDay.filter((a) => a.projected >= target);
+  if (clearing.length) return done(clearing[0]);
+
+  const inReach = byDay.filter((a) => a.projected >= target - reach);
+  if (!inReach.length) {
+    return { ...done(strongest), clearsTarget: false, shortfall: Number((target - strongest.projected).toFixed(1)) };
+  }
+  const bestInReach = inReach.reduce((a, b) => (b.projected > a.projected ? b : a));
+  const nearlyAsGood = inReach.find((a) => a.projected >= bestInReach.projected * (1 - tolerance));
+  return done(nearlyAsGood ?? bestInReach);
 }

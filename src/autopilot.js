@@ -113,7 +113,7 @@ export async function fetchStep(stepId) {
   return d.currentUser?.step ?? null;
 }
 
-export async function fetchBench(stepId, { first = 50, positions = null, includeUsed = false } = {}) {
+export async function fetchBench(stepId, { first = 50, positions = null, includeUsed = false, maxPages = 4 } = {}) {
   const filters = {
     // Sorare's own defaults do the hard filtering for us:
     //   includeUnavailablePlayers:false -> no injured or suspended
@@ -126,8 +126,21 @@ export async function fetchBench(stepId, { first = 50, positions = null, include
     sortType: { type: 'LAST_FIFTEEN_SO5_AVERAGE_SCORE', direction: 'DESC' },
     ...(positions ? { positions } : {}),
   };
-  const d = await gql(Q_BENCH, { id: stepId, filters, first });
-  const nodes = d.currentUser?.step?.myFilteredBench?.nodes ?? [];
+  // The whole eligible pool, not the top 50 by average. Ranked by average,
+  // the first page is club players with fixtures a fortnight out; the cards
+  // that could finish the step THIS week - lower averages, international
+  // fixtures - sat on pages two and three, and the picker never saw them.
+  // On 29 Sep the best five it could see projected 361 and finished on 12
+  // October; the best five in the pool projected 378 and finished on the 3rd.
+  const nodes = [];
+  let after = null;
+  for (let page = 0; page < maxPages; page += 1) {
+    const d = await gql(Q_BENCH, { id: stepId, filters, first, after });
+    const conn = d.currentUser?.step?.myFilteredBench;
+    nodes.push(...(conn?.nodes ?? []));
+    if (!conn?.pageInfo?.hasNextPage || !conn.pageInfo.endCursor) break;
+    after = conn.pageInfo.endCursor;
+  }
   return withOdds(await withStartRates(nodes));
 }
 
@@ -515,6 +528,7 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
   const picked = pickAcrossWindow(bench, {
     ...options,
     target: collaborative ? null : (step?.target ?? null),
+    reach: SPREAD,
     // Sorare's own number for this step, when it gives one.
     ...(step?.engineConfiguration?.captain != null ? { captainBonus: step.engineConfiguration.captain } : {}),
   });
@@ -607,8 +621,13 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
   // dead (injured, no fixture). A marginal improvement is not worth the churn,
   // and the swap direction flips just as often as not.
   const SWAP_GAIN = 0.03;
+  const enteredFinish = inPlay.map((c) => c.kickoff).filter(Boolean).sort().at(-1) ?? null;
+  const finishesEarlier = !!(picked.finish && enteredFinish && picked.finish.slice(0, 10) < enteredFinish.slice(0, 10));
+  const gateTarget = collaborative ? null : (step?.target ?? null);
+  const inReach = !gateTarget || picked.projected >= gateTarget - SPREAD;
   if (existing && changed && dead.length === 0 && enteredProjection != null
-      && picked.projected < enteredProjection * (1 + SWAP_GAIN)) {
+      && picked.projected < enteredProjection * (1 + SWAP_GAIN)
+      && !(finishesEarlier && inReach)) {
     return {
       stepId, surface, target: step?.target,
       action: 'none',

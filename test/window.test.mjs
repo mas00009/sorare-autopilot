@@ -19,22 +19,51 @@ const bench = [
   card({ n: 'FlexA', pos: 'DF', avg: 62, day: '2026-09-26', game: 'g5' }),
 ];
 
-// Target reachable either way -> take the later lock, trading a couple of points.
-const late = pickAcrossWindow(bench, { target: 300 });
-assert.equal(late.ok, true);
-assert.equal(late.clearsTarget, true);
-assert.equal(late.lockDay, '2026-09-25', 'should avoid locking on day one for 2 points');
-assert.ok(!late.chosen.some(c => c.player === 'EarlyStar'), 'day-one player excluded');
-assert.ok(late.tradedPointsForTime > 0);
+// The step resolves when the last card has played. Among lineups within reach
+// of the target, the one that FINISHES earliest wins; a slightly stronger side
+// that keeps the step open for days is not worth it.
+const early = pickAcrossWindow(bench, { target: 300 });
+assert.equal(early.ok, true);
+assert.equal(early.clearsTarget, true);
+assert.equal(early.finishDay, '2026-09-26', 'nothing complete can finish before the 26th');
+assert.ok(early.chosen.some(c => c.player === 'EarlyStar'), 'no reason to leave the best forward out');
 
-// Target out of reach -> report the best and flag it, do not pretend.
+// A weaker side that finishes days earlier beats a stronger one, as long as it
+// is within reach of the target.
+const fast = [
+  card({ n: 'G1', pos: 'GK', avg: 55, day: '2026-09-24', game: 'a1' }),
+  card({ n: 'D1', pos: 'DF', avg: 55, day: '2026-09-24', game: 'a2' }),
+  card({ n: 'M1', pos: 'MD', avg: 55, day: '2026-09-24', game: 'a3' }),
+  card({ n: 'F1', pos: 'FW', avg: 55, day: '2026-09-24', game: 'a4' }),
+  card({ n: 'X1', pos: 'DF', avg: 55, day: '2026-09-24', game: 'a5' }),
+  card({ n: 'G2', pos: 'GK', avg: 65, day: '2026-09-30', game: 'b1' }),
+  card({ n: 'D2', pos: 'DF', avg: 65, day: '2026-09-30', game: 'b2' }),
+  card({ n: 'M2', pos: 'MD', avg: 65, day: '2026-09-30', game: 'b3' }),
+  card({ n: 'F2', pos: 'FW', avg: 65, day: '2026-09-30', game: 'b4' }),
+  card({ n: 'X2', pos: 'DF', avg: 65, day: '2026-09-30', game: 'b5' }),
+];
+// (55 x 0.957 availability x 5, plus the armband, is about 289; the 30th side about 341.)
+const soon = pickAcrossWindow(fast, { target: 280 });
+assert.equal(soon.finishDay, '2026-09-24', 'the 24th side clears 280, so finish on the 24th');
+assert.ok(soon.tradedPointsForTime > 0, 'and say what was given up for it');
+// The 24th side falls short of 320 and is not nearly as strong, so the later
+// side that clears it is taken instead.
+const later = pickAcrossWindow(fast, { target: 320 });
+assert.equal(later.finishDay, '2026-09-30');
+assert.equal(later.clearsTarget, true);
+// Nothing clears 400: strongest within reach, which is still the 30th.
+const none = pickAcrossWindow(fast, { target: 400 });
+assert.equal(none.clearsTarget, false);
+assert.equal(none.finishDay, '2026-09-30');
+
+// Target out of reach from any day -> report the best and flag it, do not pretend.
 const short = pickAcrossWindow(bench, { target: 999 });
 assert.equal(short.clearsTarget, false);
 assert.ok(short.shortfall > 0);
 
 // No target -> still returns a valid lineup.
 assert.equal(pickAcrossWindow(bench, {}).ok, true);
-console.log('window assertions passed  | lock', late.lockDay, '| traded', late.tradedPointsForTime, 'pts for a day');
+console.log('window assertions passed  | finishes', early.finishDay, '| fast side traded', soon.tradedPointsForTime, 'pts to finish six days sooner');
 
 // --- a gap inside the natural spread is worth playing ---
 // Five players each carry about 25 points of error, so a total swings by ~56.

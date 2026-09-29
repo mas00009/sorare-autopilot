@@ -108,11 +108,12 @@ export const Q_STEP = `
  * includeNoGame defaults to false, so every card returned has a real fixture.
  */
 export const Q_BENCH = `
-  query Bench($id: String!, $filters: BenchFilterInput!, $first: Int!) {
+  query Bench($id: String!, $filters: BenchFilterInput!, $first: Int!, $after: String) {
     currentUser {
       step(id: $id) {
         id
-        myFilteredBench(filters: $filters, first: $first) {
+        myFilteredBench(filters: $filters, first: $first, after: $after) {
+          pageInfo { hasNextPage endCursor }
           nodes {
             id
             position
