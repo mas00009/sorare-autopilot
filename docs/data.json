@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T17:41:26.686Z",
+  "generatedAt": "2026-09-29T17:47:04.196Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-29T18:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1790703678931,
-    "reason": "last run 0m ago, next due in 5m (lock in 64m)"
+    "lastRunAt": 1790704015701,
+    "reason": "last run 0m ago, next due in 5m (lock in 58m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -89,10 +89,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 208.2168,
+      "squadScore": 492.5916,
       "lineupId": "Tasks::TaskLineup:b6725d3f-e731-4e8f-83b1-64b50be6f8fd",
       "state": "READY",
-      "score": 0,
+      "score": 36.75,
       "finished": false,
       "cleared": false,
       "players": [
@@ -137,12 +137,12 @@
           "slug": "trent-alexander-arnold",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         }
       ],
-      "scored": 0
+      "scored": 1
     },
     {
       "surface": "my set",
@@ -1257,7 +1257,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Team entered, locks Wed 04:45 am Sydney. The squad's top three lineups together need 1060; this one is expected to add about 291.",
+      "status": "Locked and playing. 37 scored so far, 1 of 5 played. The squad's top three lineups together need 1060; the squad has 493 so far.",
       "tone": "good",
       "lockAt": "2026-09-29T18:45:00Z",
       "isSquad": true,
@@ -1380,8 +1380,8 @@
             "kickoff": "2026-09-29T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "england",
             "name": "Trent Alexander-Arnold",
             "player": "Trent Alexander-Arnold",
@@ -1410,9 +1410,9 @@
           }
         ],
         "projected": 290.86,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 292.54
+        "scoredSoFar": 36.75,
+        "played": 1,
+        "expectedFinal": 291.34
       },
       "poolStrength": {
         "strong": 1,
@@ -1422,7 +1422,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 208.2168
+        "scoreSoFar": 492.5916
       },
       "level": 2,
       "lives": null,
@@ -1674,7 +1674,7 @@
             "starterPct": null,
             "startRate": 0.4,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 52,
             "picture": "https://assets.sorare.com/cardsamplepicture/8e01df69-aec7-4c02-8ec5-5945b8f017ad/picture/tinified-b1c14e546df4980ec4cb18086f500906.png",
@@ -1872,7 +1872,7 @@
           "starterPct": null,
           "startRate": 0.4,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 52,
           "picture": "https://assets.sorare.com/cardsamplepicture/8e01df69-aec7-4c02-8ec5-5945b8f017ad/picture/tinified-b1c14e546df4980ec4cb18086f500906.png",
