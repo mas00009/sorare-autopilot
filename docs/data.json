@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T20:04:18.428Z",
+  "generatedAt": "2026-09-29T20:09:45.440Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T13:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790712251583,
-    "reason": "last run 0m ago, next due in 180m (lock in 15446m)"
+    "lastRunAt": 1790712577909,
+    "reason": "last run 0m ago, next due in 180m (lock in 15440m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -89,19 +89,19 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 993.349,
+      "squadScore": 1170.6098,
       "lineupId": "Tasks::TaskLineup:b6725d3f-e731-4e8f-83b1-64b50be6f8fd",
       "state": "READY",
-      "score": 193.54,
+      "score": 207.91,
       "finished": false,
-      "cleared": false,
+      "cleared": true,
       "players": [
         {
           "name": "Stole Dimitrievski",
           "slug": "stole-dimitrievski",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 36.23,
+          "score": 36.44,
           "status": "REVIEWING",
           "kickoff": "2026-10-03T18:45:00Z"
         },
@@ -128,7 +128,7 @@
           "slug": "dan-ndoye",
           "position": "Forward",
           "captain": false,
-          "score": 75.29,
+          "score": 75.19,
           "status": "REVIEWING",
           "kickoff": "2026-10-03T18:45:00Z"
         },
@@ -137,7 +137,7 @@
           "slug": "trent-alexander-arnold",
           "position": "Defender",
           "captain": false,
-          "score": 82.03,
+          "score": 96.29,
           "status": "REVIEWING",
           "kickoff": "2026-10-03T16:00:00Z"
         }
@@ -1257,14 +1257,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 194 scored so far, 3 of 5 played. The squad's top three lineups together need 1060; the squad has 993 so far.",
+      "status": "Locked and playing. 208 scored so far, 3 of 5 played. The squad's top three lineups together need 1060; the squad has 1171 so far.",
       "tone": "good",
       "lockAt": "2026-09-29T18:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 36.23,
+            "actual": 36.44,
             "scoreStatus": "REVIEWING",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
@@ -1351,7 +1351,7 @@
             "kickoff": "2026-09-29T18:45:00Z"
           },
           {
-            "actual": 75.29,
+            "actual": 75.19,
             "scoreStatus": "REVIEWING",
             "teamSlug": "switzerland",
             "name": "Dan Ndoye",
@@ -1380,7 +1380,7 @@
             "kickoff": "2026-09-29T18:45:00Z"
           },
           {
-            "actual": 82.03,
+            "actual": 96.29,
             "scoreStatus": "REVIEWING",
             "teamSlug": "england",
             "name": "Trent Alexander-Arnold",
@@ -1410,9 +1410,9 @@
           }
         ],
         "projected": 290.86,
-        "scoredSoFar": 193.55,
+        "scoredSoFar": 207.92,
         "played": 3,
-        "expectedFinal": 357.53
+        "expectedFinal": 371.9
       },
       "poolStrength": {
         "strong": 0,
@@ -1422,7 +1422,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 993.349
+        "scoreSoFar": 1170.6098
       },
       "level": 2,
       "lives": null,
