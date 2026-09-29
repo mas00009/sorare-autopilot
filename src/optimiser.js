@@ -16,6 +16,8 @@ import { oddsFactor, ODDS_DEFAULTS } from './odds.js';
 export const DEFAULTS = {
   /** Reject anyone below this starter probability, in basis points. */
   minStarterBp: 6000,
+  /** With no odds published, reject anyone whose recent start rate is below this. */
+  minStartRate: 0.7,
   /** A substitute appearance is worth roughly this fraction of a start. */
   substituteWeight: 0.35,
   /**
@@ -140,6 +142,14 @@ export function blockReason(node, opts = DEFAULTS) {
   }
 
   const o = odds(node);
+  // Until Sorare publishes odds, the player's own recent start rate is the
+  // only availability signal. Below this it is a block rather than a dimmer:
+  // replaying 44 rounds, blocking under 0.7 raised the mean (267.3 -> 267.6)
+  // and cut non-players per lineup (0.47 -> 0.46); blocking under 0.5 did
+  // neither. And a card that scores zero is the one thing the owner sees.
+  if (!o && node.startRate != null && node.startRate < opts.minStartRate) {
+    return `started only ${Math.round(node.startRate * 100)}% of recent games`;
+  }
   if (o && o.starterOddsBasisPoints < opts.minStarterBp) {
     return `only ${(o.starterOddsBasisPoints / 100).toFixed(0)}% to start`;
   }

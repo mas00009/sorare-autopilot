@@ -187,6 +187,23 @@ Replayed over 44 rounds the rule is neutral on realised points (268.1 against
 267.3 with sides mixed), so it costs nothing and removes a bet that cannot
 pay both ways.
 
+## Three rules that stop the churn
+
+- **Entered players are fetched by name.** The ranked bench is capped at 50
+  and hides "used" cards; an entered player at rank 48-50 falls off it as
+  averages move, the picker loses sight of its own team, enters the
+  alternative, and flips back next pass. On 28-29 Sep that re-entered the
+  lineup 86 times in a day, alternating a 361 team with a 324 one. A name
+  query returns the card whatever its rank.
+- **Hysteresis.** An intact entered team is replaced only for a gain of 3% or
+  more, or when one of its players is dead. Marginal swaps flip as often as
+  they help.
+- **No odds, low start rate: blocked.** Until Sorare publishes starter odds, a
+  player who started under 70% of recent games is not picked. Replayed: mean
+  267.3 -> 267.6, non-players per lineup 0.47 -> 0.46; the same block at 50%
+  helped neither. For international fixtures the rate is a 50/50 blend with
+  the player's national-team record.
+
 ## What the research found
 
 Every weight in the optimiser was measured against this account's own history -

@@ -156,6 +156,32 @@ async function withOdds(nodes) {
 }
 
 /**
+ * The bench nodes for specific players, by name, whether or not they are
+ * "used". The plain includeUsed fetch is ranked by average and capped at 50,
+ * and an entered player sitting at rank 48-50 falls off it the moment an
+ * average moves - which made the picker forget its own team every other
+ * pass and re-enter a different one 86 times in a day. A name query returns
+ * the card regardless of rank.
+ */
+export async function fetchPlayersOnBench(stepId, appearances) {
+  const out = [];
+  for (const a of appearances ?? []) {
+    const slug = a.anyPlayer?.slug, name = a.anyPlayer?.displayName;
+    if (!slug || !name) continue;
+    try {
+      const d = await gql(Q_BENCH, { id: stepId, first: 5, filters: {
+        includeUnavailablePlayers: true, includeNoGame: false, includePostExpiration: false,
+        includeUsed: true, query: name,
+        sortType: { type: 'LAST_FIFTEEN_SO5_AVERAGE_SCORE', direction: 'DESC' },
+      } });
+      const hit = (d.currentUser?.step?.myFilteredBench?.nodes ?? []).find((n) => n.player?.slug === slug);
+      if (hit) out.push(hit);
+    } catch { /* absent from the pool this pass; the caller copes */ }
+  }
+  return withOdds(await withStartRates(out));
+}
+
+/**
  * Attach each bench card's recent start and play rates.
  *
  * Sorare publishes starter odds only as kickoff nears. Days out - exactly when
@@ -310,11 +336,8 @@ export async function enteredTeam({ step, stepId, surface, lineup = null, option
     // describe() needs the full weights; the bare options leave formWeight
     // undefined and every score comes back NaN.
     const opts = { ...DEFAULTS, ...options };
-    const used = await fetchBench(stepId, { first: 50, includeUsed: true });
-    const want = new Set(five.map((c) => c.slug));
-    const scored = new Map(used
-      .filter((n) => want.has(n.player?.slug))
-      .map((n) => [n.player.slug, describe(n, opts)]));
+    const nodes = await fetchPlayersOnBench(stepId, appearances);
+    const scored = new Map(nodes.map((n) => [n.player.slug, describe(n, opts)]));
     if (scored.size !== five.length) return { five: settle(five), projected: null };
 
     let total = 0;
@@ -465,9 +488,7 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
     .map((a) => a.anyPlayer?.slug).filter(Boolean));
 
   const free = await fetchBench(stepId);
-  const mineNodes = mine.size
-    ? (await fetchBench(stepId, { includeUsed: true })).filter((n) => mine.has(n.player?.slug))
-    : [];
+  const mineNodes = mine.size ? await fetchPlayersOnBench(stepId, liveLineup?.taskAppearances ?? []) : [];
   const seen = new Set();
   const bench = [...mineNodes, ...free].filter((n) => {
     const k = n.player?.slug;
@@ -578,6 +599,24 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
 
   const delta = diffLineup(existing?.taskAppearances ?? [], picked);
   const changed = delta.in.length > 0 || delta.out.length > 0 || !existing;
+
+  // Hysteresis. Two teams a few points apart will trade places every pass as
+  // inputs wobble - on 28-29 Sep the lineup was re-entered 86 times in a day,
+  // alternating between a 361 and a 324. So an entered team that is still
+  // intact is only replaced for a real gain, or when one of its players is
+  // dead (injured, no fixture). A marginal improvement is not worth the churn,
+  // and the swap direction flips just as often as not.
+  const SWAP_GAIN = 0.03;
+  if (existing && changed && dead.length === 0 && enteredProjection != null
+      && picked.projected < enteredProjection * (1 + SWAP_GAIN)) {
+    return {
+      stepId, surface, target: step?.target,
+      action: 'none',
+      reason: `Entered team projects ${enteredProjection}; the alternative ${picked.projected} is not ${Math.round(SWAP_GAIN * 100)}% better. Holding.`,
+      lineup: picked.chosen, projected: picked.projected,
+      inPlay, enteredProjection, collaborative,
+    };
+  }
 
   if (!changed) {
     return {
