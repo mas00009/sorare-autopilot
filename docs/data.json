@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T17:47:04.196Z",
+  "generatedAt": "2026-09-29T17:52:37.962Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-29T18:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1790704015701,
-    "reason": "last run 0m ago, next due in 5m (lock in 58m)"
+    "lastRunAt": 1790704350533,
+    "reason": "last run 0m ago, next due in 5m (lock in 52m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -89,10 +89,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 492.5916,
+      "squadScore": 615.4694,
       "lineupId": "Tasks::TaskLineup:b6725d3f-e731-4e8f-83b1-64b50be6f8fd",
       "state": "READY",
-      "score": 36.75,
+      "score": 73.5,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,8 +101,8 @@
           "slug": "stole-dimitrievski",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
         {
@@ -142,7 +142,7 @@
           "kickoff": "2026-09-29T18:45:00Z"
         }
       ],
-      "scored": 1
+      "scored": 2
     },
     {
       "surface": "my set",
@@ -869,7 +869,7 @@
             "starterPct": null,
             "startRate": 0.95,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 63,
             "picture": "https://assets.sorare.com/cardsamplepicture/2e0f0c68-9798-48c3-a1fe-e35b06ff458d/picture/tinified-f73a11ebd48693396a69f9a118fe327a.png",
@@ -986,7 +986,7 @@
             "starterPct": null,
             "startRate": 0.8166666666666667,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 61,
             "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
@@ -1067,7 +1067,7 @@
           "starterPct": null,
           "startRate": 0.95,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 63,
           "picture": "https://assets.sorare.com/cardsamplepicture/2e0f0c68-9798-48c3-a1fe-e35b06ff458d/picture/tinified-f73a11ebd48693396a69f9a118fe327a.png",
@@ -1184,7 +1184,7 @@
           "starterPct": null,
           "startRate": 0.8166666666666667,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 61,
           "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
@@ -1257,15 +1257,15 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 37 scored so far, 1 of 5 played. The squad's top three lineups together need 1060; the squad has 493 so far.",
+      "status": "Locked and playing. 74 scored so far, 2 of 5 played. The squad's top three lineups together need 1060; the squad has 615 so far.",
       "tone": "good",
       "lockAt": "2026-09-29T18:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
             "player": "Stole Dimitrievski",
@@ -1410,9 +1410,9 @@
           }
         ],
         "projected": 290.86,
-        "scoredSoFar": 36.75,
-        "played": 1,
-        "expectedFinal": 291.34
+        "scoredSoFar": 73.5,
+        "played": 2,
+        "expectedFinal": 280.16
       },
       "poolStrength": {
         "strong": 1,
@@ -1422,7 +1422,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 492.5916
+        "scoreSoFar": 615.4694
       },
       "level": 2,
       "lives": null,
@@ -1518,7 +1518,7 @@
             "starterPct": null,
             "startRate": 0.8166666666666667,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 61,
             "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
@@ -1557,7 +1557,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 37,
             "picture": "https://assets.sorare.com/cardsamplepicture/108306a1-a01a-46a9-ab6a-cbee13e699f2/picture/tinified-1f234d64d3a376de0cc444e45951aabc.png",
@@ -1596,7 +1596,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 47,
             "picture": "https://assets.sorare.com/cardsamplepicture/a27bc2c8-2943-4639-95b3-cf6abedb429b/picture/tinified-cb56cd6b5650a52dc42c4ac5348f0320.png",
@@ -1716,7 +1716,7 @@
           "starterPct": null,
           "startRate": 0.8166666666666667,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 61,
           "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
@@ -1755,7 +1755,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 37,
           "picture": "https://assets.sorare.com/cardsamplepicture/108306a1-a01a-46a9-ab6a-cbee13e699f2/picture/tinified-1f234d64d3a376de0cc444e45951aabc.png",
@@ -1794,7 +1794,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 47,
           "picture": "https://assets.sorare.com/cardsamplepicture/a27bc2c8-2943-4639-95b3-cf6abedb429b/picture/tinified-cb56cd6b5650a52dc42c4ac5348f0320.png",
