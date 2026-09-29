@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T18:03:49.679Z",
+  "generatedAt": "2026-09-29T18:09:25.849Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-09-29T18:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1790705021906,
-    "reason": "last run 0m ago, next due in 5m (lock in 41m)"
+    "lastRunAt": 1790705358367,
+    "reason": "last run 0m ago, next due in 5m (lock in 36m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -89,10 +89,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 620.5254,
+      "squadScore": 645.1024,
       "lineupId": "Tasks::TaskLineup:b6725d3f-e731-4e8f-83b1-64b50be6f8fd",
       "state": "READY",
-      "score": 73.5,
+      "score": 109.55,
       "finished": false,
       "cleared": false,
       "players": [
@@ -128,8 +128,8 @@
           "slug": "dan-ndoye",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-09-29T18:45:00Z"
         },
         {
@@ -142,7 +142,7 @@
           "kickoff": "2026-09-29T18:45:00Z"
         }
       ],
-      "scored": 2
+      "scored": 3
     },
     {
       "surface": "my set",
@@ -1257,7 +1257,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 74 scored so far, 2 of 5 played. The squad's top three lineups together need 1060; the squad has 621 so far.",
+      "status": "Locked and playing. 110 scored so far, 3 of 5 played. The squad's top three lineups together need 1060; the squad has 645 so far.",
       "tone": "good",
       "lockAt": "2026-09-29T18:45:00Z",
       "isSquad": true,
@@ -1351,8 +1351,8 @@
             "kickoff": "2026-09-29T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "switzerland",
             "name": "Dan Ndoye",
             "player": "Dan Ndoye",
@@ -1410,9 +1410,9 @@
           }
         ],
         "projected": 290.86,
-        "scoredSoFar": 73.5,
-        "played": 2,
-        "expectedFinal": 280.16
+        "scoredSoFar": 109.55,
+        "played": 3,
+        "expectedFinal": 273.53
       },
       "poolStrength": {
         "strong": 1,
@@ -1422,7 +1422,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 620.5254
+        "scoreSoFar": 645.1024
       },
       "level": 2,
       "lives": null,
