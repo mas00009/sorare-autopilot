@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T07:08:28.704Z",
+  "generatedAt": "2026-09-30T07:14:15.785Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790752092383,
-    "reason": "last run 0m ago, next due in 180m (lock in 5017m)"
+    "lastRunAt": 1790752439504,
+    "reason": "last run 0m ago, next due in 180m (lock in 5011m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -1016,7 +1016,7 @@
             "blocked": null
           },
           {
-            "id": "ComposeTeamBenchCard:a6be9ca0-2ba3-48fd-ae84-fc950a4459b1",
+            "id": "ComposeTeamBenchCard:0fd45716-334e-4acf-9861-b6ecbc15f345",
             "player": "Renato Veiga",
             "slug": "renato-de-palma-veiga",
             "position": "DF",
@@ -1214,7 +1214,7 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:a6be9ca0-2ba3-48fd-ae84-fc950a4459b1",
+          "id": "ComposeTeamBenchCard:0fd45716-334e-4acf-9861-b6ecbc15f345",
           "player": "Renato Veiga",
           "slug": "renato-de-palma-veiga",
           "position": "DF",
