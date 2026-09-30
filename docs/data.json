@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-09-30T07:02:40.577Z",
+  "generatedAt": "2026-09-30T07:08:28.704Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 1500,
+    "essence": 1000,
     "gems": 211
   },
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790751744137,
-    "reason": "last run 0m ago, next due in 180m (lock in 5022m)"
+    "lastRunAt": 1790752092383,
+    "reason": "last run 0m ago, next due in 180m (lock in 5017m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -558,9 +558,9 @@
       {
         "title": "Collect Big 3 LaLiga",
         "gems": 30,
-        "progress": 39,
+        "progress": 40,
         "target": 50,
-        "remaining": 11,
+        "remaining": 10,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": [
@@ -572,9 +572,9 @@
       {
         "title": "Collect Spanish players in LaLiga",
         "gems": 30,
-        "progress": 196,
+        "progress": 197,
         "target": 279,
-        "remaining": 83,
+        "remaining": 82,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": []
