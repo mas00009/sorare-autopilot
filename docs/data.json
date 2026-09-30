@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T07:14:15.785Z",
+  "generatedAt": "2026-09-30T07:20:04.321Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790752439504,
-    "reason": "last run 0m ago, next due in 180m (lock in 5011m)"
+    "lastRunAt": 1790752786785,
+    "reason": "last run 0m ago, next due in 180m (lock in 5005m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -570,6 +570,16 @@
         ]
       },
       {
+        "title": "Collect Goalkeepers",
+        "gems": 10,
+        "progress": 75,
+        "target": 112,
+        "remaining": 37,
+        "competition": null,
+        "group": null,
+        "teams": []
+      },
+      {
         "title": "Collect Spanish players in LaLiga",
         "gems": 30,
         "progress": 197,
@@ -586,7 +596,7 @@
     },
     "ladderGemsAhead": 40,
     "ladderCashAhead": 1100,
-    "collectionGemsOpen": 60
+    "collectionGemsOpen": 70
   },
   "odds": {
     "configured": true,
