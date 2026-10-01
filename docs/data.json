@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T12:27:55.678Z",
+  "generatedAt": "2026-10-01T12:33:58.148Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790857656210,
-    "reason": "last run 0m ago, next due in 180m (lock in 3257m)"
+    "lastRunAt": 1790858016815,
+    "reason": "last run 0m ago, next due in 180m (lock in 3251m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -20,6 +20,68 @@
     "failStreak": 0
   },
   "results": [
+    {
+      "surface": "team set (Loadshift)",
+      "level": 3,
+      "target": 1140,
+      "stepState": "LINEUP_SET",
+      "collaborative": true,
+      "squadLineups": 5,
+      "squadScore": 0,
+      "lineupId": "Tasks::TaskLineup:ecf48f46-2944-413b-bfae-19eb8886fd6e",
+      "state": "READY",
+      "score": 0,
+      "finished": false,
+      "cleared": false,
+      "players": [
+        {
+          "name": "Bart Verbruggen",
+          "slug": "bart-verbruggen",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-10-01T18:45:00Z"
+        },
+        {
+          "name": "Rúben Dias",
+          "slug": "ruben-santos-gato-alves-dias",
+          "position": "Defender",
+          "captain": true,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-10-01T18:45:00Z"
+        },
+        {
+          "name": "Carney Chukwuemeka",
+          "slug": "carney-chukwuemeka",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-10-01T18:45:00Z"
+        },
+        {
+          "name": "Serge Gnabry",
+          "slug": "serge-gnabry",
+          "position": "Forward",
+          "captain": false,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-10-01T18:45:00Z"
+        },
+        {
+          "name": "Troy Parrott",
+          "slug": "troy-parrott",
+          "position": "Forward",
+          "captain": false,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-10-01T18:45:00Z"
+        }
+      ],
+      "scored": 0
+    },
     {
       "surface": "my set",
       "level": 2,
@@ -1267,18 +1329,170 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "No eligible cards for this step yet.",
-      "tone": "neutral",
-      "lockAt": null,
+      "status": "Team entered, locks Fri 04:45 am Sydney. The squad's top three lineups together need 1140; this one is expected to add about 200.",
+      "tone": "good",
+      "lockAt": "2026-10-01T18:45:00Z",
       "isSquad": true,
-      "entered": null,
+      "entered": {
+        "five": [
+          {
+            "actual": null,
+            "scoreStatus": "PENDING",
+            "teamSlug": "netherlands",
+            "name": "Bart Verbruggen",
+            "player": "Bart Verbruggen",
+            "slug": "bart-verbruggen",
+            "pos": "GK",
+            "position": "GK",
+            "pic": "https://assets.sorare.com/cardsamplepicture/55041af4-14cf-411b-8299-c09c5593a95b/picture/tinified-af6e881c6db908f044561785d1f233de.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/55041af4-14cf-411b-8299-c09c5593a95b/picture/tinified-af6e881c6db908f044561785d1f233de.png",
+            "captain": false,
+            "exp": 64.67,
+            "expected": 64.67,
+            "opp": "Greece",
+            "opponent": "Greece",
+            "home": false,
+            "average": 53,
+            "formL5": 59,
+            "intl": true,
+            "pWin": null,
+            "pLose": null,
+            "marketFactor": null,
+            "oppRank": 46,
+            "ownRank": 9,
+            "oppFactor": 1.121,
+            "locked": false,
+            "kickoff": "2026-10-01T18:45:00Z"
+          },
+          {
+            "actual": null,
+            "scoreStatus": "PENDING",
+            "teamSlug": "portugal",
+            "name": "Rúben Dias",
+            "player": "Rúben Dias",
+            "slug": "ruben-santos-gato-alves-dias",
+            "pos": "DF",
+            "position": "DF",
+            "pic": "https://assets.sorare.com/cardsamplepicture/51ec3fca-50ff-4975-a5a2-1a83b5c833f0/picture/tinified-7a37453263600d888145da54b161fb7d.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/51ec3fca-50ff-4975-a5a2-1a83b5c833f0/picture/tinified-7a37453263600d888145da54b161fb7d.png",
+            "captain": true,
+            "exp": 50.46,
+            "expected": 50.46,
+            "opp": "Denmark",
+            "opponent": "Denmark",
+            "home": false,
+            "average": 58,
+            "formL5": 50,
+            "intl": true,
+            "pWin": null,
+            "pLose": null,
+            "marketFactor": null,
+            "oppRank": 21,
+            "ownRank": 7,
+            "oppFactor": 1.068,
+            "locked": false,
+            "kickoff": "2026-10-01T18:45:00Z"
+          },
+          {
+            "actual": null,
+            "scoreStatus": "PENDING",
+            "teamSlug": "austria",
+            "name": "Carney Chukwuemeka",
+            "player": "Carney Chukwuemeka",
+            "slug": "carney-chukwuemeka",
+            "pos": "MD",
+            "position": "MD",
+            "pic": "https://assets.sorare.com/cardsamplepicture/f6a5ca75-1f84-4200-a5e8-7175c5563ea8/picture/tinified-4f4ef7408e67e29e4c694d460268f35e.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/f6a5ca75-1f84-4200-a5e8-7175c5563ea8/picture/tinified-4f4ef7408e67e29e4c694d460268f35e.png",
+            "captain": false,
+            "exp": 8.49,
+            "expected": 8.49,
+            "opp": "Ireland",
+            "opponent": "Ireland",
+            "home": false,
+            "average": 37,
+            "formL5": 42,
+            "intl": true,
+            "pWin": null,
+            "pLose": null,
+            "marketFactor": null,
+            "oppRank": 55,
+            "ownRank": 23,
+            "oppFactor": 1.032,
+            "locked": false,
+            "kickoff": "2026-10-01T18:45:00Z"
+          },
+          {
+            "actual": null,
+            "scoreStatus": "PENDING",
+            "teamSlug": "germany",
+            "name": "Serge Gnabry",
+            "player": "Serge Gnabry",
+            "slug": "serge-gnabry",
+            "pos": "FW",
+            "position": "FW",
+            "pic": "https://assets.sorare.com/cardsamplepicture/2e6cfe0b-23dc-4c4a-87a8-5bf935d7becb/picture/tinified-8429b0e81aa327f5d30db36ef5aefb3b.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/2e6cfe0b-23dc-4c4a-87a8-5bf935d7becb/picture/tinified-8429b0e81aa327f5d30db36ef5aefb3b.png",
+            "captain": false,
+            "exp": 5.71,
+            "expected": 5.71,
+            "opp": "Serbia",
+            "opponent": "Serbia",
+            "home": true,
+            "average": 33,
+            "formL5": 31,
+            "intl": true,
+            "pWin": null,
+            "pLose": null,
+            "marketFactor": null,
+            "oppRank": 40,
+            "ownRank": 12,
+            "oppFactor": 1,
+            "locked": false,
+            "kickoff": "2026-10-01T18:45:00Z"
+          },
+          {
+            "actual": null,
+            "scoreStatus": "PENDING",
+            "teamSlug": "republic-of-ireland",
+            "name": "Troy Parrott",
+            "player": "Troy Parrott",
+            "slug": "troy-parrott",
+            "pos": "FW",
+            "position": "FW",
+            "pic": "https://assets.sorare.com/cardsamplepicture/609d4f31-73e1-4025-ba51-d7d346ba5382/picture/tinified-cd8adea083e0d17ba4a930f3cc3c4d02.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/609d4f31-73e1-4025-ba51-d7d346ba5382/picture/tinified-cd8adea083e0d17ba4a930f3cc3c4d02.png",
+            "captain": false,
+            "exp": 45.53,
+            "expected": 45.53,
+            "opp": "Austria",
+            "opponent": "Austria",
+            "home": true,
+            "average": 51,
+            "formL5": 59,
+            "intl": true,
+            "pWin": null,
+            "pLose": null,
+            "marketFactor": null,
+            "oppRank": 23,
+            "ownRank": 55,
+            "oppFactor": 1,
+            "locked": false,
+            "kickoff": "2026-10-01T18:45:00Z"
+          }
+        ],
+        "projected": 199.84,
+        "scoredSoFar": 0,
+        "played": 0,
+        "expectedFinal": 200.09
+      },
       "poolStrength": {
         "strong": 0,
         "needed": 5
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 4,
+        "lineupsIn": 5,
         "needed": 3,
         "scoreSoFar": 0
       },
@@ -1304,7 +1518,7 @@
         },
         {
           "level": 3,
-          "state": "PLAYABLE",
+          "state": "LINEUP_SET",
           "target": 1140
         },
         {
@@ -1321,9 +1535,40 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "PLAYABLE",
+      "state": "LINEUP_SET",
       "target": 1140,
-      "current": [],
+      "current": [
+        {
+          "name": "Bart Verbruggen",
+          "captain": false,
+          "locked": false,
+          "nextGame": "2026-10-01T18:45:00Z"
+        },
+        {
+          "name": "Rúben Dias",
+          "captain": true,
+          "locked": false,
+          "nextGame": "2026-10-01T18:45:00Z"
+        },
+        {
+          "name": "Carney Chukwuemeka",
+          "captain": false,
+          "locked": false,
+          "nextGame": "2026-10-01T18:45:00Z"
+        },
+        {
+          "name": "Serge Gnabry",
+          "captain": false,
+          "locked": false,
+          "nextGame": "2026-10-01T18:45:00Z"
+        },
+        {
+          "name": "Troy Parrott",
+          "captain": false,
+          "locked": false,
+          "nextGame": "2026-10-01T18:45:00Z"
+        }
+      ],
       "plan": null,
       "candidates": [
         {
@@ -1366,45 +1611,6 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:888e3195-1b2c-4013-a46d-f93dfc07a371",
-          "player": "Bart Verbruggen",
-          "slug": "bart-verbruggen",
-          "position": "GK",
-          "average": 53,
-          "bonus": 1.03,
-          "starterPct": null,
-          "startRate": 1,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 59,
-          "picture": "https://assets.sorare.com/cardsamplepicture/55041af4-14cf-411b-8299-c09c5593a95b/picture/tinified-af6e881c6db908f044561785d1f233de.png",
-          "rarity": "common",
-          "gameId": "Game:0b09e09d-75ae-47d9-a5d2-3e5cf3cf608a",
-          "kickoff": "2026-10-01T18:45:00Z",
-          "team": "Netherlands",
-          "teamSlug": "netherlands",
-          "opponent": "Greece",
-          "opponentCode": "GRE",
-          "code": "NED",
-          "rank": null,
-          "opponentRank": null,
-          "home": false,
-          "competition": "UEFA Nations League",
-          "intl": true,
-          "oppRank": 46,
-          "ownRank": 9,
-          "oppFactor": 1.121,
-          "mismatch": true,
-          "pWin": null,
-          "pLose": null,
-          "oddsBooks": null,
-          "marketFactor": null,
-          "lockedAt": null,
-          "expected": 64.67,
-          "blocked": null
-        },
-        {
           "id": "ComposeTeamBenchCard:16914af5-bee3-4ae0-b1c1-49bcb1332a3f",
           "player": "Denzel Dumfries",
           "slug": "denzel-dumfries",
@@ -1441,84 +1647,6 @@
           "marketFactor": null,
           "lockedAt": null,
           "expected": 53.12,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:fb967f31-5da5-4a16-bcb4-4d4b6b32cafd",
-          "player": "Rúben Dias",
-          "slug": "ruben-santos-gato-alves-dias",
-          "position": "DF",
-          "average": 58,
-          "bonus": 1.01,
-          "starterPct": null,
-          "startRate": 0.8666666666666667,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 50,
-          "picture": "https://assets.sorare.com/cardsamplepicture/51ec3fca-50ff-4975-a5a2-1a83b5c833f0/picture/tinified-7a37453263600d888145da54b161fb7d.png",
-          "rarity": "common",
-          "gameId": "Game:b872365c-5b4d-40cc-89c2-4af0eb25bcfd",
-          "kickoff": "2026-10-01T18:45:00Z",
-          "team": "Portugal",
-          "teamSlug": "portugal",
-          "opponent": "Denmark",
-          "opponentCode": "DEN",
-          "code": "POR",
-          "rank": null,
-          "opponentRank": null,
-          "home": false,
-          "competition": "UEFA Nations League",
-          "intl": true,
-          "oppRank": 21,
-          "ownRank": 7,
-          "oppFactor": 1.068,
-          "mismatch": false,
-          "pWin": null,
-          "pLose": null,
-          "oddsBooks": null,
-          "marketFactor": null,
-          "lockedAt": null,
-          "expected": 50.46,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:01f226c3-48cb-4dc3-bbd6-6d89f6ed5b25",
-          "player": "Troy Parrott",
-          "slug": "troy-parrott",
-          "position": "FW",
-          "average": 51,
-          "bonus": 1.1,
-          "starterPct": null,
-          "startRate": 0.7,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 59,
-          "picture": "https://assets.sorare.com/cardsamplepicture/609d4f31-73e1-4025-ba51-d7d346ba5382/picture/tinified-cd8adea083e0d17ba4a930f3cc3c4d02.png",
-          "rarity": "common",
-          "gameId": "Game:cdf44d72-6f9c-4746-8deb-4a21ec2b3bac",
-          "kickoff": "2026-10-01T18:45:00Z",
-          "team": "Ireland",
-          "teamSlug": "republic-of-ireland",
-          "opponent": "Austria",
-          "opponentCode": "AUT",
-          "code": "IRL",
-          "rank": null,
-          "opponentRank": null,
-          "home": true,
-          "competition": "UEFA Nations League",
-          "intl": true,
-          "oppRank": 23,
-          "ownRank": 55,
-          "oppFactor": 1,
-          "mismatch": false,
-          "pWin": null,
-          "pLose": null,
-          "oddsBooks": null,
-          "marketFactor": null,
-          "lockedAt": null,
-          "expected": 45.53,
           "blocked": null
         },
         {
@@ -1717,7 +1845,7 @@
           "blocked": null
         }
       ],
-      "projected": 278.7
+      "projected": 243.7
     }
   ],
   "fixtures": [
@@ -1739,10 +1867,9 @@
       "home": false,
       "players": [
         "Renato Veiga",
-        "Renato Veiga",
-        "Rúben Dias"
+        "Renato Veiga"
       ],
-      "points": 180.4,
+      "points": 129.9,
       "bestStarter": null,
       "surfaces": [
         "my set",
@@ -1766,10 +1893,9 @@
       "oppFactor": 1.121,
       "home": false,
       "players": [
-        "Bart Verbruggen",
         "Denzel Dumfries"
       ],
-      "points": 117.8,
+      "points": 53.1,
       "bestStarter": null,
       "surfaces": [
         "team set (Loadshift)"
@@ -1792,10 +1918,9 @@
       "oppFactor": 1,
       "home": true,
       "players": [
-        "Troy Parrott",
         "Troy Parrott"
       ],
-      "points": 89,
+      "points": 43.5,
       "bestStarter": null,
       "surfaces": [
         "team set (Loadshift)"
