@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T17:40:45.785Z",
+  "generatedAt": "2026-10-01T17:46:50.784Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790876423423,
-    "reason": "last run 0m ago, next due in 180m (lock in 2944m)"
+    "lastRunAt": 1790876785822,
+    "reason": "last run 0m ago, next due in 180m (lock in 2938m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -27,10 +27,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 0,
+      "squadScore": 346.85,
       "lineupId": "Tasks::TaskLineup:ecf48f46-2944-413b-bfae-19eb8886fd6e",
       "state": "READY",
-      "score": 0,
+      "score": 163.1,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,8 +39,8 @@
           "slug": "bart-verbruggen",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-01T18:45:00Z"
         },
         {
@@ -48,8 +48,8 @@
           "slug": "ruben-santos-gato-alves-dias",
           "position": "Defender",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 52.85,
+          "status": "REVIEWING",
           "kickoff": "2026-10-01T18:45:00Z"
         },
         {
@@ -57,8 +57,8 @@
           "slug": "carney-chukwuemeka",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 35.7,
+          "status": "REVIEWING",
           "kickoff": "2026-10-01T18:45:00Z"
         },
         {
@@ -75,12 +75,12 @@
           "slug": "troy-parrott",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 38.5,
+          "status": "REVIEWING",
           "kickoff": "2026-10-01T18:45:00Z"
         }
       ],
-      "scored": 0
+      "scored": 4
     },
     {
       "surface": "my set",
@@ -1097,7 +1097,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 63,
             "picture": "https://assets.sorare.com/cardsamplepicture/52a7a606-d9e8-404a-ad71-d3cef34a8c2e/picture/tinified-942dd9d9d147d525ae66199b213992f4.png",
@@ -1295,7 +1295,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 63,
           "picture": "https://assets.sorare.com/cardsamplepicture/52a7a606-d9e8-404a-ad71-d3cef34a8c2e/picture/tinified-942dd9d9d147d525ae66199b213992f4.png",
@@ -1329,15 +1329,15 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Team entered, locks Fri 04:45 am Sydney. The squad's top three lineups together need 1140; this one is expected to add about 200.",
+      "status": "Locked and playing. 190 scored so far, 4 of 5 played. The squad's top three lineups together need 1140; the squad has 347 so far.",
       "tone": "good",
       "lockAt": "2026-10-01T18:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "netherlands",
             "name": "Bart Verbruggen",
             "player": "Bart Verbruggen",
@@ -1365,8 +1365,8 @@
             "kickoff": "2026-10-01T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 52.85,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "portugal",
             "name": "Rúben Dias",
             "player": "Rúben Dias",
@@ -1394,8 +1394,8 @@
             "kickoff": "2026-10-01T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 35.7,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "austria",
             "name": "Carney Chukwuemeka",
             "player": "Carney Chukwuemeka",
@@ -1452,8 +1452,8 @@
             "kickoff": "2026-10-01T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 38.5,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "republic-of-ireland",
             "name": "Troy Parrott",
             "player": "Troy Parrott",
@@ -1482,9 +1482,9 @@
           }
         ],
         "projected": 199.84,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 200.09
+        "scoredSoFar": 189.53,
+        "played": 4,
+        "expectedFinal": 195.24
       },
       "poolStrength": {
         "strong": 0,
@@ -1494,7 +1494,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 0
+        "scoreSoFar": 346.85
       },
       "level": 3,
       "lives": null,
@@ -1581,7 +1581,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 63,
           "picture": "https://assets.sorare.com/cardsamplepicture/52a7a606-d9e8-404a-ad71-d3cef34a8c2e/picture/tinified-942dd9d9d147d525ae66199b213992f4.png",
@@ -1620,7 +1620,7 @@
           "starterPct": null,
           "startRate": 0.95,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 49,
           "picture": "https://assets.sorare.com/cardsamplepicture/e9ffabc5-37db-485b-ad91-9a76cd27cc72/picture/tinified-c7e62bbe1dbd76438cfec01d36b68273.png",
@@ -1659,7 +1659,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 59,
           "picture": "https://assets.sorare.com/cardsamplepicture/a6f3ed0e-8d2f-4221-aab3-a1167ff46311/picture/tinified-83c5bd95b4364db7bd83561a6238a180.png",
@@ -1737,7 +1737,7 @@
           "starterPct": null,
           "startRate": 0.75,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 52,
           "picture": "https://assets.sorare.com/cardsamplepicture/a806b93c-285f-4648-aa0c-d1e3fb95cb12/picture/tinified-264bf46f26a58db15dd4868b9521faea.png",
@@ -1815,7 +1815,7 @@
           "starterPct": null,
           "startRate": 0.7666666666666666,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 40,
           "picture": "https://assets.sorare.com/cardsamplepicture/d0744b30-85fa-447e-88ab-8c42cfc4fb5c/picture/tinified-0c976acc445d41e3987d9c7237a2adf9.png",
