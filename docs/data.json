@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T19:10:01.122Z",
+  "generatedAt": "2026-10-01T19:15:49.777Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790881781733,
-    "reason": "last run 0m ago, next due in 180m (lock in 2855m)"
+    "lastRunAt": 1790882130774,
+    "reason": "last run 0m ago, next due in 180m (lock in 2849m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 724.3468,
+      "squadScore": 720.0994,
       "lineupId": "Tasks::TaskLineup:ecf48f46-2944-413b-bfae-19eb8886fd6e",
       "state": "READY",
-      "score": 244.18,
+      "score": 240.61,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "bart-verbruggen",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 36.67,
+          "score": 31.52,
           "status": "REVIEWING",
           "kickoff": "2026-10-04T18:45:00Z"
         },
@@ -48,7 +48,7 @@
           "slug": "ruben-santos-gato-alves-dias",
           "position": "Defender",
           "captain": true,
-          "score": 56.26,
+          "score": 54.21,
           "status": "REVIEWING",
           "kickoff": "2026-10-04T18:45:00Z"
         },
@@ -57,7 +57,7 @@
           "slug": "carney-chukwuemeka",
           "position": "Midfielder",
           "captain": false,
-          "score": 37.84,
+          "score": 37.94,
           "status": "REVIEWING",
           "kickoff": "2026-10-04T16:00:00Z"
         },
@@ -66,7 +66,7 @@
           "slug": "serge-gnabry",
           "position": "Forward",
           "captain": false,
-          "score": 36.41,
+          "score": 39.07,
           "status": "REVIEWING",
           "kickoff": "2026-10-04T18:45:00Z"
         },
@@ -75,7 +75,7 @@
           "slug": "troy-parrott",
           "position": "Forward",
           "captain": false,
-          "score": 77,
+          "score": 77.88,
           "status": "REVIEWING",
           "kickoff": "2026-10-04T18:45:00Z"
         }
@@ -1329,14 +1329,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. NaN scored so far, 0 of 5 played. The squad's top three lineups together need 1140; the squad has 724 so far.",
+      "status": "Locked and playing. NaN scored so far, 0 of 5 played. The squad's top three lineups together need 1140; the squad has 720 so far.",
       "tone": "good",
       "lockAt": "2026-10-01T18:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 36.67,
+            "actual": 31.52,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Bart Verbruggen",
@@ -1365,7 +1365,7 @@
             "kickoff": "2026-10-01T18:45:00Z"
           },
           {
-            "actual": 56.26,
+            "actual": 54.21,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Rúben Dias",
@@ -1394,7 +1394,7 @@
             "kickoff": "2026-10-01T18:45:00Z"
           },
           {
-            "actual": 37.84,
+            "actual": 37.94,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Carney Chukwuemeka",
@@ -1423,7 +1423,7 @@
             "kickoff": "2026-10-01T18:45:00Z"
           },
           {
-            "actual": 36.41,
+            "actual": 39.07,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Serge Gnabry",
@@ -1452,7 +1452,7 @@
             "kickoff": "2026-10-01T18:45:00Z"
           },
           {
-            "actual": 77,
+            "actual": 77.88,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Troy Parrott",
@@ -1494,7 +1494,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 724.3468
+        "scoreSoFar": 720.0994
       },
       "level": 3,
       "lives": null,
