@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T15:52:37.529Z",
+  "generatedAt": "2026-10-01T15:58:41.910Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790869938055,
-    "reason": "last run 0m ago, next due in 180m (lock in 3052m)"
+    "lastRunAt": 1790870300276,
+    "reason": "last run 0m ago, next due in 180m (lock in 3046m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
