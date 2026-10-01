@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T23:56:16.628Z",
+  "generatedAt": "2026-10-01T00:02:03.059Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790812559116,
-    "reason": "last run 0m ago, next due in 180m (lock in 4009m)"
+    "lastRunAt": 1790812904955,
+    "reason": "last run 0m ago, next due in 180m (lock in 4003m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -600,9 +600,9 @@
   },
   "odds": {
     "configured": true,
-    "month": "2026-09",
-    "used": 24,
-    "remaining": 476
+    "month": "2026-10",
+    "used": 4,
+    "remaining": 496
   },
   "control": {
     "paused": false,
@@ -860,12 +860,12 @@
       ],
       "plan": {
         "clearsTarget": true,
-        "projected": 371.25,
+        "projected": 371.29,
         "lock": "2026-10-01T18:45:00Z",
         "shortfall": null,
         "tradedPointsForTime": 0,
         "captain": "matthias-ginter",
-        "captainPoints": 34.33,
+        "captainPoints": 34.34,
         "withinReach": true,
         "enteredProjected": 370.38,
         "five": [
@@ -900,12 +900,12 @@
             "ownRank": null,
             "oppFactor": null,
             "mismatch": false,
-            "pWin": 0.28,
-            "pLose": 0.483,
-            "oddsBooks": 20,
+            "pWin": 0.279,
+            "pLose": 0.484,
+            "oddsBooks": 21,
             "marketFactor": 0.972,
             "lockedAt": null,
-            "expected": 70.88,
+            "expected": 70.85,
             "blocked": null
           },
           {
@@ -940,11 +940,11 @@
             "oppFactor": null,
             "mismatch": false,
             "pWin": 0.579,
-            "pLose": 0.189,
-            "oddsBooks": 20,
+            "pLose": 0.188,
+            "oddsBooks": 21,
             "marketFactor": 1.106,
             "lockedAt": null,
-            "expected": 70.72,
+            "expected": 70.74,
             "blocked": null
           },
           {
@@ -978,9 +978,9 @@
             "ownRank": null,
             "oppFactor": null,
             "mismatch": false,
-            "pWin": 0.324,
+            "pWin": 0.325,
             "pLose": 0.425,
-            "oddsBooks": 20,
+            "oddsBooks": 21,
             "marketFactor": 0.993,
             "lockedAt": null,
             "expected": 65.32,
@@ -1017,12 +1017,12 @@
             "ownRank": null,
             "oppFactor": null,
             "mismatch": false,
-            "pWin": 0.428,
-            "pLose": 0.304,
-            "oddsBooks": 17,
+            "pWin": 0.431,
+            "pLose": 0.302,
+            "oddsBooks": 18,
             "marketFactor": 1.014,
             "lockedAt": null,
-            "expected": 65.05,
+            "expected": 65.09,
             "blocked": null
           },
           {
@@ -1098,12 +1098,12 @@
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.28,
-          "pLose": 0.483,
-          "oddsBooks": 20,
+          "pWin": 0.279,
+          "pLose": 0.484,
+          "oddsBooks": 21,
           "marketFactor": 0.972,
           "lockedAt": null,
-          "expected": 70.88,
+          "expected": 70.85,
           "blocked": null
         },
         {
@@ -1138,11 +1138,11 @@
           "oppFactor": null,
           "mismatch": false,
           "pWin": 0.579,
-          "pLose": 0.189,
-          "oddsBooks": 20,
+          "pLose": 0.188,
+          "oddsBooks": 21,
           "marketFactor": 1.106,
           "lockedAt": null,
-          "expected": 70.72,
+          "expected": 70.74,
           "blocked": null
         },
         {
@@ -1176,9 +1176,9 @@
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.324,
+          "pWin": 0.325,
           "pLose": 0.425,
-          "oddsBooks": 20,
+          "oddsBooks": 21,
           "marketFactor": 0.993,
           "lockedAt": null,
           "expected": 65.32,
@@ -1215,12 +1215,12 @@
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.428,
-          "pLose": 0.304,
-          "oddsBooks": 17,
+          "pWin": 0.431,
+          "pLose": 0.302,
+          "oddsBooks": 18,
           "marketFactor": 1.014,
           "lockedAt": null,
-          "expected": 65.05,
+          "expected": 65.09,
           "blocked": null
         },
         {
@@ -1367,7 +1367,7 @@
       "intl": false,
       "ownRank": null,
       "oppRank": null,
-      "pWin": 0.324,
+      "pWin": 0.325,
       "pLose": 0.425,
       "oppFactor": null,
       "home": false,
@@ -1392,14 +1392,14 @@
       "intl": false,
       "ownRank": null,
       "oppRank": null,
-      "pWin": 0.28,
-      "pLose": 0.483,
+      "pWin": 0.279,
+      "pLose": 0.484,
       "oppFactor": null,
       "home": false,
       "players": [
         "Daniel Batz"
       ],
-      "points": 70.9,
+      "points": 70.8,
       "bestStarter": null,
       "surfaces": [
         "my set"
@@ -1418,7 +1418,7 @@
       "ownRank": null,
       "oppRank": null,
       "pWin": 0.579,
-      "pLose": 0.189,
+      "pLose": 0.188,
       "oppFactor": null,
       "home": true,
       "players": [
@@ -1442,14 +1442,14 @@
       "intl": false,
       "ownRank": null,
       "oppRank": null,
-      "pWin": 0.428,
-      "pLose": 0.304,
+      "pWin": 0.431,
+      "pLose": 0.302,
       "oppFactor": null,
       "home": true,
       "players": [
         "Iñigo Vicente"
       ],
-      "points": 65,
+      "points": 65.1,
       "bestStarter": null,
       "surfaces": [
         "my set"
