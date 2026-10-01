@@ -451,12 +451,38 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
 
   // A failed ladder step ends the run. Restart it so the climb begins again
   // rather than sitting dead until someone notices.
+  //
+  // A squad board has no restart: the squad resets itself, but each member's
+  // board keeps showing the failed step until it is acknowledged. Sending the
+  // squad step to restartTasksTrack returns a bare HTTP 500, which is how the
+  // team set sat dead on 2 Oct. So acknowledge first, always; only a career
+  // step that is still FAILED afterwards needs the restart.
   if (step?.state === 'FAILED') {
+    if (dryRun) {
+      return { skipped: true, surface, stepId, action: 'would-restart',
+               reason: 'Step FAILED - would acknowledge it and restart the ladder.' };
+    }
+    const squadStep = step.__typename === 'SquadStep' || step.minimumLineupsToStartStep != null;
     try {
-      if (dryRun) {
-        return { skipped: true, surface, stepId, action: 'would-restart',
-                 reason: 'Step FAILED - would restart the ladder.' };
+      await claimStep(stepId);
+    } catch (err) {
+      if (squadStep) {
+        return { skipped: true, surface, stepId, reason: `FAILED and acknowledging it errored: ${err.message}` };
       }
+    }
+    if (squadStep) {
+      return { skipped: true, surface, stepId, action: 'restarted',
+               reason: 'Step FAILED - acknowledged, the squad ladder starts again at level 0. ' +
+                       'Next pass will build a fresh lineup.' };
+    }
+    // The acknowledge may already have moved the career board on.
+    const after = (await resolveBoards().catch(() => null))?.boards?.find((b) => b.surface === 'my set');
+    if (after && after.stepId !== stepId && after.ladder?.find((l) => l.level === after.level)?.state !== 'FAILED') {
+      return { skipped: true, surface, stepId, action: 'restarted',
+               reason: `Step FAILED - acknowledged, the ladder starts again at level ${after.level}. ` +
+                       'Next pass will build a fresh lineup.' };
+    }
+    try {
       const r = await gql(M_RESTART_TRACK, { input: { taskId: stepId } },
                           { mutationName: 'restartTasksTrack' });
       const errs = r.restartTasksTrack?.errors ?? [];
