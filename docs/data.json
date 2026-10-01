@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T19:50:49.763Z",
+  "generatedAt": "2026-10-01T19:56:37.125Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790884230948,
-    "reason": "last run 0m ago, next due in 180m (lock in 2814m)"
+    "lastRunAt": 1790884578084,
+    "reason": "last run 0m ago, next due in 180m (lock in 2808m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 799.0116,
+      "squadScore": 801.2818,
       "lineupId": "Tasks::TaskLineup:ecf48f46-2944-413b-bfae-19eb8886fd6e",
       "state": "READY",
-      "score": 288.22,
+      "score": 291.47,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "bart-verbruggen",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 38.21,
+          "score": 38.32,
           "status": "REVIEWING",
           "kickoff": "2026-10-04T18:45:00Z"
         },
@@ -48,7 +48,7 @@
           "slug": "ruben-santos-gato-alves-dias",
           "position": "Defender",
           "captain": true,
-          "score": 62.42,
+          "score": 63.66,
           "status": "REVIEWING",
           "kickoff": "2026-10-04T18:45:00Z"
         },
@@ -57,7 +57,7 @@
           "slug": "carney-chukwuemeka",
           "position": "Midfielder",
           "captain": false,
-          "score": 41.82,
+          "score": 41.31,
           "status": "REVIEWING",
           "kickoff": "2026-10-04T16:00:00Z"
         },
@@ -75,7 +75,7 @@
           "slug": "troy-parrott",
           "position": "Forward",
           "captain": false,
-          "score": 96.91,
+          "score": 99.33,
           "status": "REVIEWING",
           "kickoff": "2026-10-04T18:45:00Z"
         }
@@ -1329,7 +1329,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. NaN scored so far, 0 of 5 played. The squad's top three lineups together need 1140; the squad has 799 so far.",
+      "status": "Locked and playing. NaN scored so far, 0 of 5 played. The squad's top three lineups together need 1140; the squad has 801 so far.",
       "tone": "good",
       "lockAt": "2026-10-01T18:45:00Z",
       "isSquad": true,
@@ -1365,7 +1365,7 @@
             "kickoff": "2026-10-01T18:45:00Z"
           },
           {
-            "actual": 62.42,
+            "actual": 63.54,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Rúben Dias",
@@ -1394,7 +1394,7 @@
             "kickoff": "2026-10-01T18:45:00Z"
           },
           {
-            "actual": 41.82,
+            "actual": 41.31,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Carney Chukwuemeka",
@@ -1452,7 +1452,7 @@
             "kickoff": "2026-10-01T18:45:00Z"
           },
           {
-            "actual": 96.91,
+            "actual": 98.01,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Troy Parrott",
@@ -1494,7 +1494,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 799.0116
+        "scoreSoFar": 801.2674
       },
       "level": 3,
       "lives": null,
