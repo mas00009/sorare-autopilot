@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T19:46:47.825Z",
+  "generatedAt": "2026-10-02T19:52:35.920Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790970391401,
-    "reason": "last run 0m ago, next due in 180m (lock in 1378m)"
+    "lastRunAt": 1790970739688,
+    "reason": "last run 0m ago, next due in 180m (lock in 1372m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 818.0036,
+      "squadScore": 802.6108,
       "lineupId": "Tasks::TaskLineup:a11e4907-605b-44cf-9457-497ed89426fb",
       "state": "READY",
-      "score": 192.82,
+      "score": 180.7,
       "finished": false,
       "cleared": true,
       "players": [
@@ -296,7 +296,7 @@
           "slug": "maxim-de-cuyper",
           "position": "Defender",
           "captain": true,
-          "score": 97.22,
+          "score": 85.1,
           "status": "REVIEWING",
           "kickoff": "2026-10-05T18:45:00Z"
         },
@@ -1205,7 +1205,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 241 scored so far, 4 of 5 played. The squad's top three lineups together need 700; the squad has 818 so far.",
+      "status": "Locked and playing. 223 scored so far, 4 of 5 played. The squad's top three lineups together need 700; the squad has 803 so far.",
       "tone": "good",
       "lockAt": "2026-10-02T16:00:00Z",
       "isSquad": true,
@@ -1241,7 +1241,7 @@
             "kickoff": "2026-10-02T18:45:00Z"
           },
           {
-            "actual": 97.22,
+            "actual": 85.1,
             "scoreStatus": "REVIEWING",
             "teamSlug": "belgium",
             "name": "Maxim De Cuyper",
@@ -1358,9 +1358,9 @@
           }
         ],
         "projected": 279.39,
-        "scoredSoFar": 241.44,
+        "scoredSoFar": 223.26,
         "played": 4,
-        "expectedFinal": 293.34
+        "expectedFinal": 275.16
       },
       "poolStrength": {
         "strong": 0,
@@ -1370,7 +1370,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 818.0036
+        "scoreSoFar": 802.5058
       },
       "level": 0,
       "lives": null,
