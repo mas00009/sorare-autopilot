@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T20:10:09.195Z",
+  "generatedAt": "2026-10-02T20:16:01.875Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790971790641,
-    "reason": "last run 0m ago, next due in 180m (lock in 1355m)"
+    "lastRunAt": 1790972144736,
+    "reason": "last run 0m ago, next due in 180m (lock in 1349m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 1112.8664,
+      "squadScore": 1121.2106,
       "lineupId": "Tasks::TaskLineup:a11e4907-605b-44cf-9457-497ed89426fb",
       "state": "READY",
-      "score": 242.21,
+      "score": 244.64,
       "finished": false,
       "cleared": true,
       "players": [
@@ -296,7 +296,7 @@
           "slug": "maxim-de-cuyper",
           "position": "Defender",
           "captain": true,
-          "score": 104.13,
+          "score": 106.4,
           "status": "REVIEWING",
           "kickoff": "2026-10-05T18:45:00Z"
         },
@@ -323,7 +323,7 @@
           "slug": "victor-nilsson-lindelof",
           "position": "Defender",
           "captain": false,
-          "score": 62.07,
+          "score": 62.23,
           "status": "REVIEWING",
           "kickoff": "2026-10-05T18:45:00Z"
         }
@@ -1205,7 +1205,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 294 scored so far, 4 of 5 played. The squad's top three lineups together need 700; the squad has 1113 so far.",
+      "status": "Locked and playing. 298 scored so far, 4 of 5 played. The squad's top three lineups together need 700; the squad has 1121 so far.",
       "tone": "good",
       "lockAt": "2026-10-02T16:00:00Z",
       "isSquad": true,
@@ -1241,7 +1241,7 @@
             "kickoff": "2026-10-02T18:45:00Z"
           },
           {
-            "actual": 104.13,
+            "actual": 106.4,
             "scoreStatus": "REVIEWING",
             "teamSlug": "belgium",
             "name": "Maxim De Cuyper",
@@ -1328,7 +1328,7 @@
             "kickoff": "2026-10-02T18:45:00Z"
           },
           {
-            "actual": 62.07,
+            "actual": 62.23,
             "scoreStatus": "REVIEWING",
             "teamSlug": "sweden",
             "name": "Victor Lindelöf",
@@ -1358,9 +1358,9 @@
           }
         ],
         "projected": 279.39,
-        "scoredSoFar": 294.27,
+        "scoredSoFar": 297.84,
         "played": 4,
-        "expectedFinal": 346.17
+        "expectedFinal": 349.74
       },
       "poolStrength": {
         "strong": 0,
@@ -1370,7 +1370,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 1112.8664
+        "scoreSoFar": 1121.2106
       },
       "level": 0,
       "lives": null,
