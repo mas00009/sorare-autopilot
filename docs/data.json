@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T15:54:28.439Z",
+  "generatedAt": "2026-10-02T16:00:36.296Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-02T16:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790956450411,
-    "reason": "last run 0m ago, next due in 180m (lock in 6m)"
+    "lastRunAt": 1790956816873,
+    "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -307,7 +307,7 @@
           "captain": false,
           "score": 0,
           "status": "PENDING",
-          "kickoff": "2026-10-02T16:00:00Z"
+          "kickoff": "2026-10-05T18:45:00Z"
         },
         {
           "name": "Viktor Gyökeres",
@@ -1205,7 +1205,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Team entered, locks Sat 02:00 am Sydney. The squad's top three lineups together need 700; this one is expected to add about 279.",
+      "status": "Locked and playing. 0 scored so far, 0 of 5 played. The squad's top three lineups together need 700.",
       "tone": "good",
       "lockAt": "2026-10-02T16:00:00Z",
       "isSquad": true,
@@ -1295,7 +1295,7 @@
             "oppRank": 137,
             "ownRank": 80,
             "oppFactor": 1.043,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-02T16:00:00Z"
           },
           {
@@ -1429,8 +1429,8 @@
         {
           "name": "Andrija Bulatović",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-02T16:00:00Z"
+          "locked": true,
+          "nextGame": "2026-10-05T18:45:00Z"
         },
         {
           "name": "Viktor Gyökeres",
