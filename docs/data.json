@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T20:04:17.099Z",
+  "generatedAt": "2026-10-02T20:10:09.195Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790971438886,
-    "reason": "last run 0m ago, next due in 180m (lock in 1361m)"
+    "lastRunAt": 1790971790641,
+    "reason": "last run 0m ago, next due in 180m (lock in 1355m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 1004.962,
+      "squadScore": 1112.8664,
       "lineupId": "Tasks::TaskLineup:a11e4907-605b-44cf-9457-497ed89426fb",
       "state": "READY",
-      "score": 198.53,
+      "score": 242.21,
       "finished": false,
       "cleared": true,
       "players": [
@@ -296,7 +296,7 @@
           "slug": "maxim-de-cuyper",
           "position": "Defender",
           "captain": true,
-          "score": 102.14,
+          "score": 104.13,
           "status": "REVIEWING",
           "kickoff": "2026-10-05T18:45:00Z"
         },
@@ -314,7 +314,7 @@
           "slug": "viktor-gyokeres",
           "position": "Forward",
           "captain": false,
-          "score": 46.25,
+          "score": 76.01,
           "status": "REVIEWING",
           "kickoff": "2026-10-05T18:45:00Z"
         },
@@ -323,7 +323,7 @@
           "slug": "victor-nilsson-lindelof",
           "position": "Defender",
           "captain": false,
-          "score": 50.14,
+          "score": 62.07,
           "status": "REVIEWING",
           "kickoff": "2026-10-05T18:45:00Z"
         }
@@ -1205,7 +1205,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 250 scored so far, 4 of 5 played. The squad's top three lineups together need 700; the squad has 1005 so far.",
+      "status": "Locked and playing. 294 scored so far, 4 of 5 played. The squad's top three lineups together need 700; the squad has 1113 so far.",
       "tone": "good",
       "lockAt": "2026-10-02T16:00:00Z",
       "isSquad": true,
@@ -1241,7 +1241,7 @@
             "kickoff": "2026-10-02T18:45:00Z"
           },
           {
-            "actual": 102.14,
+            "actual": 104.13,
             "scoreStatus": "REVIEWING",
             "teamSlug": "belgium",
             "name": "Maxim De Cuyper",
@@ -1299,7 +1299,7 @@
             "kickoff": "2026-10-02T16:00:00Z"
           },
           {
-            "actual": 46.25,
+            "actual": 76.01,
             "scoreStatus": "REVIEWING",
             "teamSlug": "sweden",
             "name": "Viktor Gyökeres",
@@ -1328,7 +1328,7 @@
             "kickoff": "2026-10-02T18:45:00Z"
           },
           {
-            "actual": 50.14,
+            "actual": 62.07,
             "scoreStatus": "REVIEWING",
             "teamSlug": "sweden",
             "name": "Victor Lindelöf",
@@ -1358,9 +1358,9 @@
           }
         ],
         "projected": 279.39,
-        "scoredSoFar": 249.6,
+        "scoredSoFar": 294.27,
         "played": 4,
-        "expectedFinal": 301.5
+        "expectedFinal": 346.17
       },
       "poolStrength": {
         "strong": 0,
@@ -1370,7 +1370,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 1004.962
+        "scoreSoFar": 1112.8664
       },
       "level": 0,
       "lives": null,
