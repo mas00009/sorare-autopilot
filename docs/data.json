@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T17:41:51.198Z",
+  "generatedAt": "2026-10-02T17:48:04.645Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790962894137,
-    "reason": "last run 0m ago, next due in 180m (lock in 1503m)"
+    "lastRunAt": 1790963261936,
+    "reason": "last run 0m ago, next due in 180m (lock in 1497m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 0,
+      "squadScore": 492.8,
       "lineupId": "Tasks::TaskLineup:a11e4907-605b-44cf-9457-497ed89426fb",
       "state": "READY",
-      "score": 0,
+      "score": 53.55,
       "finished": false,
       "cleared": false,
       "players": [
@@ -296,8 +296,8 @@
           "slug": "maxim-de-cuyper",
           "position": "Defender",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 53.55,
+          "status": "REVIEWING",
           "kickoff": "2026-10-02T18:45:00Z"
         },
         {
@@ -328,7 +328,7 @@
           "kickoff": "2026-10-02T18:45:00Z"
         }
       ],
-      "scored": 0
+      "scored": 1
     },
     {
       "surface": "my set",
@@ -973,7 +973,7 @@
             "starterPct": null,
             "startRate": 0.95,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 64,
             "picture": "https://assets.sorare.com/cardsamplepicture/91f935bd-5e32-4847-84aa-f740d44c0b77/picture/tinified-16504a398794b5385dbcd2debae138b3.png",
@@ -1171,7 +1171,7 @@
           "starterPct": null,
           "startRate": 0.95,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 64,
           "picture": "https://assets.sorare.com/cardsamplepicture/91f935bd-5e32-4847-84aa-f740d44c0b77/picture/tinified-16504a398794b5385dbcd2debae138b3.png",
@@ -1205,7 +1205,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 0 scored so far, 0 of 5 played. The squad's top three lineups together need 700.",
+      "status": "Locked and playing. 80 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 493 so far.",
       "tone": "good",
       "lockAt": "2026-10-02T16:00:00Z",
       "isSquad": true,
@@ -1241,8 +1241,8 @@
             "kickoff": "2026-10-02T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 53.55,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "belgium",
             "name": "Maxim De Cuyper",
             "player": "Maxim De Cuyper",
@@ -1358,9 +1358,9 @@
           }
         ],
         "projected": 279.39,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 280.32
+        "scoredSoFar": 80.32,
+        "played": 1,
+        "expectedFinal": 264.76
       },
       "poolStrength": {
         "strong": 0,
@@ -1370,7 +1370,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 0
+        "scoreSoFar": 492.8
       },
       "level": 0,
       "lives": null,
@@ -1457,7 +1457,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 39,
           "picture": "https://assets.sorare.com/cardsamplepicture/79f36680-211d-45ad-87e7-41bce11c6812/picture/tinified-ef109a9b20017a9f3874cd75a81c4b50.png",
@@ -1496,7 +1496,7 @@
           "starterPct": null,
           "startRate": 0.725,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 44,
           "picture": "https://assets.sorare.com/cardsamplepicture/bb2370ad-f6f3-4859-af2f-bbdd9810330b/picture/tinified-227e327349fc51d540c9efa0251af3b2.png",
