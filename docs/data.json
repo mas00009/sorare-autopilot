@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T18:42:24.560Z",
+  "generatedAt": "2026-10-02T18:48:12.915Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790966526663,
-    "reason": "last run 0m ago, next due in 180m (lock in 1443m)"
+    "lastRunAt": 1790966876180,
+    "reason": "last run 0m ago, next due in 180m (lock in 1437m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -103,7 +103,7 @@
           "captain": false,
           "score": 34.44,
           "status": "FINAL",
-          "kickoff": "2026-10-02T18:45:00Z"
+          "kickoff": "2026-10-05T18:45:00Z"
         },
         {
           "name": "Maxim De Cuyper",
@@ -112,7 +112,7 @@
           "captain": true,
           "score": 87.43,
           "status": "FINAL",
-          "kickoff": "2026-10-02T18:45:00Z"
+          "kickoff": "2026-10-05T18:45:00Z"
         },
         {
           "name": "James Garner",
@@ -272,13 +272,13 @@
       "surface": "team set (Loadshift)",
       "level": 0,
       "target": 700,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 566.3,
+      "squadScore": 565.691,
       "lineupId": "Tasks::TaskLineup:a11e4907-605b-44cf-9457-497ed89426fb",
       "state": "READY",
-      "score": 125.65,
+      "score": 125.62,
       "finished": false,
       "cleared": false,
       "players": [
@@ -288,8 +288,8 @@
           "position": "Goalkeeper",
           "captain": false,
           "score": 0,
-          "status": "PENDING",
-          "kickoff": "2026-10-02T18:45:00Z"
+          "status": "REVIEWING",
+          "kickoff": "2026-10-05T18:45:00Z"
         },
         {
           "name": "Maxim De Cuyper",
@@ -298,7 +298,7 @@
           "captain": true,
           "score": 53.55,
           "status": "REVIEWING",
-          "kickoff": "2026-10-02T18:45:00Z"
+          "kickoff": "2026-10-05T18:45:00Z"
         },
         {
           "name": "Andrija Bulatović",
@@ -314,18 +314,18 @@
           "slug": "viktor-gyokeres",
           "position": "Forward",
           "captain": false,
-          "score": 36.05,
+          "score": 35.95,
           "status": "REVIEWING",
-          "kickoff": "2026-10-02T18:45:00Z"
+          "kickoff": "2026-10-05T18:45:00Z"
         },
         {
           "name": "Victor Lindelöf",
           "slug": "victor-nilsson-lindelof",
           "position": "Defender",
           "captain": false,
-          "score": 36.05,
+          "score": 36.13,
           "status": "REVIEWING",
-          "kickoff": "2026-10-02T18:45:00Z"
+          "kickoff": "2026-10-05T18:45:00Z"
         }
       ],
       "scored": 4
@@ -798,8 +798,8 @@
       ],
       "plan": {
         "clearsTarget": true,
-        "projected": 370.28,
-        "lock": "2026-10-02T18:45:00Z",
+        "projected": 369.26,
+        "lock": "2026-10-10T13:30:00Z",
         "shortfall": null,
         "tradedPointsForTime": 0,
         "captain": "matthias-ginter",
@@ -964,42 +964,42 @@
             "blocked": null
           },
           {
-            "id": "ComposeTeamBenchCard:6b2cf56f-d089-4080-af44-0c21f1ac7393",
-            "player": "Maxim De Cuyper",
-            "slug": "maxim-de-cuyper",
-            "position": "DF",
-            "average": 55,
+            "id": "ComposeTeamBenchCard:359af8cb-b113-4e12-9a62-44bf217cf3b6",
+            "player": "Maximilian Eggestein",
+            "slug": "maximilian-eggestein",
+            "position": "MD",
+            "average": 51,
             "bonus": 1.03,
             "starterPct": null,
-            "startRate": 0.95,
+            "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": true,
+            "onGameSheet": false,
             "reliability": null,
-            "formL5": 64,
-            "picture": "https://assets.sorare.com/cardsamplepicture/91f935bd-5e32-4847-84aa-f740d44c0b77/picture/tinified-16504a398794b5385dbcd2debae138b3.png",
+            "formL5": 66,
+            "picture": "https://assets.sorare.com/cardsamplepicture/1d4b5f69-5f34-46ea-ba50-4aa46a5ec084/picture/tinified-3b5a79de2735599840c29deed91f5cfb.png",
             "rarity": "common",
-            "gameId": "Game:a99d691f-6996-41c2-98e4-4a8882aa9d74",
-            "kickoff": "2026-10-02T18:45:00Z",
-            "team": "Belgium",
-            "teamSlug": "belgium",
-            "opponent": "Türkiye",
-            "opponentCode": "TUR",
-            "code": "BEL",
-            "rank": null,
-            "opponentRank": null,
+            "gameId": "Game:ed0d0372-2be6-41ce-9a55-66dc9ac56691",
+            "kickoff": "2026-10-11T15:30:00Z",
+            "team": "Sport-Club Freiburg",
+            "teamSlug": "freiburg-freiburg-im-breisgau",
+            "opponent": "FC Schalke 04",
+            "opponentCode": "S04",
+            "code": "SCF",
+            "rank": 3,
+            "opponentRank": 11,
             "home": true,
-            "competition": "UEFA Nations League",
-            "intl": true,
-            "oppRank": 27,
-            "ownRank": 8,
-            "oppFactor": 1.078,
+            "competition": "Bundesliga",
+            "intl": false,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
             "mismatch": false,
-            "pWin": null,
-            "pLose": null,
-            "oddsBooks": null,
-            "marketFactor": null,
+            "pWin": 0.579,
+            "pLose": 0.188,
+            "oddsBooks": 19,
+            "marketFactor": 1.044,
             "lockedAt": null,
-            "expected": 63.92,
+            "expected": 62.9,
             "blocked": null
           }
         ]
@@ -1162,46 +1162,46 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:6b2cf56f-d089-4080-af44-0c21f1ac7393",
-          "player": "Maxim De Cuyper",
-          "slug": "maxim-de-cuyper",
-          "position": "DF",
-          "average": 55,
+          "id": "ComposeTeamBenchCard:359af8cb-b113-4e12-9a62-44bf217cf3b6",
+          "player": "Maximilian Eggestein",
+          "slug": "maximilian-eggestein",
+          "position": "MD",
+          "average": 51,
           "bonus": 1.03,
           "starterPct": null,
-          "startRate": 0.95,
+          "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": true,
+          "onGameSheet": false,
           "reliability": null,
-          "formL5": 64,
-          "picture": "https://assets.sorare.com/cardsamplepicture/91f935bd-5e32-4847-84aa-f740d44c0b77/picture/tinified-16504a398794b5385dbcd2debae138b3.png",
+          "formL5": 66,
+          "picture": "https://assets.sorare.com/cardsamplepicture/1d4b5f69-5f34-46ea-ba50-4aa46a5ec084/picture/tinified-3b5a79de2735599840c29deed91f5cfb.png",
           "rarity": "common",
-          "gameId": "Game:a99d691f-6996-41c2-98e4-4a8882aa9d74",
-          "kickoff": "2026-10-02T18:45:00Z",
-          "team": "Belgium",
-          "teamSlug": "belgium",
-          "opponent": "Türkiye",
-          "opponentCode": "TUR",
-          "code": "BEL",
-          "rank": null,
-          "opponentRank": null,
+          "gameId": "Game:ed0d0372-2be6-41ce-9a55-66dc9ac56691",
+          "kickoff": "2026-10-11T15:30:00Z",
+          "team": "Sport-Club Freiburg",
+          "teamSlug": "freiburg-freiburg-im-breisgau",
+          "opponent": "FC Schalke 04",
+          "opponentCode": "S04",
+          "code": "SCF",
+          "rank": 3,
+          "opponentRank": 11,
           "home": true,
-          "competition": "UEFA Nations League",
-          "intl": true,
-          "oppRank": 27,
-          "ownRank": 8,
-          "oppFactor": 1.078,
+          "competition": "Bundesliga",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
           "mismatch": false,
-          "pWin": null,
-          "pLose": null,
-          "oddsBooks": null,
-          "marketFactor": null,
+          "pWin": 0.579,
+          "pLose": 0.188,
+          "oddsBooks": 19,
+          "marketFactor": 1.044,
           "lockedAt": null,
-          "expected": 63.92,
+          "expected": 62.9,
           "blocked": null
         }
       ],
-      "projected": 335.9
+      "projected": 334.9
     },
     {
       "surface": "team set (Loadshift)",
@@ -1213,7 +1213,7 @@
         "five": [
           {
             "actual": null,
-            "scoreStatus": "PENDING",
+            "scoreStatus": "REVIEWING",
             "teamSlug": "romania",
             "name": "Ionuț Radu",
             "player": "Ionuț Radu",
@@ -1237,7 +1237,7 @@
             "oppRank": 36,
             "ownRank": 52,
             "oppFactor": 0.972,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-02T18:45:00Z"
           },
           {
@@ -1266,7 +1266,7 @@
             "oppRank": 27,
             "ownRank": 8,
             "oppFactor": 1.078,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-02T18:45:00Z"
           },
           {
@@ -1299,7 +1299,7 @@
             "kickoff": "2026-10-02T16:00:00Z"
           },
           {
-            "actual": 36.05,
+            "actual": 35.95,
             "scoreStatus": "REVIEWING",
             "teamSlug": "sweden",
             "name": "Viktor Gyökeres",
@@ -1324,11 +1324,11 @@
             "oppRank": 61,
             "ownRank": 37,
             "oppFactor": 1,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-02T18:45:00Z"
           },
           {
-            "actual": 36.05,
+            "actual": 36.13,
             "scoreStatus": "REVIEWING",
             "teamSlug": "sweden",
             "name": "Victor Lindelöf",
@@ -1353,14 +1353,14 @@
             "oppRank": 61,
             "ownRank": 37,
             "oppFactor": 1.047,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-02T18:45:00Z"
           }
         ],
         "projected": 279.39,
-        "scoredSoFar": 152.42,
+        "scoredSoFar": 152.41,
         "played": 4,
-        "expectedFinal": 204.32
+        "expectedFinal": 204.31
       },
       "poolStrength": {
         "strong": 0,
@@ -1370,7 +1370,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 566.3
+        "scoreSoFar": 565.691
       },
       "level": 0,
       "lives": null,
@@ -1379,7 +1379,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 700
         },
         {
@@ -1411,20 +1411,20 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 700,
       "current": [
         {
           "name": "Ionuț Radu",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-02T18:45:00Z"
+          "locked": true,
+          "nextGame": "2026-10-05T18:45:00Z"
         },
         {
           "name": "Maxim De Cuyper",
           "captain": true,
-          "locked": false,
-          "nextGame": "2026-10-02T18:45:00Z"
+          "locked": true,
+          "nextGame": "2026-10-05T18:45:00Z"
         },
         {
           "name": "Andrija Bulatović",
@@ -1435,176 +1435,22 @@
         {
           "name": "Viktor Gyökeres",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-02T18:45:00Z"
+          "locked": true,
+          "nextGame": "2026-10-05T18:45:00Z"
         },
         {
           "name": "Victor Lindelöf",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-02T18:45:00Z"
+          "locked": true,
+          "nextGame": "2026-10-05T18:45:00Z"
         }
       ],
       "plan": null,
-      "candidates": [
-        {
-          "id": "ComposeTeamBenchCard:91588051-edf0-45a2-8ee4-34137eec2f72",
-          "player": "Ionuț Radu",
-          "slug": "ionu-andrei-radu",
-          "position": "GK",
-          "average": 50,
-          "bonus": 1.05,
-          "starterPct": null,
-          "startRate": 1,
-          "oddsKnown": false,
-          "onGameSheet": true,
-          "reliability": null,
-          "formL5": 39,
-          "picture": "https://assets.sorare.com/cardsamplepicture/79f36680-211d-45ad-87e7-41bce11c6812/picture/tinified-ef109a9b20017a9f3874cd75a81c4b50.png",
-          "rarity": "common",
-          "gameId": "Game:6fe40ec2-451a-4311-a3d5-24eb2bd2eceb",
-          "kickoff": "2026-10-02T18:45:00Z",
-          "team": "Romania",
-          "teamSlug": "romania",
-          "opponent": "Poland",
-          "opponentCode": "POL",
-          "code": "ROU",
-          "rank": null,
-          "opponentRank": null,
-          "home": false,
-          "competition": "UEFA Nations League",
-          "intl": true,
-          "oppRank": 36,
-          "ownRank": 52,
-          "oppFactor": 0.972,
-          "mismatch": false,
-          "pWin": null,
-          "pLose": null,
-          "oddsBooks": null,
-          "marketFactor": null,
-          "lockedAt": null,
-          "expected": 45.42,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:3ee67de1-0d21-4e30-92ae-57f776f6a91f",
-          "player": "Milos Kerkez",
-          "slug": "milos-kerkez",
-          "position": "DF",
-          "average": 40,
-          "bonus": 1.02,
-          "starterPct": null,
-          "startRate": 0.725,
-          "oddsKnown": false,
-          "onGameSheet": true,
-          "reliability": null,
-          "formL5": 44,
-          "picture": "https://assets.sorare.com/cardsamplepicture/bb2370ad-f6f3-4859-af2f-bbdd9810330b/picture/tinified-227e327349fc51d540c9efa0251af3b2.png",
-          "rarity": "common",
-          "gameId": "Game:d45c4752-fbd8-4393-8136-d1efae602972",
-          "kickoff": "2026-10-02T18:45:00Z",
-          "team": "Hungary",
-          "teamSlug": "hungary",
-          "opponent": "Georgia",
-          "opponentCode": "GEO",
-          "code": "HUN",
-          "rank": null,
-          "opponentRank": null,
-          "home": true,
-          "competition": "UEFA Nations League",
-          "intl": true,
-          "oppRank": 72,
-          "ownRank": 39,
-          "oppFactor": 1.06,
-          "mismatch": false,
-          "pWin": null,
-          "pLose": null,
-          "oddsBooks": null,
-          "marketFactor": null,
-          "lockedAt": null,
-          "expected": 34.52,
-          "blocked": null
-        }
-      ],
-      "projected": 79.9
+      "candidates": [],
+      "projected": 0
     }
   ],
   "fixtures": [
-    {
-      "kickoff": "2026-10-02T18:45:00Z",
-      "competition": "UEFA Nations League",
-      "team": "Belgium",
-      "code": "BEL",
-      "rank": null,
-      "opponent": "Türkiye",
-      "opponentCode": "TUR",
-      "opponentRank": null,
-      "intl": true,
-      "ownRank": 8,
-      "oppRank": 27,
-      "pWin": null,
-      "pLose": null,
-      "oppFactor": 1.078,
-      "home": true,
-      "players": [
-        "Maxim De Cuyper"
-      ],
-      "points": 63.9,
-      "bestStarter": null,
-      "surfaces": [
-        "my set"
-      ]
-    },
-    {
-      "kickoff": "2026-10-02T18:45:00Z",
-      "competition": "UEFA Nations League",
-      "team": "Romania",
-      "code": "ROU",
-      "rank": null,
-      "opponent": "Poland",
-      "opponentCode": "POL",
-      "opponentRank": null,
-      "intl": true,
-      "ownRank": 52,
-      "oppRank": 36,
-      "pWin": null,
-      "pLose": null,
-      "oppFactor": 0.972,
-      "home": false,
-      "players": [
-        "Ionuț Radu"
-      ],
-      "points": 45.4,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
-    {
-      "kickoff": "2026-10-02T18:45:00Z",
-      "competition": "UEFA Nations League",
-      "team": "Hungary",
-      "code": "HUN",
-      "rank": null,
-      "opponent": "Georgia",
-      "opponentCode": "GEO",
-      "opponentRank": null,
-      "intl": true,
-      "ownRank": 39,
-      "oppRank": 72,
-      "pWin": null,
-      "pLose": null,
-      "oppFactor": 1.06,
-      "home": true,
-      "players": [
-        "Milos Kerkez"
-      ],
-      "points": 34.5,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
     {
       "kickoff": "2026-10-10T13:30:00Z",
       "competition": "Bundesliga",
@@ -1672,9 +1518,10 @@
       "oppFactor": null,
       "home": true,
       "players": [
-        "Matthias Ginter"
+        "Matthias Ginter",
+        "Maximilian Eggestein"
       ],
-      "points": 70.8,
+      "points": 133.7,
       "bestStarter": null,
       "surfaces": [
         "my set"
