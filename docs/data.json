@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T20:45:20.761Z",
+  "generatedAt": "2026-10-02T20:51:18.549Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790973902896,
-    "reason": "last run 0m ago, next due in 180m (lock in 1320m)"
+    "lastRunAt": 1790974257575,
+    "reason": "last run 0m ago, next due in 180m (lock in 1314m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -269,68 +269,6 @@
       "scored": 5
     },
     {
-      "surface": "team set (Loadshift)",
-      "level": 0,
-      "target": 700,
-      "stepState": "LINEUP_SET",
-      "collaborative": true,
-      "squadLineups": 7,
-      "squadScore": 1233.9636,
-      "lineupId": "Tasks::TaskLineup:a11e4907-605b-44cf-9457-497ed89426fb",
-      "state": "READY",
-      "score": 237.71,
-      "finished": false,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Ionuț Radu",
-          "slug": "ionu-andrei-radu",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 0,
-          "status": "FINAL",
-          "kickoff": "2026-10-05T18:45:00Z"
-        },
-        {
-          "name": "Maxim De Cuyper",
-          "slug": "maxim-de-cuyper",
-          "position": "Defender",
-          "captain": true,
-          "score": 116.1,
-          "status": "FINAL",
-          "kickoff": "2026-10-05T18:45:00Z"
-        },
-        {
-          "name": "Andrija Bulatović",
-          "slug": "andrija-bulatovic",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 0,
-          "status": "FINAL",
-          "kickoff": "2026-10-05T18:45:00Z"
-        },
-        {
-          "name": "Viktor Gyökeres",
-          "slug": "viktor-gyokeres",
-          "position": "Forward",
-          "captain": false,
-          "score": 77.97,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-05T18:45:00Z"
-        },
-        {
-          "name": "Victor Lindelöf",
-          "slug": "victor-nilsson-lindelof",
-          "position": "Defender",
-          "captain": false,
-          "score": 43.65,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-05T18:45:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
       "surface": "my set",
       "level": 0,
       "target": 260,
@@ -450,6 +388,68 @@
           "score": 0,
           "status": "FINAL",
           "kickoff": "2026-10-10T12:00:00Z"
+        }
+      ],
+      "scored": 5
+    },
+    {
+      "surface": "team set (Loadshift)",
+      "level": 0,
+      "target": 700,
+      "stepState": "CLAIMED",
+      "collaborative": true,
+      "squadLineups": 7,
+      "squadScore": 1233.9636,
+      "lineupId": "Tasks::TaskLineup:a11e4907-605b-44cf-9457-497ed89426fb",
+      "state": "SUCCESSFUL",
+      "score": 237.71,
+      "finished": true,
+      "cleared": true,
+      "players": [
+        {
+          "name": "Ionuț Radu",
+          "slug": "ionu-andrei-radu",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 0,
+          "status": "FINAL",
+          "kickoff": "2026-10-05T18:45:00Z"
+        },
+        {
+          "name": "Maxim De Cuyper",
+          "slug": "maxim-de-cuyper",
+          "position": "Defender",
+          "captain": true,
+          "score": 116.1,
+          "status": "FINAL",
+          "kickoff": "2026-10-05T18:45:00Z"
+        },
+        {
+          "name": "Andrija Bulatović",
+          "slug": "andrija-bulatovic",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 0,
+          "status": "FINAL",
+          "kickoff": "2026-10-05T18:45:00Z"
+        },
+        {
+          "name": "Viktor Gyökeres",
+          "slug": "viktor-gyokeres",
+          "position": "Forward",
+          "captain": false,
+          "score": 77.97,
+          "status": "FINAL",
+          "kickoff": "2026-10-05T18:45:00Z"
+        },
+        {
+          "name": "Victor Lindelöf",
+          "slug": "victor-nilsson-lindelof",
+          "position": "Defender",
+          "captain": false,
+          "score": 43.65,
+          "status": "FINAL",
+          "kickoff": "2026-10-05T18:45:00Z"
         }
       ],
       "scored": 5
@@ -1205,186 +1205,34 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 296 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1234 so far.",
-      "tone": "good",
-      "lockAt": "2026-10-02T16:00:00Z",
+      "status": "Not open for entry yet. A team goes in the moment it opens.",
+      "tone": "neutral",
+      "lockAt": null,
       "isSquad": true,
-      "entered": {
-        "five": [
-          {
-            "actual": 0,
-            "scoreStatus": "FINAL",
-            "teamSlug": "romania",
-            "name": "Ionuț Radu",
-            "player": "Ionuț Radu",
-            "slug": "ionu-andrei-radu",
-            "pos": "GK",
-            "position": "GK",
-            "pic": "https://assets.sorare.com/cardsamplepicture/da67d3d8-a319-4a6d-a18c-4408d31321d6/picture/tinified-351affefa6ba8f2bec4f184a8e8b7941.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/da67d3d8-a319-4a6d-a18c-4408d31321d6/picture/tinified-351affefa6ba8f2bec4f184a8e8b7941.png",
-            "captain": false,
-            "exp": 51.9,
-            "expected": 51.9,
-            "opp": "Poland",
-            "opponent": "Poland",
-            "home": false,
-            "average": 50,
-            "formL5": 39,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 36,
-            "ownRank": 52,
-            "oppFactor": 0.972,
-            "locked": true,
-            "kickoff": "2026-10-02T18:45:00Z"
-          },
-          {
-            "actual": 116.1,
-            "scoreStatus": "FINAL",
-            "teamSlug": "belgium",
-            "name": "Maxim De Cuyper",
-            "player": "Maxim De Cuyper",
-            "slug": "maxim-de-cuyper",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/91f935bd-5e32-4847-84aa-f740d44c0b77/picture/tinified-16504a398794b5385dbcd2debae138b3.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/91f935bd-5e32-4847-84aa-f740d44c0b77/picture/tinified-16504a398794b5385dbcd2debae138b3.png",
-            "captain": true,
-            "exp": 63.92,
-            "expected": 63.92,
-            "opp": "Türkiye",
-            "opponent": "Türkiye",
-            "home": true,
-            "average": 55,
-            "formL5": 64,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 27,
-            "ownRank": 8,
-            "oppFactor": 1.078,
-            "locked": true,
-            "kickoff": "2026-10-02T18:45:00Z"
-          },
-          {
-            "actual": 0,
-            "scoreStatus": "FINAL",
-            "teamSlug": "montenegro",
-            "name": "Andrija Bulatović",
-            "player": "Andrija Bulatović",
-            "slug": "andrija-bulatovic",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/c44dea97-7af4-434c-9678-1757454a82c5/picture/tinified-05dd74bf927a918eba426e1583f03be6.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/c44dea97-7af4-434c-9678-1757454a82c5/picture/tinified-05dd74bf927a918eba426e1583f03be6.png",
-            "captain": false,
-            "exp": 47.28,
-            "expected": 47.28,
-            "opp": "Latvia",
-            "opponent": "Latvia",
-            "home": false,
-            "average": 54,
-            "formL5": 55,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 137,
-            "ownRank": 80,
-            "oppFactor": 1.043,
-            "locked": true,
-            "kickoff": "2026-10-02T16:00:00Z"
-          },
-          {
-            "actual": 77.97,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "sweden",
-            "name": "Viktor Gyökeres",
-            "player": "Viktor Gyökeres",
-            "slug": "viktor-gyokeres",
-            "pos": "FW",
-            "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/f3c87d8e-fbd8-4ad9-991a-0e84e113e782/picture/tinified-fc37ea56002e6d3f4c8e43300eced6a1.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/f3c87d8e-fbd8-4ad9-991a-0e84e113e782/picture/tinified-fc37ea56002e6d3f4c8e43300eced6a1.png",
-            "captain": false,
-            "exp": 46.01,
-            "expected": 46.01,
-            "opp": "Bosnia & Herzegovina",
-            "opponent": "Bosnia & Herzegovina",
-            "home": false,
-            "average": 52,
-            "formL5": 55,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 61,
-            "ownRank": 37,
-            "oppFactor": 1,
-            "locked": true,
-            "kickoff": "2026-10-02T18:45:00Z"
-          },
-          {
-            "actual": 43.65,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "sweden",
-            "name": "Victor Lindelöf",
-            "player": "Victor Lindelöf",
-            "slug": "victor-nilsson-lindelof",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/17e6c169-6407-43c4-af91-f50fd1f2a79e/picture/tinified-c12f4473ee6fb7babdd59fb754d02b7a.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/17e6c169-6407-43c4-af91-f50fd1f2a79e/picture/tinified-c12f4473ee6fb7babdd59fb754d02b7a.png",
-            "captain": false,
-            "exp": 39.25,
-            "expected": 39.25,
-            "opp": "Bosnia & Herzegovina",
-            "opponent": "Bosnia & Herzegovina",
-            "home": false,
-            "average": 39,
-            "formL5": 45,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 61,
-            "ownRank": 37,
-            "oppFactor": 1.047,
-            "locked": true,
-            "kickoff": "2026-10-02T18:45:00Z"
-          }
-        ],
-        "projected": 279.39,
-        "scoredSoFar": 295.77,
-        "played": 5,
-        "expectedFinal": 295.77
-      },
+      "entered": null,
       "poolStrength": {
         "strong": 0,
         "needed": 5
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 7,
+        "lineupsIn": 0,
         "needed": 3,
-        "scoreSoFar": 1233.9636
+        "scoreSoFar": 0
       },
-      "level": 0,
+      "level": 1,
       "lives": null,
       "totalLevels": 5,
-      "levelsDone": 0,
+      "levelsDone": 1,
       "ladder": [
         {
           "level": 0,
-          "state": "LINEUP_SET",
+          "state": "CLAIMED",
           "target": 700
         },
         {
           "level": 1,
-          "state": "LOCKED",
+          "state": "PRE_MATCHDAY_LOCKED",
           "target": 980
         },
         {
@@ -1411,40 +1259,9 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
-      "target": 700,
-      "current": [
-        {
-          "name": "Ionuț Radu",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-05T18:45:00Z"
-        },
-        {
-          "name": "Maxim De Cuyper",
-          "captain": true,
-          "locked": true,
-          "nextGame": "2026-10-05T18:45:00Z"
-        },
-        {
-          "name": "Andrija Bulatović",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-05T18:45:00Z"
-        },
-        {
-          "name": "Viktor Gyökeres",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-05T18:45:00Z"
-        },
-        {
-          "name": "Victor Lindelöf",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-05T18:45:00Z"
-        }
-      ],
+      "state": "PRE_MATCHDAY_LOCKED",
+      "target": 980,
+      "current": [],
       "plan": null,
       "candidates": [],
       "projected": 0
