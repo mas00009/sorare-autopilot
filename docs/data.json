@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T16:00:36.296Z",
+  "generatedAt": "2026-10-02T16:06:35.617Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 211
   },
   "schedule": {
-    "nextLock": "2026-10-02T16:00:00Z",
+    "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790956816873,
-    "reason": "last run 0m ago, next due in 180m"
+    "lastRunAt": 1790957176932,
+    "reason": "last run 0m ago, next due in 180m (lock in 1598m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -272,7 +272,7 @@
       "surface": "team set (Loadshift)",
       "level": 0,
       "target": 700,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
       "squadScore": 0,
@@ -306,7 +306,7 @@
           "position": "Midfielder",
           "captain": false,
           "score": 0,
-          "status": "PENDING",
+          "status": "REVIEWING",
           "kickoff": "2026-10-05T18:45:00Z"
         },
         {
@@ -1271,7 +1271,7 @@
           },
           {
             "actual": null,
-            "scoreStatus": "PENDING",
+            "scoreStatus": "REVIEWING",
             "teamSlug": "montenegro",
             "name": "Andrija Bulatović",
             "player": "Andrija Bulatović",
@@ -1379,7 +1379,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 700
         },
         {
@@ -1411,7 +1411,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 700,
       "current": [
         {
