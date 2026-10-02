@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T19:52:35.920Z",
+  "generatedAt": "2026-10-02T19:58:24.221Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790970739688,
-    "reason": "last run 0m ago, next due in 180m (lock in 1372m)"
+    "lastRunAt": 1790971087737,
+    "reason": "last run 0m ago, next due in 180m (lock in 1367m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 802.6108,
+      "squadScore": 819.4798,
       "lineupId": "Tasks::TaskLineup:a11e4907-605b-44cf-9457-497ed89426fb",
       "state": "READY",
-      "score": 180.7,
+      "score": 181.48,
       "finished": false,
       "cleared": true,
       "players": [
@@ -314,7 +314,7 @@
           "slug": "viktor-gyokeres",
           "position": "Forward",
           "captain": false,
-          "score": 45.84,
+          "score": 46.25,
           "status": "REVIEWING",
           "kickoff": "2026-10-05T18:45:00Z"
         },
@@ -323,7 +323,7 @@
           "slug": "victor-nilsson-lindelof",
           "position": "Defender",
           "captain": false,
-          "score": 49.77,
+          "score": 50.14,
           "status": "REVIEWING",
           "kickoff": "2026-10-05T18:45:00Z"
         }
@@ -1205,7 +1205,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 223 scored so far, 4 of 5 played. The squad's top three lineups together need 700; the squad has 803 so far.",
+      "status": "Locked and playing. 224 scored so far, 4 of 5 played. The squad's top three lineups together need 700; the squad has 819 so far.",
       "tone": "good",
       "lockAt": "2026-10-02T16:00:00Z",
       "isSquad": true,
@@ -1299,7 +1299,7 @@
             "kickoff": "2026-10-02T16:00:00Z"
           },
           {
-            "actual": 45.84,
+            "actual": 46.25,
             "scoreStatus": "REVIEWING",
             "teamSlug": "sweden",
             "name": "Viktor Gyökeres",
@@ -1328,7 +1328,7 @@
             "kickoff": "2026-10-02T18:45:00Z"
           },
           {
-            "actual": 49.77,
+            "actual": 50.14,
             "scoreStatus": "REVIEWING",
             "teamSlug": "sweden",
             "name": "Victor Lindelöf",
@@ -1358,9 +1358,9 @@
           }
         ],
         "projected": 279.39,
-        "scoredSoFar": 223.26,
+        "scoredSoFar": 224.04,
         "played": 4,
-        "expectedFinal": 275.16
+        "expectedFinal": 275.94
       },
       "poolStrength": {
         "strong": 0,
@@ -1370,7 +1370,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 802.5058
+        "scoreSoFar": 819.4798
       },
       "level": 0,
       "lives": null,
