@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T17:54:11.700Z",
+  "generatedAt": "2026-10-02T18:00:14.293Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1790963632437,
-    "reason": "last run 0m ago, next due in 180m (lock in 1491m)"
+    "lastRunAt": 1790963996575,
+    "reason": "last run 0m ago, next due in 180m (lock in 1485m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -306,7 +306,7 @@
           "position": "Midfielder",
           "captain": false,
           "score": 0,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-05T18:45:00Z"
         },
         {
@@ -328,7 +328,7 @@
           "kickoff": "2026-10-02T18:45:00Z"
         }
       ],
-      "scored": 3
+      "scored": 4
     },
     {
       "surface": "my set",
@@ -1205,7 +1205,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 152 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 566 so far.",
+      "status": "Locked and playing. 152 scored so far, 4 of 5 played. The squad's top three lineups together need 700; the squad has 566 so far.",
       "tone": "good",
       "lockAt": "2026-10-02T16:00:00Z",
       "isSquad": true,
@@ -1270,8 +1270,8 @@
             "kickoff": "2026-10-02T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "REVIEWING",
+            "actual": 0,
+            "scoreStatus": "FINAL",
             "teamSlug": "montenegro",
             "name": "Andrija Bulatović",
             "player": "Andrija Bulatović",
@@ -1359,8 +1359,8 @@
         ],
         "projected": 279.39,
         "scoredSoFar": 152.42,
-        "played": 3,
-        "expectedFinal": 251.6
+        "played": 4,
+        "expectedFinal": 204.32
       },
       "poolStrength": {
         "strong": 0,
