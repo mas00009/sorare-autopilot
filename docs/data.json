@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T19:42:19.380Z",
+  "generatedAt": "2026-10-03T19:47:52.126Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-04T16:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791056522125,
-    "reason": "last run 0m ago, next due in 180m (lock in 1218m)"
+    "lastRunAt": 1791056855259,
+    "reason": "last run 0m ago, next due in 180m (lock in 1212m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 1190.505,
+      "squadScore": 1193.521,
       "lineupId": "Tasks::TaskLineup:c0c43cf5-583c-4ce0-a0aa-fdae03865506",
       "state": "READY",
-      "score": 297.61,
+      "score": 300.71,
       "finished": false,
       "cleared": true,
       "players": [
@@ -261,7 +261,7 @@
           "slug": "zachary-athekame",
           "position": "Defender",
           "captain": false,
-          "score": 31.89,
+          "score": 34.99,
           "status": "REVIEWING",
           "kickoff": "2026-10-06T18:45:00Z"
         }
@@ -1267,7 +1267,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 336 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1191 so far.",
+      "status": "Locked and playing. 340 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1194 so far.",
       "tone": "good",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": true,
@@ -1390,7 +1390,7 @@
             "kickoff": "2026-10-03T18:45:00Z"
           },
           {
-            "actual": 31.89,
+            "actual": 34.99,
             "scoreStatus": "REVIEWING",
             "teamSlug": "switzerland",
             "name": "Zachary Athekame",
@@ -1420,9 +1420,9 @@
           }
         ],
         "projected": 327.69,
-        "scoredSoFar": 336.46,
+        "scoredSoFar": 339.56,
         "played": 5,
-        "expectedFinal": 336.46
+        "expectedFinal": 339.56
       },
       "poolStrength": {
         "strong": 0,
@@ -1432,7 +1432,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 1190.505
+        "scoreSoFar": 1193.521
       },
       "level": 1,
       "lives": null,
