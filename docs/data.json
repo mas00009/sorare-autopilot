@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T19:58:58.816Z",
+  "generatedAt": "2026-10-03T20:04:30.750Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-04T16:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791057520807,
-    "reason": "last run 0m ago, next due in 180m (lock in 1201m)"
+    "lastRunAt": 1791057853427,
+    "reason": "last run 0m ago, next due in 180m (lock in 1195m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:4322c030-30b5-4abe-b0a3-b13f42555a98",
       "state": "READY",
-      "score": 55.94,
+      "score": 56.88,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,7 +48,7 @@
           "slug": "aymeric-laporte",
           "position": "Defender",
           "captain": false,
-          "score": 55.94,
+          "score": 56.89,
           "status": "REVIEWING",
           "kickoff": "2026-10-06T18:45:00Z"
         },
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 1205.7902,
+      "squadScore": 1208.348,
       "lineupId": "Tasks::TaskLineup:c0c43cf5-583c-4ce0-a0aa-fdae03865506",
       "state": "READY",
-      "score": 311.43,
+      "score": 319.54,
       "finished": false,
       "cleared": true,
       "players": [
@@ -225,7 +225,7 @@
           "slug": "stole-dimitrievski",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 51.98,
+          "score": 54.18,
           "status": "REVIEWING",
           "kickoff": "2026-10-06T18:45:00Z"
         },
@@ -234,7 +234,7 @@
           "slug": "aymeric-laporte",
           "position": "Defender",
           "captain": true,
-          "score": 82.58,
+          "score": 83.98,
           "status": "REVIEWING",
           "kickoff": "2026-10-06T18:45:00Z"
         },
@@ -243,7 +243,7 @@
           "slug": "daniel-olmo-carvajal",
           "position": "Midfielder",
           "captain": false,
-          "score": 70.66,
+          "score": 72.2,
           "status": "REVIEWING",
           "kickoff": "2026-10-06T18:45:00Z"
         },
@@ -252,7 +252,7 @@
           "slug": "dan-ndoye",
           "position": "Forward",
           "captain": false,
-          "score": 70.35,
+          "score": 73.23,
           "status": "REVIEWING",
           "kickoff": "2026-10-06T18:45:00Z"
         },
@@ -261,7 +261,7 @@
           "slug": "zachary-athekame",
           "position": "Defender",
           "captain": false,
-          "score": 35.87,
+          "score": 35.95,
           "status": "REVIEWING",
           "kickoff": "2026-10-06T18:45:00Z"
         }
@@ -615,7 +615,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 56 scored so far, 1 of 5 played. On course for about 353; needs 360 (7 short).",
+      "status": "Locked and playing. 57 scored so far, 1 of 5 played. On course for about 354; needs 360 (6 short).",
       "tone": "warn",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": false,
@@ -651,7 +651,7 @@
             "kickoff": "2026-10-10T14:15:00Z"
           },
           {
-            "actual": 55.94,
+            "actual": 56.89,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Aymeric Laporte",
@@ -768,9 +768,9 @@
           }
         ],
         "projected": 370.38,
-        "scoredSoFar": 55.94,
+        "scoredSoFar": 56.89,
         "played": 1,
-        "expectedFinal": 353.41
+        "expectedFinal": 354.36
       },
       "poolStrength": {
         "strong": 6,
@@ -1267,14 +1267,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 353 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1206 so far.",
+      "status": "Locked and playing. 362 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1208 so far.",
       "tone": "good",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 51.98,
+            "actual": 54.18,
             "scoreStatus": "REVIEWING",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
@@ -1303,7 +1303,7 @@
             "kickoff": "2026-10-03T18:45:00Z"
           },
           {
-            "actual": 82.58,
+            "actual": 83.98,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Aymeric Laporte",
@@ -1332,7 +1332,7 @@
             "kickoff": "2026-10-03T18:45:00Z"
           },
           {
-            "actual": 70.66,
+            "actual": 72.2,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Dani Olmo",
@@ -1361,7 +1361,7 @@
             "kickoff": "2026-10-03T18:45:00Z"
           },
           {
-            "actual": 70.35,
+            "actual": 73.23,
             "scoreStatus": "REVIEWING",
             "teamSlug": "switzerland",
             "name": "Dan Ndoye",
@@ -1390,7 +1390,7 @@
             "kickoff": "2026-10-03T18:45:00Z"
           },
           {
-            "actual": 35.87,
+            "actual": 35.95,
             "scoreStatus": "REVIEWING",
             "teamSlug": "switzerland",
             "name": "Zachary Athekame",
@@ -1420,9 +1420,9 @@
           }
         ],
         "projected": 327.69,
-        "scoredSoFar": 352.73,
+        "scoredSoFar": 361.53,
         "played": 5,
-        "expectedFinal": 352.73
+        "expectedFinal": 361.53
       },
       "poolStrength": {
         "strong": 0,
@@ -1432,7 +1432,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 1205.7902
+        "scoreSoFar": 1208.348
       },
       "level": 1,
       "lives": null,
