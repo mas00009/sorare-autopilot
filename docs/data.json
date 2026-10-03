@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T20:37:42.533Z",
+  "generatedAt": "2026-10-03T20:43:31.142Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-04T16:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791059844290,
-    "reason": "last run 0m ago, next due in 180m (lock in 1162m)"
+    "lastRunAt": 1791060192255,
+    "reason": "last run 0m ago, next due in 180m (lock in 1156m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -24,13 +24,13 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:4322c030-30b5-4abe-b0a3-b13f42555a98",
       "state": "READY",
-      "score": 49.32,
+      "score": 50.54,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,7 +48,7 @@
           "slug": "aymeric-laporte",
           "position": "Defender",
           "captain": false,
-          "score": 49.33,
+          "score": 50.55,
           "status": "REVIEWING",
           "kickoff": "2026-10-06T18:45:00Z"
         },
@@ -86,7 +86,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -148,7 +148,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -210,13 +210,13 @@
       "surface": "team set (Loadshift)",
       "level": 1,
       "target": 980,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 7,
       "squadScore": 1241.636,
       "lineupId": "Tasks::TaskLineup:c0c43cf5-583c-4ce0-a0aa-fdae03865506",
       "state": "READY",
-      "score": 311.91,
+      "score": 315.28,
       "finished": false,
       "cleared": true,
       "players": [
@@ -225,7 +225,7 @@
           "slug": "stole-dimitrievski",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 53.76,
+          "score": 55.34,
           "status": "REVIEWING",
           "kickoff": "2026-10-06T18:45:00Z"
         },
@@ -234,7 +234,7 @@
           "slug": "aymeric-laporte",
           "position": "Defender",
           "captain": true,
-          "score": 72.82,
+          "score": 74.62,
           "status": "REVIEWING",
           "kickoff": "2026-10-06T18:45:00Z"
         },
@@ -253,7 +253,7 @@
           "position": "Forward",
           "captain": false,
           "score": 72.92,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-06T18:45:00Z"
         },
         {
@@ -262,7 +262,7 @@
           "position": "Defender",
           "captain": false,
           "score": 40.21,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-06T18:45:00Z"
         }
       ],
@@ -523,7 +523,7 @@
     "ladder": [
       {
         "level": 2,
-        "state": "LIVE",
+        "state": "LINEUP_SET",
         "target": 360,
         "gems": 10,
         "usd": 0,
@@ -615,7 +615,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 49 scored so far, 1 of 5 played. On course for about 347; needs 360 (13 short).",
+      "status": "Locked and playing. 51 scored so far, 1 of 5 played. On course for about 348; needs 360 (12 short).",
       "tone": "warn",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": false,
@@ -651,7 +651,7 @@
             "kickoff": "2026-10-10T14:15:00Z"
           },
           {
-            "actual": 49.33,
+            "actual": 50.55,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Aymeric Laporte",
@@ -768,9 +768,9 @@
           }
         ],
         "projected": 370.38,
-        "scoredSoFar": 49.33,
+        "scoredSoFar": 50.55,
         "played": 1,
-        "expectedFinal": 346.8
+        "expectedFinal": 348.02
       },
       "poolStrength": {
         "strong": 6,
@@ -798,7 +798,7 @@
         },
         {
           "level": 2,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 360
         },
         {
@@ -824,7 +824,7 @@
           "currency": "COMMON_GEM"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 360,
       "current": [
         {
@@ -1267,14 +1267,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 348 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1242 so far.",
+      "status": "Locked and playing. 353 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1242 so far.",
       "tone": "good",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 53.76,
+            "actual": 55.34,
             "scoreStatus": "REVIEWING",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
@@ -1303,7 +1303,7 @@
             "kickoff": "2026-10-03T18:45:00Z"
           },
           {
-            "actual": 72.82,
+            "actual": 74.62,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Aymeric Laporte",
@@ -1362,7 +1362,7 @@
           },
           {
             "actual": 72.92,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "switzerland",
             "name": "Dan Ndoye",
             "player": "Dan Ndoye",
@@ -1391,7 +1391,7 @@
           },
           {
             "actual": 40.21,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "switzerland",
             "name": "Zachary Athekame",
             "player": "Zachary Athekame",
@@ -1420,9 +1420,9 @@
           }
         ],
         "projected": 327.69,
-        "scoredSoFar": 348.32,
+        "scoredSoFar": 352.6,
         "played": 5,
-        "expectedFinal": 348.32
+        "expectedFinal": 352.6
       },
       "poolStrength": {
         "strong": 0,
@@ -1446,7 +1446,7 @@
         },
         {
           "level": 1,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 980
         },
         {
@@ -1473,7 +1473,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 980,
       "current": [
         {
