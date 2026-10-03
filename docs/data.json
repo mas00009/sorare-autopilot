@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T20:32:10.192Z",
+  "generatedAt": "2026-10-03T20:37:42.533Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-04T16:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791059512868,
-    "reason": "last run 0m ago, next due in 180m (lock in 1168m)"
+    "lastRunAt": 1791059844290,
+    "reason": "last run 0m ago, next due in 180m (lock in 1162m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:4322c030-30b5-4abe-b0a3-b13f42555a98",
       "state": "READY",
-      "score": 51.84,
+      "score": 49.32,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,7 +48,7 @@
           "slug": "aymeric-laporte",
           "position": "Defender",
           "captain": false,
-          "score": 51.85,
+          "score": 49.33,
           "status": "REVIEWING",
           "kickoff": "2026-10-06T18:45:00Z"
         },
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 1244.788,
+      "squadScore": 1241.636,
       "lineupId": "Tasks::TaskLineup:c0c43cf5-583c-4ce0-a0aa-fdae03865506",
       "state": "READY",
-      "score": 315.95,
+      "score": 311.91,
       "finished": false,
       "cleared": true,
       "players": [
@@ -225,7 +225,7 @@
           "slug": "stole-dimitrievski",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 54.08,
+          "score": 53.76,
           "status": "REVIEWING",
           "kickoff": "2026-10-06T18:45:00Z"
         },
@@ -234,7 +234,7 @@
           "slug": "aymeric-laporte",
           "position": "Defender",
           "captain": true,
-          "score": 76.54,
+          "score": 72.82,
           "status": "REVIEWING",
           "kickoff": "2026-10-06T18:45:00Z"
         },
@@ -615,7 +615,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 52 scored so far, 1 of 5 played. On course for about 349; needs 360 (11 short).",
+      "status": "Locked and playing. 49 scored so far, 1 of 5 played. On course for about 347; needs 360 (13 short).",
       "tone": "warn",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": false,
@@ -651,7 +651,7 @@
             "kickoff": "2026-10-10T14:15:00Z"
           },
           {
-            "actual": 51.85,
+            "actual": 49.33,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Aymeric Laporte",
@@ -768,9 +768,9 @@
           }
         ],
         "projected": 370.38,
-        "scoredSoFar": 51.85,
+        "scoredSoFar": 49.33,
         "played": 1,
-        "expectedFinal": 349.32
+        "expectedFinal": 346.8
       },
       "poolStrength": {
         "strong": 6,
@@ -1267,14 +1267,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 354 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1245 so far.",
+      "status": "Locked and playing. 348 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1242 so far.",
       "tone": "good",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 54.08,
+            "actual": 53.76,
             "scoreStatus": "REVIEWING",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
@@ -1303,7 +1303,7 @@
             "kickoff": "2026-10-03T18:45:00Z"
           },
           {
-            "actual": 76.54,
+            "actual": 72.82,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Aymeric Laporte",
@@ -1420,9 +1420,9 @@
           }
         ],
         "projected": 327.69,
-        "scoredSoFar": 354.22,
+        "scoredSoFar": 348.32,
         "played": 5,
-        "expectedFinal": 354.22
+        "expectedFinal": 348.32
       },
       "poolStrength": {
         "strong": 0,
@@ -1432,7 +1432,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 1244.788
+        "scoreSoFar": 1241.636
       },
       "level": 1,
       "lives": null,
