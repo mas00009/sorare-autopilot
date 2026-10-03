@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T20:49:22.679Z",
+  "generatedAt": "2026-10-03T20:55:10.485Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-04T16:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791060544597,
-    "reason": "last run 0m ago, next due in 180m (lock in 1151m)"
+    "lastRunAt": 1791060891876,
+    "reason": "last run 0m ago, next due in 180m (lock in 1145m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -207,68 +207,6 @@
       "scored": 5
     },
     {
-      "surface": "team set (Loadshift)",
-      "level": 1,
-      "target": 980,
-      "stepState": "LINEUP_SET",
-      "collaborative": true,
-      "squadLineups": 7,
-      "squadScore": 1241.636,
-      "lineupId": "Tasks::TaskLineup:c0c43cf5-583c-4ce0-a0aa-fdae03865506",
-      "state": "READY",
-      "score": 315.28,
-      "finished": false,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Stole Dimitrievski",
-          "slug": "stole-dimitrievski",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 55.34,
-          "status": "FINAL",
-          "kickoff": "2026-10-06T18:45:00Z"
-        },
-        {
-          "name": "Aymeric Laporte",
-          "slug": "aymeric-laporte",
-          "position": "Defender",
-          "captain": true,
-          "score": 74.62,
-          "status": "FINAL",
-          "kickoff": "2026-10-06T18:45:00Z"
-        },
-        {
-          "name": "Dani Olmo",
-          "slug": "daniel-olmo-carvajal",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 72.2,
-          "status": "FINAL",
-          "kickoff": "2026-10-06T18:45:00Z"
-        },
-        {
-          "name": "Dan Ndoye",
-          "slug": "dan-ndoye",
-          "position": "Forward",
-          "captain": false,
-          "score": 72.92,
-          "status": "FINAL",
-          "kickoff": "2026-10-06T18:45:00Z"
-        },
-        {
-          "name": "Zachary Athekame",
-          "slug": "zachary-athekame",
-          "position": "Defender",
-          "captain": false,
-          "score": 40.21,
-          "status": "FINAL",
-          "kickoff": "2026-10-06T18:45:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
       "surface": "my set",
       "level": 1,
       "target": 300,
@@ -326,6 +264,68 @@
           "score": 39.21,
           "status": "FINAL",
           "kickoff": "2026-10-11T19:00:00Z"
+        }
+      ],
+      "scored": 5
+    },
+    {
+      "surface": "team set (Loadshift)",
+      "level": 1,
+      "target": 980,
+      "stepState": "CLAIMED",
+      "collaborative": true,
+      "squadLineups": 7,
+      "squadScore": 1241.636,
+      "lineupId": "Tasks::TaskLineup:c0c43cf5-583c-4ce0-a0aa-fdae03865506",
+      "state": "SUCCESSFUL",
+      "score": 315.28,
+      "finished": true,
+      "cleared": true,
+      "players": [
+        {
+          "name": "Stole Dimitrievski",
+          "slug": "stole-dimitrievski",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 55.34,
+          "status": "FINAL",
+          "kickoff": "2026-10-06T18:45:00Z"
+        },
+        {
+          "name": "Aymeric Laporte",
+          "slug": "aymeric-laporte",
+          "position": "Defender",
+          "captain": true,
+          "score": 74.62,
+          "status": "FINAL",
+          "kickoff": "2026-10-06T18:45:00Z"
+        },
+        {
+          "name": "Dani Olmo",
+          "slug": "daniel-olmo-carvajal",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 72.2,
+          "status": "FINAL",
+          "kickoff": "2026-10-06T18:45:00Z"
+        },
+        {
+          "name": "Dan Ndoye",
+          "slug": "dan-ndoye",
+          "position": "Forward",
+          "captain": false,
+          "score": 72.92,
+          "status": "FINAL",
+          "kickoff": "2026-10-06T18:45:00Z"
+        },
+        {
+          "name": "Zachary Athekame",
+          "slug": "zachary-athekame",
+          "position": "Defender",
+          "captain": false,
+          "score": 40.21,
+          "status": "FINAL",
+          "kickoff": "2026-10-06T18:45:00Z"
         }
       ],
       "scored": 5
@@ -1267,177 +1267,25 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 353 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1242 so far.",
-      "tone": "good",
-      "lockAt": "2026-10-03T18:45:00Z",
+      "status": "Not open for entry yet. A team goes in the moment it opens.",
+      "tone": "neutral",
+      "lockAt": null,
       "isSquad": true,
-      "entered": {
-        "five": [
-          {
-            "actual": 55.34,
-            "scoreStatus": "FINAL",
-            "teamSlug": "north-macedonia",
-            "name": "Stole Dimitrievski",
-            "player": "Stole Dimitrievski",
-            "slug": "stole-dimitrievski",
-            "pos": "GK",
-            "position": "GK",
-            "pic": "https://assets.sorare.com/cardsamplepicture/a27bc2c8-2943-4639-95b3-cf6abedb429b/picture/tinified-cb56cd6b5650a52dc42c4ac5348f0320.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/a27bc2c8-2943-4639-95b3-cf6abedb429b/picture/tinified-cb56cd6b5650a52dc42c4ac5348f0320.png",
-            "captain": false,
-            "exp": 47.94,
-            "expected": 47.94,
-            "opp": "Scotland",
-            "opponent": "Scotland",
-            "home": true,
-            "average": 46,
-            "formL5": 50,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 42,
-            "ownRank": 69,
-            "oppFactor": 0.951,
-            "locked": true,
-            "kickoff": "2026-10-03T18:45:00Z"
-          },
-          {
-            "actual": 74.62,
-            "scoreStatus": "FINAL",
-            "teamSlug": "spain",
-            "name": "Aymeric Laporte",
-            "player": "Aymeric Laporte",
-            "slug": "aymeric-laporte",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/2e0f0c68-9798-48c3-a1fe-e35b06ff458d/picture/tinified-f73a11ebd48693396a69f9a118fe327a.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/2e0f0c68-9798-48c3-a1fe-e35b06ff458d/picture/tinified-f73a11ebd48693396a69f9a118fe327a.png",
-            "captain": true,
-            "exp": 74.83,
-            "expected": 74.83,
-            "opp": "Czechia",
-            "opponent": "Czechia",
-            "home": true,
-            "average": 61,
-            "formL5": 66,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 48,
-            "ownRank": 1,
-            "oppFactor": 1.16,
-            "locked": true,
-            "kickoff": "2026-10-03T18:45:00Z"
-          },
-          {
-            "actual": 72.2,
-            "scoreStatus": "FINAL",
-            "teamSlug": "spain",
-            "name": "Dani Olmo",
-            "player": "Dani Olmo",
-            "slug": "daniel-olmo-carvajal",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/6b7262e1-5d82-4855-9bb7-a77e9857ae2b/picture/tinified-f17e5fea82558e8f8ef2b6b428e79f41.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/6b7262e1-5d82-4855-9bb7-a77e9857ae2b/picture/tinified-f17e5fea82558e8f8ef2b6b428e79f41.png",
-            "captain": false,
-            "exp": 54.26,
-            "expected": 54.26,
-            "opp": "Czechia",
-            "opponent": "Czechia",
-            "home": true,
-            "average": 57,
-            "formL5": 67,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 48,
-            "ownRank": 1,
-            "oppFactor": 1.08,
-            "locked": true,
-            "kickoff": "2026-10-03T18:45:00Z"
-          },
-          {
-            "actual": 72.92,
-            "scoreStatus": "FINAL",
-            "teamSlug": "switzerland",
-            "name": "Dan Ndoye",
-            "player": "Dan Ndoye",
-            "slug": "dan-ndoye",
-            "pos": "FW",
-            "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/29470820-1e49-4736-8dbe-8b21c3f4d214/picture/tinified-c7105426f3ab1ccdf9a472c02dbf05d5.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/29470820-1e49-4736-8dbe-8b21c3f4d214/picture/tinified-c7105426f3ab1ccdf9a472c02dbf05d5.png",
-            "captain": false,
-            "exp": 48.92,
-            "expected": 48.92,
-            "opp": "Slovenia",
-            "opponent": "Slovenia",
-            "home": true,
-            "average": 54,
-            "formL5": 50,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 56,
-            "ownRank": 14,
-            "oppFactor": 1,
-            "locked": true,
-            "kickoff": "2026-10-03T18:45:00Z"
-          },
-          {
-            "actual": 40.21,
-            "scoreStatus": "FINAL",
-            "teamSlug": "switzerland",
-            "name": "Zachary Athekame",
-            "player": "Zachary Athekame",
-            "slug": "zachary-athekame",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/412c34d9-fb94-4dd7-af41-638fa1bbcd7e/picture/tinified-9dc3fc082484b7951b28d2e7b7a3eadc.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/412c34d9-fb94-4dd7-af41-638fa1bbcd7e/picture/tinified-9dc3fc082484b7951b28d2e7b7a3eadc.png",
-            "captain": false,
-            "exp": 66.11,
-            "expected": 66.11,
-            "opp": "Slovenia",
-            "opponent": "Slovenia",
-            "home": true,
-            "average": 60,
-            "formL5": 76,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 56,
-            "ownRank": 14,
-            "oppFactor": 1.108,
-            "locked": true,
-            "kickoff": "2026-10-03T18:45:00Z"
-          }
-        ],
-        "projected": 327.69,
-        "scoredSoFar": 352.6,
-        "played": 5,
-        "expectedFinal": 352.6
-      },
+      "entered": null,
       "poolStrength": {
         "strong": 0,
         "needed": 5
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 7,
+        "lineupsIn": 0,
         "needed": 3,
-        "scoreSoFar": 1241.636
+        "scoreSoFar": 0
       },
-      "level": 1,
+      "level": 2,
       "lives": null,
       "totalLevels": 5,
-      "levelsDone": 1,
+      "levelsDone": 2,
       "ladder": [
         {
           "level": 0,
@@ -1446,12 +1294,12 @@
         },
         {
           "level": 1,
-          "state": "LINEUP_SET",
+          "state": "CLAIMED",
           "target": 980
         },
         {
           "level": 2,
-          "state": "LOCKED",
+          "state": "PRE_MATCHDAY_LOCKED",
           "target": 1060
         },
         {
@@ -1473,40 +1321,9 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
-      "target": 980,
-      "current": [
-        {
-          "name": "Stole Dimitrievski",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-06T18:45:00Z"
-        },
-        {
-          "name": "Aymeric Laporte",
-          "captain": true,
-          "locked": true,
-          "nextGame": "2026-10-06T18:45:00Z"
-        },
-        {
-          "name": "Dani Olmo",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-06T18:45:00Z"
-        },
-        {
-          "name": "Dan Ndoye",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-06T18:45:00Z"
-        },
-        {
-          "name": "Zachary Athekame",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-06T18:45:00Z"
-        }
-      ],
+      "state": "PRE_MATCHDAY_LOCKED",
+      "target": 1060,
+      "current": [],
       "plan": null,
       "candidates": [],
       "projected": 0
