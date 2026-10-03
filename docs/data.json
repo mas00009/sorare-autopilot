@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T19:36:45.896Z",
+  "generatedAt": "2026-10-03T19:42:19.380Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-04T16:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791056189176,
-    "reason": "last run 0m ago, next due in 180m (lock in 1223m)"
+    "lastRunAt": 1791056522125,
+    "reason": "last run 0m ago, next due in 180m (lock in 1218m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -213,7 +213,7 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 1190.401,
+      "squadScore": 1190.505,
       "lineupId": "Tasks::TaskLineup:c0c43cf5-583c-4ce0-a0aa-fdae03865506",
       "state": "READY",
       "score": 297.61,
@@ -860,7 +860,7 @@
       ],
       "plan": {
         "clearsTarget": true,
-        "projected": 374.87,
+        "projected": 373.42,
         "lock": "2026-10-06T18:45:00Z",
         "shortfall": null,
         "tradedPointsForTime": 0,
@@ -983,7 +983,7 @@
             "oddsBooks": null,
             "marketFactor": null,
             "lockedAt": null,
-            "expected": 67.83,
+            "expected": 66.38,
             "blocked": null
           },
           {
@@ -1181,7 +1181,7 @@
           "oddsBooks": null,
           "marketFactor": null,
           "lockedAt": null,
-          "expected": 67.83,
+          "expected": 66.38,
           "blocked": null
         },
         {
@@ -1263,11 +1263,11 @@
           "blocked": null
         }
       ],
-      "projected": 340.5
+      "projected": 339.1
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 336 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1190 so far.",
+      "status": "Locked and playing. 336 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1191 so far.",
       "tone": "good",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": true,
@@ -1432,7 +1432,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 1190.401
+        "scoreSoFar": 1190.505
       },
       "level": 1,
       "lives": null,
@@ -1532,7 +1532,7 @@
       "players": [
         "Zachary Athekame"
       ],
-      "points": 67.8,
+      "points": 66.4,
       "bestStarter": null,
       "surfaces": [
         "my set"
