@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T15:59:51.031Z",
+  "generatedAt": "2026-10-03T16:05:49.273Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1791043172745,
-    "reason": "last run 0m ago, next due in 15m (lock in 165m)"
+    "lastRunAt": 1791043530485,
+    "reason": "last run 0m ago, next due in 15m (lock in 159m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -121,7 +121,7 @@
           "captain": false,
           "score": 34.48,
           "status": "FINAL",
-          "kickoff": "2026-10-03T16:00:00Z"
+          "kickoff": "2026-10-06T18:45:00Z"
         },
         {
           "name": "Álex Baena",
@@ -213,7 +213,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 273,
+      "squadScore": 276.789,
       "lineupId": "Tasks::TaskLineup:c0c43cf5-583c-4ce0-a0aa-fdae03865506",
       "state": "READY",
       "score": 0,
@@ -1432,7 +1432,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 273
+        "scoreSoFar": 276.789
       },
       "level": 1,
       "lives": null,
@@ -1783,45 +1783,6 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:681c63fd-a111-4e0d-98d2-79a3260d4643",
-          "player": "Orri Óskarsson",
-          "slug": "orri-steinn-oskarsson",
-          "position": "FW",
-          "average": 45,
-          "bonus": 1.05,
-          "starterPct": null,
-          "startRate": 0.8,
-          "oddsKnown": false,
-          "onGameSheet": true,
-          "reliability": null,
-          "formL5": 37,
-          "picture": "https://assets.sorare.com/cardsamplepicture/701af282-d7c9-41fb-afca-7762b0eebb77/picture/tinified-704925b23570398b787b36573e990eee.png",
-          "rarity": "common",
-          "gameId": "Game:4d08b8c9-f3f2-4759-b2f7-0de17c39d832",
-          "kickoff": "2026-10-03T16:00:00Z",
-          "team": "Iceland",
-          "teamSlug": "iceland",
-          "opponent": "Bulgaria",
-          "opponentCode": "BUL",
-          "code": "ISL",
-          "rank": null,
-          "opponentRank": null,
-          "home": true,
-          "competition": "UEFA Nations League",
-          "intl": true,
-          "oppRank": 85,
-          "ownRank": 74,
-          "oppFactor": 1,
-          "mismatch": false,
-          "pWin": null,
-          "pLose": null,
-          "oddsBooks": null,
-          "marketFactor": null,
-          "lockedAt": null,
-          "expected": 35.95,
-          "blocked": null
-        },
-        {
           "id": "ComposeTeamBenchCard:623bb83d-022d-479b-8432-c2e324d5b21e",
           "player": "Robin Hranáč",
           "slug": "robin-hranac",
@@ -1865,31 +1826,6 @@
     }
   ],
   "fixtures": [
-    {
-      "kickoff": "2026-10-03T16:00:00Z",
-      "competition": "UEFA Nations League",
-      "team": "Iceland",
-      "code": "ISL",
-      "rank": null,
-      "opponent": "Bulgaria",
-      "opponentCode": "BUL",
-      "opponentRank": null,
-      "intl": true,
-      "ownRank": 74,
-      "oppRank": 85,
-      "pWin": null,
-      "pLose": null,
-      "oppFactor": 1,
-      "home": true,
-      "players": [
-        "Orri Óskarsson"
-      ],
-      "points": 36,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
     {
       "kickoff": "2026-10-03T18:45:00Z",
       "competition": "UEFA Nations League",
