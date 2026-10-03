@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T17:29:15.632Z",
+  "generatedAt": "2026-10-03T17:35:15.501Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -8,9 +8,9 @@
   },
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
-    "cadenceMin": 15,
-    "lastRunAt": 1791048536563,
-    "reason": "last run 0m ago, next due in 15m (lock in 76m)"
+    "cadenceMin": 5,
+    "lastRunAt": 1791048896128,
+    "reason": "last run 0m ago, next due in 5m (lock in 70m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -213,7 +213,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 607.739,
+      "squadScore": 614.784,
       "lineupId": "Tasks::TaskLineup:c0c43cf5-583c-4ce0-a0aa-fdae03865506",
       "state": "READY",
       "score": 0,
@@ -1432,7 +1432,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 607.739
+        "scoreSoFar": 614.784
       },
       "level": 1,
       "lives": null,
