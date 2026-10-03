@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T17:47:12.818Z",
+  "generatedAt": "2026-10-03T17:53:11.855Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1791049611894,
-    "reason": "last run 0m ago, next due in 5m (lock in 58m)"
+    "lastRunAt": 1791049972788,
+    "reason": "last run 0m ago, next due in 5m (lock in 52m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -216,7 +216,7 @@
       "squadScore": 954.842,
       "lineupId": "Tasks::TaskLineup:c0c43cf5-583c-4ce0-a0aa-fdae03865506",
       "state": "READY",
-      "score": 163.8,
+      "score": 200.55,
       "finished": false,
       "cleared": false,
       "players": [
@@ -225,8 +225,8 @@
           "slug": "stole-dimitrievski",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-03T18:45:00Z"
         },
         {
@@ -266,7 +266,7 @@
           "kickoff": "2026-10-03T18:45:00Z"
         }
       ],
-      "scored": 4
+      "scored": 5
     },
     {
       "surface": "my set",
@@ -1267,15 +1267,15 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 191 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 955 so far.",
+      "status": "Locked and playing. 228 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 955 so far.",
       "tone": "good",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
             "player": "Stole Dimitrievski",
@@ -1420,9 +1420,9 @@
           }
         ],
         "projected": 327.69,
-        "scoredSoFar": 190.93,
-        "played": 4,
-        "expectedFinal": 238.87
+        "scoredSoFar": 227.68,
+        "played": 5,
+        "expectedFinal": 227.68
       },
       "poolStrength": {
         "strong": 1,
@@ -1675,7 +1675,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 50,
           "picture": "https://assets.sorare.com/cardsamplepicture/a27bc2c8-2943-4639-95b3-cf6abedb429b/picture/tinified-cb56cd6b5650a52dc42c4ac5348f0320.png",
