@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T20:43:31.142Z",
+  "generatedAt": "2026-10-03T20:49:22.679Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-04T16:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791060192255,
-    "reason": "last run 0m ago, next due in 180m (lock in 1156m)"
+    "lastRunAt": 1791060544597,
+    "reason": "last run 0m ago, next due in 180m (lock in 1151m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -49,7 +49,7 @@
           "position": "Defender",
           "captain": false,
           "score": 50.55,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-06T18:45:00Z"
         },
         {
@@ -226,7 +226,7 @@
           "position": "Goalkeeper",
           "captain": false,
           "score": 55.34,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-06T18:45:00Z"
         },
         {
@@ -235,7 +235,7 @@
           "position": "Defender",
           "captain": true,
           "score": 74.62,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-06T18:45:00Z"
         },
         {
@@ -244,7 +244,7 @@
           "position": "Midfielder",
           "captain": false,
           "score": 72.2,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-06T18:45:00Z"
         },
         {
@@ -652,7 +652,7 @@
           },
           {
             "actual": 50.55,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "spain",
             "name": "Aymeric Laporte",
             "player": "Aymeric Laporte",
@@ -1275,7 +1275,7 @@
         "five": [
           {
             "actual": 55.34,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
             "player": "Stole Dimitrievski",
@@ -1304,7 +1304,7 @@
           },
           {
             "actual": 74.62,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "spain",
             "name": "Aymeric Laporte",
             "player": "Aymeric Laporte",
@@ -1333,7 +1333,7 @@
           },
           {
             "actual": 72.2,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "spain",
             "name": "Dani Olmo",
             "player": "Dani Olmo",
