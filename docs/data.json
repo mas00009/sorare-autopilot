@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T14:59:23.532Z",
+  "generatedAt": "2026-10-03T15:05:32.218Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-03T18:45:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1791039544833,
-    "reason": "last run 0m ago, next due in 60m (lock in 226m)"
+    "lastRunAt": 1791039912804,
+    "reason": "last run 0m ago, next due in 60m (lock in 219m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -213,7 +213,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 0,
+      "squadScore": 273,
       "lineupId": "Tasks::TaskLineup:c0c43cf5-583c-4ce0-a0aa-fdae03865506",
       "state": "READY",
       "score": 0,
@@ -1432,7 +1432,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 0
+        "scoreSoFar": 273
       },
       "level": 1,
       "lives": null,
@@ -1792,7 +1792,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 37,
           "picture": "https://assets.sorare.com/cardsamplepicture/701af282-d7c9-41fb-afca-7762b0eebb77/picture/tinified-704925b23570398b787b36573e990eee.png",
