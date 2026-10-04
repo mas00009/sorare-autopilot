@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T19:43:43.748Z",
+  "generatedAt": "2026-10-04T19:49:37.127Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-05T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791143006305,
-    "reason": "last run 0m ago, next due in 180m (lock in 1381m)"
+    "lastRunAt": 1791143359304,
+    "reason": "last run 0m ago, next due in 180m (lock in 1375m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -89,10 +89,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 804.052,
+      "squadScore": 801.802,
       "lineupId": "Tasks::TaskLineup:fe800d0a-8018-4517-8cc6-d5b11409592a",
       "state": "READY",
-      "score": 189.98,
+      "score": 190.29,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,7 +101,7 @@
           "slug": "bart-verbruggen",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 32.75,
+          "score": 33.06,
           "status": "REVIEWING",
           "kickoff": "2026-10-10T14:00:00Z"
         },
@@ -1329,14 +1329,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 190 scored so far, 4 of 5 played. The squad's top three lineups together need 1060; the squad has 804 so far.",
+      "status": "Locked and playing. 190 scored so far, 4 of 5 played. The squad's top three lineups together need 1060; the squad has 802 so far.",
       "tone": "good",
       "lockAt": "2026-10-04T18:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 32.75,
+            "actual": 33.06,
             "scoreStatus": "REVIEWING",
             "teamSlug": "netherlands",
             "name": "Bart Verbruggen",
@@ -1482,9 +1482,9 @@
           }
         ],
         "projected": 310.46,
-        "scoredSoFar": 189.98,
+        "scoredSoFar": 190.29,
         "played": 4,
-        "expectedFinal": 290.84
+        "expectedFinal": 291.15
       },
       "poolStrength": {
         "strong": 0,
@@ -1494,7 +1494,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 804.052
+        "scoreSoFar": 801.802
       },
       "level": 2,
       "lives": null,
