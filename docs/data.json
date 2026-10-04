@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T20:42:09.628Z",
+  "generatedAt": "2026-10-04T20:48:02.612Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-05T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791146511824,
-    "reason": "last run 0m ago, next due in 180m (lock in 1323m)"
+    "lastRunAt": 1791146864686,
+    "reason": "last run 0m ago, next due in 180m (lock in 1317m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -86,10 +86,10 @@
       "surface": "team set (Loadshift)",
       "level": 2,
       "target": 1060,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 969.2194,
+      "squadScore": 969.9944,
       "lineupId": "Tasks::TaskLineup:fe800d0a-8018-4517-8cc6-d5b11409592a",
       "state": "READY",
       "score": 217.86,
@@ -102,7 +102,7 @@
           "position": "Goalkeeper",
           "captain": false,
           "score": 42.23,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-10T14:00:00Z"
         },
         {
@@ -111,7 +111,7 @@
           "position": "Defender",
           "captain": true,
           "score": 0,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-10T14:00:00Z"
         },
         {
@@ -120,7 +120,7 @@
           "position": "Midfielder",
           "captain": false,
           "score": 36.19,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-10T14:15:00Z"
         },
         {
@@ -129,7 +129,7 @@
           "position": "Forward",
           "captain": false,
           "score": 82.06,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-11T16:30:00Z"
         },
         {
@@ -142,7 +142,7 @@
           "kickoff": "2026-10-10T19:00:00Z"
         }
       ],
-      "scored": 4
+      "scored": 5
     },
     {
       "surface": "my set",
@@ -1329,7 +1329,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 218 scored so far, 4 of 5 played. The squad's top three lineups together need 1060; the squad has 969 so far.",
+      "status": "Locked and playing. 218 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 970 so far.",
       "tone": "good",
       "lockAt": "2026-10-04T18:45:00Z",
       "isSquad": true,
@@ -1337,7 +1337,7 @@
         "five": [
           {
             "actual": 42.23,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "netherlands",
             "name": "Bart Verbruggen",
             "player": "Bart Verbruggen",
@@ -1365,8 +1365,8 @@
             "kickoff": "2026-10-04T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "REVIEWING",
+            "actual": 0,
+            "scoreStatus": "FINAL",
             "teamSlug": "republic-of-ireland",
             "name": "Dara O'Shea",
             "player": "Dara O'Shea",
@@ -1395,7 +1395,7 @@
           },
           {
             "actual": 36.19,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "denmark",
             "name": "Morten Hjulmand",
             "player": "Morten Hjulmand",
@@ -1424,7 +1424,7 @@
           },
           {
             "actual": 82.06,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "republic-of-ireland",
             "name": "Troy Parrott",
             "player": "Troy Parrott",
@@ -1483,8 +1483,8 @@
         ],
         "projected": 310.46,
         "scoredSoFar": 217.87,
-        "played": 4,
-        "expectedFinal": 318.73
+        "played": 5,
+        "expectedFinal": 217.87
       },
       "poolStrength": {
         "strong": 0,
@@ -1494,7 +1494,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 969.2194
+        "scoreSoFar": 969.9944
       },
       "level": 2,
       "lives": null,
@@ -1513,7 +1513,7 @@
         },
         {
           "level": 2,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 1060
         },
         {
@@ -1535,7 +1535,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 1060,
       "current": [
         {
