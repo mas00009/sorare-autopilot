@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T20:48:02.612Z",
+  "generatedAt": "2026-10-04T20:53:53.483Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-05T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791146864686,
-    "reason": "last run 0m ago, next due in 180m (lock in 1317m)"
+    "lastRunAt": 1791147216399,
+    "reason": "last run 0m ago, next due in 180m (lock in 1311m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -81,68 +81,6 @@
         }
       ],
       "scored": 1
-    },
-    {
-      "surface": "team set (Loadshift)",
-      "level": 2,
-      "target": 1060,
-      "stepState": "LINEUP_SET",
-      "collaborative": true,
-      "squadLineups": 5,
-      "squadScore": 969.9944,
-      "lineupId": "Tasks::TaskLineup:fe800d0a-8018-4517-8cc6-d5b11409592a",
-      "state": "READY",
-      "score": 217.86,
-      "finished": false,
-      "cleared": false,
-      "players": [
-        {
-          "name": "Bart Verbruggen",
-          "slug": "bart-verbruggen",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 42.23,
-          "status": "FINAL",
-          "kickoff": "2026-10-10T14:00:00Z"
-        },
-        {
-          "name": "Dara O'Shea",
-          "slug": "dara-o-shea",
-          "position": "Defender",
-          "captain": true,
-          "score": 0,
-          "status": "FINAL",
-          "kickoff": "2026-10-10T14:00:00Z"
-        },
-        {
-          "name": "Morten Hjulmand",
-          "slug": "morten-hjulmand",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 36.19,
-          "status": "FINAL",
-          "kickoff": "2026-10-10T14:15:00Z"
-        },
-        {
-          "name": "Troy Parrott",
-          "slug": "troy-parrott",
-          "position": "Forward",
-          "captain": false,
-          "score": 82.06,
-          "status": "FINAL",
-          "kickoff": "2026-10-11T16:30:00Z"
-        },
-        {
-          "name": "Renato Veiga",
-          "slug": "renato-de-palma-veiga",
-          "position": "Defender",
-          "captain": false,
-          "score": 57.39,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-10T19:00:00Z"
-        }
-      ],
-      "scored": 5
     },
     {
       "surface": "my set",
@@ -331,68 +269,6 @@
       "scored": 5
     },
     {
-      "surface": "team set (Loadshift)",
-      "level": 1,
-      "target": 980,
-      "stepState": "CLAIMED",
-      "collaborative": true,
-      "squadLineups": 7,
-      "squadScore": 1241.636,
-      "lineupId": "Tasks::TaskLineup:c0c43cf5-583c-4ce0-a0aa-fdae03865506",
-      "state": "SUCCESSFUL",
-      "score": 315.28,
-      "finished": true,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Stole Dimitrievski",
-          "slug": "stole-dimitrievski",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 55.34,
-          "status": "FINAL",
-          "kickoff": "2026-10-06T18:45:00Z"
-        },
-        {
-          "name": "Aymeric Laporte",
-          "slug": "aymeric-laporte",
-          "position": "Defender",
-          "captain": true,
-          "score": 74.62,
-          "status": "FINAL",
-          "kickoff": "2026-10-06T18:45:00Z"
-        },
-        {
-          "name": "Dani Olmo",
-          "slug": "daniel-olmo-carvajal",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 72.2,
-          "status": "FINAL",
-          "kickoff": "2026-10-06T18:45:00Z"
-        },
-        {
-          "name": "Dan Ndoye",
-          "slug": "dan-ndoye",
-          "position": "Forward",
-          "captain": false,
-          "score": 72.92,
-          "status": "FINAL",
-          "kickoff": "2026-10-06T18:45:00Z"
-        },
-        {
-          "name": "Zachary Athekame",
-          "slug": "zachary-athekame",
-          "position": "Defender",
-          "captain": false,
-          "score": 40.21,
-          "status": "FINAL",
-          "kickoff": "2026-10-06T18:45:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
       "surface": "my set",
       "level": 0,
       "target": 260,
@@ -512,68 +388,6 @@
           "score": 0,
           "status": "FINAL",
           "kickoff": "2026-10-10T12:00:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
-      "surface": "team set (Loadshift)",
-      "level": 0,
-      "target": 700,
-      "stepState": "CLAIMED",
-      "collaborative": true,
-      "squadLineups": 7,
-      "squadScore": 1233.9636,
-      "lineupId": "Tasks::TaskLineup:a11e4907-605b-44cf-9457-497ed89426fb",
-      "state": "SUCCESSFUL",
-      "score": 237.71,
-      "finished": true,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Ionuț Radu",
-          "slug": "ionu-andrei-radu",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 0,
-          "status": "FINAL",
-          "kickoff": "2026-10-05T18:45:00Z"
-        },
-        {
-          "name": "Maxim De Cuyper",
-          "slug": "maxim-de-cuyper",
-          "position": "Defender",
-          "captain": true,
-          "score": 116.1,
-          "status": "FINAL",
-          "kickoff": "2026-10-05T18:45:00Z"
-        },
-        {
-          "name": "Andrija Bulatović",
-          "slug": "andrija-bulatovic",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 0,
-          "status": "FINAL",
-          "kickoff": "2026-10-05T18:45:00Z"
-        },
-        {
-          "name": "Viktor Gyökeres",
-          "slug": "viktor-gyokeres",
-          "position": "Forward",
-          "captain": false,
-          "score": 77.97,
-          "status": "FINAL",
-          "kickoff": "2026-10-05T18:45:00Z"
-        },
-        {
-          "name": "Victor Lindelöf",
-          "slug": "victor-nilsson-lindelof",
-          "position": "Defender",
-          "captain": false,
-          "score": 43.65,
-          "status": "FINAL",
-          "kickoff": "2026-10-05T18:45:00Z"
         }
       ],
       "scored": 5
@@ -1329,191 +1143,39 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 218 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 970 so far.",
-      "tone": "good",
-      "lockAt": "2026-10-04T18:45:00Z",
+      "status": "Not open for entry yet. A team goes in the moment it opens.",
+      "tone": "neutral",
+      "lockAt": null,
       "isSquad": true,
-      "entered": {
-        "five": [
-          {
-            "actual": 42.23,
-            "scoreStatus": "FINAL",
-            "teamSlug": "netherlands",
-            "name": "Bart Verbruggen",
-            "player": "Bart Verbruggen",
-            "slug": "bart-verbruggen",
-            "pos": "GK",
-            "position": "GK",
-            "pic": "https://assets.sorare.com/cardsamplepicture/55041af4-14cf-411b-8299-c09c5593a95b/picture/tinified-af6e881c6db908f044561785d1f233de.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/55041af4-14cf-411b-8299-c09c5593a95b/picture/tinified-af6e881c6db908f044561785d1f233de.png",
-            "captain": false,
-            "exp": 62.29,
-            "expected": 62.29,
-            "opp": "Serbia",
-            "opponent": "Serbia",
-            "home": true,
-            "average": 53,
-            "formL5": 56,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 40,
-            "ownRank": 9,
-            "oppFactor": 1.11,
-            "locked": true,
-            "kickoff": "2026-10-04T18:45:00Z"
-          },
-          {
-            "actual": 0,
-            "scoreStatus": "FINAL",
-            "teamSlug": "republic-of-ireland",
-            "name": "Dara O'Shea",
-            "player": "Dara O'Shea",
-            "slug": "dara-o-shea",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/8c54996c-62a9-42a1-bb20-3ed894b54c4b/picture/tinified-7d966b41abbbcafa69655ed6df3a9725.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/8c54996c-62a9-42a1-bb20-3ed894b54c4b/picture/tinified-7d966b41abbbcafa69655ed6df3a9725.png",
-            "captain": true,
-            "exp": 67.24,
-            "expected": 67.24,
-            "opp": "Israel",
-            "opponent": "Israel",
-            "home": true,
-            "average": 59,
-            "formL5": 65,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 76,
-            "ownRank": 55,
-            "oppFactor": 1.043,
-            "locked": true,
-            "kickoff": "2026-10-04T18:45:00Z"
-          },
-          {
-            "actual": 36.19,
-            "scoreStatus": "FINAL",
-            "teamSlug": "denmark",
-            "name": "Morten Hjulmand",
-            "player": "Morten Hjulmand",
-            "slug": "morten-hjulmand",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/a806b93c-285f-4648-aa0c-d1e3fb95cb12/picture/tinified-264bf46f26a58db15dd4868b9521faea.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/a806b93c-285f-4648-aa0c-d1e3fb95cb12/picture/tinified-264bf46f26a58db15dd4868b9521faea.png",
-            "captain": false,
-            "exp": 42.16,
-            "expected": 42.16,
-            "opp": "Wales",
-            "opponent": "Wales",
-            "home": false,
-            "average": 51,
-            "formL5": 48,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 38,
-            "ownRank": 21,
-            "oppFactor": 1.02,
-            "locked": true,
-            "kickoff": "2026-10-04T18:45:00Z"
-          },
-          {
-            "actual": 82.06,
-            "scoreStatus": "FINAL",
-            "teamSlug": "republic-of-ireland",
-            "name": "Troy Parrott",
-            "player": "Troy Parrott",
-            "slug": "troy-parrott",
-            "pos": "FW",
-            "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/609d4f31-73e1-4025-ba51-d7d346ba5382/picture/tinified-cd8adea083e0d17ba4a930f3cc3c4d02.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/609d4f31-73e1-4025-ba51-d7d346ba5382/picture/tinified-cd8adea083e0d17ba4a930f3cc3c4d02.png",
-            "captain": false,
-            "exp": 50.49,
-            "expected": 50.49,
-            "opp": "Israel",
-            "opponent": "Israel",
-            "home": true,
-            "average": 54,
-            "formL5": 68,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 76,
-            "ownRank": 55,
-            "oppFactor": 1,
-            "locked": true,
-            "kickoff": "2026-10-04T18:45:00Z"
-          },
-          {
-            "actual": 57.39,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "portugal",
-            "name": "Renato Veiga",
-            "player": "Renato Veiga",
-            "slug": "renato-de-palma-veiga",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/52a7a606-d9e8-404a-ad71-d3cef34a8c2e/picture/tinified-942dd9d9d147d525ae66199b213992f4.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/52a7a606-d9e8-404a-ad71-d3cef34a8c2e/picture/tinified-942dd9d9d147d525ae66199b213992f4.png",
-            "captain": false,
-            "exp": 55.95,
-            "expected": 55.95,
-            "opp": "Norway",
-            "opponent": "Norway",
-            "home": true,
-            "average": 52,
-            "formL5": 50,
-            "intl": true,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": 19,
-            "ownRank": 7,
-            "oppFactor": 1.055,
-            "locked": true,
-            "kickoff": "2026-10-04T18:45:00Z"
-          }
-        ],
-        "projected": 310.46,
-        "scoredSoFar": 217.87,
-        "played": 5,
-        "expectedFinal": 217.87
-      },
+      "entered": null,
       "poolStrength": {
         "strong": 0,
         "needed": 5
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 5,
+        "lineupsIn": 0,
         "needed": 3,
-        "scoreSoFar": 969.9944
+        "scoreSoFar": 0
       },
-      "level": 2,
+      "level": 0,
       "lives": null,
       "totalLevels": 5,
-      "levelsDone": 2,
+      "levelsDone": 0,
       "ladder": [
         {
           "level": 0,
-          "state": "CLAIMED",
+          "state": "PRE_MATCHDAY_LOCKED",
           "target": 700
         },
         {
           "level": 1,
-          "state": "CLAIMED",
+          "state": "LOCKED",
           "target": 980
         },
         {
           "level": 2,
-          "state": "LINEUP_SET",
+          "state": "LOCKED",
           "target": 1060
         },
         {
@@ -1535,40 +1197,9 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
-      "target": 1060,
-      "current": [
-        {
-          "name": "Bart Verbruggen",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-10T14:00:00Z"
-        },
-        {
-          "name": "Dara O'Shea",
-          "captain": true,
-          "locked": true,
-          "nextGame": "2026-10-10T14:00:00Z"
-        },
-        {
-          "name": "Morten Hjulmand",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-10T14:15:00Z"
-        },
-        {
-          "name": "Troy Parrott",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-11T16:30:00Z"
-        },
-        {
-          "name": "Renato Veiga",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-10T19:00:00Z"
-        }
-      ],
+      "state": "PRE_MATCHDAY_LOCKED",
+      "target": 700,
+      "current": [],
       "plan": null,
       "candidates": [],
       "projected": 0
