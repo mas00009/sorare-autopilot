@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T19:20:15.286Z",
+  "generatedAt": "2026-10-04T19:26:08.480Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-05T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791141597657,
-    "reason": "last run 0m ago, next due in 180m (lock in 1405m)"
+    "lastRunAt": 1791141949285,
+    "reason": "last run 0m ago, next due in 180m (lock in 1399m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -89,10 +89,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 739.3634,
+      "squadScore": 766.744,
       "lineupId": "Tasks::TaskLineup:fe800d0a-8018-4517-8cc6-d5b11409592a",
       "state": "READY",
-      "score": 163.87,
+      "score": 188.62,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,7 +101,7 @@
           "slug": "bart-verbruggen",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 38.32,
+          "score": 32.65,
           "status": "REVIEWING",
           "kickoff": "2026-10-10T14:00:00Z"
         },
@@ -119,7 +119,7 @@
           "slug": "morten-hjulmand",
           "position": "Midfielder",
           "captain": false,
-          "score": 36.3,
+          "score": 33.8,
           "status": "REVIEWING",
           "kickoff": "2026-10-10T14:15:00Z"
         },
@@ -128,7 +128,7 @@
           "slug": "troy-parrott",
           "position": "Forward",
           "captain": false,
-          "score": 36.85,
+          "score": 73.15,
           "status": "REVIEWING",
           "kickoff": "2026-10-11T16:30:00Z"
         },
@@ -137,7 +137,7 @@
           "slug": "renato-de-palma-veiga",
           "position": "Defender",
           "captain": false,
-          "score": 52.42,
+          "score": 49.03,
           "status": "REVIEWING",
           "kickoff": "2026-10-10T19:00:00Z"
         }
@@ -1329,14 +1329,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 164 scored so far, 4 of 5 played. The squad's top three lineups together need 1060; the squad has 739 so far.",
+      "status": "Locked and playing. 189 scored so far, 4 of 5 played. The squad's top three lineups together need 1060; the squad has 767 so far.",
       "tone": "good",
       "lockAt": "2026-10-04T18:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 38.32,
+            "actual": 32.65,
             "scoreStatus": "REVIEWING",
             "teamSlug": "netherlands",
             "name": "Bart Verbruggen",
@@ -1394,7 +1394,7 @@
             "kickoff": "2026-10-04T18:45:00Z"
           },
           {
-            "actual": 36.3,
+            "actual": 33.8,
             "scoreStatus": "REVIEWING",
             "teamSlug": "denmark",
             "name": "Morten Hjulmand",
@@ -1423,7 +1423,7 @@
             "kickoff": "2026-10-04T18:45:00Z"
           },
           {
-            "actual": 36.85,
+            "actual": 73.15,
             "scoreStatus": "REVIEWING",
             "teamSlug": "republic-of-ireland",
             "name": "Troy Parrott",
@@ -1452,7 +1452,7 @@
             "kickoff": "2026-10-04T18:45:00Z"
           },
           {
-            "actual": 52.42,
+            "actual": 49.03,
             "scoreStatus": "REVIEWING",
             "teamSlug": "portugal",
             "name": "Renato Veiga",
@@ -1482,9 +1482,9 @@
           }
         ],
         "projected": 310.46,
-        "scoredSoFar": 163.89,
+        "scoredSoFar": 188.63,
         "played": 4,
-        "expectedFinal": 264.75
+        "expectedFinal": 289.49
       },
       "poolStrength": {
         "strong": 0,
@@ -1494,7 +1494,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 739.3634
+        "scoreSoFar": 766.744
       },
       "level": 2,
       "lives": null,
