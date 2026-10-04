@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T17:44:30.757Z",
+  "generatedAt": "2026-10-04T17:50:34.634Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-04T18:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1791135851877,
-    "reason": "last run 0m ago, next due in 5m (lock in 60m)"
+    "lastRunAt": 1791136216175,
+    "reason": "last run 0m ago, next due in 5m (lock in 54m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -89,10 +89,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 39.655,
+      "squadScore": 545.055,
       "lineupId": "Tasks::TaskLineup:fe800d0a-8018-4517-8cc6-d5b11409592a",
       "state": "READY",
-      "score": 0,
+      "score": 108.85,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,8 +101,8 @@
           "slug": "bart-verbruggen",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-04T18:45:00Z"
         },
         {
@@ -119,8 +119,8 @@
           "slug": "morten-hjulmand",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.4,
+          "status": "REVIEWING",
           "kickoff": "2026-10-04T18:45:00Z"
         },
         {
@@ -137,12 +137,12 @@
           "slug": "renato-de-palma-veiga",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.4,
+          "status": "REVIEWING",
           "kickoff": "2026-10-04T18:45:00Z"
         }
       ],
-      "scored": 0
+      "scored": 3
     },
     {
       "surface": "my set",
@@ -1329,15 +1329,15 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Team entered, locks Mon 05:45 am Sydney. The squad's top three lineups together need 1060; this one is expected to add about 310.",
+      "status": "Locked and playing. 109 scored so far, 3 of 5 played. The squad's top three lineups together need 1060; the squad has 545 so far.",
       "tone": "good",
       "lockAt": "2026-10-04T18:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "netherlands",
             "name": "Bart Verbruggen",
             "player": "Bart Verbruggen",
@@ -1394,8 +1394,8 @@
             "kickoff": "2026-10-04T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.4,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "denmark",
             "name": "Morten Hjulmand",
             "player": "Morten Hjulmand",
@@ -1452,8 +1452,8 @@
             "kickoff": "2026-10-04T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.4,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "portugal",
             "name": "Renato Veiga",
             "player": "Renato Veiga",
@@ -1482,9 +1482,9 @@
           }
         ],
         "projected": 310.46,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 311.75
+        "scoredSoFar": 108.85,
+        "played": 3,
+        "expectedFinal": 260.2
       },
       "poolStrength": {
         "strong": 0,
@@ -1494,7 +1494,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 39.655
+        "scoreSoFar": 545.055
       },
       "level": 2,
       "lives": null,
@@ -1590,7 +1590,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 50,
             "picture": "https://assets.sorare.com/cardsamplepicture/52a7a606-d9e8-404a-ad71-d3cef34a8c2e/picture/tinified-942dd9d9d147d525ae66199b213992f4.png",
@@ -1629,7 +1629,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 47,
             "picture": "https://assets.sorare.com/cardsamplepicture/66708b6f-4b0a-4f5f-b7de-f93fa4be2f9a/picture/tinified-3648c01a300bcfaac844126fb0f16007.png",
@@ -1707,7 +1707,7 @@
             "starterPct": null,
             "startRate": 0.75,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 48,
             "picture": "https://assets.sorare.com/cardsamplepicture/a806b93c-285f-4648-aa0c-d1e3fb95cb12/picture/tinified-264bf46f26a58db15dd4868b9521faea.png",
@@ -1746,7 +1746,7 @@
             "starterPct": null,
             "startRate": 0.8,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 44,
             "picture": "https://assets.sorare.com/cardsamplepicture/a0ef7664-ece2-45aa-9dfb-4985a03a9a54/picture/tinified-87feff017f7f66808567a58f84d7c099.png",
@@ -1788,7 +1788,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 50,
           "picture": "https://assets.sorare.com/cardsamplepicture/52a7a606-d9e8-404a-ad71-d3cef34a8c2e/picture/tinified-942dd9d9d147d525ae66199b213992f4.png",
@@ -1827,7 +1827,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 47,
           "picture": "https://assets.sorare.com/cardsamplepicture/66708b6f-4b0a-4f5f-b7de-f93fa4be2f9a/picture/tinified-3648c01a300bcfaac844126fb0f16007.png",
@@ -1905,7 +1905,7 @@
           "starterPct": null,
           "startRate": 0.75,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 48,
           "picture": "https://assets.sorare.com/cardsamplepicture/a806b93c-285f-4648-aa0c-d1e3fb95cb12/picture/tinified-264bf46f26a58db15dd4868b9521faea.png",
@@ -1944,7 +1944,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 44,
           "picture": "https://assets.sorare.com/cardsamplepicture/a0ef7664-ece2-45aa-9dfb-4985a03a9a54/picture/tinified-87feff017f7f66808567a58f84d7c099.png",
