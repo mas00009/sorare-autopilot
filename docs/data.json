@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T07:04:25.039Z",
+  "generatedAt": "2026-10-04T07:10:45.091Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 211
   },
   "schedule": {
-    "nextLock": "2026-10-04T16:00:00Z",
+    "nextLock": "2026-10-04T18:45:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1791097445241,
-    "reason": "last run 0m ago, next due in 60m (lock in 536m)"
+    "lastRunAt": 1791097826692,
+    "reason": "last run 0m ago, next due in 60m (lock in 694m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -106,8 +106,8 @@
           "kickoff": "2026-10-04T18:45:00Z"
         },
         {
-          "name": "Renato Veiga",
-          "slug": "renato-de-palma-veiga",
+          "name": "Dara O'Shea",
+          "slug": "dara-o-shea",
           "position": "Defender",
           "captain": true,
           "score": 0,
@@ -133,8 +133,8 @@
           "kickoff": "2026-10-04T18:45:00Z"
         },
         {
-          "name": "Denzel Dumfries",
-          "slug": "denzel-dumfries",
+          "name": "Renato Veiga",
+          "slug": "renato-de-palma-veiga",
           "position": "Defender",
           "captain": false,
           "score": 0,
@@ -620,9 +620,9 @@
       {
         "title": "Collect Big 3 LaLiga",
         "gems": 30,
-        "progress": 41,
+        "progress": 42,
         "target": 50,
-        "remaining": 9,
+        "remaining": 8,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": [
@@ -634,9 +634,9 @@
       {
         "title": "Collect Goalkeepers",
         "gems": 10,
-        "progress": 77,
+        "progress": 78,
         "target": 112,
-        "remaining": 35,
+        "remaining": 34,
         "competition": null,
         "group": null,
         "teams": []
@@ -644,9 +644,9 @@
       {
         "title": "Collect Spanish players in LaLiga",
         "gems": 30,
-        "progress": 201,
+        "progress": 203,
         "target": 279,
-        "remaining": 78,
+        "remaining": 76,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": []
@@ -922,8 +922,8 @@
       ],
       "plan": {
         "clearsTarget": true,
-        "projected": 373.72,
-        "lock": "2026-10-06T18:45:00Z",
+        "projected": 374.58,
+        "lock": "2026-10-04T18:45:00Z",
         "shortfall": null,
         "tradedPointsForTime": 0,
         "captain": "matthias-ginter",
@@ -1010,42 +1010,42 @@
             "blocked": null
           },
           {
-            "id": "ComposeTeamBenchCard:6afc5a41-2d2e-4e47-a3ee-c9182c2f890a",
-            "player": "Zachary Athekame",
-            "slug": "zachary-athekame",
+            "id": "ComposeTeamBenchCard:31739f1e-8074-4daf-96dd-47c03af25930",
+            "player": "Dara O'Shea",
+            "slug": "dara-o-shea",
             "position": "DF",
-            "average": 60,
-            "bonus": 1.07,
+            "average": 59,
+            "bonus": 1.04,
             "starterPct": null,
-            "startRate": 0.75,
+            "startRate": 1,
             "oddsKnown": false,
             "onGameSheet": false,
             "reliability": null,
-            "formL5": 76,
-            "picture": "https://assets.sorare.com/cardsamplepicture/412c34d9-fb94-4dd7-af41-638fa1bbcd7e/picture/tinified-9dc3fc082484b7951b28d2e7b7a3eadc.png",
+            "formL5": 65,
+            "picture": "https://assets.sorare.com/cardsamplepicture/8c54996c-62a9-42a1-bb20-3ed894b54c4b/picture/tinified-7d966b41abbbcafa69655ed6df3a9725.png",
             "rarity": "common",
-            "gameId": "Game:ea442a64-1951-4e74-8758-5dc862976624",
-            "kickoff": "2026-10-06T18:45:00Z",
-            "team": "Switzerland",
-            "teamSlug": "switzerland",
-            "opponent": "North Macedonia",
-            "opponentCode": "MKD",
-            "code": "SUI",
+            "gameId": "Game:e509c0f4-3692-4a87-a06d-26dd2dc1bef6",
+            "kickoff": "2026-10-04T18:45:00Z",
+            "team": "Ireland",
+            "teamSlug": "republic-of-ireland",
+            "opponent": "Israel",
+            "opponentCode": "ISR",
+            "code": "IRL",
             "rank": null,
             "opponentRank": null,
             "home": true,
             "competition": "UEFA Nations League",
             "intl": true,
-            "oppRank": 69,
-            "ownRank": 14,
-            "oppFactor": 1.137,
-            "mismatch": true,
+            "oppRank": 76,
+            "ownRank": 55,
+            "oppFactor": 1.043,
+            "mismatch": false,
             "pWin": null,
             "pLose": null,
             "oddsBooks": null,
             "marketFactor": null,
             "lockedAt": null,
-            "expected": 66.38,
+            "expected": 67.24,
             "blocked": null
           },
           {
@@ -1208,42 +1208,42 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:6afc5a41-2d2e-4e47-a3ee-c9182c2f890a",
-          "player": "Zachary Athekame",
-          "slug": "zachary-athekame",
+          "id": "ComposeTeamBenchCard:31739f1e-8074-4daf-96dd-47c03af25930",
+          "player": "Dara O'Shea",
+          "slug": "dara-o-shea",
           "position": "DF",
-          "average": 60,
-          "bonus": 1.07,
+          "average": 59,
+          "bonus": 1.04,
           "starterPct": null,
-          "startRate": 0.75,
+          "startRate": 1,
           "oddsKnown": false,
           "onGameSheet": false,
           "reliability": null,
-          "formL5": 76,
-          "picture": "https://assets.sorare.com/cardsamplepicture/412c34d9-fb94-4dd7-af41-638fa1bbcd7e/picture/tinified-9dc3fc082484b7951b28d2e7b7a3eadc.png",
+          "formL5": 65,
+          "picture": "https://assets.sorare.com/cardsamplepicture/8c54996c-62a9-42a1-bb20-3ed894b54c4b/picture/tinified-7d966b41abbbcafa69655ed6df3a9725.png",
           "rarity": "common",
-          "gameId": "Game:ea442a64-1951-4e74-8758-5dc862976624",
-          "kickoff": "2026-10-06T18:45:00Z",
-          "team": "Switzerland",
-          "teamSlug": "switzerland",
-          "opponent": "North Macedonia",
-          "opponentCode": "MKD",
-          "code": "SUI",
+          "gameId": "Game:e509c0f4-3692-4a87-a06d-26dd2dc1bef6",
+          "kickoff": "2026-10-04T18:45:00Z",
+          "team": "Ireland",
+          "teamSlug": "republic-of-ireland",
+          "opponent": "Israel",
+          "opponentCode": "ISR",
+          "code": "IRL",
           "rank": null,
           "opponentRank": null,
           "home": true,
           "competition": "UEFA Nations League",
           "intl": true,
-          "oppRank": 69,
-          "ownRank": 14,
-          "oppFactor": 1.137,
-          "mismatch": true,
+          "oppRank": 76,
+          "ownRank": 55,
+          "oppFactor": 1.043,
+          "mismatch": false,
           "pWin": null,
           "pLose": null,
           "oddsBooks": null,
           "marketFactor": null,
           "lockedAt": null,
-          "expected": 66.38,
+          "expected": 67.24,
           "blocked": null
         },
         {
@@ -1325,11 +1325,11 @@
           "blocked": null
         }
       ],
-      "projected": 339.4
+      "projected": 341.5
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Team entered, locks Mon 05:45 am Sydney. The squad's top three lineups together need 1060; this one is expected to add about 288.",
+      "status": "Team entered, locks Mon 05:45 am Sydney. The squad's top three lineups together need 1060; this one is expected to add about 310.",
       "tone": "good",
       "lockAt": "2026-10-04T18:45:00Z",
       "isSquad": true,
@@ -1367,29 +1367,29 @@
           {
             "actual": null,
             "scoreStatus": "PENDING",
-            "teamSlug": "portugal",
-            "name": "Renato Veiga",
-            "player": "Renato Veiga",
-            "slug": "renato-de-palma-veiga",
+            "teamSlug": "republic-of-ireland",
+            "name": "Dara O'Shea",
+            "player": "Dara O'Shea",
+            "slug": "dara-o-shea",
             "pos": "DF",
             "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/52a7a606-d9e8-404a-ad71-d3cef34a8c2e/picture/tinified-942dd9d9d147d525ae66199b213992f4.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/52a7a606-d9e8-404a-ad71-d3cef34a8c2e/picture/tinified-942dd9d9d147d525ae66199b213992f4.png",
+            "pic": "https://assets.sorare.com/cardsamplepicture/8c54996c-62a9-42a1-bb20-3ed894b54c4b/picture/tinified-7d966b41abbbcafa69655ed6df3a9725.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/8c54996c-62a9-42a1-bb20-3ed894b54c4b/picture/tinified-7d966b41abbbcafa69655ed6df3a9725.png",
             "captain": true,
-            "exp": 55.95,
-            "expected": 55.95,
-            "opp": "Norway",
-            "opponent": "Norway",
+            "exp": 67.24,
+            "expected": 67.24,
+            "opp": "Israel",
+            "opponent": "Israel",
             "home": true,
-            "average": 52,
-            "formL5": 50,
+            "average": 59,
+            "formL5": 65,
             "intl": true,
             "pWin": null,
             "pLose": null,
             "marketFactor": null,
-            "oppRank": 19,
-            "ownRank": 7,
-            "oppFactor": 1.055,
+            "oppRank": 76,
+            "ownRank": 55,
+            "oppFactor": 1.043,
             "locked": false,
             "kickoff": "2026-10-04T18:45:00Z"
           },
@@ -1454,37 +1454,37 @@
           {
             "actual": null,
             "scoreStatus": "PENDING",
-            "teamSlug": "netherlands",
-            "name": "Denzel Dumfries",
-            "player": "Denzel Dumfries",
-            "slug": "denzel-dumfries",
+            "teamSlug": "portugal",
+            "name": "Renato Veiga",
+            "player": "Renato Veiga",
+            "slug": "renato-de-palma-veiga",
             "pos": "DF",
             "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/e9ffabc5-37db-485b-ad91-9a76cd27cc72/picture/tinified-c7e62bbe1dbd76438cfec01d36b68273.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/e9ffabc5-37db-485b-ad91-9a76cd27cc72/picture/tinified-c7e62bbe1dbd76438cfec01d36b68273.png",
+            "pic": "https://assets.sorare.com/cardsamplepicture/52a7a606-d9e8-404a-ad71-d3cef34a8c2e/picture/tinified-942dd9d9d147d525ae66199b213992f4.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/52a7a606-d9e8-404a-ad71-d3cef34a8c2e/picture/tinified-942dd9d9d147d525ae66199b213992f4.png",
             "captain": false,
-            "exp": 49.71,
-            "expected": 49.71,
-            "opp": "Serbia",
-            "opponent": "Serbia",
+            "exp": 55.95,
+            "expected": 55.95,
+            "opp": "Norway",
+            "opponent": "Norway",
             "home": true,
-            "average": 46,
-            "formL5": 47,
+            "average": 52,
+            "formL5": 50,
             "intl": true,
             "pWin": null,
             "pLose": null,
             "marketFactor": null,
-            "oppRank": 40,
-            "ownRank": 9,
-            "oppFactor": 1.11,
+            "oppRank": 19,
+            "ownRank": 7,
+            "oppFactor": 1.055,
             "locked": false,
             "kickoff": "2026-10-04T18:45:00Z"
           }
         ],
-        "projected": 287.5,
+        "projected": 310.46,
         "scoredSoFar": 0,
         "played": 0,
-        "expectedFinal": 288.57
+        "expectedFinal": 311.75
       },
       "poolStrength": {
         "strong": 0,
@@ -1545,7 +1545,7 @@
           "nextGame": "2026-10-04T18:45:00Z"
         },
         {
-          "name": "Renato Veiga",
+          "name": "Dara O'Shea",
           "captain": true,
           "locked": false,
           "nextGame": "2026-10-04T18:45:00Z"
@@ -1563,7 +1563,7 @@
           "nextGame": "2026-10-04T18:45:00Z"
         },
         {
-          "name": "Denzel Dumfries",
+          "name": "Renato Veiga",
           "captain": false,
           "locked": false,
           "nextGame": "2026-10-04T18:45:00Z"
@@ -1571,14 +1571,14 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 260.74,
+        "projected": 263.1,
         "lock": "2026-10-04T18:45:00Z",
-        "shortfall": 799.3,
+        "shortfall": 796.9,
         "tradedPointsForTime": 0,
         "captain": "renato-de-palma-veiga",
         "captainPoints": 26.9,
         "withinReach": false,
-        "enteredProjected": 287.5,
+        "enteredProjected": 310.46,
         "five": [
           {
             "id": "ComposeTeamBenchCard:a6be9ca0-2ba3-48fd-ae84-fc950a4459b1",
@@ -1620,19 +1620,19 @@
             "blocked": null
           },
           {
-            "id": "ComposeTeamBenchCard:39c748d1-641c-40f5-bcba-c858f370cef0",
+            "id": "ComposeTeamBenchCard:5606af6e-5fe6-4c33-a3c5-1847d1864d92",
             "player": "Denzel Dumfries",
             "slug": "denzel-dumfries",
             "position": "DF",
             "average": 46,
-            "bonus": 1.05,
+            "bonus": 1.1,
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
             "onGameSheet": false,
             "reliability": null,
             "formL5": 47,
-            "picture": "https://assets.sorare.com/cardsamplepicture/e9ffabc5-37db-485b-ad91-9a76cd27cc72/picture/tinified-c7e62bbe1dbd76438cfec01d36b68273.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/66708b6f-4b0a-4f5f-b7de-f93fa4be2f9a/picture/tinified-3648c01a300bcfaac844126fb0f16007.png",
             "rarity": "common",
             "gameId": "Game:81ad5e8a-fc81-4dd1-938a-58c61bf23ece",
             "kickoff": "2026-10-04T18:45:00Z",
@@ -1655,7 +1655,7 @@
             "oddsBooks": null,
             "marketFactor": null,
             "lockedAt": null,
-            "expected": 49.71,
+            "expected": 52.07,
             "blocked": null
           },
           {
@@ -1818,19 +1818,19 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:39c748d1-641c-40f5-bcba-c858f370cef0",
+          "id": "ComposeTeamBenchCard:5606af6e-5fe6-4c33-a3c5-1847d1864d92",
           "player": "Denzel Dumfries",
           "slug": "denzel-dumfries",
           "position": "DF",
           "average": 46,
-          "bonus": 1.05,
+          "bonus": 1.1,
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
           "onGameSheet": false,
           "reliability": null,
           "formL5": 47,
-          "picture": "https://assets.sorare.com/cardsamplepicture/e9ffabc5-37db-485b-ad91-9a76cd27cc72/picture/tinified-c7e62bbe1dbd76438cfec01d36b68273.png",
+          "picture": "https://assets.sorare.com/cardsamplepicture/66708b6f-4b0a-4f5f-b7de-f93fa4be2f9a/picture/tinified-3648c01a300bcfaac844126fb0f16007.png",
           "rarity": "common",
           "gameId": "Game:81ad5e8a-fc81-4dd1-938a-58c61bf23ece",
           "kickoff": "2026-10-04T18:45:00Z",
@@ -1853,7 +1853,7 @@
           "oddsBooks": null,
           "marketFactor": null,
           "lockedAt": null,
-          "expected": 49.71,
+          "expected": 52.07,
           "blocked": null
         },
         {
@@ -1974,10 +1974,37 @@
           "blocked": null
         }
       ],
-      "projected": 244.5
+      "projected": 254.4
     }
   ],
   "fixtures": [
+    {
+      "kickoff": "2026-10-04T18:45:00Z",
+      "competition": "UEFA Nations League",
+      "team": "Ireland",
+      "code": "IRL",
+      "rank": null,
+      "opponent": "Israel",
+      "opponentCode": "ISR",
+      "opponentRank": null,
+      "intl": true,
+      "ownRank": 55,
+      "oppRank": 76,
+      "pWin": null,
+      "pLose": null,
+      "oppFactor": 1.043,
+      "home": true,
+      "players": [
+        "Dara O'Shea",
+        "Troy Parrott"
+      ],
+      "points": 115.4,
+      "bestStarter": null,
+      "surfaces": [
+        "my set",
+        "team set (Loadshift)"
+      ]
+    },
     {
       "kickoff": "2026-10-04T18:45:00Z",
       "competition": "UEFA Nations League",
@@ -2022,32 +2049,7 @@
       "players": [
         "Denzel Dumfries"
       ],
-      "points": 49.7,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
-    {
-      "kickoff": "2026-10-04T18:45:00Z",
-      "competition": "UEFA Nations League",
-      "team": "Ireland",
-      "code": "IRL",
-      "rank": null,
-      "opponent": "Israel",
-      "opponentCode": "ISR",
-      "opponentRank": null,
-      "intl": true,
-      "ownRank": 55,
-      "oppRank": 76,
-      "pWin": null,
-      "pLose": null,
-      "oppFactor": 1,
-      "home": true,
-      "players": [
-        "Troy Parrott"
-      ],
-      "points": 48.2,
+      "points": 52.1,
       "bestStarter": null,
       "surfaces": [
         "team set (Loadshift)"
@@ -2101,31 +2103,6 @@
       "bestStarter": null,
       "surfaces": [
         "team set (Loadshift)"
-      ]
-    },
-    {
-      "kickoff": "2026-10-06T18:45:00Z",
-      "competition": "UEFA Nations League",
-      "team": "Switzerland",
-      "code": "SUI",
-      "rank": null,
-      "opponent": "North Macedonia",
-      "opponentCode": "MKD",
-      "opponentRank": null,
-      "intl": true,
-      "ownRank": 14,
-      "oppRank": 69,
-      "pWin": null,
-      "pLose": null,
-      "oppFactor": 1.137,
-      "home": true,
-      "players": [
-        "Zachary Athekame"
-      ],
-      "points": 66.4,
-      "bestStarter": null,
-      "surfaces": [
-        "my set"
       ]
     },
     {
