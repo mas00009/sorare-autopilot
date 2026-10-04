@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T18:50:52.082Z",
+  "generatedAt": "2026-10-04T18:56:47.237Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-05T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791139833343,
-    "reason": "last run 0m ago, next due in 180m (lock in 1434m)"
+    "lastRunAt": 1791140189977,
+    "reason": "last run 0m ago, next due in 180m (lock in 1428m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -89,10 +89,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 628.2856,
+      "squadScore": 642.8832,
       "lineupId": "Tasks::TaskLineup:fe800d0a-8018-4517-8cc6-d5b11409592a",
       "state": "READY",
-      "score": 147.45,
+      "score": 148.72,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,7 +101,7 @@
           "slug": "bart-verbruggen",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 36.77,
+          "score": 36.87,
           "status": "REVIEWING",
           "kickoff": "2026-10-10T14:00:00Z"
         },
@@ -119,7 +119,7 @@
           "slug": "morten-hjulmand",
           "position": "Midfielder",
           "captain": false,
-          "score": 35.67,
+          "score": 33.9,
           "status": "REVIEWING",
           "kickoff": "2026-10-10T14:15:00Z"
         },
@@ -137,7 +137,7 @@
           "slug": "renato-de-palma-veiga",
           "position": "Defender",
           "captain": false,
-          "score": 36.4,
+          "score": 39.33,
           "status": "REVIEWING",
           "kickoff": "2026-10-10T19:00:00Z"
         }
@@ -1329,14 +1329,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 147 scored so far, 4 of 5 played. The squad's top three lineups together need 1060; the squad has 628 so far.",
+      "status": "Locked and playing. 149 scored so far, 4 of 5 played. The squad's top three lineups together need 1060; the squad has 643 so far.",
       "tone": "good",
       "lockAt": "2026-10-04T18:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 36.77,
+            "actual": 36.87,
             "scoreStatus": "REVIEWING",
             "teamSlug": "netherlands",
             "name": "Bart Verbruggen",
@@ -1394,7 +1394,7 @@
             "kickoff": "2026-10-04T18:45:00Z"
           },
           {
-            "actual": 35.67,
+            "actual": 33.9,
             "scoreStatus": "REVIEWING",
             "teamSlug": "denmark",
             "name": "Morten Hjulmand",
@@ -1452,7 +1452,7 @@
             "kickoff": "2026-10-04T18:45:00Z"
           },
           {
-            "actual": 36.4,
+            "actual": 39.33,
             "scoreStatus": "REVIEWING",
             "teamSlug": "portugal",
             "name": "Renato Veiga",
@@ -1482,9 +1482,9 @@
           }
         ],
         "projected": 310.46,
-        "scoredSoFar": 147.45,
+        "scoredSoFar": 148.71,
         "played": 4,
-        "expectedFinal": 248.31
+        "expectedFinal": 249.57
       },
       "poolStrength": {
         "strong": 0,
@@ -1494,7 +1494,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 628.2856
+        "scoreSoFar": 642.8832
       },
       "level": 2,
       "lives": null,
