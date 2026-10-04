@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T17:50:34.634Z",
+  "generatedAt": "2026-10-04T17:56:35.070Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-04T18:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1791136216175,
-    "reason": "last run 0m ago, next due in 5m (lock in 54m)"
+    "lastRunAt": 1791136577157,
+    "reason": "last run 0m ago, next due in 5m (lock in 48m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -89,10 +89,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 545.055,
+      "squadScore": 614.705,
       "lineupId": "Tasks::TaskLineup:fe800d0a-8018-4517-8cc6-d5b11409592a",
       "state": "READY",
-      "score": 108.85,
+      "score": 147.35,
       "finished": false,
       "cleared": false,
       "players": [
@@ -128,8 +128,8 @@
           "slug": "troy-parrott",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 38.5,
+          "status": "REVIEWING",
           "kickoff": "2026-10-04T18:45:00Z"
         },
         {
@@ -142,7 +142,7 @@
           "kickoff": "2026-10-04T18:45:00Z"
         }
       ],
-      "scored": 3
+      "scored": 4
     },
     {
       "surface": "my set",
@@ -1329,7 +1329,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 109 scored so far, 3 of 5 played. The squad's top three lineups together need 1060; the squad has 545 so far.",
+      "status": "Locked and playing. 147 scored so far, 4 of 5 played. The squad's top three lineups together need 1060; the squad has 615 so far.",
       "tone": "good",
       "lockAt": "2026-10-04T18:45:00Z",
       "isSquad": true,
@@ -1423,8 +1423,8 @@
             "kickoff": "2026-10-04T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 38.5,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "republic-of-ireland",
             "name": "Troy Parrott",
             "player": "Troy Parrott",
@@ -1482,9 +1482,9 @@
           }
         ],
         "projected": 310.46,
-        "scoredSoFar": 108.85,
-        "played": 3,
-        "expectedFinal": 260.2
+        "scoredSoFar": 147.35,
+        "played": 4,
+        "expectedFinal": 248.21
       },
       "poolStrength": {
         "strong": 0,
@@ -1494,7 +1494,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 545.055
+        "scoreSoFar": 614.705
       },
       "level": 2,
       "lives": null,
@@ -1668,7 +1668,7 @@
             "starterPct": null,
             "startRate": 0.7,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 68,
             "picture": "https://assets.sorare.com/cardsamplepicture/a6f3ed0e-8d2f-4221-aab3-a1167ff46311/picture/tinified-83c5bd95b4364db7bd83561a6238a180.png",
@@ -1866,7 +1866,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 68,
           "picture": "https://assets.sorare.com/cardsamplepicture/a6f3ed0e-8d2f-4221-aab3-a1167ff46311/picture/tinified-83c5bd95b4364db7bd83561a6238a180.png",
