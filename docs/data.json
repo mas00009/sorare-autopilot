@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T17:41:38.325Z",
+  "generatedAt": "2026-10-05T17:48:00.507Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-05T18:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1791222079284,
-    "reason": "last run 0m ago, next due in 5m (lock in 63m)"
+    "lastRunAt": 1791222457055,
+    "reason": "last run 0m ago, next due in 5m (lock in 57m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -1156,7 +1156,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 0
+        "scoreSoFar": 381.5
       },
       "level": 0,
       "lives": null,
@@ -1212,7 +1212,7 @@
           "starterPct": null,
           "startRate": 0.8666666666666667,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 64,
           "picture": "https://assets.sorare.com/cardsamplepicture/91f935bd-5e32-4847-84aa-f740d44c0b77/picture/tinified-16504a398794b5385dbcd2debae138b3.png",
@@ -1290,7 +1290,7 @@
           "starterPct": null,
           "startRate": 0.8333333333333333,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 39,
           "picture": "https://assets.sorare.com/cardsamplepicture/da67d3d8-a319-4a6d-a18c-4408d31321d6/picture/tinified-351affefa6ba8f2bec4f184a8e8b7941.png",
@@ -1368,7 +1368,7 @@
           "starterPct": null,
           "startRate": 0.8333333333333333,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 39,
           "picture": "https://assets.sorare.com/cardsamplepicture/79f36680-211d-45ad-87e7-41bce11c6812/picture/tinified-ef109a9b20017a9f3874cd75a81c4b50.png",
