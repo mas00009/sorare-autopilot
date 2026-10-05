@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T07:09:06.162Z",
+  "generatedAt": "2026-10-05T07:15:07.985Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-05T18:45:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1791184128213,
-    "reason": "last run 0m ago, next due in 60m (lock in 696m)"
+    "lastRunAt": 1791184490614,
+    "reason": "last run 0m ago, next due in 60m (lock in 690m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -458,9 +458,9 @@
       {
         "title": "Collect Spanish players in LaLiga",
         "gems": 30,
-        "progress": 204,
+        "progress": 205,
         "target": 279,
-        "remaining": 75,
+        "remaining": 74,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": []
