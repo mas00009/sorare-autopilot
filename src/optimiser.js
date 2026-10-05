@@ -15,7 +15,21 @@ import { oddsFactor, ODDS_DEFAULTS } from './odds.js';
 
 export const DEFAULTS = {
   /** Reject anyone below this starter probability, in basis points. */
-  minStarterBp: 6000,
+  minStarterBp: 8000,
+  /**
+   * With no odds published, how far a perfect start record can be trusted.
+   * Measured: of internationals in this pool where the player had started
+   * every earlier game of the window, 81% started again (131 of 161), and 29
+   * of 35 team-set picks without odds actually played (83%). Treating a clean
+   * record as certain made an unknown outrank a published 85% starter. At 0.8
+   * a published 80%+ starter is always at least as safe a pick.
+   *
+   * Applied to the ORDER cards are picked and captained in, not to the
+   * projection: the entry gate and SPREAD were measured on the undimmed
+   * scale, and dimming the total would stop the personal board entering at
+   * all on an international week.
+   */
+  unknownOddsTrust: 0.8,
   /** With no odds published, reject anyone whose recent start rate is below this. */
   minStartRate: 0.7,
   /** A substitute appearance is worth roughly this fraction of a start. */
@@ -263,9 +277,10 @@ export function pickLineup(benchNodes, options = {}) {
   const opts = { ...DEFAULTS, ...options, require: { ...DEFAULTS.require, ...(options.require ?? {}) } };
 
   const all = benchNodes.map((n) => describe(n, opts));
+  const rank = (c) => c.expected * (c.oddsKnown ? 1 : opts.unknownOddsTrust);
   const usable = all
     .filter((c) => !c.blocked && c.expected > 0)
-    .sort((a, b) => b.expected - a.expected);
+    .sort((a, b) => rank(b) - rank(a));
 
   const chosen = [];
   const perGame = new Map();
@@ -342,11 +357,14 @@ export function pickLineup(benchNodes, options = {}) {
   // expected/bonus, not expected. A high-bonus card can out-rank a bigger
   // scorer on expected points and still be the weaker captain.
   const uplift = (c) => (c.expected / bonusMultiplier(c.bonus)) * opts.captainBonus;
+  // The armband goes where it is safest to pay: a captain who does not play
+  // loses the bonus too, as O'Shea did on 4 Oct.
+  const captainValue = (c) => uplift(c) * (c.oddsKnown ? 1 : opts.unknownOddsTrust);
   // Keepers score steadily but rarely produce the big hauls the armband is
   // worth spending on, so captain an outfielder unless there is nobody else.
   const eligible = chosen.filter((c) => c.position !== 'GK');
   const captain = (eligible.length ? eligible : chosen)
-    .reduce((a, b) => (uplift(b) > uplift(a) ? b : a));
+    .reduce((a, b) => (captainValue(b) > captainValue(a) ? b : a));
   const captainPoints = Number(uplift(captain).toFixed(2));
   const projected = chosen.reduce((s, c) => s + c.expected, 0) + captainPoints;
 

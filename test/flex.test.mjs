@@ -135,7 +135,7 @@ test('recent start rate stands in for availability until odds are published', as
   const { priorAvailability, expectedPoints, DEFAULTS } = await import('../src/optimiser.js');
   const base = { averageScore: 60, formL5: 60, bonus: 1.0, position: 'DF',
     player: { anyFutureGameStats: [{ anyGame: { date: '2026-10-01T18:00:00Z', homeTeam: { slug: 'a', name: 'A' }, awayTeam: { slug: 'b', name: 'B' } }, anyTeam: { slug: 'a', name: 'A' } }] } };
-  // No history: nothing to go on, so fully available.
+  // No history: nothing to go on, so fully available on the projection scale.
   assert.equal(priorAvailability(base), 1);
   // A regular starter is barely dimmed; a bench player is heavily dimmed but never zeroed.
   const regular = { ...base, startRate: 0.9, playRate: 1.0 };
@@ -148,6 +148,16 @@ test('recent start rate stands in for availability until odds are published', as
     footballPlayingStatusOdds: { starterOddsBasisPoints: 9500, substituteOddsBasisPoints: 300, nonPlayingOddsBasisPoints: 200, reliability: 1 } }] } };
   assert.ok(expectedPoints(withOdds) > expectedPoints(fringe) * 3, 'odds should override a poor start rate');
   assert.equal(DEFAULTS.substituteWeight, 0.35);
+  // Picking order: a published 80% starter goes in ahead of an equal player with no odds.
+  const { pickLineup } = await import('../src/optimiser.js');
+  const mk = (slug, pos, g, o) => ({ id: slug, averageScore: 60, formL5: 60, bonus: 1, position: pos, activeSuspensions: [],
+    startRate: 1, playRate: 1,
+    player: { slug, displayName: slug, activeInjuries: [], anyFutureGameStats: [{ anyGame: { id: g, date: '2026-10-01T18:00:00Z' }, anyTeam: { slug: 't' + g, name: 'T' + g },
+      footballPlayingStatusOdds: o ? { starterOddsBasisPoints: 8500, substituteOddsBasisPoints: 1000, nonPlayingOddsBasisPoints: 500, reliability: 1 } : null }] } });
+  const pool = [mk('gk', 'GK', 1), mk('df', 'DF', 2), mk('md', 'MD', 3), mk('fw', 'FW', 4),
+    { ...mk('unknown', 'DF', 5), averageScore: 62, formL5: 62 }, mk('published', 'DF', 6, true)];
+  const p = pickLineup(pool);
+  assert.ok(p.chosen.some((c) => c.slug === 'published'), 'published 85% beats a slightly better unknown');
 });
 
 test('bookmaker odds: de-vigged, matched by name, applied by position, never to internationals', async () => {
