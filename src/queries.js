@@ -363,6 +363,7 @@ export const Q_START_RATES = `
       slug
       anyGameStats(last: 14) {
         playedInGame
+        anyGame { date }
         anyTeam { __typename }
         ... on PlayerGameStats { gameStarted }
       }

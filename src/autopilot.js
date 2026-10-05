@@ -218,8 +218,13 @@ async function withStartRates(nodes) {
     try {
       const d = await gql(Q_START_RATES, { slugs });
       for (const p of d.players ?? []) {
-        const all = (p.anyGameStats ?? []).slice(-10);
-        const intl = (p.anyGameStats ?? []).filter((x) => x.anyTeam?.__typename === 'NationalTeam').slice(-6);
+        // Sorare returns these NEWEST first. Taking slice(-10) here judged
+        // every player on the oldest ten of fourteen and ignored his latest
+        // games entirely - including the internationals the blend is for.
+        const games = (p.anyGameStats ?? []).slice()
+          .sort((a, b) => String(b.anyGame?.date ?? '').localeCompare(String(a.anyGame?.date ?? '')));
+        const all = games.slice(0, 10);
+        const intl = games.filter((x) => x.anyTeam?.__typename === 'NationalTeam').slice(0, 6);
         const rate = (g) => (g.length ? g.filter((x) => x.gameStarted).length / g.length : null);
         const play = (g) => (g.length ? g.filter((x) => x.playedInGame).length / g.length : null);
         RATE_CACHE.rates.set(p.slug, {
@@ -551,13 +556,31 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
     || step?.minimumLineupsToStartStep != null
     || step?.collaborative === true;
 
-  const picked = pickAcrossWindow(bench, {
+  const pickWith = (extra) => pickAcrossWindow(bench, {
     ...options,
+    ...extra,
     target: collaborative ? null : (step?.target ?? null),
     reach: SPREAD,
     // Sorare's own number for this step, when it gives one.
     ...(step?.engineConfiguration?.captain != null ? { captainBonus: step.engineConfiguration.captain } : {}),
   });
+  let picked = pickWith({});
+  // A squad step costs no heart and an empty slot adds nothing to the squad's
+  // top three, so any complete five beats none. On 5 Oct the strict filters
+  // left no full side and the team set went in empty all day. Loosen them in
+  // order of how little each costs, and say which one was needed.
+  let relaxed = null;
+  if (!picked.ok && collaborative) {
+    const steps = [
+      ['both sides of one match allowed', { oneSidePerMatch: false }],
+      ['start-rate and starter-odds floors lowered', { oneSidePerMatch: false, minStartRate: 0.5, minStarterBp: 4000 }],
+      ['availability filters off', { oneSidePerMatch: false, minStartRate: 0, minStarterBp: 0 }],
+    ];
+    for (const [why, extra] of steps) {
+      const p = pickWith(extra);
+      if (p.ok) { picked = p; relaxed = why; break; }
+    }
+  }
   if (!picked.ok) return { skipped: true, reason: picked.reason, stepId, surface, pool: picked.pool };
 
   // A step keeps every attempt it has ever held, so myLineups[0] is often a
@@ -746,6 +769,7 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
     stepId, surface, target: step?.target,
     dead,
     action: dryRun ? 'would-submit' : 'submitted',
+    ...(relaxed ? { reason: `No full side passed the usual filters, so entered with ${relaxed}.`, relaxed } : {}),
     fresh: !existing, spentAttempts, collaborative,
     inPlay: picked.chosen.map((c) => ({
       name: c.player, slug: c.slug, pos: c.position, pic: c.picture,
