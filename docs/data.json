@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T20:53:54.291Z",
+  "generatedAt": "2026-10-06T20:59:15.343Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-09T18:30:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1791319696356,
-    "reason": "last run 6m ago, next due in 174m (lock in 4176m)"
+    "reason": "last run 11m ago, next due in 169m (lock in 4171m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -510,9 +510,9 @@
       {
         "title": "Collect Goalkeepers",
         "gems": 10,
-        "progress": 79,
+        "progress": 80,
         "target": 112,
-        "remaining": 33,
+        "remaining": 32,
         "competition": null,
         "group": null,
         "teams": []
