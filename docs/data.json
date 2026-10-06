@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T19:21:26.425Z",
+  "generatedAt": "2026-10-06T19:27:17.616Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-09T18:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791314467654,
-    "reason": "last run 0m ago, next due in 180m (lock in 4269m)"
+    "lastRunAt": 1791314818433,
+    "reason": "last run 0m ago, next due in 180m (lock in 4263m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 734.5482,
+      "squadScore": 805.3146,
       "lineupId": "Tasks::TaskLineup:ea54b803-300f-4fbb-8723-1f8637fed980",
       "state": "READY",
-      "score": 163.08,
+      "score": 164.17,
       "finished": false,
       "cleared": false,
       "players": [
@@ -225,7 +225,7 @@
           "slug": "stole-dimitrievski",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 43.16,
+          "score": 41.69,
           "status": "REVIEWING",
           "kickoff": "2026-10-11T19:00:00Z"
         },
@@ -243,7 +243,7 @@
           "slug": "daniel-olmo-carvajal",
           "position": "Midfielder",
           "captain": false,
-          "score": 39.66,
+          "score": 39.76,
           "status": "REVIEWING",
           "kickoff": "2026-10-10T16:30:00Z"
         },
@@ -252,7 +252,7 @@
           "slug": "alejandro-baena-rodriguez",
           "position": "Forward",
           "captain": false,
-          "score": 37.75,
+          "score": 39.31,
           "status": "REVIEWING",
           "kickoff": "2026-10-10T14:15:00Z"
         },
@@ -261,7 +261,7 @@
           "slug": "lewis-hall-2004-09-08",
           "position": "Defender",
           "captain": false,
-          "score": 42.52,
+          "score": 43.42,
           "status": "REVIEWING",
           "kickoff": "2026-10-12T19:00:00Z"
         }
@@ -1205,14 +1205,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 163 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 735 so far.",
+      "status": "Locked and playing. 164 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 805 so far.",
       "tone": "good",
       "lockAt": "2026-10-06T18:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 43.16,
+            "actual": 41.69,
             "scoreStatus": "REVIEWING",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
@@ -1270,7 +1270,7 @@
             "kickoff": "2026-10-06T18:45:00Z"
           },
           {
-            "actual": 39.66,
+            "actual": 39.76,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Dani Olmo",
@@ -1299,7 +1299,7 @@
             "kickoff": "2026-10-06T18:45:00Z"
           },
           {
-            "actual": 37.75,
+            "actual": 39.31,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Álex Baena",
@@ -1328,7 +1328,7 @@
             "kickoff": "2026-10-06T18:45:00Z"
           },
           {
-            "actual": 42.52,
+            "actual": 43.42,
             "scoreStatus": "REVIEWING",
             "teamSlug": "england",
             "name": "Lewis Hall",
@@ -1358,9 +1358,9 @@
           }
         ],
         "projected": 317.88,
-        "scoredSoFar": 163.09,
+        "scoredSoFar": 164.18,
         "played": 4,
-        "expectedFinal": 276.93
+        "expectedFinal": 278.01
       },
       "poolStrength": {
         "strong": 0,
@@ -1370,7 +1370,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 734.5482
+        "scoreSoFar": 805.3146
       },
       "level": 1,
       "lives": null,
