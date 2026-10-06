@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T19:27:17.616Z",
+  "generatedAt": "2026-10-06T19:33:09.432Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-09T18:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791314818433,
-    "reason": "last run 0m ago, next due in 180m (lock in 4263m)"
+    "lastRunAt": 1791315170064,
+    "reason": "last run 0m ago, next due in 180m (lock in 4257m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 805.3146,
+      "squadScore": 820.401,
       "lineupId": "Tasks::TaskLineup:ea54b803-300f-4fbb-8723-1f8637fed980",
       "state": "READY",
-      "score": 164.17,
+      "score": 158.21,
       "finished": false,
       "cleared": false,
       "players": [
@@ -225,7 +225,7 @@
           "slug": "stole-dimitrievski",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 41.69,
+          "score": 35.7,
           "status": "REVIEWING",
           "kickoff": "2026-10-11T19:00:00Z"
         },
@@ -243,7 +243,7 @@
           "slug": "daniel-olmo-carvajal",
           "position": "Midfielder",
           "captain": false,
-          "score": 39.76,
+          "score": 37.9,
           "status": "REVIEWING",
           "kickoff": "2026-10-10T16:30:00Z"
         },
@@ -252,7 +252,7 @@
           "slug": "alejandro-baena-rodriguez",
           "position": "Forward",
           "captain": false,
-          "score": 39.31,
+          "score": 41.29,
           "status": "REVIEWING",
           "kickoff": "2026-10-10T14:15:00Z"
         },
@@ -261,7 +261,7 @@
           "slug": "lewis-hall-2004-09-08",
           "position": "Defender",
           "captain": false,
-          "score": 43.42,
+          "score": 43.32,
           "status": "REVIEWING",
           "kickoff": "2026-10-12T19:00:00Z"
         }
@@ -798,8 +798,8 @@
       ],
       "plan": {
         "clearsTarget": true,
-        "projected": 364.4,
-        "lock": "2026-10-10T16:30:00Z",
+        "projected": 366.54,
+        "lock": "2026-10-10T14:15:00Z",
         "shortfall": null,
         "tradedPointsForTime": 0,
         "captain": "matthias-ginter",
@@ -925,42 +925,42 @@
             "blocked": null
           },
           {
-            "id": "ComposeTeamBenchCard:ccf7262d-efac-49c5-8cd5-9eae3223d186",
-            "player": "Iñigo Vicente",
-            "slug": "inigo-vicente-elorduy",
+            "id": "ComposeTeamBenchCard:8f8f090f-b44f-4c60-b093-f5d03656c7f2",
+            "player": "Álex Baena",
+            "slug": "alejandro-baena-rodriguez",
             "position": "FW",
-            "average": 72,
+            "average": 58,
             "bonus": 1.04,
             "starterPct": null,
-            "startRate": 0.8,
+            "startRate": 0.9,
             "oddsKnown": false,
             "onGameSheet": false,
             "reliability": null,
-            "formL5": 60,
-            "picture": "https://assets.sorare.com/cardsamplepicture/430d8e95-0c8d-4d1a-b168-2a8cf77777f0/picture/tinified-d6dfa0252f3298f6f372dd4377979957.png",
+            "formL5": 67,
+            "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
             "rarity": "common",
-            "gameId": "Game:44f6d48f-ca11-4510-8eda-6faa4eeb77cc",
-            "kickoff": "2026-10-11T19:00:00Z",
-            "team": "Real Racing Club de Santander",
-            "teamSlug": "racing-santander-santander",
-            "opponent": "Valencia CF",
-            "opponentCode": "VCF",
-            "code": "RAC",
-            "rank": 16,
-            "opponentRank": 19,
-            "home": true,
+            "gameId": "Game:6d88198e-2acf-41ca-b87d-ed2ae7861def",
+            "kickoff": "2026-10-10T14:15:00Z",
+            "team": "Atlético de Madrid",
+            "teamSlug": "atletico-madrid-madrid",
+            "opponent": "D. Alavés",
+            "opponentCode": "ALA",
+            "code": "ATM",
+            "rank": 2,
+            "opponentRank": 6,
+            "home": false,
             "competition": "Primera División",
             "intl": false,
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
             "mismatch": false,
-            "pWin": 0.431,
-            "pLose": 0.301,
-            "oddsBooks": 20,
-            "marketFactor": 1.014,
+            "pWin": 0.519,
+            "pLose": 0.226,
+            "oddsBooks": 19,
+            "marketFactor": 1.032,
             "lockedAt": null,
-            "expected": 60.57,
+            "expected": 62.71,
             "blocked": null
           },
           {
@@ -1123,42 +1123,42 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:ccf7262d-efac-49c5-8cd5-9eae3223d186",
-          "player": "Iñigo Vicente",
-          "slug": "inigo-vicente-elorduy",
+          "id": "ComposeTeamBenchCard:8f8f090f-b44f-4c60-b093-f5d03656c7f2",
+          "player": "Álex Baena",
+          "slug": "alejandro-baena-rodriguez",
           "position": "FW",
-          "average": 72,
+          "average": 58,
           "bonus": 1.04,
           "starterPct": null,
-          "startRate": 0.8,
+          "startRate": 0.9,
           "oddsKnown": false,
           "onGameSheet": false,
           "reliability": null,
-          "formL5": 60,
-          "picture": "https://assets.sorare.com/cardsamplepicture/430d8e95-0c8d-4d1a-b168-2a8cf77777f0/picture/tinified-d6dfa0252f3298f6f372dd4377979957.png",
+          "formL5": 67,
+          "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
           "rarity": "common",
-          "gameId": "Game:44f6d48f-ca11-4510-8eda-6faa4eeb77cc",
-          "kickoff": "2026-10-11T19:00:00Z",
-          "team": "Real Racing Club de Santander",
-          "teamSlug": "racing-santander-santander",
-          "opponent": "Valencia CF",
-          "opponentCode": "VCF",
-          "code": "RAC",
-          "rank": 16,
-          "opponentRank": 19,
-          "home": true,
+          "gameId": "Game:6d88198e-2acf-41ca-b87d-ed2ae7861def",
+          "kickoff": "2026-10-10T14:15:00Z",
+          "team": "Atlético de Madrid",
+          "teamSlug": "atletico-madrid-madrid",
+          "opponent": "D. Alavés",
+          "opponentCode": "ALA",
+          "code": "ATM",
+          "rank": 2,
+          "opponentRank": 6,
+          "home": false,
           "competition": "Primera División",
           "intl": false,
           "oppRank": null,
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.431,
-          "pLose": 0.301,
-          "oddsBooks": 20,
-          "marketFactor": 1.014,
+          "pWin": 0.519,
+          "pLose": 0.226,
+          "oddsBooks": 19,
+          "marketFactor": 1.032,
           "lockedAt": null,
-          "expected": 60.57,
+          "expected": 62.71,
           "blocked": null
         },
         {
@@ -1201,18 +1201,18 @@
           "blocked": null
         }
       ],
-      "projected": 329.7
+      "projected": 330.4
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 164 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 805 so far.",
+      "status": "Locked and playing. 158 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 820 so far.",
       "tone": "good",
       "lockAt": "2026-10-06T18:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 41.69,
+            "actual": 35.7,
             "scoreStatus": "REVIEWING",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
@@ -1270,7 +1270,7 @@
             "kickoff": "2026-10-06T18:45:00Z"
           },
           {
-            "actual": 39.76,
+            "actual": 37.9,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Dani Olmo",
@@ -1299,7 +1299,7 @@
             "kickoff": "2026-10-06T18:45:00Z"
           },
           {
-            "actual": 39.31,
+            "actual": 41.29,
             "scoreStatus": "REVIEWING",
             "teamSlug": "spain",
             "name": "Álex Baena",
@@ -1328,7 +1328,7 @@
             "kickoff": "2026-10-06T18:45:00Z"
           },
           {
-            "actual": 43.42,
+            "actual": 43.32,
             "scoreStatus": "REVIEWING",
             "teamSlug": "england",
             "name": "Lewis Hall",
@@ -1358,9 +1358,9 @@
           }
         ],
         "projected": 317.88,
-        "scoredSoFar": 164.18,
+        "scoredSoFar": 158.21,
         "played": 4,
-        "expectedFinal": 278.01
+        "expectedFinal": 272.04
       },
       "poolStrength": {
         "strong": 0,
@@ -1370,7 +1370,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 805.3146
+        "scoreSoFar": 820.401
       },
       "level": 1,
       "lives": null,
@@ -1452,6 +1452,31 @@
   ],
   "fixtures": [
     {
+      "kickoff": "2026-10-10T14:15:00Z",
+      "competition": "Primera División",
+      "team": "Atlético de Madrid",
+      "code": "ATM",
+      "rank": 2,
+      "opponent": "D. Alavés",
+      "opponentCode": "ALA",
+      "opponentRank": 6,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.519,
+      "pLose": 0.226,
+      "oppFactor": null,
+      "home": false,
+      "players": [
+        "Álex Baena"
+      ],
+      "points": 62.7,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
+      ]
+    },
+    {
       "kickoff": "2026-10-10T16:30:00Z",
       "competition": "Premier League",
       "team": "Manchester United FC",
@@ -1522,31 +1547,6 @@
         "Maximilian Eggestein"
       ],
       "points": 141.4,
-      "bestStarter": null,
-      "surfaces": [
-        "my set"
-      ]
-    },
-    {
-      "kickoff": "2026-10-11T19:00:00Z",
-      "competition": "Primera División",
-      "team": "Real Racing Club de Santander",
-      "code": "RAC",
-      "rank": 16,
-      "opponent": "Valencia CF",
-      "opponentCode": "VCF",
-      "opponentRank": 19,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.431,
-      "pLose": 0.301,
-      "oppFactor": null,
-      "home": true,
-      "players": [
-        "Iñigo Vicente"
-      ],
-      "points": 60.6,
       "bestStarter": null,
       "surfaces": [
         "my set"
