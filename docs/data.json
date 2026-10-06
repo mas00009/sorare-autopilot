@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T20:36:53.437Z",
+  "generatedAt": "2026-10-06T20:42:44.201Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-09T18:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791318994151,
-    "reason": "last run 0m ago, next due in 180m (lock in 4193m)"
+    "lastRunAt": 1791319345157,
+    "reason": "last run 0m ago, next due in 180m (lock in 4187m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -226,7 +226,7 @@
           "position": "Goalkeeper",
           "captain": false,
           "score": 18.69,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-11T19:00:00Z"
         },
         {
@@ -235,7 +235,7 @@
           "position": "Defender",
           "captain": true,
           "score": 58.97,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-09T18:45:00Z"
         },
         {
@@ -244,7 +244,7 @@
           "position": "Midfielder",
           "captain": false,
           "score": 72.82,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-10T16:30:00Z"
         },
         {
@@ -253,7 +253,7 @@
           "position": "Forward",
           "captain": false,
           "score": 41.29,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-10T14:15:00Z"
         },
         {
@@ -262,7 +262,7 @@
           "position": "Defender",
           "captain": false,
           "score": 87.04,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-12T19:00:00Z"
         }
       ],
@@ -1213,7 +1213,7 @@
         "five": [
           {
             "actual": 18.69,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
             "player": "Stole Dimitrievski",
@@ -1242,7 +1242,7 @@
           },
           {
             "actual": 58.97,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "switzerland",
             "name": "Zachary Athekame",
             "player": "Zachary Athekame",
@@ -1271,7 +1271,7 @@
           },
           {
             "actual": 72.82,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "spain",
             "name": "Dani Olmo",
             "player": "Dani Olmo",
@@ -1300,7 +1300,7 @@
           },
           {
             "actual": 41.29,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "spain",
             "name": "Álex Baena",
             "player": "Álex Baena",
@@ -1329,7 +1329,7 @@
           },
           {
             "actual": 87.04,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "england",
             "name": "Lewis Hall",
             "player": "Lewis Hall",
@@ -1384,7 +1384,7 @@
         },
         {
           "level": 1,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 980
         },
         {
