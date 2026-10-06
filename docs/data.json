@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T20:25:13.195Z",
+  "generatedAt": "2026-10-06T20:31:00.645Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-09T18:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791318294738,
-    "reason": "last run 0m ago, next due in 180m (lock in 4205m)"
+    "lastRunAt": 1791318642908,
+    "reason": "last run 0m ago, next due in 180m (lock in 4199m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 1238.8332,
+      "squadScore": 1251.4836,
       "lineupId": "Tasks::TaskLineup:ea54b803-300f-4fbb-8723-1f8637fed980",
       "state": "READY",
-      "score": 274.38,
+      "score": 277.82,
       "finished": false,
       "cleared": true,
       "players": [
@@ -225,7 +225,7 @@
           "slug": "stole-dimitrievski",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 16.38,
+          "score": 18.9,
           "status": "REVIEWING",
           "kickoff": "2026-10-11T19:00:00Z"
         },
@@ -234,7 +234,7 @@
           "slug": "zachary-athekame",
           "position": "Defender",
           "captain": true,
-          "score": 56.87,
+          "score": 57.78,
           "status": "REVIEWING",
           "kickoff": "2026-10-09T18:45:00Z"
         },
@@ -1205,14 +1205,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 303 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1239 so far.",
+      "status": "Locked and playing. 307 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1251 so far.",
       "tone": "good",
       "lockAt": "2026-10-06T18:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 16.38,
+            "actual": 18.9,
             "scoreStatus": "REVIEWING",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
@@ -1241,7 +1241,7 @@
             "kickoff": "2026-10-06T18:45:00Z"
           },
           {
-            "actual": 56.87,
+            "actual": 57.78,
             "scoreStatus": "REVIEWING",
             "teamSlug": "switzerland",
             "name": "Zachary Athekame",
@@ -1358,9 +1358,9 @@
           }
         ],
         "projected": 317.88,
-        "scoredSoFar": 302.83,
+        "scoredSoFar": 306.72,
         "played": 5,
-        "expectedFinal": 302.83
+        "expectedFinal": 306.72
       },
       "poolStrength": {
         "strong": 0,
@@ -1370,7 +1370,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 1238.8332
+        "scoreSoFar": 1251.4836
       },
       "level": 1,
       "lives": null,
