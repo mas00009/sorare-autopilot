@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T17:46:51.733Z",
+  "generatedAt": "2026-10-06T17:53:00.055Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-06T18:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1791308791500,
-    "reason": "last run 0m ago, next due in 5m (lock in 58m)"
+    "lastRunAt": 1791309157931,
+    "reason": "last run 0m ago, next due in 5m (lock in 52m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -213,10 +213,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 278.25,
+      "squadScore": 413,
       "lineupId": "Tasks::TaskLineup:ea54b803-300f-4fbb-8723-1f8637fed980",
       "state": "READY",
-      "score": 72.45,
+      "score": 108.5,
       "finished": false,
       "cleared": false,
       "players": [
@@ -261,12 +261,12 @@
           "slug": "lewis-hall-2004-09-08",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-06T18:45:00Z"
         }
       ],
-      "scored": 2
+      "scored": 3
     },
     {
       "surface": "my set",
@@ -1205,7 +1205,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 72 scored so far, 2 of 5 played. The squad's top three lineups together need 980; the squad has 278 so far.",
+      "status": "Locked and playing. 109 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 413 so far.",
       "tone": "good",
       "lockAt": "2026-10-06T18:45:00Z",
       "isSquad": true,
@@ -1328,8 +1328,8 @@
             "kickoff": "2026-10-06T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "england",
             "name": "Lewis Hall",
             "player": "Lewis Hall",
@@ -1358,9 +1358,9 @@
           }
         ],
         "projected": 317.88,
-        "scoredSoFar": 72.45,
-        "played": 2,
-        "expectedFinal": 285.95
+        "scoredSoFar": 108.5,
+        "played": 3,
+        "expectedFinal": 265.84
       },
       "poolStrength": {
         "strong": 0,
@@ -1370,7 +1370,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 278.25
+        "scoreSoFar": 413
       },
       "level": 1,
       "lives": null,
@@ -1691,7 +1691,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 46,
           "picture": "https://assets.sorare.com/cardsamplepicture/701af282-d7c9-41fb-afca-7762b0eebb77/picture/tinified-704925b23570398b787b36573e990eee.png",
