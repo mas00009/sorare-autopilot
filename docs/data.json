@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T18:52:27.099Z",
+  "generatedAt": "2026-10-06T18:58:13.341Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-09T18:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791312729787,
-    "reason": "last run 0m ago, next due in 180m (lock in 4298m)"
+    "lastRunAt": 1791313075373,
+    "reason": "last run 0m ago, next due in 180m (lock in 4292m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 625.7272,
+      "squadScore": 652.09,
       "lineupId": "Tasks::TaskLineup:ea54b803-300f-4fbb-8723-1f8637fed980",
       "state": "READY",
-      "score": 149.71,
+      "score": 150.08,
       "finished": false,
       "cleared": false,
       "players": [
@@ -225,7 +225,7 @@
           "slug": "stole-dimitrievski",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 36.02,
+          "score": 35.07,
           "status": "REVIEWING",
           "kickoff": "2026-10-11T19:00:00Z"
         },
@@ -261,7 +261,7 @@
           "slug": "lewis-hall-2004-09-08",
           "position": "Defender",
           "captain": false,
-          "score": 36.81,
+          "score": 38.13,
           "status": "REVIEWING",
           "kickoff": "2026-10-12T19:00:00Z"
         }
@@ -1205,14 +1205,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 150 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 626 so far.",
+      "status": "Locked and playing. 150 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 652 so far.",
       "tone": "good",
       "lockAt": "2026-10-06T18:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 36.02,
+            "actual": 35.07,
             "scoreStatus": "REVIEWING",
             "teamSlug": "north-macedonia",
             "name": "Stole Dimitrievski",
@@ -1328,7 +1328,7 @@
             "kickoff": "2026-10-06T18:45:00Z"
           },
           {
-            "actual": 36.81,
+            "actual": 38.13,
             "scoreStatus": "REVIEWING",
             "teamSlug": "england",
             "name": "Lewis Hall",
@@ -1358,9 +1358,9 @@
           }
         ],
         "projected": 317.88,
-        "scoredSoFar": 149.71,
+        "scoredSoFar": 150.08,
         "played": 4,
-        "expectedFinal": 263.55
+        "expectedFinal": 263.92
       },
       "poolStrength": {
         "strong": 0,
@@ -1370,7 +1370,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 625.7272
+        "scoreSoFar": 652.09
       },
       "level": 1,
       "lives": null,
