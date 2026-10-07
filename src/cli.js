@@ -393,7 +393,7 @@ const main = async () => {
   const options = {
     minStarterBp: Number(opt('min-starter', 6000)),
     maxPerGame: Number(opt('max-per-game', 2)),
-    essenceFloor: Number(opt('essence-floor', 1000)),
+    essenceFloor: Number(opt('essence-floor', 0)),
     maxPacks: Number(opt('max-packs', 3)),
     packs: !flag('no-packs'),
     claimNow: flag('claim-now'),

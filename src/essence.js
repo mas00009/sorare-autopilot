@@ -44,7 +44,7 @@ export const TIER_STARS = { DNP: 0, ROSTER: 2, IMPACT: 3, STAR: 4, GOAT: 5 };
 
 export const PACK_DEFAULTS = {
   /** Never spend essence below this. Set by the account owner. */
-  essenceFloor: 1000,
+  essenceFloor: 0,
   /** Hard cap on packs per cycle, whatever else happens. */
   maxPacks: 3,
 };
