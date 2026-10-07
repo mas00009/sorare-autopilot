@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-07T08:32:01.973Z",
+  "generatedAt": "2026-10-07T08:37:53.991Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 1700,
+    "essence": 0,
     "gems": 211
   },
   "schedule": {
     "nextLock": "2026-10-09T18:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791361904062,
-    "reason": "last run 0m ago, next due in 180m (lock in 3478m)"
+    "lastRunAt": 1791362257679,
+    "reason": "last run 0m ago, next due in 180m (lock in 3472m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -510,9 +510,9 @@
       {
         "title": "Collect Goalkeepers",
         "gems": 10,
-        "progress": 81,
+        "progress": 82,
         "target": 112,
-        "remaining": 31,
+        "remaining": 30,
         "competition": null,
         "group": null,
         "teams": []
@@ -520,9 +520,9 @@
       {
         "title": "Collect Spanish players in LaLiga",
         "gems": 30,
-        "progress": 206,
+        "progress": 207,
         "target": 279,
-        "remaining": 73,
+        "remaining": 72,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": []
