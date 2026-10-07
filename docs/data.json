@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T08:43:44.851Z",
+  "generatedAt": "2026-10-07T08:49:41.609Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-09T18:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791362607248,
-    "reason": "last run 0m ago, next due in 180m (lock in 3466m)"
+    "lastRunAt": 1791362963583,
+    "reason": "last run 0m ago, next due in 180m (lock in 3460m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -496,9 +496,9 @@
       {
         "title": "Collect Big 3 LaLiga",
         "gems": 30,
-        "progress": 42,
+        "progress": 43,
         "target": 50,
-        "remaining": 8,
+        "remaining": 7,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": [
@@ -520,9 +520,9 @@
       {
         "title": "Collect Spanish players in LaLiga",
         "gems": 30,
-        "progress": 207,
+        "progress": 209,
         "target": 279,
-        "remaining": 72,
+        "remaining": 70,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": []
@@ -711,7 +711,7 @@
         "expectedFinal": 348.02
       },
       "poolStrength": {
-        "strong": 3,
+        "strong": 4,
         "needed": 5
       },
       "collaborative": false,
@@ -798,7 +798,7 @@
       ],
       "plan": {
         "clearsTarget": true,
-        "projected": 366.41,
+        "projected": 371.04,
         "lock": "2026-10-10T14:15:00Z",
         "shortfall": null,
         "tradedPointsForTime": 0,
@@ -847,6 +847,45 @@
             "blocked": null
           },
           {
+            "id": "ComposeTeamBenchCard:7249677c-f247-4538-bd28-a727608d184b",
+            "player": "Jude Bellingham",
+            "slug": "jude-bellingham",
+            "position": "MD",
+            "average": 72,
+            "bonus": 1.05,
+            "starterPct": null,
+            "startRate": 0.8,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 66,
+            "picture": "https://assets.sorare.com/cardsamplepicture/fe3313a1-5c73-436d-a698-dbc049dee59b/picture/tinified-61dbd25acb89afe827003670d06ba75a.png",
+            "rarity": "common",
+            "gameId": "Game:51889f90-24a2-44dd-8f6e-7933a36736e0",
+            "kickoff": "2026-10-10T19:00:00Z",
+            "team": "Real Madrid",
+            "teamSlug": "real-madrid-madrid",
+            "opponent": "Villarreal CF",
+            "opponentCode": "VIL",
+            "code": "RMA",
+            "rank": 4,
+            "opponentRank": 9,
+            "home": true,
+            "competition": "Primera División",
+            "intl": false,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "mismatch": false,
+            "pWin": 0.714,
+            "pLose": 0.124,
+            "oddsBooks": 19,
+            "marketFactor": 1.071,
+            "lockedAt": null,
+            "expected": 67.49,
+            "blocked": null
+          },
+          {
             "id": "ComposeTeamBenchCard:ac2b6788-c05b-407f-8d37-4b42e2b7a9f5",
             "player": "Sergio Gómez",
             "slug": "sergio-gomez-martin",
@@ -883,45 +922,6 @@
             "marketFactor": 1.102,
             "lockedAt": null,
             "expected": 63.85,
-            "blocked": null
-          },
-          {
-            "id": "ComposeTeamBenchCard:359af8cb-b113-4e12-9a62-44bf217cf3b6",
-            "player": "Maximilian Eggestein",
-            "slug": "maximilian-eggestein",
-            "position": "MD",
-            "average": 51,
-            "bonus": 1.03,
-            "starterPct": null,
-            "startRate": 1,
-            "oddsKnown": false,
-            "onGameSheet": false,
-            "reliability": null,
-            "formL5": 66,
-            "picture": "https://assets.sorare.com/cardsamplepicture/1d4b5f69-5f34-46ea-ba50-4aa46a5ec084/picture/tinified-3b5a79de2735599840c29deed91f5cfb.png",
-            "rarity": "common",
-            "gameId": "Game:ed0d0372-2be6-41ce-9a55-66dc9ac56691",
-            "kickoff": "2026-10-11T15:30:00Z",
-            "team": "Sport-Club Freiburg",
-            "teamSlug": "freiburg-freiburg-im-breisgau",
-            "opponent": "FC Schalke 04",
-            "opponentCode": "S04",
-            "code": "SCF",
-            "rank": 3,
-            "opponentRank": 11,
-            "home": true,
-            "competition": "Bundesliga",
-            "intl": false,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "mismatch": false,
-            "pWin": 0.576,
-            "pLose": 0.189,
-            "oddsBooks": 22,
-            "marketFactor": 1.043,
-            "lockedAt": null,
-            "expected": 62.86,
             "blocked": null
           },
           {
@@ -1045,6 +1045,45 @@
           "blocked": null
         },
         {
+          "id": "ComposeTeamBenchCard:7249677c-f247-4538-bd28-a727608d184b",
+          "player": "Jude Bellingham",
+          "slug": "jude-bellingham",
+          "position": "MD",
+          "average": 72,
+          "bonus": 1.05,
+          "starterPct": null,
+          "startRate": 0.8,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 66,
+          "picture": "https://assets.sorare.com/cardsamplepicture/fe3313a1-5c73-436d-a698-dbc049dee59b/picture/tinified-61dbd25acb89afe827003670d06ba75a.png",
+          "rarity": "common",
+          "gameId": "Game:51889f90-24a2-44dd-8f6e-7933a36736e0",
+          "kickoff": "2026-10-10T19:00:00Z",
+          "team": "Real Madrid",
+          "teamSlug": "real-madrid-madrid",
+          "opponent": "Villarreal CF",
+          "opponentCode": "VIL",
+          "code": "RMA",
+          "rank": 4,
+          "opponentRank": 9,
+          "home": true,
+          "competition": "Primera División",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.714,
+          "pLose": 0.124,
+          "oddsBooks": 19,
+          "marketFactor": 1.071,
+          "lockedAt": null,
+          "expected": 67.49,
+          "blocked": null
+        },
+        {
           "id": "ComposeTeamBenchCard:ac2b6788-c05b-407f-8d37-4b42e2b7a9f5",
           "player": "Sergio Gómez",
           "slug": "sergio-gomez-martin",
@@ -1081,45 +1120,6 @@
           "marketFactor": 1.102,
           "lockedAt": null,
           "expected": 63.85,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:359af8cb-b113-4e12-9a62-44bf217cf3b6",
-          "player": "Maximilian Eggestein",
-          "slug": "maximilian-eggestein",
-          "position": "MD",
-          "average": 51,
-          "bonus": 1.03,
-          "starterPct": null,
-          "startRate": 1,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 66,
-          "picture": "https://assets.sorare.com/cardsamplepicture/1d4b5f69-5f34-46ea-ba50-4aa46a5ec084/picture/tinified-3b5a79de2735599840c29deed91f5cfb.png",
-          "rarity": "common",
-          "gameId": "Game:ed0d0372-2be6-41ce-9a55-66dc9ac56691",
-          "kickoff": "2026-10-11T15:30:00Z",
-          "team": "Sport-Club Freiburg",
-          "teamSlug": "freiburg-freiburg-im-breisgau",
-          "opponent": "FC Schalke 04",
-          "opponentCode": "S04",
-          "code": "SCF",
-          "rank": 3,
-          "opponentRank": 11,
-          "home": true,
-          "competition": "Bundesliga",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.576,
-          "pLose": 0.189,
-          "oddsBooks": 22,
-          "marketFactor": 1.043,
-          "lockedAt": null,
-          "expected": 62.86,
           "blocked": null
         },
         {
@@ -1201,7 +1201,7 @@
           "blocked": null
         }
       ],
-      "projected": 331.1
+      "projected": 335.9
     },
     {
       "surface": "team set (Loadshift)",
@@ -1319,6 +1319,31 @@
       ]
     },
     {
+      "kickoff": "2026-10-10T19:00:00Z",
+      "competition": "Primera División",
+      "team": "Real Madrid",
+      "code": "RMA",
+      "rank": 4,
+      "opponent": "Villarreal CF",
+      "opponentCode": "VIL",
+      "opponentRank": 9,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.714,
+      "pLose": 0.124,
+      "oppFactor": null,
+      "home": true,
+      "players": [
+        "Jude Bellingham"
+      ],
+      "points": 67.5,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
+      ]
+    },
+    {
       "kickoff": "2026-10-11T14:15:00Z",
       "competition": "Primera División",
       "team": "Real Sociedad",
@@ -1360,10 +1385,9 @@
       "oppFactor": null,
       "home": true,
       "players": [
-        "Matthias Ginter",
-        "Maximilian Eggestein"
+        "Matthias Ginter"
       ],
-      "points": 141.4,
+      "points": 78.5,
       "bestStarter": null,
       "surfaces": [
         "my set"
