@@ -365,16 +365,30 @@ export function digestHtml(date, entries, snapshot = null) {
     const pays = (s.rewards ?? []).map((r) => r.kind === 'gems' ? `${r.amount} gems` : r.kind === 'cash' ? `$${r.usd}` : r.kind === 'essence' ? `${r.amount} essence` : r.kind === 'pack' ? `a ${r.cards}-card pack` : null).filter(Boolean).join(' + ');
     const meta = [level, s.target ? (s.isSquad ? `squad needs ${s.target}` : `needs ${s.target}`) : '', pays ? `pays ${pays}` : '', lives].filter(Boolean).join(' · ');
     const five = s.entered?.five ?? [];
-    const cells = five.map((c) => `<td width="20%" valign="top" style="padding:0 3px">
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid ${c.captain ? '#e8a33d' : C.line};border-radius:10px;overflow:hidden">
-        <tr><td style="padding:0;line-height:0">${c.pic ? `<img src="${esc(c.pic)}" width="106" alt="${esc(c.name)}" style="display:block;width:100%;height:auto;border:0">` : ''}</td></tr>
-        <tr><td style="padding:7px 8px 9px;background:#ffffff">
-          <div style="font:700 11px/1.25 ${F};color:${C.ink};height:28px;overflow:hidden">${esc(c.name)}</div>
-          <div style="font:500 10px/1.4 ${F};color:${C.faint};padding-top:2px;height:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(c.pos ?? '')}${c.opp ? ` &middot; ${c.home ? 'vs' : '@'} ${esc(shortTeam(c.opp))}` : ''}</div>
-          ${c.actual != null
-            ? `<div style="font:800 14px/1 ${F};color:${C.go};padding-top:5px">${Math.round(c.actual)} <span style="font:600 9px/1 ${F};color:${C.faint};letter-spacing:.06em">SCORED</span></div>`
-            : `<div style="font:800 14px/1 ${F};color:${c.captain ? '#e07b12' : C.v};padding-top:5px">${c.exp != null ? Math.round(c.exp) : '&nbsp;'} <span style="font:600 9px/1 ${F};color:${C.faint};letter-spacing:.06em">${c.exp != null ? 'EXPECTED' : ''}</span>${c.captain ? ' <span style="font-size:10px">(C)</span>' : ''}</div>`}
-        </td></tr></table></td>`).join('');
+    // Every card is the same size whatever the client does. Mail clients
+    // ignore percentage widths and size columns to their content, so a long
+    // opponent ("@ 1. FC Union Berlin") on a no-wrap line widened one column
+    // and its picture with it. Fixed pixel columns, a fixed image box (the
+    // card art is always 771x1248), and every text line cut to fit one line.
+    const COL = 106, IMG_W = 100, IMG_H = Math.round(IMG_W * 1248 / 771);
+    const clip = (t, n) => { t = String(t ?? ''); return t.length > n ? t.slice(0, n - 1).trimEnd() + '…' : t; };
+    const cells = five.map((c) => {
+      const plain = c.name.replace(/\s+(Jr\.?|Sr\.?|Junior)$/i, '');
+      const surname = plain.split(' ').length > 1 && plain.length > 12 ? plain.split(' ').slice(1).join(' ') : plain;
+      const opp = c.opp ? `${c.home ? 'vs' : '@'} ${shortTeam(c.opp).replace(/^1\.\s*FC\s+/i, '')}` : '';
+      const cap = c.captain ? `<span style="display:inline-block;width:14px;height:14px;line-height:14px;border-radius:7px;background:#e07b12;color:#ffffff;font:800 9px/14px ${F};text-align:center;margin-right:3px">C</span>` : '';
+      const num = c.actual != null
+        ? `<span style="color:${C.go}">${Math.round(c.actual)}</span> <span style="font:600 9px/1 ${F};color:${C.faint};letter-spacing:.06em">SCORED</span>`
+        : `<span style="color:${c.captain ? '#e07b12' : C.v}">${c.exp != null ? Math.round(c.exp) : '&nbsp;'}</span> <span style="font:600 9px/1 ${F};color:${C.faint};letter-spacing:.06em">${c.exp != null ? 'EXP' : ''}</span>`;
+      return `<td width="${COL}" valign="top" style="width:${COL}px;padding:0 2px">
+      <table role="presentation" width="${COL - 4}" cellpadding="0" cellspacing="0" border="0" style="width:${COL - 4}px;table-layout:fixed;border:1px solid ${c.captain ? '#e8a33d' : C.line};border-radius:10px;overflow:hidden">
+        <tr><td align="center" height="${IMG_H}" style="padding:0;line-height:0;height:${IMG_H}px">${c.pic ? `<img src="${esc(c.pic)}" width="${IMG_W}" height="${IMG_H}" alt="${esc(c.name)}" style="display:block;width:${IMG_W}px;height:${IMG_H}px;border:0;margin:0 auto">` : ''}</td></tr>
+        <tr><td style="padding:6px 6px 8px;background:#ffffff">
+          <div style="font:700 11px/16px ${F};color:${C.ink};white-space:nowrap;overflow:hidden">${cap}${esc(clip(surname, c.captain ? 10 : 12))}</div>
+          <div style="font:500 10px/14px ${F};color:${C.faint};white-space:nowrap;overflow:hidden">${opp ? esc(clip(opp, 16)) : '&nbsp;'}</div>
+          <div style="font:800 14px/18px ${F};padding-top:3px;white-space:nowrap">${num}</div>
+        </td></tr></table></td>`;
+    }).join('');
     const finished = d.finished.filter((l) => l.surface === s.surface);
     const results = finished.map((l) => {
       const verdict = l.collaborative
@@ -389,7 +403,7 @@ export function digestHtml(date, entries, snapshot = null) {
       ${H(name)}
       ${meta ? `<div style="font:500 12px/1.4 ${F};color:${C.dim};margin:-4px 0 10px">${esc(meta)}</div>` : ''}
       <div style="padding:10px 12px;border-left:3px solid ${tone[s.tone] ?? C.dim};background:${C.panel};border-radius:0 10px 10px 0">${P(esc(s.status ?? ''))}</div>
-      ${five.length ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse:separate;margin-top:12px"><tr>${cells}</tr></table>` : ''}
+      ${five.length ? `<table role="presentation" align="center" width="${five.length * 106}" cellpadding="0" cellspacing="0" border="0" style="width:${five.length * 106}px;table-layout:fixed;border-collapse:separate;margin:12px auto 0"><tr>${cells}</tr></table>` : ''}
       ${results}
     </td></tr>`;
   }).join('');
