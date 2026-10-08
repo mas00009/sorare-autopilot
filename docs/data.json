@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-08T07:16:25.941Z",
+  "generatedAt": "2026-10-08T07:22:20.462Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 500,
+    "essence": 1000,
     "gems": 211
   },
   "schedule": {
     "nextLock": "2026-10-09T18:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791443767952,
-    "reason": "last run 0m ago, next due in 180m (lock in 2114m)"
+    "lastRunAt": 1791444122274,
+    "reason": "last run 0m ago, next due in 180m (lock in 2108m)"
   },
   "packs": {
-    "lastThreeStar": "David Soria",
+    "lastThreeStar": "Yan Diomande",
     "cycleDone": true
   },
   "health": {
@@ -496,9 +496,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 698,
+        "progress": 700,
         "target": 860,
-        "remaining": 162,
+        "remaining": 160,
         "competition": null,
         "group": null,
         "teams": []
