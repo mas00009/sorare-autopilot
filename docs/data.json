@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T19:58:34.573Z",
+  "generatedAt": "2026-10-08T20:04:19.551Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-09T18:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791489499006,
-    "reason": "last run 0m ago, next due in 180m (lock in 1351m)"
+    "lastRunAt": 1791489845309,
+    "reason": "last run 0m ago, next due in 180m (lock in 1346m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
