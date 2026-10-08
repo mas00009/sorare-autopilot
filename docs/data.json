@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-08T07:10:30.192Z",
+  "generatedAt": "2026-10-08T07:16:25.941Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 200,
+    "essence": 500,
     "gems": 211
   },
   "schedule": {
     "nextLock": "2026-10-09T18:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791443413110,
-    "reason": "last run 0m ago, next due in 180m (lock in 2119m)"
+    "lastRunAt": 1791443767952,
+    "reason": "last run 0m ago, next due in 180m (lock in 2114m)"
   },
   "packs": {
     "lastThreeStar": "David Soria",
@@ -494,6 +494,16 @@
     ],
     "collections": [
       {
+        "title": "Collect Players",
+        "gems": 10,
+        "progress": 698,
+        "target": 860,
+        "remaining": 162,
+        "competition": null,
+        "group": null,
+        "teams": []
+      },
+      {
         "title": "Collect Big 3 LaLiga",
         "gems": 30,
         "progress": 43,
@@ -534,7 +544,7 @@
     },
     "ladderGemsAhead": 40,
     "ladderCashAhead": 1100,
-    "collectionGemsOpen": 70
+    "collectionGemsOpen": 80
   },
   "odds": {
     "configured": true,
