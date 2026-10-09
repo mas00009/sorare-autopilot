@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-09T07:02:36.143Z",
+  "generatedAt": "2026-10-09T07:08:53.724Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 0,
+    "essence": 500,
     "gems": 211
   },
   "schedule": {
     "nextLock": "2026-10-09T18:30:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1791529336319,
-    "reason": "last run 0m ago, next due in 60m (lock in 687m)"
+    "lastRunAt": 1791529716016,
+    "reason": "last run 0m ago, next due in 60m (lock in 681m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -558,9 +558,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 701,
+        "progress": 706,
         "target": 860,
-        "remaining": 159,
+        "remaining": 154,
         "competition": null,
         "group": null,
         "teams": []
@@ -582,9 +582,9 @@
       {
         "title": "Collect Goalkeepers",
         "gems": 10,
-        "progress": 82,
+        "progress": 83,
         "target": 112,
-        "remaining": 30,
+        "remaining": 29,
         "competition": null,
         "group": null,
         "teams": []
@@ -592,9 +592,9 @@
       {
         "title": "Collect Spanish players in LaLiga",
         "gems": 30,
-        "progress": 209,
+        "progress": 210,
         "target": 279,
-        "remaining": 70,
+        "remaining": 69,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": []
