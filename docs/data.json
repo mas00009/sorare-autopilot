@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T17:39:23.932Z",
+  "generatedAt": "2026-10-09T18:03:56.233Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-09T18:30:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1791567543730,
-    "reason": "last run 0m ago, next due in 5m (lock in 51m)"
+    "lastRunAt": 1791569017231,
+    "reason": "last run 0m ago, next due in 5m (lock in 26m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -89,10 +89,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 348.25,
+      "squadScore": 462.35,
       "lineupId": "Tasks::TaskLineup:21b664c0-3504-4060-8946-7b63c04a3734",
       "state": "READY",
-      "score": 53.2,
+      "score": 127.05,
       "finished": false,
       "cleared": false,
       "players": [
@@ -110,8 +110,8 @@
           "slug": "zachary-athekame",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 37.8,
+          "status": "REVIEWING",
           "kickoff": "2026-10-09T18:45:00Z"
         },
         {
@@ -128,8 +128,8 @@
           "slug": "ernest-appiah-nuamah",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-09T18:45:00Z"
         },
         {
@@ -142,7 +142,7 @@
           "kickoff": "2026-10-09T19:00:00Z"
         }
       ],
-      "scored": 1
+      "scored": 3
     },
     {
       "surface": "my set",
@@ -1277,7 +1277,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 80 scored so far, 1 of 5 played. The squad's top three lineups together need 1060; the squad has 348 so far.",
+      "status": "Locked and playing. 154 scored so far, 3 of 5 played. The squad's top three lineups together need 1060; the squad has 462 so far.",
       "tone": "good",
       "lockAt": "2026-10-09T18:30:00Z",
       "isSquad": true,
@@ -1313,8 +1313,8 @@
             "kickoff": "2026-10-09T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 37.8,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "olympique-lyonnais-lyon",
             "name": "Zachary Athekame",
             "player": "Zachary Athekame",
@@ -1371,8 +1371,8 @@
             "kickoff": "2026-10-09T18:30:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "olympique-lyonnais-lyon",
             "name": "Ernest Nuamah",
             "player": "Ernest Nuamah",
@@ -1430,9 +1430,9 @@
           }
         ],
         "projected": 274.19,
-        "scoredSoFar": 79.8,
-        "played": 1,
-        "expectedFinal": 273.16
+        "scoredSoFar": 153.65,
+        "played": 3,
+        "expectedFinal": 248.96
       },
       "poolStrength": {
         "strong": 0,
@@ -1442,7 +1442,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 348.25
+        "scoreSoFar": 462.35
       },
       "level": 2,
       "lives": null,
@@ -1646,7 +1646,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 44,
           "picture": "https://assets.sorare.com/cardsamplepicture/d0bd3d19-e21e-46f6-bfec-2c2f379b0a13/picture/tinified-745fe1fbf135939fb2c08b39ae1540a3.png",
@@ -1685,7 +1685,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 44,
           "picture": "https://assets.sorare.com/cardsamplepicture/78d1f460-4347-43da-b1b0-d0ccdefd3a2f/picture/tinified-18c5667eb67715c5c5e34cc35c409a88.png",
