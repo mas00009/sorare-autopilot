@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T07:45:46.092Z",
+  "generatedAt": "2026-10-09T08:16:40.225Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-09T18:30:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1791531928841,
-    "reason": "last run 0m ago, next due in 60m (lock in 644m)"
+    "lastRunAt": 1791533782791,
+    "reason": "last run 0m ago, next due in 60m (lock in 613m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -88,7 +88,7 @@
       "target": 1060,
       "stepState": "LINEUP_SET",
       "collaborative": true,
-      "squadLineups": 1,
+      "squadLineups": 2,
       "squadScore": 0,
       "lineupId": "Tasks::TaskLineup:21b664c0-3504-4060-8946-7b63c04a3734",
       "state": "READY",
@@ -1440,7 +1440,7 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 1,
+        "lineupsIn": 2,
         "needed": 3,
         "scoreSoFar": 0
       },
