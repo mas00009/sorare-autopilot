@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T20:42:24.980Z",
+  "generatedAt": "2026-10-09T20:48:14.459Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T11:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791578529401,
-    "reason": "last run 0m ago, next due in 180m (lock in 888m)"
+    "lastRunAt": 1791578878002,
+    "reason": "last run 0m ago, next due in 180m (lock in 882m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -92,7 +92,7 @@
       "squadScore": 834.079,
       "lineupId": "Tasks::TaskLineup:21b664c0-3504-4060-8946-7b63c04a3734",
       "state": "READY",
-      "score": 264.69,
+      "score": 266.66,
       "finished": false,
       "cleared": false,
       "players": [
@@ -111,7 +111,7 @@
           "position": "Defender",
           "captain": false,
           "score": 49.98,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-15T16:45:00Z"
         },
         {
@@ -129,7 +129,7 @@
           "position": "Forward",
           "captain": false,
           "score": 42.44,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-15T16:45:00Z"
         },
         {
@@ -137,7 +137,7 @@
           "slug": "rafael-garrido-hierro",
           "position": "Defender",
           "captain": false,
-          "score": 55.65,
+          "score": 57.62,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T16:30:00Z"
         }
@@ -1277,7 +1277,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 303 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 834 so far.",
+      "status": "Locked and playing. 305 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 834 so far.",
       "tone": "good",
       "lockAt": "2026-10-09T18:30:00Z",
       "isSquad": true,
@@ -1314,7 +1314,7 @@
           },
           {
             "actual": 49.98,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "olympique-lyonnais-lyon",
             "name": "Zachary Athekame",
             "player": "Zachary Athekame",
@@ -1372,7 +1372,7 @@
           },
           {
             "actual": 42.44,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "olympique-lyonnais-lyon",
             "name": "Ernest Nuamah",
             "player": "Ernest Nuamah",
@@ -1400,7 +1400,7 @@
             "kickoff": "2026-10-09T18:45:00Z"
           },
           {
-            "actual": 55.65,
+            "actual": 57.62,
             "scoreStatus": "REVIEWING",
             "teamSlug": "malaga-malaga",
             "name": "Rafita",
@@ -1430,9 +1430,9 @@
           }
         ],
         "projected": 274.19,
-        "scoredSoFar": 302.84,
+        "scoredSoFar": 304.81,
         "played": 5,
-        "expectedFinal": 302.84
+        "expectedFinal": 304.81
       },
       "poolStrength": {
         "strong": 0,
