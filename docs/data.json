@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T19:50:06.446Z",
+  "generatedAt": "2026-10-09T19:55:53.601Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T11:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791575391775,
-    "reason": "last run 0m ago, next due in 180m (lock in 940m)"
+    "lastRunAt": 1791575738510,
+    "reason": "last run 0m ago, next due in 180m (lock in 934m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -89,10 +89,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 871.1866,
+      "squadScore": 855.5272,
       "lineupId": "Tasks::TaskLineup:21b664c0-3504-4060-8946-7b63c04a3734",
       "state": "READY",
-      "score": 240.84,
+      "score": 235.29,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,7 +101,7 @@
           "slug": "alfonso-herrero-peinador",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 38.22,
+          "score": 34.55,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T16:30:00Z"
         },
@@ -110,7 +110,7 @@
           "slug": "zachary-athekame",
           "position": "Defender",
           "captain": false,
-          "score": 39.9,
+          "score": 37.61,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T16:45:00Z"
         },
@@ -128,7 +128,7 @@
           "slug": "ernest-appiah-nuamah",
           "position": "Forward",
           "captain": false,
-          "score": 39.35,
+          "score": 39.76,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T16:45:00Z"
         },
@@ -1277,14 +1277,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 275 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 871 so far.",
+      "status": "Locked and playing. 270 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 856 so far.",
       "tone": "good",
       "lockAt": "2026-10-09T18:30:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 38.22,
+            "actual": 34.55,
             "scoreStatus": "REVIEWING",
             "teamSlug": "malaga-malaga",
             "name": "Alfonso Herrero",
@@ -1313,7 +1313,7 @@
             "kickoff": "2026-10-09T19:00:00Z"
           },
           {
-            "actual": 39.9,
+            "actual": 37.61,
             "scoreStatus": "REVIEWING",
             "teamSlug": "olympique-lyonnais-lyon",
             "name": "Zachary Athekame",
@@ -1371,7 +1371,7 @@
             "kickoff": "2026-10-09T18:30:00Z"
           },
           {
-            "actual": 39.35,
+            "actual": 39.76,
             "scoreStatus": "REVIEWING",
             "teamSlug": "olympique-lyonnais-lyon",
             "name": "Ernest Nuamah",
@@ -1430,9 +1430,9 @@
           }
         ],
         "projected": 274.19,
-        "scoredSoFar": 275.2,
+        "scoredSoFar": 269.65,
         "played": 5,
-        "expectedFinal": 275.2
+        "expectedFinal": 269.65
       },
       "poolStrength": {
         "strong": 0,
@@ -1442,7 +1442,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 871.1866
+        "scoreSoFar": 855.5272
       },
       "level": 2,
       "lives": null,
