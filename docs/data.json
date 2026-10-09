@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T19:15:09.553Z",
+  "generatedAt": "2026-10-09T19:21:00.264Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T11:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791573293845,
-    "reason": "last run 0m ago, next due in 180m (lock in 975m)"
+    "lastRunAt": 1791573644634,
+    "reason": "last run 0m ago, next due in 180m (lock in 969m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -89,10 +89,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 739.8076,
+      "squadScore": 738.1828,
       "lineupId": "Tasks::TaskLineup:21b664c0-3504-4060-8946-7b63c04a3734",
       "state": "READY",
-      "score": 234.99,
+      "score": 231.95,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,7 +101,7 @@
           "slug": "alfonso-herrero-peinador",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 31.82,
+          "score": 32.13,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T16:30:00Z"
         },
@@ -110,7 +110,7 @@
           "slug": "zachary-athekame",
           "position": "Defender",
           "captain": false,
-          "score": 50.78,
+          "score": 51.08,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T16:45:00Z"
         },
@@ -119,7 +119,7 @@
           "slug": "jobe-bellingham",
           "position": "Midfielder",
           "captain": true,
-          "score": 68.55,
+          "score": 64.75,
           "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         },
@@ -128,7 +128,7 @@
           "slug": "ernest-appiah-nuamah",
           "position": "Forward",
           "captain": false,
-          "score": 41.61,
+          "score": 39.45,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T16:45:00Z"
         },
@@ -137,7 +137,7 @@
           "slug": "rafael-garrido-hierro",
           "position": "Defender",
           "captain": false,
-          "score": 42.23,
+          "score": 44.54,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T16:30:00Z"
         }
@@ -1277,14 +1277,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 269 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 738 so far.",
+      "status": "Locked and playing. 264 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 738 so far.",
       "tone": "good",
       "lockAt": "2026-10-09T18:30:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 31.82,
+            "actual": 32.13,
             "scoreStatus": "REVIEWING",
             "teamSlug": "malaga-malaga",
             "name": "Alfonso Herrero",
@@ -1313,7 +1313,7 @@
             "kickoff": "2026-10-09T19:00:00Z"
           },
           {
-            "actual": 50.78,
+            "actual": 51.08,
             "scoreStatus": "REVIEWING",
             "teamSlug": "olympique-lyonnais-lyon",
             "name": "Zachary Athekame",
@@ -1342,7 +1342,7 @@
             "kickoff": "2026-10-09T18:45:00Z"
           },
           {
-            "actual": 68.55,
+            "actual": 64.75,
             "scoreStatus": "REVIEWING",
             "teamSlug": "borussia-dortmund-dortmund",
             "name": "Jobe Bellingham",
@@ -1371,7 +1371,7 @@
             "kickoff": "2026-10-09T18:30:00Z"
           },
           {
-            "actual": 41.61,
+            "actual": 39.45,
             "scoreStatus": "REVIEWING",
             "teamSlug": "olympique-lyonnais-lyon",
             "name": "Ernest Nuamah",
@@ -1400,7 +1400,7 @@
             "kickoff": "2026-10-09T18:45:00Z"
           },
           {
-            "actual": 42.23,
+            "actual": 44.54,
             "scoreStatus": "REVIEWING",
             "teamSlug": "malaga-malaga",
             "name": "Rafita",
@@ -1430,9 +1430,9 @@
           }
         ],
         "projected": 274.19,
-        "scoredSoFar": 269.26,
+        "scoredSoFar": 264.33,
         "played": 5,
-        "expectedFinal": 269.26
+        "expectedFinal": 264.33
       },
       "poolStrength": {
         "strong": 0,
@@ -1442,7 +1442,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 737.6212
+        "scoreSoFar": 738.1828
       },
       "level": 2,
       "lives": null,
