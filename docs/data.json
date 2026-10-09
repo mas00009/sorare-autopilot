@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T18:22:08.080Z",
+  "generatedAt": "2026-10-09T18:34:08.014Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 211
   },
   "schedule": {
-    "nextLock": "2026-10-09T18:30:00Z",
-    "cadenceMin": 180,
-    "lastRunAt": 1791570109498,
-    "reason": "last run 0m ago, next due in 180m (lock in 8m)"
+    "nextLock": "2026-10-09T18:45:00Z",
+    "cadenceMin": 5,
+    "lastRunAt": 1791570831053,
+    "reason": "last run 0m ago, next due in 5m (lock in 11m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -86,13 +86,13 @@
       "surface": "team set (Loadshift)",
       "level": 2,
       "target": 1060,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 603.4,
+      "squadScore": 615.3078,
       "lineupId": "Tasks::TaskLineup:21b664c0-3504-4060-8946-7b63c04a3734",
       "state": "READY",
-      "score": 200.55,
+      "score": 205.26,
       "finished": false,
       "cleared": false,
       "players": [
@@ -119,9 +119,9 @@
           "slug": "jobe-bellingham",
           "position": "Midfielder",
           "captain": true,
-          "score": 53.2,
+          "score": 57.91,
           "status": "REVIEWING",
-          "kickoff": "2026-10-09T18:30:00Z"
+          "kickoff": "2026-10-14T19:00:00Z"
         },
         {
           "name": "Ernest Nuamah",
@@ -611,8 +611,8 @@
   "odds": {
     "configured": true,
     "month": "2026-10",
-    "used": 32,
-    "remaining": 468
+    "used": 33,
+    "remaining": 467
   },
   "control": {
     "paused": false,
@@ -1277,7 +1277,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 227 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 603 so far.",
+      "status": "Locked and playing. 234 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 615 so far.",
       "tone": "good",
       "lockAt": "2026-10-09T18:30:00Z",
       "isSquad": true,
@@ -1342,7 +1342,7 @@
             "kickoff": "2026-10-09T18:45:00Z"
           },
           {
-            "actual": 53.2,
+            "actual": 57.91,
             "scoreStatus": "REVIEWING",
             "teamSlug": "borussia-dortmund-dortmund",
             "name": "Jobe Bellingham",
@@ -1367,7 +1367,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-09T18:30:00Z"
           },
           {
@@ -1430,9 +1430,9 @@
           }
         ],
         "projected": 274.19,
-        "scoredSoFar": 227.15,
+        "scoredSoFar": 234.21,
         "played": 5,
-        "expectedFinal": 227.15
+        "expectedFinal": 234.21
       },
       "poolStrength": {
         "strong": 0,
@@ -1442,7 +1442,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 603.4
+        "scoreSoFar": 615.3078
       },
       "level": 2,
       "lives": null,
@@ -1461,7 +1461,7 @@
         },
         {
           "level": 2,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 1060
         },
         {
@@ -1483,7 +1483,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 1060,
       "current": [
         {
@@ -1501,8 +1501,8 @@
         {
           "name": "Jobe Bellingham",
           "captain": true,
-          "locked": false,
-          "nextGame": "2026-10-09T18:30:00Z"
+          "locked": true,
+          "nextGame": "2026-10-14T19:00:00Z"
         },
         {
           "name": "Ernest Nuamah",
