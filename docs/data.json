@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T18:40:02.714Z",
+  "generatedAt": "2026-10-09T18:45:55.537Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 211
   },
   "schedule": {
-    "nextLock": "2026-10-09T18:45:00Z",
-    "cadenceMin": 180,
-    "lastRunAt": 1791571185084,
-    "reason": "last run 0m ago, next due in 180m (lock in 5m)"
+    "nextLock": "2026-10-09T19:00:00Z",
+    "cadenceMin": 5,
+    "lastRunAt": 1791571538900,
+    "reason": "last run 0m ago, next due in 5m (lock in 14m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -89,10 +89,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 612.056,
+      "squadScore": 632.8318,
       "lineupId": "Tasks::TaskLineup:21b664c0-3504-4060-8946-7b63c04a3734",
       "state": "READY",
-      "score": 203.28,
+      "score": 204.8,
       "finished": false,
       "cleared": false,
       "players": [
@@ -112,14 +112,14 @@
           "captain": false,
           "score": 37.8,
           "status": "REVIEWING",
-          "kickoff": "2026-10-09T18:45:00Z"
+          "kickoff": "2026-10-15T16:45:00Z"
         },
         {
           "name": "Jobe Bellingham",
           "slug": "jobe-bellingham",
           "position": "Midfielder",
           "captain": true,
-          "score": 55.94,
+          "score": 57.46,
           "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         },
@@ -130,7 +130,7 @@
           "captain": false,
           "score": 36.05,
           "status": "REVIEWING",
-          "kickoff": "2026-10-09T18:45:00Z"
+          "kickoff": "2026-10-15T16:45:00Z"
         },
         {
           "name": "Rafita",
@@ -360,7 +360,7 @@
           "captain": true,
           "score": 58.97,
           "status": "FINAL",
-          "kickoff": "2026-10-09T18:45:00Z"
+          "kickoff": "2026-10-15T16:45:00Z"
         },
         {
           "name": "Dani Olmo",
@@ -611,8 +611,8 @@
   "odds": {
     "configured": true,
     "month": "2026-10",
-    "used": 33,
-    "remaining": 467
+    "used": 34,
+    "remaining": 466
   },
   "control": {
     "paused": false,
@@ -1277,7 +1277,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 231 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 612 so far.",
+      "status": "Locked and playing. 234 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 633 so far.",
       "tone": "good",
       "lockAt": "2026-10-09T18:30:00Z",
       "isSquad": true,
@@ -1338,11 +1338,11 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-09T18:45:00Z"
           },
           {
-            "actual": 55.94,
+            "actual": 57.46,
             "scoreStatus": "REVIEWING",
             "teamSlug": "borussia-dortmund-dortmund",
             "name": "Jobe Bellingham",
@@ -1396,7 +1396,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-09T18:45:00Z"
           },
           {
@@ -1430,9 +1430,9 @@
           }
         ],
         "projected": 274.19,
-        "scoredSoFar": 231.26,
+        "scoredSoFar": 233.54,
         "played": 5,
-        "expectedFinal": 231.26
+        "expectedFinal": 233.54
       },
       "poolStrength": {
         "strong": 0,
@@ -1442,7 +1442,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 612.056
+        "scoreSoFar": 632.8318
       },
       "level": 2,
       "lives": null,
@@ -1495,8 +1495,8 @@
         {
           "name": "Zachary Athekame",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-09T18:45:00Z"
+          "locked": true,
+          "nextGame": "2026-10-15T16:45:00Z"
         },
         {
           "name": "Jobe Bellingham",
@@ -1507,8 +1507,8 @@
         {
           "name": "Ernest Nuamah",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-09T18:45:00Z"
+          "locked": true,
+          "nextGame": "2026-10-15T16:45:00Z"
         },
         {
           "name": "Rafita",
@@ -1598,6 +1598,45 @@
           "blocked": null
         },
         {
+          "id": "ComposeTeamBenchCard:95cddcd1-9da6-434a-a092-f1f1a583989c",
+          "player": "Tyler Morton",
+          "slug": "tyler-morton",
+          "position": "MD",
+          "average": 47,
+          "bonus": 1.08,
+          "starterPct": null,
+          "startRate": 0.9,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 44,
+          "picture": "https://assets.sorare.com/cardsamplepicture/d0bd3d19-e21e-46f6-bfec-2c2f379b0a13/picture/tinified-745fe1fbf135939fb2c08b39ae1540a3.png",
+          "rarity": "common",
+          "gameId": "Game:808df7a0-9fec-4402-aba3-62573bf16193",
+          "kickoff": "2026-10-15T16:45:00Z",
+          "team": "Olympique Lyonnais",
+          "teamSlug": "olympique-lyonnais-lyon",
+          "opponent": "Crystal Palace FC",
+          "opponentCode": "CRY",
+          "code": "OL",
+          "rank": 2,
+          "opponentRank": 15,
+          "home": true,
+          "competition": "UEFA Europa League",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.432,
+          "pLose": 0.307,
+          "oddsBooks": 17,
+          "marketFactor": 1.014,
+          "lockedAt": null,
+          "expected": 46.61,
+          "blocked": null
+        },
+        {
           "id": "ComposeTeamBenchCard:c1276b0d-e82c-4bd4-b7cc-cb7d65ae1179",
           "player": "Alfonso Herrero",
           "slug": "alfonso-herrero-peinador",
@@ -1637,45 +1676,6 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:95cddcd1-9da6-434a-a092-f1f1a583989c",
-          "player": "Tyler Morton",
-          "slug": "tyler-morton",
-          "position": "MD",
-          "average": 47,
-          "bonus": 1.08,
-          "starterPct": null,
-          "startRate": 0.9,
-          "oddsKnown": false,
-          "onGameSheet": true,
-          "reliability": null,
-          "formL5": 44,
-          "picture": "https://assets.sorare.com/cardsamplepicture/d0bd3d19-e21e-46f6-bfec-2c2f379b0a13/picture/tinified-745fe1fbf135939fb2c08b39ae1540a3.png",
-          "rarity": "common",
-          "gameId": "Game:01b14933-2579-4857-9cc5-1c50e67981b8",
-          "kickoff": "2026-10-09T18:45:00Z",
-          "team": "Olympique Lyonnais",
-          "teamSlug": "olympique-lyonnais-lyon",
-          "opponent": "RC Lens",
-          "opponentCode": "RCL",
-          "code": "OL",
-          "rank": 2,
-          "opponentRank": 15,
-          "home": false,
-          "competition": "Ligue 1",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.341,
-          "pLose": 0.401,
-          "oddsBooks": 20,
-          "marketFactor": 0.996,
-          "lockedAt": null,
-          "expected": 45.78,
-          "blocked": null
-        },
-        {
           "id": "ComposeTeamBenchCard:8c3381be-721f-4f28-84b8-356071cc411e",
           "player": "Tyler Morton",
           "slug": "tyler-morton",
@@ -1685,33 +1685,33 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": true,
+          "onGameSheet": false,
           "reliability": null,
           "formL5": 44,
           "picture": "https://assets.sorare.com/cardsamplepicture/78d1f460-4347-43da-b1b0-d0ccdefd3a2f/picture/tinified-18c5667eb67715c5c5e34cc35c409a88.png",
           "rarity": "common",
-          "gameId": "Game:01b14933-2579-4857-9cc5-1c50e67981b8",
-          "kickoff": "2026-10-09T18:45:00Z",
+          "gameId": "Game:808df7a0-9fec-4402-aba3-62573bf16193",
+          "kickoff": "2026-10-15T16:45:00Z",
           "team": "Olympique Lyonnais",
           "teamSlug": "olympique-lyonnais-lyon",
-          "opponent": "RC Lens",
-          "opponentCode": "RCL",
+          "opponent": "Crystal Palace FC",
+          "opponentCode": "CRY",
           "code": "OL",
           "rank": 2,
           "opponentRank": 15,
-          "home": false,
-          "competition": "Ligue 1",
+          "home": true,
+          "competition": "UEFA Europa League",
           "intl": false,
           "oppRank": null,
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.341,
-          "pLose": 0.401,
-          "oddsBooks": 20,
-          "marketFactor": 0.996,
+          "pWin": 0.432,
+          "pLose": 0.307,
+          "oddsBooks": 17,
+          "marketFactor": 1.014,
           "lockedAt": null,
-          "expected": 43.66,
+          "expected": 44.45,
           "blocked": null
         },
         {
@@ -1988,36 +1988,10 @@
           "blocked": null
         }
       ],
-      "projected": 235.1
+      "projected": 236.7
     }
   ],
   "fixtures": [
-    {
-      "kickoff": "2026-10-09T18:45:00Z",
-      "competition": "Ligue 1",
-      "team": "Olympique Lyonnais",
-      "code": "OL",
-      "rank": 2,
-      "opponent": "RC Lens",
-      "opponentCode": "RCL",
-      "opponentRank": 15,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.341,
-      "pLose": 0.401,
-      "oppFactor": null,
-      "home": false,
-      "players": [
-        "Tyler Morton",
-        "Tyler Morton"
-      ],
-      "points": 89.4,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
     {
       "kickoff": "2026-10-09T19:00:00Z",
       "competition": "Primera División",
@@ -2199,6 +2173,32 @@
       "bestStarter": null,
       "surfaces": [
         "my set"
+      ]
+    },
+    {
+      "kickoff": "2026-10-15T16:45:00Z",
+      "competition": "UEFA Europa League",
+      "team": "Olympique Lyonnais",
+      "code": "OL",
+      "rank": 2,
+      "opponent": "Crystal Palace FC",
+      "opponentCode": "CRY",
+      "opponentRank": 15,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.432,
+      "pLose": 0.307,
+      "oppFactor": null,
+      "home": true,
+      "players": [
+        "Tyler Morton",
+        "Tyler Morton"
+      ],
+      "points": 91.1,
+      "bestStarter": null,
+      "surfaces": [
+        "team set (Loadshift)"
       ]
     }
   ]
