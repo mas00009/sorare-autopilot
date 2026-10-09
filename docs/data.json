@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T17:20:47.625Z",
+  "generatedAt": "2026-10-09T17:39:23.932Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-09T18:30:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1791566427759,
-    "reason": "last run 0m ago, next due in 5m (lock in 69m)"
+    "lastRunAt": 1791567543730,
+    "reason": "last run 0m ago, next due in 5m (lock in 51m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -89,10 +89,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 0,
+      "squadScore": 348.25,
       "lineupId": "Tasks::TaskLineup:21b664c0-3504-4060-8946-7b63c04a3734",
       "state": "READY",
-      "score": 0,
+      "score": 53.2,
       "finished": false,
       "cleared": false,
       "players": [
@@ -119,8 +119,8 @@
           "slug": "jobe-bellingham",
           "position": "Midfielder",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 53.2,
+          "status": "REVIEWING",
           "kickoff": "2026-10-09T18:30:00Z"
         },
         {
@@ -142,7 +142,7 @@
           "kickoff": "2026-10-09T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 1
     },
     {
       "surface": "my set",
@@ -1277,7 +1277,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Team entered, locks Sat 05:30 am Sydney. The squad's top three lineups together need 1060; this one is expected to add about 274.",
+      "status": "Locked and playing. 80 scored so far, 1 of 5 played. The squad's top three lineups together need 1060; the squad has 348 so far.",
       "tone": "good",
       "lockAt": "2026-10-09T18:30:00Z",
       "isSquad": true,
@@ -1342,8 +1342,8 @@
             "kickoff": "2026-10-09T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 53.2,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "borussia-dortmund-dortmund",
             "name": "Jobe Bellingham",
             "player": "Jobe Bellingham",
@@ -1430,9 +1430,9 @@
           }
         ],
         "projected": 274.19,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 274.72
+        "scoredSoFar": 79.8,
+        "played": 1,
+        "expectedFinal": 273.16
       },
       "poolStrength": {
         "strong": 0,
@@ -1442,7 +1442,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 0
+        "scoreSoFar": 348.25
       },
       "level": 2,
       "lives": null,
