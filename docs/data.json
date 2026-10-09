@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T20:13:19.092Z",
+  "generatedAt": "2026-10-09T20:19:09.790Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T11:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791576782765,
-    "reason": "last run 0m ago, next due in 180m (lock in 917m)"
+    "lastRunAt": 1791577133188,
+    "reason": "last run 0m ago, next due in 180m (lock in 911m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -89,10 +89,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 932.7284,
+      "squadScore": 862.8568,
       "lineupId": "Tasks::TaskLineup:21b664c0-3504-4060-8946-7b63c04a3734",
       "state": "READY",
-      "score": 241.56,
+      "score": 244.23,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,7 +101,7 @@
           "slug": "alfonso-herrero-peinador",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 35.28,
+          "score": 35.49,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T16:30:00Z"
         },
@@ -110,7 +110,7 @@
           "slug": "zachary-athekame",
           "position": "Defender",
           "captain": false,
-          "score": 38.3,
+          "score": 40.76,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T16:45:00Z"
         },
@@ -1277,14 +1277,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 280 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 933 so far.",
+      "status": "Locked and playing. 282 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 863 so far.",
       "tone": "good",
       "lockAt": "2026-10-09T18:30:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 35.28,
+            "actual": 35.49,
             "scoreStatus": "REVIEWING",
             "teamSlug": "malaga-malaga",
             "name": "Alfonso Herrero",
@@ -1313,7 +1313,7 @@
             "kickoff": "2026-10-09T19:00:00Z"
           },
           {
-            "actual": 38.3,
+            "actual": 40.76,
             "scoreStatus": "REVIEWING",
             "teamSlug": "olympique-lyonnais-lyon",
             "name": "Zachary Athekame",
@@ -1430,9 +1430,9 @@
           }
         ],
         "projected": 274.19,
-        "scoredSoFar": 279.72,
+        "scoredSoFar": 282.39,
         "played": 5,
-        "expectedFinal": 279.72
+        "expectedFinal": 282.39
       },
       "poolStrength": {
         "strong": 0,
@@ -1442,7 +1442,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 932.7284
+        "scoreSoFar": 862.8568
       },
       "level": 2,
       "lives": null,
