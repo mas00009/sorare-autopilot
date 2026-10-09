@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T20:54:04.499Z",
+  "generatedAt": "2026-10-09T20:59:52.765Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T11:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791579229257,
-    "reason": "last run 0m ago, next due in 180m (lock in 876m)"
+    "lastRunAt": 1791579577187,
+    "reason": "last run 0m ago, next due in 180m (lock in 870m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -81,68 +81,6 @@
         }
       ],
       "scored": 1
-    },
-    {
-      "surface": "team set (Loadshift)",
-      "level": 2,
-      "target": 1060,
-      "stepState": "LINEUP_SET",
-      "collaborative": true,
-      "squadLineups": 6,
-      "squadScore": 863.4362,
-      "lineupId": "Tasks::TaskLineup:21b664c0-3504-4060-8946-7b63c04a3734",
-      "state": "READY",
-      "score": 296.78,
-      "finished": false,
-      "cleared": false,
-      "players": [
-        {
-          "name": "Alfonso Herrero",
-          "slug": "alfonso-herrero-peinador",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 43.05,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-18T16:30:00Z"
-        },
-        {
-          "name": "Zachary Athekame",
-          "slug": "zachary-athekame",
-          "position": "Defender",
-          "captain": false,
-          "score": 49.98,
-          "status": "FINAL",
-          "kickoff": "2026-10-15T16:45:00Z"
-        },
-        {
-          "name": "Jobe Bellingham",
-          "slug": "jobe-bellingham",
-          "position": "Midfielder",
-          "captain": true,
-          "score": 76.3,
-          "status": "FINAL",
-          "kickoff": "2026-10-14T19:00:00Z"
-        },
-        {
-          "name": "Ernest Nuamah",
-          "slug": "ernest-appiah-nuamah",
-          "position": "Forward",
-          "captain": false,
-          "score": 42.44,
-          "status": "FINAL",
-          "kickoff": "2026-10-15T16:45:00Z"
-        },
-        {
-          "name": "Rafita",
-          "slug": "rafael-garrido-hierro",
-          "position": "Defender",
-          "captain": false,
-          "score": 85.01,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-18T16:30:00Z"
-        }
-      ],
-      "scored": 5
     },
     {
       "surface": "my set",
@@ -326,68 +264,6 @@
           "score": 39.21,
           "status": "FINAL",
           "kickoff": "2026-10-11T19:00:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
-      "surface": "team set (Loadshift)",
-      "level": 1,
-      "target": 980,
-      "stepState": "CLAIMED",
-      "collaborative": true,
-      "squadLineups": 6,
-      "squadScore": 1255.4598,
-      "lineupId": "Tasks::TaskLineup:ea54b803-300f-4fbb-8723-1f8637fed980",
-      "state": "SUCCESSFUL",
-      "score": 278.8,
-      "finished": true,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Stole Dimitrievski",
-          "slug": "stole-dimitrievski",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 18.69,
-          "status": "FINAL",
-          "kickoff": "2026-10-11T19:00:00Z"
-        },
-        {
-          "name": "Zachary Athekame",
-          "slug": "zachary-athekame",
-          "position": "Defender",
-          "captain": true,
-          "score": 58.97,
-          "status": "FINAL",
-          "kickoff": "2026-10-15T16:45:00Z"
-        },
-        {
-          "name": "Dani Olmo",
-          "slug": "daniel-olmo-carvajal",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 72.82,
-          "status": "FINAL",
-          "kickoff": "2026-10-10T16:30:00Z"
-        },
-        {
-          "name": "Álex Baena",
-          "slug": "alejandro-baena-rodriguez",
-          "position": "Forward",
-          "captain": false,
-          "score": 41.29,
-          "status": "FINAL",
-          "kickoff": "2026-10-10T14:15:00Z"
-        },
-        {
-          "name": "Lewis Hall",
-          "slug": "lewis-hall-2004-09-08",
-          "position": "Defender",
-          "captain": false,
-          "score": 87.04,
-          "status": "FINAL",
-          "kickoff": "2026-10-12T19:00:00Z"
         }
       ],
       "scored": 5
@@ -1277,191 +1153,39 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 335 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 863 so far.",
-      "tone": "good",
-      "lockAt": "2026-10-09T18:30:00Z",
+      "status": "Not open for entry yet. A team goes in the moment it opens.",
+      "tone": "neutral",
+      "lockAt": null,
       "isSquad": true,
-      "entered": {
-        "five": [
-          {
-            "actual": 43.05,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "malaga-malaga",
-            "name": "Alfonso Herrero",
-            "player": "Alfonso Herrero",
-            "slug": "alfonso-herrero-peinador",
-            "pos": "GK",
-            "position": "GK",
-            "pic": "https://assets.sorare.com/cardsamplepicture/fe322d6e-9b41-4f3a-83e9-718c35b5c0bf/picture/tinified-7f8d4c159a7cc9040018807b56b14d1c.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/fe322d6e-9b41-4f3a-83e9-718c35b5c0bf/picture/tinified-7f8d4c159a7cc9040018807b56b14d1c.png",
-            "captain": false,
-            "exp": 46.42,
-            "expected": 46.42,
-            "opp": "RCD Espanyol de Barcelona",
-            "opponent": "RCD Espanyol de Barcelona",
-            "home": true,
-            "average": 46,
-            "formL5": 41,
-            "intl": false,
-            "pWin": 0.347,
-            "pLose": 0.354,
-            "marketFactor": 1.016,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-09T19:00:00Z"
-          },
-          {
-            "actual": 49.98,
-            "scoreStatus": "FINAL",
-            "teamSlug": "olympique-lyonnais-lyon",
-            "name": "Zachary Athekame",
-            "player": "Zachary Athekame",
-            "slug": "zachary-athekame",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/412c34d9-fb94-4dd7-af41-638fa1bbcd7e/picture/tinified-9dc3fc082484b7951b28d2e7b7a3eadc.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/412c34d9-fb94-4dd7-af41-638fa1bbcd7e/picture/tinified-9dc3fc082484b7951b28d2e7b7a3eadc.png",
-            "captain": false,
-            "exp": 54.3,
-            "expected": 54.3,
-            "opp": "RC Lens",
-            "opponent": "RC Lens",
-            "home": false,
-            "average": 59,
-            "formL5": 71,
-            "intl": false,
-            "pWin": 0.341,
-            "pLose": 0.401,
-            "marketFactor": 1.005,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-09T18:45:00Z"
-          },
-          {
-            "actual": 76.3,
-            "scoreStatus": "FINAL",
-            "teamSlug": "borussia-dortmund-dortmund",
-            "name": "Jobe Bellingham",
-            "player": "Jobe Bellingham",
-            "slug": "jobe-bellingham",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/b5bff151-85db-49d9-97fa-d3efd1bbe987/picture/tinified-a94f1f74feffed627b30c76e6a6e43d1.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/b5bff151-85db-49d9-97fa-d3efd1bbe987/picture/tinified-a94f1f74feffed627b30c76e6a6e43d1.png",
-            "captain": true,
-            "exp": 54.24,
-            "expected": 54.24,
-            "opp": "SV Werder Bremen",
-            "opponent": "SV Werder Bremen",
-            "home": true,
-            "average": 53,
-            "formL5": 61,
-            "intl": false,
-            "pWin": 0.722,
-            "pLose": 0.113,
-            "marketFactor": 1.072,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-09T18:30:00Z"
-          },
-          {
-            "actual": 42.44,
-            "scoreStatus": "FINAL",
-            "teamSlug": "olympique-lyonnais-lyon",
-            "name": "Ernest Nuamah",
-            "player": "Ernest Nuamah",
-            "slug": "ernest-appiah-nuamah",
-            "pos": "FW",
-            "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/df726850-bd86-4a45-84d6-cd1ad25fd547/picture/tinified-04c2a475c04772517c029f1b04c3712f.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/df726850-bd86-4a45-84d6-cd1ad25fd547/picture/tinified-04c2a475c04772517c029f1b04c3712f.png",
-            "captain": false,
-            "exp": 43.75,
-            "expected": 43.75,
-            "opp": "RC Lens",
-            "opponent": "RC Lens",
-            "home": false,
-            "average": 52,
-            "formL5": 64,
-            "intl": false,
-            "pWin": 0.341,
-            "pLose": 0.401,
-            "marketFactor": 0.996,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-09T18:45:00Z"
-          },
-          {
-            "actual": 85.01,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "malaga-malaga",
-            "name": "Rafita",
-            "player": "Rafita",
-            "slug": "rafael-garrido-hierro",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/2f1768b3-eb57-4c92-b6d8-c31dd6588b73/picture/tinified-810cd9dd1b1ead20842204938af0b71d.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/2f1768b3-eb57-4c92-b6d8-c31dd6588b73/picture/tinified-810cd9dd1b1ead20842204938af0b71d.png",
-            "captain": false,
-            "exp": 48.89,
-            "expected": 48.89,
-            "opp": "RCD Espanyol de Barcelona",
-            "opponent": "RCD Espanyol de Barcelona",
-            "home": true,
-            "average": 52,
-            "formL5": 46,
-            "intl": false,
-            "pWin": 0.347,
-            "pLose": 0.354,
-            "marketFactor": 1.016,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-09T19:00:00Z"
-          }
-        ],
-        "projected": 274.19,
-        "scoredSoFar": 334.93,
-        "played": 5,
-        "expectedFinal": 334.93
-      },
+      "entered": null,
       "poolStrength": {
         "strong": 0,
         "needed": 5
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 6,
+        "lineupsIn": 0,
         "needed": 3,
-        "scoreSoFar": 863.4362
+        "scoreSoFar": 0
       },
-      "level": 2,
+      "level": 0,
       "lives": null,
       "totalLevels": 5,
-      "levelsDone": 2,
+      "levelsDone": 0,
       "ladder": [
         {
           "level": 0,
-          "state": "CLAIMED",
+          "state": "PRE_MATCHDAY_LOCKED",
           "target": 700
         },
         {
           "level": 1,
-          "state": "CLAIMED",
+          "state": "LOCKED",
           "target": 980
         },
         {
           "level": 2,
-          "state": "LINEUP_SET",
+          "state": "LOCKED",
           "target": 1060
         },
         {
@@ -1483,40 +1207,9 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
-      "target": 1060,
-      "current": [
-        {
-          "name": "Alfonso Herrero",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-18T16:30:00Z"
-        },
-        {
-          "name": "Zachary Athekame",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-15T16:45:00Z"
-        },
-        {
-          "name": "Jobe Bellingham",
-          "captain": true,
-          "locked": true,
-          "nextGame": "2026-10-14T19:00:00Z"
-        },
-        {
-          "name": "Ernest Nuamah",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-15T16:45:00Z"
-        },
-        {
-          "name": "Rafita",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-18T16:30:00Z"
-        }
-      ],
+      "state": "PRE_MATCHDAY_LOCKED",
+      "target": 700,
+      "current": [],
       "plan": null,
       "candidates": [],
       "projected": 0
