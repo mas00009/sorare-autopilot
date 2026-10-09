@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T18:51:48.734Z",
+  "generatedAt": "2026-10-09T18:57:41.389Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-09T19:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791571891253,
-    "reason": "last run 0m ago, next due in 180m (lock in 8m)"
+    "lastRunAt": 1791572244241,
+    "reason": "last run 0m ago, next due in 180m (lock in 2m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -89,10 +89,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 656.7376,
+      "squadScore": 676.6574,
       "lineupId": "Tasks::TaskLineup:21b664c0-3504-4060-8946-7b63c04a3734",
       "state": "READY",
-      "score": 207.92,
+      "score": 215.77,
       "finished": false,
       "cleared": false,
       "players": [
@@ -110,7 +110,7 @@
           "slug": "zachary-athekame",
           "position": "Defender",
           "captain": false,
-          "score": 38.1,
+          "score": 43.91,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T16:45:00Z"
         },
@@ -119,7 +119,7 @@
           "slug": "jobe-bellingham",
           "position": "Midfielder",
           "captain": true,
-          "score": 61.41,
+          "score": 62.62,
           "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         },
@@ -128,7 +128,7 @@
           "slug": "ernest-appiah-nuamah",
           "position": "Forward",
           "captain": false,
-          "score": 34.92,
+          "score": 35.74,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T16:45:00Z"
         },
@@ -1277,7 +1277,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 239 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 657 so far.",
+      "status": "Locked and playing. 240 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 678 so far.",
       "tone": "good",
       "lockAt": "2026-10-09T18:30:00Z",
       "isSquad": true,
@@ -1342,7 +1342,7 @@
             "kickoff": "2026-10-09T18:45:00Z"
           },
           {
-            "actual": 61.41,
+            "actual": 62.62,
             "scoreStatus": "REVIEWING",
             "teamSlug": "borussia-dortmund-dortmund",
             "name": "Jobe Bellingham",
@@ -1430,9 +1430,9 @@
           }
         ],
         "projected": 274.19,
-        "scoredSoFar": 238.63,
+        "scoredSoFar": 240.45,
         "played": 5,
-        "expectedFinal": 238.63
+        "expectedFinal": 240.45
       },
       "poolStrength": {
         "strong": 0,
@@ -1442,7 +1442,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 656.7376
+        "scoreSoFar": 678.2574
       },
       "level": 2,
       "lives": null,
