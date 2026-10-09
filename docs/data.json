@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T18:03:56.233Z",
+  "generatedAt": "2026-10-09T18:16:01.850Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-09T18:30:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1791569017231,
-    "reason": "last run 0m ago, next due in 5m (lock in 26m)"
+    "lastRunAt": 1791569743840,
+    "reason": "last run 0m ago, next due in 5m (lock in 14m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -89,10 +89,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 462.35,
+      "squadScore": 603.4,
       "lineupId": "Tasks::TaskLineup:21b664c0-3504-4060-8946-7b63c04a3734",
       "state": "READY",
-      "score": 127.05,
+      "score": 200.55,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,8 +101,8 @@
           "slug": "alfonso-herrero-peinador",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-09T19:00:00Z"
         },
         {
@@ -137,12 +137,12 @@
           "slug": "rafael-garrido-hierro",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-09T19:00:00Z"
         }
       ],
-      "scored": 3
+      "scored": 5
     },
     {
       "surface": "my set",
@@ -1277,15 +1277,15 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 154 scored so far, 3 of 5 played. The squad's top three lineups together need 1060; the squad has 462 so far.",
+      "status": "Locked and playing. 227 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 603 so far.",
       "tone": "good",
       "lockAt": "2026-10-09T18:30:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "malaga-malaga",
             "name": "Alfonso Herrero",
             "player": "Alfonso Herrero",
@@ -1400,8 +1400,8 @@
             "kickoff": "2026-10-09T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "malaga-malaga",
             "name": "Rafita",
             "player": "Rafita",
@@ -1430,9 +1430,9 @@
           }
         ],
         "projected": 274.19,
-        "scoredSoFar": 153.65,
-        "played": 3,
-        "expectedFinal": 248.96
+        "scoredSoFar": 227.15,
+        "played": 5,
+        "expectedFinal": 227.15
       },
       "poolStrength": {
         "strong": 0,
@@ -1442,7 +1442,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 462.35
+        "scoreSoFar": 603.4
       },
       "level": 2,
       "lives": null,
@@ -1529,7 +1529,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 48,
           "picture": "https://assets.sorare.com/cardsamplepicture/f3572011-b425-4696-854e-169d1add217a/picture/tinified-1861ca38e73ec9949f249c42cd46f0c9.png",
@@ -1568,7 +1568,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 46,
           "picture": "https://assets.sorare.com/cardsamplepicture/2f1768b3-eb57-4c92-b6d8-c31dd6588b73/picture/tinified-810cd9dd1b1ead20842204938af0b71d.png",
@@ -1607,7 +1607,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 41,
           "picture": "https://assets.sorare.com/cardsamplepicture/fe322d6e-9b41-4f3a-83e9-718c35b5c0bf/picture/tinified-7f8d4c159a7cc9040018807b56b14d1c.png",
@@ -1724,7 +1724,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 53,
           "picture": "https://assets.sorare.com/cardsamplepicture/f9add5fe-c627-45ce-810c-b11c4baf55eb/picture/tinified-d707879df94026c4838acaaef9f0066f.png",
@@ -1763,7 +1763,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 60,
           "picture": "https://assets.sorare.com/cardsamplepicture/a77ba295-c607-4e6c-8642-665ffd9a4839/picture/tinified-ae614ba9789e30a3c7f6bc0976f99f11.png",
@@ -1802,7 +1802,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 37,
           "picture": "https://assets.sorare.com/cardsamplepicture/4658ba70-2eb0-4a8d-b2bf-39c6d293304b/picture/tinified-b565cd6f34d9d42a06b8dbc25ab1f02e.png",
@@ -1841,7 +1841,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 38,
           "picture": "https://assets.sorare.com/cardsamplepicture/c114da12-57ad-49b1-a29e-5212dad45e95/picture/tinified-7eccd926a958fdce757d0bcc01ca41ac.png",
@@ -1880,7 +1880,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 47,
           "picture": "https://assets.sorare.com/cardsamplepicture/ecd3b6da-63e2-4b03-b2ed-05751aeef50c/picture/tinified-3a1a51cb5a60cb34f82bb34415557774.png",
@@ -1919,7 +1919,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 37,
           "picture": "https://assets.sorare.com/cardsamplepicture/eba0f07e-d23d-4748-97a4-41ce2bca344b/picture/tinified-b27cf17a9886ab004dafdd28363b4d2e.png",
@@ -1958,7 +1958,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 36,
           "picture": "https://assets.sorare.com/cardsamplepicture/edc2b1c3-27fc-4561-99a1-7552d8049111/picture/tinified-fbb1668fa31c88dcfca272e38077d623.png",
