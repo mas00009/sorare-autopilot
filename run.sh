@@ -26,7 +26,27 @@ NODE="$(command -v node || echo /usr/local/bin/node)"
   # Refresh the published dashboard. Only pushes when something actually changed,
   # so a quiet pass leaves no commit noise.
   "$NODE" src/cli.js dashboard >/dev/null 2>&1
-  if [ -n "$(git -C "$DIR" status --porcelain docs/data.json)" ]; then
+  # Only timestamps change on most passes. Pushing those every 5 minutes ran
+  # ~250 Pages deploys a day, at GitHub's ~10-an-hour limit, and every network
+  # blip became a "Run failed" email. Push when something real changed, or
+  # every 30 minutes so the page's "updated" time stays honest.
+  substantive=$("$NODE" -e '
+    const fs = require("fs"); const { execSync } = require("child_process");
+    // generatedAt anywhere; lastRunAt and its "next due in" reason only on
+    // the scheduler object, so a board status change still counts.
+    const strip = (t) => JSON.stringify(JSON.parse(t), function (k, v) {
+      if (k === "generatedAt") return undefined;
+      if (v && typeof v === "object" && !Array.isArray(v) && "lastRunAt" in v) {
+        const { lastRunAt, reason, ...rest } = v; return rest;
+      }
+      return v;
+    });
+    let old = "{}"; try { old = execSync("git show HEAD:docs/data.json", { encoding: "utf8" }); } catch {}
+    console.log(strip(old) === strip(fs.readFileSync("docs/data.json", "utf8")) ? "no" : "yes");
+  ' 2>/dev/null || echo yes)
+  last=$(git -C "$DIR" log -1 --format=%ct -- docs/data.json 2>/dev/null || echo 0)
+  stale=$(( $(date +%s) - last > 1800 ))
+  if [ -n "$(git -C "$DIR" status --porcelain docs/data.json)" ] && { [ "$substantive" = yes ] || [ "$stale" = 1 ]; }; then
     git -C "$DIR" add docs/data.json
     git -C "$DIR" -c user.email=mmohammad@freelancer.com -c user.name="Sorare Autopilot" \
       commit -q -m "dashboard: $(date -u +%Y-%m-%dT%H:%MZ)" && git -C "$DIR" push -q origin main 2>&1
