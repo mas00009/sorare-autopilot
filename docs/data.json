@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T16:18:07.416Z",
+  "generatedAt": "2026-10-10T16:24:15.568Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -8,9 +8,9 @@
   },
   "schedule": {
     "nextLock": "2026-10-10T16:30:00Z",
-    "cadenceMin": 5,
-    "lastRunAt": 1791649066473,
-    "reason": "last run 0m ago, next due in 5m (lock in 12m)"
+    "cadenceMin": 180,
+    "lastRunAt": 1791649435540,
+    "reason": "last run 0m ago, next due in 180m (lock in 6m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -40,7 +40,7 @@
           "position": "Goalkeeper",
           "captain": false,
           "score": 47.15,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-18T14:15:00Z"
         },
         {
@@ -67,7 +67,7 @@
           "position": "Forward",
           "captain": false,
           "score": 23.76,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-18T14:15:00Z"
         },
         {
@@ -315,7 +315,7 @@
           "position": "Forward",
           "captain": false,
           "score": 78.1,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-13T19:00:00Z"
         },
         {
@@ -571,7 +571,7 @@
         "five": [
           {
             "actual": 47.15,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
             "name": "Sivera",
             "player": "Sivera",
@@ -658,7 +658,7 @@
           },
           {
             "actual": 23.76,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
             "name": "Ángel Pérez",
             "player": "Ángel Pérez",
@@ -1310,7 +1310,7 @@
           },
           {
             "actual": 78.1,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Álex Baena",
             "player": "Álex Baena",
