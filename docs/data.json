@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T20:52:38.814Z",
+  "generatedAt": "2026-10-10T20:58:31.054Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 211
   },
   "schedule": {
-    "nextLock": "2026-10-11T12:00:00Z",
+    "nextLock": "2026-10-11T13:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791665542808,
-    "reason": "last run 0m ago, next due in 180m (lock in 907m)"
+    "lastRunAt": 1791665895777,
+    "reason": "last run 0m ago, next due in 180m (lock in 961m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -334,13 +334,13 @@
       "surface": "team set (Loadshift)",
       "level": 0,
       "target": 700,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
       "squadScore": 1171.9792,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 309.34,
+      "score": 305.45,
       "finished": false,
       "cleared": true,
       "players": [
@@ -385,7 +385,7 @@
           "slug": "jude-bellingham",
           "position": "Midfielder",
           "captain": false,
-          "score": 40.53,
+          "score": 36.65,
           "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         }
@@ -1277,7 +1277,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 353 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1172 so far.",
+      "status": "Locked and playing. 349 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1172 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1400,7 +1400,7 @@
             "kickoff": "2026-10-10T14:15:00Z"
           },
           {
-            "actual": 40.53,
+            "actual": 36.65,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Jude Bellingham",
@@ -1430,9 +1430,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 353.04,
+        "scoredSoFar": 349.16,
         "played": 5,
-        "expectedFinal": 353.04
+        "expectedFinal": 349.16
       },
       "poolStrength": {
         "strong": 0,
@@ -1451,7 +1451,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 700
         },
         {
@@ -1483,7 +1483,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 700,
       "current": [
         {
