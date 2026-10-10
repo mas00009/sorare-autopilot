@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T17:00:06.683Z",
+  "generatedAt": "2026-10-10T17:06:06.602Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T18:45:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1791651588332,
-    "reason": "last run 0m ago, next due in 15m (lock in 105m)"
+    "lastRunAt": 1791651947269,
+    "reason": "last run 0m ago, next due in 15m (lock in 99m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 1010.8046,
+      "squadScore": 1024.7906,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 185.22,
+      "score": 181.1,
       "finished": false,
       "cleared": true,
       "players": [
@@ -287,7 +287,7 @@
           "slug": "senne-lammens",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 36.36,
+          "score": 32.24,
           "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
@@ -1215,14 +1215,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 185 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 1011 so far.",
+      "status": "Locked and playing. 181 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 1025 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 36.36,
+            "actual": 32.24,
             "scoreStatus": "REVIEWING",
             "teamSlug": "manchester-united-manchester",
             "name": "Senne Lammens",
@@ -1368,9 +1368,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 185.22,
+        "scoredSoFar": 181.1,
         "played": 3,
-        "expectedFinal": 364.45
+        "expectedFinal": 360.33
       },
       "poolStrength": {
         "strong": 1,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 1010.8046
+        "scoreSoFar": 1024.7906
       },
       "level": 0,
       "lives": null,
