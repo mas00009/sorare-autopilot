@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T13:45:15.820Z",
+  "generatedAt": "2026-10-10T13:51:24.659Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -8,9 +8,9 @@
   },
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
-    "cadenceMin": 5,
-    "lastRunAt": 1791639890505,
-    "reason": "last run 0m ago, next due in 5m (lock in 15m)"
+    "cadenceMin": 180,
+    "lastRunAt": 1791640260140,
+    "reason": "last run 0m ago, next due in 180m (lock in 9m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:4322c030-30b5-4abe-b0a3-b13f42555a98",
       "state": "READY",
-      "score": 165.57,
+      "score": 167.1,
       "finished": false,
       "cleared": false,
       "players": [
@@ -75,7 +75,7 @@
           "slug": "tom-zimmerschied",
           "position": "Midfielder",
           "captain": false,
-          "score": 39.78,
+          "score": 41.31,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T13:30:00Z"
         }
@@ -275,7 +275,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 482.03,
+      "squadScore": 484.023,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
       "score": 36.4,
@@ -563,7 +563,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 166 scored so far, 4 of 5 played. On course for about 279; needs 360 (81 short).",
+      "status": "Locked and playing. 167 scored so far, 4 of 5 played. On course for about 281; needs 360 (79 short).",
       "tone": "warn",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": false,
@@ -686,7 +686,7 @@
             "kickoff": "2026-10-10T14:15:00Z"
           },
           {
-            "actual": 39.78,
+            "actual": 41.31,
             "scoreStatus": "REVIEWING",
             "teamSlug": "elversberg-saarbrucken",
             "name": "Tom Zimmerschied",
@@ -716,9 +716,9 @@
           }
         ],
         "projected": 370.38,
-        "scoredSoFar": 165.58,
+        "scoredSoFar": 167.11,
         "played": 4,
-        "expectedFinal": 278.98
+        "expectedFinal": 280.51
       },
       "poolStrength": {
         "strong": 5,
@@ -1215,7 +1215,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 36 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 481 so far.",
+      "status": "Locked and playing. 36 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 484 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 481.309
+        "scoreSoFar": 484.023
       },
       "level": 0,
       "lives": null,
