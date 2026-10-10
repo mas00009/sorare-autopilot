@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T18:11:50.073Z",
+  "generatedAt": "2026-10-10T18:17:46.527Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T18:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1791655890205,
-    "reason": "last run 0m ago, next due in 5m (lock in 33m)"
+    "lastRunAt": 1791656248113,
+    "reason": "last run 0m ago, next due in 5m (lock in 27m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -275,7 +275,7 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 1153.0548,
+      "squadScore": 1155.9392,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
       "score": 300.61,
@@ -1215,7 +1215,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 327 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1153 so far.",
+      "status": "Locked and playing. 327 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1156 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 1153.0548
+        "scoreSoFar": 1155.9392
       },
       "level": 0,
       "lives": null,
