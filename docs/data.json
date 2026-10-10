@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T13:57:35.315Z",
+  "generatedAt": "2026-10-10T14:03:28.634Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791640629808,
-    "reason": "last run 0m ago, next due in 180m (lock in 2m)"
+    "lastRunAt": 1791640984798,
+    "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:4322c030-30b5-4abe-b0a3-b13f42555a98",
       "state": "READY",
-      "score": 166.29,
+      "score": 165.57,
       "finished": false,
       "cleared": false,
       "players": [
@@ -75,7 +75,7 @@
           "slug": "tom-zimmerschied",
           "position": "Midfielder",
           "captain": false,
-          "score": 40.49,
+          "score": 39.78,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T13:30:00Z"
         }
@@ -112,7 +112,7 @@
           "captain": true,
           "score": 87.43,
           "status": "FINAL",
-          "kickoff": "2026-10-10T14:00:00Z"
+          "kickoff": "2026-10-15T19:00:00Z"
         },
         {
           "name": "James Garner",
@@ -272,10 +272,10 @@
       "surface": "team set (Loadshift)",
       "level": 0,
       "target": 700,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 481.302,
+      "squadScore": 487.678,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
       "score": 36.4,
@@ -298,7 +298,7 @@
           "captain": false,
           "score": 36.4,
           "status": "REVIEWING",
-          "kickoff": "2026-10-10T14:00:00Z"
+          "kickoff": "2026-10-17T14:00:00Z"
         },
         {
           "name": "Cristian Cásseres Jr.",
@@ -549,8 +549,8 @@
   "odds": {
     "configured": true,
     "month": "2026-10",
-    "used": 40,
-    "remaining": 460
+    "used": 41,
+    "remaining": 459
   },
   "control": {
     "paused": false,
@@ -563,7 +563,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 166 scored so far, 4 of 5 played. On course for about 280; needs 360 (80 short).",
+      "status": "Locked and playing. 166 scored so far, 4 of 5 played. On course for about 279; needs 360 (81 short).",
       "tone": "warn",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": false,
@@ -686,7 +686,7 @@
             "kickoff": "2026-10-10T14:15:00Z"
           },
           {
-            "actual": 40.49,
+            "actual": 39.78,
             "scoreStatus": "REVIEWING",
             "teamSlug": "elversberg-saarbrucken",
             "name": "Tom Zimmerschied",
@@ -716,9 +716,9 @@
           }
         ],
         "projected": 370.38,
-        "scoredSoFar": 166.29,
+        "scoredSoFar": 165.58,
         "played": 4,
-        "expectedFinal": 279.69
+        "expectedFinal": 278.98
       },
       "poolStrength": {
         "strong": 5,
@@ -1215,7 +1215,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 36 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 481 so far.",
+      "status": "Locked and playing. 36 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 488 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1276,7 +1276,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-10T14:00:00Z"
           },
           {
@@ -1373,14 +1373,14 @@
         "expectedFinal": 333.32
       },
       "poolStrength": {
-        "strong": 2,
+        "strong": 1,
         "needed": 5
       },
       "collaborative": true,
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 481.302
+        "scoreSoFar": 487.678
       },
       "level": 0,
       "lives": null,
@@ -1389,7 +1389,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 700
         },
         {
@@ -1421,7 +1421,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 700,
       "current": [
         {
@@ -1433,8 +1433,8 @@
         {
           "name": "Dara O'Shea",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-10T14:00:00Z"
+          "locked": true,
+          "nextGame": "2026-10-17T14:00:00Z"
         },
         {
           "name": "Cristian Cásseres Jr.",
@@ -1457,9 +1457,9 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 314.59,
-        "lock": "2026-10-10T14:00:00Z",
-        "shortfall": 385.4,
+        "projected": 311.86,
+        "lock": "2026-10-10T14:15:00Z",
+        "shortfall": 388.1,
         "tradedPointsForTime": 0,
         "captain": "federico-santiago-valverde-dipetta",
         "captainPoints": 28.57,
@@ -1584,45 +1584,6 @@
             "blocked": null
           },
           {
-            "id": "ComposeTeamBenchCard:0c63dd8a-5f63-4509-8eeb-3bcfcda924a0",
-            "player": "Issa Diop",
-            "slug": "issa-diop",
-            "position": "DF",
-            "average": 54,
-            "bonus": 1.14,
-            "starterPct": null,
-            "startRate": 0.9,
-            "oddsKnown": false,
-            "onGameSheet": true,
-            "reliability": null,
-            "formL5": 54,
-            "picture": "https://assets.sorare.com/cardsamplepicture/cc7a9cbd-ba12-4a97-aaad-d4e225b67b69/picture/tinified-fb33a57b0256848ba36522da092a423f.png",
-            "rarity": "common",
-            "gameId": "Game:973e4bee-76f5-4b49-b16a-54939ac1d5fd",
-            "kickoff": "2026-10-10T14:00:00Z",
-            "team": "Ipswich Town FC",
-            "teamSlug": "ipswich-town-ipswich-suffolk",
-            "opponent": "Fulham FC",
-            "opponentCode": "FUL",
-            "code": "IPS",
-            "rank": 11,
-            "opponentRank": 19,
-            "home": true,
-            "competition": "Premier League",
-            "intl": false,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "mismatch": false,
-            "pWin": 0.349,
-            "pLose": 0.38,
-            "oddsBooks": 23,
-            "marketFactor": 1.011,
-            "lockedAt": null,
-            "expected": 56.02,
-            "blocked": null
-          },
-          {
             "id": "ComposeTeamBenchCard:756b4c8a-5d17-4790-b5b9-caefa74226ec",
             "player": "Ángel Pérez",
             "slug": "angel-perez-hidalgo",
@@ -1659,6 +1620,45 @@
             "marketFactor": 0.971,
             "lockedAt": null,
             "expected": 55.45,
+            "blocked": null
+          },
+          {
+            "id": "ComposeTeamBenchCard:ee04cd2f-821c-447c-8f74-2fa4642bbf33",
+            "player": "Lisandro Martínez",
+            "slug": "lisandro-martinez",
+            "position": "DF",
+            "average": 56,
+            "bonus": 1.03,
+            "starterPct": null,
+            "startRate": 0.9,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 49,
+            "picture": "https://assets.sorare.com/cardsamplepicture/3976bced-4dae-4ed2-884b-6238cc8b9000/picture/tinified-59e9001569003345b31cbe079cc49ada.png",
+            "rarity": "common",
+            "gameId": "Game:b6839e65-03af-46cc-86ee-2f69feb63cb4",
+            "kickoff": "2026-10-10T16:30:00Z",
+            "team": "Manchester United FC",
+            "teamSlug": "manchester-united-manchester",
+            "opponent": "Tottenham Hotspur FC",
+            "opponentCode": "TOT",
+            "code": "MUN",
+            "rank": 12,
+            "opponentRank": 20,
+            "home": true,
+            "competition": "Premier League",
+            "intl": false,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "mismatch": false,
+            "pWin": 0.557,
+            "pLose": 0.215,
+            "oddsBooks": 23,
+            "marketFactor": 1.095,
+            "lockedAt": null,
+            "expected": 53.29,
             "blocked": null
           }
         ]
@@ -1782,45 +1782,6 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:0c63dd8a-5f63-4509-8eeb-3bcfcda924a0",
-          "player": "Issa Diop",
-          "slug": "issa-diop",
-          "position": "DF",
-          "average": 54,
-          "bonus": 1.14,
-          "starterPct": null,
-          "startRate": 0.9,
-          "oddsKnown": false,
-          "onGameSheet": true,
-          "reliability": null,
-          "formL5": 54,
-          "picture": "https://assets.sorare.com/cardsamplepicture/cc7a9cbd-ba12-4a97-aaad-d4e225b67b69/picture/tinified-fb33a57b0256848ba36522da092a423f.png",
-          "rarity": "common",
-          "gameId": "Game:973e4bee-76f5-4b49-b16a-54939ac1d5fd",
-          "kickoff": "2026-10-10T14:00:00Z",
-          "team": "Ipswich Town FC",
-          "teamSlug": "ipswich-town-ipswich-suffolk",
-          "opponent": "Fulham FC",
-          "opponentCode": "FUL",
-          "code": "IPS",
-          "rank": 11,
-          "opponentRank": 19,
-          "home": true,
-          "competition": "Premier League",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.349,
-          "pLose": 0.38,
-          "oddsBooks": 23,
-          "marketFactor": 1.011,
-          "lockedAt": null,
-          "expected": 56.02,
-          "blocked": null
-        },
-        {
           "id": "ComposeTeamBenchCard:756b4c8a-5d17-4790-b5b9-caefa74226ec",
           "player": "Ángel Pérez",
           "slug": "angel-perez-hidalgo",
@@ -1858,37 +1819,51 @@
           "lockedAt": null,
           "expected": 55.45,
           "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:ee04cd2f-821c-447c-8f74-2fa4642bbf33",
+          "player": "Lisandro Martínez",
+          "slug": "lisandro-martinez",
+          "position": "DF",
+          "average": 56,
+          "bonus": 1.03,
+          "starterPct": null,
+          "startRate": 0.9,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 49,
+          "picture": "https://assets.sorare.com/cardsamplepicture/3976bced-4dae-4ed2-884b-6238cc8b9000/picture/tinified-59e9001569003345b31cbe079cc49ada.png",
+          "rarity": "common",
+          "gameId": "Game:b6839e65-03af-46cc-86ee-2f69feb63cb4",
+          "kickoff": "2026-10-10T16:30:00Z",
+          "team": "Manchester United FC",
+          "teamSlug": "manchester-united-manchester",
+          "opponent": "Tottenham Hotspur FC",
+          "opponentCode": "TOT",
+          "code": "MUN",
+          "rank": 12,
+          "opponentRank": 20,
+          "home": true,
+          "competition": "Premier League",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.557,
+          "pLose": 0.215,
+          "oddsBooks": 23,
+          "marketFactor": 1.095,
+          "lockedAt": null,
+          "expected": 53.29,
+          "blocked": null
         }
       ],
-      "projected": 287.9
+      "projected": 287.3
     }
   ],
   "fixtures": [
-    {
-      "kickoff": "2026-10-10T14:00:00Z",
-      "competition": "Premier League",
-      "team": "Ipswich Town FC",
-      "code": "IPS",
-      "rank": 11,
-      "opponent": "Fulham FC",
-      "opponentCode": "FUL",
-      "opponentRank": 19,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.349,
-      "pLose": 0.38,
-      "oppFactor": null,
-      "home": true,
-      "players": [
-        "Issa Diop"
-      ],
-      "points": 56,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
     {
       "kickoff": "2026-10-10T14:15:00Z",
       "competition": "Primera División",
@@ -1932,12 +1907,14 @@
       "oppFactor": null,
       "home": true,
       "players": [
-        "Senne Lammens"
+        "Senne Lammens",
+        "Lisandro Martínez"
       ],
-      "points": 60.4,
+      "points": 113.7,
       "bestStarter": null,
       "surfaces": [
-        "my set"
+        "my set",
+        "team set (Loadshift)"
       ]
     },
     {
