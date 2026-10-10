@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T20:29:40.984Z",
+  "generatedAt": "2026-10-10T20:40:57.161Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-10T19:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791664165930,
+    "lastRunAt": 1791664841001,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:4322c030-30b5-4abe-b0a3-b13f42555a98",
       "state": "READY",
-      "score": 251.23,
+      "score": 251.08,
       "finished": false,
       "cleared": false,
       "players": [
@@ -57,7 +57,7 @@
           "slug": "cristian-sleiker-casseres-yepes",
           "position": "Midfielder",
           "captain": true,
-          "score": 87.55,
+          "score": 87.4,
           "status": "REVIEWING",
           "kickoff": "2026-10-16T18:45:00Z"
         },
@@ -278,7 +278,7 @@
       "squadScore": 1171.9792,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 311.17,
+      "score": 312.07,
       "finished": false,
       "cleared": true,
       "players": [
@@ -305,7 +305,7 @@
           "slug": "cristian-sleiker-casseres-yepes",
           "position": "Midfielder",
           "captain": true,
-          "score": 87.55,
+          "score": 87.4,
           "status": "REVIEWING",
           "kickoff": "2026-10-16T18:45:00Z"
         },
@@ -323,7 +323,7 @@
           "slug": "jude-bellingham",
           "position": "Midfielder",
           "captain": false,
-          "score": 42.21,
+          "score": 43.26,
           "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         }
@@ -628,7 +628,7 @@
             "kickoff": "2026-10-03T18:45:00Z"
           },
           {
-            "actual": 87.55,
+            "actual": 87.4,
             "scoreStatus": "REVIEWING",
             "teamSlug": "toulouse-toulouse",
             "name": "Cristian Cásseres Jr.",
@@ -716,9 +716,9 @@
           }
         ],
         "projected": 370.38,
-        "scoredSoFar": 295.01,
+        "scoredSoFar": 294.79,
         "played": 5,
-        "expectedFinal": 295.01
+        "expectedFinal": 294.79
       },
       "poolStrength": {
         "strong": 5,
@@ -1215,7 +1215,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 355 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1172 so far.",
+      "status": "Locked and playing. 356 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1172 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1280,7 +1280,7 @@
             "kickoff": "2026-10-10T14:00:00Z"
           },
           {
-            "actual": 87.55,
+            "actual": 87.4,
             "scoreStatus": "REVIEWING",
             "teamSlug": "toulouse-toulouse",
             "name": "Cristian Cásseres Jr.",
@@ -1338,7 +1338,7 @@
             "kickoff": "2026-10-10T14:15:00Z"
           },
           {
-            "actual": 42.21,
+            "actual": 43.26,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Jude Bellingham",
@@ -1368,9 +1368,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 354.94,
+        "scoredSoFar": 355.77,
         "played": 5,
-        "expectedFinal": 354.94
+        "expectedFinal": 355.77
       },
       "poolStrength": {
         "strong": 0,
