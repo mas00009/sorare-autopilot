@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T15:42:49.650Z",
+  "generatedAt": "2026-10-10T15:48:39.277Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791646948679,
+    "lastRunAt": 1791647299120,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:4322c030-30b5-4abe-b0a3-b13f42555a98",
       "state": "READY",
-      "score": 158.85,
+      "score": 162.84,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "antonio-sivera-salva",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 42.32,
+          "score": 46.31,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T14:15:00Z"
         },
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 806.6188,
+      "squadScore": 816.4322,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 109.05,
+      "score": 111.28,
       "finished": false,
       "cleared": true,
       "players": [
@@ -296,7 +296,7 @@
           "slug": "dara-o-shea",
           "position": "Defender",
           "captain": false,
-          "score": 35.78,
+          "score": 38,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T14:00:00Z"
         },
@@ -563,14 +563,14 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 159 scored so far, 4 of 5 played. On course for about 272; needs 360 (88 short).",
+      "status": "Locked and playing. 163 scored so far, 4 of 5 played. On course for about 276; needs 360 (84 short).",
       "tone": "warn",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": 42.32,
+            "actual": 46.31,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
             "name": "Sivera",
@@ -716,9 +716,9 @@
           }
         ],
         "projected": 370.38,
-        "scoredSoFar": 158.86,
+        "scoredSoFar": 162.85,
         "played": 4,
-        "expectedFinal": 272.26
+        "expectedFinal": 276.25
       },
       "poolStrength": {
         "strong": 5,
@@ -1215,7 +1215,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 109 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 807 so far.",
+      "status": "Locked and playing. 111 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 816 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1251,7 +1251,7 @@
             "kickoff": "2026-10-10T16:30:00Z"
           },
           {
-            "actual": 35.78,
+            "actual": 38,
             "scoreStatus": "REVIEWING",
             "teamSlug": "ipswich-town-ipswich-suffolk",
             "name": "Dara O'Shea",
@@ -1368,9 +1368,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 109.06,
+        "scoredSoFar": 111.28,
         "played": 3,
-        "expectedFinal": 288.29
+        "expectedFinal": 290.51
       },
       "poolStrength": {
         "strong": 1,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 806.6188
+        "scoreSoFar": 816.4322
       },
       "level": 0,
       "lives": null,
@@ -1593,7 +1593,7 @@
             "starterPct": null,
             "startRate": 0.8,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 50,
             "picture": "https://assets.sorare.com/cardsamplepicture/5515a714-500e-4db9-947c-75e1cc1b6f22/picture/tinified-184a5e8a6db94a50cc792a4ff3f7f356.png",
@@ -1791,7 +1791,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 50,
           "picture": "https://assets.sorare.com/cardsamplepicture/5515a714-500e-4db9-947c-75e1cc1b6f22/picture/tinified-184a5e8a6db94a50cc792a4ff3f7f356.png",
