@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T17:35:57.664Z",
+  "generatedAt": "2026-10-10T17:41:52.841Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T18:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1791653738731,
-    "reason": "last run 0m ago, next due in 5m (lock in 69m)"
+    "lastRunAt": 1791654095023,
+    "reason": "last run 0m ago, next due in 5m (lock in 63m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -278,7 +278,7 @@
       "squadScore": 1029.1432,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 184.6,
+      "score": 184.09,
       "finished": false,
       "cleared": true,
       "players": [
@@ -287,7 +287,7 @@
           "slug": "senne-lammens",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 35.74,
+          "score": 35.23,
           "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
@@ -1215,14 +1215,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 185 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 1029 so far.",
+      "status": "Locked and playing. 184 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 1029 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 35.74,
+            "actual": 35.23,
             "scoreStatus": "REVIEWING",
             "teamSlug": "manchester-united-manchester",
             "name": "Senne Lammens",
@@ -1368,9 +1368,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 184.6,
+        "scoredSoFar": 184.09,
         "played": 3,
-        "expectedFinal": 363.83
+        "expectedFinal": 363.32
       },
       "poolStrength": {
         "strong": 1,
