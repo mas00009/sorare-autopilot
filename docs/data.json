@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T17:47:53.438Z",
+  "generatedAt": "2026-10-10T17:53:51.800Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T18:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1791654454462,
-    "reason": "last run 0m ago, next due in 5m (lock in 57m)"
+    "lastRunAt": 1791654812853,
+    "reason": "last run 0m ago, next due in 5m (lock in 51m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:4322c030-30b5-4abe-b0a3-b13f42555a98",
       "state": "READY",
-      "score": 163.68,
+      "score": 216.88,
       "finished": false,
       "cleared": false,
       "players": [
@@ -57,8 +57,8 @@
           "slug": "cristian-sleiker-casseres-yepes",
           "position": "Midfielder",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 53.2,
+          "status": "REVIEWING",
           "kickoff": "2026-10-10T18:45:00Z"
         },
         {
@@ -80,7 +80,7 @@
           "kickoff": "2026-10-17T13:30:00Z"
         }
       ],
-      "scored": 4
+      "scored": 5
     },
     {
       "surface": "my set",
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 1035.73,
+      "squadScore": 1050.9348,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 210.66,
+      "score": 263.86,
       "finished": false,
       "cleared": true,
       "players": [
@@ -305,8 +305,8 @@
           "slug": "cristian-sleiker-casseres-yepes",
           "position": "Midfielder",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 53.2,
+          "status": "REVIEWING",
           "kickoff": "2026-10-10T18:45:00Z"
         },
         {
@@ -328,7 +328,7 @@
           "kickoff": "2026-10-10T19:00:00Z"
         }
       ],
-      "scored": 3
+      "scored": 4
     },
     {
       "surface": "my set",
@@ -563,7 +563,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 164 scored so far, 4 of 5 played. On course for about 277; needs 360 (83 short).",
+      "status": "Locked and playing. 243 scored so far, 5 of 5 played. On course for about 243; needs 360 (117 short).",
       "tone": "warn",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": false,
@@ -628,8 +628,8 @@
             "kickoff": "2026-10-03T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 53.2,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "toulouse-toulouse",
             "name": "Cristian Cásseres Jr.",
             "player": "Cristian Cásseres Jr.",
@@ -716,9 +716,9 @@
           }
         ],
         "projected": 370.38,
-        "scoredSoFar": 163.69,
-        "played": 4,
-        "expectedFinal": 277.09
+        "scoredSoFar": 243.49,
+        "played": 5,
+        "expectedFinal": 243.49
       },
       "poolStrength": {
         "strong": 6,
@@ -1215,7 +1215,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 211 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 1036 so far.",
+      "status": "Locked and playing. 290 scored so far, 4 of 5 played. The squad's top three lineups together need 700; the squad has 1051 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1280,8 +1280,8 @@
             "kickoff": "2026-10-10T14:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 53.2,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "toulouse-toulouse",
             "name": "Cristian Cásseres Jr.",
             "player": "Cristian Cásseres Jr.",
@@ -1368,9 +1368,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 210.66,
-        "played": 3,
-        "expectedFinal": 389.89
+        "scoredSoFar": 290.46,
+        "played": 4,
+        "expectedFinal": 356.8
       },
       "poolStrength": {
         "strong": 1,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 1035.73
+        "scoreSoFar": 1050.9348
       },
       "level": 0,
       "lives": null,
@@ -1545,7 +1545,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 53,
           "picture": "https://assets.sorare.com/cardsamplepicture/2f9fe6b9-f8b3-4e0e-85b9-c0266cbd2504/picture/tinified-4d588581794df4081af2472ceffebcbf.png",
@@ -1662,7 +1662,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 59,
           "picture": "https://assets.sorare.com/cardsamplepicture/9dcb208c-a07d-4e2f-9f74-434297962766/picture/tinified-78ddef3de47ea41fb03bac2579410535.png",
@@ -1779,7 +1779,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 58,
           "picture": "https://assets.sorare.com/cardsamplepicture/1bdc3717-1075-4dc0-a50a-fe672edbdd03/picture/tinified-fa6e1e683e07f16de9ace139b595eecb.png",
