@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T19:44:27.492Z",
+  "generatedAt": "2026-10-10T19:50:06.034Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-10T19:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791661452131,
+    "lastRunAt": 1791661791377,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -278,7 +278,7 @@
       "squadScore": 1171.9792,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 284.79,
+      "score": 284.69,
       "finished": false,
       "cleared": true,
       "players": [
@@ -323,7 +323,7 @@
           "slug": "jude-bellingham",
           "position": "Midfielder",
           "captain": false,
-          "score": 36.96,
+          "score": 36.86,
           "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         }
@@ -1338,7 +1338,7 @@
             "kickoff": "2026-10-10T14:15:00Z"
           },
           {
-            "actual": 36.96,
+            "actual": 36.86,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Jude Bellingham",
@@ -1368,9 +1368,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 318,
+        "scoredSoFar": 317.9,
         "played": 5,
-        "expectedFinal": 318
+        "expectedFinal": 317.9
       },
       "poolStrength": {
         "strong": 0,
