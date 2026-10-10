@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T15:48:39.277Z",
+  "generatedAt": "2026-10-10T15:54:28.606Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791647299120,
+    "lastRunAt": 1791647647967,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 816.4322,
+      "squadScore": 953.4058,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 111.28,
+      "score": 150.9,
       "finished": false,
       "cleared": true,
       "players": [
@@ -296,7 +296,7 @@
           "slug": "dara-o-shea",
           "position": "Defender",
           "captain": false,
-          "score": 38,
+          "score": 72.84,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T14:00:00Z"
         },
@@ -314,7 +314,7 @@
           "slug": "alejandro-baena-rodriguez",
           "position": "Forward",
           "captain": false,
-          "score": 37.23,
+          "score": 42.02,
           "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
@@ -1215,7 +1215,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 111 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 816 so far.",
+      "status": "Locked and playing. 151 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 953 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1251,7 +1251,7 @@
             "kickoff": "2026-10-10T16:30:00Z"
           },
           {
-            "actual": 38,
+            "actual": 72.84,
             "scoreStatus": "REVIEWING",
             "teamSlug": "ipswich-town-ipswich-suffolk",
             "name": "Dara O'Shea",
@@ -1309,7 +1309,7 @@
             "kickoff": "2026-10-10T18:45:00Z"
           },
           {
-            "actual": 37.23,
+            "actual": 42.02,
             "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Álex Baena",
@@ -1368,9 +1368,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 111.28,
+        "scoredSoFar": 150.91,
         "played": 3,
-        "expectedFinal": 290.51
+        "expectedFinal": 330.14
       },
       "poolStrength": {
         "strong": 1,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 816.4322
+        "scoreSoFar": 953.4058
       },
       "level": 0,
       "lives": null,
@@ -1632,7 +1632,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 53,
             "picture": "https://assets.sorare.com/cardsamplepicture/aec76e6b-9e0a-47c5-bf75-a4c0d017420f/picture/tinified-fbe8e9850976a7f65e83eeded5d7ffb4.png",
@@ -1830,7 +1830,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 53,
           "picture": "https://assets.sorare.com/cardsamplepicture/aec76e6b-9e0a-47c5-bf75-a4c0d017420f/picture/tinified-fbe8e9850976a7f65e83eeded5d7ffb4.png",
