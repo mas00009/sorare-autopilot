@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T14:50:12.728Z",
+  "generatedAt": "2026-10-10T14:56:02.283Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791643790651,
+    "lastRunAt": 1791644141083,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:4322c030-30b5-4abe-b0a3-b13f42555a98",
       "state": "READY",
-      "score": 171.03,
+      "score": 172.41,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "antonio-sivera-salva",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 40.53,
+          "score": 41.69,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T14:15:00Z"
         },
@@ -66,7 +66,7 @@
           "slug": "angel-perez-hidalgo",
           "position": "Forward",
           "captain": false,
-          "score": 37.73,
+          "score": 37.95,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T14:15:00Z"
         },
@@ -275,7 +275,7 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 640.895,
+      "squadScore": 672.7996,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
       "score": 32.09,
@@ -563,14 +563,14 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 171 scored so far, 4 of 5 played. On course for about 284; needs 360 (76 short).",
+      "status": "Locked and playing. 172 scored so far, 4 of 5 played. On course for about 286; needs 360 (74 short).",
       "tone": "warn",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": 40.53,
+            "actual": 41.69,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
             "name": "Sivera",
@@ -657,7 +657,7 @@
             "kickoff": "2026-10-10T18:45:00Z"
           },
           {
-            "actual": 37.73,
+            "actual": 37.95,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
             "name": "Ángel Pérez",
@@ -716,9 +716,9 @@
           }
         ],
         "projected": 370.38,
-        "scoredSoFar": 171.04,
+        "scoredSoFar": 172.42,
         "played": 4,
-        "expectedFinal": 284.44
+        "expectedFinal": 285.82
       },
       "poolStrength": {
         "strong": 5,
@@ -1215,7 +1215,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 32 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 641 so far.",
+      "status": "Locked and playing. 32 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 673 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 640.895
+        "scoreSoFar": 672.7996
       },
       "level": 0,
       "lives": null,
