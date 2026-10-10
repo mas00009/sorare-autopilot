@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T11:58:02.396Z",
+  "generatedAt": "2026-10-10T12:04:22.794Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1791633459781,
-    "reason": "last run 0m ago, next due in 15m (lock in 122m)"
+    "lastRunAt": 1791633839453,
+    "reason": "last run 0m ago, next due in 15m (lock in 116m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -50,7 +50,7 @@
           "captain": false,
           "score": 50.55,
           "status": "FINAL",
-          "kickoff": "2026-10-10T12:00:00Z"
+          "kickoff": "2026-10-17T19:00:00Z"
         },
         {
           "name": "Cristian Cásseres Jr.",
@@ -165,7 +165,7 @@
           "captain": false,
           "score": 48.94,
           "status": "FINAL",
-          "kickoff": "2026-10-10T12:00:00Z"
+          "kickoff": "2026-10-19T19:00:00Z"
         },
         {
           "name": "Rúben Dias",
@@ -275,7 +275,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 223.528,
+      "squadScore": 223.971,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
       "score": 0,
@@ -449,7 +449,7 @@
           "captain": true,
           "score": 0,
           "status": "FINAL",
-          "kickoff": "2026-10-10T12:00:00Z"
+          "kickoff": "2026-10-19T19:00:00Z"
         }
       ],
       "scored": 5
@@ -785,7 +785,7 @@
           "name": "Aymeric Laporte",
           "captain": false,
           "locked": true,
-          "nextGame": "2026-10-10T12:00:00Z"
+          "nextGame": "2026-10-17T19:00:00Z"
         },
         {
           "name": "Cristian Cásseres Jr.",
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 223.528
+        "scoreSoFar": 223.971
       },
       "level": 0,
       "lives": null,
