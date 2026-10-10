@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T14:21:04.630Z",
+  "generatedAt": "2026-10-10T14:26:54.535Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791642043432,
+    "lastRunAt": 1791642392757,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:4322c030-30b5-4abe-b0a3-b13f42555a98",
       "state": "READY",
-      "score": 167.09,
+      "score": 165.99,
       "finished": false,
       "cleared": false,
       "players": [
@@ -66,7 +66,7 @@
           "slug": "angel-perez-hidalgo",
           "position": "Forward",
           "captain": false,
-          "score": 39.93,
+          "score": 38.83,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T14:15:00Z"
         },
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 552.3424,
+      "squadScore": 562.8746,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 37.6,
+      "score": 37.58,
       "finished": false,
       "cleared": false,
       "players": [
@@ -296,7 +296,7 @@
           "slug": "dara-o-shea",
           "position": "Defender",
           "captain": false,
-          "score": 37.61,
+          "score": 37.59,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T14:00:00Z"
         },
@@ -563,7 +563,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 167 scored so far, 4 of 5 played. On course for about 281; needs 360 (79 short).",
+      "status": "Locked and playing. 166 scored so far, 4 of 5 played. On course for about 279; needs 360 (81 short).",
       "tone": "warn",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": false,
@@ -657,7 +657,7 @@
             "kickoff": "2026-10-10T18:45:00Z"
           },
           {
-            "actual": 39.93,
+            "actual": 38.83,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
             "name": "Ángel Pérez",
@@ -716,9 +716,9 @@
           }
         ],
         "projected": 370.38,
-        "scoredSoFar": 167.1,
+        "scoredSoFar": 166,
         "played": 4,
-        "expectedFinal": 280.5
+        "expectedFinal": 279.4
       },
       "poolStrength": {
         "strong": 5,
@@ -1215,7 +1215,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 38 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 552 so far.",
+      "status": "Locked and playing. 38 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 563 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1251,7 +1251,7 @@
             "kickoff": "2026-10-10T16:30:00Z"
           },
           {
-            "actual": 37.61,
+            "actual": 37.59,
             "scoreStatus": "REVIEWING",
             "teamSlug": "ipswich-town-ipswich-suffolk",
             "name": "Dara O'Shea",
@@ -1368,9 +1368,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 37.61,
+        "scoredSoFar": 37.59,
         "played": 1,
-        "expectedFinal": 334.53
+        "expectedFinal": 334.51
       },
       "poolStrength": {
         "strong": 1,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 552.3424
+        "scoreSoFar": 562.8746
       },
       "level": 0,
       "lives": null,
