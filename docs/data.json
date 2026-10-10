@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T15:31:10.884Z",
+  "generatedAt": "2026-10-10T15:37:00.485Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791646247756,
+    "lastRunAt": 1791646599691,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:4322c030-30b5-4abe-b0a3-b13f42555a98",
       "state": "READY",
-      "score": 178.45,
+      "score": 181.9,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "antonio-sivera-salva",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 41.79,
+          "score": 43.37,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T14:15:00Z"
         },
@@ -66,7 +66,7 @@
           "slug": "angel-perez-hidalgo",
           "position": "Forward",
           "captain": false,
-          "score": 43.89,
+          "score": 45.76,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T14:15:00Z"
         },
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 799.1408,
+      "squadScore": 805.7578,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 109.64,
+      "score": 111.38,
       "finished": false,
       "cleared": true,
       "players": [
@@ -296,7 +296,7 @@
           "slug": "dara-o-shea",
           "position": "Defender",
           "captain": false,
-          "score": 36.46,
+          "score": 38.11,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T14:00:00Z"
         },
@@ -314,7 +314,7 @@
           "slug": "alejandro-baena-rodriguez",
           "position": "Forward",
           "captain": false,
-          "score": 37.13,
+          "score": 37.23,
           "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
@@ -563,14 +563,14 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 178 scored so far, 4 of 5 played. On course for about 292; needs 360 (68 short).",
+      "status": "Locked and playing. 182 scored so far, 4 of 5 played. On course for about 295; needs 360 (65 short).",
       "tone": "warn",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": 41.79,
+            "actual": 43.37,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
             "name": "Sivera",
@@ -657,7 +657,7 @@
             "kickoff": "2026-10-10T18:45:00Z"
           },
           {
-            "actual": 43.89,
+            "actual": 45.76,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
             "name": "Ángel Pérez",
@@ -716,9 +716,9 @@
           }
         ],
         "projected": 370.38,
-        "scoredSoFar": 178.46,
+        "scoredSoFar": 181.91,
         "played": 4,
-        "expectedFinal": 291.86
+        "expectedFinal": 295.31
       },
       "poolStrength": {
         "strong": 5,
@@ -1215,7 +1215,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 110 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 799 so far.",
+      "status": "Locked and playing. 111 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 806 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1251,7 +1251,7 @@
             "kickoff": "2026-10-10T16:30:00Z"
           },
           {
-            "actual": 36.46,
+            "actual": 37.44,
             "scoreStatus": "REVIEWING",
             "teamSlug": "ipswich-town-ipswich-suffolk",
             "name": "Dara O'Shea",
@@ -1309,7 +1309,7 @@
             "kickoff": "2026-10-10T18:45:00Z"
           },
           {
-            "actual": 37.13,
+            "actual": 37.23,
             "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Álex Baena",
@@ -1368,9 +1368,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 109.64,
+        "scoredSoFar": 110.72,
         "played": 3,
-        "expectedFinal": 288.87
+        "expectedFinal": 289.95
       },
       "poolStrength": {
         "strong": 1,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 799.1408
+        "scoreSoFar": 805.7578
       },
       "level": 0,
       "lives": null,
