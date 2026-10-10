@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T14:09:21.735Z",
+  "generatedAt": "2026-10-10T14:15:14.437Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791641337718,
+    "lastRunAt": 1791641691544,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:4322c030-30b5-4abe-b0a3-b13f42555a98",
       "state": "READY",
-      "score": 165.57,
+      "score": 166.08,
       "finished": false,
       "cleared": false,
       "players": [
@@ -41,7 +41,7 @@
           "captain": false,
           "score": 36.75,
           "status": "REVIEWING",
-          "kickoff": "2026-10-10T14:15:00Z"
+          "kickoff": "2026-10-18T14:15:00Z"
         },
         {
           "name": "Aymeric Laporte",
@@ -68,14 +68,14 @@
           "captain": false,
           "score": 38.5,
           "status": "REVIEWING",
-          "kickoff": "2026-10-10T14:15:00Z"
+          "kickoff": "2026-10-18T14:15:00Z"
         },
         {
           "name": "Tom Zimmerschied",
           "slug": "tom-zimmerschied",
           "position": "Midfielder",
           "captain": false,
-          "score": 39.78,
+          "score": 40.29,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T13:30:00Z"
         }
@@ -130,7 +130,7 @@
           "captain": false,
           "score": 86.32,
           "status": "FINAL",
-          "kickoff": "2026-10-10T14:15:00Z"
+          "kickoff": "2026-10-13T19:00:00Z"
         },
         {
           "name": "Rúben Dias",
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 496.767,
+      "squadScore": 507.626,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 37.35,
+      "score": 36.92,
       "finished": false,
       "cleared": false,
       "players": [
@@ -296,7 +296,7 @@
           "slug": "dara-o-shea",
           "position": "Defender",
           "captain": false,
-          "score": 37.36,
+          "score": 36.92,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T14:00:00Z"
         },
@@ -316,7 +316,7 @@
           "captain": false,
           "score": 0,
           "status": "PENDING",
-          "kickoff": "2026-10-10T14:15:00Z"
+          "kickoff": "2026-10-13T19:00:00Z"
         },
         {
           "name": "Jude Bellingham",
@@ -378,7 +378,7 @@
           "captain": true,
           "score": 45.9,
           "status": "FINAL",
-          "kickoff": "2026-10-10T14:15:00Z"
+          "kickoff": "2026-10-18T14:15:00Z"
         },
         {
           "name": "Pierre-Emerick Aubameyang",
@@ -422,7 +422,7 @@
           "captain": false,
           "score": 36.96,
           "status": "FINAL",
-          "kickoff": "2026-10-10T14:15:00Z"
+          "kickoff": "2026-10-18T14:15:00Z"
         },
         {
           "name": "Maximilian Eggestein",
@@ -686,7 +686,7 @@
             "kickoff": "2026-10-10T14:15:00Z"
           },
           {
-            "actual": 39.78,
+            "actual": 40.29,
             "scoreStatus": "REVIEWING",
             "teamSlug": "elversberg-saarbrucken",
             "name": "Tom Zimmerschied",
@@ -716,9 +716,9 @@
           }
         ],
         "projected": 370.38,
-        "scoredSoFar": 165.58,
+        "scoredSoFar": 166.09,
         "played": 4,
-        "expectedFinal": 278.98
+        "expectedFinal": 279.49
       },
       "poolStrength": {
         "strong": 5,
@@ -1215,7 +1215,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 37 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 496 so far.",
+      "status": "Locked and playing. 37 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 508 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1251,7 +1251,7 @@
             "kickoff": "2026-10-10T16:30:00Z"
           },
           {
-            "actual": 37.36,
+            "actual": 36.92,
             "scoreStatus": "REVIEWING",
             "teamSlug": "ipswich-town-ipswich-suffolk",
             "name": "Dara O'Shea",
@@ -1334,7 +1334,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-10T14:15:00Z"
           },
           {
@@ -1368,9 +1368,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 37.36,
+        "scoredSoFar": 36.92,
         "played": 1,
-        "expectedFinal": 334.28
+        "expectedFinal": 333.84
       },
       "poolStrength": {
         "strong": 1,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 496.307
+        "scoreSoFar": 507.626
       },
       "level": 0,
       "lives": null,
@@ -1445,8 +1445,8 @@
         {
           "name": "Álex Baena",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-10T14:15:00Z"
+          "locked": true,
+          "nextGame": "2026-10-13T19:00:00Z"
         },
         {
           "name": "Jude Bellingham",
@@ -1457,9 +1457,9 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 311.86,
-        "lock": "2026-10-10T14:15:00Z",
-        "shortfall": 388.1,
+        "projected": 316.69,
+        "lock": "2026-10-10T18:45:00Z",
+        "shortfall": 383.3,
         "tradedPointsForTime": 0,
         "captain": "federico-santiago-valverde-dipetta",
         "captainPoints": 28.57,
@@ -1515,33 +1515,72 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": true,
+            "onGameSheet": false,
             "reliability": null,
             "formL5": 65,
             "picture": "https://assets.sorare.com/cardsamplepicture/a37675fb-7537-4b57-85af-ccc7bbcf224f/picture/tinified-ddefd9d4ec4da0b58e9d5d474b517abe.png",
             "rarity": "common",
-            "gameId": "Game:6d88198e-2acf-41ca-b87d-ed2ae7861def",
-            "kickoff": "2026-10-10T14:15:00Z",
+            "gameId": "Game:7028c197-29ba-4143-b937-c518ef4c8e5f",
+            "kickoff": "2026-10-18T14:15:00Z",
             "team": "D. Alavés",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
-            "opponent": "Atlético de Madrid",
-            "opponentCode": "ATM",
+            "opponent": "RC Celta",
+            "opponentCode": "CEL",
             "code": "ALA",
             "rank": 6,
-            "opponentRank": 2,
-            "home": true,
+            "opponentRank": 15,
+            "home": false,
             "competition": "Primera División",
             "intl": false,
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
             "mismatch": false,
-            "pWin": 0.217,
-            "pLose": 0.529,
-            "oddsBooks": 18,
-            "marketFactor": 0.948,
+            "pWin": 0.252,
+            "pLose": 0.47,
+            "oddsBooks": 14,
+            "marketFactor": 0.969,
             "lockedAt": null,
-            "expected": 58.23,
+            "expected": 59.52,
+            "blocked": null
+          },
+          {
+            "id": "ComposeTeamBenchCard:e5e10cc7-0a01-401b-a2db-9a58b9f966f3",
+            "player": "Álex Baena",
+            "slug": "alejandro-baena-rodriguez",
+            "position": "FW",
+            "average": 57,
+            "bonus": 1.04,
+            "starterPct": null,
+            "startRate": 0.9,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 57,
+            "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
+            "rarity": "common",
+            "gameId": "Game:0876a20b-7843-409a-86cb-4355b85ce142",
+            "kickoff": "2026-10-13T19:00:00Z",
+            "team": "Atlético de Madrid",
+            "teamSlug": "atletico-madrid-madrid",
+            "opponent": "Manchester United FC",
+            "opponentCode": "MUN",
+            "code": "ATM",
+            "rank": 2,
+            "opponentRank": 12,
+            "home": true,
+            "competition": "UEFA Champions League",
+            "intl": false,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "mismatch": false,
+            "pWin": 0.451,
+            "pLose": 0.302,
+            "oddsBooks": 19,
+            "marketFactor": 1.018,
+            "lockedAt": null,
+            "expected": 56.43,
             "blocked": null
           },
           {
@@ -1593,72 +1632,33 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": true,
+            "onGameSheet": false,
             "reliability": null,
             "formL5": 58,
             "picture": "https://assets.sorare.com/cardsamplepicture/a0700488-51e3-4437-b2b4-bc0bd63cde0d/picture/tinified-9af5955930d80443cb7e8adcb3524e63.png",
             "rarity": "common",
-            "gameId": "Game:6d88198e-2acf-41ca-b87d-ed2ae7861def",
-            "kickoff": "2026-10-10T14:15:00Z",
+            "gameId": "Game:7028c197-29ba-4143-b937-c518ef4c8e5f",
+            "kickoff": "2026-10-18T14:15:00Z",
             "team": "D. Alavés",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
-            "opponent": "Atlético de Madrid",
-            "opponentCode": "ATM",
+            "opponent": "RC Celta",
+            "opponentCode": "CEL",
             "code": "ALA",
             "rank": 6,
-            "opponentRank": 2,
-            "home": true,
+            "opponentRank": 15,
+            "home": false,
             "competition": "Primera División",
             "intl": false,
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
             "mismatch": false,
-            "pWin": 0.217,
-            "pLose": 0.529,
-            "oddsBooks": 18,
-            "marketFactor": 0.971,
+            "pWin": 0.252,
+            "pLose": 0.47,
+            "oddsBooks": 14,
+            "marketFactor": 0.978,
             "lockedAt": null,
-            "expected": 55.45,
-            "blocked": null
-          },
-          {
-            "id": "ComposeTeamBenchCard:ee04cd2f-821c-447c-8f74-2fa4642bbf33",
-            "player": "Lisandro Martínez",
-            "slug": "lisandro-martinez",
-            "position": "DF",
-            "average": 56,
-            "bonus": 1.03,
-            "starterPct": null,
-            "startRate": 0.9,
-            "oddsKnown": false,
-            "onGameSheet": false,
-            "reliability": null,
-            "formL5": 49,
-            "picture": "https://assets.sorare.com/cardsamplepicture/3976bced-4dae-4ed2-884b-6238cc8b9000/picture/tinified-59e9001569003345b31cbe079cc49ada.png",
-            "rarity": "common",
-            "gameId": "Game:b6839e65-03af-46cc-86ee-2f69feb63cb4",
-            "kickoff": "2026-10-10T16:30:00Z",
-            "team": "Manchester United FC",
-            "teamSlug": "manchester-united-manchester",
-            "opponent": "Tottenham Hotspur FC",
-            "opponentCode": "TOT",
-            "code": "MUN",
-            "rank": 12,
-            "opponentRank": 20,
-            "home": true,
-            "competition": "Premier League",
-            "intl": false,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "mismatch": false,
-            "pWin": 0.557,
-            "pLose": 0.215,
-            "oddsBooks": 23,
-            "marketFactor": 1.095,
-            "lockedAt": null,
-            "expected": 53.29,
+            "expected": 55.85,
             "blocked": null
           }
         ]
@@ -1713,33 +1713,72 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": true,
+          "onGameSheet": false,
           "reliability": null,
           "formL5": 65,
           "picture": "https://assets.sorare.com/cardsamplepicture/a37675fb-7537-4b57-85af-ccc7bbcf224f/picture/tinified-ddefd9d4ec4da0b58e9d5d474b517abe.png",
           "rarity": "common",
-          "gameId": "Game:6d88198e-2acf-41ca-b87d-ed2ae7861def",
-          "kickoff": "2026-10-10T14:15:00Z",
+          "gameId": "Game:7028c197-29ba-4143-b937-c518ef4c8e5f",
+          "kickoff": "2026-10-18T14:15:00Z",
           "team": "D. Alavés",
           "teamSlug": "deportivo-alaves-vitoria-gasteiz",
-          "opponent": "Atlético de Madrid",
-          "opponentCode": "ATM",
+          "opponent": "RC Celta",
+          "opponentCode": "CEL",
           "code": "ALA",
           "rank": 6,
-          "opponentRank": 2,
-          "home": true,
+          "opponentRank": 15,
+          "home": false,
           "competition": "Primera División",
           "intl": false,
           "oppRank": null,
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.217,
-          "pLose": 0.529,
-          "oddsBooks": 18,
-          "marketFactor": 0.948,
+          "pWin": 0.252,
+          "pLose": 0.47,
+          "oddsBooks": 14,
+          "marketFactor": 0.969,
           "lockedAt": null,
-          "expected": 58.23,
+          "expected": 59.52,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:e5e10cc7-0a01-401b-a2db-9a58b9f966f3",
+          "player": "Álex Baena",
+          "slug": "alejandro-baena-rodriguez",
+          "position": "FW",
+          "average": 57,
+          "bonus": 1.04,
+          "starterPct": null,
+          "startRate": 0.9,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 57,
+          "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
+          "rarity": "common",
+          "gameId": "Game:0876a20b-7843-409a-86cb-4355b85ce142",
+          "kickoff": "2026-10-13T19:00:00Z",
+          "team": "Atlético de Madrid",
+          "teamSlug": "atletico-madrid-madrid",
+          "opponent": "Manchester United FC",
+          "opponentCode": "MUN",
+          "code": "ATM",
+          "rank": 2,
+          "opponentRank": 12,
+          "home": true,
+          "competition": "UEFA Champions League",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.451,
+          "pLose": 0.302,
+          "oddsBooks": 19,
+          "marketFactor": 1.018,
+          "lockedAt": null,
+          "expected": 56.43,
           "blocked": null
         },
         {
@@ -1791,105 +1830,40 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": true,
+          "onGameSheet": false,
           "reliability": null,
           "formL5": 58,
           "picture": "https://assets.sorare.com/cardsamplepicture/a0700488-51e3-4437-b2b4-bc0bd63cde0d/picture/tinified-9af5955930d80443cb7e8adcb3524e63.png",
           "rarity": "common",
-          "gameId": "Game:6d88198e-2acf-41ca-b87d-ed2ae7861def",
-          "kickoff": "2026-10-10T14:15:00Z",
+          "gameId": "Game:7028c197-29ba-4143-b937-c518ef4c8e5f",
+          "kickoff": "2026-10-18T14:15:00Z",
           "team": "D. Alavés",
           "teamSlug": "deportivo-alaves-vitoria-gasteiz",
-          "opponent": "Atlético de Madrid",
-          "opponentCode": "ATM",
+          "opponent": "RC Celta",
+          "opponentCode": "CEL",
           "code": "ALA",
           "rank": 6,
-          "opponentRank": 2,
-          "home": true,
+          "opponentRank": 15,
+          "home": false,
           "competition": "Primera División",
           "intl": false,
           "oppRank": null,
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.217,
-          "pLose": 0.529,
-          "oddsBooks": 18,
-          "marketFactor": 0.971,
+          "pWin": 0.252,
+          "pLose": 0.47,
+          "oddsBooks": 14,
+          "marketFactor": 0.978,
           "lockedAt": null,
-          "expected": 55.45,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:ee04cd2f-821c-447c-8f74-2fa4642bbf33",
-          "player": "Lisandro Martínez",
-          "slug": "lisandro-martinez",
-          "position": "DF",
-          "average": 56,
-          "bonus": 1.03,
-          "starterPct": null,
-          "startRate": 0.9,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 49,
-          "picture": "https://assets.sorare.com/cardsamplepicture/3976bced-4dae-4ed2-884b-6238cc8b9000/picture/tinified-59e9001569003345b31cbe079cc49ada.png",
-          "rarity": "common",
-          "gameId": "Game:b6839e65-03af-46cc-86ee-2f69feb63cb4",
-          "kickoff": "2026-10-10T16:30:00Z",
-          "team": "Manchester United FC",
-          "teamSlug": "manchester-united-manchester",
-          "opponent": "Tottenham Hotspur FC",
-          "opponentCode": "TOT",
-          "code": "MUN",
-          "rank": 12,
-          "opponentRank": 20,
-          "home": true,
-          "competition": "Premier League",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.557,
-          "pLose": 0.215,
-          "oddsBooks": 23,
-          "marketFactor": 1.095,
-          "lockedAt": null,
-          "expected": 53.29,
+          "expected": 55.85,
           "blocked": null
         }
       ],
-      "projected": 287.3
+      "projected": 288.1
     }
   ],
   "fixtures": [
-    {
-      "kickoff": "2026-10-10T14:15:00Z",
-      "competition": "Primera División",
-      "team": "D. Alavés",
-      "code": "ALA",
-      "rank": 6,
-      "opponent": "Atlético de Madrid",
-      "opponentCode": "ATM",
-      "opponentRank": 2,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.217,
-      "pLose": 0.529,
-      "oppFactor": null,
-      "home": true,
-      "players": [
-        "Sivera",
-        "Ángel Pérez"
-      ],
-      "points": 113.7,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
     {
       "kickoff": "2026-10-10T16:30:00Z",
       "competition": "Premier League",
@@ -1907,14 +1881,12 @@
       "oppFactor": null,
       "home": true,
       "players": [
-        "Senne Lammens",
-        "Lisandro Martínez"
+        "Senne Lammens"
       ],
-      "points": 113.7,
+      "points": 60.4,
       "bestStarter": null,
       "surfaces": [
-        "my set",
-        "team set (Loadshift)"
+        "my set"
       ]
     },
     {
@@ -2042,6 +2014,57 @@
       "bestStarter": null,
       "surfaces": [
         "my set"
+      ]
+    },
+    {
+      "kickoff": "2026-10-13T19:00:00Z",
+      "competition": "UEFA Champions League",
+      "team": "Atlético de Madrid",
+      "code": "ATM",
+      "rank": 2,
+      "opponent": "Manchester United FC",
+      "opponentCode": "MUN",
+      "opponentRank": 12,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.451,
+      "pLose": 0.302,
+      "oppFactor": null,
+      "home": true,
+      "players": [
+        "Álex Baena"
+      ],
+      "points": 56.4,
+      "bestStarter": null,
+      "surfaces": [
+        "team set (Loadshift)"
+      ]
+    },
+    {
+      "kickoff": "2026-10-18T14:15:00Z",
+      "competition": "Primera División",
+      "team": "D. Alavés",
+      "code": "ALA",
+      "rank": 6,
+      "opponent": "RC Celta",
+      "opponentCode": "CEL",
+      "opponentRank": 15,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.252,
+      "pLose": 0.47,
+      "oppFactor": null,
+      "home": false,
+      "players": [
+        "Sivera",
+        "Ángel Pérez"
+      ],
+      "points": 115.4,
+      "bestStarter": null,
+      "surfaces": [
+        "team set (Loadshift)"
       ]
     }
   ]
