@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T17:24:05.279Z",
+  "generatedAt": "2026-10-10T17:35:57.664Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -8,9 +8,9 @@
   },
   "schedule": {
     "nextLock": "2026-10-10T18:45:00Z",
-    "cadenceMin": 15,
-    "lastRunAt": 1791653026217,
-    "reason": "last run 0m ago, next due in 15m (lock in 81m)"
+    "cadenceMin": 5,
+    "lastRunAt": 1791653738731,
+    "reason": "last run 0m ago, next due in 5m (lock in 69m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -278,7 +278,7 @@
       "squadScore": 1029.1432,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 184.7,
+      "score": 184.6,
       "finished": false,
       "cleared": true,
       "players": [
@@ -287,7 +287,7 @@
           "slug": "senne-lammens",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 35.84,
+          "score": 35.74,
           "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
@@ -1222,7 +1222,7 @@
       "entered": {
         "five": [
           {
-            "actual": 35.84,
+            "actual": 35.74,
             "scoreStatus": "REVIEWING",
             "teamSlug": "manchester-united-manchester",
             "name": "Senne Lammens",
@@ -1368,9 +1368,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 184.7,
+        "scoredSoFar": 184.6,
         "played": 3,
-        "expectedFinal": 363.93
+        "expectedFinal": 363.83
       },
       "poolStrength": {
         "strong": 1,
