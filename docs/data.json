@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T20:40:57.161Z",
+  "generatedAt": "2026-10-10T20:46:48.792Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 211
   },
   "schedule": {
-    "nextLock": "2026-10-10T19:00:00Z",
+    "nextLock": "2026-10-11T12:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791664841001,
-    "reason": "last run 0m ago, next due in 180m"
+    "lastRunAt": 1791665193978,
+    "reason": "last run 0m ago, next due in 180m (lock in 913m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -24,7 +24,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -86,7 +86,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -148,7 +148,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -278,7 +278,7 @@
       "squadScore": 1171.9792,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 312.07,
+      "score": 312.8,
       "finished": false,
       "cleared": true,
       "players": [
@@ -323,7 +323,7 @@
           "slug": "jude-bellingham",
           "position": "Midfielder",
           "captain": false,
-          "score": 43.26,
+          "score": 44,
           "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         }
@@ -461,7 +461,7 @@
     "ladder": [
       {
         "level": 2,
-        "state": "LIVE",
+        "state": "LINEUP_SET",
         "target": 360,
         "gems": 10,
         "usd": 0,
@@ -746,7 +746,7 @@
         },
         {
           "level": 2,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 360
         },
         {
@@ -772,7 +772,7 @@
           "currency": "COMMON_GEM"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 360,
       "current": [
         {
@@ -1215,7 +1215,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 356 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1172 so far.",
+      "status": "Locked and playing. 357 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1172 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1338,7 +1338,7 @@
             "kickoff": "2026-10-10T14:15:00Z"
           },
           {
-            "actual": 43.26,
+            "actual": 44,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Jude Bellingham",
@@ -1368,9 +1368,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 355.77,
+        "scoredSoFar": 356.51,
         "played": 5,
-        "expectedFinal": 355.77
+        "expectedFinal": 356.51
       },
       "poolStrength": {
         "strong": 0,
