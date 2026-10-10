@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T15:01:52.334Z",
+  "generatedAt": "2026-10-10T15:07:42.285Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791644490390,
+    "lastRunAt": 1791644840555,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 674.7054,
+      "squadScore": 682.8156,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 32.09,
+      "score": 33.48,
       "finished": false,
       "cleared": false,
       "players": [
@@ -296,7 +296,7 @@
           "slug": "dara-o-shea",
           "position": "Defender",
           "captain": false,
-          "score": 32.09,
+          "score": 33.49,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T14:00:00Z"
         },
@@ -1215,7 +1215,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 32 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 675 so far.",
+      "status": "Locked and playing. 33 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 683 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1251,7 +1251,7 @@
             "kickoff": "2026-10-10T16:30:00Z"
           },
           {
-            "actual": 32.09,
+            "actual": 33.49,
             "scoreStatus": "REVIEWING",
             "teamSlug": "ipswich-town-ipswich-suffolk",
             "name": "Dara O'Shea",
@@ -1368,9 +1368,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 32.09,
+        "scoredSoFar": 33.49,
         "played": 1,
-        "expectedFinal": 329.01
+        "expectedFinal": 330.41
       },
       "poolStrength": {
         "strong": 1,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 674.7054
+        "scoreSoFar": 682.8156
       },
       "level": 0,
       "lives": null,
