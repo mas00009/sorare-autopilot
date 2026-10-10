@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T13:32:55.430Z",
+  "generatedAt": "2026-10-10T13:39:07.231Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1791639150343,
-    "reason": "last run 0m ago, next due in 5m (lock in 27m)"
+    "lastRunAt": 1791639522898,
+    "reason": "last run 0m ago, next due in 5m (lock in 21m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:4322c030-30b5-4abe-b0a3-b13f42555a98",
       "state": "READY",
-      "score": 161.49,
+      "score": 165.16,
       "finished": false,
       "cleared": false,
       "players": [
@@ -75,7 +75,7 @@
           "slug": "tom-zimmerschied",
           "position": "Midfielder",
           "captain": false,
-          "score": 35.7,
+          "score": 39.37,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T13:30:00Z"
         }
@@ -275,7 +275,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 457.741,
+      "squadScore": 462.466,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
       "score": 36.4,
@@ -563,7 +563,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 162 scored so far, 4 of 5 played. On course for about 275; needs 360 (85 short).",
+      "status": "Locked and playing. 165 scored so far, 4 of 5 played. On course for about 279; needs 360 (81 short).",
       "tone": "warn",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": false,
@@ -686,7 +686,7 @@
             "kickoff": "2026-10-10T14:15:00Z"
           },
           {
-            "actual": 35.7,
+            "actual": 39.37,
             "scoreStatus": "REVIEWING",
             "teamSlug": "elversberg-saarbrucken",
             "name": "Tom Zimmerschied",
@@ -716,9 +716,9 @@
           }
         ],
         "projected": 370.38,
-        "scoredSoFar": 161.5,
+        "scoredSoFar": 165.17,
         "played": 4,
-        "expectedFinal": 274.9
+        "expectedFinal": 278.57
       },
       "poolStrength": {
         "strong": 5,
@@ -1215,7 +1215,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 36 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 458 so far.",
+      "status": "Locked and playing. 36 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 462 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 457.741
+        "scoreSoFar": 462.466
       },
       "level": 0,
       "lives": null,
