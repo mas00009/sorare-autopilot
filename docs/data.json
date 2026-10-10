@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T12:42:23.996Z",
+  "generatedAt": "2026-10-10T12:48:45.621Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1791636120595,
-    "reason": "last run 0m ago, next due in 15m (lock in 78m)"
+    "lastRunAt": 1791636500974,
+    "reason": "last run 0m ago, next due in 15m (lock in 71m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -275,7 +275,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 299.089,
+      "squadScore": 288.7464,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
       "score": 0,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 299.089
+        "scoreSoFar": 288.7464
       },
       "level": 0,
       "lives": null,
@@ -1554,7 +1554,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 69,
             "picture": "https://assets.sorare.com/cardsamplepicture/22c89549-28e6-4af4-a453-fe26f9d49936/picture/tinified-976cc6041dfe25c7c1e7de153150c4a3.png",
@@ -1752,7 +1752,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 69,
           "picture": "https://assets.sorare.com/cardsamplepicture/22c89549-28e6-4af4-a453-fe26f9d49936/picture/tinified-976cc6041dfe25c7c1e7de153150c4a3.png",
