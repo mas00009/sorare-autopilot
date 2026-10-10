@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T13:20:26.631Z",
+  "generatedAt": "2026-10-10T13:26:44.896Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1791638403464,
-    "reason": "last run 0m ago, next due in 5m (lock in 40m)"
+    "lastRunAt": 1791638781700,
+    "reason": "last run 0m ago, next due in 5m (lock in 33m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:4322c030-30b5-4abe-b0a3-b13f42555a98",
       "state": "READY",
-      "score": 86.24,
+      "score": 161.49,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,8 +39,8 @@
           "slug": "antonio-sivera-salva",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-10T14:15:00Z"
         },
         {
@@ -66,8 +66,8 @@
           "slug": "angel-perez-hidalgo",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 38.5,
+          "status": "REVIEWING",
           "kickoff": "2026-10-10T14:15:00Z"
         },
         {
@@ -80,7 +80,7 @@
           "kickoff": "2026-10-10T13:30:00Z"
         }
       ],
-      "scored": 2
+      "scored": 4
     },
     {
       "surface": "my set",
@@ -275,7 +275,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 430.574,
+      "squadScore": 469.935,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
       "score": 36.4,
@@ -563,15 +563,15 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 86 scored so far, 2 of 5 played. On course for about 318; needs 360 (42 short).",
+      "status": "Locked and playing. 162 scored so far, 4 of 5 played. On course for about 275; needs 360 (85 short).",
       "tone": "warn",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
             "name": "Sivera",
             "player": "Sivera",
@@ -657,8 +657,8 @@
             "kickoff": "2026-10-10T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 38.5,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
             "name": "Ángel Pérez",
             "player": "Ángel Pérez",
@@ -716,9 +716,9 @@
           }
         ],
         "projected": 370.38,
-        "scoredSoFar": 86.25,
-        "played": 2,
-        "expectedFinal": 318.4
+        "scoredSoFar": 161.5,
+        "played": 4,
+        "expectedFinal": 274.9
       },
       "poolStrength": {
         "strong": 5,
@@ -1215,7 +1215,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 36 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 431 so far.",
+      "status": "Locked and playing. 36 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 467 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 430.574
+        "scoreSoFar": 466.785
       },
       "level": 0,
       "lives": null,
@@ -1515,7 +1515,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 65,
             "picture": "https://assets.sorare.com/cardsamplepicture/a37675fb-7537-4b57-85af-ccc7bbcf224f/picture/tinified-ddefd9d4ec4da0b58e9d5d474b517abe.png",
@@ -1632,7 +1632,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 58,
             "picture": "https://assets.sorare.com/cardsamplepicture/a0700488-51e3-4437-b2b4-bc0bd63cde0d/picture/tinified-9af5955930d80443cb7e8adcb3524e63.png",
@@ -1713,7 +1713,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 65,
           "picture": "https://assets.sorare.com/cardsamplepicture/a37675fb-7537-4b57-85af-ccc7bbcf224f/picture/tinified-ddefd9d4ec4da0b58e9d5d474b517abe.png",
@@ -1830,7 +1830,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 58,
           "picture": "https://assets.sorare.com/cardsamplepicture/a0700488-51e3-4437-b2b4-bc0bd63cde0d/picture/tinified-9af5955930d80443cb7e8adcb3524e63.png",
