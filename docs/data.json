@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T17:59:52.067Z",
+  "generatedAt": "2026-10-10T18:05:49.946Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T18:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1791655172994,
-    "reason": "last run 0m ago, next due in 5m (lock in 45m)"
+    "lastRunAt": 1791655531518,
+    "reason": "last run 0m ago, next due in 5m (lock in 39m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 1088.4452,
+      "squadScore": 1087.156,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 263.86,
+      "score": 300.61,
       "finished": false,
       "cleared": true,
       "players": [
@@ -323,12 +323,12 @@
           "slug": "jude-bellingham",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-10T19:00:00Z"
         }
       ],
-      "scored": 4
+      "scored": 5
     },
     {
       "surface": "my set",
@@ -866,7 +866,7 @@
             "starterPct": null,
             "startRate": 0.8,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 67,
             "picture": "https://assets.sorare.com/cardsamplepicture/fe3313a1-5c73-436d-a698-dbc049dee59b/picture/tinified-61dbd25acb89afe827003670d06ba75a.png",
@@ -1064,7 +1064,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 67,
           "picture": "https://assets.sorare.com/cardsamplepicture/fe3313a1-5c73-436d-a698-dbc049dee59b/picture/tinified-61dbd25acb89afe827003670d06ba75a.png",
@@ -1215,7 +1215,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 290 scored so far, 4 of 5 played. The squad's top three lineups together need 700; the squad has 1088 so far.",
+      "status": "Locked and playing. 327 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1092 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1338,8 +1338,8 @@
             "kickoff": "2026-10-10T14:15:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Jude Bellingham",
             "player": "Jude Bellingham",
@@ -1368,9 +1368,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 290.46,
-        "played": 4,
-        "expectedFinal": 356.8
+        "scoredSoFar": 327.21,
+        "played": 5,
+        "expectedFinal": 327.21
       },
       "poolStrength": {
         "strong": 1,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 1088.4452
+        "scoreSoFar": 1091.76
       },
       "level": 0,
       "lives": null,
@@ -1467,7 +1467,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 53,
           "picture": "https://assets.sorare.com/cardsamplepicture/6ec8824f-8d96-4992-ab6b-4190fa361ea4/picture/tinified-968cbc3d20b6062624831e4f1d473e3d.png",
@@ -1584,7 +1584,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 51,
           "picture": "https://assets.sorare.com/cardsamplepicture/66708b6f-4b0a-4f5f-b7de-f93fa4be2f9a/picture/tinified-3648c01a300bcfaac844126fb0f16007.png",
@@ -1701,7 +1701,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 51,
           "picture": "https://assets.sorare.com/cardsamplepicture/e9ffabc5-37db-485b-ad91-9a76cd27cc72/picture/tinified-c7e62bbe1dbd76438cfec01d36b68273.png",
@@ -1740,7 +1740,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 46,
           "picture": "https://assets.sorare.com/cardsamplepicture/108306a1-a01a-46a9-ab6a-cbee13e699f2/picture/tinified-1f234d64d3a376de0cc444e45951aabc.png",
@@ -1818,7 +1818,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 51,
           "picture": "https://assets.sorare.com/cardsamplepicture/52a7a606-d9e8-404a-ad71-d3cef34a8c2e/picture/tinified-942dd9d9d147d525ae66199b213992f4.png",
