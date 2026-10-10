@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T21:04:24.731Z",
+  "generatedAt": "2026-10-10T21:10:18.018Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-11T13:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791666247877,
-    "reason": "last run 0m ago, next due in 180m (lock in 956m)"
+    "lastRunAt": 1791666602946,
+    "reason": "last run 0m ago, next due in 180m (lock in 950m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -331,68 +331,6 @@
       "scored": 5
     },
     {
-      "surface": "team set (Loadshift)",
-      "level": 0,
-      "target": 700,
-      "stepState": "LINEUP_SET",
-      "collaborative": true,
-      "squadLineups": 6,
-      "squadScore": 1171.9792,
-      "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
-      "state": "READY",
-      "score": 305.45,
-      "finished": false,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Senne Lammens",
-          "slug": "senne-lammens",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 32.55,
-          "status": "FINAL",
-          "kickoff": "2026-10-13T19:00:00Z"
-        },
-        {
-          "name": "Dara O'Shea",
-          "slug": "dara-o-shea",
-          "position": "Defender",
-          "captain": false,
-          "score": 70.76,
-          "status": "FINAL",
-          "kickoff": "2026-10-17T14:00:00Z"
-        },
-        {
-          "name": "Cristian Cásseres Jr.",
-          "slug": "cristian-sleiker-casseres-yepes",
-          "position": "Midfielder",
-          "captain": true,
-          "score": 87.4,
-          "status": "FINAL",
-          "kickoff": "2026-10-16T18:45:00Z"
-        },
-        {
-          "name": "Álex Baena",
-          "slug": "alejandro-baena-rodriguez",
-          "position": "Forward",
-          "captain": false,
-          "score": 78.1,
-          "status": "FINAL",
-          "kickoff": "2026-10-13T19:00:00Z"
-        },
-        {
-          "name": "Jude Bellingham",
-          "slug": "jude-bellingham",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 36.65,
-          "status": "FINAL",
-          "kickoff": "2026-10-14T19:00:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
       "surface": "my set",
       "level": 0,
       "target": 260,
@@ -512,6 +450,68 @@
           "score": 0,
           "status": "FINAL",
           "kickoff": "2026-10-19T19:00:00Z"
+        }
+      ],
+      "scored": 5
+    },
+    {
+      "surface": "team set (Loadshift)",
+      "level": 0,
+      "target": 700,
+      "stepState": "CLAIMED",
+      "collaborative": true,
+      "squadLineups": 6,
+      "squadScore": 1171.9792,
+      "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
+      "state": "SUCCESSFUL",
+      "score": 305.45,
+      "finished": true,
+      "cleared": true,
+      "players": [
+        {
+          "name": "Senne Lammens",
+          "slug": "senne-lammens",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 32.55,
+          "status": "FINAL",
+          "kickoff": "2026-10-13T19:00:00Z"
+        },
+        {
+          "name": "Dara O'Shea",
+          "slug": "dara-o-shea",
+          "position": "Defender",
+          "captain": false,
+          "score": 70.76,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T14:00:00Z"
+        },
+        {
+          "name": "Cristian Cásseres Jr.",
+          "slug": "cristian-sleiker-casseres-yepes",
+          "position": "Midfielder",
+          "captain": true,
+          "score": 87.4,
+          "status": "FINAL",
+          "kickoff": "2026-10-16T18:45:00Z"
+        },
+        {
+          "name": "Álex Baena",
+          "slug": "alejandro-baena-rodriguez",
+          "position": "Forward",
+          "captain": false,
+          "score": 78.1,
+          "status": "FINAL",
+          "kickoff": "2026-10-13T19:00:00Z"
+        },
+        {
+          "name": "Jude Bellingham",
+          "slug": "jude-bellingham",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 36.65,
+          "status": "FINAL",
+          "kickoff": "2026-10-14T19:00:00Z"
         }
       ],
       "scored": 5
@@ -1277,186 +1277,34 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 349 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1172 so far.",
-      "tone": "good",
-      "lockAt": "2026-10-10T14:00:00Z",
+      "status": "Not open for entry yet. A team goes in the moment it opens.",
+      "tone": "neutral",
+      "lockAt": null,
       "isSquad": true,
-      "entered": {
-        "five": [
-          {
-            "actual": 32.55,
-            "scoreStatus": "FINAL",
-            "teamSlug": "manchester-united-manchester",
-            "name": "Senne Lammens",
-            "player": "Senne Lammens",
-            "slug": "senne-lammens",
-            "pos": "GK",
-            "position": "GK",
-            "pic": "https://assets.sorare.com/cardsamplepicture/ed4e725e-1d95-4539-b35b-88677e4b468c/picture/tinified-28d85cc45fa95dc2890528c855cf4cb2.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/ed4e725e-1d95-4539-b35b-88677e4b468c/picture/tinified-28d85cc45fa95dc2890528c855cf4cb2.png",
-            "captain": false,
-            "exp": 60.39,
-            "expected": 60.39,
-            "opp": "Tottenham Hotspur FC",
-            "opponent": "Tottenham Hotspur FC",
-            "home": true,
-            "average": 51,
-            "formL5": 68,
-            "intl": false,
-            "pWin": 0.557,
-            "pLose": 0.215,
-            "marketFactor": 1.095,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-10T16:30:00Z"
-          },
-          {
-            "actual": 70.76,
-            "scoreStatus": "FINAL",
-            "teamSlug": "ipswich-town-ipswich-suffolk",
-            "name": "Dara O'Shea",
-            "player": "Dara O'Shea",
-            "slug": "dara-o-shea",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/8c54996c-62a9-42a1-bb20-3ed894b54c4b/picture/tinified-7d966b41abbbcafa69655ed6df3a9725.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/8c54996c-62a9-42a1-bb20-3ed894b54c4b/picture/tinified-7d966b41abbbcafa69655ed6df3a9725.png",
-            "captain": false,
-            "exp": 58.67,
-            "expected": 58.67,
-            "opp": "Fulham FC",
-            "opponent": "Fulham FC",
-            "home": true,
-            "average": 59,
-            "formL5": 65,
-            "intl": false,
-            "pWin": 0.349,
-            "pLose": 0.38,
-            "marketFactor": 1.011,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-10T14:00:00Z"
-          },
-          {
-            "actual": 87.4,
-            "scoreStatus": "FINAL",
-            "teamSlug": "toulouse-toulouse",
-            "name": "Cristian Cásseres Jr.",
-            "player": "Cristian Cásseres Jr.",
-            "slug": "cristian-sleiker-casseres-yepes",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/c2d84e0c-57e8-4225-a3c3-d58f1103d23e/picture/tinified-70b75d69f7cba066a485aba14009f488.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/c2d84e0c-57e8-4225-a3c3-d58f1103d23e/picture/tinified-70b75d69f7cba066a485aba14009f488.png",
-            "captain": true,
-            "exp": 75.26,
-            "expected": 75.26,
-            "opp": "AS Monaco",
-            "opponent": "AS Monaco",
-            "home": false,
-            "average": 67,
-            "formL5": 86,
-            "intl": false,
-            "pWin": 0.183,
-            "pLose": 0.599,
-            "marketFactor": 0.965,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-10T18:45:00Z"
-          },
-          {
-            "actual": 78.1,
-            "scoreStatus": "FINAL",
-            "teamSlug": "atletico-madrid-madrid",
-            "name": "Álex Baena",
-            "player": "Álex Baena",
-            "slug": "alejandro-baena-rodriguez",
-            "pos": "FW",
-            "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
-            "captain": false,
-            "exp": 57.3,
-            "expected": 57.3,
-            "opp": "D. Alavés",
-            "opponent": "D. Alavés",
-            "home": false,
-            "average": 57,
-            "formL5": 57,
-            "intl": false,
-            "pWin": 0.529,
-            "pLose": 0.217,
-            "marketFactor": 1.034,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-10T14:15:00Z"
-          },
-          {
-            "actual": 36.65,
-            "scoreStatus": "FINAL",
-            "teamSlug": "real-madrid-madrid",
-            "name": "Jude Bellingham",
-            "player": "Jude Bellingham",
-            "slug": "jude-bellingham",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/fe3313a1-5c73-436d-a698-dbc049dee59b/picture/tinified-61dbd25acb89afe827003670d06ba75a.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/fe3313a1-5c73-436d-a698-dbc049dee59b/picture/tinified-61dbd25acb89afe827003670d06ba75a.png",
-            "captain": false,
-            "exp": 66.34,
-            "expected": 66.34,
-            "opp": "Villarreal CF",
-            "opponent": "Villarreal CF",
-            "home": true,
-            "average": 69,
-            "formL5": 67,
-            "intl": false,
-            "pWin": 0.7,
-            "pLose": 0.136,
-            "marketFactor": 1.068,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-10T19:00:00Z"
-          }
-        ],
-        "projected": 354.85,
-        "scoredSoFar": 349.16,
-        "played": 5,
-        "expectedFinal": 349.16
-      },
+      "entered": null,
       "poolStrength": {
         "strong": 0,
         "needed": 5
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 6,
+        "lineupsIn": 0,
         "needed": 3,
-        "scoreSoFar": 1171.9792
+        "scoreSoFar": 0
       },
-      "level": 0,
+      "level": 1,
       "lives": null,
       "totalLevels": 5,
-      "levelsDone": 0,
+      "levelsDone": 1,
       "ladder": [
         {
           "level": 0,
-          "state": "LINEUP_SET",
+          "state": "CLAIMED",
           "target": 700
         },
         {
           "level": 1,
-          "state": "LOCKED",
+          "state": "PRE_MATCHDAY_LOCKED",
           "target": 980
         },
         {
@@ -1483,40 +1331,9 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
-      "target": 700,
-      "current": [
-        {
-          "name": "Senne Lammens",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-13T19:00:00Z"
-        },
-        {
-          "name": "Dara O'Shea",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-17T14:00:00Z"
-        },
-        {
-          "name": "Cristian Cásseres Jr.",
-          "captain": true,
-          "locked": true,
-          "nextGame": "2026-10-16T18:45:00Z"
-        },
-        {
-          "name": "Álex Baena",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-13T19:00:00Z"
-        },
-        {
-          "name": "Jude Bellingham",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-14T19:00:00Z"
-        }
-      ],
+      "state": "PRE_MATCHDAY_LOCKED",
+      "target": 980,
+      "current": [],
       "plan": null,
       "candidates": [],
       "projected": 0
