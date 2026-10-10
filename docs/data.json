@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T15:19:28.222Z",
+  "generatedAt": "2026-10-10T15:25:17.371Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791645547047,
+    "lastRunAt": 1791645896726,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:4322c030-30b5-4abe-b0a3-b13f42555a98",
       "state": "READY",
-      "score": 178.13,
+      "score": 178.44,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "antonio-sivera-salva",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 41.69,
+          "score": 42,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T14:15:00Z"
         },
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 757.4636,
+      "squadScore": 773.984,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 33.09,
+      "score": 71.55,
       "finished": false,
       "cleared": true,
       "players": [
@@ -296,7 +296,7 @@
           "slug": "dara-o-shea",
           "position": "Defender",
           "captain": false,
-          "score": 33.09,
+          "score": 35.15,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T14:00:00Z"
         },
@@ -314,7 +314,7 @@
           "slug": "alejandro-baena-rodriguez",
           "position": "Forward",
           "captain": false,
-          "score": 0,
+          "score": 36.4,
           "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
@@ -328,7 +328,7 @@
           "kickoff": "2026-10-10T19:00:00Z"
         }
       ],
-      "scored": 1
+      "scored": 2
     },
     {
       "surface": "my set",
@@ -570,7 +570,7 @@
       "entered": {
         "five": [
           {
-            "actual": 41.69,
+            "actual": 42,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
             "name": "Sivera",
@@ -716,9 +716,9 @@
           }
         ],
         "projected": 370.38,
-        "scoredSoFar": 178.14,
+        "scoredSoFar": 178.45,
         "played": 4,
-        "expectedFinal": 291.54
+        "expectedFinal": 291.85
       },
       "poolStrength": {
         "strong": 5,
@@ -840,7 +840,7 @@
             "opponentCode": "S04",
             "code": "SCF",
             "rank": 3,
-            "opponentRank": 11,
+            "opponentRank": 12,
             "home": true,
             "competition": "Bundesliga",
             "intl": false,
@@ -1038,7 +1038,7 @@
           "opponentCode": "S04",
           "code": "SCF",
           "rank": 3,
-          "opponentRank": 11,
+          "opponentRank": 12,
           "home": true,
           "competition": "Bundesliga",
           "intl": false,
@@ -1215,7 +1215,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 33 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 757 so far.",
+      "status": "Locked and playing. 70 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 774 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1251,7 +1251,7 @@
             "kickoff": "2026-10-10T16:30:00Z"
           },
           {
-            "actual": 33.09,
+            "actual": 33.88,
             "scoreStatus": "REVIEWING",
             "teamSlug": "ipswich-town-ipswich-suffolk",
             "name": "Dara O'Shea",
@@ -1309,7 +1309,7 @@
             "kickoff": "2026-10-10T18:45:00Z"
           },
           {
-            "actual": null,
+            "actual": 36.4,
             "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Álex Baena",
@@ -1368,9 +1368,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 33.09,
-        "played": 1,
-        "expectedFinal": 330.01
+        "scoredSoFar": 70.28,
+        "played": 2,
+        "expectedFinal": 309.9
       },
       "poolStrength": {
         "strong": 1,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 757.4636
+        "scoreSoFar": 774.0926
       },
       "level": 0,
       "lives": null,
@@ -1606,7 +1606,7 @@
             "opponentCode": "SGE",
             "code": "RBL",
             "rank": 9,
-            "opponentRank": 10,
+            "opponentRank": 11,
             "home": true,
             "competition": "Bundesliga",
             "intl": false,
@@ -1804,7 +1804,7 @@
           "opponentCode": "SGE",
           "code": "RBL",
           "rank": 9,
-          "opponentRank": 10,
+          "opponentRank": 11,
           "home": true,
           "competition": "Bundesliga",
           "intl": false,
@@ -1899,7 +1899,7 @@
       "rank": 9,
       "opponent": "Eintracht Frankfurt",
       "opponentCode": "SGE",
-      "opponentRank": 10,
+      "opponentRank": 11,
       "intl": false,
       "ownRank": null,
       "oppRank": null,
@@ -2051,7 +2051,7 @@
       "rank": 3,
       "opponent": "FC Schalke 04",
       "opponentCode": "S04",
-      "opponentRank": 11,
+      "opponentRank": 12,
       "intl": false,
       "ownRank": null,
       "oppRank": null,
