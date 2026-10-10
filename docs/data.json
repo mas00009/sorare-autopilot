@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T17:12:04.371Z",
+  "generatedAt": "2026-10-10T17:18:04.761Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-10T18:45:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1791652305915,
-    "reason": "last run 0m ago, next due in 15m (lock in 93m)"
+    "lastRunAt": 1791652665138,
+    "reason": "last run 0m ago, next due in 15m (lock in 87m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 1030.2612,
+      "squadScore": 1030.4208,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 181.1,
+      "score": 184.7,
       "finished": false,
       "cleared": true,
       "players": [
@@ -287,7 +287,7 @@
           "slug": "senne-lammens",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 32.24,
+          "score": 35.84,
           "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
@@ -1215,14 +1215,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 181 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 1030 so far.",
+      "status": "Locked and playing. 185 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 1030 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 32.24,
+            "actual": 35.84,
             "scoreStatus": "REVIEWING",
             "teamSlug": "manchester-united-manchester",
             "name": "Senne Lammens",
@@ -1368,9 +1368,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 181.1,
+        "scoredSoFar": 184.7,
         "played": 3,
-        "expectedFinal": 360.33
+        "expectedFinal": 363.93
       },
       "poolStrength": {
         "strong": 1,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 1030.2612
+        "scoreSoFar": 1030.4208
       },
       "level": 0,
       "lives": null,
@@ -1519,7 +1519,7 @@
           "opponentCode": "PAR",
           "code": "FCL",
           "rank": 13,
-          "opponentRank": 3,
+          "opponentRank": 4,
           "home": true,
           "competition": "Ligue 1",
           "intl": false,
@@ -1635,7 +1635,7 @@
           "opponent": "FC Lorient",
           "opponentCode": "FCL",
           "code": "PAR",
-          "rank": 3,
+          "rank": 4,
           "opponentRank": 13,
           "home": false,
           "competition": "Ligue 1",
@@ -1791,7 +1791,7 @@
           "opponent": "Toulouse FC",
           "opponentCode": "TFC",
           "code": "ASM",
-          "rank": 1,
+          "rank": 2,
           "opponentRank": 14,
           "home": true,
           "competition": "Ligue 1",
@@ -1870,7 +1870,7 @@
           "opponentCode": "PAR",
           "code": "FCL",
           "rank": 13,
-          "opponentRank": 3,
+          "opponentRank": 4,
           "home": true,
           "competition": "Ligue 1",
           "intl": false,
@@ -1938,7 +1938,7 @@
       "rank": 13,
       "opponent": "Paris FC",
       "opponentCode": "PAR",
-      "opponentRank": 3,
+      "opponentRank": 4,
       "intl": false,
       "ownRank": null,
       "oppRank": null,
@@ -1987,7 +1987,7 @@
       "competition": "Ligue 1",
       "team": "Paris FC",
       "code": "PAR",
-      "rank": 3,
+      "rank": 4,
       "opponent": "FC Lorient",
       "opponentCode": "FCL",
       "opponentRank": 13,
@@ -2012,7 +2012,7 @@
       "competition": "Ligue 1",
       "team": "AS Monaco",
       "code": "ASM",
-      "rank": 1,
+      "rank": 2,
       "opponent": "Toulouse FC",
       "opponentCode": "TFC",
       "opponentRank": 14,
