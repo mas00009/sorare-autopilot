@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T16:00:17.695Z",
+  "generatedAt": "2026-10-10T16:06:08.228Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791647996836,
+    "lastRunAt": 1791648346101,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:4322c030-30b5-4abe-b0a3-b13f42555a98",
       "state": "READY",
-      "score": 165.04,
+      "score": 167.46,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "antonio-sivera-salva",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 48.51,
+          "score": 50.93,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T14:15:00Z"
         },
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 955.9184,
+      "squadScore": 957.2482,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 151.11,
+      "score": 184.08,
       "finished": false,
       "cleared": true,
       "players": [
@@ -314,7 +314,7 @@
           "slug": "alejandro-baena-rodriguez",
           "position": "Forward",
           "captain": false,
-          "score": 44.3,
+          "score": 77.27,
           "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
@@ -563,14 +563,14 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 165 scored so far, 4 of 5 played. On course for about 278; needs 360 (82 short).",
+      "status": "Locked and playing. 167 scored so far, 4 of 5 played. On course for about 281; needs 360 (79 short).",
       "tone": "warn",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": 48.51,
+            "actual": 50.93,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
             "name": "Sivera",
@@ -716,9 +716,9 @@
           }
         ],
         "projected": 370.38,
-        "scoredSoFar": 165.05,
+        "scoredSoFar": 167.47,
         "played": 4,
-        "expectedFinal": 278.45
+        "expectedFinal": 280.87
       },
       "poolStrength": {
         "strong": 5,
@@ -1215,7 +1215,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 151 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 956 so far.",
+      "status": "Locked and playing. 184 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 957 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1309,7 +1309,7 @@
             "kickoff": "2026-10-10T18:45:00Z"
           },
           {
-            "actual": 44.3,
+            "actual": 77.27,
             "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Álex Baena",
@@ -1368,9 +1368,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 151.11,
+        "scoredSoFar": 184.08,
         "played": 3,
-        "expectedFinal": 330.34
+        "expectedFinal": 363.31
       },
       "poolStrength": {
         "strong": 1,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 955.9184
+        "scoreSoFar": 957.2482
       },
       "level": 0,
       "lives": null,
