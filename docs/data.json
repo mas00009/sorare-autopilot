@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T15:37:00.485Z",
+  "generatedAt": "2026-10-10T15:42:49.650Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791646599691,
+    "lastRunAt": 1791646948679,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:4322c030-30b5-4abe-b0a3-b13f42555a98",
       "state": "READY",
-      "score": 181.9,
+      "score": 158.85,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "antonio-sivera-salva",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 43.37,
+          "score": 42.32,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T14:15:00Z"
         },
@@ -66,7 +66,7 @@
           "slug": "angel-perez-hidalgo",
           "position": "Forward",
           "captain": false,
-          "score": 45.76,
+          "score": 23.76,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T14:15:00Z"
         },
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 805.7578,
+      "squadScore": 806.6188,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 111.38,
+      "score": 109.05,
       "finished": false,
       "cleared": true,
       "players": [
@@ -296,7 +296,7 @@
           "slug": "dara-o-shea",
           "position": "Defender",
           "captain": false,
-          "score": 38.11,
+          "score": 35.78,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T14:00:00Z"
         },
@@ -563,14 +563,14 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 182 scored so far, 4 of 5 played. On course for about 295; needs 360 (65 short).",
+      "status": "Locked and playing. 159 scored so far, 4 of 5 played. On course for about 272; needs 360 (88 short).",
       "tone": "warn",
       "lockAt": "2026-10-03T18:45:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": 43.37,
+            "actual": 42.32,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
             "name": "Sivera",
@@ -657,7 +657,7 @@
             "kickoff": "2026-10-10T18:45:00Z"
           },
           {
-            "actual": 45.76,
+            "actual": 23.76,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
             "name": "Ángel Pérez",
@@ -716,9 +716,9 @@
           }
         ],
         "projected": 370.38,
-        "scoredSoFar": 181.91,
+        "scoredSoFar": 158.86,
         "played": 4,
-        "expectedFinal": 295.31
+        "expectedFinal": 272.26
       },
       "poolStrength": {
         "strong": 5,
@@ -1215,7 +1215,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 111 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 806 so far.",
+      "status": "Locked and playing. 109 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 807 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
@@ -1251,7 +1251,7 @@
             "kickoff": "2026-10-10T16:30:00Z"
           },
           {
-            "actual": 37.44,
+            "actual": 35.78,
             "scoreStatus": "REVIEWING",
             "teamSlug": "ipswich-town-ipswich-suffolk",
             "name": "Dara O'Shea",
@@ -1368,9 +1368,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 110.72,
+        "scoredSoFar": 109.06,
         "played": 3,
-        "expectedFinal": 289.95
+        "expectedFinal": 288.29
       },
       "poolStrength": {
         "strong": 1,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 805.7578
+        "scoreSoFar": 806.6188
       },
       "level": 0,
       "lives": null,
