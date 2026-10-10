@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-10T07:14:34.682Z",
+  "generatedAt": "2026-10-10T07:20:56.391Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 0,
+    "essence": 2000,
     "gems": 211
   },
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1791616451273,
-    "reason": "last run 0m ago, next due in 60m (lock in 405m)"
+    "lastRunAt": 1791616833165,
+    "reason": "last run 0m ago, next due in 60m (lock in 399m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -496,9 +496,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 723,
+        "progress": 725,
         "target": 860,
-        "remaining": 137,
+        "remaining": 135,
         "competition": null,
         "group": null,
         "teams": []
