@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T15:25:17.371Z",
+  "generatedAt": "2026-10-10T15:31:10.884Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-10T14:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791645896726,
+    "lastRunAt": 1791646247756,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:4322c030-30b5-4abe-b0a3-b13f42555a98",
       "state": "READY",
-      "score": 178.44,
+      "score": 178.45,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "antonio-sivera-salva",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 42,
+          "score": 41.79,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T14:15:00Z"
         },
@@ -66,7 +66,7 @@
           "slug": "angel-perez-hidalgo",
           "position": "Forward",
           "captain": false,
-          "score": 43.67,
+          "score": 43.89,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T14:15:00Z"
         },
@@ -76,7 +76,7 @@
           "position": "Midfielder",
           "captain": false,
           "score": 42.23,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-17T13:30:00Z"
         }
       ],
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 773.984,
+      "squadScore": 799.1408,
       "lineupId": "Tasks::TaskLineup:a5f4c1cb-e0e0-4144-810c-6cf0d9958c6c",
       "state": "READY",
-      "score": 71.55,
+      "score": 109.64,
       "finished": false,
       "cleared": true,
       "players": [
@@ -287,8 +287,8 @@
           "slug": "senne-lammens",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-10T16:30:00Z"
         },
         {
@@ -296,7 +296,7 @@
           "slug": "dara-o-shea",
           "position": "Defender",
           "captain": false,
-          "score": 35.15,
+          "score": 36.46,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T14:00:00Z"
         },
@@ -314,7 +314,7 @@
           "slug": "alejandro-baena-rodriguez",
           "position": "Forward",
           "captain": false,
-          "score": 36.4,
+          "score": 37.13,
           "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
@@ -328,7 +328,7 @@
           "kickoff": "2026-10-10T19:00:00Z"
         }
       ],
-      "scored": 2
+      "scored": 3
     },
     {
       "surface": "my set",
@@ -570,7 +570,7 @@
       "entered": {
         "five": [
           {
-            "actual": 42,
+            "actual": 41.79,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
             "name": "Sivera",
@@ -657,7 +657,7 @@
             "kickoff": "2026-10-10T18:45:00Z"
           },
           {
-            "actual": 43.67,
+            "actual": 43.89,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
             "name": "Ángel Pérez",
@@ -687,7 +687,7 @@
           },
           {
             "actual": 42.23,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "elversberg-saarbrucken",
             "name": "Tom Zimmerschied",
             "player": "Tom Zimmerschied",
@@ -716,9 +716,9 @@
           }
         ],
         "projected": 370.38,
-        "scoredSoFar": 178.45,
+        "scoredSoFar": 178.46,
         "played": 4,
-        "expectedFinal": 291.85
+        "expectedFinal": 291.86
       },
       "poolStrength": {
         "strong": 5,
@@ -840,7 +840,7 @@
             "opponentCode": "S04",
             "code": "SCF",
             "rank": 3,
-            "opponentRank": 12,
+            "opponentRank": 13,
             "home": true,
             "competition": "Bundesliga",
             "intl": false,
@@ -983,7 +983,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 68,
             "picture": "https://assets.sorare.com/cardsamplepicture/ed4e725e-1d95-4539-b35b-88677e4b468c/picture/tinified-28d85cc45fa95dc2890528c855cf4cb2.png",
@@ -1038,7 +1038,7 @@
           "opponentCode": "S04",
           "code": "SCF",
           "rank": 3,
-          "opponentRank": 12,
+          "opponentRank": 13,
           "home": true,
           "competition": "Bundesliga",
           "intl": false,
@@ -1181,7 +1181,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 68,
           "picture": "https://assets.sorare.com/cardsamplepicture/ed4e725e-1d95-4539-b35b-88677e4b468c/picture/tinified-28d85cc45fa95dc2890528c855cf4cb2.png",
@@ -1215,15 +1215,15 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 70 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 774 so far.",
+      "status": "Locked and playing. 110 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 799 so far.",
       "tone": "good",
       "lockAt": "2026-10-10T14:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "manchester-united-manchester",
             "name": "Senne Lammens",
             "player": "Senne Lammens",
@@ -1251,7 +1251,7 @@
             "kickoff": "2026-10-10T16:30:00Z"
           },
           {
-            "actual": 33.88,
+            "actual": 36.46,
             "scoreStatus": "REVIEWING",
             "teamSlug": "ipswich-town-ipswich-suffolk",
             "name": "Dara O'Shea",
@@ -1309,7 +1309,7 @@
             "kickoff": "2026-10-10T18:45:00Z"
           },
           {
-            "actual": 36.4,
+            "actual": 37.13,
             "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Álex Baena",
@@ -1368,9 +1368,9 @@
           }
         ],
         "projected": 354.85,
-        "scoredSoFar": 70.28,
-        "played": 2,
-        "expectedFinal": 309.9
+        "scoredSoFar": 109.64,
+        "played": 3,
+        "expectedFinal": 288.87
       },
       "poolStrength": {
         "strong": 1,
@@ -1380,7 +1380,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 774.0926
+        "scoreSoFar": 799.1408
       },
       "level": 0,
       "lives": null,
@@ -1554,7 +1554,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 49,
             "picture": "https://assets.sorare.com/cardsamplepicture/3976bced-4dae-4ed2-884b-6238cc8b9000/picture/tinified-59e9001569003345b31cbe079cc49ada.png",
@@ -1606,7 +1606,7 @@
             "opponentCode": "SGE",
             "code": "RBL",
             "rank": 9,
-            "opponentRank": 11,
+            "opponentRank": 12,
             "home": true,
             "competition": "Bundesliga",
             "intl": false,
@@ -1752,7 +1752,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 49,
           "picture": "https://assets.sorare.com/cardsamplepicture/3976bced-4dae-4ed2-884b-6238cc8b9000/picture/tinified-59e9001569003345b31cbe079cc49ada.png",
@@ -1804,7 +1804,7 @@
           "opponentCode": "SGE",
           "code": "RBL",
           "rank": 9,
-          "opponentRank": 11,
+          "opponentRank": 12,
           "home": true,
           "competition": "Bundesliga",
           "intl": false,
@@ -1899,7 +1899,7 @@
       "rank": 9,
       "opponent": "Eintracht Frankfurt",
       "opponentCode": "SGE",
-      "opponentRank": 11,
+      "opponentRank": 12,
       "intl": false,
       "ownRank": null,
       "oppRank": null,
@@ -2051,7 +2051,7 @@
       "rank": 3,
       "opponent": "FC Schalke 04",
       "opponentCode": "S04",
-      "opponentRank": 12,
+      "opponentRank": 13,
       "intl": false,
       "ownRank": null,
       "oppRank": null,
