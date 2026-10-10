@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T21:10:18.018Z",
+  "generatedAt": "2026-10-10T21:15:39.052Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-11T13:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1791666602946,
-    "reason": "last run 0m ago, next due in 180m (lock in 950m)"
+    "reason": "last run 6m ago, next due in 174m (lock in 944m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -558,9 +558,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 725,
+        "progress": 729,
         "target": 860,
-        "remaining": 135,
+        "remaining": 131,
         "competition": null,
         "group": null,
         "teams": []
@@ -582,9 +582,9 @@
       {
         "title": "Collect Goalkeepers",
         "gems": 10,
-        "progress": 87,
+        "progress": 88,
         "target": 112,
-        "remaining": 25,
+        "remaining": 24,
         "competition": null,
         "group": null,
         "teams": []
