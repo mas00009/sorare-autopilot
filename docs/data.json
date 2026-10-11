@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T17:40:35.562Z",
+  "generatedAt": "2026-10-11T17:46:20.099Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-11T18:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1791740417750,
-    "reason": "last run 0m ago, next due in 5m (lock in 64m)"
+    "lastRunAt": 1791740762620,
+    "reason": "last run 0m ago, next due in 5m (lock in 59m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Camello",
@@ -275,7 +275,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 1148.4368,
+      "squadScore": 1154.1868,
       "lineupId": "Tasks::TaskLineup:11e0a8f4-47cf-43d0-acb9-d8b738b5be3e",
       "state": "READY",
       "score": 332.51,
@@ -1339,7 +1339,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 377 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1148 so far.",
+      "status": "Locked and playing. 377 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1154 so far.",
       "tone": "good",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": true,
@@ -1504,7 +1504,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 1148.4368
+        "scoreSoFar": 1154.1868
       },
       "level": 1,
       "lives": null,
@@ -1786,7 +1786,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 39,
           "picture": "https://assets.sorare.com/cardsamplepicture/6ebe24b6-9f1e-4192-ae12-defeab9a7b18/picture/tinified-f6ef9feeaf99c4b4514fb8f3bdd19a86.png",
@@ -1864,7 +1864,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 47,
           "picture": "https://assets.sorare.com/cardsamplepicture/8355daf3-8570-425e-9350-08d1fb18a97e/picture/tinified-798f8860c59beb20d1a7056f8fe0e374.png",
@@ -1942,7 +1942,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 44,
           "picture": "https://assets.sorare.com/cardsamplepicture/b6b53978-256a-4e54-9fdd-e8dad111f4c3/picture/tinified-b106403f545221f7c8b1d541a5593868.png",
