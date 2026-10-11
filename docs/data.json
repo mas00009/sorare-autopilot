@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T14:47:23.742Z",
+  "generatedAt": "2026-10-11T14:52:59.085Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-11T14:15:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791730021714,
+    "lastRunAt": 1791730356556,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:132aa4bc-e8a6-438c-bda8-f131297fe98e",
       "state": "READY",
-      "score": 198.46,
+      "score": 198.69,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "matz-sels",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 45.31,
+          "score": 45.54,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T15:30:00Z"
         },
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 859.0994,
+      "squadScore": 869.65,
       "lineupId": "Tasks::TaskLineup:11e0a8f4-47cf-43d0-acb9-d8b738b5be3e",
       "state": "READY",
-      "score": 290.59,
+      "score": 293.79,
       "finished": false,
       "cleared": false,
       "players": [
@@ -305,7 +305,7 @@
           "slug": "kiernan-dewsbury-hall",
           "position": "Midfielder",
           "captain": false,
-          "score": 97.41,
+          "score": 101.39,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T11:30:00Z"
         },
@@ -323,7 +323,7 @@
           "slug": "sergio-gomez-martin",
           "position": "Defender",
           "captain": false,
-          "score": 38.28,
+          "score": 37.51,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T16:45:00Z"
         }
@@ -687,14 +687,14 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 225 scored so far, 4 of 5 played. On course for about 294; needs 360 (66 short).",
+      "status": "Locked and playing. 225 scored so far, 4 of 5 played. On course for about 295; needs 360 (65 short).",
       "tone": "warn",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": 45.31,
+            "actual": 45.43,
             "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Matz Sels",
@@ -840,9 +840,9 @@
           }
         ],
         "projected": 362.9,
-        "scoredSoFar": 225.24,
+        "scoredSoFar": 225.36,
         "played": 4,
-        "expectedFinal": 294.38
+        "expectedFinal": 294.5
       },
       "poolStrength": {
         "strong": 5,
@@ -1339,7 +1339,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 317 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 859 so far.",
+      "status": "Locked and playing. 321 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 870 so far.",
       "tone": "good",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": true,
@@ -1404,7 +1404,7 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": 97.41,
+            "actual": 101.39,
             "scoreStatus": "REVIEWING",
             "teamSlug": "everton-liverpool",
             "name": "Kiernan Dewsbury-Hall",
@@ -1462,7 +1462,7 @@
             "kickoff": "2026-10-11T13:00:00Z"
           },
           {
-            "actual": 38.28,
+            "actual": 37.51,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-sociedad-donostia-san-sebastian",
             "name": "Sergio Gómez",
@@ -1492,9 +1492,9 @@
           }
         ],
         "projected": 354.09,
-        "scoredSoFar": 317.37,
+        "scoredSoFar": 320.57,
         "played": 5,
-        "expectedFinal": 317.37
+        "expectedFinal": 320.57
       },
       "poolStrength": {
         "strong": 1,
@@ -1504,7 +1504,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 859.0994
+        "scoreSoFar": 869.65
       },
       "level": 1,
       "lives": null,
