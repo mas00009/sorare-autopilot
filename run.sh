@@ -23,6 +23,11 @@ NODE="$(command -v node || echo /usr/local/bin/node)"
   code=$?
   echo "---- exit $code ----"
 
+  # Second account: NBA wheel only, and only once it has signed in.
+  if [ -f "$DIR/state/tokens-second.json" ]; then
+    SORARE_ACCOUNT=second "$NODE" src/cli.js wheel 2>&1
+  fi
+
   # Refresh the published dashboard. Only pushes when something actually changed,
   # so a quiet pass leaves no commit noise.
   "$NODE" src/cli.js dashboard >/dev/null 2>&1

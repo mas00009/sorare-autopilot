@@ -12,7 +12,10 @@ import { fileURLToPath } from 'node:url';
 import { assertMutationAllowed } from './guardrails.js';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
-const STATE = path.join(ROOT, 'state', 'tokens.json');
+// SORARE_ACCOUNT picks a second account's own login and state file, so it
+// never shares a token or a single setting with the main one.
+const ACCOUNT = (process.env.SORARE_ACCOUNT ?? '').replace(/[^a-z0-9_-]/gi, '');
+const STATE = path.join(ROOT, 'state', ACCOUNT ? `tokens-${ACCOUNT}.json` : 'tokens.json');
 
 const GQL_URL = 'https://api.sorare.com/graphql';
 const TOKEN_URL = 'https://api.sorare.com/oauth/token';

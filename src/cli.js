@@ -267,6 +267,17 @@ const main = async () => {
     return createApp();
   }
 
+  // Wheel only. This is the whole of what runs for a second account: claim
+  // the free NBA ticket, spin it, open the prize. No lineups, packs or claims.
+  if (cmd === 'wheel') {
+    const { spinNbaWheel } = await import('./wheel.js');
+    const w = await spinNbaWheel({ dryRun: flag('dry') });
+    const who = process.env.SORARE_ACCOUNT ? ` (${process.env.SORARE_ACCOUNT})` : '';
+    console.log(`NBA wheel${who}: ${w.claimed ? 'free ticket claimed; ' : ''}${w.spun ? `spun - ${w.won.join(', ') || 'opened'}` : w.reason ?? 'nothing to do'}`);
+    for (const e of w.errors ?? []) console.log(`  ! ${e}`);
+    return;
+  }
+
   if (cmd === 'signin') {
     const { signIn } = await import('./signin.js');
     return signIn();
