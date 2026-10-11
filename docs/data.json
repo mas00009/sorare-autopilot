@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T21:06:46.126Z",
+  "generatedAt": "2026-10-11T21:12:06.855Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-12T19:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1791752788374,
-    "reason": "last run 0m ago, next due in 180m (lock in 1313m)"
+    "reason": "last run 6m ago, next due in 174m (lock in 1308m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Camello",
@@ -620,9 +620,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 740,
+        "progress": 744,
         "target": 860,
-        "remaining": 120,
+        "remaining": 116,
         "competition": null,
         "group": null,
         "teams": []
