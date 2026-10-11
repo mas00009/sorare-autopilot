@@ -12,7 +12,10 @@
  * Gems cannot pay for a spin here: the price is read from Sorare and vetted
  * before anything is sent.
  */
-import { gql } from './client.js';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { gql, writeState } from './client.js';
 import { assertCostAllowed } from './guardrails.js';
 import { M_CLAIM_TASK } from './queries.js';
 
@@ -28,7 +31,7 @@ const Q_WHEEL = `
       }
       myWheelTasks(sport: $sport, rarity: $rarity) { id name title aasmState }
     }
-    currentUser { inGameCurrencyBalances(sport: $sport) { currency amount } }
+    currentUser { nickname inGameCurrencyBalances(sport: $sport) { currency amount } }
   }
 `;
 
@@ -91,11 +94,27 @@ async function openNbaBundles(out) {
   }
 }
 
+/**
+ * One line per spin in state/reports/nba-<UTC date>.jsonl, the same day key
+ * the daily mail uses. Both accounts write here, so one section of the mail
+ * can show them side by side.
+ */
+const REPORTS = path.join(path.dirname(path.dirname(fileURLToPath(import.meta.url))), 'state', 'reports');
+async function journal(row) {
+  const day = new Date().toISOString().slice(0, 10);
+  await fs.mkdir(REPORTS, { recursive: true });
+  await fs.appendFile(path.join(REPORTS, `nba-${day}.jsonl`), JSON.stringify({ at: new Date().toISOString(), ...row }) + '\n');
+}
+
 export async function spinNbaWheel({ dryRun = false } = {}) {
   const out = { claimed: false, spun: false, won: [], errors: [], reason: null };
   const read = async () => gql(Q_WHEEL, { sport: SPORT, rarity: RARITY });
   let d = await read();
   const wheel = d.market?.activeWheelConfig;
+  out.account = d.currentUser?.nickname ?? null;
+  // Remembered in this account's own state so the mail can name an account
+  // even on a day it did not spin.
+  if (out.account && !dryRun) await writeState({ nickname: out.account }).catch(() => {});
   if (!wheel) { out.reason = 'no NBA wheel running'; return out; }
   out.wheel = wheel.title;
 
@@ -134,6 +153,9 @@ export async function spinNbaWheel({ dryRun = false } = {}) {
   // 3. Open whatever the wheel paid.
   if (!dryRun) {
     try { await openNbaBundles(out); } catch (err) { out.errors.push(`open: ${err.message}`); }
+    if (out.spun || out.won.length || out.errors.length) {
+      await journal({ account: out.account, spun: out.spun, won: out.won, errors: out.errors }).catch(() => {});
+    }
   }
   return out;
 }

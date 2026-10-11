@@ -12,7 +12,7 @@
  * delivery is skipped.
  */
 import fs from 'node:fs/promises';
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
@@ -255,6 +255,37 @@ export function digestData(entries) {
   };
 }
 
+/**
+ * The NBA wheel for one day, per account. Every signed-in account is listed,
+ * spun or not, so a missed spin shows up as a missed spin rather than as
+ * silence.
+ */
+export function nbaDay(date) {
+  const rows = [];
+  try {
+    for (const l of readFileSync(path.join(DIR, `nba-${date}.jsonl`), 'utf8').split('\n')) {
+      if (l.trim()) rows.push(JSON.parse(l));
+    }
+  } catch {}
+  const names = [];
+  try {
+    for (const f of readdirSync(path.join(ROOT, 'state')).filter((f) => /^tokens(-[\w-]+)?\.json$/.test(f))
+      .sort((a, b) => (a === 'tokens.json' ? -1 : b === 'tokens.json' ? 1 : a.localeCompare(b)))) {
+      try {
+        const nick = JSON.parse(readFileSync(path.join(ROOT, 'state', f), 'utf8')).nickname;
+        if (nick) names.push(nick);
+      } catch {}
+    }
+  } catch {}
+  for (const r of rows) if (r.account && !names.includes(r.account)) names.push(r.account);
+  return names.map((account) => {
+    const mine = rows.filter((r) => r.account === account);
+    const won = mine.flatMap((r) => r.won ?? []);
+    const errors = mine.flatMap((r) => r.errors ?? []);
+    return { account, spun: mine.some((r) => r.spun), won, errors };
+  });
+}
+
 /** Human-readable digest for a day. */
 export function digest(date, entries) {
   const L = [];
@@ -281,6 +312,14 @@ export function digest(date, entries) {
     const totals = new Map();
     for (const r of rewards) totals.set(r.currency, (totals.get(r.currency) ?? 0) + r.change);
     for (const [cur, chg] of totals) L.push(`  ${cur}  ${chg > 0 ? '+' : ''}${chg}`);
+  }
+
+  const nba = nbaDay(date);
+  if (nba.length) {
+    L.push('', 'NBA WHEEL');
+    for (const a of nba) {
+      L.push(`  ${a.account}: ${a.spun ? `spun - ${a.won.join(', ') || 'prize opened'}` : a.errors.length ? `failed - ${a.errors[0]}` : 'no spin'}`);
+    }
   }
 
   L.push('', 'ESSENCE', `  spent ${spent}`);
@@ -355,6 +394,31 @@ export function digestHtml(date, entries, snapshot = null) {
   const F = "-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif";
   const P = (txt, extra = '') => `<p style="margin:0;font:400 14px/1.55 ${F};color:${C.ink};${extra}">${txt}</p>`;
   const H = (txt) => `<div style="font:700 11px/1 ${F};letter-spacing:.13em;text-transform:uppercase;color:${C.faint};padding-bottom:9px">${esc(txt)}</div>`;
+  // Its own coloured band, so the NBA wheel never reads as part of the
+  // football boards above it.
+  const NBA = '#c9082a';
+  const nbaBlock = (accounts) => {
+    if (!accounts.length) return '';
+    const rows = accounts.map((a) => {
+      const verdict = a.spun
+        ? `<span style="color:${C.go};font-weight:700">Spun</span>`
+        : a.errors.length
+          ? `<span style="color:${C.stop};font-weight:700">Failed</span>`
+          : `<span style="color:${C.warn};font-weight:700">No spin</span>`;
+      const detail = a.spun
+        ? (a.won.length ? `Won ${a.won.map(esc).join(', ')}` : 'Prize opened')
+        : a.errors.length ? esc(a.errors[0]) : 'No free ticket was used this day.';
+      return `<tr>
+        <td style="padding:9px 12px;border-top:1px solid ${C.line};font:700 13px/1.4 ${F};color:${C.ink};white-space:nowrap;width:120px">${esc(a.account)}</td>
+        <td style="padding:9px 12px;border-top:1px solid ${C.line};font:400 13px/1.45 ${F};color:${C.ink}">${verdict}<br><span style="color:${C.dim}">${detail}</span></td>
+      </tr>`;
+    }).join('');
+    return `<tr><td style="padding:22px 26px 0">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border:1px solid ${C.line};border-radius:12px;overflow:hidden">
+        <tr><td colspan="2" style="background:${NBA};padding:10px 12px;font:800 13px/1 ${F};letter-spacing:.12em;color:#ffffff">NBA &middot; DAILY WHEEL</td></tr>
+        ${rows}
+      </table></td></tr>`;
+  };
   const tone = { good: C.go, warn: C.warn, bad: C.stop, neutral: C.dim };
 
   /* ---- one block per board ------------------------------------------- */
@@ -436,6 +500,7 @@ export function digestHtml(date, entries, snapshot = null) {
     <img src="${SITE}img/wordmark.png" alt="Sorare Autopilot" width="190" style="display:block;width:190px;height:auto;border:0">
     <div style="font:500 13px/1.4 ${F};color:#8b95ad;padding-top:8px">${esc(pretty)}</div></td></tr>
   ${boards}
+  ${nbaBlock(nbaDay(date))}
   <tr><td style="padding:22px 26px 0">
     ${H('Essence and gems')}
     ${moneyLines.map((l) => P(l, 'padding:3px 0')).join('')}
