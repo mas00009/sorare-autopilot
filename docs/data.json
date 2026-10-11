@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T13:01:12.032Z",
+  "generatedAt": "2026-10-11T13:06:47.726Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -8,9 +8,9 @@
   },
   "schedule": {
     "nextLock": "2026-10-11T14:15:00Z",
-    "cadenceMin": 15,
-    "lastRunAt": 1791723647812,
-    "reason": "last run 0m ago, next due in 15m (lock in 74m)"
+    "cadenceMin": 5,
+    "lastRunAt": 1791723983538,
+    "reason": "last run 0m ago, next due in 5m (lock in 68m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Camello",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:132aa4bc-e8a6-438c-bda8-f131297fe98e",
       "state": "READY",
-      "score": 75.6,
+      "score": 106.83,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "matz-sels",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 39.55,
+          "score": 39.89,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T15:30:00Z"
         },
@@ -66,7 +66,7 @@
           "slug": "dan-ndoye",
           "position": "Forward",
           "captain": false,
-          "score": 36.05,
+          "score": 66.95,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T15:30:00Z"
         },
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 289.576,
+      "squadScore": 313.227,
       "lineupId": "Tasks::TaskLineup:11e0a8f4-47cf-43d0-acb9-d8b738b5be3e",
       "state": "READY",
-      "score": 71.75,
+      "score": 103.26,
       "finished": false,
       "cleared": false,
       "players": [
@@ -305,7 +305,7 @@
           "slug": "kiernan-dewsbury-hall",
           "position": "Midfielder",
           "captain": false,
-          "score": 35.7,
+          "score": 36.31,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T11:30:00Z"
         },
@@ -314,7 +314,7 @@
           "slug": "dan-ndoye",
           "position": "Forward",
           "captain": false,
-          "score": 36.05,
+          "score": 66.95,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T15:30:00Z"
         },
@@ -687,14 +687,14 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 76 scored so far, 2 of 5 played. On course for about 326; needs 360 (34 short).",
+      "status": "Locked and playing. 107 scored so far, 2 of 5 played. On course for about 357; needs 360 (3 short).",
       "tone": "warn",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": 39.55,
+            "actual": 39.89,
             "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Matz Sels",
@@ -781,7 +781,7 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": 36.05,
+            "actual": 66.95,
             "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Dan Ndoye",
@@ -840,9 +840,9 @@
           }
         ],
         "projected": 362.9,
-        "scoredSoFar": 75.6,
+        "scoredSoFar": 106.84,
         "played": 2,
-        "expectedFinal": 325.89
+        "expectedFinal": 357.13
       },
       "poolStrength": {
         "strong": 5,
@@ -870,7 +870,7 @@
         },
         {
           "level": 2,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 360
         },
         {
@@ -896,7 +896,7 @@
           "currency": "COMMON_GEM"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 360,
       "current": [
         {
@@ -1339,7 +1339,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 72 scored so far, 2 of 5 played. The squad's top three lineups together need 980; the squad has 290 so far.",
+      "status": "Locked and playing. 103 scored so far, 2 of 5 played. The squad's top three lineups together need 980; the squad has 313 so far.",
       "tone": "good",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": true,
@@ -1404,7 +1404,7 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": 35.7,
+            "actual": 36.31,
             "scoreStatus": "REVIEWING",
             "teamSlug": "everton-liverpool",
             "name": "Kiernan Dewsbury-Hall",
@@ -1433,7 +1433,7 @@
             "kickoff": "2026-10-11T13:00:00Z"
           },
           {
-            "actual": 36.05,
+            "actual": 66.95,
             "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Dan Ndoye",
@@ -1492,9 +1492,9 @@
           }
         ],
         "projected": 354.09,
-        "scoredSoFar": 71.75,
+        "scoredSoFar": 103.26,
         "played": 2,
-        "expectedFinal": 304.81
+        "expectedFinal": 336.32
       },
       "poolStrength": {
         "strong": 1,
@@ -1504,7 +1504,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 289.576
+        "scoreSoFar": 313.227
       },
       "level": 1,
       "lives": null,
@@ -1518,7 +1518,7 @@
         },
         {
           "level": 1,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 980
         },
         {
@@ -1545,7 +1545,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 980,
       "current": [
         {
@@ -1581,9 +1581,9 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 327.41,
+        "projected": 320.89,
         "lock": "2026-10-11T15:30:00Z",
-        "shortfall": 652.6,
+        "shortfall": 659.1,
         "tradedPointsForTime": 0,
         "captain": "maximilian-eggestein",
         "captainPoints": 30.56,
@@ -1669,45 +1669,6 @@
             "blocked": null
           },
           {
-            "id": "ComposeTeamBenchCard:3aff8abc-68c9-491f-aab1-f5d1d15e1feb",
-            "player": "Dan Ndoye",
-            "slug": "dan-ndoye",
-            "position": "FW",
-            "average": 57,
-            "bonus": 1.03,
-            "starterPct": null,
-            "startRate": 1,
-            "oddsKnown": false,
-            "onGameSheet": false,
-            "reliability": null,
-            "formL5": 69,
-            "picture": "https://assets.sorare.com/cardsamplepicture/29470820-1e49-4736-8dbe-8b21c3f4d214/picture/tinified-c7105426f3ab1ccdf9a472c02dbf05d5.png",
-            "rarity": "common",
-            "gameId": "Game:83eb87b5-cb4e-4f54-9980-2d9d8eb0bfef",
-            "kickoff": "2026-10-18T15:30:00Z",
-            "team": "Nottingham Forest FC",
-            "teamSlug": "nottingham-forest-nottingham",
-            "opponent": "Arsenal FC",
-            "opponentCode": "ARS",
-            "code": "NOT",
-            "rank": 13,
-            "opponentRank": 2,
-            "home": true,
-            "competition": "Premier League",
-            "intl": false,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "mismatch": false,
-            "pWin": 0.164,
-            "pLose": 0.596,
-            "oddsBooks": 17,
-            "marketFactor": 0.961,
-            "lockedAt": null,
-            "expected": 62.34,
-            "blocked": null
-          },
-          {
             "id": "ComposeTeamBenchCard:8315b8db-fb70-47e8-bce5-03b0671c21d7",
             "player": "Iñigo Vicente",
             "slug": "inigo-vicente-elorduy",
@@ -1744,6 +1705,45 @@
             "marketFactor": 1.011,
             "lockedAt": null,
             "expected": 60.95,
+            "blocked": null
+          },
+          {
+            "id": "ComposeTeamBenchCard:02f5be41-b8b6-425e-8764-1d8da6bfb9d5",
+            "player": "Antony",
+            "slug": "antony-matheus-dos-santos",
+            "position": "FW",
+            "average": 58,
+            "bonus": 1.05,
+            "starterPct": null,
+            "startRate": 0.9,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 50,
+            "picture": "https://assets.sorare.com/cardsamplepicture/bb650e5e-66b3-47f5-a7e6-6c6e6a757d56/picture/tinified-38b786c00dab44fc29ee15fc3a961b56.png",
+            "rarity": "common",
+            "gameId": "Game:6af339f0-4d13-45c6-8f4e-960892e1e538",
+            "kickoff": "2026-10-11T16:30:00Z",
+            "team": "Real Betis",
+            "teamSlug": "real-betis-sevilla",
+            "opponent": "CA Osasuna",
+            "opponentCode": "OSA",
+            "code": "BET",
+            "rank": 4,
+            "opponentRank": 14,
+            "home": true,
+            "competition": "Primera División",
+            "intl": false,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "mismatch": false,
+            "pWin": 0.625,
+            "pLose": 0.159,
+            "oddsBooks": 19,
+            "marketFactor": 1.053,
+            "lockedAt": null,
+            "expected": 55.82,
             "blocked": null
           },
           {
@@ -1867,45 +1867,6 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:3aff8abc-68c9-491f-aab1-f5d1d15e1feb",
-          "player": "Dan Ndoye",
-          "slug": "dan-ndoye",
-          "position": "FW",
-          "average": 57,
-          "bonus": 1.03,
-          "starterPct": null,
-          "startRate": 1,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 69,
-          "picture": "https://assets.sorare.com/cardsamplepicture/29470820-1e49-4736-8dbe-8b21c3f4d214/picture/tinified-c7105426f3ab1ccdf9a472c02dbf05d5.png",
-          "rarity": "common",
-          "gameId": "Game:83eb87b5-cb4e-4f54-9980-2d9d8eb0bfef",
-          "kickoff": "2026-10-18T15:30:00Z",
-          "team": "Nottingham Forest FC",
-          "teamSlug": "nottingham-forest-nottingham",
-          "opponent": "Arsenal FC",
-          "opponentCode": "ARS",
-          "code": "NOT",
-          "rank": 13,
-          "opponentRank": 2,
-          "home": true,
-          "competition": "Premier League",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.164,
-          "pLose": 0.596,
-          "oddsBooks": 17,
-          "marketFactor": 0.961,
-          "lockedAt": null,
-          "expected": 62.34,
-          "blocked": null
-        },
-        {
           "id": "ComposeTeamBenchCard:8315b8db-fb70-47e8-bce5-03b0671c21d7",
           "player": "Iñigo Vicente",
           "slug": "inigo-vicente-elorduy",
@@ -1942,6 +1903,45 @@
           "marketFactor": 1.011,
           "lockedAt": null,
           "expected": 60.95,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:02f5be41-b8b6-425e-8764-1d8da6bfb9d5",
+          "player": "Antony",
+          "slug": "antony-matheus-dos-santos",
+          "position": "FW",
+          "average": 58,
+          "bonus": 1.05,
+          "starterPct": null,
+          "startRate": 0.9,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 50,
+          "picture": "https://assets.sorare.com/cardsamplepicture/bb650e5e-66b3-47f5-a7e6-6c6e6a757d56/picture/tinified-38b786c00dab44fc29ee15fc3a961b56.png",
+          "rarity": "common",
+          "gameId": "Game:6af339f0-4d13-45c6-8f4e-960892e1e538",
+          "kickoff": "2026-10-11T16:30:00Z",
+          "team": "Real Betis",
+          "teamSlug": "real-betis-sevilla",
+          "opponent": "CA Osasuna",
+          "opponentCode": "OSA",
+          "code": "BET",
+          "rank": 4,
+          "opponentRank": 14,
+          "home": true,
+          "competition": "Primera División",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.625,
+          "pLose": 0.159,
+          "oddsBooks": 19,
+          "marketFactor": 1.053,
+          "lockedAt": null,
+          "expected": 55.82,
           "blocked": null
         },
         {
@@ -1984,7 +1984,7 @@
           "blocked": null
         }
       ],
-      "projected": 305.3
+      "projected": 298.8
     }
   ],
   "fixtures": [
@@ -2056,9 +2056,10 @@
       "oppFactor": null,
       "home": true,
       "players": [
-        "Natan"
+        "Natan",
+        "Antony"
       ],
-      "points": 62.6,
+      "points": 118.4,
       "bestStarter": null,
       "surfaces": [
         "team set (Loadshift)"
@@ -2164,31 +2165,6 @@
       "bestStarter": null,
       "surfaces": [
         "my set"
-      ]
-    },
-    {
-      "kickoff": "2026-10-18T15:30:00Z",
-      "competition": "Premier League",
-      "team": "Nottingham Forest FC",
-      "code": "NOT",
-      "rank": 13,
-      "opponent": "Arsenal FC",
-      "opponentCode": "ARS",
-      "opponentRank": 2,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.164,
-      "pLose": 0.596,
-      "oppFactor": null,
-      "home": true,
-      "players": [
-        "Dan Ndoye"
-      ],
-      "points": 62.3,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
       ]
     }
   ]
