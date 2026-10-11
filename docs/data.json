@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T04:05:34.837Z",
+  "generatedAt": "2026-10-11T04:37:40.760Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-11T13:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1791688976427,
-    "reason": "last run 43m ago, next due in 17m (lock in 534m)"
+    "lastRunAt": 1791692810326,
+    "reason": "last run 11m ago, next due in 49m (lock in 502m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
