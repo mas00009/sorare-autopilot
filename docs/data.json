@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T14:14:00.198Z",
+  "generatedAt": "2026-10-11T14:19:34.434Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-11T14:15:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791728017391,
-    "reason": "last run 0m ago, next due in 180m (lock in 1m)"
+    "lastRunAt": 1791728352280,
+    "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
     "lastThreeStar": "Sergio Camello",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:132aa4bc-e8a6-438c-bda8-f131297fe98e",
       "state": "READY",
-      "score": 100.55,
+      "score": 104.53,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "matz-sels",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 35.26,
+          "score": 34.8,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T15:30:00Z"
         },
@@ -66,7 +66,7 @@
           "slug": "dan-ndoye",
           "position": "Forward",
           "captain": false,
-          "score": 65.3,
+          "score": 69.73,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T15:30:00Z"
         },
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 485.6894,
+      "squadScore": 522.5788,
       "lineupId": "Tasks::TaskLineup:11e0a8f4-47cf-43d0-acb9-d8b738b5be3e",
       "state": "READY",
-      "score": 147.44,
+      "score": 180.53,
       "finished": false,
       "cleared": false,
       "players": [
@@ -305,7 +305,7 @@
           "slug": "kiernan-dewsbury-hall",
           "position": "Midfielder",
           "captain": false,
-          "score": 45.39,
+          "score": 74.05,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T11:30:00Z"
         },
@@ -314,7 +314,7 @@
           "slug": "dan-ndoye",
           "position": "Forward",
           "captain": false,
-          "score": 65.3,
+          "score": 69.73,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T15:30:00Z"
         },
@@ -325,7 +325,7 @@
           "captain": false,
           "score": 36.75,
           "status": "REVIEWING",
-          "kickoff": "2026-10-11T14:15:00Z"
+          "kickoff": "2026-10-15T16:45:00Z"
         }
       ],
       "scored": 3
@@ -378,7 +378,7 @@
           "captain": true,
           "score": 62.22,
           "status": "FINAL",
-          "kickoff": "2026-10-11T14:15:00Z"
+          "kickoff": "2026-10-16T19:00:00Z"
         },
         {
           "name": "Iñigo Vicente",
@@ -449,7 +449,7 @@
           "captain": false,
           "score": 78.69,
           "status": "FINAL",
-          "kickoff": "2026-10-11T14:15:00Z"
+          "kickoff": "2026-10-16T19:00:00Z"
         }
       ],
       "scored": 5
@@ -687,14 +687,14 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 101 scored so far, 2 of 5 played. On course for about 351; needs 360 (9 short).",
+      "status": "Locked and playing. 105 scored so far, 2 of 5 played. On course for about 355; needs 360 (5 short).",
       "tone": "warn",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": 35.26,
+            "actual": 34.8,
             "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Matz Sels",
@@ -781,7 +781,7 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": 65.3,
+            "actual": 69.73,
             "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Dan Ndoye",
@@ -840,9 +840,9 @@
           }
         ],
         "projected": 362.9,
-        "scoredSoFar": 100.56,
+        "scoredSoFar": 104.53,
         "played": 2,
-        "expectedFinal": 350.85
+        "expectedFinal": 354.82
       },
       "poolStrength": {
         "strong": 5,
@@ -932,8 +932,8 @@
       ],
       "plan": {
         "clearsTarget": true,
-        "projected": 372.88,
-        "lock": "2026-10-11T14:15:00Z",
+        "projected": 372.37,
+        "lock": "2026-10-11T19:00:00Z",
         "shortfall": null,
         "tradedPointsForTime": 1.4,
         "captain": "cristian-sleiker-casseres-yepes",
@@ -1020,42 +1020,42 @@
             "blocked": null
           },
           {
-            "id": "ComposeTeamBenchCard:ac2b6788-c05b-407f-8d37-4b42e2b7a9f5",
-            "player": "Sergio Gómez",
-            "slug": "sergio-gomez-martin",
-            "position": "DF",
-            "average": 58,
+            "id": "ComposeTeamBenchCard:7249677c-f247-4538-bd28-a727608d184b",
+            "player": "Jude Bellingham",
+            "slug": "jude-bellingham",
+            "position": "MD",
+            "average": 69,
             "bonus": 1.05,
             "starterPct": null,
-            "startRate": 0.9,
+            "startRate": 0.8,
             "oddsKnown": false,
-            "onGameSheet": true,
+            "onGameSheet": false,
             "reliability": null,
-            "formL5": 60,
-            "picture": "https://assets.sorare.com/cardsamplepicture/bb8e179a-f62c-4661-b1a4-1c90addb9864/picture/tinified-6fda950b16a66e4b41f955f2c978d7fc.png",
+            "formL5": 67,
+            "picture": "https://assets.sorare.com/cardsamplepicture/fe3313a1-5c73-436d-a698-dbc049dee59b/picture/tinified-61dbd25acb89afe827003670d06ba75a.png",
             "rarity": "common",
-            "gameId": "Game:a313a797-15d2-4ab2-aa15-1285a9f6e986",
-            "kickoff": "2026-10-11T14:15:00Z",
-            "team": "Real Sociedad",
-            "teamSlug": "real-sociedad-donostia-san-sebastian",
-            "opponent": "Real Club Deportivo de La Coruña",
-            "opponentCode": "DEP",
-            "code": "RSO",
-            "rank": 8,
-            "opponentRank": 7,
-            "home": true,
-            "competition": "Primera División",
+            "gameId": "Game:6e0796a2-8598-4af6-9aad-0424d7497baf",
+            "kickoff": "2026-10-14T19:00:00Z",
+            "team": "Real Madrid",
+            "teamSlug": "real-madrid-madrid",
+            "opponent": "AS Roma",
+            "opponentCode": "ROM",
+            "code": "RMA",
+            "rank": 3,
+            "opponentRank": 2,
+            "home": false,
+            "competition": "UEFA Champions League",
             "intl": false,
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
             "mismatch": false,
-            "pWin": 0.594,
-            "pLose": 0.173,
-            "oddsBooks": 18,
-            "marketFactor": 1.113,
+            "pWin": 0.508,
+            "pLose": 0.256,
+            "oddsBooks": 19,
+            "marketFactor": 1.03,
             "lockedAt": null,
-            "expected": 64.46,
+            "expected": 63.95,
             "blocked": null
           },
           {
@@ -1218,42 +1218,42 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:ac2b6788-c05b-407f-8d37-4b42e2b7a9f5",
-          "player": "Sergio Gómez",
-          "slug": "sergio-gomez-martin",
-          "position": "DF",
-          "average": 58,
+          "id": "ComposeTeamBenchCard:7249677c-f247-4538-bd28-a727608d184b",
+          "player": "Jude Bellingham",
+          "slug": "jude-bellingham",
+          "position": "MD",
+          "average": 69,
           "bonus": 1.05,
           "starterPct": null,
-          "startRate": 0.9,
+          "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": true,
+          "onGameSheet": false,
           "reliability": null,
-          "formL5": 60,
-          "picture": "https://assets.sorare.com/cardsamplepicture/bb8e179a-f62c-4661-b1a4-1c90addb9864/picture/tinified-6fda950b16a66e4b41f955f2c978d7fc.png",
+          "formL5": 67,
+          "picture": "https://assets.sorare.com/cardsamplepicture/fe3313a1-5c73-436d-a698-dbc049dee59b/picture/tinified-61dbd25acb89afe827003670d06ba75a.png",
           "rarity": "common",
-          "gameId": "Game:a313a797-15d2-4ab2-aa15-1285a9f6e986",
-          "kickoff": "2026-10-11T14:15:00Z",
-          "team": "Real Sociedad",
-          "teamSlug": "real-sociedad-donostia-san-sebastian",
-          "opponent": "Real Club Deportivo de La Coruña",
-          "opponentCode": "DEP",
-          "code": "RSO",
-          "rank": 8,
-          "opponentRank": 7,
-          "home": true,
-          "competition": "Primera División",
+          "gameId": "Game:6e0796a2-8598-4af6-9aad-0424d7497baf",
+          "kickoff": "2026-10-14T19:00:00Z",
+          "team": "Real Madrid",
+          "teamSlug": "real-madrid-madrid",
+          "opponent": "AS Roma",
+          "opponentCode": "ROM",
+          "code": "RMA",
+          "rank": 3,
+          "opponentRank": 2,
+          "home": false,
+          "competition": "UEFA Champions League",
           "intl": false,
           "oppRank": null,
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.594,
-          "pLose": 0.173,
-          "oddsBooks": 18,
-          "marketFactor": 1.113,
+          "pWin": 0.508,
+          "pLose": 0.256,
+          "oddsBooks": 19,
+          "marketFactor": 1.03,
           "lockedAt": null,
-          "expected": 64.46,
+          "expected": 63.95,
           "blocked": null
         },
         {
@@ -1335,11 +1335,11 @@
           "blocked": null
         }
       ],
-      "projected": 338.9
+      "projected": 336.8
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 147 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 486 so far.",
+      "status": "Locked and playing. 181 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 523 so far.",
       "tone": "good",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": true,
@@ -1404,7 +1404,7 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": 45.39,
+            "actual": 74.05,
             "scoreStatus": "REVIEWING",
             "teamSlug": "everton-liverpool",
             "name": "Kiernan Dewsbury-Hall",
@@ -1433,7 +1433,7 @@
             "kickoff": "2026-10-11T13:00:00Z"
           },
           {
-            "actual": 65.3,
+            "actual": 69.73,
             "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Dan Ndoye",
@@ -1487,14 +1487,14 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-11T14:15:00Z"
           }
         ],
         "projected": 354.09,
-        "scoredSoFar": 147.44,
+        "scoredSoFar": 180.53,
         "played": 3,
-        "expectedFinal": 316.04
+        "expectedFinal": 349.13
       },
       "poolStrength": {
         "strong": 1,
@@ -1504,7 +1504,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 485.6894
+        "scoreSoFar": 522.5788
       },
       "level": 1,
       "lives": null,
@@ -1575,8 +1575,8 @@
         {
           "name": "Sergio Gómez",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-11T14:15:00Z"
+          "locked": true,
+          "nextGame": "2026-10-15T16:45:00Z"
         }
       ],
       "plan": {
@@ -1989,31 +1989,6 @@
   ],
   "fixtures": [
     {
-      "kickoff": "2026-10-11T14:15:00Z",
-      "competition": "Primera División",
-      "team": "Real Sociedad",
-      "code": "RSO",
-      "rank": 8,
-      "opponent": "Real Club Deportivo de La Coruña",
-      "opponentCode": "DEP",
-      "opponentRank": 7,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.594,
-      "pLose": 0.173,
-      "oppFactor": null,
-      "home": true,
-      "players": [
-        "Sergio Gómez"
-      ],
-      "points": 64.5,
-      "bestStarter": null,
-      "surfaces": [
-        "my set"
-      ]
-    },
-    {
       "kickoff": "2026-10-11T15:30:00Z",
       "competition": "Bundesliga",
       "team": "Sport-Club Freiburg",
@@ -2112,6 +2087,31 @@
         "Lewis Hall"
       ],
       "points": 69,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
+      ]
+    },
+    {
+      "kickoff": "2026-10-14T19:00:00Z",
+      "competition": "UEFA Champions League",
+      "team": "Real Madrid",
+      "code": "RMA",
+      "rank": 3,
+      "opponent": "AS Roma",
+      "opponentCode": "ROM",
+      "opponentRank": 2,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.508,
+      "pLose": 0.256,
+      "oppFactor": null,
+      "home": false,
+      "players": [
+        "Jude Bellingham"
+      ],
+      "points": 64,
       "bestStarter": null,
       "surfaces": [
         "my set"
