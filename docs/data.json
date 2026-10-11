@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T16:00:35.308Z",
+  "generatedAt": "2026-10-11T16:06:05.372Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-11T15:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791734415037,
+    "lastRunAt": 1791734746692,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:132aa4bc-e8a6-438c-bda8-f131297fe98e",
       "state": "READY",
-      "score": 255.12,
+      "score": 247.05,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,7 +48,7 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": true,
-          "score": 72.28,
+          "score": 67.2,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T19:00:00Z"
         },
@@ -57,7 +57,7 @@
           "slug": "maximilian-eggestein",
           "position": "Midfielder",
           "captain": false,
-          "score": 73.65,
+          "score": 70.66,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T19:00:00Z"
         },
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 975.7484,
+      "squadScore": 964.3328,
       "lineupId": "Tasks::TaskLineup:11e0a8f4-47cf-43d0-acb9-d8b738b5be3e",
       "state": "READY",
-      "score": 313.98,
+      "score": 306.37,
       "finished": false,
       "cleared": false,
       "players": [
@@ -287,7 +287,7 @@
           "slug": "mio-backhaus",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 36.5,
+          "score": 32.4,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T19:00:00Z"
         },
@@ -296,7 +296,7 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": true,
-          "score": 72.28,
+          "score": 67.2,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T19:00:00Z"
         },
@@ -323,7 +323,7 @@
           "slug": "sergio-gomez-martin",
           "position": "Defender",
           "captain": false,
-          "score": 39.65,
+          "score": 41.22,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T16:45:00Z"
         }
@@ -687,8 +687,8 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 291 scored so far, 4 of 5 played. On course for about 360; needs 360 (0 over).",
-      "tone": "good",
+      "status": "Locked and playing. 281 scored so far, 4 of 5 played. On course for about 350; needs 360 (10 short).",
+      "tone": "warn",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": false,
       "entered": {
@@ -723,7 +723,7 @@
             "kickoff": "2026-10-11T13:00:00Z"
           },
           {
-            "actual": 72.28,
+            "actual": 67.2,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
@@ -752,7 +752,7 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": 73.65,
+            "actual": 70.66,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Maximilian Eggestein",
@@ -840,9 +840,9 @@
           }
         ],
         "projected": 362.9,
-        "scoredSoFar": 291.27,
+        "scoredSoFar": 280.66,
         "played": 4,
-        "expectedFinal": 360.42
+        "expectedFinal": 349.81
       },
       "poolStrength": {
         "strong": 5,
@@ -1339,14 +1339,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 350 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 976 so far.",
+      "status": "Locked and playing. 340 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 964 so far.",
       "tone": "good",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 36.5,
+            "actual": 32.4,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Mio Backhaus",
@@ -1375,7 +1375,7 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": 72.28,
+            "actual": 67.2,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
@@ -1462,7 +1462,7 @@
             "kickoff": "2026-10-11T13:00:00Z"
           },
           {
-            "actual": 39.65,
+            "actual": 41.22,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-sociedad-donostia-san-sebastian",
             "name": "Sergio Gómez",
@@ -1492,9 +1492,9 @@
           }
         ],
         "projected": 354.09,
-        "scoredSoFar": 350.12,
+        "scoredSoFar": 339.97,
         "played": 5,
-        "expectedFinal": 350.12
+        "expectedFinal": 339.97
       },
       "poolStrength": {
         "strong": 1,
@@ -1504,7 +1504,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 975.7484
+        "scoreSoFar": 964.3328
       },
       "level": 1,
       "lives": null,
