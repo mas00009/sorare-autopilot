@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T15:04:22.903Z",
+  "generatedAt": "2026-10-11T15:10:09.419Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -8,9 +8,9 @@
   },
   "schedule": {
     "nextLock": "2026-10-11T15:15:00Z",
-    "cadenceMin": 5,
-    "lastRunAt": 1791731039405,
-    "reason": "last run 0m ago, next due in 5m (lock in 11m)"
+    "cadenceMin": 180,
+    "lastRunAt": 1791731388486,
+    "reason": "last run 0m ago, next due in 180m (lock in 5m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Camello",
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 905.8452,
+      "squadScore": 906.3702,
       "lineupId": "Tasks::TaskLineup:11e0a8f4-47cf-43d0-acb9-d8b738b5be3e",
       "state": "READY",
-      "score": 301.25,
+      "score": 301.77,
       "finished": false,
       "cleared": false,
       "players": [
@@ -323,7 +323,7 @@
           "slug": "sergio-gomez-martin",
           "position": "Defender",
           "captain": false,
-          "score": 44.35,
+          "score": 44.88,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T16:45:00Z"
         }
@@ -1339,7 +1339,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 328 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 906 so far.",
+      "status": "Locked and playing. 329 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 906 so far.",
       "tone": "good",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": true,
@@ -1462,7 +1462,7 @@
             "kickoff": "2026-10-11T13:00:00Z"
           },
           {
-            "actual": 44.35,
+            "actual": 44.88,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-sociedad-donostia-san-sebastian",
             "name": "Sergio Gómez",
@@ -1492,9 +1492,9 @@
           }
         ],
         "projected": 354.09,
-        "scoredSoFar": 328.03,
+        "scoredSoFar": 328.56,
         "played": 5,
-        "expectedFinal": 328.03
+        "expectedFinal": 328.56
       },
       "poolStrength": {
         "strong": 1,
@@ -1504,7 +1504,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 905.8452
+        "scoreSoFar": 906.3702
       },
       "level": 1,
       "lives": null,
