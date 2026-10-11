@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T11:55:24.795Z",
+  "generatedAt": "2026-10-11T12:01:22.433Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-11T13:00:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1791719701538,
-    "reason": "last run 0m ago, next due in 5m (lock in 65m)"
+    "lastRunAt": 1791720058838,
+    "reason": "last run 0m ago, next due in 5m (lock in 59m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Camello",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:132aa4bc-e8a6-438c-bda8-f131297fe98e",
       "state": "READY",
-      "score": 0,
+      "score": 75.6,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,8 +39,8 @@
           "slug": "matz-sels",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 39.55,
+          "status": "REVIEWING",
           "kickoff": "2026-10-11T13:00:00Z"
         },
         {
@@ -66,8 +66,8 @@
           "slug": "dan-ndoye",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-11T13:00:00Z"
         },
         {
@@ -80,7 +80,7 @@
           "kickoff": "2026-10-12T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 2
     },
     {
       "surface": "my set",
@@ -103,7 +103,7 @@
           "captain": false,
           "score": 34.44,
           "status": "FINAL",
-          "kickoff": "2026-10-11T12:00:00Z"
+          "kickoff": "2026-10-15T19:00:00Z"
         },
         {
           "name": "Maxim De Cuyper",
@@ -275,10 +275,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 41.65,
+      "squadScore": 281.05,
       "lineupId": "Tasks::TaskLineup:11e0a8f4-47cf-43d0-acb9-d8b738b5be3e",
       "state": "READY",
-      "score": 0,
+      "score": 71.75,
       "finished": false,
       "cleared": false,
       "players": [
@@ -305,8 +305,8 @@
           "slug": "kiernan-dewsbury-hall",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 35.7,
+          "status": "REVIEWING",
           "kickoff": "2026-10-11T13:00:00Z"
         },
         {
@@ -314,8 +314,8 @@
           "slug": "dan-ndoye",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-11T13:00:00Z"
         },
         {
@@ -328,7 +328,7 @@
           "kickoff": "2026-10-11T14:15:00Z"
         }
       ],
-      "scored": 0
+      "scored": 2
     },
     {
       "surface": "my set",
@@ -687,15 +687,15 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Team entered, locks Mon 12:00 am Sydney. Expected about 363; needs 360 (3 over). It keeps being updated until it locks.",
-      "tone": "good",
+      "status": "Locked and playing. 76 scored so far, 2 of 5 played. On course for about 326; needs 360 (34 short).",
+      "tone": "warn",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 39.55,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Matz Sels",
             "player": "Matz Sels",
@@ -781,8 +781,8 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Dan Ndoye",
             "player": "Dan Ndoye",
@@ -840,9 +840,9 @@
           }
         ],
         "projected": 362.9,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 364.05
+        "scoredSoFar": 75.6,
+        "played": 2,
+        "expectedFinal": 325.89
       },
       "poolStrength": {
         "strong": 5,
@@ -1029,7 +1029,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 69,
             "picture": "https://assets.sorare.com/cardsamplepicture/29470820-1e49-4736-8dbe-8b21c3f4d214/picture/tinified-c7105426f3ab1ccdf9a472c02dbf05d5.png",
@@ -1227,7 +1227,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 69,
           "picture": "https://assets.sorare.com/cardsamplepicture/29470820-1e49-4736-8dbe-8b21c3f4d214/picture/tinified-c7105426f3ab1ccdf9a472c02dbf05d5.png",
@@ -1339,7 +1339,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Team entered, locks Mon 12:00 am Sydney. The squad's top three lineups together need 980; this one is expected to add about 354.",
+      "status": "Locked and playing. 72 scored so far, 2 of 5 played. The squad's top three lineups together need 980; the squad has 281 so far.",
       "tone": "good",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": true,
@@ -1404,8 +1404,8 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 35.7,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "everton-liverpool",
             "name": "Kiernan Dewsbury-Hall",
             "player": "Kiernan Dewsbury-Hall",
@@ -1433,8 +1433,8 @@
             "kickoff": "2026-10-11T13:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Dan Ndoye",
             "player": "Dan Ndoye",
@@ -1492,9 +1492,9 @@
           }
         ],
         "projected": 354.09,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 355.23
+        "scoredSoFar": 71.75,
+        "played": 2,
+        "expectedFinal": 304.81
       },
       "poolStrength": {
         "strong": 1,
@@ -1504,7 +1504,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 41.65
+        "scoreSoFar": 281.05
       },
       "level": 1,
       "lives": null,
@@ -1600,7 +1600,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 69,
             "picture": "https://assets.sorare.com/cardsamplepicture/29470820-1e49-4736-8dbe-8b21c3f4d214/picture/tinified-c7105426f3ab1ccdf9a472c02dbf05d5.png",
@@ -1756,7 +1756,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 44,
             "picture": "https://assets.sorare.com/cardsamplepicture/ff112bb6-f1ec-46e7-bed1-2ac82dd5b01b/picture/tinified-456324a431a59c0788e43ef929f178f1.png",
@@ -1798,7 +1798,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 69,
           "picture": "https://assets.sorare.com/cardsamplepicture/29470820-1e49-4736-8dbe-8b21c3f4d214/picture/tinified-c7105426f3ab1ccdf9a472c02dbf05d5.png",
@@ -1954,7 +1954,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 44,
           "picture": "https://assets.sorare.com/cardsamplepicture/ff112bb6-f1ec-46e7-bed1-2ac82dd5b01b/picture/tinified-456324a431a59c0788e43ef929f178f1.png",
@@ -1984,7 +1984,7 @@
           "blocked": null
         }
       ],
-      "projected": 309.6
+      "projected": 308.7
     }
   ],
   "fixtures": [
