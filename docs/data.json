@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T07:08:48.695Z",
+  "generatedAt": "2026-10-11T07:14:48.027Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-11T13:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1791702504629,
-    "reason": "last run 0m ago, next due in 60m (lock in 351m)"
+    "lastRunAt": 1791702863552,
+    "reason": "last run 0m ago, next due in 60m (lock in 345m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Camello",
@@ -274,7 +274,7 @@
       "target": 980,
       "stepState": "LINEUP_SET",
       "collaborative": true,
-      "squadLineups": 1,
+      "squadLineups": 2,
       "squadScore": 0,
       "lineupId": "Tasks::TaskLineup:11e0a8f4-47cf-43d0-acb9-d8b738b5be3e",
       "state": "READY",
@@ -620,9 +620,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 734,
+        "progress": 738,
         "target": 860,
-        "remaining": 126,
+        "remaining": 122,
         "competition": null,
         "group": null,
         "teams": []
@@ -644,9 +644,9 @@
       {
         "title": "Collect Goalkeepers",
         "gems": 10,
-        "progress": 88,
+        "progress": 89,
         "target": 112,
-        "remaining": 24,
+        "remaining": 23,
         "competition": null,
         "group": null,
         "teams": []
@@ -654,9 +654,9 @@
       {
         "title": "Collect Spanish players in LaLiga",
         "gems": 30,
-        "progress": 215,
+        "progress": 216,
         "target": 279,
-        "remaining": 64,
+        "remaining": 63,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": []
@@ -1502,7 +1502,7 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 1,
+        "lineupsIn": 2,
         "needed": 3,
         "scoreSoFar": 0
       },
