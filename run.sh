@@ -23,9 +23,11 @@ NODE="$(command -v node || echo /usr/local/bin/node)"
   code=$?
   echo "---- exit $code ----"
 
-  # Second account: NBA wheel only, and only once it has signed in.
+  # Second account: the NBA wheel and the DNP guard on lineups the owner set.
+  # Nothing else runs there. The guard keeps its own clock keyed to the lock.
   if [ -f "$DIR/state/tokens-second.json" ]; then
     SORARE_ACCOUNT=second "$NODE" src/cli.js wheel 2>&1
+    SORARE_ACCOUNT=second "$NODE" src/cli.js guard 2>&1
   fi
 
   # Refresh the published dashboard. Only pushes when something actually changed,

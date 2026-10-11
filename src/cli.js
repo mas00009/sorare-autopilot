@@ -278,6 +278,20 @@ const main = async () => {
     return;
   }
 
+  // The DNP check alone, for an account whose owner sets the lineups.
+  if (cmd === 'guard') {
+    const { runGuard } = await import('./guard.js');
+    const g = await runGuard({ dryRun: flag('dry'), force: flag('force') });
+    const who = process.env.SORARE_ACCOUNT ? ` (${process.env.SORARE_ACCOUNT})` : '';
+    if (g.skipped) { console.log(`Lineup guard${who}: not due (every ${g.every}m)`); return; }
+    for (const b of g.boards) {
+      console.log(`Lineup guard${who} - ${b.surface}: ${b.action}${b.reason ? ` - ${b.reason}` : ''}`);
+      for (const s of b.swaps ?? []) console.log(`    ${s.out} (${s.why}) -> ${s.in ?? 'no safe replacement'}`);
+    }
+    if (g.nextLock) console.log(`    next lock ${g.nextLock}`);
+    return;
+  }
+
   if (cmd === 'signin') {
     const { signIn } = await import('./signin.js');
     return signIn();

@@ -636,7 +636,16 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
     const inWindow = !!date && !!windowEnd && date <= windowEnd;
     return { name: p.displayName ?? p.slug, date, injured, inWindow, locked: ap.locked };
   });
-  const dead = held.filter((h) => !h.inWindow || h.injured);
+  // Same hard signals the second account's guard uses: suspended, or Sorare
+  // giving him under 50% to start, counts as dead and forces the swap even
+  // when the alternative is not 3% better.
+  const { dnpReason } = await import('./guard.js');
+  for (const h of held) {
+    const n = mineNodes.find((m) => (m.player?.displayName ?? m.player?.slug) === h.name);
+    const why = n ? dnpReason(n) : null;
+    if (why && !h.locked) { h.dnp = why; }
+  }
+  const dead = held.filter((h) => !h.inWindow || h.injured || h.dnp);
 
   // The team that is actually in the step, with its art. On a hold the picked
   // five are the next-best alternative, not what is entered, so the report has
