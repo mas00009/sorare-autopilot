@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T16:50:11.130Z",
+  "generatedAt": "2026-10-11T16:55:41.376Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-11T15:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791737391755,
+    "lastRunAt": 1791737722755,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:132aa4bc-e8a6-438c-bda8-f131297fe98e",
       "state": "READY",
-      "score": 257.61,
+      "score": 257.3,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,7 +48,7 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": true,
-          "score": 79.71,
+          "score": 80.33,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T19:00:00Z"
         },
@@ -57,7 +57,7 @@
           "slug": "maximilian-eggestein",
           "position": "Midfielder",
           "captain": false,
-          "score": 68.7,
+          "score": 67.77,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T19:00:00Z"
         },
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 990.9332,
+      "squadScore": 1068.9802,
       "lineupId": "Tasks::TaskLineup:11e0a8f4-47cf-43d0-acb9-d8b738b5be3e",
       "state": "READY",
-      "score": 322.37,
+      "score": 327.52,
       "finished": false,
       "cleared": true,
       "players": [
@@ -287,7 +287,7 @@
           "slug": "mio-backhaus",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 34.02,
+          "score": 38.56,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T19:00:00Z"
         },
@@ -296,7 +296,7 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": true,
-          "score": 79.71,
+          "score": 80.33,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T19:00:00Z"
         },
@@ -723,7 +723,7 @@
             "kickoff": "2026-10-11T13:00:00Z"
           },
           {
-            "actual": 79.71,
+            "actual": 80.33,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
@@ -752,7 +752,7 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": 68.7,
+            "actual": 67.77,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Maximilian Eggestein",
@@ -1339,14 +1339,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 362 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 991 so far.",
+      "status": "Locked and playing. 368 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1069 so far.",
       "tone": "good",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 34.02,
+            "actual": 38.56,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Mio Backhaus",
@@ -1375,7 +1375,7 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": 79.71,
+            "actual": 80.33,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
@@ -1492,9 +1492,9 @@
           }
         ],
         "projected": 354.09,
-        "scoredSoFar": 362.23,
+        "scoredSoFar": 367.7,
         "played": 5,
-        "expectedFinal": 362.23
+        "expectedFinal": 367.7
       },
       "poolStrength": {
         "strong": 1,
@@ -1504,7 +1504,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 990.9332
+        "scoreSoFar": 1068.9802
       },
       "level": 1,
       "lives": null,
