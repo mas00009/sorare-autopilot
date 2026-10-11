@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T21:49:10.832Z",
+  "generatedAt": "2026-10-11T22:15:44.826Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-12T19:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1791755223412,
-    "reason": "last run 2m ago, next due in 178m (lock in 1271m)"
+    "reason": "last run 29m ago, next due in 151m (lock in 1244m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Camello",
@@ -845,7 +845,7 @@
         "expectedFinal": 387
       },
       "poolStrength": {
-        "strong": 6,
+        "strong": 5,
         "needed": 5
       },
       "collaborative": false,
@@ -932,12 +932,12 @@
       ],
       "plan": {
         "clearsTarget": true,
-        "projected": 370.96,
+        "projected": 365.34,
         "lock": "2026-10-12T19:00:00Z",
         "shortfall": null,
-        "tradedPointsForTime": 2.8,
+        "tradedPointsForTime": 2.9,
         "captain": "cristian-sleiker-casseres-yepes",
-        "captainPoints": 38.7,
+        "captainPoints": 38.61,
         "withinReach": true,
         "enteredProjected": 362.9,
         "five": [
@@ -975,9 +975,9 @@
             "pWin": 0.419,
             "pLose": 0.309,
             "oddsBooks": 17,
-            "marketFactor": 1.012,
+            "marketFactor": 1.01,
             "lockedAt": null,
-            "expected": 78.95,
+            "expected": 78.77,
             "blocked": null
           },
           {
@@ -1014,9 +1014,9 @@
             "pWin": 0.444,
             "pLose": 0.291,
             "oddsBooks": 23,
-            "marketFactor": 1.052,
+            "marketFactor": 1.017,
             "lockedAt": null,
-            "expected": 68.95,
+            "expected": 66.64,
             "blocked": null
           },
           {
@@ -1053,48 +1053,9 @@
             "pWin": 0.508,
             "pLose": 0.256,
             "oddsBooks": 19,
-            "marketFactor": 1.03,
+            "marketFactor": 1.025,
             "lockedAt": null,
-            "expected": 63.95,
-            "blocked": null
-          },
-          {
-            "id": "ComposeTeamBenchCard:888e3195-1b2c-4013-a46d-f93dfc07a371",
-            "player": "Bart Verbruggen",
-            "slug": "bart-verbruggen",
-            "position": "GK",
-            "average": 51,
-            "bonus": 1.03,
-            "starterPct": null,
-            "startRate": 1,
-            "oddsKnown": false,
-            "onGameSheet": false,
-            "reliability": null,
-            "formL5": 46,
-            "picture": "https://assets.sorare.com/cardsamplepicture/55041af4-14cf-411b-8299-c09c5593a95b/picture/tinified-af6e881c6db908f044561785d1f233de.png",
-            "rarity": "common",
-            "gameId": "Game:ea0f191b-3bc9-49f9-8b8a-6fb36cba3e8c",
-            "kickoff": "2026-10-15T19:00:00Z",
-            "team": "Brighton & Hove Albion FC",
-            "teamSlug": "brighton-hove-albion-brighton-east-sussex",
-            "opponent": "FK Kauno Žalgiris",
-            "opponentCode": "KAU",
-            "code": "BRI",
-            "rank": 3,
-            "opponentRank": null,
-            "home": true,
-            "competition": "UEFA Conference League",
-            "intl": false,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "mismatch": false,
-            "pWin": 0.914,
-            "pLose": 0.022,
-            "oddsBooks": 11,
-            "marketFactor": 1.219,
-            "lockedAt": null,
-            "expected": 60.87,
+            "expected": 63.66,
             "blocked": null
           },
           {
@@ -1131,9 +1092,48 @@
             "pWin": 0.568,
             "pLose": 0.196,
             "oddsBooks": 19,
-            "marketFactor": 1.042,
+            "marketFactor": 1.035,
             "lockedAt": null,
-            "expected": 59.54,
+            "expected": 59.15,
+            "blocked": null
+          },
+          {
+            "id": "ComposeTeamBenchCard:888e3195-1b2c-4013-a46d-f93dfc07a371",
+            "player": "Bart Verbruggen",
+            "slug": "bart-verbruggen",
+            "position": "GK",
+            "average": 51,
+            "bonus": 1.03,
+            "starterPct": null,
+            "startRate": 1,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 46,
+            "picture": "https://assets.sorare.com/cardsamplepicture/55041af4-14cf-411b-8299-c09c5593a95b/picture/tinified-af6e881c6db908f044561785d1f233de.png",
+            "rarity": "common",
+            "gameId": "Game:ea0f191b-3bc9-49f9-8b8a-6fb36cba3e8c",
+            "kickoff": "2026-10-15T19:00:00Z",
+            "team": "Brighton & Hove Albion FC",
+            "teamSlug": "brighton-hove-albion-brighton-east-sussex",
+            "opponent": "FK Kauno Žalgiris",
+            "opponentCode": "KAU",
+            "code": "BRI",
+            "rank": 3,
+            "opponentRank": null,
+            "home": true,
+            "competition": "UEFA Conference League",
+            "intl": false,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "mismatch": false,
+            "pWin": 0.914,
+            "pLose": 0.022,
+            "oddsBooks": 11,
+            "marketFactor": 1.171,
+            "lockedAt": null,
+            "expected": 58.51,
             "blocked": null
           }
         ]
@@ -1173,9 +1173,9 @@
           "pWin": 0.419,
           "pLose": 0.309,
           "oddsBooks": 17,
-          "marketFactor": 1.012,
+          "marketFactor": 1.01,
           "lockedAt": null,
-          "expected": 78.95,
+          "expected": 78.77,
           "blocked": null
         },
         {
@@ -1212,9 +1212,9 @@
           "pWin": 0.444,
           "pLose": 0.291,
           "oddsBooks": 23,
-          "marketFactor": 1.052,
+          "marketFactor": 1.017,
           "lockedAt": null,
-          "expected": 68.95,
+          "expected": 66.64,
           "blocked": null
         },
         {
@@ -1251,48 +1251,9 @@
           "pWin": 0.508,
           "pLose": 0.256,
           "oddsBooks": 19,
-          "marketFactor": 1.03,
+          "marketFactor": 1.025,
           "lockedAt": null,
-          "expected": 63.95,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:888e3195-1b2c-4013-a46d-f93dfc07a371",
-          "player": "Bart Verbruggen",
-          "slug": "bart-verbruggen",
-          "position": "GK",
-          "average": 51,
-          "bonus": 1.03,
-          "starterPct": null,
-          "startRate": 1,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 46,
-          "picture": "https://assets.sorare.com/cardsamplepicture/55041af4-14cf-411b-8299-c09c5593a95b/picture/tinified-af6e881c6db908f044561785d1f233de.png",
-          "rarity": "common",
-          "gameId": "Game:ea0f191b-3bc9-49f9-8b8a-6fb36cba3e8c",
-          "kickoff": "2026-10-15T19:00:00Z",
-          "team": "Brighton & Hove Albion FC",
-          "teamSlug": "brighton-hove-albion-brighton-east-sussex",
-          "opponent": "FK Kauno Žalgiris",
-          "opponentCode": "KAU",
-          "code": "BRI",
-          "rank": 3,
-          "opponentRank": null,
-          "home": true,
-          "competition": "UEFA Conference League",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.914,
-          "pLose": 0.022,
-          "oddsBooks": 11,
-          "marketFactor": 1.219,
-          "lockedAt": null,
-          "expected": 60.87,
+          "expected": 63.66,
           "blocked": null
         },
         {
@@ -1329,13 +1290,52 @@
           "pWin": 0.568,
           "pLose": 0.196,
           "oddsBooks": 19,
-          "marketFactor": 1.042,
+          "marketFactor": 1.035,
           "lockedAt": null,
-          "expected": 59.54,
+          "expected": 59.15,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:888e3195-1b2c-4013-a46d-f93dfc07a371",
+          "player": "Bart Verbruggen",
+          "slug": "bart-verbruggen",
+          "position": "GK",
+          "average": 51,
+          "bonus": 1.03,
+          "starterPct": null,
+          "startRate": 1,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 46,
+          "picture": "https://assets.sorare.com/cardsamplepicture/55041af4-14cf-411b-8299-c09c5593a95b/picture/tinified-af6e881c6db908f044561785d1f233de.png",
+          "rarity": "common",
+          "gameId": "Game:ea0f191b-3bc9-49f9-8b8a-6fb36cba3e8c",
+          "kickoff": "2026-10-15T19:00:00Z",
+          "team": "Brighton & Hove Albion FC",
+          "teamSlug": "brighton-hove-albion-brighton-east-sussex",
+          "opponent": "FK Kauno Žalgiris",
+          "opponentCode": "KAU",
+          "code": "BRI",
+          "rank": 3,
+          "opponentRank": null,
+          "home": true,
+          "competition": "UEFA Conference League",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.914,
+          "pLose": 0.022,
+          "oddsBooks": 11,
+          "marketFactor": 1.171,
+          "lockedAt": null,
+          "expected": 58.51,
           "blocked": null
         }
       ],
-      "projected": 336.4
+      "projected": 330.4
     },
     {
       "surface": "team set (Loadshift)",
@@ -1421,7 +1421,7 @@
       "players": [
         "Lewis Hall"
       ],
-      "points": 69,
+      "points": 66.6,
       "bestStarter": null,
       "surfaces": [
         "my set"
@@ -1446,7 +1446,7 @@
       "players": [
         "Jude Bellingham"
       ],
-      "points": 64,
+      "points": 63.7,
       "bestStarter": null,
       "surfaces": [
         "my set"
@@ -1471,7 +1471,7 @@
       "players": [
         "Emiliano Buendía"
       ],
-      "points": 59.5,
+      "points": 59.1,
       "bestStarter": null,
       "surfaces": [
         "my set"
@@ -1496,7 +1496,7 @@
       "players": [
         "Bart Verbruggen"
       ],
-      "points": 60.9,
+      "points": 58.5,
       "bestStarter": null,
       "surfaces": [
         "my set"
@@ -1521,7 +1521,7 @@
       "players": [
         "Cristian Cásseres Jr."
       ],
-      "points": 79,
+      "points": 78.8,
       "bestStarter": null,
       "surfaces": [
         "my set"
