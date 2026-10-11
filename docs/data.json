@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T14:25:08.740Z",
+  "generatedAt": "2026-10-11T14:30:42.873Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-11T14:15:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791728686766,
+    "lastRunAt": 1791729021079,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:132aa4bc-e8a6-438c-bda8-f131297fe98e",
       "state": "READY",
-      "score": 104.3,
+      "score": 199.38,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "matz-sels",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 34.58,
+          "score": 45.2,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T15:30:00Z"
         },
@@ -48,8 +48,8 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 53.55,
+          "status": "REVIEWING",
           "kickoff": "2026-10-11T15:30:00Z"
         },
         {
@@ -57,8 +57,8 @@
           "slug": "maximilian-eggestein",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-11T15:30:00Z"
         },
         {
@@ -66,7 +66,7 @@
           "slug": "dan-ndoye",
           "position": "Forward",
           "captain": false,
-          "score": 69.73,
+          "score": 64.58,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T15:30:00Z"
         },
@@ -80,7 +80,7 @@
           "kickoff": "2026-10-12T19:00:00Z"
         }
       ],
-      "scored": 2
+      "scored": 4
     },
     {
       "surface": "my set",
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 542.1962,
+      "squadScore": 718.7462,
       "lineupId": "Tasks::TaskLineup:11e0a8f4-47cf-43d0-acb9-d8b738b5be3e",
       "state": "READY",
-      "score": 183.12,
+      "score": 269.16,
       "finished": false,
       "cleared": false,
       "players": [
@@ -287,8 +287,8 @@
           "slug": "mio-backhaus",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 37.8,
+          "status": "REVIEWING",
           "kickoff": "2026-10-11T15:30:00Z"
         },
         {
@@ -296,8 +296,8 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 53.55,
+          "status": "REVIEWING",
           "kickoff": "2026-10-11T15:30:00Z"
         },
         {
@@ -305,7 +305,7 @@
           "slug": "kiernan-dewsbury-hall",
           "position": "Midfielder",
           "captain": false,
-          "score": 75.79,
+          "score": 77.01,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T11:30:00Z"
         },
@@ -314,7 +314,7 @@
           "slug": "dan-ndoye",
           "position": "Forward",
           "captain": false,
-          "score": 69.73,
+          "score": 64.58,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T15:30:00Z"
         },
@@ -323,12 +323,12 @@
           "slug": "sergio-gomez-martin",
           "position": "Defender",
           "captain": false,
-          "score": 37.61,
+          "score": 36.23,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T16:45:00Z"
         }
       ],
-      "scored": 3
+      "scored": 5
     },
     {
       "surface": "my set",
@@ -687,14 +687,14 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 104 scored so far, 2 of 5 played. On course for about 355; needs 360 (5 short).",
+      "status": "Locked and playing. 226 scored so far, 4 of 5 played. On course for about 295; needs 360 (65 short).",
       "tone": "warn",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": 34.58,
+            "actual": 45.2,
             "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Matz Sels",
@@ -723,8 +723,8 @@
             "kickoff": "2026-10-11T13:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 53.55,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
             "player": "Matthias Ginter",
@@ -752,8 +752,8 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Maximilian Eggestein",
             "player": "Maximilian Eggestein",
@@ -781,7 +781,7 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": 69.73,
+            "actual": 64.58,
             "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Dan Ndoye",
@@ -840,9 +840,9 @@
           }
         ],
         "projected": 362.9,
-        "scoredSoFar": 104.31,
-        "played": 2,
-        "expectedFinal": 354.6
+        "scoredSoFar": 226.15,
+        "played": 4,
+        "expectedFinal": 295.3
       },
       "poolStrength": {
         "strong": 5,
@@ -1339,15 +1339,15 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 183 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 542 so far.",
+      "status": "Locked and playing. 296 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 719 so far.",
       "tone": "good",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 37.8,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Mio Backhaus",
             "player": "Mio Backhaus",
@@ -1375,8 +1375,8 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 53.55,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
             "player": "Matthias Ginter",
@@ -1404,7 +1404,7 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": 75.79,
+            "actual": 77.01,
             "scoreStatus": "REVIEWING",
             "teamSlug": "everton-liverpool",
             "name": "Kiernan Dewsbury-Hall",
@@ -1433,7 +1433,7 @@
             "kickoff": "2026-10-11T13:00:00Z"
           },
           {
-            "actual": 69.73,
+            "actual": 64.58,
             "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Dan Ndoye",
@@ -1462,7 +1462,7 @@
             "kickoff": "2026-10-11T13:00:00Z"
           },
           {
-            "actual": 37.61,
+            "actual": 36.23,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-sociedad-donostia-san-sebastian",
             "name": "Sergio Gómez",
@@ -1492,9 +1492,9 @@
           }
         ],
         "projected": 354.09,
-        "scoredSoFar": 183.13,
-        "played": 3,
-        "expectedFinal": 351.74
+        "scoredSoFar": 295.94,
+        "played": 5,
+        "expectedFinal": 295.94
       },
       "poolStrength": {
         "strong": 1,
@@ -1504,7 +1504,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 542.1962
+        "scoreSoFar": 718.7462
       },
       "level": 1,
       "lives": null,
@@ -1600,7 +1600,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 66,
             "picture": "https://assets.sorare.com/cardsamplepicture/1d4b5f69-5f34-46ea-ba50-4aa46a5ec084/picture/tinified-3b5a79de2735599840c29deed91f5cfb.png",
@@ -1756,7 +1756,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 40,
             "picture": "https://assets.sorare.com/cardsamplepicture/7766698b-71aa-413b-baf5-cb2c427ed32e/picture/tinified-0af65239acbc84b7340da29cfae77180.png",
@@ -1798,7 +1798,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 66,
           "picture": "https://assets.sorare.com/cardsamplepicture/1d4b5f69-5f34-46ea-ba50-4aa46a5ec084/picture/tinified-3b5a79de2735599840c29deed91f5cfb.png",
@@ -1954,7 +1954,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 40,
           "picture": "https://assets.sorare.com/cardsamplepicture/7766698b-71aa-413b-baf5-cb2c427ed32e/picture/tinified-0af65239acbc84b7340da29cfae77180.png",
