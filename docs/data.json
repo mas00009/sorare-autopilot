@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T07:14:48.027Z",
+  "generatedAt": "2026-10-11T07:20:47.591Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-11T13:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1791702863552,
-    "reason": "last run 0m ago, next due in 60m (lock in 345m)"
+    "lastRunAt": 1791703222648,
+    "reason": "last run 0m ago, next due in 60m (lock in 339m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Camello",
@@ -620,9 +620,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 738,
+        "progress": 740,
         "target": 860,
-        "remaining": 122,
+        "remaining": 120,
         "competition": null,
         "group": null,
         "teams": []
@@ -644,9 +644,9 @@
       {
         "title": "Collect Goalkeepers",
         "gems": 10,
-        "progress": 89,
+        "progress": 90,
         "target": 112,
-        "remaining": 23,
+        "remaining": 22,
         "competition": null,
         "group": null,
         "teams": []
