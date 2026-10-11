@@ -155,6 +155,16 @@ export function blockReason(node, opts = DEFAULTS) {
     return 'no minutes in last 5 games';
   }
 
+  // The owner's rule, 12 Oct: no keeper or defender from a side the
+  // bookmakers expect to lose. Measured, a defender on a losing side scores
+  // 0.84 of his average and a keeper 0.77, and a clean sheet against a
+  // stronger attack is the long shot the position is paid for.
+  const pos = normalisePosition(node.position);
+  const mo = node.matchOdds;
+  if (opts.noUnderdogDefence !== false && (pos === 'GK' || pos === 'DF') && mo?.pWin != null && mo?.pLose != null && mo.pLose > mo.pWin) {
+    return `side expected to lose (${Math.round(mo.pWin * 100)}% to win, ${Math.round(mo.pLose * 100)}% to lose)`;
+  }
+
   const o = odds(node);
   // Until Sorare publishes odds, the player's own recent start rate is the
   // only availability signal. Below this it is a block rather than a dimmer:
@@ -468,6 +478,12 @@ export function pickAcrossWindow(benchNodes, { target = null, tolerance = 0.03, 
     attempts.push({ lockDay: lock?.slice(0, 10) ?? day, lock, finish, finishDay: finish?.slice(0, 10) ?? day, projected: picked.projected, picked });
   }
 
+  if (!attempts.length && options.noUnderdogDefence !== false) {
+    // Only if the rule leaves no full side at all: better a defender on an
+    // underdog than an empty step.
+    const loose = pickAcrossWindow(benchNodes, { target, tolerance, reach, ...options, noUnderdogDefence: false });
+    if (loose.ok) return { ...loose, underdogDefenceAllowed: true };
+  }
   if (!attempts.length) {
     return { ok: false, reason: 'No complete lineup possible from the eligible pool.', attempts };
   }

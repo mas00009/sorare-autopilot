@@ -202,15 +202,33 @@ export async function fixtureOdds({ competition, homeTeam, awayTeam, team, date 
 }
 
 /**
+ * How a starter scores against his own average, by his team's result.
+ * Measured 12 Oct 2026 on 2,385 club starts of 60+ minutes by the ~400
+ * players in both accounts' pools. Keepers swing hardest; a defender on a
+ * losing side drops to 0.84 of his average. The old fit (k 0.9 on a
+ * clean-sheet proxy) overpaid favourites (x1.17 for a 76% side, measured
+ * 1.06) and barely touched underdogs (x1.00 for a 33% side, measured 0.96).
+ */
+export const OUTCOME = {
+  GK: { W: 1.19, D: 1.04, L: 0.77 },
+  DF: { W: 1.09, D: 0.99, L: 0.84 },
+  MD: { W: 1.09, D: 0.98, L: 0.88 },
+  FW: { W: 1.07, D: 0.96, L: 0.88 },
+};
+const TYPICAL = { W: 0.38, D: 0.26, L: 0.36 };
+
+/**
  * The multiplier for one card. Defenders and keepers on the clean-sheet
  * proxy, midfield and forwards on win probability. Both are centred on the
  * mean measured across this account's history, so a typical fixture is x1.
  */
 export function oddsFactor(position, odds, opts = ODDS_DEFAULTS) {
   if (!odds || odds.pWin == null) return 1;
-  if (position === 'GK' || position === 'DF') {
-    const proxy = (odds.pWin + 0.5 * (odds.pDraw ?? 0)) * opts.underFallback;
-    return 1 + opts.defensive.k * (proxy - opts.defensive.mean * (opts.underFallback / 0.5));
-  }
-  return 1 + opts.attacking.k * (odds.pWin - opts.attacking.mean);
+  const t = OUTCOME[position] ?? OUTCOME.MD;
+  const pW = odds.pWin;
+  const pL = odds.pLose ?? Math.max(0, 1 - pW - (odds.pDraw ?? 0.26));
+  const pD = odds.pDraw ?? Math.max(0, 1 - pW - pL);
+  const at = (w, d, l) => t.W * w + t.D * d + t.L * l;
+  // Centred on a typical fixture, so an average match changes nothing.
+  return at(pW, pD, pL) / at(TYPICAL.W, TYPICAL.D, TYPICAL.L);
 }

@@ -181,7 +181,13 @@ test('bookmaker odds: de-vigged, matched by name, applied by position, never to 
   // Defenders gain most from a favourite; forwards a little; a typical fixture is x1.
   assert.ok(oddsFactor('DF', { pWin: 0.65, pDraw: 0.2 }) > oddsFactor('FW', { pWin: 0.65 }) && oddsFactor('FW', { pWin: 0.65 }) > 1);
   assert.ok(oddsFactor('DF', { pWin: 0.2, pDraw: 0.25 }) < 1);
-  assert.ok(Math.abs(oddsFactor('FW', { pWin: 0.36 }) - 1) < 1e-9, 'mean win chance changes nothing');
+  assert.ok(Math.abs(oddsFactor('FW', { pWin: 0.38, pDraw: 0.26, pLose: 0.36 }) - 1) < 1e-9, 'a typical fixture changes nothing');
+  // Measured sizes: a 76% favourite's defender about +9%, a 33% underdog's about -3%.
+  const fav = oddsFactor('DF', { pWin: 0.76, pDraw: 0.16, pLose: 0.08 });
+  const dog = oddsFactor('DF', { pWin: 0.33, pDraw: 0.27, pLose: 0.40 });
+  assert.ok(fav > 1.05 && fav < 1.12, `favourite DF ${fav}`);
+  assert.ok(dog < 1 && dog > 0.94, `underdog DF ${dog}`);
+  assert.ok(oddsFactor('GK', { pWin: 0.2, pDraw: 0.24, pLose: 0.56 }) < dog, 'keepers swing harder than defenders');
   assert.equal(oddsFactor('DF', null), 1, 'no odds, no change');
 });
 
@@ -276,4 +282,21 @@ test('a locked lineup is still the live lineup', async () => {
   // Only spent attempts: nothing live, so a fresh lineup is next.
   assert.equal(liveLineupOf({ myLineups: [{ id: 'old', aasmState: 'CANCELLED', updatable: false }] }), null);
   assert.equal(liveLineupOf({ myLineups: [] }), null);
+});
+
+test('no keeper or defender from a side expected to lose', async () => {
+  const { blockReason, pickAcrossWindow } = await import('../src/optimiser.js');
+  const mk = (slug, pos, g, mo, avg = 60) => ({ id: slug, averageScore: avg, formL5: avg, bonus: 1, position: pos, activeSuspensions: [],
+    startRate: 1, playRate: 1, matchOdds: mo,
+    player: { slug, displayName: slug, activeInjuries: [], anyFutureGameStats: [{ anyGame: { id: g, date: '2026-10-17T13:30:00Z' }, anyTeam: { slug: 't' + g, name: 'T' + g } }] } });
+  const dog = { pWin: 0.33, pDraw: 0.27, pLose: 0.40 };
+  const fav = { pWin: 0.6, pDraw: 0.25, pLose: 0.15 };
+  assert.match(blockReason(mk('katic', 'DF', 1, dog)), /expected to lose/);
+  assert.equal(blockReason(mk('katic', 'DF', 1, dog), { noUnderdogDefence: false, minStartRate: 0, minStarterBp: 0 }), null);
+  assert.equal(blockReason(mk('fw', 'FW', 1, dog)), null, 'attackers are not blocked');
+  // The rule gives way only when nothing else can fill the side.
+  const onlyKeeperIsUnderdog = [mk('gk', 'GK', 1, dog), mk('df', 'DF', 2, fav), mk('md', 'MD', 3, fav), mk('fw', 'FW', 4, fav), mk('fw2', 'FW', 5, fav)];
+  const p = pickAcrossWindow(onlyKeeperIsUnderdog, {});
+  assert.equal(p.ok, true);
+  assert.equal(p.underdogDefenceAllowed, true);
 });
