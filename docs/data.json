@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T16:39:10.516Z",
+  "generatedAt": "2026-10-11T16:44:38.578Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-11T15:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791736733109,
+    "lastRunAt": 1791737062127,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:132aa4bc-e8a6-438c-bda8-f131297fe98e",
       "state": "READY",
-      "score": 248.03,
+      "score": 264.53,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,7 +48,7 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": true,
-          "score": 69.31,
+          "score": 85.8,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T19:00:00Z"
         },
@@ -275,19 +275,19 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 970.7502,
+      "squadScore": 1002.5366,
       "lineupId": "Tasks::TaskLineup:11e0a8f4-47cf-43d0-acb9-d8b738b5be3e",
       "state": "READY",
-      "score": 311.21,
+      "score": 328.14,
       "finished": false,
-      "cleared": false,
+      "cleared": true,
       "players": [
         {
           "name": "Mio Backhaus",
           "slug": "mio-backhaus",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 33.26,
+          "score": 33.7,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T19:00:00Z"
         },
@@ -296,7 +296,7 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": true,
-          "score": 69.31,
+          "score": 85.8,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T19:00:00Z"
         },
@@ -687,8 +687,8 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 283 scored so far, 4 of 5 played. On course for about 352; needs 360 (8 short).",
-      "tone": "warn",
+      "status": "Locked and playing. 307 scored so far, 4 of 5 played. On course for about 377; needs 360 (17 over).",
+      "tone": "good",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": false,
       "entered": {
@@ -723,7 +723,7 @@
             "kickoff": "2026-10-11T13:00:00Z"
           },
           {
-            "actual": 69.31,
+            "actual": 85.8,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
@@ -840,9 +840,9 @@
           }
         ],
         "projected": 362.9,
-        "scoredSoFar": 282.69,
+        "scoredSoFar": 307.43,
         "played": 4,
-        "expectedFinal": 351.85
+        "expectedFinal": 376.58
       },
       "poolStrength": {
         "strong": 5,
@@ -1339,14 +1339,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 346 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 971 so far.",
+      "status": "Locked and playing. 371 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1003 so far.",
       "tone": "good",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 33.26,
+            "actual": 33.7,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Mio Backhaus",
@@ -1375,7 +1375,7 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": 69.31,
+            "actual": 85.8,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
@@ -1492,9 +1492,9 @@
           }
         ],
         "projected": 354.09,
-        "scoredSoFar": 345.87,
+        "scoredSoFar": 371.04,
         "played": 5,
-        "expectedFinal": 345.87
+        "expectedFinal": 371.04
       },
       "poolStrength": {
         "strong": 1,
@@ -1504,7 +1504,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 970.7502
+        "scoreSoFar": 1002.5366
       },
       "level": 1,
       "lives": null,
