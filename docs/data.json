@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T20:43:54.606Z",
+  "generatedAt": "2026-10-11T21:06:46.126Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-12T19:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791751419251,
-    "reason": "last run 0m ago, next due in 180m (lock in 1336m)"
+    "lastRunAt": 1791752788374,
+    "reason": "last run 0m ago, next due in 180m (lock in 1313m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Camello",
@@ -269,68 +269,6 @@
       "scored": 5
     },
     {
-      "surface": "team set (Loadshift)",
-      "level": 1,
-      "target": 980,
-      "stepState": "LINEUP_SET",
-      "collaborative": true,
-      "squadLineups": 7,
-      "squadScore": 1153.1978,
-      "lineupId": "Tasks::TaskLineup:11e0a8f4-47cf-43d0-acb9-d8b738b5be3e",
-      "state": "READY",
-      "score": 332.51,
-      "finished": false,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Mio Backhaus",
-          "slug": "mio-backhaus",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 35.32,
-          "status": "FINAL",
-          "kickoff": "2026-10-15T19:00:00Z"
-        },
-        {
-          "name": "Matthias Ginter",
-          "slug": "matthias-ginter",
-          "position": "Defender",
-          "captain": true,
-          "score": 88.56,
-          "status": "FINAL",
-          "kickoff": "2026-10-15T19:00:00Z"
-        },
-        {
-          "name": "Kiernan Dewsbury-Hall",
-          "slug": "kiernan-dewsbury-hall",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 102,
-          "status": "FINAL",
-          "kickoff": "2026-10-17T11:30:00Z"
-        },
-        {
-          "name": "Dan Ndoye",
-          "slug": "dan-ndoye",
-          "position": "Forward",
-          "captain": false,
-          "score": 63.55,
-          "status": "FINAL",
-          "kickoff": "2026-10-18T15:30:00Z"
-        },
-        {
-          "name": "Sergio Gómez",
-          "slug": "sergio-gomez-martin",
-          "position": "Defender",
-          "captain": false,
-          "score": 43.09,
-          "status": "FINAL",
-          "kickoff": "2026-10-15T16:45:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
       "surface": "my set",
       "level": 1,
       "target": 300,
@@ -388,6 +326,68 @@
           "score": 39.21,
           "status": "FINAL",
           "kickoff": "2026-10-18T12:00:00Z"
+        }
+      ],
+      "scored": 5
+    },
+    {
+      "surface": "team set (Loadshift)",
+      "level": 1,
+      "target": 980,
+      "stepState": "CLAIMED",
+      "collaborative": true,
+      "squadLineups": 7,
+      "squadScore": 1153.1978,
+      "lineupId": "Tasks::TaskLineup:11e0a8f4-47cf-43d0-acb9-d8b738b5be3e",
+      "state": "SUCCESSFUL",
+      "score": 332.51,
+      "finished": true,
+      "cleared": true,
+      "players": [
+        {
+          "name": "Mio Backhaus",
+          "slug": "mio-backhaus",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 35.32,
+          "status": "FINAL",
+          "kickoff": "2026-10-15T19:00:00Z"
+        },
+        {
+          "name": "Matthias Ginter",
+          "slug": "matthias-ginter",
+          "position": "Defender",
+          "captain": true,
+          "score": 88.56,
+          "status": "FINAL",
+          "kickoff": "2026-10-15T19:00:00Z"
+        },
+        {
+          "name": "Kiernan Dewsbury-Hall",
+          "slug": "kiernan-dewsbury-hall",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 102,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T11:30:00Z"
+        },
+        {
+          "name": "Dan Ndoye",
+          "slug": "dan-ndoye",
+          "position": "Forward",
+          "captain": false,
+          "score": 63.55,
+          "status": "FINAL",
+          "kickoff": "2026-10-18T15:30:00Z"
+        },
+        {
+          "name": "Sergio Gómez",
+          "slug": "sergio-gomez-martin",
+          "position": "Defender",
+          "captain": false,
+          "score": 43.09,
+          "status": "FINAL",
+          "kickoff": "2026-10-15T16:45:00Z"
         }
       ],
       "scored": 5
@@ -1339,177 +1339,25 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 377 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1153 so far.",
-      "tone": "good",
-      "lockAt": "2026-10-11T13:00:00Z",
+      "status": "Not open for entry yet. A team goes in the moment it opens.",
+      "tone": "neutral",
+      "lockAt": null,
       "isSquad": true,
-      "entered": {
-        "five": [
-          {
-            "actual": 35.32,
-            "scoreStatus": "FINAL",
-            "teamSlug": "freiburg-freiburg-im-breisgau",
-            "name": "Mio Backhaus",
-            "player": "Mio Backhaus",
-            "slug": "mio-backhaus",
-            "pos": "GK",
-            "position": "GK",
-            "pic": "https://assets.sorare.com/cardsamplepicture/bed12849-550d-4dd0-8382-81143e930a3d/picture/tinified-17944dd8ea6891f9addef83872c2a59c.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/bed12849-550d-4dd0-8382-81143e930a3d/picture/tinified-17944dd8ea6891f9addef83872c2a59c.png",
-            "captain": false,
-            "exp": 50.33,
-            "expected": 50.33,
-            "opp": "FC Schalke 04",
-            "opponent": "FC Schalke 04",
-            "home": true,
-            "average": 44,
-            "formL5": 40,
-            "intl": false,
-            "pWin": 0.584,
-            "pLose": 0.177,
-            "marketFactor": 1.109,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-11T15:30:00Z"
-          },
-          {
-            "actual": 88.56,
-            "scoreStatus": "FINAL",
-            "teamSlug": "freiburg-freiburg-im-breisgau",
-            "name": "Matthias Ginter",
-            "player": "Matthias Ginter",
-            "slug": "matthias-ginter",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/1241e5e4-f470-4d16-bbd9-823be35742d3/picture/tinified-d387555ae31e4da0f014b04d01d418a9.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/1241e5e4-f470-4d16-bbd9-823be35742d3/picture/tinified-d387555ae31e4da0f014b04d01d418a9.png",
-            "captain": true,
-            "exp": 78.85,
-            "expected": 78.85,
-            "opp": "FC Schalke 04",
-            "opponent": "FC Schalke 04",
-            "home": true,
-            "average": 64,
-            "formL5": 74,
-            "intl": false,
-            "pWin": 0.584,
-            "pLose": 0.177,
-            "marketFactor": 1.109,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-11T15:30:00Z"
-          },
-          {
-            "actual": 102,
-            "scoreStatus": "FINAL",
-            "teamSlug": "everton-liverpool",
-            "name": "Kiernan Dewsbury-Hall",
-            "player": "Kiernan Dewsbury-Hall",
-            "slug": "kiernan-dewsbury-hall",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/84ec5700-bd9c-4026-a593-3562f2df76da/picture/tinified-01cee3735962b2bca8c7580024aa8b47.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/84ec5700-bd9c-4026-a593-3562f2df76da/picture/tinified-01cee3735962b2bca8c7580024aa8b47.png",
-            "captain": false,
-            "exp": 57.11,
-            "expected": 57.11,
-            "opp": "Hull City AFC",
-            "opponent": "Hull City AFC",
-            "home": false,
-            "average": 54,
-            "formL5": 56,
-            "intl": false,
-            "pWin": 0.45,
-            "pLose": 0.268,
-            "marketFactor": 1.018,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-11T13:00:00Z"
-          },
-          {
-            "actual": 63.55,
-            "scoreStatus": "FINAL",
-            "teamSlug": "nottingham-forest-nottingham",
-            "name": "Dan Ndoye",
-            "player": "Dan Ndoye",
-            "slug": "dan-ndoye",
-            "pos": "FW",
-            "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/29470820-1e49-4736-8dbe-8b21c3f4d214/picture/tinified-c7105426f3ab1ccdf9a472c02dbf05d5.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/29470820-1e49-4736-8dbe-8b21c3f4d214/picture/tinified-c7105426f3ab1ccdf9a472c02dbf05d5.png",
-            "captain": false,
-            "exp": 65.06,
-            "expected": 65.06,
-            "opp": "Crystal Palace FC",
-            "opponent": "Crystal Palace FC",
-            "home": false,
-            "average": 57,
-            "formL5": 69,
-            "intl": false,
-            "pWin": 0.373,
-            "pLose": 0.342,
-            "marketFactor": 1.003,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-11T13:00:00Z"
-          },
-          {
-            "actual": 43.09,
-            "scoreStatus": "FINAL",
-            "teamSlug": "real-sociedad-donostia-san-sebastian",
-            "name": "Sergio Gómez",
-            "player": "Sergio Gómez",
-            "slug": "sergio-gomez-martin",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/bb8e179a-f62c-4661-b1a4-1c90addb9864/picture/tinified-6fda950b16a66e4b41f955f2c978d7fc.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/bb8e179a-f62c-4661-b1a4-1c90addb9864/picture/tinified-6fda950b16a66e4b41f955f2c978d7fc.png",
-            "captain": false,
-            "exp": 64.46,
-            "expected": 64.46,
-            "opp": "Real Club Deportivo de La Coruña",
-            "opponent": "Real Club Deportivo de La Coruña",
-            "home": true,
-            "average": 58,
-            "formL5": 60,
-            "intl": false,
-            "pWin": 0.594,
-            "pLose": 0.173,
-            "marketFactor": 1.113,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-11T14:15:00Z"
-          }
-        ],
-        "projected": 354.09,
-        "scoredSoFar": 376.8,
-        "played": 5,
-        "expectedFinal": 376.8
-      },
+      "entered": null,
       "poolStrength": {
         "strong": 0,
         "needed": 5
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 7,
+        "lineupsIn": 0,
         "needed": 3,
-        "scoreSoFar": 1153.1978
+        "scoreSoFar": 0
       },
-      "level": 1,
+      "level": 2,
       "lives": null,
       "totalLevels": 5,
-      "levelsDone": 1,
+      "levelsDone": 2,
       "ladder": [
         {
           "level": 0,
@@ -1518,12 +1366,12 @@
         },
         {
           "level": 1,
-          "state": "LINEUP_SET",
+          "state": "CLAIMED",
           "target": 980
         },
         {
           "level": 2,
-          "state": "LOCKED",
+          "state": "PRE_MATCHDAY_LOCKED",
           "target": 1060
         },
         {
@@ -1545,40 +1393,9 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
-      "target": 980,
-      "current": [
-        {
-          "name": "Mio Backhaus",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-15T19:00:00Z"
-        },
-        {
-          "name": "Matthias Ginter",
-          "captain": true,
-          "locked": true,
-          "nextGame": "2026-10-15T19:00:00Z"
-        },
-        {
-          "name": "Kiernan Dewsbury-Hall",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-17T11:30:00Z"
-        },
-        {
-          "name": "Dan Ndoye",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-18T15:30:00Z"
-        },
-        {
-          "name": "Sergio Gómez",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-15T16:45:00Z"
-        }
-      ],
+      "state": "PRE_MATCHDAY_LOCKED",
+      "target": 1060,
+      "current": [],
       "plan": null,
       "candidates": [],
       "projected": 0
