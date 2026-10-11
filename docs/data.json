@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T00:00:14.320Z",
+  "generatedAt": "2026-10-11T00:05:34.267Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-11T13:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1791666602946,
-    "reason": "last run 170m ago, next due in 10m (lock in 780m)"
+    "reason": "last run 176m ago, next due in 4m (lock in 774m)"
   },
   "packs": {
     "lastThreeStar": "Nicolas Pépé",
@@ -1273,7 +1273,7 @@
           "blocked": null
         }
       ],
-      "projected": 341.5
+      "projected": 341.4
     },
     {
       "surface": "team set (Loadshift)",
