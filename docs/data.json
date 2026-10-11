@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T09:44:12.239Z",
+  "generatedAt": "2026-10-11T09:50:12.742Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -8,9 +8,9 @@
   },
   "schedule": {
     "nextLock": "2026-10-11T13:00:00Z",
-    "cadenceMin": 60,
-    "lastRunAt": 1791711827208,
-    "reason": "last run 0m ago, next due in 60m (lock in 196m)"
+    "cadenceMin": 15,
+    "lastRunAt": 1791712187338,
+    "reason": "last run 0m ago, next due in 15m (lock in 190m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Camello",
