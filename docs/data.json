@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T12:19:21.042Z",
+  "generatedAt": "2026-10-11T12:31:17.196Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-11T13:00:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1791721137438,
-    "reason": "last run 0m ago, next due in 5m (lock in 41m)"
+    "lastRunAt": 1791721853224,
+    "reason": "last run 0m ago, next due in 5m (lock in 29m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Camello",
@@ -275,7 +275,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 287.91,
+      "squadScore": 288.267,
       "lineupId": "Tasks::TaskLineup:11e0a8f4-47cf-43d0-acb9-d8b738b5be3e",
       "state": "READY",
       "score": 71.75,
@@ -1504,7 +1504,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 287.91
+        "scoreSoFar": 288.267
       },
       "level": 1,
       "lives": null,
