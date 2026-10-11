@@ -13,6 +13,9 @@
 /** Currencies the autopilot may spend. Anything not listed is refused. */
 export const ALLOWED_CURRENCIES = new Set([
   'COMMON_ESSENCE',
+  // The NBA wheel's free daily ticket. Earned by claiming the daily task,
+  // never bought. GOLDEN_WHEEL_TICKET is deliberately not listed.
+  'WHEEL_TICKET',
 ]);
 
 /** Currencies that must never be debited. */
@@ -62,6 +65,9 @@ export const ALLOWED_MUTATIONS = new Set([
   // field - any cost was paid when it was acquired, so opening is free. This is
   // the daily pack.
   'probabilisticBundlesOpen',
+  // The NBA wheel. Reachable only from wheel.js, which checks the spin is a
+  // STANDARD one priced in WHEEL_TICKET and that a ticket is held.
+  'spinWheel',
   // Free daily pack pull flow
   'pullCards',
   'confirmCardPull',

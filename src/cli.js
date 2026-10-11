@@ -140,6 +140,15 @@ async function report(r) {
     for (const e of m.errors.slice(0, 3)) console.log(`  ! ${e}`);
   }
 
+  if (r.nbaWheel) {
+    const w = r.nbaWheel;
+    console.log('\nNBA wheel');
+    if (w.claimed) console.log(`    free ticket claimed${w.claimed === 'dry run' ? ' (dry run)' : ''}`);
+    if (w.spun) console.log(`    spun: ${w.won.length ? w.won.join(', ') : 'opened'}`);
+    else if (w.reason) console.log(`    ${w.reason}`);
+    for (const e of (w.errors ?? []).slice(0, 2)) console.log(`  ! ${e}`);
+  }
+
   if (r.missions?.dailyBoost) {
     const b = r.missions.dailyBoost;
     console.log(`\nDaily Boost: ${b.done} of ${b.of} checklist items done`);

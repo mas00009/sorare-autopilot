@@ -1115,6 +1115,11 @@ export async function pass({ dryRun = false, options = {} } = {}) {
     report.freePacks = await openFreePacks({ dryRun });
   } catch (err) { report.freePacks = { opened: [], cards: [], errors: [err.message] }; }
 
+  try {
+    const { spinNbaWheel } = await import('./wheel.js');
+    report.nbaWheel = await spinNbaWheel({ dryRun });
+  } catch (err) { report.nbaWheel = { spun: false, won: [], errors: [err.message] }; }
+
   // Did anything claimed this pass already give us a 3-star? If so the daily
   // collect challenge is done, and there is no reason to spend a bonus pack or
   // any essence.
