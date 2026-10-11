@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T14:30:42.873Z",
+  "generatedAt": "2026-10-11T14:36:16.019Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-11T14:15:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791729021079,
+    "lastRunAt": 1791729353813,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:132aa4bc-e8a6-438c-bda8-f131297fe98e",
       "state": "READY",
-      "score": 199.38,
+      "score": 198.35,
       "finished": false,
       "cleared": false,
       "players": [
@@ -66,7 +66,7 @@
           "slug": "dan-ndoye",
           "position": "Forward",
           "captain": false,
-          "score": 64.58,
+          "score": 63.55,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T15:30:00Z"
         },
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 718.7462,
+      "squadScore": 856.481,
       "lineupId": "Tasks::TaskLineup:11e0a8f4-47cf-43d0-acb9-d8b738b5be3e",
       "state": "READY",
-      "score": 269.16,
+      "score": 285.17,
       "finished": false,
       "cleared": false,
       "players": [
@@ -305,7 +305,7 @@
           "slug": "kiernan-dewsbury-hall",
           "position": "Midfielder",
           "captain": false,
-          "score": 77.01,
+          "score": 94.04,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T11:30:00Z"
         },
@@ -314,7 +314,7 @@
           "slug": "dan-ndoye",
           "position": "Forward",
           "captain": false,
-          "score": 64.58,
+          "score": 63.55,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T15:30:00Z"
         },
@@ -687,7 +687,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 226 scored so far, 4 of 5 played. On course for about 295; needs 360 (65 short).",
+      "status": "Locked and playing. 225 scored so far, 4 of 5 played. On course for about 294; needs 360 (66 short).",
       "tone": "warn",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": false,
@@ -781,7 +781,7 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": 64.58,
+            "actual": 63.55,
             "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Dan Ndoye",
@@ -840,9 +840,9 @@
           }
         ],
         "projected": 362.9,
-        "scoredSoFar": 226.15,
+        "scoredSoFar": 225.13,
         "played": 4,
-        "expectedFinal": 295.3
+        "expectedFinal": 294.27
       },
       "poolStrength": {
         "strong": 5,
@@ -1339,7 +1339,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 296 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 719 so far.",
+      "status": "Locked and playing. 312 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 856 so far.",
       "tone": "good",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": true,
@@ -1404,7 +1404,7 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": 77.01,
+            "actual": 94.04,
             "scoreStatus": "REVIEWING",
             "teamSlug": "everton-liverpool",
             "name": "Kiernan Dewsbury-Hall",
@@ -1433,7 +1433,7 @@
             "kickoff": "2026-10-11T13:00:00Z"
           },
           {
-            "actual": 64.58,
+            "actual": 63.55,
             "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Dan Ndoye",
@@ -1492,9 +1492,9 @@
           }
         ],
         "projected": 354.09,
-        "scoredSoFar": 295.94,
+        "scoredSoFar": 311.94,
         "played": 5,
-        "expectedFinal": 295.94
+        "expectedFinal": 311.94
       },
       "poolStrength": {
         "strong": 1,
@@ -1504,7 +1504,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 718.7462
+        "scoreSoFar": 856.481
       },
       "level": 1,
       "lives": null,
