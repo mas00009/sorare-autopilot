@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T18:32:33.153Z",
+  "generatedAt": "2026-10-11T18:38:22.196Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -8,9 +8,9 @@
   },
   "schedule": {
     "nextLock": "2026-10-11T18:45:00Z",
-    "cadenceMin": 5,
-    "lastRunAt": 1791743536614,
-    "reason": "last run 0m ago, next due in 5m (lock in 12m)"
+    "cadenceMin": 180,
+    "lastRunAt": 1791743884644,
+    "reason": "last run 0m ago, next due in 180m (lock in 7m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Camello",
@@ -275,7 +275,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 1151.9558,
+      "squadScore": 1153.1978,
       "lineupId": "Tasks::TaskLineup:11e0a8f4-47cf-43d0-acb9-d8b738b5be3e",
       "state": "READY",
       "score": 332.51,
@@ -1041,7 +1041,7 @@
             "opponent": "AS Roma",
             "opponentCode": "ROM",
             "code": "RMA",
-            "rank": 3,
+            "rank": 4,
             "opponentRank": 3,
             "home": false,
             "competition": "UEFA Champions League",
@@ -1239,7 +1239,7 @@
           "opponent": "AS Roma",
           "opponentCode": "ROM",
           "code": "RMA",
-          "rank": 3,
+          "rank": 4,
           "opponentRank": 3,
           "home": false,
           "competition": "UEFA Champions League",
@@ -1339,7 +1339,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 377 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1152 so far.",
+      "status": "Locked and playing. 377 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1153 so far.",
       "tone": "good",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": true,
@@ -1504,7 +1504,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 1151.9558
+        "scoreSoFar": 1153.1978
       },
       "level": 1,
       "lives": null,
@@ -2194,7 +2194,7 @@
       "competition": "UEFA Champions League",
       "team": "Real Madrid",
       "code": "RMA",
-      "rank": 3,
+      "rank": 4,
       "opponent": "AS Roma",
       "opponentCode": "ROM",
       "opponentRank": 3,
