@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T20:09:45.496Z",
+  "generatedAt": "2026-10-11T20:43:54.606Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-12T19:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791749370591,
-    "reason": "last run 0m ago, next due in 180m (lock in 1370m)"
+    "lastRunAt": 1791751419251,
+    "reason": "last run 0m ago, next due in 180m (lock in 1336m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Camello",
@@ -963,8 +963,8 @@
             "opponent": "Le Mans FC",
             "opponentCode": "LEM",
             "code": "TFC",
-            "rank": 14,
-            "opponentRank": 13,
+            "rank": 15,
+            "opponentRank": 14,
             "home": false,
             "competition": "Ligue 1",
             "intl": false,
@@ -1161,8 +1161,8 @@
           "opponent": "Le Mans FC",
           "opponentCode": "LEM",
           "code": "TFC",
-          "rank": 14,
-          "opponentRank": 13,
+          "rank": 15,
+          "opponentRank": 14,
           "home": false,
           "competition": "Ligue 1",
           "intl": false,
@@ -1690,10 +1690,10 @@
       "competition": "Ligue 1",
       "team": "Toulouse FC",
       "code": "TFC",
-      "rank": 14,
+      "rank": 15,
       "opponent": "Le Mans FC",
       "opponentCode": "LEM",
-      "opponentRank": 13,
+      "opponentRank": 14,
       "intl": false,
       "ownRank": null,
       "oppRank": null,
