@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T13:40:23.831Z",
+  "generatedAt": "2026-10-11T13:46:01.675Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-11T14:15:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1791725998455,
-    "reason": "last run 0m ago, next due in 5m (lock in 35m)"
+    "lastRunAt": 1791726336687,
+    "reason": "last run 0m ago, next due in 5m (lock in 29m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Camello",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:132aa4bc-e8a6-438c-bda8-f131297fe98e",
       "state": "READY",
-      "score": 112.48,
+      "score": 109.08,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "matz-sels",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 44.3,
+          "score": 38.53,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T15:30:00Z"
         },
@@ -66,7 +66,7 @@
           "slug": "dan-ndoye",
           "position": "Forward",
           "captain": false,
-          "score": 68.19,
+          "score": 70.56,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T15:30:00Z"
         },
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 434.4546,
+      "squadScore": 440.5208,
       "lineupId": "Tasks::TaskLineup:11e0a8f4-47cf-43d0-acb9-d8b738b5be3e",
       "state": "READY",
-      "score": 153.08,
+      "score": 153.81,
       "finished": false,
       "cleared": false,
       "players": [
@@ -305,7 +305,7 @@
           "slug": "kiernan-dewsbury-hall",
           "position": "Midfielder",
           "captain": false,
-          "score": 48.14,
+          "score": 46.51,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T11:30:00Z"
         },
@@ -314,7 +314,7 @@
           "slug": "dan-ndoye",
           "position": "Forward",
           "captain": false,
-          "score": 68.19,
+          "score": 70.56,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T15:30:00Z"
         },
@@ -687,14 +687,14 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 112 scored so far, 2 of 5 played. On course for about 363; needs 360 (3 over).",
-      "tone": "good",
+      "status": "Locked and playing. 109 scored so far, 2 of 5 played. On course for about 359; needs 360 (1 short).",
+      "tone": "warn",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": 44.3,
+            "actual": 38.53,
             "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Matz Sels",
@@ -781,7 +781,7 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": 68.19,
+            "actual": 70.56,
             "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Dan Ndoye",
@@ -840,9 +840,9 @@
           }
         ],
         "projected": 362.9,
-        "scoredSoFar": 112.49,
+        "scoredSoFar": 109.09,
         "played": 2,
-        "expectedFinal": 362.78
+        "expectedFinal": 359.38
       },
       "poolStrength": {
         "strong": 5,
@@ -1339,7 +1339,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 153 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 434 so far.",
+      "status": "Locked and playing. 154 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 441 so far.",
       "tone": "good",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": true,
@@ -1404,7 +1404,7 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": 48.14,
+            "actual": 46.51,
             "scoreStatus": "REVIEWING",
             "teamSlug": "everton-liverpool",
             "name": "Kiernan Dewsbury-Hall",
@@ -1433,7 +1433,7 @@
             "kickoff": "2026-10-11T13:00:00Z"
           },
           {
-            "actual": 68.19,
+            "actual": 70.56,
             "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Dan Ndoye",
@@ -1492,9 +1492,9 @@
           }
         ],
         "projected": 354.09,
-        "scoredSoFar": 153.08,
+        "scoredSoFar": 153.82,
         "played": 3,
-        "expectedFinal": 321.68
+        "expectedFinal": 322.42
       },
       "poolStrength": {
         "strong": 1,
@@ -1504,7 +1504,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 434.4546
+        "scoreSoFar": 440.5208
       },
       "level": 1,
       "lives": null,
