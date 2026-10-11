@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-11T07:02:42.692Z",
+  "generatedAt": "2026-10-11T07:08:48.695Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 1000,
+    "essence": 500,
     "gems": 211
   },
   "schedule": {
-    "nextLock": "2026-10-11T12:00:00Z",
+    "nextLock": "2026-10-11T13:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1791702136909,
-    "reason": "last run 0m ago, next due in 60m (lock in 297m)"
+    "lastRunAt": 1791702504629,
+    "reason": "last run 0m ago, next due in 60m (lock in 351m)"
   },
   "packs": {
-    "lastThreeStar": "Pierre-Emerick Aubameyang",
+    "lastThreeStar": "Sergio Camello",
     "cycleDone": true
   },
   "health": {
@@ -620,9 +620,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 729,
+        "progress": 734,
         "target": 860,
-        "remaining": 131,
+        "remaining": 126,
         "competition": null,
         "group": null,
         "teams": []
@@ -654,9 +654,9 @@
       {
         "title": "Collect Spanish players in LaLiga",
         "gems": 30,
-        "progress": 214,
+        "progress": 215,
         "target": 279,
-        "remaining": 65,
+        "remaining": 64,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": []
