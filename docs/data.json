@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T14:41:49.603Z",
+  "generatedAt": "2026-10-11T14:47:23.742Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-11T14:15:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791729688398,
+    "lastRunAt": 1791730021714,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 844.329,
+      "squadScore": 859.0994,
       "lineupId": "Tasks::TaskLineup:11e0a8f4-47cf-43d0-acb9-d8b738b5be3e",
       "state": "READY",
-      "score": 287.45,
+      "score": 290.59,
       "finished": false,
       "cleared": false,
       "players": [
@@ -305,7 +305,7 @@
           "slug": "kiernan-dewsbury-hall",
           "position": "Midfielder",
           "captain": false,
-          "score": 92.72,
+          "score": 97.41,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T11:30:00Z"
         },
@@ -323,7 +323,7 @@
           "slug": "sergio-gomez-martin",
           "position": "Defender",
           "captain": false,
-          "score": 39.84,
+          "score": 38.28,
           "status": "REVIEWING",
           "kickoff": "2026-10-15T16:45:00Z"
         }
@@ -1339,7 +1339,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 311 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 840 so far.",
+      "status": "Locked and playing. 317 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 859 so far.",
       "tone": "good",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": true,
@@ -1404,7 +1404,7 @@
             "kickoff": "2026-10-11T15:30:00Z"
           },
           {
-            "actual": 92.31,
+            "actual": 97.41,
             "scoreStatus": "REVIEWING",
             "teamSlug": "everton-liverpool",
             "name": "Kiernan Dewsbury-Hall",
@@ -1462,7 +1462,7 @@
             "kickoff": "2026-10-11T13:00:00Z"
           },
           {
-            "actual": 36.81,
+            "actual": 38.28,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-sociedad-donostia-san-sebastian",
             "name": "Sergio Gómez",
@@ -1492,9 +1492,9 @@
           }
         ],
         "projected": 354.09,
-        "scoredSoFar": 310.8,
+        "scoredSoFar": 317.37,
         "played": 5,
-        "expectedFinal": 310.8
+        "expectedFinal": 317.37
       },
       "poolStrength": {
         "strong": 1,
@@ -1504,7 +1504,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 839.6586
+        "scoreSoFar": 859.0994
       },
       "level": 1,
       "lives": null,
