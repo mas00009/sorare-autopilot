@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T19:48:54.119Z",
+  "generatedAt": "2026-10-12T20:05:14.700Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-12T19:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791834520532,
+    "lastRunAt": 1791835502125,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:132aa4bc-e8a6-438c-bda8-f131297fe98e",
       "state": "READY",
-      "score": 321.4,
+      "score": 320.88,
       "finished": false,
       "cleared": false,
       "players": [
@@ -75,7 +75,7 @@
           "slug": "lewis-hall-2004-09-08",
           "position": "Defender",
           "captain": false,
-          "score": 47.84,
+          "score": 47.32,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T16:30:00Z"
         }
@@ -687,7 +687,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 366 scored so far, 5 of 5 played. On course for about 366; needs 360 (6 over).",
+      "status": "Locked and playing. 365 scored so far, 5 of 5 played. On course for about 365; needs 360 (5 over).",
       "tone": "good",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": false,
@@ -810,7 +810,7 @@
             "kickoff": "2026-10-11T13:00:00Z"
           },
           {
-            "actual": 47.84,
+            "actual": 47.32,
             "scoreStatus": "REVIEWING",
             "teamSlug": "newcastle-united-newcastle-upon-tyne",
             "name": "Lewis Hall",
@@ -840,9 +840,9 @@
           }
         ],
         "projected": 362.9,
-        "scoredSoFar": 365.69,
+        "scoredSoFar": 365.17,
         "played": 5,
-        "expectedFinal": 365.69
+        "expectedFinal": 365.17
       },
       "poolStrength": {
         "strong": 5,
@@ -1352,7 +1352,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 743.9756
+        "scoreSoFar": 739.9198
       },
       "level": 2,
       "lives": null,
