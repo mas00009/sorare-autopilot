@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T20:49:04.871Z",
+  "generatedAt": "2026-10-12T20:54:43.430Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 211
   },
   "schedule": {
-    "nextLock": "2026-10-12T19:00:00Z",
+    "nextLock": "2026-10-13T16:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791838131804,
-    "reason": "last run 0m ago, next due in 180m"
+    "lastRunAt": 1791838470715,
+    "reason": "last run 0m ago, next due in 180m (lock in 1190m)"
   },
   "packs": {
     "lastThreeStar": "Sebastián Cáceres",
@@ -24,13 +24,13 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:132aa4bc-e8a6-438c-bda8-f131297fe98e",
       "state": "READY",
-      "score": 315.33,
+      "score": 316.62,
       "finished": false,
       "cleared": false,
       "players": [
@@ -75,7 +75,7 @@
           "slug": "lewis-hall-2004-09-08",
           "position": "Defender",
           "captain": false,
-          "score": 41.77,
+          "score": 43.06,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T16:30:00Z"
         }
@@ -86,7 +86,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -148,7 +148,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -210,7 +210,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -585,7 +585,7 @@
     "ladder": [
       {
         "level": 2,
-        "state": "LIVE",
+        "state": "LINEUP_SET",
         "target": 360,
         "gems": 10,
         "usd": 0,
@@ -687,7 +687,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 360 scored so far, 5 of 5 played. On course for about 360; needs 360 (0 over).",
+      "status": "Locked and playing. 361 scored so far, 5 of 5 played. On course for about 361; needs 360 (1 over).",
       "tone": "good",
       "lockAt": "2026-10-11T13:00:00Z",
       "isSquad": false,
@@ -810,7 +810,7 @@
             "kickoff": "2026-10-11T13:00:00Z"
           },
           {
-            "actual": 41.77,
+            "actual": 43.06,
             "scoreStatus": "REVIEWING",
             "teamSlug": "newcastle-united-newcastle-upon-tyne",
             "name": "Lewis Hall",
@@ -840,9 +840,9 @@
           }
         ],
         "projected": 362.9,
-        "scoredSoFar": 359.62,
+        "scoredSoFar": 360.91,
         "played": 5,
-        "expectedFinal": 359.62
+        "expectedFinal": 360.91
       },
       "poolStrength": {
         "strong": 5,
@@ -870,7 +870,7 @@
         },
         {
           "level": 2,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 360
         },
         {
@@ -896,7 +896,7 @@
           "currency": "COMMON_GEM"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 360,
       "current": [
         {
@@ -1003,7 +1003,7 @@
             "opponentCode": "AST",
             "code": "NEW",
             "rank": 11,
-            "opponentRank": 15,
+            "opponentRank": 16,
             "home": true,
             "competition": "Premier League",
             "intl": false,
@@ -1080,7 +1080,7 @@
             "opponent": "Fenerbahçe Spor Kulübü",
             "opponentCode": "FB",
             "code": "AST",
-            "rank": 15,
+            "rank": 16,
             "opponentRank": 4,
             "home": true,
             "competition": "UEFA Champions League",
@@ -1119,7 +1119,7 @@
             "opponent": "Fenerbahçe Spor Kulübü",
             "opponentCode": "FB",
             "code": "AST",
-            "rank": 15,
+            "rank": 16,
             "opponentRank": 4,
             "home": true,
             "competition": "UEFA Champions League",
@@ -1201,7 +1201,7 @@
           "opponentCode": "AST",
           "code": "NEW",
           "rank": 11,
-          "opponentRank": 15,
+          "opponentRank": 16,
           "home": true,
           "competition": "Premier League",
           "intl": false,
@@ -1278,7 +1278,7 @@
           "opponent": "Fenerbahçe Spor Kulübü",
           "opponentCode": "FB",
           "code": "AST",
-          "rank": 15,
+          "rank": 16,
           "opponentRank": 4,
           "home": true,
           "competition": "UEFA Champions League",
@@ -1317,7 +1317,7 @@
           "opponent": "Fenerbahçe Spor Kulübü",
           "opponentCode": "FB",
           "code": "AST",
-          "rank": 15,
+          "rank": 16,
           "opponentRank": 4,
           "home": true,
           "competition": "UEFA Champions League",
@@ -1352,7 +1352,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 764.1672
+        "scoreSoFar": 819.248
       },
       "level": 2,
       "lives": null,
@@ -1432,7 +1432,7 @@
       "competition": "UEFA Champions League",
       "team": "Aston Villa FC",
       "code": "AST",
-      "rank": 15,
+      "rank": 16,
       "opponent": "Fenerbahçe Spor Kulübü",
       "opponentCode": "FB",
       "opponentRank": 4,
@@ -1486,7 +1486,7 @@
       "rank": 11,
       "opponent": "Aston Villa FC",
       "opponentCode": "AST",
-      "opponentRank": 15,
+      "opponentRank": 16,
       "intl": false,
       "ownRank": null,
       "oppRank": null,
