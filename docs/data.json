@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T07:16:30.147Z",
+  "generatedAt": "2026-10-12T07:22:37.027Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-12T19:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1791789370481,
-    "reason": "last run 0m ago, next due in 60m (lock in 703m)"
+    "lastRunAt": 1791789737901,
+    "reason": "last run 0m ago, next due in 60m (lock in 697m)"
   },
   "packs": {
     "lastThreeStar": "Sebastián Cáceres",
@@ -620,9 +620,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 749,
+        "progress": 751,
         "target": 860,
-        "remaining": 111,
+        "remaining": 109,
         "competition": null,
         "group": null,
         "teams": []
