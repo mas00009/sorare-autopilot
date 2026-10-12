@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T18:53:25.534Z",
+  "generatedAt": "2026-10-12T18:59:23.833Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-12T19:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791831182012,
-    "reason": "last run 0m ago, next due in 180m (lock in 7m)"
+    "lastRunAt": 1791831541834,
+    "reason": "last run 0m ago, next due in 180m (lock in 1m)"
   },
   "packs": {
     "lastThreeStar": "Sebastián Cáceres",
@@ -1352,7 +1352,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 617.4
+        "scoreSoFar": 621.25
       },
       "level": 2,
       "lives": null,
