@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T20:34:05.173Z",
+  "generatedAt": "2026-10-13T20:39:33.256Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-17T12:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791923629065,
-    "reason": "last run 0m ago, next due in 180m (lock in 5246m)"
+    "lastRunAt": 1791923958449,
+    "reason": "last run 0m ago, next due in 180m (lock in 5240m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:8f708658-3d39-4938-a869-d9bac08c2cef",
       "state": "READY",
-      "score": 300.96,
+      "score": 310.97,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "senne-lammens",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 44.7,
+          "score": 44.19,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T13:00:00Z"
         },
@@ -48,7 +48,7 @@
           "slug": "alexsandro-victor-de-souza-ribeiro",
           "position": "Defender",
           "captain": false,
-          "score": 44.89,
+          "score": 55.43,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T18:45:00Z"
         },
@@ -57,7 +57,7 @@
           "slug": "nathan-saliba",
           "position": "Midfielder",
           "captain": false,
-          "score": 43.68,
+          "score": 43.16,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T14:15:00Z"
         },
@@ -75,7 +75,7 @@
           "slug": "cristian-gabriel-romero",
           "position": "Defender",
           "captain": true,
-          "score": 92.92,
+          "score": 93.42,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T12:00:00Z"
         }
@@ -92,7 +92,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:7e6b768e-9b65-41b9-ab93-2ef037b7c5cb",
       "state": "READY",
-      "score": 151.55,
+      "score": 152.8,
       "finished": false,
       "cleared": false,
       "players": [
@@ -110,7 +110,7 @@
           "slug": "lisandro-martinez",
           "position": "Defender",
           "captain": true,
-          "score": 65.06,
+          "score": 66.31,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T13:00:00Z"
         },
@@ -154,7 +154,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:bde227e7-c3ce-4183-8b6b-f3327c54560d",
       "state": "READY",
-      "score": 217.47,
+      "score": 218.18,
       "finished": false,
       "cleared": false,
       "players": [
@@ -199,7 +199,7 @@
           "slug": "antonio-eromonsele-nordby-nusa",
           "position": "Forward",
           "captain": false,
-          "score": 40.7,
+          "score": 41.41,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T16:30:00Z"
         }
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 1115.4702,
+      "squadScore": 1152.315,
       "lineupId": "Tasks::TaskLineup:b3798b0e-13b2-4de2-ae7c-6831203749f1",
       "state": "READY",
-      "score": 348.16,
+      "score": 352.5,
       "finished": false,
       "cleared": true,
       "players": [
@@ -296,7 +296,7 @@
           "slug": "renato-de-palma-veiga",
           "position": "Defender",
           "captain": true,
-          "score": 67.36,
+          "score": 68.38,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T14:15:00Z"
         },
@@ -305,7 +305,7 @@
           "slug": "santiago-comesana-veiga",
           "position": "Midfielder",
           "captain": false,
-          "score": 63.34,
+          "score": 65.94,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T14:15:00Z"
         },
@@ -323,7 +323,7 @@
           "slug": "antonio-eromonsele-nordby-nusa",
           "position": "Forward",
           "captain": false,
-          "score": 40.7,
+          "score": 41.41,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T16:30:00Z"
         }
@@ -439,14 +439,14 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 347 scored so far, 5 of 5 played. On course for about 347; needs 260 (87 over).",
+      "status": "Locked and playing. 358 scored so far, 5 of 5 played. On course for about 358; needs 260 (98 over).",
       "tone": "good",
       "lockAt": "2026-10-13T19:00:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": 44.7,
+            "actual": 44.19,
             "scoreStatus": "REVIEWING",
             "teamSlug": "manchester-united-manchester",
             "name": "Senne Lammens",
@@ -475,7 +475,7 @@
             "kickoff": "2026-10-13T19:00:00Z"
           },
           {
-            "actual": 44.89,
+            "actual": 55.43,
             "scoreStatus": "REVIEWING",
             "teamSlug": "lille-villeneuve-d-ascq",
             "name": "Alexsandro",
@@ -504,7 +504,7 @@
             "kickoff": "2026-10-13T19:00:00Z"
           },
           {
-            "actual": 43.68,
+            "actual": 43.16,
             "scoreStatus": "REVIEWING",
             "teamSlug": "villarreal-villarreal",
             "name": "Nathan Saliba",
@@ -562,7 +562,7 @@
             "kickoff": "2026-10-13T19:00:00Z"
           },
           {
-            "actual": 92.92,
+            "actual": 93.42,
             "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Cristian Romero",
@@ -592,9 +592,9 @@
           }
         ],
         "projected": 275.85,
-        "scoredSoFar": 347.43,
+        "scoredSoFar": 357.69,
         "played": 5,
-        "expectedFinal": 347.43
+        "expectedFinal": 357.69
       },
       "poolStrength": {
         "strong": 7,
@@ -1091,7 +1091,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 382 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1115 so far.",
+      "status": "Locked and playing. 387 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1152 so far.",
       "tone": "good",
       "lockAt": "2026-10-13T19:00:00Z",
       "isSquad": true,
@@ -1127,7 +1127,7 @@
             "kickoff": "2026-10-13T19:00:00Z"
           },
           {
-            "actual": 67.36,
+            "actual": 68.38,
             "scoreStatus": "REVIEWING",
             "teamSlug": "villarreal-villarreal",
             "name": "Renato Veiga",
@@ -1156,7 +1156,7 @@
             "kickoff": "2026-10-13T19:00:00Z"
           },
           {
-            "actual": 63.34,
+            "actual": 65.94,
             "scoreStatus": "REVIEWING",
             "teamSlug": "villarreal-villarreal",
             "name": "Santi Comesaña",
@@ -1214,7 +1214,7 @@
             "kickoff": "2026-10-13T19:00:00Z"
           },
           {
-            "actual": 40.7,
+            "actual": 41.41,
             "scoreStatus": "REVIEWING",
             "teamSlug": "rb-leipzig-leipzig",
             "name": "Antonio Nusa",
@@ -1244,9 +1244,9 @@
           }
         ],
         "projected": 252.62,
-        "scoredSoFar": 381.86,
+        "scoredSoFar": 386.7,
         "played": 5,
-        "expectedFinal": 381.86
+        "expectedFinal": 386.7
       },
       "poolStrength": {
         "strong": 0,
@@ -1256,7 +1256,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 1115.4702
+        "scoreSoFar": 1152.315
       },
       "level": 0,
       "lives": null,
