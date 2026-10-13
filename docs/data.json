@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T17:55:17.384Z",
+  "generatedAt": "2026-10-13T18:01:25.578Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-13T19:00:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1791914093850,
-    "reason": "last run 0m ago, next due in 5m (lock in 65m)"
+    "lastRunAt": 1791914453813,
+    "reason": "last run 1m ago, next due in 4m (lock in 59m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:bde227e7-c3ce-4183-8b6b-f3327c54560d",
       "state": "READY",
-      "score": 0,
+      "score": 107.8,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,8 +39,8 @@
           "slug": "maarten-vandevoordt",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 35.7,
+          "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
         {
@@ -66,8 +66,8 @@
           "slug": "alejandro-baena-rodriguez",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.4,
+          "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
         {
@@ -75,12 +75,12 @@
           "slug": "antonio-eromonsele-nordby-nusa",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 35.7,
+          "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 3
     },
     {
       "surface": "my set",
@@ -92,7 +92,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:8f708658-3d39-4938-a869-d9bac08c2cef",
       "state": "READY",
-      "score": 0,
+      "score": 198.8,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,8 +101,8 @@
           "slug": "senne-lammens",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
         {
@@ -110,8 +110,8 @@
           "slug": "alexsandro-victor-de-souza-ribeiro",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
         {
@@ -119,8 +119,8 @@
           "slug": "nathan-saliba",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.4,
+          "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
         {
@@ -128,8 +128,8 @@
           "slug": "alejandro-baena-rodriguez",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.4,
+          "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
         {
@@ -137,12 +137,12 @@
           "slug": "cristian-gabriel-romero",
           "position": "Defender",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 53.9,
+          "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 5
     },
     {
       "surface": "my set",
@@ -154,7 +154,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:7e6b768e-9b65-41b9-ab93-2ef037b7c5cb",
       "state": "READY",
-      "score": 0,
+      "score": 89.25,
       "finished": false,
       "cleared": false,
       "players": [
@@ -172,8 +172,8 @@
           "slug": "lisandro-martinez",
           "position": "Defender",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 53.55,
+          "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
         {
@@ -181,8 +181,8 @@
           "slug": "konrad-laimer",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 35.7,
+          "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
         {
@@ -204,7 +204,7 @@
           "kickoff": "2026-10-13T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 2
     },
     {
       "surface": "my set",
@@ -275,10 +275,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 0,
+      "squadScore": 606.9,
       "lineupId": "Tasks::TaskLineup:b3798b0e-13b2-4de2-ae7c-6831203749f1",
       "state": "READY",
-      "score": 0,
+      "score": 198.1,
       "finished": false,
       "cleared": false,
       "players": [
@@ -287,8 +287,8 @@
           "slug": "maarten-vandevoordt",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 35.7,
+          "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
         {
@@ -296,8 +296,8 @@
           "slug": "renato-de-palma-veiga",
           "position": "Defender",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 53.9,
+          "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
         {
@@ -305,8 +305,8 @@
           "slug": "santiago-comesana-veiga",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.4,
+          "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
         {
@@ -314,8 +314,8 @@
           "slug": "alejandro-baena-rodriguez",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.4,
+          "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         },
         {
@@ -323,12 +323,12 @@
           "slug": "antonio-eromonsele-nordby-nusa",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 35.7,
+          "status": "REVIEWING",
           "kickoff": "2026-10-13T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 5
     }
   ],
   "gems": {
@@ -439,15 +439,15 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Team entered, locks Wed 06:00 am Sydney. Expected about 295; needs 260 (35 over). It keeps being updated until it locks.",
-      "tone": "good",
+      "status": "Locked and playing. 108 scored so far, 3 of 5 played. On course for about 246; needs 260 (14 short).",
+      "tone": "warn",
       "lockAt": "2026-10-13T19:00:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 35.7,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "rb-leipzig-leipzig",
             "name": "Maarten Vandevoordt",
             "player": "Maarten Vandevoordt",
@@ -533,8 +533,8 @@
             "kickoff": "2026-10-14T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.4,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Álex Baena",
             "player": "Álex Baena",
@@ -562,8 +562,8 @@
             "kickoff": "2026-10-13T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 35.7,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "rb-leipzig-leipzig",
             "name": "Antonio Nusa",
             "player": "Antonio Nusa",
@@ -592,9 +592,9 @@
           }
         ],
         "projected": 295.48,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 296.05
+        "scoredSoFar": 107.8,
+        "played": 3,
+        "expectedFinal": 245.83
       },
       "poolStrength": {
         "strong": 6,
@@ -1091,15 +1091,15 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Team entered, locks Wed 06:00 am Sydney. The squad's top three lineups together need 700; this one is expected to add about 253.",
+      "status": "Locked and playing. 225 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 607 so far.",
       "tone": "good",
       "lockAt": "2026-10-13T19:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 35.7,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "rb-leipzig-leipzig",
             "name": "Maarten Vandevoordt",
             "player": "Maarten Vandevoordt",
@@ -1127,8 +1127,8 @@
             "kickoff": "2026-10-13T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 53.9,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "villarreal-villarreal",
             "name": "Renato Veiga",
             "player": "Renato Veiga",
@@ -1156,8 +1156,8 @@
             "kickoff": "2026-10-13T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.4,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "villarreal-villarreal",
             "name": "Santi Comesaña",
             "player": "Santi Comesaña",
@@ -1185,8 +1185,8 @@
             "kickoff": "2026-10-13T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.4,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Álex Baena",
             "player": "Álex Baena",
@@ -1214,8 +1214,8 @@
             "kickoff": "2026-10-13T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 35.7,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "rb-leipzig-leipzig",
             "name": "Antonio Nusa",
             "player": "Antonio Nusa",
@@ -1244,9 +1244,9 @@
           }
         ],
         "projected": 252.62,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 253.66
+        "scoredSoFar": 225.05,
+        "played": 5,
+        "expectedFinal": 225.05
       },
       "poolStrength": {
         "strong": 0,
@@ -1256,7 +1256,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 0
+        "scoreSoFar": 606.9
       },
       "level": 0,
       "lives": null,
@@ -1343,7 +1343,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 63,
           "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
@@ -1382,7 +1382,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 47,
           "picture": "https://assets.sorare.com/cardsamplepicture/52a7a606-d9e8-404a-ad71-d3cef34a8c2e/picture/tinified-942dd9d9d147d525ae66199b213992f4.png",
@@ -1421,7 +1421,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 58,
           "picture": "https://assets.sorare.com/cardsamplepicture/ea0929a9-dbda-48e1-9c2c-335dbfc49b1e/picture/tinified-0c64a0cbfeb47bb0abd77df8e668d1a2.png",
@@ -1460,7 +1460,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 58,
           "picture": "https://assets.sorare.com/cardsamplepicture/bc1882f2-d8bb-4598-a663-afc18152cee8/picture/tinified-da46af3e48a93cfa73faae121cf65bf5.png",
@@ -1499,7 +1499,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 50,
           "picture": "https://assets.sorare.com/cardsamplepicture/c49f3bad-8aee-4060-b453-250a20954f3f/picture/tinified-894f6fb79989da3b21850307e19a5d20.png",
@@ -1538,7 +1538,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 50,
           "picture": "https://assets.sorare.com/cardsamplepicture/06640e9c-8648-4179-83a7-8562eec8ea5f/picture/tinified-76f4a929c386e49321662f21765408b8.png",
@@ -1577,7 +1577,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 36,
           "picture": "https://assets.sorare.com/cardsamplepicture/c0475601-be6e-48cd-8695-11c9abdbfaae/picture/tinified-ad5e0c5ba0ae359c3767973c1014476c.png",
@@ -1616,7 +1616,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 50,
           "picture": "https://assets.sorare.com/cardsamplepicture/bcf2d322-cec2-4d72-82ef-3e25ff46a800/picture/tinified-4f50182395280ff4746e459d9d4d078f.png",
