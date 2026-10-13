@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T15:56:42.375Z",
+  "generatedAt": "2026-10-13T16:02:38.163Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-13T19:00:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1791906983184,
-    "reason": "last run 0m ago, next due in 15m (lock in 183m)"
+    "lastRunAt": 1791907339189,
+    "reason": "last run 0m ago, next due in 15m (lock in 177m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -684,10 +684,10 @@
       ],
       "plan": {
         "clearsTarget": true,
-        "projected": 361.15,
+        "projected": 362.7,
         "lock": "2026-10-15T19:00:00Z",
         "shortfall": null,
-        "tradedPointsForTime": 22.5,
+        "tradedPointsForTime": 20.9,
         "captain": "cristian-sleiker-casseres-yepes",
         "captainPoints": 38.55,
         "withinReach": true,
@@ -815,14 +815,14 @@
             "player": "Mario Soriano",
             "slug": "mario-soriano-carreno",
             "position": "MD",
-            "average": 57,
+            "average": 59,
             "bonus": 1.05,
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
             "onGameSheet": false,
             "reliability": null,
-            "formL5": 60,
+            "formL5": 62,
             "picture": "https://assets.sorare.com/cardsamplepicture/22867681-bde0-4ca9-b7ef-0db5f4316ff6/picture/tinified-dd97d33890976520396d8d3586880105.png",
             "rarity": "common",
             "gameId": "Game:27888147-8075-4686-9199-078f412b6f7a",
@@ -846,7 +846,7 @@
             "oddsBooks": 21,
             "marketFactor": 1.017,
             "lockedAt": null,
-            "expected": 58.41,
+            "expected": 60.41,
             "blocked": null
           },
           {
@@ -854,14 +854,14 @@
             "player": "Luismi Cruz",
             "slug": "luis-miguel-cruz-hernandez",
             "position": "FW",
-            "average": 56,
+            "average": 54,
             "bonus": 1.1,
             "starterPct": null,
             "startRate": 0.7,
             "oddsKnown": false,
             "onGameSheet": false,
             "reliability": null,
-            "formL5": 51,
+            "formL5": 52,
             "picture": "https://assets.sorare.com/cardsamplepicture/afd65916-a710-4755-8ed3-c0561381f11d/picture/tinified-6192508f27f90ce113f81e669bf78136.png",
             "rarity": "common",
             "gameId": "Game:27888147-8075-4686-9199-078f412b6f7a",
@@ -885,7 +885,7 @@
             "oddsBooks": 21,
             "marketFactor": 1.016,
             "lockedAt": null,
-            "expected": 48.11,
+            "expected": 47.66,
             "blocked": null
           }
         ]
@@ -1013,14 +1013,14 @@
           "player": "Mario Soriano",
           "slug": "mario-soriano-carreno",
           "position": "MD",
-          "average": 57,
+          "average": 59,
           "bonus": 1.05,
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
           "onGameSheet": false,
           "reliability": null,
-          "formL5": 60,
+          "formL5": 62,
           "picture": "https://assets.sorare.com/cardsamplepicture/22867681-bde0-4ca9-b7ef-0db5f4316ff6/picture/tinified-dd97d33890976520396d8d3586880105.png",
           "rarity": "common",
           "gameId": "Game:27888147-8075-4686-9199-078f412b6f7a",
@@ -1044,7 +1044,7 @@
           "oddsBooks": 21,
           "marketFactor": 1.017,
           "lockedAt": null,
-          "expected": 58.41,
+          "expected": 60.41,
           "blocked": null
         },
         {
@@ -1052,14 +1052,14 @@
           "player": "Luismi Cruz",
           "slug": "luis-miguel-cruz-hernandez",
           "position": "FW",
-          "average": 56,
+          "average": 54,
           "bonus": 1.1,
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
           "onGameSheet": false,
           "reliability": null,
-          "formL5": 51,
+          "formL5": 52,
           "picture": "https://assets.sorare.com/cardsamplepicture/afd65916-a710-4755-8ed3-c0561381f11d/picture/tinified-6192508f27f90ce113f81e669bf78136.png",
           "rarity": "common",
           "gameId": "Game:27888147-8075-4686-9199-078f412b6f7a",
@@ -1083,7 +1083,7 @@
           "oddsBooks": 21,
           "marketFactor": 1.016,
           "lockedAt": null,
-          "expected": 48.11,
+          "expected": 47.66,
           "blocked": null
         }
       ],
@@ -1825,7 +1825,7 @@
         "Mario Soriano",
         "Luismi Cruz"
       ],
-      "points": 106.5,
+      "points": 108.1,
       "bestStarter": null,
       "surfaces": [
         "my set"
