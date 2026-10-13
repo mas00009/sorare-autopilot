@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T07:09:41.263Z",
+  "generatedAt": "2026-10-13T07:21:31.962Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-13T19:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1791875361247,
-    "reason": "last run 0m ago, next due in 60m (lock in 710m)"
+    "lastRunAt": 1791876073258,
+    "reason": "last run 0m ago, next due in 60m (lock in 698m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -274,7 +274,7 @@
       "target": 700,
       "stepState": "LINEUP_SET",
       "collaborative": true,
-      "squadLineups": 1,
+      "squadLineups": 5,
       "squadScore": 0,
       "lineupId": "Tasks::TaskLineup:b3798b0e-13b2-4de2-ae7c-6831203749f1",
       "state": "READY",
@@ -372,9 +372,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 757,
+        "progress": 761,
         "target": 860,
-        "remaining": 103,
+        "remaining": 99,
         "competition": null,
         "group": null,
         "teams": []
@@ -396,9 +396,9 @@
       {
         "title": "Collect Goalkeepers",
         "gems": 10,
-        "progress": 91,
+        "progress": 92,
         "target": 112,
-        "remaining": 21,
+        "remaining": 20,
         "competition": null,
         "group": null,
         "teams": []
@@ -1254,7 +1254,7 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 1,
+        "lineupsIn": 5,
         "needed": 3,
         "scoreSoFar": 0
       },
