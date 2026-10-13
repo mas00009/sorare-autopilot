@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-13T07:03:39.814Z",
+  "generatedAt": "2026-10-13T07:09:41.263Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 0,
+    "essence": 500,
     "gems": 211
   },
   "schedule": {
-    "nextLock": "2026-10-13T16:45:00Z",
+    "nextLock": "2026-10-13T19:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1791874997273,
-    "reason": "last run 0m ago, next due in 60m (lock in 581m)"
+    "lastRunAt": 1791875361247,
+    "reason": "last run 0m ago, next due in 60m (lock in 710m)"
   },
   "packs": {
-    "lastThreeStar": "Sebastián Cáceres",
+    "lastThreeStar": "Iñigo Vicente",
     "cycleDone": true
   },
   "health": {
@@ -372,9 +372,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 754,
+        "progress": 757,
         "target": 860,
-        "remaining": 106,
+        "remaining": 103,
         "competition": null,
         "group": null,
         "teams": []
@@ -396,9 +396,9 @@
       {
         "title": "Collect Goalkeepers",
         "gems": 10,
-        "progress": 90,
+        "progress": 91,
         "target": 112,
-        "remaining": 22,
+        "remaining": 21,
         "competition": null,
         "group": null,
         "teams": []
@@ -1334,7 +1334,7 @@
       "plan": null,
       "candidates": [
         {
-          "id": "ComposeTeamBenchCard:a6be9ca0-2ba3-48fd-ae84-fc950a4459b1",
+          "id": "ComposeTeamBenchCard:3b30d947-df8e-476b-ad89-75d11f43199a",
           "player": "Renato Veiga",
           "slug": "renato-de-palma-veiga",
           "position": "DF",
