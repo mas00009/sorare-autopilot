@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T20:56:01.943Z",
+  "generatedAt": "2026-10-13T21:01:45.424Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 211
   },
   "schedule": {
-    "nextLock": "2026-10-17T12:00:00Z",
+    "nextLock": "2026-10-14T19:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791924945548,
-    "reason": "last run 0m ago, next due in 180m (lock in 5224m)"
+    "lastRunAt": 1791925289510,
+    "reason": "last run 0m ago, next due in 180m (lock in 1318m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -24,193 +24,7 @@
       "surface": "my set",
       "level": 0,
       "target": 260,
-      "stepState": "LIVE",
-      "collaborative": false,
-      "squadLineups": null,
-      "squadScore": null,
-      "lineupId": "Tasks::TaskLineup:7e6b768e-9b65-41b9-ab93-2ef037b7c5cb",
-      "state": "READY",
-      "score": 195.47,
-      "finished": false,
-      "cleared": false,
-      "players": [
-        {
-          "name": "Péter Gulácsi",
-          "slug": "peter-gulacsi",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 0,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-17T14:15:00Z"
-        },
-        {
-          "name": "Lisandro Martínez",
-          "slug": "lisandro-martinez",
-          "position": "Defender",
-          "captain": true,
-          "score": 111.02,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-18T13:00:00Z"
-        },
-        {
-          "name": "Konrad Laimer",
-          "slug": "konrad-laimer",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 84.46,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-17T16:30:00Z"
-        },
-        {
-          "name": "Ilias Akhomach",
-          "slug": "ilias-akhomach-chakkour",
-          "position": "Forward",
-          "captain": false,
-          "score": 0,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-17T14:15:00Z"
-        },
-        {
-          "name": "Tanguy Nianzou",
-          "slug": "nianzou-tanguy-kouassi",
-          "position": "Defender",
-          "captain": false,
-          "score": 0,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-17T18:45:00Z"
-        }
-      ],
-      "scored": 2
-    },
-    {
-      "surface": "my set",
-      "level": 0,
-      "target": 260,
-      "stepState": "LIVE",
-      "collaborative": false,
-      "squadLineups": null,
-      "squadScore": null,
-      "lineupId": "Tasks::TaskLineup:bde227e7-c3ce-4183-8b6b-f3327c54560d",
-      "state": "READY",
-      "score": 213.39,
-      "finished": false,
-      "cleared": false,
-      "players": [
-        {
-          "name": "Maarten Vandevoordt",
-          "slug": "maarten-vandevoordt",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 102,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-17T16:30:00Z"
-        },
-        {
-          "name": "Rúben Dias",
-          "slug": "ruben-santos-gato-alves-dias",
-          "position": "Defender",
-          "captain": true,
-          "score": 0,
-          "status": "PENDING",
-          "kickoff": "2026-10-14T19:00:00Z"
-        },
-        {
-          "name": "Jobe Bellingham",
-          "slug": "jobe-bellingham",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 0,
-          "status": "PENDING",
-          "kickoff": "2026-10-14T19:00:00Z"
-        },
-        {
-          "name": "Álex Baena",
-          "slug": "alejandro-baena-rodriguez",
-          "position": "Forward",
-          "captain": false,
-          "score": 74.78,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-17T12:00:00Z"
-        },
-        {
-          "name": "Antonio Nusa",
-          "slug": "antonio-eromonsele-nordby-nusa",
-          "position": "Forward",
-          "captain": false,
-          "score": 36.62,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-17T16:30:00Z"
-        }
-      ],
-      "scored": 3
-    },
-    {
-      "surface": "my set",
-      "level": 0,
-      "target": 260,
-      "stepState": "LIVE",
-      "collaborative": false,
-      "squadLineups": null,
-      "squadScore": null,
-      "lineupId": "Tasks::TaskLineup:8f708658-3d39-4938-a869-d9bac08c2cef",
-      "state": "READY",
-      "score": 321.04,
-      "finished": false,
-      "cleared": false,
-      "players": [
-        {
-          "name": "Senne Lammens",
-          "slug": "senne-lammens",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 44.7,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-18T13:00:00Z"
-        },
-        {
-          "name": "Alexsandro",
-          "slug": "alexsandro-victor-de-souza-ribeiro",
-          "position": "Defender",
-          "captain": false,
-          "score": 50.72,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-17T18:45:00Z"
-        },
-        {
-          "name": "Nathan Saliba",
-          "slug": "nathan-saliba",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 45.24,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-17T14:15:00Z"
-        },
-        {
-          "name": "Álex Baena",
-          "slug": "alejandro-baena-rodriguez",
-          "position": "Forward",
-          "captain": false,
-          "score": 74.78,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-17T12:00:00Z"
-        },
-        {
-          "name": "Cristian Romero",
-          "slug": "cristian-gabriel-romero",
-          "position": "Defender",
-          "captain": true,
-          "score": 105.61,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-17T12:00:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
-      "surface": "my set",
-      "level": 0,
-      "target": 260,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -269,13 +83,199 @@
       "scored": 0
     },
     {
+      "surface": "my set",
+      "level": 0,
+      "target": 260,
+      "stepState": "LINEUP_SET",
+      "collaborative": false,
+      "squadLineups": null,
+      "squadScore": null,
+      "lineupId": "Tasks::TaskLineup:bde227e7-c3ce-4183-8b6b-f3327c54560d",
+      "state": "READY",
+      "score": 213.39,
+      "finished": false,
+      "cleared": false,
+      "players": [
+        {
+          "name": "Maarten Vandevoordt",
+          "slug": "maarten-vandevoordt",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 102,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T16:30:00Z"
+        },
+        {
+          "name": "Rúben Dias",
+          "slug": "ruben-santos-gato-alves-dias",
+          "position": "Defender",
+          "captain": true,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-10-14T19:00:00Z"
+        },
+        {
+          "name": "Jobe Bellingham",
+          "slug": "jobe-bellingham",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-10-14T19:00:00Z"
+        },
+        {
+          "name": "Álex Baena",
+          "slug": "alejandro-baena-rodriguez",
+          "position": "Forward",
+          "captain": false,
+          "score": 74.78,
+          "status": "REVIEWING",
+          "kickoff": "2026-10-17T12:00:00Z"
+        },
+        {
+          "name": "Antonio Nusa",
+          "slug": "antonio-eromonsele-nordby-nusa",
+          "position": "Forward",
+          "captain": false,
+          "score": 36.62,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T16:30:00Z"
+        }
+      ],
+      "scored": 3
+    },
+    {
+      "surface": "my set",
+      "level": 0,
+      "target": 260,
+      "stepState": "LINEUP_SET",
+      "collaborative": false,
+      "squadLineups": null,
+      "squadScore": null,
+      "lineupId": "Tasks::TaskLineup:8f708658-3d39-4938-a869-d9bac08c2cef",
+      "state": "READY",
+      "score": 321.04,
+      "finished": false,
+      "cleared": false,
+      "players": [
+        {
+          "name": "Senne Lammens",
+          "slug": "senne-lammens",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 44.7,
+          "status": "REVIEWING",
+          "kickoff": "2026-10-18T13:00:00Z"
+        },
+        {
+          "name": "Alexsandro",
+          "slug": "alexsandro-victor-de-souza-ribeiro",
+          "position": "Defender",
+          "captain": false,
+          "score": 50.72,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T18:45:00Z"
+        },
+        {
+          "name": "Nathan Saliba",
+          "slug": "nathan-saliba",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 45.24,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T14:15:00Z"
+        },
+        {
+          "name": "Álex Baena",
+          "slug": "alejandro-baena-rodriguez",
+          "position": "Forward",
+          "captain": false,
+          "score": 74.78,
+          "status": "REVIEWING",
+          "kickoff": "2026-10-17T12:00:00Z"
+        },
+        {
+          "name": "Cristian Romero",
+          "slug": "cristian-gabriel-romero",
+          "position": "Defender",
+          "captain": true,
+          "score": 105.61,
+          "status": "REVIEWING",
+          "kickoff": "2026-10-17T12:00:00Z"
+        }
+      ],
+      "scored": 5
+    },
+    {
+      "surface": "my set",
+      "level": 0,
+      "target": 260,
+      "stepState": "LINEUP_SET",
+      "collaborative": false,
+      "squadLineups": null,
+      "squadScore": null,
+      "lineupId": "Tasks::TaskLineup:7e6b768e-9b65-41b9-ab93-2ef037b7c5cb",
+      "state": "READY",
+      "score": 195.47,
+      "finished": false,
+      "cleared": false,
+      "players": [
+        {
+          "name": "Péter Gulácsi",
+          "slug": "peter-gulacsi",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 0,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T14:15:00Z"
+        },
+        {
+          "name": "Lisandro Martínez",
+          "slug": "lisandro-martinez",
+          "position": "Defender",
+          "captain": true,
+          "score": 111.02,
+          "status": "REVIEWING",
+          "kickoff": "2026-10-18T13:00:00Z"
+        },
+        {
+          "name": "Konrad Laimer",
+          "slug": "konrad-laimer",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 84.46,
+          "status": "REVIEWING",
+          "kickoff": "2026-10-17T16:30:00Z"
+        },
+        {
+          "name": "Ilias Akhomach",
+          "slug": "ilias-akhomach-chakkour",
+          "position": "Forward",
+          "captain": false,
+          "score": 0,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T14:15:00Z"
+        },
+        {
+          "name": "Tanguy Nianzou",
+          "slug": "nianzou-tanguy-kouassi",
+          "position": "Defender",
+          "captain": false,
+          "score": 0,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T18:45:00Z"
+        }
+      ],
+      "scored": 5
+    },
+    {
       "surface": "team set (Loadshift)",
       "level": 0,
       "target": 700,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 1169.6024,
+      "squadScore": 1166.2714,
       "lineupId": "Tasks::TaskLineup:b3798b0e-13b2-4de2-ae7c-6831203749f1",
       "state": "READY",
       "score": 347.86,
@@ -288,7 +288,7 @@
           "position": "Goalkeeper",
           "captain": false,
           "score": 102,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-17T16:30:00Z"
         },
         {
@@ -297,7 +297,7 @@
           "position": "Defender",
           "captain": true,
           "score": 68.53,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-17T14:15:00Z"
         },
         {
@@ -306,7 +306,7 @@
           "position": "Midfielder",
           "captain": false,
           "score": 65.94,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-17T14:15:00Z"
         },
         {
@@ -324,7 +324,7 @@
           "position": "Forward",
           "captain": false,
           "score": 36.62,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-17T16:30:00Z"
         }
       ],
@@ -439,162 +439,162 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 251 scored so far, 2 of 5 played. On course for about 313; needs 260 (53 over).",
+      "status": "Team entered, locks Thu 06:00 am Sydney. Expected about 323; needs 260 (63 over). It keeps being updated until it locks.",
       "tone": "good",
-      "lockAt": "2026-10-13T19:00:00Z",
+      "lockAt": "2026-10-14T19:00:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
             "actual": null,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "villarreal-villarreal",
-            "name": "Péter Gulácsi",
-            "player": "Péter Gulácsi",
-            "slug": "peter-gulacsi",
+            "scoreStatus": "PENDING",
+            "teamSlug": "aston-villa-birmingham",
+            "name": "Zion Suzuki",
+            "player": "Zion Suzuki",
+            "slug": "zion-suzuki",
             "pos": "GK",
             "position": "GK",
-            "pic": "https://assets.sorare.com/cardsamplepicture/a83c4f83-b4fb-4eff-9561-c807571d8d93/picture/tinified-e9ca38beb8ad8d86a75640f7bec93189.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/a83c4f83-b4fb-4eff-9561-c807571d8d93/picture/tinified-e9ca38beb8ad8d86a75640f7bec93189.png",
+            "pic": "https://assets.sorare.com/cardsamplepicture/5c1b2cb2-6b15-4016-8e17-e4daa4221290/picture/tinified-596d7f1653c75ea02cd01a3829b1fafe.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/5c1b2cb2-6b15-4016-8e17-e4daa4221290/picture/tinified-596d7f1653c75ea02cd01a3829b1fafe.png",
             "captain": false,
-            "exp": 26.77,
-            "expected": 26.77,
-            "opp": "SSC Napoli",
-            "opponent": "SSC Napoli",
+            "exp": 56.35,
+            "expected": 56.35,
+            "opp": "Fenerbahçe Spor Kulübü",
+            "opponent": "Fenerbahçe Spor Kulübü",
             "home": true,
-            "average": 45,
-            "formL5": 49,
+            "average": 54,
+            "formL5": 59,
             "intl": false,
-            "pWin": 0.648,
-            "pLose": 0.156,
-            "marketFactor": 1.095,
+            "pWin": 0.578,
+            "pLose": 0.189,
+            "marketFactor": 1.076,
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-13T19:00:00Z"
+            "locked": false,
+            "kickoff": "2026-10-14T19:00:00Z"
           },
           {
-            "actual": 111.02,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "manchester-united-manchester",
-            "name": "Lisandro Martínez",
-            "player": "Lisandro Martínez",
-            "slug": "lisandro-martinez",
+            "actual": null,
+            "scoreStatus": "PENDING",
+            "teamSlug": "real-betis-sevilla",
+            "name": "Natan",
+            "player": "Natan",
+            "slug": "natan-bernardo-de-souza",
             "pos": "DF",
             "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/3976bced-4dae-4ed2-884b-6238cc8b9000/picture/tinified-59e9001569003345b31cbe079cc49ada.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/3976bced-4dae-4ed2-884b-6238cc8b9000/picture/tinified-59e9001569003345b31cbe079cc49ada.png",
-            "captain": true,
-            "exp": 51.1,
-            "expected": 51.1,
-            "opp": "Atlético de Madrid",
-            "opponent": "Atlético de Madrid",
-            "home": false,
-            "average": 57,
-            "formL5": 54,
+            "pic": "https://assets.sorare.com/cardsamplepicture/a8a26c8a-febb-40b6-ae44-9fbc3ae712d9/picture/tinified-c86aeea618900089587276c64bd04a57.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/a8a26c8a-febb-40b6-ae44-9fbc3ae712d9/picture/tinified-c86aeea618900089587276c64bd04a57.png",
+            "captain": false,
+            "exp": 57.39,
+            "expected": 57.39,
+            "opp": "FC Porto",
+            "opponent": "FC Porto",
+            "home": true,
+            "average": 55,
+            "formL5": 64,
             "intl": false,
-            "pWin": 0.351,
-            "pLose": 0.385,
-            "marketFactor": 0.993,
+            "pWin": 0.462,
+            "pLose": 0.281,
+            "marketFactor": 1.021,
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-13T19:00:00Z"
+            "locked": false,
+            "kickoff": "2026-10-14T19:00:00Z"
           },
           {
-            "actual": 84.46,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "bayern-munchen-munchen",
-            "name": "Konrad Laimer",
-            "player": "Konrad Laimer",
-            "slug": "konrad-laimer",
+            "actual": null,
+            "scoreStatus": "PENDING",
+            "teamSlug": "real-madrid-madrid",
+            "name": "Jude Bellingham",
+            "player": "Jude Bellingham",
+            "slug": "jude-bellingham",
             "pos": "MD",
             "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/2c61cd17-1472-4da6-9a7c-741a2a8af8b4/picture/tinified-73b15a8c32636a84171dfe7a449315df.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/2c61cd17-1472-4da6-9a7c-741a2a8af8b4/picture/tinified-73b15a8c32636a84171dfe7a449315df.png",
-            "captain": false,
-            "exp": 31.3,
-            "expected": 31.3,
-            "opp": "Viking FK",
-            "opponent": "Viking FK",
+            "pic": "https://assets.sorare.com/cardsamplepicture/fe3313a1-5c73-436d-a698-dbc049dee59b/picture/tinified-61dbd25acb89afe827003670d06ba75a.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/fe3313a1-5c73-436d-a698-dbc049dee59b/picture/tinified-61dbd25acb89afe827003670d06ba75a.png",
+            "captain": true,
+            "exp": 58.92,
+            "expected": 58.92,
+            "opp": "AS Roma",
+            "opponent": "AS Roma",
             "home": false,
-            "average": 46,
-            "formL5": 40,
+            "average": 65,
+            "formL5": 61,
             "intl": false,
-            "pWin": 0.778,
-            "pLose": 0.096,
-            "marketFactor": 1.071,
+            "pWin": 0.502,
+            "pLose": 0.26,
+            "marketFactor": 1.024,
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-13T19:00:00Z"
+            "locked": false,
+            "kickoff": "2026-10-14T19:00:00Z"
           },
           {
             "actual": null,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "villarreal-villarreal",
-            "name": "Ilias Akhomach",
-            "player": "Ilias Akhomach",
-            "slug": "ilias-akhomach-chakkour",
+            "scoreStatus": "PENDING",
+            "teamSlug": "aston-villa-birmingham",
+            "name": "Emiliano Buendía",
+            "player": "Emiliano Buendía",
+            "slug": "emiliano-buendia",
             "pos": "FW",
             "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/92fc88e0-fa9d-4dd7-8b12-9446daea1d54/picture/tinified-871d441d88cfd552616b16c8c512f80b.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/92fc88e0-fa9d-4dd7-8b12-9446daea1d54/picture/tinified-871d441d88cfd552616b16c8c512f80b.png",
+            "pic": "https://assets.sorare.com/cardsamplepicture/fc7c6891-6864-48f4-8d75-592f5782333e/picture/tinified-7ca33683a069ad99e5fc888f47e7d30a.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/fc7c6891-6864-48f4-8d75-592f5782333e/picture/tinified-7ca33683a069ad99e5fc888f47e7d30a.png",
             "captain": false,
-            "exp": 26.87,
-            "expected": 26.87,
-            "opp": "SSC Napoli",
-            "opponent": "SSC Napoli",
+            "exp": 58.71,
+            "expected": 58.71,
+            "opp": "Fenerbahçe Spor Kulübü",
+            "opponent": "Fenerbahçe Spor Kulübü",
             "home": true,
-            "average": 44,
-            "formL5": 63,
+            "average": 57,
+            "formL5": 53,
             "intl": false,
-            "pWin": 0.648,
-            "pLose": 0.156,
-            "marketFactor": 1.047,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-13T19:00:00Z"
-          },
-          {
-            "actual": null,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "lille-villeneuve-d-ascq",
-            "name": "Tanguy Nianzou",
-            "player": "Tanguy Nianzou",
-            "slug": "nianzou-tanguy-kouassi",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/17053490-a59e-4cb7-a84f-f40269988504/picture/tinified-9519cefb0332bf7a598d91de683efa23.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/17053490-a59e-4cb7-a84f-f40269988504/picture/tinified-9519cefb0332bf7a598d91de683efa23.png",
-            "captain": false,
-            "exp": 8.32,
-            "expected": 8.32,
-            "opp": "Arsenal FC",
-            "opponent": "Arsenal FC",
-            "home": false,
-            "average": 78,
-            "formL5": 78,
-            "intl": false,
-            "pWin": 0.531,
-            "pLose": 0.226,
+            "pWin": 0.578,
+            "pLose": 0.189,
             "marketFactor": 1.036,
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-13T19:00:00Z"
+            "locked": false,
+            "kickoff": "2026-10-14T19:00:00Z"
+          },
+          {
+            "actual": null,
+            "scoreStatus": "PENDING",
+            "teamSlug": "real-madrid-madrid",
+            "name": "Federico Valverde",
+            "player": "Federico Valverde",
+            "slug": "federico-santiago-valverde-dipetta",
+            "pos": "MD",
+            "position": "MD",
+            "pic": "https://assets.sorare.com/cardsamplepicture/6ec8824f-8d96-4992-ab6b-4190fa361ea4/picture/tinified-968cbc3d20b6062624831e4f1d473e3d.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/6ec8824f-8d96-4992-ab6b-4190fa361ea4/picture/tinified-968cbc3d20b6062624831e4f1d473e3d.png",
+            "captain": false,
+            "exp": 63.42,
+            "expected": 63.42,
+            "opp": "AS Roma",
+            "opponent": "AS Roma",
+            "home": false,
+            "average": 56,
+            "formL5": 62,
+            "intl": false,
+            "pWin": 0.502,
+            "pLose": 0.26,
+            "marketFactor": 1.024,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "locked": false,
+            "kickoff": "2026-10-14T19:00:00Z"
           }
         ],
-        "projected": 169.17,
-        "scoredSoFar": 250.99,
-        "played": 2,
-        "expectedFinal": 312.95
+        "projected": 322.85,
+        "scoredSoFar": 0,
+        "played": 0,
+        "expectedFinal": 324.25
       },
       "poolStrength": {
         "strong": 7,
@@ -612,7 +612,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 260
         },
         {
@@ -648,38 +648,38 @@
           "rarity": "common"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 260,
       "current": [
         {
-          "name": "Péter Gulácsi",
+          "name": "Zion Suzuki",
           "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-17T14:15:00Z"
+          "locked": false,
+          "nextGame": "2026-10-14T19:00:00Z"
         },
         {
-          "name": "Lisandro Martínez",
+          "name": "Natan",
+          "captain": false,
+          "locked": false,
+          "nextGame": "2026-10-14T19:00:00Z"
+        },
+        {
+          "name": "Jude Bellingham",
           "captain": true,
-          "locked": true,
-          "nextGame": "2026-10-18T13:00:00Z"
+          "locked": false,
+          "nextGame": "2026-10-14T19:00:00Z"
         },
         {
-          "name": "Konrad Laimer",
+          "name": "Emiliano Buendía",
           "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-17T16:30:00Z"
+          "locked": false,
+          "nextGame": "2026-10-14T19:00:00Z"
         },
         {
-          "name": "Ilias Akhomach",
+          "name": "Federico Valverde",
           "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-17T14:15:00Z"
-        },
-        {
-          "name": "Tanguy Nianzou",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-17T18:45:00Z"
+          "locked": false,
+          "nextGame": "2026-10-14T19:00:00Z"
         }
       ],
       "plan": {
@@ -691,7 +691,7 @@
         "captain": "cristian-sleiker-casseres-yepes",
         "captainPoints": 38.05,
         "withinReach": true,
-        "enteredProjected": 169.17,
+        "enteredProjected": 322.85,
         "five": [
           {
             "id": "ComposeTeamBenchCard:6f868d5a-36ed-4efd-b8fe-fd80e46ce31a",
@@ -1091,7 +1091,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 382 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1170 so far.",
+      "status": "Locked and playing. 382 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1166 so far.",
       "tone": "good",
       "lockAt": "2026-10-13T19:00:00Z",
       "isSquad": true,
@@ -1099,7 +1099,7 @@
         "five": [
           {
             "actual": 102,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "rb-leipzig-leipzig",
             "name": "Maarten Vandevoordt",
             "player": "Maarten Vandevoordt",
@@ -1128,7 +1128,7 @@
           },
           {
             "actual": 68.53,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "villarreal-villarreal",
             "name": "Renato Veiga",
             "player": "Renato Veiga",
@@ -1157,7 +1157,7 @@
           },
           {
             "actual": 65.94,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "villarreal-villarreal",
             "name": "Santi Comesaña",
             "player": "Santi Comesaña",
@@ -1215,7 +1215,7 @@
           },
           {
             "actual": 36.62,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "rb-leipzig-leipzig",
             "name": "Antonio Nusa",
             "player": "Antonio Nusa",
@@ -1256,7 +1256,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 1169.6024
+        "scoreSoFar": 1166.2714
       },
       "level": 0,
       "lives": null,
@@ -1265,7 +1265,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 700
         },
         {
@@ -1297,7 +1297,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 700,
       "current": [
         {
