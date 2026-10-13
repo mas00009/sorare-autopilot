@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T18:55:11.547Z",
+  "generatedAt": "2026-10-13T19:00:57.619Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 211
   },
   "schedule": {
-    "nextLock": "2026-10-13T19:00:00Z",
+    "nextLock": "2026-10-17T12:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1791917685890,
-    "reason": "last run 0m ago, next due in 180m (lock in 5m)"
+    "lastRunAt": 1791918040286,
+    "reason": "last run 0m ago, next due in 180m (lock in 5339m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -41,7 +41,7 @@
           "captain": false,
           "score": 35.7,
           "status": "REVIEWING",
-          "kickoff": "2026-10-13T19:00:00Z"
+          "kickoff": "2026-10-17T16:30:00Z"
         },
         {
           "name": "Rúben Dias",
@@ -68,7 +68,7 @@
           "captain": false,
           "score": 36.4,
           "status": "REVIEWING",
-          "kickoff": "2026-10-13T19:00:00Z"
+          "kickoff": "2026-10-17T12:00:00Z"
         },
         {
           "name": "Antonio Nusa",
@@ -77,7 +77,7 @@
           "captain": false,
           "score": 35.7,
           "status": "REVIEWING",
-          "kickoff": "2026-10-13T19:00:00Z"
+          "kickoff": "2026-10-17T16:30:00Z"
         }
       ],
       "scored": 3
@@ -103,7 +103,7 @@
           "captain": false,
           "score": 36.05,
           "status": "REVIEWING",
-          "kickoff": "2026-10-13T19:00:00Z"
+          "kickoff": "2026-10-18T13:00:00Z"
         },
         {
           "name": "Alexsandro",
@@ -112,7 +112,7 @@
           "captain": false,
           "score": 36.05,
           "status": "REVIEWING",
-          "kickoff": "2026-10-13T19:00:00Z"
+          "kickoff": "2026-10-17T18:45:00Z"
         },
         {
           "name": "Nathan Saliba",
@@ -121,7 +121,7 @@
           "captain": false,
           "score": 36.4,
           "status": "REVIEWING",
-          "kickoff": "2026-10-13T19:00:00Z"
+          "kickoff": "2026-10-17T14:15:00Z"
         },
         {
           "name": "Álex Baena",
@@ -130,7 +130,7 @@
           "captain": false,
           "score": 36.4,
           "status": "REVIEWING",
-          "kickoff": "2026-10-13T19:00:00Z"
+          "kickoff": "2026-10-17T12:00:00Z"
         },
         {
           "name": "Cristian Romero",
@@ -139,7 +139,7 @@
           "captain": true,
           "score": 53.9,
           "status": "REVIEWING",
-          "kickoff": "2026-10-13T19:00:00Z"
+          "kickoff": "2026-10-17T12:00:00Z"
         }
       ],
       "scored": 5
@@ -165,7 +165,7 @@
           "captain": false,
           "score": 0,
           "status": "PENDING",
-          "kickoff": "2026-10-13T19:00:00Z"
+          "kickoff": "2026-10-17T14:15:00Z"
         },
         {
           "name": "Lisandro Martínez",
@@ -174,7 +174,7 @@
           "captain": true,
           "score": 53.55,
           "status": "REVIEWING",
-          "kickoff": "2026-10-13T19:00:00Z"
+          "kickoff": "2026-10-18T13:00:00Z"
         },
         {
           "name": "Konrad Laimer",
@@ -183,7 +183,7 @@
           "captain": false,
           "score": 35.7,
           "status": "REVIEWING",
-          "kickoff": "2026-10-13T19:00:00Z"
+          "kickoff": "2026-10-17T16:30:00Z"
         },
         {
           "name": "Ilias Akhomach",
@@ -192,7 +192,7 @@
           "captain": false,
           "score": 0,
           "status": "PENDING",
-          "kickoff": "2026-10-13T19:00:00Z"
+          "kickoff": "2026-10-17T14:15:00Z"
         },
         {
           "name": "Tanguy Nianzou",
@@ -201,7 +201,7 @@
           "captain": false,
           "score": 0,
           "status": "PENDING",
-          "kickoff": "2026-10-13T19:00:00Z"
+          "kickoff": "2026-10-17T18:45:00Z"
         }
       ],
       "scored": 2
@@ -289,7 +289,7 @@
           "captain": false,
           "score": 35.7,
           "status": "REVIEWING",
-          "kickoff": "2026-10-13T19:00:00Z"
+          "kickoff": "2026-10-17T16:30:00Z"
         },
         {
           "name": "Renato Veiga",
@@ -298,7 +298,7 @@
           "captain": true,
           "score": 53.9,
           "status": "REVIEWING",
-          "kickoff": "2026-10-13T19:00:00Z"
+          "kickoff": "2026-10-17T14:15:00Z"
         },
         {
           "name": "Santi Comesaña",
@@ -307,7 +307,7 @@
           "captain": false,
           "score": 36.4,
           "status": "REVIEWING",
-          "kickoff": "2026-10-13T19:00:00Z"
+          "kickoff": "2026-10-17T14:15:00Z"
         },
         {
           "name": "Álex Baena",
@@ -316,7 +316,7 @@
           "captain": false,
           "score": 36.4,
           "status": "REVIEWING",
-          "kickoff": "2026-10-13T19:00:00Z"
+          "kickoff": "2026-10-17T12:00:00Z"
         },
         {
           "name": "Antonio Nusa",
@@ -325,7 +325,7 @@
           "captain": false,
           "score": 35.7,
           "status": "REVIEWING",
-          "kickoff": "2026-10-13T19:00:00Z"
+          "kickoff": "2026-10-17T16:30:00Z"
         }
       ],
       "scored": 5
@@ -471,7 +471,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-13T19:00:00Z"
           },
           {
@@ -500,7 +500,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-14T19:00:00Z"
           },
           {
@@ -529,7 +529,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-14T19:00:00Z"
           },
           {
@@ -558,7 +558,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-13T19:00:00Z"
           },
           {
@@ -587,7 +587,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-13T19:00:00Z"
           }
         ],
@@ -654,32 +654,32 @@
         {
           "name": "Maarten Vandevoordt",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-13T19:00:00Z"
+          "locked": true,
+          "nextGame": "2026-10-17T16:30:00Z"
         },
         {
           "name": "Rúben Dias",
           "captain": true,
-          "locked": false,
+          "locked": true,
           "nextGame": "2026-10-14T19:00:00Z"
         },
         {
           "name": "Jobe Bellingham",
           "captain": false,
-          "locked": false,
+          "locked": true,
           "nextGame": "2026-10-14T19:00:00Z"
         },
         {
           "name": "Álex Baena",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-13T19:00:00Z"
+          "locked": true,
+          "nextGame": "2026-10-17T12:00:00Z"
         },
         {
           "name": "Antonio Nusa",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-13T19:00:00Z"
+          "locked": true,
+          "nextGame": "2026-10-17T16:30:00Z"
         }
       ],
       "plan": {
@@ -1123,7 +1123,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-13T19:00:00Z"
           },
           {
@@ -1152,7 +1152,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-13T19:00:00Z"
           },
           {
@@ -1181,7 +1181,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-13T19:00:00Z"
           },
           {
@@ -1210,7 +1210,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-13T19:00:00Z"
           },
           {
@@ -1239,7 +1239,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-13T19:00:00Z"
           }
         ],
@@ -1249,7 +1249,7 @@
         "expectedFinal": 225.05
       },
       "poolStrength": {
-        "strong": 0,
+        "strong": 1,
         "needed": 5
       },
       "collaborative": true,
@@ -1303,36 +1303,282 @@
         {
           "name": "Maarten Vandevoordt",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-13T19:00:00Z"
+          "locked": true,
+          "nextGame": "2026-10-17T16:30:00Z"
         },
         {
           "name": "Renato Veiga",
           "captain": true,
-          "locked": false,
-          "nextGame": "2026-10-13T19:00:00Z"
+          "locked": true,
+          "nextGame": "2026-10-17T14:15:00Z"
         },
         {
           "name": "Santi Comesaña",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-13T19:00:00Z"
+          "locked": true,
+          "nextGame": "2026-10-17T14:15:00Z"
         },
         {
           "name": "Álex Baena",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-13T19:00:00Z"
+          "locked": true,
+          "nextGame": "2026-10-17T12:00:00Z"
         },
         {
           "name": "Antonio Nusa",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-13T19:00:00Z"
+          "locked": true,
+          "nextGame": "2026-10-17T16:30:00Z"
         }
       ],
-      "plan": null,
+      "plan": {
+        "clearsTarget": false,
+        "projected": 282.64,
+        "lock": "2026-10-17T12:00:00Z",
+        "shortfall": 417.4,
+        "tradedPointsForTime": 0,
+        "captain": "alexsandro-victor-de-souza-ribeiro",
+        "captainPoints": 28.18,
+        "withinReach": false,
+        "enteredProjected": 252.62,
+        "five": [
+          {
+            "id": "ComposeTeamBenchCard:15c6ebfc-44db-4212-be14-a74d284f9e9e",
+            "player": "Alexsandro",
+            "slug": "alexsandro-victor-de-souza-ribeiro",
+            "position": "DF",
+            "average": 68,
+            "bonus": 1.03,
+            "starterPct": null,
+            "startRate": 0.7,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 80,
+            "picture": "https://assets.sorare.com/cardsamplepicture/74f7d1c4-d7bb-4cb6-aecc-af100b0f3371/picture/tinified-542b018afc69d579fa772fb642b8ec66.png",
+            "rarity": "common",
+            "gameId": "Game:5ccae22f-e758-45f8-8b9e-97c9c542e4aa",
+            "kickoff": "2026-10-17T18:45:00Z",
+            "team": "LOSC Lille",
+            "teamSlug": "lille-villeneuve-d-ascq",
+            "opponent": "Stade Brestois 29",
+            "opponentCode": "BRE",
+            "code": "LIL",
+            "rank": 2,
+            "opponentRank": 7,
+            "home": true,
+            "competition": "Ligue 1",
+            "intl": false,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "mismatch": false,
+            "pWin": 0.531,
+            "pLose": 0.226,
+            "oddsBooks": 22,
+            "marketFactor": 1.036,
+            "lockedAt": null,
+            "expected": 58.05,
+            "blocked": null
+          },
+          {
+            "id": "ComposeTeamBenchCard:e5e10cc7-0a01-401b-a2db-9a58b9f966f3",
+            "player": "Álex Baena",
+            "slug": "alejandro-baena-rodriguez",
+            "position": "FW",
+            "average": 59,
+            "bonus": 1.04,
+            "starterPct": null,
+            "startRate": 0.8,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 63,
+            "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
+            "rarity": "common",
+            "gameId": "Game:466f7e52-c245-46d0-9e99-4538f4b95228",
+            "kickoff": "2026-10-17T12:00:00Z",
+            "team": "Atlético de Madrid",
+            "teamSlug": "atletico-madrid-madrid",
+            "opponent": "RCD Espanyol de Barcelona",
+            "opponentCode": "ESP",
+            "code": "ATM",
+            "rank": 2,
+            "opponentRank": 12,
+            "home": false,
+            "competition": "Primera División",
+            "intl": false,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "mismatch": false,
+            "pWin": 0.528,
+            "pLose": 0.22,
+            "oddsBooks": 19,
+            "marketFactor": 1.028,
+            "lockedAt": null,
+            "expected": 54.47,
+            "blocked": null
+          },
+          {
+            "id": "ComposeTeamBenchCard:3b30d947-df8e-476b-ad89-75d11f43199a",
+            "player": "Renato Veiga",
+            "slug": "renato-de-palma-veiga",
+            "position": "DF",
+            "average": 49,
+            "bonus": 1.04,
+            "starterPct": null,
+            "startRate": 1,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 47,
+            "picture": "https://assets.sorare.com/cardsamplepicture/52a7a606-d9e8-404a-ad71-d3cef34a8c2e/picture/tinified-942dd9d9d147d525ae66199b213992f4.png",
+            "rarity": "common",
+            "gameId": "Game:b7bf4d69-98a8-4d4c-8129-c1084a0721f5",
+            "kickoff": "2026-10-17T14:15:00Z",
+            "team": "Villarreal CF",
+            "teamSlug": "villarreal-villarreal",
+            "opponent": "Elche CF",
+            "opponentCode": "ELC",
+            "code": "VIL",
+            "rank": 11,
+            "opponentRank": 18,
+            "home": true,
+            "competition": "Primera División",
+            "intl": false,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "mismatch": false,
+            "pWin": 0.648,
+            "pLose": 0.156,
+            "oddsBooks": 21,
+            "marketFactor": 1.059,
+            "lockedAt": null,
+            "expected": 52.86,
+            "blocked": null
+          },
+          {
+            "id": "ComposeTeamBenchCard:90053c3a-2f06-454c-ab81-752073e851eb",
+            "player": "Senne Lammens",
+            "slug": "senne-lammens",
+            "position": "GK",
+            "average": 50,
+            "bonus": 1.03,
+            "starterPct": null,
+            "startRate": 0.9,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 62,
+            "picture": "https://assets.sorare.com/cardsamplepicture/ed4e725e-1d95-4539-b35b-88677e4b468c/picture/tinified-28d85cc45fa95dc2890528c855cf4cb2.png",
+            "rarity": "common",
+            "gameId": "Game:63d71d81-21c0-4c1b-9a41-7e524bf671ea",
+            "kickoff": "2026-10-18T13:00:00Z",
+            "team": "Manchester United FC",
+            "teamSlug": "manchester-united-manchester",
+            "opponent": "Leeds United FC",
+            "opponentCode": "LEE",
+            "code": "MUN",
+            "rank": 13,
+            "opponentRank": 7,
+            "home": false,
+            "competition": "Premier League",
+            "intl": false,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "mismatch": false,
+            "pWin": 0.351,
+            "pLose": 0.385,
+            "oddsBooks": 25,
+            "marketFactor": 0.989,
+            "lockedAt": null,
+            "expected": 51.33,
+            "blocked": null
+          },
+          {
+            "id": "ComposeTeamBenchCard:a01831ae-50b1-48da-b0b3-31311d86b44a",
+            "player": "Santi Comesaña",
+            "slug": "santiago-comesana-veiga",
+            "position": "MD",
+            "average": 44,
+            "bonus": 1.04,
+            "starterPct": null,
+            "startRate": 0.7,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 50,
+            "picture": "https://assets.sorare.com/cardsamplepicture/bcf2d322-cec2-4d72-82ef-3e25ff46a800/picture/tinified-4f50182395280ff4746e459d9d4d078f.png",
+            "rarity": "common",
+            "gameId": "Game:b7bf4d69-98a8-4d4c-8129-c1084a0721f5",
+            "kickoff": "2026-10-17T14:15:00Z",
+            "team": "Villarreal CF",
+            "teamSlug": "villarreal-villarreal",
+            "opponent": "Elche CF",
+            "opponentCode": "ELC",
+            "code": "VIL",
+            "rank": 11,
+            "opponentRank": 18,
+            "home": true,
+            "competition": "Primera División",
+            "intl": false,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "mismatch": false,
+            "pWin": 0.648,
+            "pLose": 0.156,
+            "oddsBooks": 21,
+            "marketFactor": 1.051,
+            "lockedAt": null,
+            "expected": 37.75,
+            "blocked": null
+          }
+        ]
+      },
       "candidates": [
+        {
+          "id": "ComposeTeamBenchCard:15c6ebfc-44db-4212-be14-a74d284f9e9e",
+          "player": "Alexsandro",
+          "slug": "alexsandro-victor-de-souza-ribeiro",
+          "position": "DF",
+          "average": 68,
+          "bonus": 1.03,
+          "starterPct": null,
+          "startRate": 0.7,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 80,
+          "picture": "https://assets.sorare.com/cardsamplepicture/74f7d1c4-d7bb-4cb6-aecc-af100b0f3371/picture/tinified-542b018afc69d579fa772fb642b8ec66.png",
+          "rarity": "common",
+          "gameId": "Game:5ccae22f-e758-45f8-8b9e-97c9c542e4aa",
+          "kickoff": "2026-10-17T18:45:00Z",
+          "team": "LOSC Lille",
+          "teamSlug": "lille-villeneuve-d-ascq",
+          "opponent": "Stade Brestois 29",
+          "opponentCode": "BRE",
+          "code": "LIL",
+          "rank": 2,
+          "opponentRank": 7,
+          "home": true,
+          "competition": "Ligue 1",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.531,
+          "pLose": 0.226,
+          "oddsBooks": 22,
+          "marketFactor": 1.036,
+          "lockedAt": null,
+          "expected": 58.05,
+          "blocked": null
+        },
         {
           "id": "ComposeTeamBenchCard:e5e10cc7-0a01-401b-a2db-9a58b9f966f3",
           "player": "Álex Baena",
@@ -1343,33 +1589,33 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": true,
+          "onGameSheet": false,
           "reliability": null,
           "formL5": 63,
           "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
           "rarity": "common",
-          "gameId": "Game:0876a20b-7843-409a-86cb-4355b85ce142",
-          "kickoff": "2026-10-13T19:00:00Z",
+          "gameId": "Game:466f7e52-c245-46d0-9e99-4538f4b95228",
+          "kickoff": "2026-10-17T12:00:00Z",
           "team": "Atlético de Madrid",
           "teamSlug": "atletico-madrid-madrid",
-          "opponent": "Manchester United FC",
-          "opponentCode": "MUN",
+          "opponent": "RCD Espanyol de Barcelona",
+          "opponentCode": "ESP",
           "code": "ATM",
           "rank": 2,
-          "opponentRank": 13,
-          "home": true,
-          "competition": "UEFA Champions League",
+          "opponentRank": 12,
+          "home": false,
+          "competition": "Primera División",
           "intl": false,
           "oppRank": null,
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.5,
-          "pLose": 0.257,
-          "oddsBooks": 22,
-          "marketFactor": 1.022,
+          "pWin": 0.528,
+          "pLose": 0.22,
+          "oddsBooks": 19,
+          "marketFactor": 1.028,
           "lockedAt": null,
-          "expected": 56.41,
+          "expected": 54.47,
           "blocked": null
         },
         {
@@ -1382,228 +1628,72 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": true,
+          "onGameSheet": false,
           "reliability": null,
           "formL5": 47,
           "picture": "https://assets.sorare.com/cardsamplepicture/52a7a606-d9e8-404a-ad71-d3cef34a8c2e/picture/tinified-942dd9d9d147d525ae66199b213992f4.png",
           "rarity": "common",
-          "gameId": "Game:06edc1dd-bc42-4319-968c-14ca3888a086",
-          "kickoff": "2026-10-13T19:00:00Z",
+          "gameId": "Game:b7bf4d69-98a8-4d4c-8129-c1084a0721f5",
+          "kickoff": "2026-10-17T14:15:00Z",
           "team": "Villarreal CF",
           "teamSlug": "villarreal-villarreal",
-          "opponent": "SSC Napoli",
-          "opponentCode": "NAP",
+          "opponent": "Elche CF",
+          "opponentCode": "ELC",
           "code": "VIL",
           "rank": 11,
-          "opponentRank": 8,
+          "opponentRank": 18,
           "home": true,
-          "competition": "UEFA Champions League",
+          "competition": "Primera División",
           "intl": false,
           "oppRank": null,
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.446,
-          "pLose": 0.294,
-          "oddsBooks": 22,
-          "marketFactor": 1.017,
+          "pWin": 0.648,
+          "pLose": 0.156,
+          "oddsBooks": 21,
+          "marketFactor": 1.059,
           "lockedAt": null,
-          "expected": 50.76,
+          "expected": 52.86,
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:e671617b-a7ef-41b7-a9cf-df0856a60388",
-          "player": "Giuliano Simeone",
-          "slug": "giuliano-simeone",
-          "position": "FW",
+          "id": "ComposeTeamBenchCard:90053c3a-2f06-454c-ab81-752073e851eb",
+          "player": "Senne Lammens",
+          "slug": "senne-lammens",
+          "position": "GK",
           "average": 50,
-          "bonus": 1.14,
-          "starterPct": null,
-          "startRate": 0.7,
-          "oddsKnown": false,
-          "onGameSheet": true,
-          "reliability": null,
-          "formL5": 58,
-          "picture": "https://assets.sorare.com/cardsamplepicture/ea0929a9-dbda-48e1-9c2c-335dbfc49b1e/picture/tinified-0c64a0cbfeb47bb0abd77df8e668d1a2.png",
-          "rarity": "common",
-          "gameId": "Game:0876a20b-7843-409a-86cb-4355b85ce142",
-          "kickoff": "2026-10-13T19:00:00Z",
-          "team": "Atlético de Madrid",
-          "teamSlug": "atletico-madrid-madrid",
-          "opponent": "Manchester United FC",
-          "opponentCode": "MUN",
-          "code": "ATM",
-          "rank": 2,
-          "opponentRank": 13,
-          "home": true,
-          "competition": "UEFA Champions League",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.5,
-          "pLose": 0.257,
-          "oddsBooks": 22,
-          "marketFactor": 1.022,
-          "lockedAt": null,
-          "expected": 50.65,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:82a90139-70ba-4430-a3cb-fc43f9f92dd8",
-          "player": "Giuliano Simeone",
-          "slug": "giuliano-simeone",
-          "position": "FW",
-          "average": 50,
-          "bonus": 1.04,
-          "starterPct": null,
-          "startRate": 0.7,
-          "oddsKnown": false,
-          "onGameSheet": true,
-          "reliability": null,
-          "formL5": 58,
-          "picture": "https://assets.sorare.com/cardsamplepicture/bc1882f2-d8bb-4598-a663-afc18152cee8/picture/tinified-da46af3e48a93cfa73faae121cf65bf5.png",
-          "rarity": "common",
-          "gameId": "Game:0876a20b-7843-409a-86cb-4355b85ce142",
-          "kickoff": "2026-10-13T19:00:00Z",
-          "team": "Atlético de Madrid",
-          "teamSlug": "atletico-madrid-madrid",
-          "opponent": "Manchester United FC",
-          "opponentCode": "MUN",
-          "code": "ATM",
-          "rank": 2,
-          "opponentRank": 13,
-          "home": true,
-          "competition": "UEFA Champions League",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.5,
-          "pLose": 0.257,
-          "oddsBooks": 22,
-          "marketFactor": 1.022,
-          "lockedAt": null,
-          "expected": 46.21,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:0d24f83b-e86f-43a4-9409-a5560e72d34f",
-          "player": "Ayoze Pérez",
-          "slug": "ayoze-perez-gutierrez",
-          "position": "FW",
-          "average": 49,
-          "bonus": 1.04,
-          "starterPct": null,
-          "startRate": 0.7,
-          "oddsKnown": false,
-          "onGameSheet": true,
-          "reliability": null,
-          "formL5": 50,
-          "picture": "https://assets.sorare.com/cardsamplepicture/c49f3bad-8aee-4060-b453-250a20954f3f/picture/tinified-894f6fb79989da3b21850307e19a5d20.png",
-          "rarity": "common",
-          "gameId": "Game:06edc1dd-bc42-4319-968c-14ca3888a086",
-          "kickoff": "2026-10-13T19:00:00Z",
-          "team": "Villarreal CF",
-          "teamSlug": "villarreal-villarreal",
-          "opponent": "SSC Napoli",
-          "opponentCode": "NAP",
-          "code": "VIL",
-          "rank": 11,
-          "opponentRank": 8,
-          "home": true,
-          "competition": "UEFA Champions League",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.446,
-          "pLose": 0.294,
-          "oddsBooks": 22,
-          "marketFactor": 1.013,
-          "lockedAt": null,
-          "expected": 40.15,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:19b8b2be-1bd6-472b-9b66-4c996f245752",
-          "player": "Myles Lewis-Skelly",
-          "slug": "myles-anthony-lewis-skelly",
-          "position": "DF",
-          "average": 44,
           "bonus": 1.03,
           "starterPct": null,
-          "startRate": 0.7,
+          "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": true,
+          "onGameSheet": false,
           "reliability": null,
-          "formL5": 50,
-          "picture": "https://assets.sorare.com/cardsamplepicture/06640e9c-8648-4179-83a7-8562eec8ea5f/picture/tinified-76f4a929c386e49321662f21765408b8.png",
+          "formL5": 62,
+          "picture": "https://assets.sorare.com/cardsamplepicture/ed4e725e-1d95-4539-b35b-88677e4b468c/picture/tinified-28d85cc45fa95dc2890528c855cf4cb2.png",
           "rarity": "common",
-          "gameId": "Game:a419422b-fec0-4631-851d-a37db25ea689",
-          "kickoff": "2026-10-13T19:00:00Z",
-          "team": "Arsenal FC",
-          "teamSlug": "arsenal-london",
-          "opponent": "LOSC Lille",
-          "opponentCode": "LIL",
-          "code": "ARS",
-          "rank": 2,
-          "opponentRank": 2,
-          "home": true,
-          "competition": "UEFA Champions League",
+          "gameId": "Game:63d71d81-21c0-4c1b-9a41-7e524bf671ea",
+          "kickoff": "2026-10-18T13:00:00Z",
+          "team": "Manchester United FC",
+          "teamSlug": "manchester-united-manchester",
+          "opponent": "Leeds United FC",
+          "opponentCode": "LEE",
+          "code": "MUN",
+          "rank": 13,
+          "opponentRank": 7,
+          "home": false,
+          "competition": "Premier League",
           "intl": false,
           "oppRank": null,
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.783,
-          "pLose": 0.07,
-          "oddsBooks": 22,
-          "marketFactor": 1.086,
+          "pWin": 0.351,
+          "pLose": 0.385,
+          "oddsBooks": 25,
+          "marketFactor": 0.989,
           "lockedAt": null,
-          "expected": 38.64,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:1f735f4d-2078-403e-b785-10cc0c28218a",
-          "player": "Ademola Lookman",
-          "slug": "ademola-lookman",
-          "position": "FW",
-          "average": 44,
-          "bonus": 1.04,
-          "starterPct": null,
-          "startRate": 0.8,
-          "oddsKnown": false,
-          "onGameSheet": true,
-          "reliability": null,
-          "formL5": 36,
-          "picture": "https://assets.sorare.com/cardsamplepicture/c0475601-be6e-48cd-8695-11c9abdbfaae/picture/tinified-ad5e0c5ba0ae359c3767973c1014476c.png",
-          "rarity": "common",
-          "gameId": "Game:0876a20b-7843-409a-86cb-4355b85ce142",
-          "kickoff": "2026-10-13T19:00:00Z",
-          "team": "Atlético de Madrid",
-          "teamSlug": "atletico-madrid-madrid",
-          "opponent": "Manchester United FC",
-          "opponentCode": "MUN",
-          "code": "ATM",
-          "rank": 2,
-          "opponentRank": 13,
-          "home": true,
-          "competition": "UEFA Champions League",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.5,
-          "pLose": 0.257,
-          "oddsBooks": 22,
-          "marketFactor": 1.022,
-          "lockedAt": null,
-          "expected": 36.99,
+          "expected": 51.33,
           "blocked": null
         },
         {
@@ -1616,120 +1706,40 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": true,
+          "onGameSheet": false,
           "reliability": null,
           "formL5": 50,
           "picture": "https://assets.sorare.com/cardsamplepicture/bcf2d322-cec2-4d72-82ef-3e25ff46a800/picture/tinified-4f50182395280ff4746e459d9d4d078f.png",
           "rarity": "common",
-          "gameId": "Game:06edc1dd-bc42-4319-968c-14ca3888a086",
-          "kickoff": "2026-10-13T19:00:00Z",
+          "gameId": "Game:b7bf4d69-98a8-4d4c-8129-c1084a0721f5",
+          "kickoff": "2026-10-17T14:15:00Z",
           "team": "Villarreal CF",
           "teamSlug": "villarreal-villarreal",
-          "opponent": "SSC Napoli",
-          "opponentCode": "NAP",
+          "opponent": "Elche CF",
+          "opponentCode": "ELC",
           "code": "VIL",
           "rank": 11,
-          "opponentRank": 8,
+          "opponentRank": 18,
           "home": true,
-          "competition": "UEFA Champions League",
+          "competition": "Primera División",
           "intl": false,
           "oppRank": null,
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.446,
-          "pLose": 0.294,
-          "oddsBooks": 22,
-          "marketFactor": 1.014,
+          "pWin": 0.648,
+          "pLose": 0.156,
+          "oddsBooks": 21,
+          "marketFactor": 1.051,
           "lockedAt": null,
-          "expected": 36.43,
+          "expected": 37.75,
           "blocked": null
         }
       ],
-      "projected": 244.2
+      "projected": 262.8
     }
   ],
   "fixtures": [
-    {
-      "kickoff": "2026-10-13T19:00:00Z",
-      "competition": "UEFA Champions League",
-      "team": "Atlético de Madrid",
-      "code": "ATM",
-      "rank": 2,
-      "opponent": "Manchester United FC",
-      "opponentCode": "MUN",
-      "opponentRank": 13,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.5,
-      "pLose": 0.257,
-      "oppFactor": null,
-      "home": true,
-      "players": [
-        "Álex Baena",
-        "Giuliano Simeone",
-        "Giuliano Simeone",
-        "Ademola Lookman"
-      ],
-      "points": 190.3,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
-    {
-      "kickoff": "2026-10-13T19:00:00Z",
-      "competition": "UEFA Champions League",
-      "team": "Villarreal CF",
-      "code": "VIL",
-      "rank": 11,
-      "opponent": "SSC Napoli",
-      "opponentCode": "NAP",
-      "opponentRank": 8,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.446,
-      "pLose": 0.294,
-      "oppFactor": null,
-      "home": true,
-      "players": [
-        "Renato Veiga",
-        "Ayoze Pérez",
-        "Santi Comesaña"
-      ],
-      "points": 127.3,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
-    {
-      "kickoff": "2026-10-13T19:00:00Z",
-      "competition": "UEFA Champions League",
-      "team": "Arsenal FC",
-      "code": "ARS",
-      "rank": 2,
-      "opponent": "LOSC Lille",
-      "opponentCode": "LIL",
-      "opponentRank": 2,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.783,
-      "pLose": 0.07,
-      "oppFactor": null,
-      "home": true,
-      "players": [
-        "Myles Lewis-Skelly"
-      ],
-      "points": 38.6,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
     {
       "kickoff": "2026-10-15T19:00:00Z",
       "competition": "UEFA Conference League",
@@ -1829,6 +1839,107 @@
       "bestStarter": null,
       "surfaces": [
         "my set"
+      ]
+    },
+    {
+      "kickoff": "2026-10-17T12:00:00Z",
+      "competition": "Primera División",
+      "team": "Atlético de Madrid",
+      "code": "ATM",
+      "rank": 2,
+      "opponent": "RCD Espanyol de Barcelona",
+      "opponentCode": "ESP",
+      "opponentRank": 12,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.528,
+      "pLose": 0.22,
+      "oppFactor": null,
+      "home": false,
+      "players": [
+        "Álex Baena"
+      ],
+      "points": 54.5,
+      "bestStarter": null,
+      "surfaces": [
+        "team set (Loadshift)"
+      ]
+    },
+    {
+      "kickoff": "2026-10-17T14:15:00Z",
+      "competition": "Primera División",
+      "team": "Villarreal CF",
+      "code": "VIL",
+      "rank": 11,
+      "opponent": "Elche CF",
+      "opponentCode": "ELC",
+      "opponentRank": 18,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.648,
+      "pLose": 0.156,
+      "oppFactor": null,
+      "home": true,
+      "players": [
+        "Renato Veiga",
+        "Santi Comesaña"
+      ],
+      "points": 90.6,
+      "bestStarter": null,
+      "surfaces": [
+        "team set (Loadshift)"
+      ]
+    },
+    {
+      "kickoff": "2026-10-17T18:45:00Z",
+      "competition": "Ligue 1",
+      "team": "LOSC Lille",
+      "code": "LIL",
+      "rank": 2,
+      "opponent": "Stade Brestois 29",
+      "opponentCode": "BRE",
+      "opponentRank": 7,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.531,
+      "pLose": 0.226,
+      "oppFactor": null,
+      "home": true,
+      "players": [
+        "Alexsandro"
+      ],
+      "points": 58,
+      "bestStarter": null,
+      "surfaces": [
+        "team set (Loadshift)"
+      ]
+    },
+    {
+      "kickoff": "2026-10-18T13:00:00Z",
+      "competition": "Premier League",
+      "team": "Manchester United FC",
+      "code": "MUN",
+      "rank": 13,
+      "opponent": "Leeds United FC",
+      "opponentCode": "LEE",
+      "opponentRank": 7,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.351,
+      "pLose": 0.385,
+      "oppFactor": null,
+      "home": false,
+      "players": [
+        "Senne Lammens"
+      ],
+      "points": 51.3,
+      "bestStarter": null,
+      "surfaces": [
+        "team set (Loadshift)"
       ]
     }
   ]
