@@ -45,20 +45,26 @@ const Q_NBA_BUNDLES = `
   }
 `;
 
-// Its own open mutation so the prizes are readable: the football one only
-// names cards, and the wheel mostly pays essence and currency.
+// Every prize kind the wheel can pay, so the mail names what was won.
+// The card sits on `anyCard`; asking for `card` is a 422 that used to make
+// every prize come back blank.
+export const PRIZE_ITEMS = `
+  items {
+    __typename
+    ... on ProbabilisticBundleSlotCardItem { anyCard { anyPlayer { displayName } } }
+    ... on ProbabilisticBundleSlotCardShardItem { quantity rarity }
+    ... on ProbabilisticBundleSlotInGameCurrencyItem { amount currency }
+    ... on ProbabilisticBundleSlotArenaTicketItem { quantity }
+    ... on ProbabilisticBundleSlotPackItem { count }
+    ... on ProbabilisticBundleSlotConversionCreditItem { percentageDiscount }
+  }
+`;
+
 const M_OPEN = `
   mutation OpenNbaBundle($input: probabilisticBundlesOpenInput!) {
     probabilisticBundlesOpen(input: $input) {
       errors { message }
-      probabilisticBundle {
-        items {
-          __typename
-          ... on ProbabilisticBundleSlotCardItem { card { anyPlayer { displayName } } }
-          ... on ProbabilisticBundleSlotCardShardItem { quantity rarity }
-          ... on ProbabilisticBundleSlotInGameCurrencyItem { amount currency }
-        }
-      }
+      probabilisticBundle { ${PRIZE_ITEMS} }
     }
   }
 `;
@@ -67,16 +73,25 @@ const M_SPIN = `
   mutation SpinWheel($input: spinWheelInput!) {
     spinWheel(input: $input) {
       errors { message }
-      reward { id opened }
+      reward { id opened ${PRIZE_ITEMS} }
     }
   }
 `;
 
-const ITEM = (i) => {
-  if (i.__typename === 'ProbabilisticBundleSlotCardItem') return i.card?.anyPlayer?.displayName ?? 'a card';
-  if (i.quantity != null) return `${i.quantity} ${String(i.rarity).toLowerCase()} essence`;
-  if (i.amount != null) return `${i.amount} ${String(i.currency).toLowerCase().replace(/_/g, ' ')}`;
-  return i.__typename.replace(/^ProbabilisticBundleSlot|Item$/g, '').replace(/([a-z])([A-Z])/g, '$1 $2').toLowerCase();
+const CURRENCY = { WHEEL_TICKET: 'wheel ticket', GOLDEN_WHEEL_TICKET: 'golden wheel ticket', COMMON_GEM: 'gems' };
+export const ITEM = (i) => {
+  switch (i.__typename) {
+    case 'ProbabilisticBundleSlotCardItem': return `card: ${i.anyCard?.anyPlayer?.displayName ?? 'unknown player'}`;
+    case 'ProbabilisticBundleSlotCardShardItem': return `${i.quantity} ${String(i.rarity).toLowerCase()} essence`;
+    case 'ProbabilisticBundleSlotInGameCurrencyItem': {
+      const name = CURRENCY[i.currency] ?? String(i.currency).toLowerCase().replace(/_/g, ' ');
+      return `${i.amount} ${name}${i.amount === 1 || name.endsWith('s') ? '' : 's'}`;
+    }
+    case 'ProbabilisticBundleSlotArenaTicketItem': return `${i.quantity} arena ticket${i.quantity === 1 ? '' : 's'}`;
+    case 'ProbabilisticBundleSlotPackItem': return `${i.count} pack${i.count === 1 ? '' : 's'}`;
+    case 'ProbabilisticBundleSlotConversionCreditItem': return `${Math.round(i.percentageDiscount * 100)}% conversion credit`;
+    default: return i.__typename.replace(/^ProbabilisticBundleSlot|Item$/g, '').replace(/([a-z])([A-Z])/g, '$1 $2').toLowerCase();
+  }
 };
 
 async function openNbaBundles(out) {
@@ -147,7 +162,12 @@ export async function spinNbaWheel({ dryRun = false } = {}) {
                         { mutationName: 'spinWheel' });
     const errs = r.spinWheel?.errors ?? [];
     if (errs.length) out.errors.push(`spin: ${errs.map((e) => e.message).join('; ')}`);
-    else out.spun = true;
+    else {
+      out.spun = true;
+      // Sorare opens the prize as part of the spin, so read it from here;
+      // the open step below then finds nothing, which is why it was blank.
+      if (r.spinWheel?.reward?.opened) out.won.push(...(r.spinWheel.reward.items ?? []).map(ITEM));
+    }
   }
 
   // 3. Open whatever the wheel paid.

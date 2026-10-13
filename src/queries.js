@@ -317,7 +317,7 @@ export const M_OPEN_BUNDLE = `
       errors { message }
       probabilisticBundle {
         id opened
-        items { __typename ... on ProbabilisticBundleSlotCardItem { card { slug anyPlayer { displayName gameplayTier } } } }
+        items { __typename ... on ProbabilisticBundleSlotCardItem { card: anyCard { slug anyPlayer { displayName gameplayTier } } } }
       }
     }
   }
