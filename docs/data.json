@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T08:31:35.318Z",
+  "generatedAt": "2026-10-14T08:49:14.849Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 226
   },
   "schedule": {
-    "nextLock": "2026-10-14T16:45:00Z",
+    "nextLock": "2026-10-14T19:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1791966678868,
-    "reason": "last run 0m ago, next due in 60m (lock in 493m)"
+    "lastRunAt": 1791967736516,
+    "reason": "last run 0m ago, next due in 60m (lock in 611m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -81,68 +81,6 @@
         }
       ],
       "scored": 0
-    },
-    {
-      "surface": "team set (Loadshift)",
-      "level": 0,
-      "target": 700,
-      "stepState": "LINEUP_SET",
-      "collaborative": true,
-      "squadLineups": 6,
-      "squadScore": 1166.2714,
-      "lineupId": "Tasks::TaskLineup:b3798b0e-13b2-4de2-ae7c-6831203749f1",
-      "state": "READY",
-      "score": 347.86,
-      "finished": false,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Maarten Vandevoordt",
-          "slug": "maarten-vandevoordt",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 102,
-          "status": "FINAL",
-          "kickoff": "2026-10-17T16:30:00Z"
-        },
-        {
-          "name": "Renato Veiga",
-          "slug": "renato-de-palma-veiga",
-          "position": "Defender",
-          "captain": true,
-          "score": 68.53,
-          "status": "FINAL",
-          "kickoff": "2026-10-17T14:15:00Z"
-        },
-        {
-          "name": "Santi Comesaña",
-          "slug": "santiago-comesana-veiga",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 65.94,
-          "status": "FINAL",
-          "kickoff": "2026-10-17T14:15:00Z"
-        },
-        {
-          "name": "Álex Baena",
-          "slug": "alejandro-baena-rodriguez",
-          "position": "Forward",
-          "captain": false,
-          "score": 74.78,
-          "status": "FINAL",
-          "kickoff": "2026-10-17T12:00:00Z"
-        },
-        {
-          "name": "Antonio Nusa",
-          "slug": "antonio-eromonsele-nordby-nusa",
-          "position": "Forward",
-          "captain": false,
-          "score": 36.62,
-          "status": "FINAL",
-          "kickoff": "2026-10-17T16:30:00Z"
-        }
-      ],
-      "scored": 5
     },
     {
       "surface": "my set",
@@ -391,6 +329,68 @@
         }
       ],
       "scored": 3
+    },
+    {
+      "surface": "team set (Loadshift)",
+      "level": 0,
+      "target": 700,
+      "stepState": "CLAIMED",
+      "collaborative": true,
+      "squadLineups": 6,
+      "squadScore": 1166.2714,
+      "lineupId": "Tasks::TaskLineup:b3798b0e-13b2-4de2-ae7c-6831203749f1",
+      "state": "SUCCESSFUL",
+      "score": 347.86,
+      "finished": true,
+      "cleared": true,
+      "players": [
+        {
+          "name": "Maarten Vandevoordt",
+          "slug": "maarten-vandevoordt",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 102,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T16:30:00Z"
+        },
+        {
+          "name": "Renato Veiga",
+          "slug": "renato-de-palma-veiga",
+          "position": "Defender",
+          "captain": true,
+          "score": 68.53,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T14:15:00Z"
+        },
+        {
+          "name": "Santi Comesaña",
+          "slug": "santiago-comesana-veiga",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 65.94,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T14:15:00Z"
+        },
+        {
+          "name": "Álex Baena",
+          "slug": "alejandro-baena-rodriguez",
+          "position": "Forward",
+          "captain": false,
+          "score": 74.78,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T12:00:00Z"
+        },
+        {
+          "name": "Antonio Nusa",
+          "slug": "antonio-eromonsele-nordby-nusa",
+          "position": "Forward",
+          "captain": false,
+          "score": 36.62,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T16:30:00Z"
+        }
+      ],
+      "scored": 5
     }
   ],
   "gems": {
@@ -1163,186 +1163,34 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 382 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1166 so far.",
-      "tone": "good",
-      "lockAt": "2026-10-13T19:00:00Z",
+      "status": "No team entered. The best available is expected to make 326, 654 short of 980 - too far to risk a life. Checked again every pass as fixtures change.",
+      "tone": "warn",
+      "lockAt": "2026-10-14T19:00:00Z",
       "isSquad": true,
-      "entered": {
-        "five": [
-          {
-            "actual": 102,
-            "scoreStatus": "FINAL",
-            "teamSlug": "rb-leipzig-leipzig",
-            "name": "Maarten Vandevoordt",
-            "player": "Maarten Vandevoordt",
-            "slug": "maarten-vandevoordt",
-            "pos": "GK",
-            "position": "GK",
-            "pic": "https://assets.sorare.com/cardsamplepicture/14a419d8-5d77-4f75-8258-2910a2f906ea/picture/tinified-d8e982bf30beb7a61f444bb61800cd53.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/14a419d8-5d77-4f75-8258-2910a2f906ea/picture/tinified-d8e982bf30beb7a61f444bb61800cd53.png",
-            "captain": false,
-            "exp": 33.97,
-            "expected": 33.97,
-            "opp": "PSV Eindhoven",
-            "opponent": "PSV Eindhoven",
-            "home": true,
-            "average": 52,
-            "formL5": 38,
-            "intl": false,
-            "pWin": 0.548,
-            "pLose": 0.241,
-            "marketFactor": 1.057,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-13T19:00:00Z"
-          },
-          {
-            "actual": 68.53,
-            "scoreStatus": "FINAL",
-            "teamSlug": "villarreal-villarreal",
-            "name": "Renato Veiga",
-            "player": "Renato Veiga",
-            "slug": "renato-de-palma-veiga",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/52a7a606-d9e8-404a-ad71-d3cef34a8c2e/picture/tinified-942dd9d9d147d525ae66199b213992f4.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/52a7a606-d9e8-404a-ad71-d3cef34a8c2e/picture/tinified-942dd9d9d147d525ae66199b213992f4.png",
-            "captain": true,
-            "exp": 53.93,
-            "expected": 53.93,
-            "opp": "SSC Napoli",
-            "opponent": "SSC Napoli",
-            "home": true,
-            "average": 51,
-            "formL5": 51,
-            "intl": false,
-            "pWin": 0.446,
-            "pLose": 0.294,
-            "marketFactor": 1.017,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-13T19:00:00Z"
-          },
-          {
-            "actual": 65.94,
-            "scoreStatus": "FINAL",
-            "teamSlug": "villarreal-villarreal",
-            "name": "Santi Comesaña",
-            "player": "Santi Comesaña",
-            "slug": "santiago-comesana-veiga",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/bcf2d322-cec2-4d72-82ef-3e25ff46a800/picture/tinified-4f50182395280ff4746e459d9d4d078f.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/bcf2d322-cec2-4d72-82ef-3e25ff46a800/picture/tinified-4f50182395280ff4746e459d9d4d078f.png",
-            "captain": false,
-            "exp": 36.04,
-            "expected": 36.04,
-            "opp": "SSC Napoli",
-            "opponent": "SSC Napoli",
-            "home": true,
-            "average": 44,
-            "formL5": 49,
-            "intl": false,
-            "pWin": 0.446,
-            "pLose": 0.294,
-            "marketFactor": 1.014,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-13T19:00:00Z"
-          },
-          {
-            "actual": 74.78,
-            "scoreStatus": "FINAL",
-            "teamSlug": "atletico-madrid-madrid",
-            "name": "Álex Baena",
-            "player": "Álex Baena",
-            "slug": "alejandro-baena-rodriguez",
-            "pos": "FW",
-            "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
-            "captain": false,
-            "exp": 52.71,
-            "expected": 52.71,
-            "opp": "Manchester United FC",
-            "opponent": "Manchester United FC",
-            "home": true,
-            "average": 57,
-            "formL5": 57,
-            "intl": false,
-            "pWin": 0.5,
-            "pLose": 0.257,
-            "marketFactor": 1.022,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-13T19:00:00Z"
-          },
-          {
-            "actual": 36.62,
-            "scoreStatus": "FINAL",
-            "teamSlug": "rb-leipzig-leipzig",
-            "name": "Antonio Nusa",
-            "player": "Antonio Nusa",
-            "slug": "antonio-eromonsele-nordby-nusa",
-            "pos": "FW",
-            "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/5515a714-500e-4db9-947c-75e1cc1b6f22/picture/tinified-184a5e8a6db94a50cc792a4ff3f7f356.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/5515a714-500e-4db9-947c-75e1cc1b6f22/picture/tinified-184a5e8a6db94a50cc792a4ff3f7f356.png",
-            "captain": false,
-            "exp": 50.04,
-            "expected": 50.04,
-            "opp": "PSV Eindhoven",
-            "opponent": "PSV Eindhoven",
-            "home": true,
-            "average": 52,
-            "formL5": 50,
-            "intl": false,
-            "pWin": 0.548,
-            "pLose": 0.241,
-            "marketFactor": 1.029,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-13T19:00:00Z"
-          }
-        ],
-        "projected": 252.62,
-        "scoredSoFar": 382.13,
-        "played": 5,
-        "expectedFinal": 382.13
-      },
+      "entered": null,
       "poolStrength": {
         "strong": 2,
         "needed": 5
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 6,
+        "lineupsIn": 0,
         "needed": 3,
-        "scoreSoFar": 1166.2714
+        "scoreSoFar": 0
       },
-      "level": 0,
+      "level": 1,
       "lives": null,
       "totalLevels": 5,
-      "levelsDone": 0,
+      "levelsDone": 1,
       "ladder": [
         {
           "level": 0,
-          "state": "LINEUP_SET",
+          "state": "CLAIMED",
           "target": 700
         },
         {
           "level": 1,
-          "state": "LOCKED",
+          "state": "PLAYABLE",
           "target": 980
         },
         {
@@ -1369,50 +1217,19 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
-      "target": 700,
-      "current": [
-        {
-          "name": "Maarten Vandevoordt",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-17T16:30:00Z"
-        },
-        {
-          "name": "Renato Veiga",
-          "captain": true,
-          "locked": true,
-          "nextGame": "2026-10-17T14:15:00Z"
-        },
-        {
-          "name": "Santi Comesaña",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-17T14:15:00Z"
-        },
-        {
-          "name": "Álex Baena",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-17T12:00:00Z"
-        },
-        {
-          "name": "Antonio Nusa",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-17T16:30:00Z"
-        }
-      ],
+      "state": "PLAYABLE",
+      "target": 980,
+      "current": [],
       "plan": {
         "clearsTarget": false,
         "projected": 325.81,
         "lock": "2026-10-14T19:00:00Z",
-        "shortfall": 374.2,
+        "shortfall": 654.2,
         "tradedPointsForTime": 0,
         "captain": "federico-santiago-valverde-dipetta",
         "captainPoints": 30.16,
         "withinReach": false,
-        "enteredProjected": 252.62,
+        "enteredProjected": null,
         "five": [
           {
             "id": "ComposeTeamBenchCard:54e386b3-7eb7-40c6-83dc-10ebfe9894bd",
