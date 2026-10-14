@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-14T07:03:27.044Z",
+  "generatedAt": "2026-10-14T07:09:32.010Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 1500,
+    "essence": 2000,
     "gems": 226
   },
   "schedule": {
     "nextLock": "2026-10-14T16:45:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1791961384865,
-    "reason": "last run 0m ago, next due in 60m (lock in 582m)"
+    "lastRunAt": 1791961754642,
+    "reason": "last run 0m ago, next due in 60m (lock in 575m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -434,9 +434,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 766,
+        "progress": 767,
         "target": 860,
-        "remaining": 94,
+        "remaining": 93,
         "competition": null,
         "group": null,
         "teams": []
