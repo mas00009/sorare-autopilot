@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T17:59:59.686Z",
+  "generatedAt": "2026-10-14T18:05:52.739Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-14T19:00:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1792000782114,
-    "reason": "last run 0m ago, next due in 5m (lock in 60m)"
+    "lastRunAt": 1792001135382,
+    "reason": "last run 0m ago, next due in 5m (lock in 54m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:95ad91d8-d138-4438-876a-1803237210b4",
       "state": "READY",
-      "score": 0,
+      "score": 162.75,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,8 +39,8 @@
           "slug": "zion-suzuki",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         },
         {
@@ -48,8 +48,8 @@
           "slug": "ruben-santos-gato-alves-dias",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 35.7,
+          "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         },
         {
@@ -57,8 +57,8 @@
           "slug": "federico-santiago-valverde-dipetta",
           "position": "Midfielder",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 54.25,
+          "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         },
         {
@@ -75,12 +75,12 @@
           "slug": "jude-bellingham",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 4
     },
     {
       "surface": "team set (Loadshift)",
@@ -89,10 +89,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 176.904,
+      "squadScore": 648.9,
       "lineupId": "Tasks::TaskLineup:572d3890-730c-458f-819f-3f2bd192a3a3",
       "state": "READY",
-      "score": 0,
+      "score": 162.75,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,8 +101,8 @@
           "slug": "zion-suzuki",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         },
         {
@@ -110,8 +110,8 @@
           "slug": "ruben-santos-gato-alves-dias",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 35.7,
+          "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         },
         {
@@ -119,8 +119,8 @@
           "slug": "federico-santiago-valverde-dipetta",
           "position": "Midfielder",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 54.25,
+          "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         },
         {
@@ -137,12 +137,12 @@
           "slug": "jude-bellingham",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 4
     },
     {
       "surface": "my set",
@@ -278,7 +278,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:f711f998-0859-404d-95c9-6177fca9376b",
       "state": "CANCELLED",
-      "score": 0,
+      "score": 163.8,
       "finished": true,
       "cleared": false,
       "players": [
@@ -287,8 +287,8 @@
           "slug": "zion-suzuki",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         },
         {
@@ -296,8 +296,8 @@
           "slug": "natan-bernardo-de-souza",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         },
         {
@@ -305,8 +305,8 @@
           "slug": "jude-bellingham",
           "position": "Midfielder",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 54.25,
+          "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         },
         {
@@ -323,12 +323,12 @@
           "slug": "federico-santiago-valverde-dipetta",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 4
     },
     {
       "surface": "my set",
@@ -340,7 +340,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:bde227e7-c3ce-4183-8b6b-f3327c54560d",
       "state": "CANCELLED",
-      "score": 213.39,
+      "score": 302.64,
       "finished": true,
       "cleared": false,
       "players": [
@@ -358,8 +358,8 @@
           "slug": "ruben-santos-gato-alves-dias",
           "position": "Defender",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 53.2,
+          "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         },
         {
@@ -367,8 +367,8 @@
           "slug": "jobe-bellingham",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-14T19:00:00Z"
         },
         {
@@ -390,7 +390,7 @@
           "kickoff": "2026-10-17T16:30:00Z"
         }
       ],
-      "scored": 3
+      "scored": 5
     },
     {
       "surface": "team set (Loadshift)",
@@ -573,15 +573,15 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Team entered, locks Thu 06:00 am Sydney. Expected about 326; needs 300 (26 over). It keeps being updated until it locks.",
-      "tone": "good",
+      "status": "Locked and playing. 190 scored so far, 4 of 5 played. On course for about 249; needs 300 (51 short).",
+      "tone": "warn",
       "lockAt": "2026-10-14T19:00:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "aston-villa-birmingham",
             "name": "Zion Suzuki",
             "player": "Zion Suzuki",
@@ -609,8 +609,8 @@
             "kickoff": "2026-10-14T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 35.7,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "manchester-city-manchester",
             "name": "Rúben Dias",
             "player": "Rúben Dias",
@@ -638,8 +638,8 @@
             "kickoff": "2026-10-14T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 54.25,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Federico Valverde",
             "player": "Federico Valverde",
@@ -696,8 +696,8 @@
             "kickoff": "2026-10-14T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Jude Bellingham",
             "player": "Jude Bellingham",
@@ -726,9 +726,9 @@
           }
         ],
         "projected": 325.94,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 327.45
+        "scoredSoFar": 189.88,
+        "played": 4,
+        "expectedFinal": 248.59
       },
       "poolStrength": {
         "strong": 9,
@@ -954,7 +954,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 64,
             "picture": "https://assets.sorare.com/cardsamplepicture/a8a26c8a-febb-40b6-ae44-9fbc3ae712d9/picture/tinified-c86aeea618900089587276c64bd04a57.png",
@@ -993,7 +993,7 @@
             "starterPct": null,
             "startRate": 0.8,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 51,
             "picture": "https://assets.sorare.com/cardsamplepicture/bb650e5e-66b3-47f5-a7e6-6c6e6a757d56/picture/tinified-38b786c00dab44fc29ee15fc3a961b56.png",
@@ -1152,7 +1152,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 64,
           "picture": "https://assets.sorare.com/cardsamplepicture/a8a26c8a-febb-40b6-ae44-9fbc3ae712d9/picture/tinified-c86aeea618900089587276c64bd04a57.png",
@@ -1191,7 +1191,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 51,
           "picture": "https://assets.sorare.com/cardsamplepicture/bb650e5e-66b3-47f5-a7e6-6c6e6a757d56/picture/tinified-38b786c00dab44fc29ee15fc3a961b56.png",
@@ -1225,15 +1225,15 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Team entered, locks Thu 06:00 am Sydney. The squad's top three lineups together need 980; this one is expected to add about 326.",
+      "status": "Locked and playing. 190 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 649 so far.",
       "tone": "good",
       "lockAt": "2026-10-14T19:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "aston-villa-birmingham",
             "name": "Zion Suzuki",
             "player": "Zion Suzuki",
@@ -1261,8 +1261,8 @@
             "kickoff": "2026-10-14T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 35.7,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "manchester-city-manchester",
             "name": "Rúben Dias",
             "player": "Rúben Dias",
@@ -1290,8 +1290,8 @@
             "kickoff": "2026-10-14T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 54.25,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Federico Valverde",
             "player": "Federico Valverde",
@@ -1348,8 +1348,8 @@
             "kickoff": "2026-10-14T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Jude Bellingham",
             "player": "Jude Bellingham",
@@ -1378,9 +1378,9 @@
           }
         ],
         "projected": 325.81,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 327.31
+        "scoredSoFar": 189.88,
+        "played": 4,
+        "expectedFinal": 248.62
       },
       "poolStrength": {
         "strong": 1,
@@ -1390,7 +1390,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 176.904
+        "scoreSoFar": 648.9
       },
       "level": 1,
       "lives": null,
@@ -1486,7 +1486,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 64,
             "picture": "https://assets.sorare.com/cardsamplepicture/a8a26c8a-febb-40b6-ae44-9fbc3ae712d9/picture/tinified-c86aeea618900089587276c64bd04a57.png",
@@ -1525,7 +1525,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 53,
             "picture": "https://assets.sorare.com/cardsamplepicture/57436ab3-40cd-44f1-aa75-52fceda9a50a/picture/tinified-227bf23d25d50928b9427c3151ed7ee0.png",
@@ -1564,7 +1564,7 @@
             "starterPct": null,
             "startRate": 0.8,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 57,
             "picture": "https://assets.sorare.com/cardsamplepicture/b5bff151-85db-49d9-97fa-d3efd1bbe987/picture/tinified-a94f1f74feffed627b30c76e6a6e43d1.png",
@@ -1603,7 +1603,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 52,
             "picture": "https://assets.sorare.com/cardsamplepicture/17e6c169-6407-43c4-af91-f50fd1f2a79e/picture/tinified-c12f4473ee6fb7babdd59fb754d02b7a.png",
@@ -1642,7 +1642,7 @@
             "starterPct": null,
             "startRate": 0.7,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 57,
             "picture": "https://assets.sorare.com/cardsamplepicture/64ab743e-f205-4ff8-969a-0ca348e035df/picture/tinified-0c91b20001cea7bf5852aa7e58c1f739.png",
@@ -1684,7 +1684,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 64,
           "picture": "https://assets.sorare.com/cardsamplepicture/a8a26c8a-febb-40b6-ae44-9fbc3ae712d9/picture/tinified-c86aeea618900089587276c64bd04a57.png",
@@ -1723,7 +1723,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 53,
           "picture": "https://assets.sorare.com/cardsamplepicture/57436ab3-40cd-44f1-aa75-52fceda9a50a/picture/tinified-227bf23d25d50928b9427c3151ed7ee0.png",
@@ -1762,7 +1762,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 57,
           "picture": "https://assets.sorare.com/cardsamplepicture/b5bff151-85db-49d9-97fa-d3efd1bbe987/picture/tinified-a94f1f74feffed627b30c76e6a6e43d1.png",
@@ -1801,7 +1801,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 52,
           "picture": "https://assets.sorare.com/cardsamplepicture/17e6c169-6407-43c4-af91-f50fd1f2a79e/picture/tinified-c12f4473ee6fb7babdd59fb754d02b7a.png",
@@ -1840,7 +1840,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 57,
           "picture": "https://assets.sorare.com/cardsamplepicture/64ab743e-f205-4ff8-969a-0ca348e035df/picture/tinified-0c91b20001cea7bf5852aa7e58c1f739.png",
