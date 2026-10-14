@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T20:54:06.722Z",
+  "generatedAt": "2026-10-14T20:59:24.912Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-14T19:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792003594871,
-    "reason": "last run 128m ago, next due in 52m"
+    "reason": "last run 133m ago, next due in 47m"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -24,13 +24,13 @@
       "surface": "my set",
       "level": 1,
       "target": 300,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:95ad91d8-d138-4438-876a-1803237210b4",
       "state": "READY",
-      "score": 213.22,
+      "score": 217.87,
       "finished": false,
       "cleared": false,
       "players": [
@@ -40,7 +40,7 @@
           "position": "Goalkeeper",
           "captain": false,
           "score": 78.8,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-17T16:30:00Z"
         },
         {
@@ -57,7 +57,7 @@
           "slug": "federico-santiago-valverde-dipetta",
           "position": "Midfielder",
           "captain": true,
-          "score": 63.24,
+          "score": 67.89,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T19:00:00Z"
         },
@@ -67,7 +67,7 @@
           "position": "Forward",
           "captain": false,
           "score": 0,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-17T16:30:00Z"
         },
         {
@@ -80,19 +80,19 @@
           "kickoff": "2026-10-18T19:00:00Z"
         }
       ],
-      "scored": 4
+      "scored": 5
     },
     {
       "surface": "team set (Loadshift)",
       "level": 1,
       "target": 980,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
       "squadScore": 982.318,
       "lineupId": "Tasks::TaskLineup:572d3890-730c-458f-819f-3f2bd192a3a3",
       "state": "READY",
-      "score": 213.22,
+      "score": 217.87,
       "finished": false,
       "cleared": true,
       "players": [
@@ -102,7 +102,7 @@
           "position": "Goalkeeper",
           "captain": false,
           "score": 78.8,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-17T16:30:00Z"
         },
         {
@@ -119,7 +119,7 @@
           "slug": "federico-santiago-valverde-dipetta",
           "position": "Midfielder",
           "captain": true,
-          "score": 63.24,
+          "score": 67.89,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T19:00:00Z"
         },
@@ -129,7 +129,7 @@
           "position": "Forward",
           "captain": false,
           "score": 0,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-17T16:30:00Z"
         },
         {
@@ -142,7 +142,7 @@
           "kickoff": "2026-10-18T19:00:00Z"
         }
       ],
-      "scored": 4
+      "scored": 5
     },
     {
       "surface": "my set",
@@ -278,7 +278,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:f711f998-0859-404d-95c9-6177fca9376b",
       "state": "CANCELLED",
-      "score": 199.16,
+      "score": 202.84,
       "finished": true,
       "cleared": false,
       "players": [
@@ -288,7 +288,7 @@
           "position": "Goalkeeper",
           "captain": false,
           "score": 78.8,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-17T16:30:00Z"
         },
         {
@@ -296,7 +296,7 @@
           "slug": "natan-bernardo-de-souza",
           "position": "Defender",
           "captain": false,
-          "score": 18.94,
+          "score": 19.47,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T16:30:00Z"
         },
@@ -315,7 +315,7 @@
           "position": "Forward",
           "captain": false,
           "score": 0,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-17T16:30:00Z"
         },
         {
@@ -323,12 +323,12 @@
           "slug": "federico-santiago-valverde-dipetta",
           "position": "Midfielder",
           "captain": false,
-          "score": 42.84,
+          "score": 45.99,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T19:00:00Z"
         }
       ],
-      "scored": 4
+      "scored": 5
     },
     {
       "surface": "my set",
@@ -368,7 +368,7 @@
           "position": "Midfielder",
           "captain": false,
           "score": 74.57,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-17T13:30:00Z"
         },
         {
@@ -573,15 +573,15 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 245 scored so far, 4 of 5 played. On course for about 304; needs 300 (4 over).",
-      "tone": "good",
+      "status": "Locked and playing. 252 scored so far, 5 of 5 played. On course for about 252; needs 300 (48 short).",
+      "tone": "warn",
       "lockAt": "2026-10-14T19:00:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
             "actual": 78.8,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "aston-villa-birmingham",
             "name": "Zion Suzuki",
             "player": "Zion Suzuki",
@@ -638,7 +638,7 @@
             "kickoff": "2026-10-14T19:00:00Z"
           },
           {
-            "actual": 63.24,
+            "actual": 67.89,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Federico Valverde",
@@ -667,8 +667,8 @@
             "kickoff": "2026-10-14T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "REVIEWING",
+            "actual": 0,
+            "scoreStatus": "FINAL",
             "teamSlug": "aston-villa-birmingham",
             "name": "Emiliano Buendía",
             "player": "Emiliano Buendía",
@@ -726,9 +726,9 @@
           }
         ],
         "projected": 325.94,
-        "scoredSoFar": 244.85,
-        "played": 4,
-        "expectedFinal": 303.56
+        "scoredSoFar": 251.82,
+        "played": 5,
+        "expectedFinal": 251.82
       },
       "poolStrength": {
         "strong": 8,
@@ -751,7 +751,7 @@
         },
         {
           "level": 1,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 300
         },
         {
@@ -782,7 +782,7 @@
           "rarity": "common"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 300,
       "current": [
         {
@@ -1225,7 +1225,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 245 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 982 so far.",
+      "status": "Locked and playing. 252 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 982 so far.",
       "tone": "good",
       "lockAt": "2026-10-14T19:00:00Z",
       "isSquad": true,
@@ -1233,7 +1233,7 @@
         "five": [
           {
             "actual": 78.8,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "aston-villa-birmingham",
             "name": "Zion Suzuki",
             "player": "Zion Suzuki",
@@ -1290,7 +1290,7 @@
             "kickoff": "2026-10-14T19:00:00Z"
           },
           {
-            "actual": 63.24,
+            "actual": 67.89,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Federico Valverde",
@@ -1319,8 +1319,8 @@
             "kickoff": "2026-10-14T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "REVIEWING",
+            "actual": 0,
+            "scoreStatus": "FINAL",
             "teamSlug": "aston-villa-birmingham",
             "name": "Emiliano Buendía",
             "player": "Emiliano Buendía",
@@ -1378,9 +1378,9 @@
           }
         ],
         "projected": 325.81,
-        "scoredSoFar": 244.85,
-        "played": 4,
-        "expectedFinal": 303.59
+        "scoredSoFar": 251.82,
+        "played": 5,
+        "expectedFinal": 251.82
       },
       "poolStrength": {
         "strong": 0,
@@ -1404,7 +1404,7 @@
         },
         {
           "level": 1,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 980
         },
         {
@@ -1431,7 +1431,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 980,
       "current": [
         {
