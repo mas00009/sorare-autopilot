@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T07:09:32.010Z",
+  "generatedAt": "2026-10-14T07:15:23.538Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-14T16:45:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1791961754642,
-    "reason": "last run 0m ago, next due in 60m (lock in 575m)"
+    "lastRunAt": 1791962106870,
+    "reason": "last run 0m ago, next due in 60m (lock in 570m)"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -434,11 +434,21 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 767,
+        "progress": 773,
         "target": 860,
-        "remaining": 93,
+        "remaining": 87,
         "competition": null,
         "group": null,
+        "teams": []
+      },
+      {
+        "title": "Collect English players in English League",
+        "gems": 5,
+        "progress": 50,
+        "target": 77,
+        "remaining": 27,
+        "competition": "English League Players",
+        "group": "glitch-premier-league",
         "teams": []
       },
       {
@@ -458,9 +468,9 @@
       {
         "title": "Collect Goalkeepers",
         "gems": 10,
-        "progress": 92,
+        "progress": 94,
         "target": 112,
-        "remaining": 20,
+        "remaining": 18,
         "competition": null,
         "group": null,
         "teams": []
@@ -468,9 +478,9 @@
       {
         "title": "Collect Spanish players in LaLiga",
         "gems": 30,
-        "progress": 221,
+        "progress": 223,
         "target": 279,
-        "remaining": 58,
+        "remaining": 56,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": []
@@ -482,7 +492,7 @@
     },
     "ladderGemsAhead": 40,
     "ladderCashAhead": 1100,
-    "collectionGemsOpen": 80
+    "collectionGemsOpen": 85
   },
   "odds": {
     "configured": true,
@@ -659,7 +669,7 @@
         "expectedFinal": 327.45
       },
       "poolStrength": {
-        "strong": 8,
+        "strong": 9,
         "needed": 5
       },
       "collaborative": false,
@@ -1311,7 +1321,7 @@
         "expectedFinal": 382.13
       },
       "poolStrength": {
-        "strong": 1,
+        "strong": 2,
         "needed": 5
       },
       "collaborative": true,
