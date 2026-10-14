@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T20:16:56.818Z",
+  "generatedAt": "2026-10-14T20:22:14.854Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-14T19:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792003594871,
-    "reason": "last run 90m ago, next due in 90m"
+    "reason": "last run 96m ago, next due in 84m"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:95ad91d8-d138-4438-876a-1803237210b4",
       "state": "READY",
-      "score": 192.42,
+      "score": 213.7,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "zion-suzuki",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 50.47,
+          "score": 76.84,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T16:30:00Z"
         },
@@ -57,7 +57,7 @@
           "slug": "federico-santiago-valverde-dipetta",
           "position": "Midfielder",
           "captain": true,
-          "score": 65.1,
+          "score": 62,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T19:00:00Z"
         },
@@ -75,7 +75,7 @@
           "slug": "jude-bellingham",
           "position": "Midfielder",
           "captain": false,
-          "score": 45.36,
+          "score": 43.37,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T19:00:00Z"
         }
@@ -89,10 +89,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 869.8914,
+      "squadScore": 880.164,
       "lineupId": "Tasks::TaskLineup:572d3890-730c-458f-819f-3f2bd192a3a3",
       "state": "READY",
-      "score": 192.42,
+      "score": 213.7,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,7 +101,7 @@
           "slug": "zion-suzuki",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 50.47,
+          "score": 76.84,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T16:30:00Z"
         },
@@ -119,7 +119,7 @@
           "slug": "federico-santiago-valverde-dipetta",
           "position": "Midfielder",
           "captain": true,
-          "score": 65.1,
+          "score": 62,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T19:00:00Z"
         },
@@ -137,7 +137,7 @@
           "slug": "jude-bellingham",
           "position": "Midfielder",
           "captain": false,
-          "score": 45.36,
+          "score": 43.37,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T19:00:00Z"
         }
@@ -278,7 +278,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:bde227e7-c3ce-4183-8b6b-f3327c54560d",
       "state": "CANCELLED",
-      "score": 320.38,
+      "score": 323.88,
       "finished": true,
       "cleared": false,
       "players": [
@@ -305,7 +305,7 @@
           "slug": "jobe-bellingham",
           "position": "Midfielder",
           "captain": false,
-          "score": 60.05,
+          "score": 63.55,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T13:30:00Z"
         },
@@ -340,7 +340,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:f711f998-0859-404d-95c9-6177fca9376b",
       "state": "CANCELLED",
-      "score": 181.37,
+      "score": 202.86,
       "finished": true,
       "cleared": false,
       "players": [
@@ -349,7 +349,7 @@
           "slug": "zion-suzuki",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 50.47,
+          "score": 76.84,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T16:30:00Z"
         },
@@ -358,7 +358,7 @@
           "slug": "natan-bernardo-de-souza",
           "position": "Defender",
           "captain": false,
-          "score": 19.85,
+          "score": 20.01,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T16:30:00Z"
         },
@@ -367,7 +367,7 @@
           "slug": "jude-bellingham",
           "position": "Midfielder",
           "captain": true,
-          "score": 66.96,
+          "score": 64.02,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T19:00:00Z"
         },
@@ -385,7 +385,7 @@
           "slug": "federico-santiago-valverde-dipetta",
           "position": "Midfielder",
           "captain": false,
-          "score": 44.1,
+          "score": 42,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T19:00:00Z"
         }
@@ -573,14 +573,14 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 225 scored so far, 4 of 5 played. On course for about 284; needs 300 (16 short).",
-      "tone": "warn",
+      "status": "Locked and playing. 245 scored so far, 4 of 5 played. On course for about 303; needs 300 (3 over).",
+      "tone": "good",
       "lockAt": "2026-10-14T19:00:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": 50.47,
+            "actual": 76.84,
             "scoreStatus": "REVIEWING",
             "teamSlug": "aston-villa-birmingham",
             "name": "Zion Suzuki",
@@ -638,7 +638,7 @@
             "kickoff": "2026-10-14T19:00:00Z"
           },
           {
-            "actual": 65.1,
+            "actual": 62,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Federico Valverde",
@@ -696,7 +696,7 @@
             "kickoff": "2026-10-14T19:00:00Z"
           },
           {
-            "actual": 45.36,
+            "actual": 43.37,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Jude Bellingham",
@@ -726,9 +726,9 @@
           }
         ],
         "projected": 325.94,
-        "scoredSoFar": 224.98,
+        "scoredSoFar": 244.71,
         "played": 4,
-        "expectedFinal": 283.69
+        "expectedFinal": 303.42
       },
       "poolStrength": {
         "strong": 8,
@@ -1225,14 +1225,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 225 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 870 so far.",
+      "status": "Locked and playing. 245 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 880 so far.",
       "tone": "good",
       "lockAt": "2026-10-14T19:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 50.47,
+            "actual": 76.84,
             "scoreStatus": "REVIEWING",
             "teamSlug": "aston-villa-birmingham",
             "name": "Zion Suzuki",
@@ -1290,7 +1290,7 @@
             "kickoff": "2026-10-14T19:00:00Z"
           },
           {
-            "actual": 65.1,
+            "actual": 62,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Federico Valverde",
@@ -1348,7 +1348,7 @@
             "kickoff": "2026-10-14T19:00:00Z"
           },
           {
-            "actual": 45.36,
+            "actual": 43.37,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Jude Bellingham",
@@ -1378,9 +1378,9 @@
           }
         ],
         "projected": 325.81,
-        "scoredSoFar": 224.98,
+        "scoredSoFar": 244.71,
         "played": 4,
-        "expectedFinal": 283.72
+        "expectedFinal": 303.45
       },
       "poolStrength": {
         "strong": 0,
@@ -1390,7 +1390,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 869.8914
+        "scoreSoFar": 880.164
       },
       "level": 1,
       "lives": null,
