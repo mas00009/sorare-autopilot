@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T20:59:24.912Z",
+  "generatedAt": "2026-10-14T21:04:43.034Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-14T19:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792003594871,
-    "reason": "last run 133m ago, next due in 47m"
+    "reason": "last run 138m ago, next due in 42m"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -20,68 +20,6 @@
     "failStreak": 0
   },
   "results": [
-    {
-      "surface": "my set",
-      "level": 1,
-      "target": 300,
-      "stepState": "LINEUP_SET",
-      "collaborative": false,
-      "squadLineups": null,
-      "squadScore": null,
-      "lineupId": "Tasks::TaskLineup:95ad91d8-d138-4438-876a-1803237210b4",
-      "state": "READY",
-      "score": 217.87,
-      "finished": false,
-      "cleared": false,
-      "players": [
-        {
-          "name": "Zion Suzuki",
-          "slug": "zion-suzuki",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 78.8,
-          "status": "FINAL",
-          "kickoff": "2026-10-17T16:30:00Z"
-        },
-        {
-          "name": "Rúben Dias",
-          "slug": "ruben-santos-gato-alves-dias",
-          "position": "Defender",
-          "captain": false,
-          "score": 31.5,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-17T14:00:00Z"
-        },
-        {
-          "name": "Federico Valverde",
-          "slug": "federico-santiago-valverde-dipetta",
-          "position": "Midfielder",
-          "captain": true,
-          "score": 67.89,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-18T19:00:00Z"
-        },
-        {
-          "name": "Emiliano Buendía",
-          "slug": "emiliano-buendia",
-          "position": "Forward",
-          "captain": false,
-          "score": 0,
-          "status": "FINAL",
-          "kickoff": "2026-10-17T16:30:00Z"
-        },
-        {
-          "name": "Jude Bellingham",
-          "slug": "jude-bellingham",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 39.69,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-18T19:00:00Z"
-        }
-      ],
-      "scored": 5
-    },
     {
       "surface": "team set (Loadshift)",
       "level": 1,
@@ -111,7 +49,7 @@
           "position": "Defender",
           "captain": false,
           "score": 31.5,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-17T14:00:00Z"
         },
         {
@@ -120,7 +58,7 @@
           "position": "Midfielder",
           "captain": true,
           "score": 67.89,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-18T19:00:00Z"
         },
         {
@@ -138,7 +76,69 @@
           "position": "Midfielder",
           "captain": false,
           "score": 39.69,
-          "status": "REVIEWING",
+          "status": "FINAL",
+          "kickoff": "2026-10-18T19:00:00Z"
+        }
+      ],
+      "scored": 5
+    },
+    {
+      "surface": "my set",
+      "level": 1,
+      "target": 300,
+      "stepState": "LINEUP_SET",
+      "collaborative": false,
+      "squadLineups": null,
+      "squadScore": null,
+      "lineupId": "Tasks::TaskLineup:95ad91d8-d138-4438-876a-1803237210b4",
+      "state": "FAILED",
+      "score": 217.87,
+      "finished": true,
+      "cleared": false,
+      "players": [
+        {
+          "name": "Zion Suzuki",
+          "slug": "zion-suzuki",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 78.8,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T16:30:00Z"
+        },
+        {
+          "name": "Rúben Dias",
+          "slug": "ruben-santos-gato-alves-dias",
+          "position": "Defender",
+          "captain": false,
+          "score": 31.5,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T14:00:00Z"
+        },
+        {
+          "name": "Federico Valverde",
+          "slug": "federico-santiago-valverde-dipetta",
+          "position": "Midfielder",
+          "captain": true,
+          "score": 67.89,
+          "status": "FINAL",
+          "kickoff": "2026-10-18T19:00:00Z"
+        },
+        {
+          "name": "Emiliano Buendía",
+          "slug": "emiliano-buendia",
+          "position": "Forward",
+          "captain": false,
+          "score": 0,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T16:30:00Z"
+        },
+        {
+          "name": "Jude Bellingham",
+          "slug": "jude-bellingham",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 39.69,
+          "status": "FINAL",
           "kickoff": "2026-10-18T19:00:00Z"
         }
       ],
@@ -297,7 +297,7 @@
           "position": "Defender",
           "captain": false,
           "score": 19.47,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-17T16:30:00Z"
         },
         {
@@ -306,7 +306,7 @@
           "position": "Midfielder",
           "captain": true,
           "score": 58.59,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-18T19:00:00Z"
         },
         {
@@ -324,7 +324,7 @@
           "position": "Midfielder",
           "captain": false,
           "score": 45.99,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-18T19:00:00Z"
         }
       ],
@@ -359,7 +359,7 @@
           "position": "Defender",
           "captain": true,
           "score": 46.94,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-17T14:00:00Z"
         },
         {
@@ -573,165 +573,13 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 252 scored so far, 5 of 5 played. On course for about 252; needs 300 (48 short).",
-      "tone": "warn",
-      "lockAt": "2026-10-14T19:00:00Z",
+      "status": "No team in yet. The next pass enters the best available, expected about 365 against 300.",
+      "tone": "neutral",
+      "lockAt": "2026-10-15T19:00:00Z",
       "isSquad": false,
-      "entered": {
-        "five": [
-          {
-            "actual": 78.8,
-            "scoreStatus": "FINAL",
-            "teamSlug": "aston-villa-birmingham",
-            "name": "Zion Suzuki",
-            "player": "Zion Suzuki",
-            "slug": "zion-suzuki",
-            "pos": "GK",
-            "position": "GK",
-            "pic": "https://assets.sorare.com/cardsamplepicture/5c1b2cb2-6b15-4016-8e17-e4daa4221290/picture/tinified-596d7f1653c75ea02cd01a3829b1fafe.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/5c1b2cb2-6b15-4016-8e17-e4daa4221290/picture/tinified-596d7f1653c75ea02cd01a3829b1fafe.png",
-            "captain": false,
-            "exp": 56.35,
-            "expected": 56.35,
-            "opp": "Fenerbahçe Spor Kulübü",
-            "opponent": "Fenerbahçe Spor Kulübü",
-            "home": true,
-            "average": 54,
-            "formL5": 59,
-            "intl": false,
-            "pWin": 0.578,
-            "pLose": 0.189,
-            "marketFactor": 1.076,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-14T19:00:00Z"
-          },
-          {
-            "actual": 31.5,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "manchester-city-manchester",
-            "name": "Rúben Dias",
-            "player": "Rúben Dias",
-            "slug": "ruben-santos-gato-alves-dias",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/51ec3fca-50ff-4975-a5a2-1a83b5c833f0/picture/tinified-7a37453263600d888145da54b161fb7d.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/51ec3fca-50ff-4975-a5a2-1a83b5c833f0/picture/tinified-7a37453263600d888145da54b161fb7d.png",
-            "captain": false,
-            "exp": 58.34,
-            "expected": 58.34,
-            "opp": "Paris Saint-Germain",
-            "opponent": "Paris Saint-Germain",
-            "home": true,
-            "average": 56,
-            "formL5": 57,
-            "intl": false,
-            "pWin": 0.442,
-            "pLose": 0.321,
-            "marketFactor": 1.012,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-14T19:00:00Z"
-          },
-          {
-            "actual": 67.89,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "real-madrid-madrid",
-            "name": "Federico Valverde",
-            "player": "Federico Valverde",
-            "slug": "federico-santiago-valverde-dipetta",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/6ec8824f-8d96-4992-ab6b-4190fa361ea4/picture/tinified-968cbc3d20b6062624831e4f1d473e3d.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/6ec8824f-8d96-4992-ab6b-4190fa361ea4/picture/tinified-968cbc3d20b6062624831e4f1d473e3d.png",
-            "captain": true,
-            "exp": 63.42,
-            "expected": 63.42,
-            "opp": "AS Roma",
-            "opponent": "AS Roma",
-            "home": false,
-            "average": 56,
-            "formL5": 62,
-            "intl": false,
-            "pWin": 0.502,
-            "pLose": 0.26,
-            "marketFactor": 1.024,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-14T19:00:00Z"
-          },
-          {
-            "actual": 0,
-            "scoreStatus": "FINAL",
-            "teamSlug": "aston-villa-birmingham",
-            "name": "Emiliano Buendía",
-            "player": "Emiliano Buendía",
-            "slug": "emiliano-buendia",
-            "pos": "FW",
-            "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/fc7c6891-6864-48f4-8d75-592f5782333e/picture/tinified-7ca33683a069ad99e5fc888f47e7d30a.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/fc7c6891-6864-48f4-8d75-592f5782333e/picture/tinified-7ca33683a069ad99e5fc888f47e7d30a.png",
-            "captain": false,
-            "exp": 58.71,
-            "expected": 58.71,
-            "opp": "Fenerbahçe Spor Kulübü",
-            "opponent": "Fenerbahçe Spor Kulübü",
-            "home": true,
-            "average": 57,
-            "formL5": 53,
-            "intl": false,
-            "pWin": 0.578,
-            "pLose": 0.189,
-            "marketFactor": 1.036,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-14T19:00:00Z"
-          },
-          {
-            "actual": 39.69,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "real-madrid-madrid",
-            "name": "Jude Bellingham",
-            "player": "Jude Bellingham",
-            "slug": "jude-bellingham",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/fe3313a1-5c73-436d-a698-dbc049dee59b/picture/tinified-61dbd25acb89afe827003670d06ba75a.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/fe3313a1-5c73-436d-a698-dbc049dee59b/picture/tinified-61dbd25acb89afe827003670d06ba75a.png",
-            "captain": false,
-            "exp": 58.92,
-            "expected": 58.92,
-            "opp": "AS Roma",
-            "opponent": "AS Roma",
-            "home": false,
-            "average": 65,
-            "formL5": 61,
-            "intl": false,
-            "pWin": 0.502,
-            "pLose": 0.26,
-            "marketFactor": 1.024,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-14T19:00:00Z"
-          }
-        ],
-        "projected": 325.94,
-        "scoredSoFar": 251.82,
-        "played": 5,
-        "expectedFinal": 251.82
-      },
+      "entered": null,
       "poolStrength": {
-        "strong": 8,
+        "strong": 9,
         "needed": 5
       },
       "collaborative": false,
@@ -821,11 +669,11 @@
         "projected": 365.4,
         "lock": "2026-10-15T19:00:00Z",
         "shortfall": null,
-        "tradedPointsForTime": 18.9,
+        "tradedPointsForTime": 19.3,
         "captain": "cristian-sleiker-casseres-yepes",
         "captainPoints": 38.06,
         "withinReach": true,
-        "enteredProjected": 325.94,
+        "enteredProjected": null,
         "five": [
           {
             "id": "ComposeTeamBenchCard:6f868d5a-36ed-4efd-b8fe-fd80e46ce31a",
@@ -1221,7 +1069,7 @@
           "blocked": null
         }
       ],
-      "projected": 349.4
+      "projected": 351.3
     },
     {
       "surface": "team set (Loadshift)",
@@ -1262,7 +1110,7 @@
           },
           {
             "actual": 31.5,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "manchester-city-manchester",
             "name": "Rúben Dias",
             "player": "Rúben Dias",
@@ -1291,7 +1139,7 @@
           },
           {
             "actual": 67.89,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "real-madrid-madrid",
             "name": "Federico Valverde",
             "player": "Federico Valverde",
@@ -1349,7 +1197,7 @@
           },
           {
             "actual": 39.69,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "real-madrid-madrid",
             "name": "Jude Bellingham",
             "player": "Jude Bellingham",
