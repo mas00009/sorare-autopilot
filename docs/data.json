@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T20:27:33.489Z",
+  "generatedAt": "2026-10-14T20:32:53.923Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-14T19:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792003594871,
-    "reason": "last run 101m ago, next due in 79m"
+    "reason": "last run 106m ago, next due in 74m"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:95ad91d8-d138-4438-876a-1803237210b4",
       "state": "READY",
-      "score": 213.13,
+      "score": 215.33,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "zion-suzuki",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 76.84,
+          "score": 76.94,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T16:30:00Z"
         },
@@ -75,7 +75,7 @@
           "slug": "jude-bellingham",
           "position": "Midfielder",
           "captain": false,
-          "score": 43.58,
+          "score": 45.68,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T19:00:00Z"
         }
@@ -89,10 +89,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 896.999,
+      "squadScore": 905.0298,
       "lineupId": "Tasks::TaskLineup:572d3890-730c-458f-819f-3f2bd192a3a3",
       "state": "READY",
-      "score": 213.13,
+      "score": 215.33,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,7 +101,7 @@
           "slug": "zion-suzuki",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 76.84,
+          "score": 76.94,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T16:30:00Z"
         },
@@ -137,7 +137,7 @@
           "slug": "jude-bellingham",
           "position": "Midfielder",
           "captain": false,
-          "score": 43.58,
+          "score": 45.68,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T19:00:00Z"
         }
@@ -278,7 +278,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:bde227e7-c3ce-4183-8b6b-f3327c54560d",
       "state": "CANCELLED",
-      "score": 328.1,
+      "score": 332.63,
       "finished": true,
       "cleared": false,
       "players": [
@@ -305,7 +305,7 @@
           "slug": "jobe-bellingham",
           "position": "Midfielder",
           "captain": false,
-          "score": 67.77,
+          "score": 72.31,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T13:30:00Z"
         },
@@ -340,7 +340,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:f711f998-0859-404d-95c9-6177fca9376b",
       "state": "CANCELLED",
-      "score": 198.45,
+      "score": 201.82,
       "finished": true,
       "cleared": false,
       "players": [
@@ -349,7 +349,7 @@
           "slug": "zion-suzuki",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 76.84,
+          "score": 76.94,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T16:30:00Z"
         },
@@ -358,7 +358,7 @@
           "slug": "natan-bernardo-de-souza",
           "position": "Defender",
           "captain": false,
-          "score": 15.81,
+          "score": 15.98,
           "status": "REVIEWING",
           "kickoff": "2026-10-17T16:30:00Z"
         },
@@ -367,7 +367,7 @@
           "slug": "jude-bellingham",
           "position": "Midfielder",
           "captain": true,
-          "score": 64.33,
+          "score": 67.43,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T19:00:00Z"
         },
@@ -573,14 +573,14 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 244 scored so far, 4 of 5 played. On course for about 302; needs 300 (2 over).",
+      "status": "Locked and playing. 246 scored so far, 4 of 5 played. On course for about 305; needs 300 (5 over).",
       "tone": "good",
       "lockAt": "2026-10-14T19:00:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": 76.84,
+            "actual": 76.94,
             "scoreStatus": "REVIEWING",
             "teamSlug": "aston-villa-birmingham",
             "name": "Zion Suzuki",
@@ -696,7 +696,7 @@
             "kickoff": "2026-10-14T19:00:00Z"
           },
           {
-            "actual": 43.58,
+            "actual": 45.68,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Jude Bellingham",
@@ -726,9 +726,9 @@
           }
         ],
         "projected": 325.94,
-        "scoredSoFar": 243.76,
+        "scoredSoFar": 245.97,
         "played": 4,
-        "expectedFinal": 302.47
+        "expectedFinal": 304.68
       },
       "poolStrength": {
         "strong": 8,
@@ -1225,14 +1225,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 244 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 897 so far.",
+      "status": "Locked and playing. 246 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 905 so far.",
       "tone": "good",
       "lockAt": "2026-10-14T19:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 76.84,
+            "actual": 76.94,
             "scoreStatus": "REVIEWING",
             "teamSlug": "aston-villa-birmingham",
             "name": "Zion Suzuki",
@@ -1348,7 +1348,7 @@
             "kickoff": "2026-10-14T19:00:00Z"
           },
           {
-            "actual": 43.58,
+            "actual": 45.68,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Jude Bellingham",
@@ -1378,9 +1378,9 @@
           }
         ],
         "projected": 325.81,
-        "scoredSoFar": 243.76,
+        "scoredSoFar": 245.97,
         "played": 4,
-        "expectedFinal": 302.5
+        "expectedFinal": 304.7
       },
       "poolStrength": {
         "strong": 0,
@@ -1390,7 +1390,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 896.999
+        "scoreSoFar": 905.0298
       },
       "level": 1,
       "lives": null,
