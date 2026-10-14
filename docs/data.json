@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T19:50:28.909Z",
+  "generatedAt": "2026-10-14T19:55:46.405Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-14T19:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792003594871,
-    "reason": "last run 64m ago, next due in 116m"
+    "reason": "last run 69m ago, next due in 111m"
   },
   "packs": {
     "lastThreeStar": "Iñigo Vicente",
@@ -276,68 +276,6 @@
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
-      "lineupId": "Tasks::TaskLineup:bde227e7-c3ce-4183-8b6b-f3327c54560d",
-      "state": "CANCELLED",
-      "score": 320.17,
-      "finished": true,
-      "cleared": false,
-      "players": [
-        {
-          "name": "Maarten Vandevoordt",
-          "slug": "maarten-vandevoordt",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 102,
-          "status": "FINAL",
-          "kickoff": "2026-10-17T16:30:00Z"
-        },
-        {
-          "name": "Rúben Dias",
-          "slug": "ruben-santos-gato-alves-dias",
-          "position": "Defender",
-          "captain": true,
-          "score": 46.94,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-17T14:00:00Z"
-        },
-        {
-          "name": "Jobe Bellingham",
-          "slug": "jobe-bellingham",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 59.84,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-17T13:30:00Z"
-        },
-        {
-          "name": "Álex Baena",
-          "slug": "alejandro-baena-rodriguez",
-          "position": "Forward",
-          "captain": false,
-          "score": 74.78,
-          "status": "FINAL",
-          "kickoff": "2026-10-17T12:00:00Z"
-        },
-        {
-          "name": "Antonio Nusa",
-          "slug": "antonio-eromonsele-nordby-nusa",
-          "position": "Forward",
-          "captain": false,
-          "score": 36.62,
-          "status": "FINAL",
-          "kickoff": "2026-10-17T16:30:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
-      "surface": "my set",
-      "level": 0,
-      "target": 260,
-      "stepState": "CLAIMED",
-      "collaborative": false,
-      "squadLineups": null,
-      "squadScore": null,
       "lineupId": "Tasks::TaskLineup:f711f998-0859-404d-95c9-6177fca9376b",
       "state": "CANCELLED",
       "score": 188.84,
@@ -391,6 +329,68 @@
         }
       ],
       "scored": 4
+    },
+    {
+      "surface": "my set",
+      "level": 0,
+      "target": 260,
+      "stepState": "CLAIMED",
+      "collaborative": false,
+      "squadLineups": null,
+      "squadScore": null,
+      "lineupId": "Tasks::TaskLineup:bde227e7-c3ce-4183-8b6b-f3327c54560d",
+      "state": "CANCELLED",
+      "score": 320.17,
+      "finished": true,
+      "cleared": false,
+      "players": [
+        {
+          "name": "Maarten Vandevoordt",
+          "slug": "maarten-vandevoordt",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 102,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T16:30:00Z"
+        },
+        {
+          "name": "Rúben Dias",
+          "slug": "ruben-santos-gato-alves-dias",
+          "position": "Defender",
+          "captain": true,
+          "score": 46.94,
+          "status": "REVIEWING",
+          "kickoff": "2026-10-17T14:00:00Z"
+        },
+        {
+          "name": "Jobe Bellingham",
+          "slug": "jobe-bellingham",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 59.84,
+          "status": "REVIEWING",
+          "kickoff": "2026-10-17T13:30:00Z"
+        },
+        {
+          "name": "Álex Baena",
+          "slug": "alejandro-baena-rodriguez",
+          "position": "Forward",
+          "captain": false,
+          "score": 74.78,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T12:00:00Z"
+        },
+        {
+          "name": "Antonio Nusa",
+          "slug": "antonio-eromonsele-nordby-nusa",
+          "position": "Forward",
+          "captain": false,
+          "score": 36.62,
+          "status": "FINAL",
+          "kickoff": "2026-10-17T16:30:00Z"
+        }
+      ],
+      "scored": 5
     },
     {
       "surface": "team set (Loadshift)",
