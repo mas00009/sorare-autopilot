@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T19:49:46.998Z",
+  "generatedAt": "2026-10-15T19:55:04.893Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-15T16:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792092818633,
-    "reason": "last run 16m ago, next due in 164m"
+    "reason": "last run 21m ago, next due in 159m"
   },
   "packs": {
     "lastThreeStar": "Natan",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 714.2844,
+      "squadScore": 716.9784,
       "lineupId": "Tasks::TaskLineup:cb96420c-8c15-486d-9a02-3dd7a2ebaaf5",
       "state": "READY",
-      "score": 193.01,
+      "score": 194.87,
       "finished": false,
       "cleared": false,
       "players": [
@@ -57,7 +57,7 @@
           "slug": "maximilian-eggestein",
           "position": "Midfielder",
           "captain": false,
-          "score": 49.34,
+          "score": 51.19,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T13:30:00Z"
         },
@@ -92,7 +92,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:8f219c17-a3d1-45b9-ba81-69f5a6b9e3e5",
       "state": "READY",
-      "score": 130.27,
+      "score": 132.12,
       "finished": false,
       "cleared": false,
       "players": [
@@ -137,7 +137,7 @@
           "slug": "maximilian-eggestein",
           "position": "Midfielder",
           "captain": false,
-          "score": 49.34,
+          "score": 51.19,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T13:30:00Z"
         }
@@ -697,7 +697,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 130 scored so far, 3 of 5 played. On course for about 294; needs 300 (6 short).",
+      "status": "Locked and playing. 132 scored so far, 3 of 5 played. On course for about 296; needs 300 (4 short).",
       "tone": "warn",
       "lockAt": "2026-10-15T19:00:00Z",
       "isSquad": false,
@@ -820,7 +820,7 @@
             "kickoff": "2026-10-16T19:00:00Z"
           },
           {
-            "actual": 49.34,
+            "actual": 51.19,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Maximilian Eggestein",
@@ -850,9 +850,9 @@
           }
         ],
         "projected": 365.4,
-        "scoredSoFar": 130.28,
+        "scoredSoFar": 132.13,
         "played": 3,
-        "expectedFinal": 294.44
+        "expectedFinal": 296.28
       },
       "poolStrength": {
         "strong": 8,
@@ -1349,7 +1349,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 225 scored so far, 4 of 5 played. The squad's top three lineups together need 1060; the squad has 714 so far.",
+      "status": "Locked and playing. 226 scored so far, 4 of 5 played. The squad's top three lineups together need 1060; the squad has 717 so far.",
       "tone": "good",
       "lockAt": "2026-10-15T16:45:00Z",
       "isSquad": true,
@@ -1414,7 +1414,7 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": 49.34,
+            "actual": 51.19,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Maximilian Eggestein",
@@ -1502,9 +1502,9 @@
           }
         ],
         "projected": 345.09,
-        "scoredSoFar": 224.61,
+        "scoredSoFar": 226.46,
         "played": 4,
-        "expectedFinal": 280.88
+        "expectedFinal": 282.73
       },
       "poolStrength": {
         "strong": 0,
@@ -1514,7 +1514,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 714.2844
+        "scoreSoFar": 716.9784
       },
       "level": 2,
       "lives": null,
