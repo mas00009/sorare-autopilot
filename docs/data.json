@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T07:01:46.361Z",
+  "generatedAt": "2026-10-15T07:07:14.032Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-15T19:00:00Z",
     "cadenceMin": 60,
     "lastRunAt": 1792047683716,
-    "reason": "last run 0m ago, next due in 60m (lock in 718m)"
+    "reason": "last run 6m ago, next due in 54m (lock in 713m)"
   },
   "packs": {
     "lastThreeStar": "Natan",
@@ -558,9 +558,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 776,
+        "progress": 782,
         "target": 860,
-        "remaining": 84,
+        "remaining": 78,
         "competition": null,
         "group": null,
         "teams": []
@@ -793,7 +793,7 @@
         "expectedFinal": 366.17
       },
       "poolStrength": {
-        "strong": 7,
+        "strong": 8,
         "needed": 5
       },
       "collaborative": false,
