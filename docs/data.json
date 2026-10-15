@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T07:07:14.032Z",
+  "generatedAt": "2026-10-15T07:12:39.190Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-15T19:00:00Z",
     "cadenceMin": 60,
     "lastRunAt": 1792047683716,
-    "reason": "last run 6m ago, next due in 54m (lock in 713m)"
+    "reason": "last run 11m ago, next due in 49m (lock in 707m)"
   },
   "packs": {
     "lastThreeStar": "Natan",
@@ -1298,7 +1298,7 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 0,
+        "lineupsIn": 1,
         "needed": 3,
         "scoreSoFar": 0
       },
