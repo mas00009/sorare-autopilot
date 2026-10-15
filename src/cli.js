@@ -292,6 +292,15 @@ const main = async () => {
     return;
   }
 
+  // Drop exact duplicate Set cards for essence (never 4- or 5-star).
+  if (cmd === 'dupes') {
+    const { dropDuplicates } = await import('./dupes.js');
+    const r = await dropDuplicates({ dryRun: flag('dry') });
+    console.log(`Duplicates: ${flag('dry') ? 'would drop' : 'dropped'} ${flag('dry') ? r.toDrop : r.dropped} of ${r.cards} cards for ${r.essence} essence`);
+    for (const e of r.errors) console.log(`  ! ${e}`);
+    return;
+  }
+
   if (cmd === 'signin') {
     const { signIn } = await import('./signin.js');
     return signIn();

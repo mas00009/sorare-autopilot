@@ -68,6 +68,10 @@ export const ALLOWED_MUTATIONS = new Set([
   // The NBA wheel. Reachable only from wheel.js, which checks the spin is a
   // STANDARD one priced in WHEEL_TICKET and that a ticket is held.
   'spinWheel',
+  // Dropping a duplicate common Set card for essence. It pays out, never
+  // charges: the input is only card slugs and Sorare's own signed price.
+  // Reachable only from dupes.js, which never drops a 4- or 5-star card.
+  'dropAndAddCards',
   // Free daily pack pull flow
   'pullCards',
   'confirmCardPull',
