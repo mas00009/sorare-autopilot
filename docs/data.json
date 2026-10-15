@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T17:57:41.622Z",
+  "generatedAt": "2026-10-15T18:03:04.488Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-15T16:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792081861586,
-    "reason": "last run 87m ago, next due in 93m"
+    "reason": "last run 92m ago, next due in 88m"
   },
   "packs": {
     "lastThreeStar": "Natan",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 170.458,
+      "squadScore": 502.363,
       "lineupId": "Tasks::TaskLineup:cb96420c-8c15-486d-9a02-3dd7a2ebaaf5",
       "state": "READY",
-      "score": 42.94,
+      "score": 168.7,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,8 +39,8 @@
           "slug": "bart-verbruggen",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-15T19:00:00Z"
         },
         {
@@ -48,8 +48,8 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 53.55,
+          "status": "REVIEWING",
           "kickoff": "2026-10-15T19:00:00Z"
         },
         {
@@ -57,8 +57,8 @@
           "slug": "maximilian-eggestein",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-15T19:00:00Z"
         },
         {
@@ -66,7 +66,7 @@
           "slug": "martin-adrian-satriano-costa",
           "position": "Forward",
           "captain": false,
-          "score": 42.95,
+          "score": 43.05,
           "status": "REVIEWING",
           "kickoff": "2026-10-19T19:00:00Z"
         },
@@ -80,7 +80,7 @@
           "kickoff": "2026-10-15T19:00:00Z"
         }
       ],
-      "scored": 1
+      "scored": 4
     },
     {
       "surface": "my set",
@@ -92,7 +92,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:8f219c17-a3d1-45b9-ba81-69f5a6b9e3e5",
       "state": "READY",
-      "score": 0,
+      "score": 108.15,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,8 +101,8 @@
           "slug": "bart-verbruggen",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-15T19:00:00Z"
         },
         {
@@ -110,8 +110,8 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-15T19:00:00Z"
         },
         {
@@ -137,12 +137,12 @@
           "slug": "maximilian-eggestein",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-15T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 3
     },
     {
       "surface": "my set",
@@ -697,15 +697,15 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Team entered, locks Fri 06:00 am Sydney. Expected about 365; needs 300 (65 over). It keeps being updated until it locks.",
-      "tone": "good",
+      "status": "Locked and playing. 108 scored so far, 3 of 5 played. On course for about 272; needs 300 (28 short).",
+      "tone": "warn",
       "lockAt": "2026-10-15T19:00:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "brighton-hove-albion-brighton-east-sussex",
             "name": "Bart Verbruggen",
             "player": "Bart Verbruggen",
@@ -733,8 +733,8 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
             "player": "Matthias Ginter",
@@ -820,8 +820,8 @@
             "kickoff": "2026-10-16T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Maximilian Eggestein",
             "player": "Maximilian Eggestein",
@@ -850,9 +850,9 @@
           }
         ],
         "projected": 365.4,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 366.17
+        "scoredSoFar": 108.15,
+        "played": 3,
+        "expectedFinal": 272.31
       },
       "poolStrength": {
         "strong": 8,
@@ -1349,15 +1349,15 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 43 scored so far, 1 of 5 played. The squad's top three lineups together need 1060; the squad has 176 so far.",
+      "status": "Locked and playing. 195 scored so far, 4 of 5 played. The squad's top three lineups together need 1060; the squad has 502 so far.",
       "tone": "good",
       "lockAt": "2026-10-15T16:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "brighton-hove-albion-brighton-east-sussex",
             "name": "Bart Verbruggen",
             "player": "Bart Verbruggen",
@@ -1385,8 +1385,8 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 53.55,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
             "player": "Matthias Ginter",
@@ -1414,8 +1414,8 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Maximilian Eggestein",
             "player": "Maximilian Eggestein",
@@ -1502,9 +1502,9 @@
           }
         ],
         "projected": 345.09,
-        "scoredSoFar": 43.05,
-        "played": 1,
-        "expectedFinal": 340.22
+        "scoredSoFar": 195.47,
+        "played": 4,
+        "expectedFinal": 251.74
       },
       "poolStrength": {
         "strong": 2,
@@ -1514,7 +1514,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 176.459
+        "scoreSoFar": 502.363
       },
       "level": 2,
       "lives": null,
@@ -1649,7 +1649,7 @@
             "starterPct": null,
             "startRate": 0.8,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 57,
             "picture": "https://assets.sorare.com/cardsamplepicture/7e0242f4-2e14-45a2-89ec-557c3182938a/picture/tinified-9f43be3890fc937d80fa6f153789fb64.png",
@@ -1688,7 +1688,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 43,
             "picture": "https://assets.sorare.com/cardsamplepicture/bed12849-550d-4dd0-8382-81143e930a3d/picture/tinified-17944dd8ea6891f9addef83872c2a59c.png",
@@ -1727,7 +1727,7 @@
             "starterPct": null,
             "startRate": 0.8,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 61,
             "picture": "https://assets.sorare.com/cardsamplepicture/63230728-769c-4654-9457-edd1fc7b5b8c/picture/tinified-626021a5a0e44c0528420aaf8fa9e7c2.png",
@@ -1766,7 +1766,7 @@
             "starterPct": null,
             "startRate": 0.8,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 49,
             "picture": "https://assets.sorare.com/cardsamplepicture/ed8a4e34-52d4-4646-bf85-5230855660ac/picture/tinified-c3677acaab0cf9e271b474cb06e04364.png",
@@ -1847,7 +1847,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 57,
           "picture": "https://assets.sorare.com/cardsamplepicture/7e0242f4-2e14-45a2-89ec-557c3182938a/picture/tinified-9f43be3890fc937d80fa6f153789fb64.png",
@@ -1886,7 +1886,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 43,
           "picture": "https://assets.sorare.com/cardsamplepicture/bed12849-550d-4dd0-8382-81143e930a3d/picture/tinified-17944dd8ea6891f9addef83872c2a59c.png",
@@ -1925,7 +1925,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 61,
           "picture": "https://assets.sorare.com/cardsamplepicture/63230728-769c-4654-9457-edd1fc7b5b8c/picture/tinified-626021a5a0e44c0528420aaf8fa9e7c2.png",
@@ -1964,7 +1964,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 49,
           "picture": "https://assets.sorare.com/cardsamplepicture/ed8a4e34-52d4-4646-bf85-5230855660ac/picture/tinified-c3677acaab0cf9e271b474cb06e04364.png",
