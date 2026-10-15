@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T19:17:48.029Z",
+  "generatedAt": "2026-10-15T19:23:05.851Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-15T16:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792081861586,
-    "reason": "last run 167m ago, next due in 13m"
+    "reason": "last run 172m ago, next due in 8m"
   },
   "packs": {
     "lastThreeStar": "Natan",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 663.191,
+      "squadScore": 679.5978,
       "lineupId": "Tasks::TaskLineup:cb96420c-8c15-486d-9a02-3dd7a2ebaaf5",
       "state": "READY",
-      "score": 184.1,
+      "score": 187.12,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,7 +48,7 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": true,
-          "score": 61.35,
+          "score": 62.82,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T13:30:00Z"
         },
@@ -57,7 +57,7 @@
           "slug": "maximilian-eggestein",
           "position": "Midfielder",
           "captain": false,
-          "score": 44.39,
+          "score": 45.94,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T13:30:00Z"
         },
@@ -92,7 +92,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:8f219c17-a3d1-45b9-ba81-69f5a6b9e3e5",
       "state": "READY",
-      "score": 121.95,
+      "score": 124.48,
       "finished": false,
       "cleared": false,
       "players": [
@@ -110,7 +110,7 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": false,
-          "score": 41.3,
+          "score": 42.29,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T13:30:00Z"
         },
@@ -137,7 +137,7 @@
           "slug": "maximilian-eggestein",
           "position": "Midfielder",
           "captain": false,
-          "score": 44.39,
+          "score": 45.94,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T13:30:00Z"
         }
@@ -697,7 +697,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 122 scored so far, 3 of 5 played. On course for about 286; needs 300 (14 short).",
+      "status": "Locked and playing. 124 scored so far, 3 of 5 played. On course for about 289; needs 300 (11 short).",
       "tone": "warn",
       "lockAt": "2026-10-15T19:00:00Z",
       "isSquad": false,
@@ -733,7 +733,7 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": 41.3,
+            "actual": 42.29,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
@@ -820,7 +820,7 @@
             "kickoff": "2026-10-16T19:00:00Z"
           },
           {
-            "actual": 44.39,
+            "actual": 45.94,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Maximilian Eggestein",
@@ -850,9 +850,9 @@
           }
         ],
         "projected": 365.4,
-        "scoredSoFar": 121.95,
+        "scoredSoFar": 124.49,
         "played": 3,
-        "expectedFinal": 286.11
+        "expectedFinal": 288.64
       },
       "poolStrength": {
         "strong": 8,
@@ -1349,7 +1349,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 215 scored so far, 4 of 5 played. The squad's top three lineups together need 1060; the squad has 663 so far.",
+      "status": "Locked and playing. 219 scored so far, 4 of 5 played. The squad's top three lineups together need 1060; the squad has 680 so far.",
       "tone": "good",
       "lockAt": "2026-10-15T16:45:00Z",
       "isSquad": true,
@@ -1385,7 +1385,7 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": 61.35,
+            "actual": 62.82,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
@@ -1414,7 +1414,7 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": 44.39,
+            "actual": 45.94,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Maximilian Eggestein",
@@ -1502,9 +1502,9 @@
           }
         ],
         "projected": 345.09,
-        "scoredSoFar": 214.79,
+        "scoredSoFar": 218.54,
         "played": 4,
-        "expectedFinal": 271.06
+        "expectedFinal": 274.81
       },
       "poolStrength": {
         "strong": 0,
@@ -1514,7 +1514,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 663.191
+        "scoreSoFar": 679.5978
       },
       "level": 2,
       "lives": null,
