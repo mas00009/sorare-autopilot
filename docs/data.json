@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T15:46:19.611Z",
+  "generatedAt": "2026-10-15T15:52:54.481Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-15T16:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1792079152481,
-    "reason": "last run 0m ago, next due in 5m (lock in 59m)"
+    "lastRunAt": 1792079543118,
+    "reason": "last run 1m ago, next due in 4m (lock in 52m)"
   },
   "packs": {
     "lastThreeStar": "Natan",
@@ -27,7 +27,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 36.75,
+      "squadScore": 130.55,
       "lineupId": "Tasks::TaskLineup:cb96420c-8c15-486d-9a02-3dd7a2ebaaf5",
       "state": "READY",
       "score": 0,
@@ -1514,7 +1514,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 36.75
+        "scoreSoFar": 130.55
       },
       "level": 2,
       "lives": null,
