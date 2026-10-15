@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T19:33:52.227Z",
+  "generatedAt": "2026-10-15T19:39:10.414Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-15T16:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792092818633,
-    "reason": "last run 0m ago, next due in 180m"
+    "reason": "last run 6m ago, next due in 174m"
   },
   "packs": {
     "lastThreeStar": "Natan",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 670.6782,
+      "squadScore": 682.2048,
       "lineupId": "Tasks::TaskLineup:cb96420c-8c15-486d-9a02-3dd7a2ebaaf5",
       "state": "READY",
-      "score": 181.32,
+      "score": 184.79,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "bart-verbruggen",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 36.98,
+          "score": 37.18,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T13:00:00Z"
         },
@@ -48,7 +48,7 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": true,
-          "score": 56.82,
+          "score": 57.93,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T13:30:00Z"
         },
@@ -57,7 +57,7 @@
           "slug": "maximilian-eggestein",
           "position": "Midfielder",
           "captain": false,
-          "score": 45.42,
+          "score": 47.59,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T13:30:00Z"
         },
@@ -92,7 +92,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:8f219c17-a3d1-45b9-ba81-69f5a6b9e3e5",
       "state": "READY",
-      "score": 120.65,
+      "score": 123.76,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,7 +101,7 @@
           "slug": "bart-verbruggen",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 36.98,
+          "score": 37.18,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T13:00:00Z"
         },
@@ -110,7 +110,7 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": false,
-          "score": 38.25,
+          "score": 39,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T13:30:00Z"
         },
@@ -137,7 +137,7 @@
           "slug": "maximilian-eggestein",
           "position": "Midfielder",
           "captain": false,
-          "score": 45.42,
+          "score": 47.59,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T13:30:00Z"
         }
@@ -697,14 +697,14 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 123 scored so far, 3 of 5 played. On course for about 288; needs 300 (12 short).",
+      "status": "Locked and playing. 124 scored so far, 3 of 5 played. On course for about 288; needs 300 (12 short).",
       "tone": "warn",
       "lockAt": "2026-10-15T19:00:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": 36.98,
+            "actual": 37.18,
             "scoreStatus": "REVIEWING",
             "teamSlug": "brighton-hove-albion-brighton-east-sussex",
             "name": "Bart Verbruggen",
@@ -733,7 +733,7 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": 41.39,
+            "actual": 39,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
@@ -820,7 +820,7 @@
             "kickoff": "2026-10-16T19:00:00Z"
           },
           {
-            "actual": 45.01,
+            "actual": 47.59,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Maximilian Eggestein",
@@ -850,9 +850,9 @@
           }
         ],
         "projected": 365.4,
-        "scoredSoFar": 123.38,
+        "scoredSoFar": 123.77,
         "played": 3,
-        "expectedFinal": 287.53
+        "expectedFinal": 287.93
       },
       "poolStrength": {
         "strong": 8,
@@ -1349,14 +1349,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 210 scored so far, 4 of 5 played. The squad's top three lineups together need 1060; the squad has 671 so far.",
+      "status": "Locked and playing. 214 scored so far, 4 of 5 played. The squad's top three lineups together need 1060; the squad has 682 so far.",
       "tone": "good",
       "lockAt": "2026-10-15T16:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 36.98,
+            "actual": 37.18,
             "scoreStatus": "REVIEWING",
             "teamSlug": "brighton-hove-albion-brighton-east-sussex",
             "name": "Bart Verbruggen",
@@ -1385,7 +1385,7 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": 56.82,
+            "actual": 57.93,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
@@ -1414,7 +1414,7 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": 45.42,
+            "actual": 47.59,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Maximilian Eggestein",
@@ -1502,9 +1502,9 @@
           }
         ],
         "projected": 345.09,
-        "scoredSoFar": 209.74,
+        "scoredSoFar": 213.77,
         "played": 4,
-        "expectedFinal": 266.01
+        "expectedFinal": 270.04
       },
       "poolStrength": {
         "strong": 0,
@@ -1514,7 +1514,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 670.6782
+        "scoreSoFar": 682.2048
       },
       "level": 2,
       "lives": null,
