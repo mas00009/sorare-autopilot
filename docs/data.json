@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T19:55:04.893Z",
+  "generatedAt": "2026-10-15T20:00:22.332Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-15T16:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792092818633,
-    "reason": "last run 21m ago, next due in 159m"
+    "reason": "last run 27m ago, next due in 153m"
   },
   "packs": {
     "lastThreeStar": "Natan",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 716.9784,
+      "squadScore": 727.9334,
       "lineupId": "Tasks::TaskLineup:cb96420c-8c15-486d-9a02-3dd7a2ebaaf5",
       "state": "READY",
-      "score": 194.87,
+      "score": 200.22,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,7 +48,7 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": true,
-          "score": 63.16,
+          "score": 68.51,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T13:30:00Z"
         },
@@ -92,7 +92,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:8f219c17-a3d1-45b9-ba81-69f5a6b9e3e5",
       "state": "READY",
-      "score": 132.12,
+      "score": 135.73,
       "finished": false,
       "cleared": false,
       "players": [
@@ -110,7 +110,7 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": false,
-          "score": 42.52,
+          "score": 46.12,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T13:30:00Z"
         },
@@ -697,8 +697,8 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 132 scored so far, 3 of 5 played. On course for about 296; needs 300 (4 short).",
-      "tone": "warn",
+      "status": "Locked and playing. 136 scored so far, 3 of 5 played. On course for about 300; needs 300 (0 over).",
+      "tone": "good",
       "lockAt": "2026-10-15T19:00:00Z",
       "isSquad": false,
       "entered": {
@@ -733,7 +733,7 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": 42.52,
+            "actual": 46.12,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
@@ -850,9 +850,9 @@
           }
         ],
         "projected": 365.4,
-        "scoredSoFar": 132.13,
+        "scoredSoFar": 135.73,
         "played": 3,
-        "expectedFinal": 296.28
+        "expectedFinal": 299.88
       },
       "poolStrength": {
         "strong": 8,
@@ -1349,7 +1349,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 226 scored so far, 4 of 5 played. The squad's top three lineups together need 1060; the squad has 717 so far.",
+      "status": "Locked and playing. 234 scored so far, 4 of 5 played. The squad's top three lineups together need 1060; the squad has 728 so far.",
       "tone": "good",
       "lockAt": "2026-10-15T16:45:00Z",
       "isSquad": true,
@@ -1385,7 +1385,7 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": 63.16,
+            "actual": 68.51,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
@@ -1502,9 +1502,9 @@
           }
         ],
         "projected": 345.09,
-        "scoredSoFar": 226.46,
+        "scoredSoFar": 234.49,
         "played": 4,
-        "expectedFinal": 282.73
+        "expectedFinal": 290.75
       },
       "poolStrength": {
         "strong": 0,
@@ -1514,7 +1514,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 716.9784
+        "scoreSoFar": 727.9334
       },
       "level": 2,
       "lives": null,
