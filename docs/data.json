@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T18:40:33.087Z",
+  "generatedAt": "2026-10-15T18:45:55.050Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-15T16:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792081861586,
-    "reason": "last run 130m ago, next due in 50m"
+    "reason": "last run 135m ago, next due in 45m"
   },
   "packs": {
     "lastThreeStar": "Natan",
@@ -1444,7 +1444,7 @@
           },
           {
             "actual": 42.11,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "getafe-getafe-madrid",
             "name": "Martín Satriano",
             "player": "Martín Satriano",
