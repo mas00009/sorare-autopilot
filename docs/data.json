@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T15:39:54.963Z",
+  "generatedAt": "2026-10-15T15:46:19.611Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-15T16:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1792078765031,
-    "reason": "last run 0m ago, next due in 5m (lock in 65m)"
+    "lastRunAt": 1792079152481,
+    "reason": "last run 0m ago, next due in 5m (lock in 59m)"
   },
   "packs": {
     "lastThreeStar": "Natan",
@@ -27,7 +27,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 0,
+      "squadScore": 36.75,
       "lineupId": "Tasks::TaskLineup:cb96420c-8c15-486d-9a02-3dd7a2ebaaf5",
       "state": "READY",
       "score": 0,
@@ -1514,7 +1514,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 0
+        "scoreSoFar": 36.75
       },
       "level": 2,
       "lives": null,
@@ -1688,7 +1688,7 @@
             "starterPct": null,
             "startRate": 0.8,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 58,
             "picture": "https://assets.sorare.com/cardsamplepicture/412c34d9-fb94-4dd7-af41-638fa1bbcd7e/picture/tinified-9dc3fc082484b7951b28d2e7b7a3eadc.png",
@@ -1886,7 +1886,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 58,
           "picture": "https://assets.sorare.com/cardsamplepicture/412c34d9-fb94-4dd7-af41-638fa1bbcd7e/picture/tinified-9dc3fc082484b7951b28d2e7b7a3eadc.png",
