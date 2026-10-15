@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T20:53:21.815Z",
+  "generatedAt": "2026-10-15T20:58:40.676Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-15T16:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792092818633,
-    "reason": "last run 80m ago, next due in 100m"
+    "reason": "last run 85m ago, next due in 95m"
   },
   "packs": {
     "lastThreeStar": "Natan",
@@ -24,13 +24,13 @@
       "surface": "team set (Loadshift)",
       "level": 2,
       "target": 1060,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 1064.8634,
+      "squadScore": 1070.5278,
       "lineupId": "Tasks::TaskLineup:cb96420c-8c15-486d-9a02-3dd7a2ebaaf5",
       "state": "READY",
-      "score": 378.52,
+      "score": 381.73,
       "finished": false,
       "cleared": true,
       "players": [
@@ -48,7 +48,7 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": true,
-          "score": 94.68,
+          "score": 94.8,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T13:30:00Z"
         },
@@ -75,7 +75,7 @@
           "slug": "maxim-de-cuyper",
           "position": "Defender",
           "captain": false,
-          "score": 79.31,
+          "score": 82.4,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T13:00:00Z"
         }
@@ -86,13 +86,13 @@
       "surface": "my set",
       "level": 1,
       "target": 300,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:8f219c17-a3d1-45b9-ba81-69f5a6b9e3e5",
       "state": "READY",
-      "score": 226.16,
+      "score": 226.24,
       "finished": false,
       "cleared": false,
       "players": [
@@ -110,7 +110,7 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": false,
-          "score": 63.74,
+          "score": 63.82,
           "status": "REVIEWING",
           "kickoff": "2026-10-18T13:30:00Z"
         },
@@ -148,7 +148,7 @@
       "surface": "my set",
       "level": 1,
       "target": 300,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -697,14 +697,14 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 224 scored so far, 3 of 5 played. On course for about 388; needs 300 (88 over).",
+      "status": "Locked and playing. 226 scored so far, 3 of 5 played. On course for about 390; needs 300 (90 over).",
       "tone": "good",
       "lockAt": "2026-10-15T19:00:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": 68.5,
+            "actual": 70.56,
             "scoreStatus": "REVIEWING",
             "teamSlug": "brighton-hove-albion-brighton-east-sussex",
             "name": "Bart Verbruggen",
@@ -733,7 +733,7 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": 63.74,
+            "actual": 63.82,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
@@ -850,9 +850,9 @@
           }
         ],
         "projected": 365.4,
-        "scoredSoFar": 224.12,
+        "scoredSoFar": 226.26,
         "played": 3,
-        "expectedFinal": 388.27
+        "expectedFinal": 390.41
       },
       "poolStrength": {
         "strong": 8,
@@ -875,7 +875,7 @@
         },
         {
           "level": 1,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 300
         },
         {
@@ -906,7 +906,7 @@
           "rarity": "common"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 300,
       "current": [
         {
@@ -1349,7 +1349,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 426 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 1065 so far.",
+      "status": "Locked and playing. 429 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 1071 so far.",
       "tone": "good",
       "lockAt": "2026-10-15T16:45:00Z",
       "isSquad": true,
@@ -1385,7 +1385,7 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": 94.68,
+            "actual": 94.8,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
@@ -1472,7 +1472,7 @@
             "kickoff": "2026-10-15T16:45:00Z"
           },
           {
-            "actual": 79.31,
+            "actual": 82.4,
             "scoreStatus": "REVIEWING",
             "teamSlug": "brighton-hove-albion-brighton-east-sussex",
             "name": "Maxim De Cuyper",
@@ -1502,9 +1502,9 @@
           }
         ],
         "projected": 345.09,
-        "scoredSoFar": 425.88,
+        "scoredSoFar": 429.15,
         "played": 5,
-        "expectedFinal": 425.88
+        "expectedFinal": 429.15
       },
       "poolStrength": {
         "strong": 0,
@@ -1514,7 +1514,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 1064.8634
+        "scoreSoFar": 1070.5278
       },
       "level": 2,
       "lives": null,
@@ -1533,7 +1533,7 @@
         },
         {
           "level": 2,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 1060
         },
         {
@@ -1555,7 +1555,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 1060,
       "current": [
         {
