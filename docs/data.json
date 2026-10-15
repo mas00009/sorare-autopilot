@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T18:13:48.191Z",
+  "generatedAt": "2026-10-15T18:19:08.298Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-15T16:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792081861586,
-    "reason": "last run 103m ago, next due in 77m"
+    "reason": "last run 108m ago, next due in 72m"
   },
   "packs": {
     "lastThreeStar": "Natan",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 515.759,
+      "squadScore": 517.524,
       "lineupId": "Tasks::TaskLineup:cb96420c-8c15-486d-9a02-3dd7a2ebaaf5",
       "state": "READY",
-      "score": 168.91,
+      "score": 169.01,
       "finished": false,
       "cleared": false,
       "players": [
@@ -66,7 +66,7 @@
           "slug": "martin-adrian-satriano-costa",
           "position": "Forward",
           "captain": false,
-          "score": 43.26,
+          "score": 43.37,
           "status": "REVIEWING",
           "kickoff": "2026-10-19T19:00:00Z"
         },
@@ -1349,7 +1349,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 196 scored so far, 4 of 5 played. The squad's top three lineups together need 1060; the squad has 516 so far.",
+      "status": "Locked and playing. 196 scored so far, 4 of 5 played. The squad's top three lineups together need 1060; the squad has 518 so far.",
       "tone": "good",
       "lockAt": "2026-10-15T16:45:00Z",
       "isSquad": true,
@@ -1443,7 +1443,7 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": 43.26,
+            "actual": 43.37,
             "scoreStatus": "REVIEWING",
             "teamSlug": "getafe-getafe-madrid",
             "name": "Martín Satriano",
@@ -1502,9 +1502,9 @@
           }
         ],
         "projected": 345.09,
-        "scoredSoFar": 195.68,
+        "scoredSoFar": 195.79,
         "played": 4,
-        "expectedFinal": 251.95
+        "expectedFinal": 252.06
       },
       "poolStrength": {
         "strong": 2,
@@ -1514,7 +1514,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 515.759
+        "scoreSoFar": 517.524
       },
       "level": 2,
       "lives": null,
