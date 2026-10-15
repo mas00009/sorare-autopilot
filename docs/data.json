@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T15:52:54.481Z",
+  "generatedAt": "2026-10-15T15:59:23.985Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-15T16:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1792079543118,
-    "reason": "last run 1m ago, next due in 4m (lock in 52m)"
+    "lastRunAt": 1792079934307,
+    "reason": "last run 0m ago, next due in 5m (lock in 46m)"
   },
   "packs": {
     "lastThreeStar": "Natan",
@@ -27,10 +27,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 130.55,
+      "squadScore": 167.3,
       "lineupId": "Tasks::TaskLineup:cb96420c-8c15-486d-9a02-3dd7a2ebaaf5",
       "state": "READY",
-      "score": 0,
+      "score": 36.75,
       "finished": false,
       "cleared": false,
       "players": [
@@ -66,8 +66,8 @@
           "slug": "martin-adrian-satriano-costa",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-15T16:45:00Z"
         },
         {
@@ -80,7 +80,7 @@
           "kickoff": "2026-10-15T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 1
     },
     {
       "surface": "my set",
@@ -1349,7 +1349,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Team entered, locks Fri 03:45 am Sydney. The squad's top three lineups together need 1060; this one is expected to add about 345.",
+      "status": "Locked and playing. 37 scored so far, 1 of 5 played. The squad's top three lineups together need 1060; the squad has 167 so far.",
       "tone": "good",
       "lockAt": "2026-10-15T16:45:00Z",
       "isSquad": true,
@@ -1443,8 +1443,8 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "getafe-getafe-madrid",
             "name": "Martín Satriano",
             "player": "Martín Satriano",
@@ -1502,9 +1502,9 @@
           }
         ],
         "projected": 345.09,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 346.2
+        "scoredSoFar": 36.75,
+        "played": 1,
+        "expectedFinal": 333.92
       },
       "poolStrength": {
         "strong": 2,
@@ -1514,7 +1514,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 130.55
+        "scoreSoFar": 167.3
       },
       "level": 2,
       "lives": null,
@@ -1610,7 +1610,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 54,
             "picture": "https://assets.sorare.com/cardsamplepicture/aec76e6b-9e0a-47c5-bf75-a4c0d017420f/picture/tinified-fbe8e9850976a7f65e83eeded5d7ffb4.png",
@@ -1808,7 +1808,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 54,
           "picture": "https://assets.sorare.com/cardsamplepicture/aec76e6b-9e0a-47c5-bf75-a4c0d017420f/picture/tinified-fbe8e9850976a7f65e83eeded5d7ffb4.png",
