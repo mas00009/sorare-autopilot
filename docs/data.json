@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-15T21:46:44.701Z",
+  "generatedAt": "2026-10-15T21:52:23.566Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 1500,
+    "essence": 18595,
     "gems": 226
   },
   "schedule": {
     "nextLock": "2026-10-16T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792100789476,
-    "reason": "last run 0m ago, next due in 180m (lock in 1258m)"
+    "lastRunAt": 1792101131519,
+    "reason": "last run 0m ago, next due in 180m (lock in 1253m)"
   },
   "packs": {
     "lastThreeStar": "Yuri",
@@ -1092,7 +1092,7 @@
             "blocked": null
           },
           {
-            "id": "ComposeTeamBenchCard:0917b485-ae43-43e3-a13e-14e31459e6e3",
+            "id": "ComposeTeamBenchCard:8ba38167-e285-4151-b9c7-6fa2b57deff0",
             "player": "Dan Ndoye",
             "slug": "dan-ndoye",
             "position": "FW",
@@ -1131,7 +1131,7 @@
             "blocked": null
           },
           {
-            "id": "ComposeTeamBenchCard:65348b8c-2156-4f59-9f91-fdf5d853afcb",
+            "id": "ComposeTeamBenchCard:dd7e5373-de94-4f76-9644-16399dd60d5d",
             "player": "Lewis Hall",
             "slug": "lewis-hall-2004-09-08",
             "position": "DF",
@@ -1290,7 +1290,7 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:0917b485-ae43-43e3-a13e-14e31459e6e3",
+          "id": "ComposeTeamBenchCard:8ba38167-e285-4151-b9c7-6fa2b57deff0",
           "player": "Dan Ndoye",
           "slug": "dan-ndoye",
           "position": "FW",
@@ -1329,7 +1329,7 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:65348b8c-2156-4f59-9f91-fdf5d853afcb",
+          "id": "ComposeTeamBenchCard:dd7e5373-de94-4f76-9644-16399dd60d5d",
           "player": "Lewis Hall",
           "slug": "lewis-hall-2004-09-08",
           "position": "DF",
