@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T17:25:20.726Z",
+  "generatedAt": "2026-10-16T17:56:08.694Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-16T18:30:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1792171499607,
-    "reason": "last run 0m ago, next due in 5m (lock in 65m)"
+    "lastRunAt": 1792173346325,
+    "reason": "last run 0m ago, next due in 5m (lock in 34m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Gómez",
@@ -27,10 +27,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 0,
+      "squadScore": 205.45,
       "lineupId": "Tasks::TaskLineup:e812230e-a8ea-489d-9dd7-39640df898c9",
       "state": "READY",
-      "score": 0,
+      "score": 35.7,
       "finished": false,
       "cleared": false,
       "players": [
@@ -75,12 +75,12 @@
           "slug": "younes-ebnoutalib",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 35.7,
+          "status": "REVIEWING",
           "kickoff": "2026-10-16T18:30:00Z"
         }
       ],
-      "scored": 0
+      "scored": 1
     },
     {
       "surface": "team set (Loadshift)",
@@ -1473,7 +1473,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Team entered, locks Sat 05:30 am Sydney. The squad's top three lineups together need 1140; this one is expected to add about 248.",
+      "status": "Locked and playing. 36 scored so far, 1 of 5 played. The squad's top three lineups together need 1140; the squad has 205 so far.",
       "tone": "good",
       "lockAt": "2026-10-16T18:30:00Z",
       "isSquad": true,
@@ -1596,8 +1596,8 @@
             "kickoff": "2026-10-16T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 35.7,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "eintracht-frankfurt-frankfurt-am-main",
             "name": "Younes Ebnoutalib",
             "player": "Younes Ebnoutalib",
@@ -1626,9 +1626,9 @@
           }
         ],
         "projected": 248.08,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 248.84
+        "scoredSoFar": 35.7,
+        "played": 1,
+        "expectedFinal": 259.82
       },
       "poolStrength": {
         "strong": 0,
@@ -1638,7 +1638,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 0
+        "scoreSoFar": 205.45
       },
       "level": 3,
       "lives": null,
