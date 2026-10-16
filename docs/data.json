@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T21:03:33.492Z",
+  "generatedAt": "2026-10-16T21:08:58.450Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-16T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792184607399,
+    "lastRunAt": 1792184933716,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -21,192 +21,6 @@
   },
   "results": [
     {
-      "surface": "team set (Loadshift)",
-      "level": 3,
-      "target": 1140,
-      "stepState": "LINEUP_SET",
-      "collaborative": true,
-      "squadLineups": 4,
-      "squadScore": 892.6032,
-      "lineupId": "Tasks::TaskLineup:e812230e-a8ea-489d-9dd7-39640df898c9",
-      "state": "READY",
-      "score": 243.31,
-      "finished": false,
-      "cleared": false,
-      "players": [
-        {
-          "name": "Leo Román",
-          "slug": "leonardo-roman-riquelme",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 21.53,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-24T19:00:00Z"
-        },
-        {
-          "name": "Giacomo Quagliata",
-          "slug": "giacomo-quagliata",
-          "position": "Defender",
-          "captain": false,
-          "score": 34.38,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-24T19:00:00Z"
-        },
-        {
-          "name": "Cristian Cásseres Jr.",
-          "slug": "cristian-sleiker-casseres-yepes",
-          "position": "Midfielder",
-          "captain": true,
-          "score": 117.65,
-          "status": "FINAL",
-          "kickoff": "2026-10-24T15:15:00Z"
-        },
-        {
-          "name": "Antoine Rabillard",
-          "slug": "antoine-rabillard",
-          "position": "Forward",
-          "captain": false,
-          "score": 0,
-          "status": "FINAL",
-          "kickoff": "2026-10-25T16:15:00Z"
-        },
-        {
-          "name": "Younes Ebnoutalib",
-          "slug": "younes-ebnoutalib",
-          "position": "Forward",
-          "captain": false,
-          "score": 69.77,
-          "status": "FINAL",
-          "kickoff": "2026-10-24T16:30:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
-      "surface": "team set (Loadshift)",
-      "level": 2,
-      "target": 1060,
-      "stepState": "CLAIMED",
-      "collaborative": true,
-      "squadLineups": 5,
-      "squadScore": 1070.5278,
-      "lineupId": "Tasks::TaskLineup:cb96420c-8c15-486d-9a02-3dd7a2ebaaf5",
-      "state": "SUCCESSFUL",
-      "score": 381.73,
-      "finished": true,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Bart Verbruggen",
-          "slug": "bart-verbruggen",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 70.56,
-          "status": "FINAL",
-          "kickoff": "2026-10-18T13:00:00Z"
-        },
-        {
-          "name": "Matthias Ginter",
-          "slug": "matthias-ginter",
-          "position": "Defender",
-          "captain": true,
-          "score": 94.8,
-          "status": "FINAL",
-          "kickoff": "2026-10-18T13:30:00Z"
-        },
-        {
-          "name": "Maximilian Eggestein",
-          "slug": "maximilian-eggestein",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 91.88,
-          "status": "FINAL",
-          "kickoff": "2026-10-18T13:30:00Z"
-        },
-        {
-          "name": "Martín Satriano",
-          "slug": "martin-adrian-satriano-costa",
-          "position": "Forward",
-          "captain": false,
-          "score": 42.11,
-          "status": "FINAL",
-          "kickoff": "2026-10-19T19:00:00Z"
-        },
-        {
-          "name": "Maxim De Cuyper",
-          "slug": "maxim-de-cuyper",
-          "position": "Defender",
-          "captain": false,
-          "score": 82.4,
-          "status": "FINAL",
-          "kickoff": "2026-10-18T13:00:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
-      "surface": "my set",
-      "level": 1,
-      "target": 300,
-      "stepState": "CLAIMABLE",
-      "collaborative": false,
-      "squadLineups": null,
-      "squadScore": null,
-      "lineupId": "Tasks::TaskLineup:cc89e991-16b6-4654-935e-16d251dc6e7e",
-      "state": "READY",
-      "score": 258.77,
-      "finished": false,
-      "cleared": false,
-      "players": [
-        {
-          "name": "Leo Román",
-          "slug": "leonardo-roman-riquelme",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 21.53,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-24T19:00:00Z"
-        },
-        {
-          "name": "José María Giménez",
-          "slug": "jose-maria-gimenez-de-vargas",
-          "position": "Defender",
-          "captain": false,
-          "score": 47.75,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-24T19:00:00Z"
-        },
-        {
-          "name": "Mario Soriano",
-          "slug": "mario-soriano-carreno",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 40.11,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-24T19:00:00Z"
-        },
-        {
-          "name": "Yeremay Hernández",
-          "slug": "yeremay-hernandez-cubas",
-          "position": "Forward",
-          "captain": true,
-          "score": 83.39,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-24T19:00:00Z"
-        },
-        {
-          "name": "Bil Nsongo",
-          "slug": "bil-dornol-nsongo-tonfack",
-          "position": "Forward",
-          "captain": false,
-          "score": 66,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-24T19:00:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
       "surface": "my set",
       "level": 1,
       "target": 300,
@@ -216,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:8f219c17-a3d1-45b9-ba81-69f5a6b9e3e5",
       "state": "SUCCESSFUL",
-      "score": 343.89,
+      "score": 388,
       "finished": true,
       "cleared": true,
       "players": [
@@ -253,7 +67,7 @@
           "position": "Forward",
           "captain": false,
           "score": 44.11,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-24T19:00:00Z"
         },
         {
@@ -331,63 +145,63 @@
       "scored": 5
     },
     {
-      "surface": "team set (Loadshift)",
+      "surface": "my set",
       "level": 1,
-      "target": 980,
-      "stepState": "CLAIMED",
-      "collaborative": true,
-      "squadLineups": 5,
-      "squadScore": 982.318,
-      "lineupId": "Tasks::TaskLineup:572d3890-730c-458f-819f-3f2bd192a3a3",
-      "state": "SUCCESSFUL",
-      "score": 217.87,
+      "target": 300,
+      "stepState": "CLAIMABLE",
+      "collaborative": false,
+      "squadLineups": null,
+      "squadScore": null,
+      "lineupId": "Tasks::TaskLineup:cc89e991-16b6-4654-935e-16d251dc6e7e",
+      "state": "FAILED",
+      "score": 258.77,
       "finished": true,
-      "cleared": true,
+      "cleared": false,
       "players": [
         {
-          "name": "Zion Suzuki",
-          "slug": "zion-suzuki",
+          "name": "Leo Román",
+          "slug": "leonardo-roman-riquelme",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 78.8,
+          "score": 21.53,
           "status": "FINAL",
-          "kickoff": "2026-10-17T16:30:00Z"
+          "kickoff": "2026-10-24T19:00:00Z"
         },
         {
-          "name": "Rúben Dias",
-          "slug": "ruben-santos-gato-alves-dias",
+          "name": "José María Giménez",
+          "slug": "jose-maria-gimenez-de-vargas",
           "position": "Defender",
           "captain": false,
-          "score": 31.5,
+          "score": 47.75,
           "status": "FINAL",
-          "kickoff": "2026-10-17T14:00:00Z"
+          "kickoff": "2026-10-24T19:00:00Z"
         },
         {
-          "name": "Federico Valverde",
-          "slug": "federico-santiago-valverde-dipetta",
+          "name": "Mario Soriano",
+          "slug": "mario-soriano-carreno",
           "position": "Midfielder",
-          "captain": true,
-          "score": 67.89,
+          "captain": false,
+          "score": 40.11,
           "status": "FINAL",
-          "kickoff": "2026-10-18T19:00:00Z"
+          "kickoff": "2026-10-24T19:00:00Z"
         },
         {
-          "name": "Emiliano Buendía",
-          "slug": "emiliano-buendia",
+          "name": "Yeremay Hernández",
+          "slug": "yeremay-hernandez-cubas",
+          "position": "Forward",
+          "captain": true,
+          "score": 83.39,
+          "status": "FINAL",
+          "kickoff": "2026-10-24T19:00:00Z"
+        },
+        {
+          "name": "Bil Nsongo",
+          "slug": "bil-dornol-nsongo-tonfack",
           "position": "Forward",
           "captain": false,
-          "score": 0,
+          "score": 66,
           "status": "FINAL",
-          "kickoff": "2026-10-17T16:30:00Z"
-        },
-        {
-          "name": "Jude Bellingham",
-          "slug": "jude-bellingham",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 39.69,
-          "status": "FINAL",
-          "kickoff": "2026-10-18T19:00:00Z"
+          "kickoff": "2026-10-24T19:00:00Z"
         }
       ],
       "scored": 5
@@ -639,68 +453,6 @@
         }
       ],
       "scored": 5
-    },
-    {
-      "surface": "team set (Loadshift)",
-      "level": 0,
-      "target": 700,
-      "stepState": "CLAIMED",
-      "collaborative": true,
-      "squadLineups": 6,
-      "squadScore": 1166.2714,
-      "lineupId": "Tasks::TaskLineup:b3798b0e-13b2-4de2-ae7c-6831203749f1",
-      "state": "SUCCESSFUL",
-      "score": 347.86,
-      "finished": true,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Maarten Vandevoordt",
-          "slug": "maarten-vandevoordt",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 102,
-          "status": "FINAL",
-          "kickoff": "2026-10-17T16:30:00Z"
-        },
-        {
-          "name": "Renato Veiga",
-          "slug": "renato-de-palma-veiga",
-          "position": "Defender",
-          "captain": true,
-          "score": 68.53,
-          "status": "FINAL",
-          "kickoff": "2026-10-17T14:15:00Z"
-        },
-        {
-          "name": "Santi Comesaña",
-          "slug": "santiago-comesana-veiga",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 65.94,
-          "status": "FINAL",
-          "kickoff": "2026-10-17T14:15:00Z"
-        },
-        {
-          "name": "Álex Baena",
-          "slug": "alejandro-baena-rodriguez",
-          "position": "Forward",
-          "captain": false,
-          "score": 74.78,
-          "status": "FINAL",
-          "kickoff": "2026-10-17T12:00:00Z"
-        },
-        {
-          "name": "Antonio Nusa",
-          "slug": "antonio-eromonsele-nordby-nusa",
-          "position": "Forward",
-          "captain": false,
-          "score": 36.62,
-          "status": "FINAL",
-          "kickoff": "2026-10-17T16:30:00Z"
-        }
-      ],
-      "scored": 5
     }
   ],
   "gems": {
@@ -823,161 +575,9 @@
       "surface": "my set",
       "status": "Passed. The reward is waiting and will be claimed after the daily reset.",
       "tone": "good",
-      "lockAt": "2026-10-16T19:00:00Z",
+      "lockAt": null,
       "isSquad": false,
-      "entered": {
-        "five": [
-          {
-            "actual": 21.53,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": null,
-            "name": "Leo Román",
-            "player": "Leo Román",
-            "slug": "leonardo-roman-riquelme",
-            "pos": "GK",
-            "position": "GK",
-            "pic": "https://assets.sorare.com/cardsamplepicture/588cca58-d9c1-4acd-82c5-7057b61afd16/picture/tinified-af1be6faab2ebe7c5a655661e74b1d4a.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/588cca58-d9c1-4acd-82c5-7057b61afd16/picture/tinified-af1be6faab2ebe7c5a655661e74b1d4a.png",
-            "captain": false,
-            "exp": null,
-            "expected": null,
-            "opp": null,
-            "opponent": null,
-            "home": null,
-            "average": null,
-            "formL5": null,
-            "intl": false,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-16T19:00:00Z"
-          },
-          {
-            "actual": 47.75,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": null,
-            "name": "José María Giménez",
-            "player": "José María Giménez",
-            "slug": "jose-maria-gimenez-de-vargas",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/9e57ab93-718e-432e-843c-1d25b563f642/picture/tinified-ca717ecb68c01093b0ed2b5e7c288feb.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/9e57ab93-718e-432e-843c-1d25b563f642/picture/tinified-ca717ecb68c01093b0ed2b5e7c288feb.png",
-            "captain": false,
-            "exp": null,
-            "expected": null,
-            "opp": null,
-            "opponent": null,
-            "home": null,
-            "average": null,
-            "formL5": null,
-            "intl": false,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-16T19:00:00Z"
-          },
-          {
-            "actual": 40.11,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": null,
-            "name": "Mario Soriano",
-            "player": "Mario Soriano",
-            "slug": "mario-soriano-carreno",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/22867681-bde0-4ca9-b7ef-0db5f4316ff6/picture/tinified-dd97d33890976520396d8d3586880105.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/22867681-bde0-4ca9-b7ef-0db5f4316ff6/picture/tinified-dd97d33890976520396d8d3586880105.png",
-            "captain": false,
-            "exp": null,
-            "expected": null,
-            "opp": null,
-            "opponent": null,
-            "home": null,
-            "average": null,
-            "formL5": null,
-            "intl": false,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-16T19:00:00Z"
-          },
-          {
-            "actual": 83.39,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": null,
-            "name": "Yeremay Hernández",
-            "player": "Yeremay Hernández",
-            "slug": "yeremay-hernandez-cubas",
-            "pos": "FW",
-            "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/fbfa4a8d-6293-4111-89e2-7bf7df192bae/picture/tinified-495fdb8937e4646eb65b1fd113d619cc.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/fbfa4a8d-6293-4111-89e2-7bf7df192bae/picture/tinified-495fdb8937e4646eb65b1fd113d619cc.png",
-            "captain": true,
-            "exp": null,
-            "expected": null,
-            "opp": null,
-            "opponent": null,
-            "home": null,
-            "average": null,
-            "formL5": null,
-            "intl": false,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-16T19:00:00Z"
-          },
-          {
-            "actual": 66,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": null,
-            "name": "Bil Nsongo",
-            "player": "Bil Nsongo",
-            "slug": "bil-dornol-nsongo-tonfack",
-            "pos": "FW",
-            "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/c91e5a1b-7c95-4f87-876c-e457b2887eb1/picture/tinified-492e441b15ac58e1bb4a9c851439c22e.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/c91e5a1b-7c95-4f87-876c-e457b2887eb1/picture/tinified-492e441b15ac58e1bb4a9c851439c22e.png",
-            "captain": false,
-            "exp": null,
-            "expected": null,
-            "opp": null,
-            "opponent": null,
-            "home": null,
-            "average": null,
-            "formL5": null,
-            "intl": false,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-16T19:00:00Z"
-          }
-        ],
-        "projected": null,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": null
-      },
+      "entered": null,
       "poolStrength": {
         "strong": 0,
         "needed": 5
@@ -1034,34 +634,34 @@
       "target": 300,
       "current": [
         {
-          "name": "Leo Román",
+          "name": "Bart Verbruggen",
           "captain": false,
           "locked": true,
-          "nextGame": "2026-10-24T19:00:00Z"
+          "nextGame": "2026-10-18T13:00:00Z"
         },
         {
-          "name": "José María Giménez",
+          "name": "Matthias Ginter",
           "captain": false,
           "locked": true,
-          "nextGame": "2026-10-24T19:00:00Z"
+          "nextGame": "2026-10-18T13:30:00Z"
         },
         {
-          "name": "Mario Soriano",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-24T19:00:00Z"
-        },
-        {
-          "name": "Yeremay Hernández",
+          "name": "Cristian Cásseres Jr.",
           "captain": true,
           "locked": true,
-          "nextGame": "2026-10-24T19:00:00Z"
+          "nextGame": "2026-10-24T15:15:00Z"
         },
         {
-          "name": "Bil Nsongo",
+          "name": "Luismi Cruz",
           "captain": false,
           "locked": true,
           "nextGame": "2026-10-24T19:00:00Z"
+        },
+        {
+          "name": "Maximilian Eggestein",
+          "captain": false,
+          "locked": true,
+          "nextGame": "2026-10-18T13:30:00Z"
         }
       ],
       "plan": null,
@@ -1070,196 +670,44 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 302 scored so far, 5 of 5 played. The squad's top three lineups together need 1140; the squad has 893 so far.",
-      "tone": "good",
-      "lockAt": "2026-10-16T18:30:00Z",
+      "status": "Not open for entry yet. A team goes in the moment it opens.",
+      "tone": "neutral",
+      "lockAt": null,
       "isSquad": true,
-      "entered": {
-        "five": [
-          {
-            "actual": 21.53,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "deportivo-la-coruna-a-coruna",
-            "name": "Leo Román",
-            "player": "Leo Román",
-            "slug": "leonardo-roman-riquelme",
-            "pos": "GK",
-            "position": "GK",
-            "pic": "https://assets.sorare.com/cardsamplepicture/588cca58-d9c1-4acd-82c5-7057b61afd16/picture/tinified-af1be6faab2ebe7c5a655661e74b1d4a.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/588cca58-d9c1-4acd-82c5-7057b61afd16/picture/tinified-af1be6faab2ebe7c5a655661e74b1d4a.png",
-            "captain": false,
-            "exp": 40.69,
-            "expected": 40.69,
-            "opp": "Levante UD",
-            "opponent": "Levante UD",
-            "home": true,
-            "average": 43,
-            "formL5": 37,
-            "intl": false,
-            "pWin": 0.457,
-            "pLose": 0.269,
-            "marketFactor": 1.036,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-16T19:00:00Z"
-          },
-          {
-            "actual": 34.38,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "deportivo-la-coruna-a-coruna",
-            "name": "Giacomo Quagliata",
-            "player": "Giacomo Quagliata",
-            "slug": "giacomo-quagliata",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/9e4ecdf0-5d3e-4c91-bad2-09f6f91e288b/picture/tinified-434bd824f6d48cbc240e243f69d1bc94.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/9e4ecdf0-5d3e-4c91-bad2-09f6f91e288b/picture/tinified-434bd824f6d48cbc240e243f69d1bc94.png",
-            "captain": false,
-            "exp": 36.87,
-            "expected": 36.87,
-            "opp": "Levante UD",
-            "opponent": "Levante UD",
-            "home": true,
-            "average": 37,
-            "formL5": 42,
-            "intl": false,
-            "pWin": 0.457,
-            "pLose": 0.269,
-            "marketFactor": 1.022,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-16T19:00:00Z"
-          },
-          {
-            "actual": 117.65,
-            "scoreStatus": "FINAL",
-            "teamSlug": "toulouse-toulouse",
-            "name": "Cristian Cásseres Jr.",
-            "player": "Cristian Cásseres Jr.",
-            "slug": "cristian-sleiker-casseres-yepes",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/c2d84e0c-57e8-4225-a3c3-d58f1103d23e/picture/tinified-70b75d69f7cba066a485aba14009f488.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/c2d84e0c-57e8-4225-a3c3-d58f1103d23e/picture/tinified-70b75d69f7cba066a485aba14009f488.png",
-            "captain": true,
-            "exp": 77.57,
-            "expected": 77.57,
-            "opp": "Le Mans FC",
-            "opponent": "Le Mans FC",
-            "home": false,
-            "average": 68,
-            "formL5": 83,
-            "intl": false,
-            "pWin": 0.409,
-            "pLose": 0.32,
-            "marketFactor": 1.007,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-16T18:45:00Z"
-          },
-          {
-            "actual": 0,
-            "scoreStatus": "FINAL",
-            "teamSlug": "le-mans-le-mans",
-            "name": "Antoine Rabillard",
-            "player": "Antoine Rabillard",
-            "slug": "antoine-rabillard",
-            "pos": "FW",
-            "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/1c0e6da1-0aa0-4143-9dac-7f8c1477e21c/picture/tinified-3629ea24204592fba6165a5098089043.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/1c0e6da1-0aa0-4143-9dac-7f8c1477e21c/picture/tinified-3629ea24204592fba6165a5098089043.png",
-            "captain": false,
-            "exp": 30.21,
-            "expected": 30.21,
-            "opp": "Toulouse FC",
-            "opponent": "Toulouse FC",
-            "home": true,
-            "average": 54,
-            "formL5": 40,
-            "intl": false,
-            "pWin": 0.32,
-            "pLose": 0.409,
-            "marketFactor": 0.989,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-16T18:45:00Z"
-          },
-          {
-            "actual": 69.77,
-            "scoreStatus": "FINAL",
-            "teamSlug": "eintracht-frankfurt-frankfurt-am-main",
-            "name": "Younes Ebnoutalib",
-            "player": "Younes Ebnoutalib",
-            "slug": "younes-ebnoutalib",
-            "pos": "FW",
-            "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/6d2fc8fa-2ad3-4048-910f-4ce1411868c9/picture/tinified-32003761e669800fcb80320f31d8d718.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/6d2fc8fa-2ad3-4048-910f-4ce1411868c9/picture/tinified-32003761e669800fcb80320f31d8d718.png",
-            "captain": false,
-            "exp": 24.72,
-            "expected": 24.72,
-            "opp": "1. FC Köln",
-            "opponent": "1. FC Köln",
-            "home": true,
-            "average": 46,
-            "formL5": 42,
-            "intl": false,
-            "pWin": 0.494,
-            "pLose": 0.273,
-            "marketFactor": 1.02,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-16T18:30:00Z"
-          }
-        ],
-        "projected": 248.08,
-        "scoredSoFar": 302.16,
-        "played": 5,
-        "expectedFinal": 302.16
-      },
+      "entered": null,
       "poolStrength": {
         "strong": 0,
         "needed": 5
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 4,
+        "lineupsIn": 0,
         "needed": 3,
-        "scoreSoFar": 892.6032
+        "scoreSoFar": 0
       },
-      "level": 3,
+      "level": 0,
       "lives": null,
       "totalLevels": 5,
-      "levelsDone": 3,
+      "levelsDone": 0,
       "ladder": [
         {
           "level": 0,
-          "state": "CLAIMED",
+          "state": "PRE_MATCHDAY_LOCKED",
           "target": 700
         },
         {
           "level": 1,
-          "state": "CLAIMED",
+          "state": "LOCKED",
           "target": 980
         },
         {
           "level": 2,
-          "state": "CLAIMED",
+          "state": "LOCKED",
           "target": 1060
         },
         {
           "level": 3,
-          "state": "LINEUP_SET",
+          "state": "LOCKED",
           "target": 1140
         },
         {
@@ -1276,40 +724,9 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
-      "target": 1140,
-      "current": [
-        {
-          "name": "Leo Román",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-24T19:00:00Z"
-        },
-        {
-          "name": "Giacomo Quagliata",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-24T19:00:00Z"
-        },
-        {
-          "name": "Cristian Cásseres Jr.",
-          "captain": true,
-          "locked": true,
-          "nextGame": "2026-10-24T15:15:00Z"
-        },
-        {
-          "name": "Antoine Rabillard",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-25T16:15:00Z"
-        },
-        {
-          "name": "Younes Ebnoutalib",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-24T16:30:00Z"
-        }
-      ],
+      "state": "PRE_MATCHDAY_LOCKED",
+      "target": 700,
+      "current": [],
       "plan": null,
       "candidates": [],
       "projected": 0
