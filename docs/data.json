@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T17:56:08.694Z",
+  "generatedAt": "2026-10-16T18:02:18.337Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-16T18:30:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1792173346325,
-    "reason": "last run 0m ago, next due in 5m (lock in 34m)"
+    "lastRunAt": 1792173714823,
+    "reason": "last run 0m ago, next due in 5m (lock in 28m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Gómez",
@@ -27,10 +27,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 205.45,
+      "squadScore": 568.05,
       "lineupId": "Tasks::TaskLineup:e812230e-a8ea-489d-9dd7-39640df898c9",
       "state": "READY",
-      "score": 35.7,
+      "score": 162.4,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,8 +39,8 @@
           "slug": "leonardo-roman-riquelme",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-16T19:00:00Z"
         },
         {
@@ -48,8 +48,8 @@
           "slug": "giacomo-quagliata",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-16T19:00:00Z"
         },
         {
@@ -57,8 +57,8 @@
           "slug": "cristian-sleiker-casseres-yepes",
           "position": "Midfielder",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 53.2,
+          "status": "REVIEWING",
           "kickoff": "2026-10-16T18:45:00Z"
         },
         {
@@ -80,7 +80,7 @@
           "kickoff": "2026-10-16T18:30:00Z"
         }
       ],
-      "scored": 1
+      "scored": 4
     },
     {
       "surface": "team set (Loadshift)",
@@ -154,7 +154,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:8f219c17-a3d1-45b9-ba81-69f5a6b9e3e5",
       "state": "READY",
-      "score": 226.24,
+      "score": 317.94,
       "finished": false,
       "cleared": false,
       "players": [
@@ -181,8 +181,8 @@
           "slug": "cristian-sleiker-casseres-yepes",
           "position": "Midfielder",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 53.2,
+          "status": "REVIEWING",
           "kickoff": "2026-10-16T18:45:00Z"
         },
         {
@@ -190,8 +190,8 @@
           "slug": "luis-miguel-cruz-hernandez",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 38.5,
+          "status": "REVIEWING",
           "kickoff": "2026-10-16T19:00:00Z"
         },
         {
@@ -204,7 +204,7 @@
           "kickoff": "2026-10-18T13:30:00Z"
         }
       ],
-      "scored": 3
+      "scored": 5
     },
     {
       "surface": "my set",
@@ -216,7 +216,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:cc89e991-16b6-4654-935e-16d251dc6e7e",
       "state": "READY",
-      "score": 0,
+      "score": 203,
       "finished": false,
       "cleared": false,
       "players": [
@@ -225,8 +225,8 @@
           "slug": "leonardo-roman-riquelme",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-16T19:00:00Z"
         },
         {
@@ -234,8 +234,8 @@
           "slug": "jose-maria-gimenez-de-vargas",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-16T19:00:00Z"
         },
         {
@@ -243,8 +243,8 @@
           "slug": "mario-soriano-carreno",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-16T19:00:00Z"
         },
         {
@@ -252,8 +252,8 @@
           "slug": "yeremay-hernandez-cubas",
           "position": "Forward",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 54.25,
+          "status": "REVIEWING",
           "kickoff": "2026-10-16T19:00:00Z"
         },
         {
@@ -261,12 +261,12 @@
           "slug": "bil-dornol-nsongo-tonfack",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 38.5,
+          "status": "REVIEWING",
           "kickoff": "2026-10-16T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 5
     },
     {
       "surface": "my set",
@@ -821,7 +821,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 226 scored so far, 3 of 5 played. On course for about 390; needs 300 (90 over).",
+      "status": "Locked and playing. 345 scored so far, 5 of 5 played. On course for about 345; needs 300 (45 over).",
       "tone": "good",
       "lockAt": "2026-10-15T19:00:00Z",
       "isSquad": false,
@@ -886,8 +886,8 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 53.2,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "toulouse-toulouse",
             "name": "Cristian Cásseres Jr.",
             "player": "Cristian Cásseres Jr.",
@@ -915,8 +915,8 @@
             "kickoff": "2026-10-16T18:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 38.5,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Luismi Cruz",
             "player": "Luismi Cruz",
@@ -974,9 +974,9 @@
           }
         ],
         "projected": 365.4,
-        "scoredSoFar": 226.26,
-        "played": 3,
-        "expectedFinal": 390.41
+        "scoredSoFar": 344.56,
+        "played": 5,
+        "expectedFinal": 344.56
       },
       "poolStrength": {
         "strong": 10,
@@ -1473,15 +1473,15 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 36 scored so far, 1 of 5 played. The squad's top three lineups together need 1140; the squad has 205 so far.",
+      "status": "Locked and playing. 189 scored so far, 4 of 5 played. The squad's top three lineups together need 1140; the squad has 568 so far.",
       "tone": "good",
       "lockAt": "2026-10-16T18:30:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Leo Román",
             "player": "Leo Román",
@@ -1509,8 +1509,8 @@
             "kickoff": "2026-10-16T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Giacomo Quagliata",
             "player": "Giacomo Quagliata",
@@ -1538,8 +1538,8 @@
             "kickoff": "2026-10-16T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 53.2,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "toulouse-toulouse",
             "name": "Cristian Cásseres Jr.",
             "player": "Cristian Cásseres Jr.",
@@ -1626,9 +1626,9 @@
           }
         ],
         "projected": 248.08,
-        "scoredSoFar": 35.7,
-        "played": 1,
-        "expectedFinal": 259.82
+        "scoredSoFar": 189,
+        "played": 4,
+        "expectedFinal": 219.21
       },
       "poolStrength": {
         "strong": 0,
@@ -1638,7 +1638,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 205.45
+        "scoreSoFar": 568.05
       },
       "level": 3,
       "lives": null,
@@ -1725,7 +1725,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 62,
           "picture": "https://assets.sorare.com/cardsamplepicture/22867681-bde0-4ca9-b7ef-0db5f4316ff6/picture/tinified-dd97d33890976520396d8d3586880105.png",
@@ -1764,7 +1764,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 48,
           "picture": "https://assets.sorare.com/cardsamplepicture/1ae71b17-d14f-40a2-a2e2-2ee8dbf63325/picture/tinified-e926b4c908ceedcccd714fbdddfc9e2f.png",
@@ -1803,7 +1803,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 58,
           "picture": "https://assets.sorare.com/cardsamplepicture/348dbf5e-7660-4de2-aa70-f44e083fd7c6/picture/tinified-0ff8b72b06b5e4151bf4b85699bc89b3.png",
@@ -1842,7 +1842,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 52,
           "picture": "https://assets.sorare.com/cardsamplepicture/afd65916-a710-4755-8ed3-c0561381f11d/picture/tinified-6192508f27f90ce113f81e669bf78136.png",
@@ -1881,7 +1881,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 52,
           "picture": "https://assets.sorare.com/cardsamplepicture/e43b770d-23aa-4bf5-b899-8c24be687380/picture/tinified-54b6fb31c4741e3f84a493f103165e12.png",
@@ -1920,7 +1920,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 41,
           "picture": "https://assets.sorare.com/cardsamplepicture/c91e5a1b-7c95-4f87-876c-e457b2887eb1/picture/tinified-492e441b15ac58e1bb4a9c851439c22e.png",
@@ -1959,7 +1959,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 41,
           "picture": "https://assets.sorare.com/cardsamplepicture/d4382453-eada-4313-a81d-3fffb5c09070/picture/tinified-c5dd075d80f705159e38dedc40cba18b.png",
@@ -1998,7 +1998,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 51,
           "picture": "https://assets.sorare.com/cardsamplepicture/b77bf741-52b3-432a-a843-42f40ae5fb89/picture/tinified-006b271ac090561ac6cd2e019939ef28.png",
