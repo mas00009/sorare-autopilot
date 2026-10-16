@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T13:04:36.701Z",
+  "generatedAt": "2026-10-16T13:36:34.437Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-16T18:30:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1792155858182,
-    "reason": "last run 0m ago, next due in 60m (lock in 325m)"
+    "lastRunAt": 1792157773255,
+    "reason": "last run 0m ago, next due in 60m (lock in 293m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Gómez",
@@ -26,7 +26,7 @@
       "target": 1140,
       "stepState": "LINEUP_SET",
       "collaborative": true,
-      "squadLineups": 3,
+      "squadLineups": 4,
       "squadScore": 0,
       "lineupId": "Tasks::TaskLineup:e812230e-a8ea-489d-9dd7-39640df898c9",
       "state": "READY",
@@ -1636,7 +1636,7 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 3,
+        "lineupsIn": 4,
         "needed": 3,
         "scoreSoFar": 0
       },
