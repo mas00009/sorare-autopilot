@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T19:34:45.102Z",
+  "generatedAt": "2026-10-16T19:40:19.100Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-16T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792179271589,
+    "lastRunAt": 1792179605805,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 673.3434,
+      "squadScore": 690.9752,
       "lineupId": "Tasks::TaskLineup:e812230e-a8ea-489d-9dd7-39640df898c9",
       "state": "READY",
-      "score": 201.15,
+      "score": 194.28,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "leonardo-roman-riquelme",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 35.49,
+          "score": 35.07,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -48,7 +48,7 @@
           "slug": "giacomo-quagliata",
           "position": "Defender",
           "captain": false,
-          "score": 47.69,
+          "score": 40.22,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -75,7 +75,7 @@
           "slug": "younes-ebnoutalib",
           "position": "Forward",
           "captain": false,
-          "score": 42.43,
+          "score": 43.45,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T16:30:00Z"
         }
@@ -154,7 +154,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:8f219c17-a3d1-45b9-ba81-69f5a6b9e3e5",
       "state": "READY",
-      "score": 347.88,
+      "score": 348.32,
       "finished": false,
       "cleared": false,
       "players": [
@@ -190,7 +190,7 @@
           "slug": "luis-miguel-cruz-hernandez",
           "position": "Forward",
           "captain": false,
-          "score": 46.09,
+          "score": 46.53,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -216,7 +216,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:cc89e991-16b6-4654-935e-16d251dc6e7e",
       "state": "READY",
-      "score": 226.71,
+      "score": 231.61,
       "finished": false,
       "cleared": false,
       "players": [
@@ -225,7 +225,7 @@
           "slug": "leonardo-roman-riquelme",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 35.49,
+          "score": 35.07,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -234,7 +234,7 @@
           "slug": "jose-maria-gimenez-de-vargas",
           "position": "Defender",
           "captain": false,
-          "score": 45.4,
+          "score": 45.34,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -243,7 +243,7 @@
           "slug": "mario-soriano-carreno",
           "position": "Midfielder",
           "captain": false,
-          "score": 38.54,
+          "score": 44.21,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -252,7 +252,7 @@
           "slug": "yeremay-hernandez-cubas",
           "position": "Forward",
           "captain": true,
-          "score": 70.22,
+          "score": 71.15,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -261,7 +261,7 @@
           "slug": "bil-dornol-nsongo-tonfack",
           "position": "Forward",
           "captain": false,
-          "score": 37.07,
+          "score": 35.86,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         }
@@ -915,7 +915,7 @@
             "kickoff": "2026-10-16T18:45:00Z"
           },
           {
-            "actual": 46.09,
+            "actual": 46.53,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Luismi Cruz",
@@ -974,9 +974,9 @@
           }
         ],
         "projected": 365.4,
-        "scoredSoFar": 385.66,
+        "scoredSoFar": 386.1,
         "played": 5,
-        "expectedFinal": 385.66
+        "expectedFinal": 386.1
       },
       "poolStrength": {
         "strong": 10,
@@ -1473,14 +1473,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 239 scored so far, 4 of 5 played. The squad's top three lineups together need 1140; the squad has 673 so far.",
+      "status": "Locked and playing. 232 scored so far, 4 of 5 played. The squad's top three lineups together need 1140; the squad has 691 so far.",
       "tone": "good",
       "lockAt": "2026-10-16T18:30:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 35.49,
+            "actual": 35.07,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Leo Román",
@@ -1509,7 +1509,7 @@
             "kickoff": "2026-10-16T19:00:00Z"
           },
           {
-            "actual": 47.69,
+            "actual": 40.22,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Giacomo Quagliata",
@@ -1596,7 +1596,7 @@
             "kickoff": "2026-10-16T18:45:00Z"
           },
           {
-            "actual": 42.43,
+            "actual": 43.45,
             "scoreStatus": "REVIEWING",
             "teamSlug": "eintracht-frankfurt-frankfurt-am-main",
             "name": "Younes Ebnoutalib",
@@ -1626,9 +1626,9 @@
           }
         ],
         "projected": 248.08,
-        "scoredSoFar": 238.92,
+        "scoredSoFar": 232.05,
         "played": 4,
-        "expectedFinal": 269.13
+        "expectedFinal": 262.26
       },
       "poolStrength": {
         "strong": 0,
@@ -1638,7 +1638,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 673.3434
+        "scoreSoFar": 690.9752
       },
       "level": 3,
       "lives": null,
