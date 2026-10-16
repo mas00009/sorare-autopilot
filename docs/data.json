@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T18:38:27.442Z",
+  "generatedAt": "2026-10-16T18:44:17.223Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-16T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792175891795,
-    "reason": "last run 0m ago, next due in 180m (lock in 7m)"
+    "lastRunAt": 1792176241128,
+    "reason": "last run 0m ago, next due in 180m (lock in 1m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Gómez",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 596.7776,
+      "squadScore": 588.3552,
       "lineupId": "Tasks::TaskLineup:e812230e-a8ea-489d-9dd7-39640df898c9",
       "state": "READY",
-      "score": 163.42,
+      "score": 165.56,
       "finished": false,
       "cleared": false,
       "players": [
@@ -75,7 +75,7 @@
           "slug": "younes-ebnoutalib",
           "position": "Forward",
           "captain": false,
-          "score": 36.72,
+          "score": 38.86,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T16:30:00Z"
         }
@@ -1473,7 +1473,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 190 scored so far, 4 of 5 played. The squad's top three lineups together need 1140; the squad has 597 so far.",
+      "status": "Locked and playing. 192 scored so far, 4 of 5 played. The squad's top three lineups together need 1140; the squad has 588 so far.",
       "tone": "good",
       "lockAt": "2026-10-16T18:30:00Z",
       "isSquad": true,
@@ -1596,7 +1596,7 @@
             "kickoff": "2026-10-16T18:45:00Z"
           },
           {
-            "actual": 36.72,
+            "actual": 38.86,
             "scoreStatus": "REVIEWING",
             "teamSlug": "eintracht-frankfurt-frankfurt-am-main",
             "name": "Younes Ebnoutalib",
@@ -1626,9 +1626,9 @@
           }
         ],
         "projected": 248.08,
-        "scoredSoFar": 190.02,
+        "scoredSoFar": 192.16,
         "played": 4,
-        "expectedFinal": 220.23
+        "expectedFinal": 222.37
       },
       "poolStrength": {
         "strong": 0,
@@ -1638,7 +1638,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 596.7776
+        "scoreSoFar": 588.3552
       },
       "level": 3,
       "lives": null,
