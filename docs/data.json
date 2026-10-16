@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T19:12:23.901Z",
+  "generatedAt": "2026-10-16T19:17:59.650Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-16T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792177930818,
+    "lastRunAt": 1792178265792,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 640.3274,
+      "squadScore": 646.142,
       "lineupId": "Tasks::TaskLineup:e812230e-a8ea-489d-9dd7-39640df898c9",
       "state": "READY",
-      "score": 166.67,
+      "score": 176.23,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,7 +48,7 @@
           "slug": "giacomo-quagliata",
           "position": "Defender",
           "captain": false,
-          "score": 35.07,
+          "score": 35.36,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -57,7 +57,7 @@
           "slug": "cristian-sleiker-casseres-yepes",
           "position": "Midfielder",
           "captain": true,
-          "score": 54.42,
+          "score": 63.69,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T15:15:00Z"
         },
@@ -154,7 +154,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:8f219c17-a3d1-45b9-ba81-69f5a6b9e3e5",
       "state": "READY",
-      "score": 323.23,
+      "score": 335.47,
       "finished": false,
       "cleared": false,
       "players": [
@@ -181,7 +181,7 @@
           "slug": "cristian-sleiker-casseres-yepes",
           "position": "Midfielder",
           "captain": true,
-          "score": 54.42,
+          "score": 63.69,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T15:15:00Z"
         },
@@ -190,7 +190,7 @@
           "slug": "luis-miguel-cruz-hernandez",
           "position": "Forward",
           "captain": false,
-          "score": 42.57,
+          "score": 45.54,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -216,7 +216,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:cc89e991-16b6-4654-935e-16d251dc6e7e",
       "state": "READY",
-      "score": 207.92,
+      "score": 214.19,
       "finished": false,
       "cleared": false,
       "players": [
@@ -234,7 +234,7 @@
           "slug": "jose-maria-gimenez-de-vargas",
           "position": "Defender",
           "captain": false,
-          "score": 39.52,
+          "score": 39.86,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -243,7 +243,7 @@
           "slug": "mario-soriano-carreno",
           "position": "Midfielder",
           "captain": false,
-          "score": 34.55,
+          "score": 37.07,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -252,7 +252,7 @@
           "slug": "yeremay-hernandez-cubas",
           "position": "Forward",
           "captain": true,
-          "score": 60.61,
+          "score": 64.02,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -821,7 +821,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 350 scored so far, 5 of 5 played. On course for about 350; needs 300 (50 over).",
+      "status": "Locked and playing. 367 scored so far, 5 of 5 played. On course for about 367; needs 300 (67 over).",
       "tone": "good",
       "lockAt": "2026-10-15T19:00:00Z",
       "isSquad": false,
@@ -886,7 +886,7 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": 54.42,
+            "actual": 63.69,
             "scoreStatus": "REVIEWING",
             "teamSlug": "toulouse-toulouse",
             "name": "Cristian Cásseres Jr.",
@@ -915,7 +915,7 @@
             "kickoff": "2026-10-16T18:45:00Z"
           },
           {
-            "actual": 42.57,
+            "actual": 45.54,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Luismi Cruz",
@@ -974,9 +974,9 @@
           }
         ],
         "projected": 365.4,
-        "scoredSoFar": 350.46,
+        "scoredSoFar": 367.33,
         "played": 5,
-        "expectedFinal": 350.46
+        "expectedFinal": 367.33
       },
       "poolStrength": {
         "strong": 10,
@@ -1473,7 +1473,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 194 scored so far, 4 of 5 played. The squad's top three lineups together need 1140; the squad has 640 so far.",
+      "status": "Locked and playing. 208 scored so far, 4 of 5 played. The squad's top three lineups together need 1140; the squad has 646 so far.",
       "tone": "good",
       "lockAt": "2026-10-16T18:30:00Z",
       "isSquad": true,
@@ -1509,7 +1509,7 @@
             "kickoff": "2026-10-16T19:00:00Z"
           },
           {
-            "actual": 35.07,
+            "actual": 35.36,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Giacomo Quagliata",
@@ -1538,7 +1538,7 @@
             "kickoff": "2026-10-16T19:00:00Z"
           },
           {
-            "actual": 54.42,
+            "actual": 63.69,
             "scoreStatus": "REVIEWING",
             "teamSlug": "toulouse-toulouse",
             "name": "Cristian Cásseres Jr.",
@@ -1626,9 +1626,9 @@
           }
         ],
         "projected": 248.08,
-        "scoredSoFar": 193.89,
+        "scoredSoFar": 208.09,
         "played": 4,
-        "expectedFinal": 224.1
+        "expectedFinal": 238.3
       },
       "poolStrength": {
         "strong": 0,
@@ -1638,7 +1638,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 640.3274
+        "scoreSoFar": 646.142
       },
       "level": 3,
       "lives": null,
