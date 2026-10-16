@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T19:51:31.654Z",
+  "generatedAt": "2026-10-16T19:57:05.752Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-16T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792180277974,
+    "lastRunAt": 1792180612451,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 728.7662,
+      "squadScore": 730.5666,
       "lineupId": "Tasks::TaskLineup:e812230e-a8ea-489d-9dd7-39640df898c9",
       "state": "READY",
-      "score": 199.86,
+      "score": 196.81,
       "finished": false,
       "cleared": false,
       "players": [
@@ -57,7 +57,7 @@
           "slug": "cristian-sleiker-casseres-yepes",
           "position": "Midfielder",
           "captain": true,
-          "score": 74.33,
+          "score": 72.2,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T15:15:00Z"
         },
@@ -75,7 +75,7 @@
           "slug": "younes-ebnoutalib",
           "position": "Forward",
           "captain": false,
-          "score": 42.33,
+          "score": 41.41,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T16:30:00Z"
         }
@@ -154,7 +154,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:8f219c17-a3d1-45b9-ba81-69f5a6b9e3e5",
       "state": "READY",
-      "score": 342.37,
+      "score": 340.24,
       "finished": false,
       "cleared": false,
       "players": [
@@ -181,7 +181,7 @@
           "slug": "cristian-sleiker-casseres-yepes",
           "position": "Midfielder",
           "captain": true,
-          "score": 74.33,
+          "score": 72.2,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T15:15:00Z"
         },
@@ -821,7 +821,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 380 scored so far, 5 of 5 played. On course for about 380; needs 300 (80 over).",
+      "status": "Locked and playing. 376 scored so far, 5 of 5 played. On course for about 376; needs 300 (76 over).",
       "tone": "good",
       "lockAt": "2026-10-15T19:00:00Z",
       "isSquad": false,
@@ -886,7 +886,7 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": 74.33,
+            "actual": 72.2,
             "scoreStatus": "REVIEWING",
             "teamSlug": "toulouse-toulouse",
             "name": "Cristian Cásseres Jr.",
@@ -974,9 +974,9 @@
           }
         ],
         "projected": 365.4,
-        "scoredSoFar": 379.56,
+        "scoredSoFar": 376.36,
         "played": 5,
-        "expectedFinal": 379.56
+        "expectedFinal": 376.36
       },
       "poolStrength": {
         "strong": 10,
@@ -1473,7 +1473,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 237 scored so far, 4 of 5 played. The squad's top three lineups together need 1140; the squad has 729 so far.",
+      "status": "Locked and playing. 233 scored so far, 4 of 5 played. The squad's top three lineups together need 1140; the squad has 731 so far.",
       "tone": "good",
       "lockAt": "2026-10-16T18:30:00Z",
       "isSquad": true,
@@ -1538,7 +1538,7 @@
             "kickoff": "2026-10-16T19:00:00Z"
           },
           {
-            "actual": 74.33,
+            "actual": 72.2,
             "scoreStatus": "REVIEWING",
             "teamSlug": "toulouse-toulouse",
             "name": "Cristian Cásseres Jr.",
@@ -1596,7 +1596,7 @@
             "kickoff": "2026-10-16T18:45:00Z"
           },
           {
-            "actual": 42.33,
+            "actual": 41.41,
             "scoreStatus": "REVIEWING",
             "teamSlug": "eintracht-frankfurt-frankfurt-am-main",
             "name": "Younes Ebnoutalib",
@@ -1626,9 +1626,9 @@
           }
         ],
         "projected": 248.08,
-        "scoredSoFar": 237.04,
+        "scoredSoFar": 232.92,
         "played": 4,
-        "expectedFinal": 267.25
+        "expectedFinal": 263.13
       },
       "poolStrength": {
         "strong": 0,
@@ -1638,7 +1638,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 728.7662
+        "scoreSoFar": 730.5666
       },
       "level": 3,
       "lives": null,
