@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T18:20:40.201Z",
+  "generatedAt": "2026-10-16T18:32:38.457Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 226
   },
   "schedule": {
-    "nextLock": "2026-10-16T18:30:00Z",
-    "cadenceMin": 180,
-    "lastRunAt": 1792174817700,
-    "reason": "last run 0m ago, next due in 180m (lock in 9m)"
+    "nextLock": "2026-10-16T18:45:00Z",
+    "cadenceMin": 5,
+    "lastRunAt": 1792175543033,
+    "reason": "last run 0m ago, next due in 5m (lock in 12m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Gómez",
@@ -24,10 +24,10 @@
       "surface": "team set (Loadshift)",
       "level": 3,
       "target": 1140,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 568.05,
+      "squadScore": 566.921,
       "lineupId": "Tasks::TaskLineup:e812230e-a8ea-489d-9dd7-39640df898c9",
       "state": "READY",
       "score": 162.4,
@@ -77,7 +77,7 @@
           "captain": false,
           "score": 35.7,
           "status": "REVIEWING",
-          "kickoff": "2026-10-16T18:30:00Z"
+          "kickoff": "2026-10-24T16:30:00Z"
         }
       ],
       "scored": 4
@@ -1473,7 +1473,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 189 scored so far, 4 of 5 played. The squad's top three lineups together need 1140; the squad has 568 so far.",
+      "status": "Locked and playing. 189 scored so far, 4 of 5 played. The squad's top three lineups together need 1140; the squad has 567 so far.",
       "tone": "good",
       "lockAt": "2026-10-16T18:30:00Z",
       "isSquad": true,
@@ -1621,7 +1621,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-16T18:30:00Z"
           }
         ],
@@ -1638,7 +1638,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 568.05
+        "scoreSoFar": 566.921
       },
       "level": 3,
       "lives": null,
@@ -1662,7 +1662,7 @@
         },
         {
           "level": 3,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 1140
         },
         {
@@ -1679,7 +1679,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 1140,
       "current": [
         {
@@ -1709,8 +1709,8 @@
         {
           "name": "Younes Ebnoutalib",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-16T18:30:00Z"
+          "locked": true,
+          "nextGame": "2026-10-24T16:30:00Z"
         }
       ],
       "plan": null,
