@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T15:52:49.202Z",
+  "generatedAt": "2026-10-16T16:23:46.768Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-16T18:30:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1792165951729,
-    "reason": "last run 0m ago, next due in 15m (lock in 157m)"
+    "lastRunAt": 1792167809540,
+    "reason": "last run 0m ago, next due in 15m (lock in 126m)"
   },
   "packs": {
     "lastThreeStar": "Sergio Gómez",
