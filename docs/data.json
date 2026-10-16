@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T19:40:19.100Z",
+  "generatedAt": "2026-10-16T19:45:55.456Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-16T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792179605805,
+    "lastRunAt": 1792179941948,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 690.9752,
+      "squadScore": 706.9248,
       "lineupId": "Tasks::TaskLineup:e812230e-a8ea-489d-9dd7-39640df898c9",
       "state": "READY",
-      "score": 194.28,
+      "score": 199.5,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "leonardo-roman-riquelme",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 35.07,
+          "score": 37.49,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -48,7 +48,7 @@
           "slug": "giacomo-quagliata",
           "position": "Defender",
           "captain": false,
-          "score": 40.22,
+          "score": 44.14,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -75,7 +75,7 @@
           "slug": "younes-ebnoutalib",
           "position": "Forward",
           "captain": false,
-          "score": 43.45,
+          "score": 42.33,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T16:30:00Z"
         }
@@ -154,7 +154,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:8f219c17-a3d1-45b9-ba81-69f5a6b9e3e5",
       "state": "READY",
-      "score": 348.32,
+      "score": 343.37,
       "finished": false,
       "cleared": false,
       "players": [
@@ -190,7 +190,7 @@
           "slug": "luis-miguel-cruz-hernandez",
           "position": "Forward",
           "captain": false,
-          "score": 46.53,
+          "score": 41.58,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -216,7 +216,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:cc89e991-16b6-4654-935e-16d251dc6e7e",
       "state": "READY",
-      "score": 231.61,
+      "score": 230.45,
       "finished": false,
       "cleared": false,
       "players": [
@@ -225,7 +225,7 @@
           "slug": "leonardo-roman-riquelme",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 35.07,
+          "score": 37.49,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -234,7 +234,7 @@
           "slug": "jose-maria-gimenez-de-vargas",
           "position": "Defender",
           "captain": false,
-          "score": 45.34,
+          "score": 39.4,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -243,7 +243,7 @@
           "slug": "mario-soriano-carreno",
           "position": "Midfielder",
           "captain": false,
-          "score": 44.21,
+          "score": 44.52,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -252,7 +252,7 @@
           "slug": "yeremay-hernandez-cubas",
           "position": "Forward",
           "captain": true,
-          "score": 71.15,
+          "score": 74.4,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -261,7 +261,7 @@
           "slug": "bil-dornol-nsongo-tonfack",
           "position": "Forward",
           "captain": false,
-          "score": 35.86,
+          "score": 34.65,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         }
@@ -821,7 +821,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 386 scored so far, 5 of 5 played. On course for about 386; needs 300 (86 over).",
+      "status": "Locked and playing. 381 scored so far, 5 of 5 played. On course for about 381; needs 300 (81 over).",
       "tone": "good",
       "lockAt": "2026-10-15T19:00:00Z",
       "isSquad": false,
@@ -915,7 +915,7 @@
             "kickoff": "2026-10-16T18:45:00Z"
           },
           {
-            "actual": 46.53,
+            "actual": 41.58,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Luismi Cruz",
@@ -974,9 +974,9 @@
           }
         ],
         "projected": 365.4,
-        "scoredSoFar": 386.1,
+        "scoredSoFar": 381.15,
         "played": 5,
-        "expectedFinal": 386.1
+        "expectedFinal": 381.15
       },
       "poolStrength": {
         "strong": 10,
@@ -1473,14 +1473,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 232 scored so far, 4 of 5 played. The squad's top three lineups together need 1140; the squad has 691 so far.",
+      "status": "Locked and playing. 237 scored so far, 4 of 5 played. The squad's top three lineups together need 1140; the squad has 707 so far.",
       "tone": "good",
       "lockAt": "2026-10-16T18:30:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 35.07,
+            "actual": 37.49,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Leo Román",
@@ -1509,7 +1509,7 @@
             "kickoff": "2026-10-16T19:00:00Z"
           },
           {
-            "actual": 40.22,
+            "actual": 44.14,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Giacomo Quagliata",
@@ -1596,7 +1596,7 @@
             "kickoff": "2026-10-16T18:45:00Z"
           },
           {
-            "actual": 43.45,
+            "actual": 42.33,
             "scoreStatus": "REVIEWING",
             "teamSlug": "eintracht-frankfurt-frankfurt-am-main",
             "name": "Younes Ebnoutalib",
@@ -1626,9 +1626,9 @@
           }
         ],
         "projected": 248.08,
-        "scoredSoFar": 232.05,
+        "scoredSoFar": 237.27,
         "played": 4,
-        "expectedFinal": 262.26
+        "expectedFinal": 267.48
       },
       "poolStrength": {
         "strong": 0,
@@ -1638,7 +1638,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 690.9752
+        "scoreSoFar": 706.9248
       },
       "level": 3,
       "lives": null,
