@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T20:58:04.991Z",
+  "generatedAt": "2026-10-16T21:03:33.492Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-16T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792184278175,
+    "lastRunAt": 1792184607399,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -24,13 +24,13 @@
       "surface": "team set (Loadshift)",
       "level": 3,
       "target": 1140,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 889.5452,
+      "squadScore": 892.6032,
       "lineupId": "Tasks::TaskLineup:e812230e-a8ea-489d-9dd7-39640df898c9",
       "state": "READY",
-      "score": 241.21,
+      "score": 243.31,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "leonardo-roman-riquelme",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 19.43,
+          "score": 21.53,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -154,7 +154,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:cc89e991-16b6-4654-935e-16d251dc6e7e",
       "state": "READY",
-      "score": 253.94,
+      "score": 258.77,
       "finished": false,
       "cleared": false,
       "players": [
@@ -163,7 +163,7 @@
           "slug": "leonardo-roman-riquelme",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 19.43,
+          "score": 21.53,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -172,7 +172,7 @@
           "slug": "jose-maria-gimenez-de-vargas",
           "position": "Defender",
           "captain": false,
-          "score": 45.13,
+          "score": 47.75,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -181,7 +181,7 @@
           "slug": "mario-soriano-carreno",
           "position": "Midfielder",
           "captain": false,
-          "score": 40.01,
+          "score": 40.11,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -828,7 +828,7 @@
       "entered": {
         "five": [
           {
-            "actual": 19.43,
+            "actual": 21.53,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Leo Román",
@@ -857,7 +857,7 @@
             "kickoff": "2026-10-16T19:00:00Z"
           },
           {
-            "actual": 45.13,
+            "actual": 47.75,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "José María Giménez",
@@ -886,7 +886,7 @@
             "kickoff": "2026-10-16T19:00:00Z"
           },
           {
-            "actual": 40.01,
+            "actual": 40.11,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Mario Soriano",
@@ -1070,14 +1070,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 300 scored so far, 5 of 5 played. The squad's top three lineups together need 1140; the squad has 890 so far.",
+      "status": "Locked and playing. 302 scored so far, 5 of 5 played. The squad's top three lineups together need 1140; the squad has 893 so far.",
       "tone": "good",
       "lockAt": "2026-10-16T18:30:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 19.43,
+            "actual": 21.53,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Leo Román",
@@ -1223,9 +1223,9 @@
           }
         ],
         "projected": 248.08,
-        "scoredSoFar": 300.06,
+        "scoredSoFar": 302.16,
         "played": 5,
-        "expectedFinal": 300.06
+        "expectedFinal": 302.16
       },
       "poolStrength": {
         "strong": 0,
@@ -1235,7 +1235,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 889.5452
+        "scoreSoFar": 892.6032
       },
       "level": 3,
       "lives": null,
@@ -1259,7 +1259,7 @@
         },
         {
           "level": 3,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 1140
         },
         {
@@ -1276,7 +1276,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 1140,
       "current": [
         {
