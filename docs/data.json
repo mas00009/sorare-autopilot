@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T18:44:17.223Z",
+  "generatedAt": "2026-10-16T18:49:57.099Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-16T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792176241128,
-    "reason": "last run 0m ago, next due in 180m (lock in 1m)"
+    "lastRunAt": 1792176581795,
+    "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
     "lastThreeStar": "Sergio Gómez",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 588.3552,
+      "squadScore": 606.7282,
       "lineupId": "Tasks::TaskLineup:e812230e-a8ea-489d-9dd7-39640df898c9",
       "state": "READY",
-      "score": 165.56,
+      "score": 168.46,
       "finished": false,
       "cleared": false,
       "players": [
@@ -57,9 +57,9 @@
           "slug": "cristian-sleiker-casseres-yepes",
           "position": "Midfielder",
           "captain": true,
-          "score": 53.2,
+          "score": 53.96,
           "status": "REVIEWING",
-          "kickoff": "2026-10-16T18:45:00Z"
+          "kickoff": "2026-10-24T15:15:00Z"
         },
         {
           "name": "Antoine Rabillard",
@@ -67,15 +67,15 @@
           "position": "Forward",
           "captain": false,
           "score": 0,
-          "status": "PENDING",
-          "kickoff": "2026-10-16T18:45:00Z"
+          "status": "REVIEWING",
+          "kickoff": "2026-10-25T16:15:00Z"
         },
         {
           "name": "Younes Ebnoutalib",
           "slug": "younes-ebnoutalib",
           "position": "Forward",
           "captain": false,
-          "score": 38.86,
+          "score": 41,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T16:30:00Z"
         }
@@ -148,13 +148,13 @@
       "surface": "my set",
       "level": 1,
       "target": 300,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:8f219c17-a3d1-45b9-ba81-69f5a6b9e3e5",
       "state": "READY",
-      "score": 317.94,
+      "score": 318.7,
       "finished": false,
       "cleared": false,
       "players": [
@@ -181,9 +181,9 @@
           "slug": "cristian-sleiker-casseres-yepes",
           "position": "Midfielder",
           "captain": true,
-          "score": 53.2,
+          "score": 53.96,
           "status": "REVIEWING",
-          "kickoff": "2026-10-16T18:45:00Z"
+          "kickoff": "2026-10-24T15:15:00Z"
         },
         {
           "name": "Luismi Cruz",
@@ -210,7 +210,7 @@
       "surface": "my set",
       "level": 1,
       "target": 300,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -272,7 +272,7 @@
       "surface": "my set",
       "level": 1,
       "target": 300,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -821,7 +821,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 345 scored so far, 5 of 5 played. On course for about 345; needs 300 (45 over).",
+      "status": "Locked and playing. 346 scored so far, 5 of 5 played. On course for about 346; needs 300 (46 over).",
       "tone": "good",
       "lockAt": "2026-10-15T19:00:00Z",
       "isSquad": false,
@@ -886,7 +886,7 @@
             "kickoff": "2026-10-15T19:00:00Z"
           },
           {
-            "actual": 53.2,
+            "actual": 53.96,
             "scoreStatus": "REVIEWING",
             "teamSlug": "toulouse-toulouse",
             "name": "Cristian Cásseres Jr.",
@@ -974,9 +974,9 @@
           }
         ],
         "projected": 365.4,
-        "scoredSoFar": 344.56,
+        "scoredSoFar": 345.7,
         "played": 5,
-        "expectedFinal": 344.56
+        "expectedFinal": 345.7
       },
       "poolStrength": {
         "strong": 10,
@@ -999,7 +999,7 @@
         },
         {
           "level": 1,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 300
         },
         {
@@ -1030,7 +1030,7 @@
           "rarity": "common"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 300,
       "current": [
         {
@@ -1049,7 +1049,7 @@
           "name": "Cristian Cásseres Jr.",
           "captain": true,
           "locked": true,
-          "nextGame": "2026-10-16T18:45:00Z"
+          "nextGame": "2026-10-24T15:15:00Z"
         },
         {
           "name": "Luismi Cruz",
@@ -1473,7 +1473,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 192 scored so far, 4 of 5 played. The squad's top three lineups together need 1140; the squad has 588 so far.",
+      "status": "Locked and playing. 195 scored so far, 4 of 5 played. The squad's top three lineups together need 1140; the squad has 607 so far.",
       "tone": "good",
       "lockAt": "2026-10-16T18:30:00Z",
       "isSquad": true,
@@ -1538,7 +1538,7 @@
             "kickoff": "2026-10-16T19:00:00Z"
           },
           {
-            "actual": 53.2,
+            "actual": 53.96,
             "scoreStatus": "REVIEWING",
             "teamSlug": "toulouse-toulouse",
             "name": "Cristian Cásseres Jr.",
@@ -1563,12 +1563,12 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-16T18:45:00Z"
           },
           {
             "actual": null,
-            "scoreStatus": "PENDING",
+            "scoreStatus": "REVIEWING",
             "teamSlug": "le-mans-le-mans",
             "name": "Antoine Rabillard",
             "player": "Antoine Rabillard",
@@ -1592,11 +1592,11 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-16T18:45:00Z"
           },
           {
-            "actual": 38.86,
+            "actual": 41,
             "scoreStatus": "REVIEWING",
             "teamSlug": "eintracht-frankfurt-frankfurt-am-main",
             "name": "Younes Ebnoutalib",
@@ -1626,9 +1626,9 @@
           }
         ],
         "projected": 248.08,
-        "scoredSoFar": 192.16,
+        "scoredSoFar": 195.44,
         "played": 4,
-        "expectedFinal": 222.37
+        "expectedFinal": 225.65
       },
       "poolStrength": {
         "strong": 0,
@@ -1638,7 +1638,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 588.3552
+        "scoreSoFar": 606.7282
       },
       "level": 3,
       "lives": null,
@@ -1697,14 +1697,14 @@
         {
           "name": "Cristian Cásseres Jr.",
           "captain": true,
-          "locked": false,
-          "nextGame": "2026-10-16T18:45:00Z"
+          "locked": true,
+          "nextGame": "2026-10-24T15:15:00Z"
         },
         {
           "name": "Antoine Rabillard",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-16T18:45:00Z"
+          "locked": true,
+          "nextGame": "2026-10-25T16:15:00Z"
         },
         {
           "name": "Younes Ebnoutalib",
