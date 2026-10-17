@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T13:04:08.796Z",
+  "generatedAt": "2026-10-17T13:21:57.941Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-17T12:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792242225383,
+    "lastRunAt": 1792243300208,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 318.425,
+      "squadScore": 361.798,
       "lineupId": "Tasks::TaskLineup:435451b0-82fd-4677-9c07-46b24226090a",
       "state": "READY",
-      "score": 36.05,
+      "score": 110.09,
       "finished": false,
       "cleared": false,
       "players": [
@@ -252,7 +252,7 @@
           "slug": "alejandro-baena-rodriguez",
           "position": "Forward",
           "captain": false,
-          "score": 0,
+          "score": 36.4,
           "status": "REVIEWING",
           "kickoff": "2026-10-20T19:00:00Z"
         },
@@ -261,12 +261,12 @@
           "slug": "marcos-llorente-moreno",
           "position": "Defender",
           "captain": false,
-          "score": 0,
+          "score": 37.65,
           "status": "REVIEWING",
           "kickoff": "2026-10-20T19:00:00Z"
         }
       ],
-      "scored": 1
+      "scored": 3
     },
     {
       "surface": "my set",
@@ -732,7 +732,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 36 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 318 so far.",
+      "status": "Locked and playing. 70 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 325 so far.",
       "tone": "good",
       "lockAt": "2026-10-17T12:00:00Z",
       "isSquad": true,
@@ -855,7 +855,7 @@
             "kickoff": "2026-10-17T12:00:00Z"
           },
           {
-            "actual": null,
+            "actual": 33.92,
             "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Marcos Llorente",
@@ -885,9 +885,9 @@
           }
         ],
         "projected": 324.92,
-        "scoredSoFar": 36.05,
-        "played": 1,
-        "expectedFinal": 304.21
+        "scoredSoFar": 69.97,
+        "played": 2,
+        "expectedFinal": 276.75
       },
       "poolStrength": {
         "strong": 2,
@@ -897,7 +897,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 318.425
+        "scoreSoFar": 324.5
       },
       "level": 0,
       "lives": null,
@@ -1071,7 +1071,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 58,
             "picture": "https://assets.sorare.com/cardsamplepicture/47b0f5da-6442-408a-b290-98c2762b1a5e/picture/tinified-c4d53af040bb182015f6119463ac40d0.png",
@@ -1269,7 +1269,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 58,
           "picture": "https://assets.sorare.com/cardsamplepicture/47b0f5da-6442-408a-b290-98c2762b1a5e/picture/tinified-c4d53af040bb182015f6119463ac40d0.png",
