@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T18:27:50.622Z",
+  "generatedAt": "2026-10-17T18:33:38.667Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 226
   },
   "schedule": {
-    "nextLock": "2026-10-17T16:30:00Z",
-    "cadenceMin": 180,
-    "lastRunAt": 1792261660295,
-    "reason": "last run 0m ago, next due in 180m"
+    "nextLock": "2026-10-17T18:45:00Z",
+    "cadenceMin": 5,
+    "lastRunAt": 1792262008316,
+    "reason": "last run 0m ago, next due in 5m (lock in 11m)"
   },
   "packs": {
     "lastThreeStar": "Yuri",
@@ -210,7 +210,7 @@
       "surface": "team set (Loadshift)",
       "level": 0,
       "target": 700,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 4,
       "squadScore": 1186.6748,
@@ -235,7 +235,7 @@
           "position": "Defender",
           "captain": true,
           "score": 107.21,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-25T14:00:00Z"
         },
         {
@@ -769,7 +769,7 @@
           },
           {
             "actual": 107.21,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "newcastle-united-newcastle-upon-tyne",
             "name": "Lewis Hall",
             "player": "Lewis Hall",
@@ -906,7 +906,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 700
         },
         {
@@ -938,7 +938,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 700,
       "current": [
         {
