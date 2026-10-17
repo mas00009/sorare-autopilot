@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T12:05:05.295Z",
+  "generatedAt": "2026-10-17T12:16:58.546Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-17T12:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792238689009,
+    "lastRunAt": 1792239395417,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -213,7 +213,7 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 54.405,
+      "squadScore": 53.595,
       "lineupId": "Tasks::TaskLineup:435451b0-82fd-4677-9c07-46b24226090a",
       "state": "READY",
       "score": 0,
@@ -897,7 +897,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 54.405
+        "scoreSoFar": 53.595
       },
       "level": 0,
       "lives": null,
