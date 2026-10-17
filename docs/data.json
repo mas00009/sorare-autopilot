@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T13:50:26.407Z",
+  "generatedAt": "2026-10-17T13:56:06.957Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-17T12:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792245013621,
+    "lastRunAt": 1792245353741,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 427.2648,
+      "squadScore": 439.1722,
       "lineupId": "Tasks::TaskLineup:435451b0-82fd-4677-9c07-46b24226090a",
       "state": "READY",
-      "score": 172.47,
+      "score": 176.05,
       "finished": false,
       "cleared": false,
       "players": [
@@ -243,7 +243,7 @@
           "slug": "kaishu-sano",
           "position": "Midfielder",
           "captain": false,
-          "score": 40.07,
+          "score": 40.17,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T13:30:00Z"
         },
@@ -252,7 +252,7 @@
           "slug": "alejandro-baena-rodriguez",
           "position": "Forward",
           "captain": false,
-          "score": 71.14,
+          "score": 74.57,
           "status": "REVIEWING",
           "kickoff": "2026-10-20T19:00:00Z"
         },
@@ -261,7 +261,7 @@
           "slug": "marcos-llorente-moreno",
           "position": "Defender",
           "captain": false,
-          "score": 61.28,
+          "score": 61.32,
           "status": "REVIEWING",
           "kickoff": "2026-10-20T19:00:00Z"
         }
@@ -732,7 +732,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 172 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 427 so far.",
+      "status": "Locked and playing. 176 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 439 so far.",
       "tone": "good",
       "lockAt": "2026-10-17T12:00:00Z",
       "isSquad": true,
@@ -797,7 +797,7 @@
             "kickoff": "2026-10-17T16:30:00Z"
           },
           {
-            "actual": 40.07,
+            "actual": 40.17,
             "scoreStatus": "REVIEWING",
             "teamSlug": "mainz-05-mainz",
             "name": "Kaishu Sano",
@@ -826,7 +826,7 @@
             "kickoff": "2026-10-17T13:30:00Z"
           },
           {
-            "actual": 71.14,
+            "actual": 74.57,
             "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Álex Baena",
@@ -855,7 +855,7 @@
             "kickoff": "2026-10-17T12:00:00Z"
           },
           {
-            "actual": 61.28,
+            "actual": 61.32,
             "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Marcos Llorente",
@@ -885,9 +885,9 @@
           }
         ],
         "projected": 324.92,
-        "scoredSoFar": 172.49,
+        "scoredSoFar": 176.06,
         "played": 3,
-        "expectedFinal": 321.75
+        "expectedFinal": 325.31
       },
       "poolStrength": {
         "strong": 2,
@@ -897,7 +897,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 427.2648
+        "scoreSoFar": 439.1722
       },
       "level": 0,
       "lives": null,
