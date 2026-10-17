@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T14:01:48.764Z",
+  "generatedAt": "2026-10-17T14:07:27.895Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-17T12:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792245694726,
+    "lastRunAt": 1792246035387,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 453.6464,
+      "squadScore": 460.0114,
       "lineupId": "Tasks::TaskLineup:435451b0-82fd-4677-9c07-46b24226090a",
       "state": "READY",
-      "score": 182.54,
+      "score": 182.33,
       "finished": false,
       "cleared": false,
       "players": [
@@ -243,7 +243,7 @@
           "slug": "kaishu-sano",
           "position": "Midfielder",
           "captain": false,
-          "score": 46.66,
+          "score": 46.45,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T13:30:00Z"
         },
@@ -732,7 +732,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 183 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 454 so far.",
+      "status": "Locked and playing. 182 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 460 so far.",
       "tone": "good",
       "lockAt": "2026-10-17T12:00:00Z",
       "isSquad": true,
@@ -797,7 +797,7 @@
             "kickoff": "2026-10-17T16:30:00Z"
           },
           {
-            "actual": 46.66,
+            "actual": 46.45,
             "scoreStatus": "REVIEWING",
             "teamSlug": "mainz-05-mainz",
             "name": "Kaishu Sano",
@@ -885,9 +885,9 @@
           }
         ],
         "projected": 324.92,
-        "scoredSoFar": 182.55,
+        "scoredSoFar": 182.34,
         "played": 3,
-        "expectedFinal": 331.8
+        "expectedFinal": 331.6
       },
       "poolStrength": {
         "strong": 2,
@@ -897,7 +897,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 453.5414
+        "scoreSoFar": 460.0114
       },
       "level": 0,
       "lives": null,
@@ -974,54 +974,15 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 308.61,
+        "projected": 301.2,
         "lock": "2026-10-17T14:15:00Z",
-        "shortfall": 391.4,
+        "shortfall": 398.8,
         "tradedPointsForTime": 0,
         "captain": "alexsandro-victor-de-souza-ribeiro",
         "captainPoints": 28.92,
         "withinReach": false,
         "enteredProjected": 324.92,
         "five": [
-          {
-            "id": "ComposeTeamBenchCard:0c63dd8a-5f63-4509-8eeb-3bcfcda924a0",
-            "player": "Issa Diop",
-            "slug": "issa-diop",
-            "position": "DF",
-            "average": 57,
-            "bonus": 1.14,
-            "starterPct": null,
-            "startRate": 0.9,
-            "oddsKnown": false,
-            "onGameSheet": false,
-            "reliability": null,
-            "formL5": 64,
-            "picture": "https://assets.sorare.com/cardsamplepicture/cc7a9cbd-ba12-4a97-aaad-d4e225b67b69/picture/tinified-fb33a57b0256848ba36522da092a423f.png",
-            "rarity": "common",
-            "gameId": "Game:5e446143-0dd7-4537-9589-434c3b4e643f",
-            "kickoff": "2026-10-23T19:00:00Z",
-            "team": "Ipswich Town FC",
-            "teamSlug": "ipswich-town-ipswich-suffolk",
-            "opponent": "Nottingham Forest FC",
-            "opponentCode": "NOT",
-            "code": "IPS",
-            "rank": 10,
-            "opponentRank": 15,
-            "home": true,
-            "competition": "Premier League",
-            "intl": false,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "mismatch": false,
-            "pWin": 0.306,
-            "pLose": 0.423,
-            "oddsBooks": 20,
-            "marketFactor": 0.983,
-            "lockedAt": null,
-            "expected": 61,
-            "blocked": null
-          },
           {
             "id": "ComposeTeamBenchCard:15c6ebfc-44db-4212-be14-a74d284f9e9e",
             "player": "Alexsandro",
@@ -1098,6 +1059,45 @@
             "marketFactor": 0.95,
             "lockedAt": null,
             "expected": 54.89,
+            "blocked": null
+          },
+          {
+            "id": "ComposeTeamBenchCard:984d8ca7-ffc1-4ab9-9118-354f70d85571",
+            "player": "Emiliano Buendía",
+            "slug": "emiliano-buendia",
+            "position": "FW",
+            "average": 58,
+            "bonus": 1.03,
+            "starterPct": null,
+            "startRate": 0.9,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 59,
+            "picture": "https://assets.sorare.com/cardsamplepicture/fc7c6891-6864-48f4-8d75-592f5782333e/picture/tinified-7ca33683a069ad99e5fc888f47e7d30a.png",
+            "rarity": "common",
+            "gameId": "Game:d97fa91e-a40a-47ee-97da-ddfad398be8a",
+            "kickoff": "2026-10-17T16:30:00Z",
+            "team": "Aston Villa FC",
+            "teamSlug": "aston-villa-birmingham",
+            "opponent": "Newcastle United FC",
+            "opponentCode": "NEW",
+            "code": "AST",
+            "rank": 16,
+            "opponentRank": 11,
+            "home": false,
+            "competition": "Premier League",
+            "intl": false,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "mismatch": false,
+            "pWin": 0.32,
+            "pLose": 0.421,
+            "oddsBooks": 24,
+            "marketFactor": 0.988,
+            "lockedAt": null,
+            "expected": 53.59,
             "blocked": null
           },
           {
@@ -1182,45 +1182,6 @@
       },
       "candidates": [
         {
-          "id": "ComposeTeamBenchCard:0c63dd8a-5f63-4509-8eeb-3bcfcda924a0",
-          "player": "Issa Diop",
-          "slug": "issa-diop",
-          "position": "DF",
-          "average": 57,
-          "bonus": 1.14,
-          "starterPct": null,
-          "startRate": 0.9,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 64,
-          "picture": "https://assets.sorare.com/cardsamplepicture/cc7a9cbd-ba12-4a97-aaad-d4e225b67b69/picture/tinified-fb33a57b0256848ba36522da092a423f.png",
-          "rarity": "common",
-          "gameId": "Game:5e446143-0dd7-4537-9589-434c3b4e643f",
-          "kickoff": "2026-10-23T19:00:00Z",
-          "team": "Ipswich Town FC",
-          "teamSlug": "ipswich-town-ipswich-suffolk",
-          "opponent": "Nottingham Forest FC",
-          "opponentCode": "NOT",
-          "code": "IPS",
-          "rank": 10,
-          "opponentRank": 15,
-          "home": true,
-          "competition": "Premier League",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.306,
-          "pLose": 0.423,
-          "oddsBooks": 20,
-          "marketFactor": 0.983,
-          "lockedAt": null,
-          "expected": 61,
-          "blocked": null
-        },
-        {
           "id": "ComposeTeamBenchCard:15c6ebfc-44db-4212-be14-a74d284f9e9e",
           "player": "Alexsandro",
           "slug": "alexsandro-victor-de-souza-ribeiro",
@@ -1296,6 +1257,45 @@
           "marketFactor": 0.95,
           "lockedAt": null,
           "expected": 54.89,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:984d8ca7-ffc1-4ab9-9118-354f70d85571",
+          "player": "Emiliano Buendía",
+          "slug": "emiliano-buendia",
+          "position": "FW",
+          "average": 58,
+          "bonus": 1.03,
+          "starterPct": null,
+          "startRate": 0.9,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 59,
+          "picture": "https://assets.sorare.com/cardsamplepicture/fc7c6891-6864-48f4-8d75-592f5782333e/picture/tinified-7ca33683a069ad99e5fc888f47e7d30a.png",
+          "rarity": "common",
+          "gameId": "Game:d97fa91e-a40a-47ee-97da-ddfad398be8a",
+          "kickoff": "2026-10-17T16:30:00Z",
+          "team": "Aston Villa FC",
+          "teamSlug": "aston-villa-birmingham",
+          "opponent": "Newcastle United FC",
+          "opponentCode": "NEW",
+          "code": "AST",
+          "rank": 16,
+          "opponentRank": 11,
+          "home": false,
+          "competition": "Premier League",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.32,
+          "pLose": 0.421,
+          "oddsBooks": 24,
+          "marketFactor": 0.988,
+          "lockedAt": null,
+          "expected": 53.59,
           "blocked": null
         },
         {
@@ -1377,7 +1377,7 @@
           "blocked": null
         }
       ],
-      "projected": 276.6
+      "projected": 273.1
     }
   ],
   "fixtures": [
@@ -1423,9 +1423,10 @@
       "oppFactor": null,
       "home": false,
       "players": [
+        "Emiliano Buendía",
         "Zion Suzuki"
       ],
-      "points": 52,
+      "points": 105.5,
       "bestStarter": null,
       "surfaces": [
         "team set (Loadshift)"
@@ -1476,31 +1477,6 @@
         "Antoine Mille"
       ],
       "points": 52.3,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
-    {
-      "kickoff": "2026-10-23T19:00:00Z",
-      "competition": "Premier League",
-      "team": "Ipswich Town FC",
-      "code": "IPS",
-      "rank": 10,
-      "opponent": "Nottingham Forest FC",
-      "opponentCode": "NOT",
-      "opponentRank": 15,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.306,
-      "pLose": 0.423,
-      "oppFactor": null,
-      "home": true,
-      "players": [
-        "Issa Diop"
-      ],
-      "points": 61,
       "bestStarter": null,
       "surfaces": [
         "team set (Loadshift)"
