@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T11:59:10.856Z",
+  "generatedAt": "2026-10-17T12:05:05.295Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-17T12:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792238327788,
-    "reason": "last run 0m ago, next due in 180m (lock in 1m)"
+    "lastRunAt": 1792238689009,
+    "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
     "lastThreeStar": "Yuri",
@@ -210,10 +210,10 @@
       "surface": "team set (Loadshift)",
       "level": 0,
       "target": 700,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 54.81,
+      "squadScore": 54.405,
       "lineupId": "Tasks::TaskLineup:435451b0-82fd-4677-9c07-46b24226090a",
       "state": "READY",
       "score": 0,
@@ -253,8 +253,8 @@
           "position": "Forward",
           "captain": false,
           "score": 0,
-          "status": "PENDING",
-          "kickoff": "2026-10-17T12:00:00Z"
+          "status": "REVIEWING",
+          "kickoff": "2026-10-20T19:00:00Z"
         },
         {
           "name": "Marcos Llorente",
@@ -262,8 +262,8 @@
           "position": "Defender",
           "captain": false,
           "score": 0,
-          "status": "PENDING",
-          "kickoff": "2026-10-17T12:00:00Z"
+          "status": "REVIEWING",
+          "kickoff": "2026-10-20T19:00:00Z"
         }
       ],
       "scored": 0
@@ -316,7 +316,7 @@
           "captain": false,
           "score": 74.78,
           "status": "FINAL",
-          "kickoff": "2026-10-17T12:00:00Z"
+          "kickoff": "2026-10-20T19:00:00Z"
         },
         {
           "name": "Cristian Romero",
@@ -325,7 +325,7 @@
           "captain": true,
           "score": 105.61,
           "status": "FINAL",
-          "kickoff": "2026-10-17T12:00:00Z"
+          "kickoff": "2026-10-20T19:00:00Z"
         }
       ],
       "scored": 5
@@ -502,7 +502,7 @@
           "captain": false,
           "score": 74.78,
           "status": "FINAL",
-          "kickoff": "2026-10-17T12:00:00Z"
+          "kickoff": "2026-10-20T19:00:00Z"
         },
         {
           "name": "Antonio Nusa",
@@ -732,7 +732,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Team entered, locks Sat 11:00 pm Sydney. The squad's top three lineups together need 700; this one is expected to add about 325.",
+      "status": "Locked and playing. 0 scored so far, 0 of 5 played. The squad's top three lineups together need 700; the squad has 54 so far.",
       "tone": "good",
       "lockAt": "2026-10-17T12:00:00Z",
       "isSquad": true,
@@ -827,7 +827,7 @@
           },
           {
             "actual": null,
-            "scoreStatus": "PENDING",
+            "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Álex Baena",
             "player": "Álex Baena",
@@ -851,12 +851,12 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-17T12:00:00Z"
           },
           {
             "actual": null,
-            "scoreStatus": "PENDING",
+            "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Marcos Llorente",
             "player": "Marcos Llorente",
@@ -880,7 +880,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-17T12:00:00Z"
           }
         ],
@@ -897,7 +897,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 54.81
+        "scoreSoFar": 54.405
       },
       "level": 0,
       "lives": null,
@@ -906,7 +906,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 700
         },
         {
@@ -938,7 +938,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 700,
       "current": [
         {
@@ -962,14 +962,14 @@
         {
           "name": "Álex Baena",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-17T12:00:00Z"
+          "locked": true,
+          "nextGame": "2026-10-20T19:00:00Z"
         },
         {
           "name": "Marcos Llorente",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-17T12:00:00Z"
+          "locked": true,
+          "nextGame": "2026-10-20T19:00:00Z"
         }
       ],
       "plan": {
@@ -1377,7 +1377,7 @@
           "blocked": null
         }
       ],
-      "projected": 277
+      "projected": 275.9
     }
   ],
   "fixtures": [
