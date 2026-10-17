@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T12:22:51.859Z",
+  "generatedAt": "2026-10-17T12:40:14.972Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-17T12:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792239753434,
+    "lastRunAt": 1792240793881,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 61.56,
+      "squadScore": 93.02,
       "lineupId": "Tasks::TaskLineup:435451b0-82fd-4677-9c07-46b24226090a",
       "state": "READY",
-      "score": 0,
+      "score": 36.05,
       "finished": false,
       "cleared": false,
       "players": [
@@ -243,8 +243,8 @@
           "slug": "kaishu-sano",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-17T13:30:00Z"
         },
         {
@@ -266,7 +266,7 @@
           "kickoff": "2026-10-20T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 1
     },
     {
       "surface": "my set",
@@ -732,7 +732,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 0 scored so far, 0 of 5 played. The squad's top three lineups together need 700; the squad has 62 so far.",
+      "status": "Locked and playing. 36 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 93 so far.",
       "tone": "good",
       "lockAt": "2026-10-17T12:00:00Z",
       "isSquad": true,
@@ -797,8 +797,8 @@
             "kickoff": "2026-10-17T16:30:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "mainz-05-mainz",
             "name": "Kaishu Sano",
             "player": "Kaishu Sano",
@@ -885,9 +885,9 @@
           }
         ],
         "projected": 324.92,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 326.14
+        "scoredSoFar": 36.05,
+        "played": 1,
+        "expectedFinal": 304.21
       },
       "poolStrength": {
         "strong": 2,
@@ -897,7 +897,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 61.56
+        "scoreSoFar": 93.02
       },
       "level": 0,
       "lives": null,
