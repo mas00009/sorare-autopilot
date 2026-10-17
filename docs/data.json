@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T15:22:37.127Z",
+  "generatedAt": "2026-10-17T15:28:37.813Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 226
   },
   "schedule": {
-    "nextLock": "2026-10-17T12:00:00Z",
-    "cadenceMin": 180,
-    "lastRunAt": 1792250539032,
-    "reason": "last run 0m ago, next due in 180m"
+    "nextLock": "2026-10-17T16:30:00Z",
+    "cadenceMin": 5,
+    "lastRunAt": 1792250902435,
+    "reason": "last run 0m ago, next due in 5m (lock in 61m)"
   },
   "packs": {
     "lastThreeStar": "Yuri",
@@ -210,10 +210,10 @@
       "surface": "team set (Loadshift)",
       "level": 0,
       "target": 700,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 513.5002,
+      "squadScore": 515.7548,
       "lineupId": "Tasks::TaskLineup:435451b0-82fd-4677-9c07-46b24226090a",
       "state": "READY",
       "score": 184.29,
@@ -732,7 +732,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 184 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 514 so far.",
+      "status": "Locked and playing. 184 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 516 so far.",
       "tone": "good",
       "lockAt": "2026-10-17T12:00:00Z",
       "isSquad": true,
@@ -897,7 +897,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 513.5002
+        "scoreSoFar": 515.7548
       },
       "level": 0,
       "lives": null,
@@ -906,7 +906,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 700
         },
         {
@@ -938,7 +938,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 700,
       "current": [
         {
