@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T17:48:34.919Z",
+  "generatedAt": "2026-10-17T17:54:10.188Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-17T16:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792259304557,
+    "lastRunAt": 1792259640466,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 1112.3148,
+      "squadScore": 1139.0848,
       "lineupId": "Tasks::TaskLineup:435451b0-82fd-4677-9c07-46b24226090a",
       "state": "READY",
-      "score": 337.41,
+      "score": 344.68,
       "finished": false,
       "cleared": true,
       "players": [
@@ -234,7 +234,7 @@
           "slug": "lewis-hall-2004-09-08",
           "position": "Defender",
           "captain": true,
-          "score": 90.12,
+          "score": 97.39,
           "status": "REVIEWING",
           "kickoff": "2026-10-25T14:00:00Z"
         },
@@ -732,7 +732,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 382 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1112 so far.",
+      "status": "Locked and playing. 393 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1139 so far.",
       "tone": "good",
       "lockAt": "2026-10-17T12:00:00Z",
       "isSquad": true,
@@ -768,7 +768,7 @@
             "kickoff": "2026-10-17T16:30:00Z"
           },
           {
-            "actual": 90.12,
+            "actual": 97.39,
             "scoreStatus": "REVIEWING",
             "teamSlug": "newcastle-united-newcastle-upon-tyne",
             "name": "Lewis Hall",
@@ -885,9 +885,9 @@
           }
         ],
         "projected": 324.92,
-        "scoredSoFar": 382.48,
+        "scoredSoFar": 393.38,
         "played": 5,
-        "expectedFinal": 382.48
+        "expectedFinal": 393.38
       },
       "poolStrength": {
         "strong": 1,
@@ -897,7 +897,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 1112.3148
+        "scoreSoFar": 1139.0848
       },
       "level": 0,
       "lives": null,
@@ -1032,7 +1032,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 55,
             "picture": "https://assets.sorare.com/cardsamplepicture/4ac3cd6f-2810-457a-9484-a3821c955f01/picture/tinified-8b02056834da48ef8588e3c74892e0c6.png",
@@ -1149,7 +1149,7 @@
             "starterPct": null,
             "startRate": 0.7,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 45,
             "picture": "https://assets.sorare.com/cardsamplepicture/8355daf3-8570-425e-9350-08d1fb18a97e/picture/tinified-798f8860c59beb20d1a7056f8fe0e374.png",
@@ -1230,7 +1230,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 55,
           "picture": "https://assets.sorare.com/cardsamplepicture/4ac3cd6f-2810-457a-9484-a3821c955f01/picture/tinified-8b02056834da48ef8588e3c74892e0c6.png",
@@ -1347,7 +1347,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 45,
           "picture": "https://assets.sorare.com/cardsamplepicture/8355daf3-8570-425e-9350-08d1fb18a97e/picture/tinified-798f8860c59beb20d1a7056f8fe0e374.png",
