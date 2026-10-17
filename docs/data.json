@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T18:33:38.667Z",
+  "generatedAt": "2026-10-17T18:39:22.469Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -8,9 +8,9 @@
   },
   "schedule": {
     "nextLock": "2026-10-17T18:45:00Z",
-    "cadenceMin": 5,
-    "lastRunAt": 1792262008316,
-    "reason": "last run 0m ago, next due in 5m (lock in 11m)"
+    "cadenceMin": 180,
+    "lastRunAt": 1792262351828,
+    "reason": "last run 0m ago, next due in 180m (lock in 6m)"
   },
   "packs": {
     "lastThreeStar": "Yuri",
@@ -226,7 +226,7 @@
           "position": "Goalkeeper",
           "captain": false,
           "score": 63,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-21T19:00:00Z"
         },
         {
@@ -740,7 +740,7 @@
         "five": [
           {
             "actual": 63,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "real-betis-sevilla",
             "name": "Álvaro Valles",
             "player": "Álvaro Valles",
