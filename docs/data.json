@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T15:52:44.939Z",
+  "generatedAt": "2026-10-17T15:58:50.408Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-17T16:30:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1792252346803,
-    "reason": "last run 0m ago, next due in 5m (lock in 37m)"
+    "lastRunAt": 1792252713884,
+    "reason": "last run 0m ago, next due in 5m (lock in 31m)"
   },
   "packs": {
     "lastThreeStar": "Yuri",
@@ -213,7 +213,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 783.0862,
+      "squadScore": 783.1962,
       "lineupId": "Tasks::TaskLineup:435451b0-82fd-4677-9c07-46b24226090a",
       "state": "READY",
       "score": 274.94,
@@ -897,7 +897,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 783.0862
+        "scoreSoFar": 783.1962
       },
       "level": 0,
       "lives": null,
@@ -1044,7 +1044,7 @@
             "opponent": "Newcastle United FC",
             "opponentCode": "NEW",
             "code": "AST",
-            "rank": 16,
+            "rank": 17,
             "opponentRank": 11,
             "home": false,
             "competition": "Premier League",
@@ -1161,7 +1161,7 @@
             "opponent": "Newcastle United FC",
             "opponentCode": "NEW",
             "code": "AST",
-            "rank": 16,
+            "rank": 17,
             "opponentRank": 11,
             "home": false,
             "competition": "Premier League",
@@ -1242,7 +1242,7 @@
           "opponent": "Newcastle United FC",
           "opponentCode": "NEW",
           "code": "AST",
-          "rank": 16,
+          "rank": 17,
           "opponentRank": 11,
           "home": false,
           "competition": "Premier League",
@@ -1359,7 +1359,7 @@
           "opponent": "Newcastle United FC",
           "opponentCode": "NEW",
           "code": "AST",
-          "rank": 16,
+          "rank": 17,
           "opponentRank": 11,
           "home": false,
           "competition": "Premier League",
@@ -1386,7 +1386,7 @@
       "competition": "Premier League",
       "team": "Aston Villa FC",
       "code": "AST",
-      "rank": 16,
+      "rank": 17,
       "opponent": "Newcastle United FC",
       "opponentCode": "NEW",
       "opponentRank": 11,
