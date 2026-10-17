@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T07:10:55.898Z",
+  "generatedAt": "2026-10-17T07:22:33.479Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-17T12:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1792221040459,
-    "reason": "last run 0m ago, next due in 60m (lock in 289m)"
+    "lastRunAt": 1792221740252,
+    "reason": "last run 0m ago, next due in 60m (lock in 277m)"
   },
   "packs": {
     "lastThreeStar": "Yuri",
@@ -212,7 +212,7 @@
       "target": 700,
       "stepState": "LINEUP_SET",
       "collaborative": true,
-      "squadLineups": 1,
+      "squadLineups": 2,
       "squadScore": 0,
       "lineupId": "Tasks::TaskLineup:435451b0-82fd-4677-9c07-46b24226090a",
       "state": "READY",
@@ -558,9 +558,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 805,
+        "progress": 807,
         "target": 860,
-        "remaining": 55,
+        "remaining": 53,
         "competition": null,
         "group": null,
         "teams": []
@@ -895,7 +895,7 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 1,
+        "lineupsIn": 2,
         "needed": 3,
         "scoreSoFar": 0
       },
