@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T18:22:13.666Z",
+  "generatedAt": "2026-10-17T18:27:50.622Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-17T16:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792261323299,
+    "lastRunAt": 1792261660295,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 1188.2048,
+      "squadScore": 1186.6748,
       "lineupId": "Tasks::TaskLineup:435451b0-82fd-4677-9c07-46b24226090a",
       "state": "READY",
-      "score": 350.56,
+      "score": 354.51,
       "finished": false,
       "cleared": true,
       "players": [
@@ -234,7 +234,7 @@
           "slug": "lewis-hall-2004-09-08",
           "position": "Defender",
           "captain": true,
-          "score": 103.27,
+          "score": 107.21,
           "status": "REVIEWING",
           "kickoff": "2026-10-25T14:00:00Z"
         },
@@ -732,7 +732,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 404 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1188 so far.",
+      "status": "Locked and playing. 408 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1187 so far.",
       "tone": "good",
       "lockAt": "2026-10-17T12:00:00Z",
       "isSquad": true,
@@ -768,7 +768,7 @@
             "kickoff": "2026-10-17T16:30:00Z"
           },
           {
-            "actual": 104.2,
+            "actual": 107.21,
             "scoreStatus": "REVIEWING",
             "teamSlug": "newcastle-united-newcastle-upon-tyne",
             "name": "Lewis Hall",
@@ -885,9 +885,9 @@
           }
         ],
         "projected": 324.92,
-        "scoredSoFar": 403.6,
+        "scoredSoFar": 408.12,
         "played": 5,
-        "expectedFinal": 403.6
+        "expectedFinal": 408.12
       },
       "poolStrength": {
         "strong": 1,
@@ -897,7 +897,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 1188.2048
+        "scoreSoFar": 1186.6748
       },
       "level": 0,
       "lives": null,
