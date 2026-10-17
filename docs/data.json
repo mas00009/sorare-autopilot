@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T10:05:17.197Z",
+  "generatedAt": "2026-10-17T10:34:40.002Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-17T12:00:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1792231497939,
-    "reason": "last run 0m ago, next due in 15m (lock in 115m)"
+    "lastRunAt": 1792233260369,
+    "reason": "last run 0m ago, next due in 15m (lock in 85m)"
   },
   "packs": {
     "lastThreeStar": "Yuri",
@@ -213,7 +213,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 0,
+      "squadScore": 47.25,
       "lineupId": "Tasks::TaskLineup:435451b0-82fd-4677-9c07-46b24226090a",
       "state": "READY",
       "score": 0,
@@ -897,7 +897,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 0
+        "scoreSoFar": 47.25
       },
       "level": 0,
       "lives": null,
@@ -1032,7 +1032,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 59,
             "picture": "https://assets.sorare.com/cardsamplepicture/84ec5700-bd9c-4026-a593-3562f2df76da/picture/tinified-01cee3735962b2bca8c7580024aa8b47.png",
@@ -1230,7 +1230,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 59,
           "picture": "https://assets.sorare.com/cardsamplepicture/84ec5700-bd9c-4026-a593-3562f2df76da/picture/tinified-01cee3735962b2bca8c7580024aa8b47.png",
