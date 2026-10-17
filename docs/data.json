@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T21:03:19.417Z",
+  "generatedAt": "2026-10-17T21:08:30.732Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-17T18:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792270994377,
-    "reason": "last run 0m ago, next due in 180m"
+    "reason": "last run 5m ago, next due in 175m"
   },
   "packs": {
     "lastThreeStar": "Yuri",
@@ -558,9 +558,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 807,
+        "progress": 808,
         "target": 860,
-        "remaining": 53,
+        "remaining": 52,
         "competition": null,
         "group": null,
         "teams": []
