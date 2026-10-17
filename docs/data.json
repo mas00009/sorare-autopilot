@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T14:07:27.895Z",
+  "generatedAt": "2026-10-17T14:13:05.680Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-17T12:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792246035387,
+    "lastRunAt": 1792246373031,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 460.0114,
+      "squadScore": 459.5244,
       "lineupId": "Tasks::TaskLineup:435451b0-82fd-4677-9c07-46b24226090a",
       "state": "READY",
-      "score": 182.33,
+      "score": 184.09,
       "finished": false,
       "cleared": false,
       "players": [
@@ -243,7 +243,7 @@
           "slug": "kaishu-sano",
           "position": "Midfielder",
           "captain": false,
-          "score": 46.45,
+          "score": 48.2,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T13:30:00Z"
         },
@@ -732,7 +732,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 182 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 460 so far.",
+      "status": "Locked and playing. 184 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 460 so far.",
       "tone": "good",
       "lockAt": "2026-10-17T12:00:00Z",
       "isSquad": true,
@@ -797,7 +797,7 @@
             "kickoff": "2026-10-17T16:30:00Z"
           },
           {
-            "actual": 46.45,
+            "actual": 48.2,
             "scoreStatus": "REVIEWING",
             "teamSlug": "mainz-05-mainz",
             "name": "Kaishu Sano",
@@ -885,9 +885,9 @@
           }
         ],
         "projected": 324.92,
-        "scoredSoFar": 182.34,
+        "scoredSoFar": 184.09,
         "played": 3,
-        "expectedFinal": 331.6
+        "expectedFinal": 333.35
       },
       "poolStrength": {
         "strong": 2,
@@ -897,7 +897,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 460.0114
+        "scoreSoFar": 459.5244
       },
       "level": 0,
       "lives": null,
