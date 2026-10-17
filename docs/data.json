@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T09:12:52.283Z",
+  "generatedAt": "2026-10-17T09:30:20.322Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-17T12:00:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1792228351460,
-    "reason": "last run 0m ago, next due in 15m (lock in 167m)"
+    "lastRunAt": 1792229399258,
+    "reason": "last run 0m ago, next due in 15m (lock in 150m)"
   },
   "packs": {
     "lastThreeStar": "Yuri",
@@ -212,7 +212,7 @@
       "target": 700,
       "stepState": "LINEUP_SET",
       "collaborative": true,
-      "squadLineups": 3,
+      "squadLineups": 4,
       "squadScore": 0,
       "lineupId": "Tasks::TaskLineup:435451b0-82fd-4677-9c07-46b24226090a",
       "state": "READY",
@@ -895,7 +895,7 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 3,
+        "lineupsIn": 4,
         "needed": 3,
         "scoreSoFar": 0
       },
