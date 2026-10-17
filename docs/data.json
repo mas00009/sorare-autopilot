@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T16:05:01.174Z",
+  "generatedAt": "2026-10-17T16:17:07.752Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-17T16:30:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1792253081599,
-    "reason": "last run 0m ago, next due in 5m (lock in 25m)"
+    "lastRunAt": 1792253804349,
+    "reason": "last run 0m ago, next due in 5m (lock in 13m)"
   },
   "packs": {
     "lastThreeStar": "Yuri",
@@ -1083,7 +1083,7 @@
             "opponent": "Valencia CF",
             "opponentCode": "VCF",
             "code": "ATH",
-            "rank": 10,
+            "rank": 11,
             "opponentRank": 19,
             "home": false,
             "competition": "Primera División",
@@ -1281,7 +1281,7 @@
           "opponent": "Valencia CF",
           "opponentCode": "VCF",
           "code": "ATH",
-          "rank": 10,
+          "rank": 11,
           "opponentRank": 19,
           "home": false,
           "competition": "Primera División",
@@ -1462,7 +1462,7 @@
       "competition": "Primera División",
       "team": "Athletic Club",
       "code": "ATH",
-      "rank": 10,
+      "rank": 11,
       "opponent": "Valencia CF",
       "opponentCode": "VCF",
       "opponentRank": 19,
