@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T13:21:57.941Z",
+  "generatedAt": "2026-10-17T13:27:43.707Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-17T12:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792243300208,
+    "lastRunAt": 1792243650292,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 361.798,
+      "squadScore": 369.6898,
       "lineupId": "Tasks::TaskLineup:435451b0-82fd-4677-9c07-46b24226090a",
       "state": "READY",
-      "score": 110.09,
+      "score": 116.77,
       "finished": false,
       "cleared": false,
       "players": [
@@ -252,7 +252,7 @@
           "slug": "alejandro-baena-rodriguez",
           "position": "Forward",
           "captain": false,
-          "score": 36.4,
+          "score": 38.27,
           "status": "REVIEWING",
           "kickoff": "2026-10-20T19:00:00Z"
         },
@@ -261,7 +261,7 @@
           "slug": "marcos-llorente-moreno",
           "position": "Defender",
           "captain": false,
-          "score": 37.65,
+          "score": 42.45,
           "status": "REVIEWING",
           "kickoff": "2026-10-20T19:00:00Z"
         }
@@ -732,7 +732,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 70 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 325 so far.",
+      "status": "Locked and playing. 117 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 370 so far.",
       "tone": "good",
       "lockAt": "2026-10-17T12:00:00Z",
       "isSquad": true,
@@ -826,7 +826,7 @@
             "kickoff": "2026-10-17T13:30:00Z"
           },
           {
-            "actual": null,
+            "actual": 38.27,
             "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Álex Baena",
@@ -855,7 +855,7 @@
             "kickoff": "2026-10-17T12:00:00Z"
           },
           {
-            "actual": 33.92,
+            "actual": 42.45,
             "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Marcos Llorente",
@@ -885,9 +885,9 @@
           }
         ],
         "projected": 324.92,
-        "scoredSoFar": 69.97,
-        "played": 2,
-        "expectedFinal": 276.75
+        "scoredSoFar": 116.77,
+        "played": 3,
+        "expectedFinal": 266.02
       },
       "poolStrength": {
         "strong": 2,
@@ -897,7 +897,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 324.5
+        "scoreSoFar": 369.6898
       },
       "level": 0,
       "lives": null,
