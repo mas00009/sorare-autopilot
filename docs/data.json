@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-17T07:04:57.102Z",
+  "generatedAt": "2026-10-17T07:10:55.898Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 13095,
+    "essence": 12595,
     "gems": 226
   },
   "schedule": {
-    "nextLock": "2026-10-17T11:30:00Z",
+    "nextLock": "2026-10-17T12:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1792220682378,
-    "reason": "last run 0m ago, next due in 60m (lock in 265m)"
+    "lastRunAt": 1792221040459,
+    "reason": "last run 0m ago, next due in 60m (lock in 289m)"
   },
   "packs": {
-    "lastThreeStar": "Sergio Gómez",
+    "lastThreeStar": "Yuri",
     "cycleDone": true
   },
   "health": {
@@ -558,9 +558,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 801,
+        "progress": 805,
         "target": 860,
-        "remaining": 59,
+        "remaining": 55,
         "competition": null,
         "group": null,
         "teams": []
@@ -602,9 +602,9 @@
       {
         "title": "Collect Spanish players in LaLiga",
         "gems": 30,
-        "progress": 228,
+        "progress": 229,
         "target": 279,
-        "remaining": 51,
+        "remaining": 50,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": []
