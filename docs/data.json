@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T16:40:40.407Z",
+  "generatedAt": "2026-10-17T16:46:40.763Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-17T16:30:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792255227552,
+    "lastRunAt": 1792255577138,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 795.5504,
+      "squadScore": 874.4252,
       "lineupId": "Tasks::TaskLineup:435451b0-82fd-4677-9c07-46b24226090a",
       "state": "READY",
-      "score": 272.43,
+      "score": 277.64,
       "finished": false,
       "cleared": true,
       "players": [
@@ -225,7 +225,7 @@
           "slug": "alvaro-valles-rosa",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 36.33,
+          "score": 31.29,
           "status": "REVIEWING",
           "kickoff": "2026-10-21T19:00:00Z"
         },
@@ -234,7 +234,7 @@
           "slug": "lewis-hall-2004-09-08",
           "position": "Defender",
           "captain": true,
-          "score": 51.81,
+          "score": 62.06,
           "status": "REVIEWING",
           "kickoff": "2026-10-25T14:00:00Z"
         },
@@ -732,14 +732,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 298 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 796 so far.",
+      "status": "Locked and playing. 309 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 874 so far.",
       "tone": "good",
       "lockAt": "2026-10-17T12:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 36.33,
+            "actual": 31.29,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-betis-sevilla",
             "name": "Álvaro Valles",
@@ -768,7 +768,7 @@
             "kickoff": "2026-10-17T16:30:00Z"
           },
           {
-            "actual": 51.81,
+            "actual": 62.06,
             "scoreStatus": "REVIEWING",
             "teamSlug": "newcastle-united-newcastle-upon-tyne",
             "name": "Lewis Hall",
@@ -885,9 +885,9 @@
           }
         ],
         "projected": 324.92,
-        "scoredSoFar": 298.34,
+        "scoredSoFar": 308.68,
         "played": 5,
-        "expectedFinal": 298.34
+        "expectedFinal": 308.68
       },
       "poolStrength": {
         "strong": 1,
@@ -897,7 +897,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 795.5504
+        "scoreSoFar": 874.4252
       },
       "level": 0,
       "lives": null,
