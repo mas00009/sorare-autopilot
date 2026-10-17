@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T19:07:27.616Z",
+  "generatedAt": "2026-10-17T21:03:19.417Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-17T18:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792264043101,
+    "lastRunAt": 1792270994377,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -202,68 +202,6 @@
           "score": 66,
           "status": "FINAL",
           "kickoff": "2026-10-24T19:00:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
-      "surface": "team set (Loadshift)",
-      "level": 0,
-      "target": 700,
-      "stepState": "LINEUP_SET",
-      "collaborative": true,
-      "squadLineups": 4,
-      "squadScore": 1186.6748,
-      "lineupId": "Tasks::TaskLineup:435451b0-82fd-4677-9c07-46b24226090a",
-      "state": "READY",
-      "score": 354.51,
-      "finished": false,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Álvaro Valles",
-          "slug": "alvaro-valles-rosa",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 63,
-          "status": "FINAL",
-          "kickoff": "2026-10-21T19:00:00Z"
-        },
-        {
-          "name": "Lewis Hall",
-          "slug": "lewis-hall-2004-09-08",
-          "position": "Defender",
-          "captain": true,
-          "score": 107.21,
-          "status": "FINAL",
-          "kickoff": "2026-10-25T14:00:00Z"
-        },
-        {
-          "name": "Kaishu Sano",
-          "slug": "kaishu-sano",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 48.41,
-          "status": "FINAL",
-          "kickoff": "2026-10-24T13:30:00Z"
-        },
-        {
-          "name": "Álex Baena",
-          "slug": "alejandro-baena-rodriguez",
-          "position": "Forward",
-          "captain": false,
-          "score": 74.57,
-          "status": "FINAL",
-          "kickoff": "2026-10-20T19:00:00Z"
-        },
-        {
-          "name": "Marcos Llorente",
-          "slug": "marcos-llorente-moreno",
-          "position": "Defender",
-          "captain": false,
-          "score": 61.32,
-          "status": "FINAL",
-          "kickoff": "2026-10-20T19:00:00Z"
         }
       ],
       "scored": 5
@@ -515,6 +453,68 @@
         }
       ],
       "scored": 5
+    },
+    {
+      "surface": "team set (Loadshift)",
+      "level": 0,
+      "target": 700,
+      "stepState": "CLAIMED",
+      "collaborative": true,
+      "squadLineups": 4,
+      "squadScore": 1186.6748,
+      "lineupId": "Tasks::TaskLineup:435451b0-82fd-4677-9c07-46b24226090a",
+      "state": "SUCCESSFUL",
+      "score": 354.51,
+      "finished": true,
+      "cleared": true,
+      "players": [
+        {
+          "name": "Álvaro Valles",
+          "slug": "alvaro-valles-rosa",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 63,
+          "status": "FINAL",
+          "kickoff": "2026-10-21T19:00:00Z"
+        },
+        {
+          "name": "Lewis Hall",
+          "slug": "lewis-hall-2004-09-08",
+          "position": "Defender",
+          "captain": true,
+          "score": 107.21,
+          "status": "FINAL",
+          "kickoff": "2026-10-25T14:00:00Z"
+        },
+        {
+          "name": "Kaishu Sano",
+          "slug": "kaishu-sano",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 48.41,
+          "status": "FINAL",
+          "kickoff": "2026-10-24T13:30:00Z"
+        },
+        {
+          "name": "Álex Baena",
+          "slug": "alejandro-baena-rodriguez",
+          "position": "Forward",
+          "captain": false,
+          "score": 74.57,
+          "status": "FINAL",
+          "kickoff": "2026-10-20T19:00:00Z"
+        },
+        {
+          "name": "Marcos Llorente",
+          "slug": "marcos-llorente-moreno",
+          "position": "Defender",
+          "captain": false,
+          "score": 61.32,
+          "status": "FINAL",
+          "kickoff": "2026-10-20T19:00:00Z"
+        }
+      ],
+      "scored": 5
     }
   ],
   "gems": {
@@ -732,186 +732,34 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 408 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1187 so far.",
-      "tone": "good",
-      "lockAt": "2026-10-17T12:00:00Z",
+      "status": "Not open for entry yet. A team goes in the moment it opens.",
+      "tone": "neutral",
+      "lockAt": null,
       "isSquad": true,
-      "entered": {
-        "five": [
-          {
-            "actual": 63,
-            "scoreStatus": "FINAL",
-            "teamSlug": "real-betis-sevilla",
-            "name": "Álvaro Valles",
-            "player": "Álvaro Valles",
-            "slug": "alvaro-valles-rosa",
-            "pos": "GK",
-            "position": "GK",
-            "pic": "https://assets.sorare.com/cardsamplepicture/57436ab3-40cd-44f1-aa75-52fceda9a50a/picture/tinified-227bf23d25d50928b9427c3151ed7ee0.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/57436ab3-40cd-44f1-aa75-52fceda9a50a/picture/tinified-227bf23d25d50928b9427c3151ed7ee0.png",
-            "captain": false,
-            "exp": 53.51,
-            "expected": 53.51,
-            "opp": "FC Barcelona",
-            "opponent": "FC Barcelona",
-            "home": true,
-            "average": 59,
-            "formL5": 57,
-            "intl": false,
-            "pWin": 0.151,
-            "pLose": 0.682,
-            "marketFactor": 0.879,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-17T16:30:00Z"
-          },
-          {
-            "actual": 107.21,
-            "scoreStatus": "FINAL",
-            "teamSlug": "newcastle-united-newcastle-upon-tyne",
-            "name": "Lewis Hall",
-            "player": "Lewis Hall",
-            "slug": "lewis-hall-2004-09-08",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/418ce897-50f2-4892-b85d-9828d1928be6/picture/tinified-0a6111eb5e1033485f2f18709c5b83e8.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/418ce897-50f2-4892-b85d-9828d1928be6/picture/tinified-0a6111eb5e1033485f2f18709c5b83e8.png",
-            "captain": true,
-            "exp": 63.83,
-            "expected": 63.83,
-            "opp": "Aston Villa FC",
-            "opponent": "Aston Villa FC",
-            "home": true,
-            "average": 60,
-            "formL5": 75,
-            "intl": false,
-            "pWin": 0.421,
-            "pLose": 0.32,
-            "marketFactor": 1.01,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-17T16:30:00Z"
-          },
-          {
-            "actual": 48.41,
-            "scoreStatus": "FINAL",
-            "teamSlug": "mainz-05-mainz",
-            "name": "Kaishu Sano",
-            "player": "Kaishu Sano",
-            "slug": "kaishu-sano",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/22c89549-28e6-4af4-a453-fe26f9d49936/picture/tinified-976cc6041dfe25c7c1e7de153150c4a3.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/22c89549-28e6-4af4-a453-fe26f9d49936/picture/tinified-976cc6041dfe25c7c1e7de153150c4a3.png",
-            "captain": false,
-            "exp": 57.99,
-            "expected": 57.99,
-            "opp": "FC Schalke 04",
-            "opponent": "FC Schalke 04",
-            "home": false,
-            "average": 58,
-            "formL5": 66,
-            "intl": false,
-            "pWin": 0.42,
-            "pLose": 0.316,
-            "marketFactor": 1.009,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-17T13:30:00Z"
-          },
-          {
-            "actual": 74.57,
-            "scoreStatus": "FINAL",
-            "teamSlug": "atletico-madrid-madrid",
-            "name": "Álex Baena",
-            "player": "Álex Baena",
-            "slug": "alejandro-baena-rodriguez",
-            "pos": "FW",
-            "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
-            "captain": false,
-            "exp": 57.52,
-            "expected": 57.52,
-            "opp": "RCD Espanyol de Barcelona",
-            "opponent": "RCD Espanyol de Barcelona",
-            "home": false,
-            "average": 62,
-            "formL5": 61,
-            "intl": false,
-            "pWin": 0.56,
-            "pLose": 0.197,
-            "marketFactor": 1.034,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-17T12:00:00Z"
-          },
-          {
-            "actual": 61.32,
-            "scoreStatus": "FINAL",
-            "teamSlug": "atletico-madrid-madrid",
-            "name": "Marcos Llorente",
-            "player": "Marcos Llorente",
-            "slug": "marcos-llorente-moreno",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/5b548359-bc8f-4a9e-bb94-7c4f2634d2e9/picture/tinified-bd84ddd57ee2327577ec617d517d10a9.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/5b548359-bc8f-4a9e-bb94-7c4f2634d2e9/picture/tinified-bd84ddd57ee2327577ec617d517d10a9.png",
-            "captain": false,
-            "exp": 61.38,
-            "expected": 61.38,
-            "opp": "RCD Espanyol de Barcelona",
-            "opponent": "RCD Espanyol de Barcelona",
-            "home": false,
-            "average": 63,
-            "formL5": 67,
-            "intl": false,
-            "pWin": 0.56,
-            "pLose": 0.197,
-            "marketFactor": 1.044,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-17T12:00:00Z"
-          }
-        ],
-        "projected": 324.92,
-        "scoredSoFar": 408.12,
-        "played": 5,
-        "expectedFinal": 408.12
-      },
+      "entered": null,
       "poolStrength": {
         "strong": 0,
         "needed": 5
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 4,
+        "lineupsIn": 0,
         "needed": 3,
-        "scoreSoFar": 1186.6748
+        "scoreSoFar": 0
       },
-      "level": 0,
+      "level": 1,
       "lives": null,
       "totalLevels": 5,
-      "levelsDone": 0,
+      "levelsDone": 1,
       "ladder": [
         {
           "level": 0,
-          "state": "LINEUP_SET",
+          "state": "CLAIMED",
           "target": 700
         },
         {
           "level": 1,
-          "state": "LOCKED",
+          "state": "PRE_MATCHDAY_LOCKED",
           "target": 980
         },
         {
@@ -938,40 +786,9 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
-      "target": 700,
-      "current": [
-        {
-          "name": "Álvaro Valles",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-21T19:00:00Z"
-        },
-        {
-          "name": "Lewis Hall",
-          "captain": true,
-          "locked": true,
-          "nextGame": "2026-10-25T14:00:00Z"
-        },
-        {
-          "name": "Kaishu Sano",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-24T13:30:00Z"
-        },
-        {
-          "name": "Álex Baena",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-20T19:00:00Z"
-        },
-        {
-          "name": "Marcos Llorente",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-20T19:00:00Z"
-        }
-      ],
+      "state": "PRE_MATCHDAY_LOCKED",
+      "target": 980,
+      "current": [],
       "plan": null,
       "candidates": [],
       "projected": 0
