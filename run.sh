@@ -30,6 +30,20 @@ NODE="$(command -v node || echo /usr/local/bin/node)"
     SORARE_ACCOUNT=second "$NODE" src/cli.js guard 2>&1
   fi
 
+  # Once a day, both accounts: drop exact duplicate Set cards for essence (Mas, 18 Oct 2026).
+  # dupes.js keeps one copy of each exact card (same player, rarity, season, edition),
+  # never touches a 4- or 5-star player, a card in a lineup or a sealed card.
+  TODAY=$(date +%F)
+  for ACCT in main second; do
+    STAMP="$DIR/state/dupes-$ACCT.date"
+    [ "$(cat "$STAMP" 2>/dev/null)" = "$TODAY" ] && continue
+    if [ "$ACCT" = main ]; then
+      "$NODE" src/cli.js dupes 2>&1 && echo "$TODAY" > "$STAMP"
+    elif [ -f "$DIR/state/tokens-second.json" ]; then
+      SORARE_ACCOUNT=second "$NODE" src/cli.js dupes 2>&1 && echo "$TODAY" > "$STAMP"
+    fi
+  done
+
   # Refresh the published dashboard. Only pushes when something actually changed,
   # so a quiet pass leaves no commit noise.
   "$NODE" src/cli.js dashboard >/dev/null 2>&1
