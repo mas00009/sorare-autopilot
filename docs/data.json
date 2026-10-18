@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T17:26:38.955Z",
+  "generatedAt": "2026-10-18T17:32:20.752Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-18T19:00:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1792344390423,
-    "reason": "last run 0m ago, next due in 15m (lock in 93m)"
+    "lastRunAt": 1792344732494,
+    "reason": "last run 0m ago, next due in 15m (lock in 88m)"
   },
   "packs": {
     "lastThreeStar": "Dávid Hancko",
@@ -67,7 +67,7 @@
           "position": "Forward",
           "captain": false,
           "score": 31.52,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-23T19:00:00Z"
         },
         {
@@ -889,7 +889,7 @@
           },
           {
             "actual": 31.52,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Dan Ndoye",
             "player": "Dan Ndoye",
