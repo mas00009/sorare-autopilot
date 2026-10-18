@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T17:54:51.961Z",
+  "generatedAt": "2026-10-18T18:00:30.514Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-18T19:00:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1792346083885,
-    "reason": "last run 0m ago, next due in 5m (lock in 65m)"
+    "lastRunAt": 1792346421793,
+    "reason": "last run 0m ago, next due in 5m (lock in 59m)"
   },
   "packs": {
     "lastThreeStar": "Dávid Hancko",
@@ -27,10 +27,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 836.49,
+      "squadScore": 874.99,
       "lineupId": "Tasks::TaskLineup:0434e669-cb72-45f1-a30b-f9237f188926",
       "state": "READY",
-      "score": 201.18,
+      "score": 237.93,
       "finished": false,
       "cleared": false,
       "players": [
@@ -75,12 +75,12 @@
           "slug": "federico-santiago-valverde-dipetta",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-18T19:00:00Z"
         }
       ],
-      "scored": 4
+      "scored": 5
     },
     {
       "surface": "my set",
@@ -794,7 +794,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 227 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 836 so far.",
+      "status": "Locked and playing. 264 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 875 so far.",
       "tone": "good",
       "lockAt": "2026-10-18T13:00:00Z",
       "isSquad": true,
@@ -917,8 +917,8 @@
             "kickoff": "2026-10-18T15:30:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Federico Valverde",
             "player": "Federico Valverde",
@@ -947,9 +947,9 @@
           }
         ],
         "projected": 354.46,
-        "scoredSoFar": 227.25,
-        "played": 4,
-        "expectedFinal": 288.6
+        "scoredSoFar": 264,
+        "played": 5,
+        "expectedFinal": 264
       },
       "poolStrength": {
         "strong": 1,
@@ -959,7 +959,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 836.49
+        "scoreSoFar": 874.99
       },
       "level": 1,
       "lives": null,
@@ -1046,7 +1046,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 52,
           "picture": "https://assets.sorare.com/cardsamplepicture/fe3313a1-5c73-436d-a698-dbc049dee59b/picture/tinified-61dbd25acb89afe827003670d06ba75a.png",
@@ -1280,7 +1280,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 47,
           "picture": "https://assets.sorare.com/cardsamplepicture/972398d6-f877-44ba-a0a3-b8271315ede5/picture/tinified-eac568e01d7c43ae6b01c75018f53b27.png",
@@ -1319,7 +1319,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 54,
           "picture": "https://assets.sorare.com/cardsamplepicture/774f2169-df38-43a7-9202-5964732913fe/picture/tinified-71118565345dd35d94ee1981a44fe95f.png",
@@ -1358,7 +1358,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 41,
           "picture": "https://assets.sorare.com/cardsamplepicture/66708b6f-4b0a-4f5f-b7de-f93fa4be2f9a/picture/tinified-3648c01a300bcfaac844126fb0f16007.png",
@@ -1397,7 +1397,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 50,
           "picture": "https://assets.sorare.com/cardsamplepicture/108306a1-a01a-46a9-ab6a-cbee13e699f2/picture/tinified-1f234d64d3a376de0cc444e45951aabc.png",
@@ -1436,7 +1436,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 41,
           "picture": "https://assets.sorare.com/cardsamplepicture/e9ffabc5-37db-485b-ad91-9a76cd27cc72/picture/tinified-c7e62bbe1dbd76438cfec01d36b68273.png",
@@ -1475,7 +1475,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 44,
           "picture": "https://assets.sorare.com/cardsamplepicture/3348e364-f518-4ddd-b3f5-5fb41256745c/picture/tinified-999e810d086325f1ab705569903424e6.png",
