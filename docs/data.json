@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T13:22:34.229Z",
+  "generatedAt": "2026-10-18T13:28:28.343Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-18T13:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792329734560,
+    "lastRunAt": 1792330091815,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 390.3522,
+      "squadScore": 393.891,
       "lineupId": "Tasks::TaskLineup:0434e669-cb72-45f1-a30b-f9237f188926",
       "state": "READY",
-      "score": 131.52,
+      "score": 132.65,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "bart-verbruggen",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 41.92,
+          "score": 43.05,
           "status": "REVIEWING",
           "kickoff": "2026-10-22T16:45:00Z"
         },
@@ -794,14 +794,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 158 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 390 so far.",
+      "status": "Locked and playing. 159 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 394 so far.",
       "tone": "good",
       "lockAt": "2026-10-18T13:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 41.92,
+            "actual": 43.05,
             "scoreStatus": "REVIEWING",
             "teamSlug": "brighton-hove-albion-brighton-east-sussex",
             "name": "Bart Verbruggen",
@@ -947,9 +947,9 @@
           }
         ],
         "projected": 354.46,
-        "scoredSoFar": 158.29,
+        "scoredSoFar": 159.42,
         "played": 3,
-        "expectedFinal": 284.45
+        "expectedFinal": 285.58
       },
       "poolStrength": {
         "strong": 1,
@@ -959,7 +959,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 390.3522
+        "scoreSoFar": 393.891
       },
       "level": 1,
       "lives": null,
