@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T17:20:57.207Z",
+  "generatedAt": "2026-10-18T17:26:38.955Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-18T19:00:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1792344049668,
-    "reason": "last run 0m ago, next due in 15m (lock in 99m)"
+    "lastRunAt": 1792344390423,
+    "reason": "last run 0m ago, next due in 15m (lock in 93m)"
   },
   "packs": {
     "lastThreeStar": "Dávid Hancko",
@@ -24,10 +24,10 @@
       "surface": "team set (Loadshift)",
       "level": 1,
       "target": 980,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 796.956,
+      "squadScore": 800.44,
       "lineupId": "Tasks::TaskLineup:0434e669-cb72-45f1-a30b-f9237f188926",
       "state": "READY",
       "score": 201.18,
@@ -794,7 +794,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 227 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 797 so far.",
+      "status": "Locked and playing. 227 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 800 so far.",
       "tone": "good",
       "lockAt": "2026-10-18T13:00:00Z",
       "isSquad": true,
@@ -959,7 +959,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 796.956
+        "scoreSoFar": 800.44
       },
       "level": 1,
       "lives": null,
@@ -973,7 +973,7 @@
         },
         {
           "level": 1,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 980
         },
         {
@@ -1000,7 +1000,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 980,
       "current": [
         {
@@ -1097,7 +1097,7 @@
           "opponent": "OGC Nice",
           "opponentCode": "NIC",
           "code": "OL",
-          "rank": 5,
+          "rank": 6,
           "opponentRank": 13,
           "home": true,
           "competition": "Ligue 1",
@@ -1136,7 +1136,7 @@
           "opponent": "OGC Nice",
           "opponentCode": "NIC",
           "code": "OL",
-          "rank": 5,
+          "rank": 6,
           "opponentRank": 13,
           "home": true,
           "competition": "Ligue 1",
@@ -1175,7 +1175,7 @@
           "opponent": "OGC Nice",
           "opponentCode": "NIC",
           "code": "OL",
-          "rank": 5,
+          "rank": 6,
           "opponentRank": 13,
           "home": true,
           "competition": "Ligue 1",
@@ -1214,7 +1214,7 @@
           "opponent": "OGC Nice",
           "opponentCode": "NIC",
           "code": "OL",
-          "rank": 5,
+          "rank": 6,
           "opponentRank": 13,
           "home": true,
           "competition": "Ligue 1",
@@ -1253,7 +1253,7 @@
           "opponent": "OGC Nice",
           "opponentCode": "NIC",
           "code": "OL",
-          "rank": 5,
+          "rank": 6,
           "opponentRank": 13,
           "home": true,
           "competition": "Ligue 1",
@@ -1514,7 +1514,7 @@
       "competition": "Ligue 1",
       "team": "Olympique Lyonnais",
       "code": "OL",
-      "rank": 5,
+      "rank": 6,
       "opponent": "OGC Nice",
       "opponentCode": "NIC",
       "opponentRank": 13,
