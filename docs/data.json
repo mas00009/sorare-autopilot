@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T21:12:21.685Z",
+  "generatedAt": "2026-10-18T21:22:55.947Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-19T19:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792357928595,
-    "reason": "last run 0m ago, next due in 180m (lock in 1308m)"
+    "reason": "last run 11m ago, next due in 169m (lock in 1297m)"
   },
   "packs": {
     "lastThreeStar": "Dávid Hancko",
@@ -682,9 +682,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 822,
+        "progress": 827,
         "target": 860,
-        "remaining": 38,
+        "remaining": 33,
         "competition": null,
         "group": null,
         "teams": []
@@ -716,9 +716,9 @@
       {
         "title": "Collect Goalkeepers",
         "gems": 10,
-        "progress": 98,
+        "progress": 99,
         "target": 112,
-        "remaining": 14,
+        "remaining": 13,
         "competition": null,
         "group": null,
         "teams": []
