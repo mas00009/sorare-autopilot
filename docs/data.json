@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T07:11:38.797Z",
+  "generatedAt": "2026-10-18T07:17:27.727Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-18T13:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1792307484415,
-    "reason": "last run 0m ago, next due in 60m (lock in 348m)"
+    "lastRunAt": 1792307835476,
+    "reason": "last run 0m ago, next due in 60m (lock in 343m)"
   },
   "packs": {
     "lastThreeStar": "Dávid Hancko",
@@ -620,9 +620,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 819,
+        "progress": 822,
         "target": 860,
-        "remaining": 41,
+        "remaining": 38,
         "competition": null,
         "group": null,
         "teams": []
