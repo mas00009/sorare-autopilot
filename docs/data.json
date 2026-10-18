@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-18T07:05:41.474Z",
+  "generatedAt": "2026-10-18T07:11:38.797Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 13377,
+    "essence": 13877,
     "gems": 226
   },
   "schedule": {
-    "nextLock": "2026-10-18T12:00:00Z",
+    "nextLock": "2026-10-18T13:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1792307125381,
-    "reason": "last run 0m ago, next due in 60m (lock in 294m)"
+    "lastRunAt": 1792307484415,
+    "reason": "last run 0m ago, next due in 60m (lock in 348m)"
   },
   "packs": {
-    "lastThreeStar": "Vinícius Júnior",
+    "lastThreeStar": "Dávid Hancko",
     "cycleDone": true
   },
   "health": {
@@ -620,9 +620,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 813,
+        "progress": 819,
         "target": 860,
-        "remaining": 47,
+        "remaining": 41,
         "competition": null,
         "group": null,
         "teams": []
@@ -630,9 +630,9 @@
       {
         "title": "Collect English players in English League",
         "gems": 5,
-        "progress": 52,
+        "progress": 53,
         "target": 77,
-        "remaining": 25,
+        "remaining": 24,
         "competition": "English League Players",
         "group": "glitch-premier-league",
         "teams": []
@@ -640,9 +640,9 @@
       {
         "title": "Collect Big 3 LaLiga",
         "gems": 30,
-        "progress": 45,
+        "progress": 47,
         "target": 50,
-        "remaining": 5,
+        "remaining": 3,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": [
@@ -654,9 +654,9 @@
       {
         "title": "Collect Goalkeepers",
         "gems": 10,
-        "progress": 97,
+        "progress": 98,
         "target": 112,
-        "remaining": 15,
+        "remaining": 14,
         "competition": null,
         "group": null,
         "teams": []
