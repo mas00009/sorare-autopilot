@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T11:55:33.543Z",
+  "generatedAt": "2026-10-18T12:01:49.739Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-18T13:00:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1792324506336,
-    "reason": "last run 0m ago, next due in 5m (lock in 64m)"
+    "lastRunAt": 1792324879167,
+    "reason": "last run 1m ago, next due in 4m (lock in 58m)"
   },
   "packs": {
     "lastThreeStar": "Dávid Hancko",
@@ -27,10 +27,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 0,
+      "squadScore": 318.15,
       "lineupId": "Tasks::TaskLineup:0434e669-cb72-45f1-a30b-f9237f188926",
       "state": "READY",
-      "score": 0,
+      "score": 36.05,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,8 +39,8 @@
           "slug": "bart-verbruggen",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-18T13:00:00Z"
         },
         {
@@ -80,7 +80,7 @@
           "kickoff": "2026-10-18T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 1
     },
     {
       "surface": "my set",
@@ -794,15 +794,15 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Team entered, locks Mon 12:00 am Sydney. The squad's top three lineups together need 980; this one is expected to add about 354.",
+      "status": "Locked and playing. 36 scored so far, 1 of 5 played. The squad's top three lineups together need 980; the squad has 318 so far.",
       "tone": "good",
       "lockAt": "2026-10-18T13:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "brighton-hove-albion-brighton-east-sussex",
             "name": "Bart Verbruggen",
             "player": "Bart Verbruggen",
@@ -947,19 +947,19 @@
           }
         ],
         "projected": 354.46,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 355.47
+        "scoredSoFar": 36.05,
+        "played": 1,
+        "expectedFinal": 330.62
       },
       "poolStrength": {
-        "strong": 6,
+        "strong": 5,
         "needed": 5
       },
       "collaborative": true,
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 0
+        "scoreSoFar": 318.15
       },
       "level": 1,
       "lives": null,
@@ -1036,54 +1036,15 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 306.52,
-        "lock": "2026-10-18T12:00:00Z",
-        "shortfall": 673.5,
+        "projected": 295.26,
+        "lock": "2026-10-18T13:00:00Z",
+        "shortfall": 684.7,
         "tradedPointsForTime": 0,
-        "captain": "inigo-vicente-elorduy",
-        "captainPoints": 28.91,
+        "captain": "james-justin",
+        "captainPoints": 28.67,
         "withinReach": false,
         "enteredProjected": 354.46,
         "five": [
-          {
-            "id": "ComposeTeamBenchCard:d949610c-4989-44ec-ad00-1e097969470f",
-            "player": "Iñigo Vicente",
-            "slug": "inigo-vicente-elorduy",
-            "position": "FW",
-            "average": 72,
-            "bonus": 1.05,
-            "starterPct": null,
-            "startRate": 0.8,
-            "oddsKnown": false,
-            "onGameSheet": true,
-            "reliability": null,
-            "formL5": 64,
-            "picture": "https://assets.sorare.com/cardsamplepicture/430d8e95-0c8d-4d1a-b168-2a8cf77777f0/picture/tinified-c17df4e5bf14cfbbc58507f31e178feb.png",
-            "rarity": "common",
-            "gameId": "Game:6fed6da9-1225-4e9e-a395-7b582ccf04e7",
-            "kickoff": "2026-10-18T12:00:00Z",
-            "team": "Real Racing Club de Santander",
-            "teamSlug": "racing-santander-santander",
-            "opponent": "CA Osasuna",
-            "opponentCode": "OSA",
-            "code": "RAC",
-            "rank": 15,
-            "opponentRank": 16,
-            "home": false,
-            "competition": "Primera División",
-            "intl": false,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "mismatch": false,
-            "pWin": 0.264,
-            "pLose": 0.476,
-            "oddsBooks": 20,
-            "marketFactor": 0.977,
-            "lockedAt": null,
-            "expected": 60.71,
-            "blocked": null
-          },
           {
             "id": "ComposeTeamBenchCard:2a4ba755-2a13-4f99-bdeb-f1df15310f32",
             "player": "James Justin",
@@ -1094,7 +1055,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 56,
             "picture": "https://assets.sorare.com/cardsamplepicture/b08237c4-c904-49f0-9140-ec0d14e9c19d/picture/tinified-b44160293b9372af09f405c217b26aa7.png",
@@ -1172,7 +1133,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 55,
             "picture": "https://assets.sorare.com/cardsamplepicture/ed8a4e34-52d4-4646-bf85-5230855660ac/picture/tinified-c3677acaab0cf9e271b474cb06e04364.png",
@@ -1199,6 +1160,45 @@
             "marketFactor": 1.059,
             "lockedAt": null,
             "expected": 56.92,
+            "blocked": null
+          },
+          {
+            "id": "ComposeTeamBenchCard:6b1b4712-102c-468a-b217-2207f5aad00c",
+            "player": "Ilan Kebbal",
+            "slug": "ilan-kebbal",
+            "position": "FW",
+            "average": 52,
+            "bonus": 1.02,
+            "starterPct": null,
+            "startRate": 0.8,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 60,
+            "picture": "https://assets.sorare.com/cardsamplepicture/9ab93c0c-d484-4c1d-8e8c-7c3d2bdda748/picture/tinified-ddf270d8aae96c242076d35d3e3d3aa8.png",
+            "rarity": "common",
+            "gameId": "Game:c46f7b43-8f6e-44f6-8cf6-0d4902fd421d",
+            "kickoff": "2026-10-18T15:15:00Z",
+            "team": "Paris FC",
+            "teamSlug": "paris-paris",
+            "opponent": "Stade Rennais F.C.",
+            "opponentCode": "REN",
+            "code": "PAR",
+            "rank": 6,
+            "opponentRank": 4,
+            "home": true,
+            "competition": "Ligue 1",
+            "intl": false,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "mismatch": false,
+            "pWin": null,
+            "pLose": null,
+            "oddsBooks": null,
+            "marketFactor": null,
+            "lockedAt": null,
+            "expected": 49.69,
             "blocked": null
           },
           {
@@ -1244,45 +1244,6 @@
       },
       "candidates": [
         {
-          "id": "ComposeTeamBenchCard:d949610c-4989-44ec-ad00-1e097969470f",
-          "player": "Iñigo Vicente",
-          "slug": "inigo-vicente-elorduy",
-          "position": "FW",
-          "average": 72,
-          "bonus": 1.05,
-          "starterPct": null,
-          "startRate": 0.8,
-          "oddsKnown": false,
-          "onGameSheet": true,
-          "reliability": null,
-          "formL5": 64,
-          "picture": "https://assets.sorare.com/cardsamplepicture/430d8e95-0c8d-4d1a-b168-2a8cf77777f0/picture/tinified-c17df4e5bf14cfbbc58507f31e178feb.png",
-          "rarity": "common",
-          "gameId": "Game:6fed6da9-1225-4e9e-a395-7b582ccf04e7",
-          "kickoff": "2026-10-18T12:00:00Z",
-          "team": "Real Racing Club de Santander",
-          "teamSlug": "racing-santander-santander",
-          "opponent": "CA Osasuna",
-          "opponentCode": "OSA",
-          "code": "RAC",
-          "rank": 15,
-          "opponentRank": 16,
-          "home": false,
-          "competition": "Primera División",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.264,
-          "pLose": 0.476,
-          "oddsBooks": 20,
-          "marketFactor": 0.977,
-          "lockedAt": null,
-          "expected": 60.71,
-          "blocked": null
-        },
-        {
           "id": "ComposeTeamBenchCard:2a4ba755-2a13-4f99-bdeb-f1df15310f32",
           "player": "James Justin",
           "slug": "james-justin",
@@ -1292,7 +1253,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 56,
           "picture": "https://assets.sorare.com/cardsamplepicture/b08237c4-c904-49f0-9140-ec0d14e9c19d/picture/tinified-b44160293b9372af09f405c217b26aa7.png",
@@ -1370,7 +1331,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 55,
           "picture": "https://assets.sorare.com/cardsamplepicture/ed8a4e34-52d4-4646-bf85-5230855660ac/picture/tinified-c3677acaab0cf9e271b474cb06e04364.png",
@@ -1397,6 +1358,45 @@
           "marketFactor": 1.059,
           "lockedAt": null,
           "expected": 56.92,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:6b1b4712-102c-468a-b217-2207f5aad00c",
+          "player": "Ilan Kebbal",
+          "slug": "ilan-kebbal",
+          "position": "FW",
+          "average": 52,
+          "bonus": 1.02,
+          "starterPct": null,
+          "startRate": 0.8,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 60,
+          "picture": "https://assets.sorare.com/cardsamplepicture/9ab93c0c-d484-4c1d-8e8c-7c3d2bdda748/picture/tinified-ddf270d8aae96c242076d35d3e3d3aa8.png",
+          "rarity": "common",
+          "gameId": "Game:c46f7b43-8f6e-44f6-8cf6-0d4902fd421d",
+          "kickoff": "2026-10-18T15:15:00Z",
+          "team": "Paris FC",
+          "teamSlug": "paris-paris",
+          "opponent": "Stade Rennais F.C.",
+          "opponentCode": "REN",
+          "code": "PAR",
+          "rank": 6,
+          "opponentRank": 4,
+          "home": true,
+          "competition": "Ligue 1",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": null,
+          "pLose": null,
+          "oddsBooks": null,
+          "marketFactor": null,
+          "lockedAt": null,
+          "expected": 49.69,
           "blocked": null
         },
         {
@@ -1439,35 +1439,10 @@
           "blocked": null
         }
       ],
-      "projected": 290.5
+      "projected": 286.1
     }
   ],
   "fixtures": [
-    {
-      "kickoff": "2026-10-18T12:00:00Z",
-      "competition": "Primera División",
-      "team": "Real Racing Club de Santander",
-      "code": "RAC",
-      "rank": 15,
-      "opponent": "CA Osasuna",
-      "opponentCode": "OSA",
-      "opponentRank": 16,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.264,
-      "pLose": 0.476,
-      "oppFactor": null,
-      "home": false,
-      "players": [
-        "Iñigo Vicente"
-      ],
-      "points": 60.7,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
     {
       "kickoff": "2026-10-18T13:00:00Z",
       "competition": "Premier League",
@@ -1538,6 +1513,31 @@
         "Jeffrey de Lange"
       ],
       "points": 43.6,
+      "bestStarter": null,
+      "surfaces": [
+        "team set (Loadshift)"
+      ]
+    },
+    {
+      "kickoff": "2026-10-18T15:15:00Z",
+      "competition": "Ligue 1",
+      "team": "Paris FC",
+      "code": "PAR",
+      "rank": 6,
+      "opponent": "Stade Rennais F.C.",
+      "opponentCode": "REN",
+      "opponentRank": 4,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": null,
+      "pLose": null,
+      "oppFactor": null,
+      "home": true,
+      "players": [
+        "Ilan Kebbal"
+      ],
+      "points": 49.7,
       "bestStarter": null,
       "surfaces": [
         "team set (Loadshift)"
