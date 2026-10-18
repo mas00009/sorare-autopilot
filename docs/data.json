@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T14:49:42.604Z",
+  "generatedAt": "2026-10-18T14:55:29.421Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-18T13:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792334969266,
+    "lastRunAt": 1792335313267,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 690.227,
+      "squadScore": 692.805,
       "lineupId": "Tasks::TaskLineup:0434e669-cb72-45f1-a30b-f9237f188926",
       "state": "READY",
-      "score": 186.13,
+      "score": 191.48,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,7 +48,7 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": true,
-          "score": 29.16,
+          "score": 34.3,
           "status": "REVIEWING",
           "kickoff": "2026-10-22T19:00:00Z"
         },
@@ -57,7 +57,7 @@
           "slug": "maximilian-eggestein",
           "position": "Midfielder",
           "captain": false,
-          "score": 46.76,
+          "score": 46.97,
           "status": "REVIEWING",
           "kickoff": "2026-10-22T19:00:00Z"
         },
@@ -794,7 +794,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 201 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 690 so far.",
+      "status": "Locked and playing. 209 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 693 so far.",
       "tone": "good",
       "lockAt": "2026-10-18T13:00:00Z",
       "isSquad": true,
@@ -830,7 +830,7 @@
             "kickoff": "2026-10-18T13:00:00Z"
           },
           {
-            "actual": 29.16,
+            "actual": 34.3,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
@@ -859,7 +859,7 @@
             "kickoff": "2026-10-18T13:30:00Z"
           },
           {
-            "actual": 46.76,
+            "actual": 46.97,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Maximilian Eggestein",
@@ -947,9 +947,9 @@
           }
         ],
         "projected": 354.46,
-        "scoredSoFar": 200.71,
+        "scoredSoFar": 208.63,
         "played": 4,
-        "expectedFinal": 262.06
+        "expectedFinal": 269.98
       },
       "poolStrength": {
         "strong": 1,
@@ -959,7 +959,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 690.227
+        "scoreSoFar": 692.805
       },
       "level": 1,
       "lives": null,
@@ -1146,7 +1146,7 @@
             "opponentCode": "NIC",
             "code": "OL",
             "rank": 5,
-            "opponentRank": 11,
+            "opponentRank": 12,
             "home": true,
             "competition": "Ligue 1",
             "intl": false,
@@ -1185,7 +1185,7 @@
             "opponentCode": "NIC",
             "code": "OL",
             "rank": 5,
-            "opponentRank": 11,
+            "opponentRank": 12,
             "home": true,
             "competition": "Ligue 1",
             "intl": false,
@@ -1344,7 +1344,7 @@
           "opponentCode": "NIC",
           "code": "OL",
           "rank": 5,
-          "opponentRank": 11,
+          "opponentRank": 12,
           "home": true,
           "competition": "Ligue 1",
           "intl": false,
@@ -1383,7 +1383,7 @@
           "opponentCode": "NIC",
           "code": "OL",
           "rank": 5,
-          "opponentRank": 11,
+          "opponentRank": 12,
           "home": true,
           "competition": "Ligue 1",
           "intl": false,
@@ -1501,7 +1501,7 @@
       "rank": 5,
       "opponent": "OGC Nice",
       "opponentCode": "NIC",
-      "opponentRank": 11,
+      "opponentRank": 12,
       "intl": false,
       "ownRank": null,
       "oppRank": null,
