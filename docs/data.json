@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T14:55:29.421Z",
+  "generatedAt": "2026-10-18T15:01:18.875Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-18T13:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792335313267,
+    "lastRunAt": 1792335663912,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -30,7 +30,7 @@
       "squadScore": 692.805,
       "lineupId": "Tasks::TaskLineup:0434e669-cb72-45f1-a30b-f9237f188926",
       "state": "READY",
-      "score": 191.48,
+      "score": 191.43,
       "finished": false,
       "cleared": false,
       "players": [
@@ -40,7 +40,7 @@
           "position": "Goalkeeper",
           "captain": false,
           "score": 74.16,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-22T16:45:00Z"
         },
         {
@@ -48,7 +48,7 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": true,
-          "score": 34.3,
+          "score": 34.98,
           "status": "REVIEWING",
           "kickoff": "2026-10-22T19:00:00Z"
         },
@@ -57,7 +57,7 @@
           "slug": "maximilian-eggestein",
           "position": "Midfielder",
           "captain": false,
-          "score": 46.97,
+          "score": 46.25,
           "status": "REVIEWING",
           "kickoff": "2026-10-22T19:00:00Z"
         },
@@ -802,7 +802,7 @@
         "five": [
           {
             "actual": 74.16,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "brighton-hove-albion-brighton-east-sussex",
             "name": "Bart Verbruggen",
             "player": "Bart Verbruggen",
@@ -830,7 +830,7 @@
             "kickoff": "2026-10-18T13:00:00Z"
           },
           {
-            "actual": 34.3,
+            "actual": 34.98,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
@@ -859,7 +859,7 @@
             "kickoff": "2026-10-18T13:30:00Z"
           },
           {
-            "actual": 46.97,
+            "actual": 46.25,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Maximilian Eggestein",
@@ -947,9 +947,9 @@
           }
         ],
         "projected": 354.46,
-        "scoredSoFar": 208.63,
+        "scoredSoFar": 208.93,
         "played": 4,
-        "expectedFinal": 269.98
+        "expectedFinal": 270.28
       },
       "poolStrength": {
         "strong": 1,
