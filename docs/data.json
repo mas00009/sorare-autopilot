@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T19:23:45.908Z",
+  "generatedAt": "2026-10-18T19:29:11.391Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-18T19:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792351420963,
+    "lastRunAt": 1792351746721,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 912.0254,
+      "squadScore": 912.4098,
       "lineupId": "Tasks::TaskLineup:0434e669-cb72-45f1-a30b-f9237f188926",
       "state": "READY",
-      "score": 244.33,
+      "score": 244.02,
       "finished": false,
       "cleared": false,
       "players": [
@@ -75,7 +75,7 @@
           "slug": "federico-santiago-valverde-dipetta",
           "position": "Midfielder",
           "captain": false,
-          "score": 43.16,
+          "score": 42.84,
           "status": "REVIEWING",
           "kickoff": "2026-10-21T19:00:00Z"
         }
@@ -917,7 +917,7 @@
             "kickoff": "2026-10-18T15:30:00Z"
           },
           {
-            "actual": 43.16,
+            "actual": 42.84,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Federico Valverde",
@@ -947,9 +947,9 @@
           }
         ],
         "projected": 354.46,
-        "scoredSoFar": 270.41,
+        "scoredSoFar": 270.09,
         "played": 5,
-        "expectedFinal": 270.41
+        "expectedFinal": 270.09
       },
       "poolStrength": {
         "strong": 0,
@@ -959,7 +959,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 912.0254
+        "scoreSoFar": 912.4098
       },
       "level": 1,
       "lives": null,
