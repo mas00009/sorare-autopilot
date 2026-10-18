@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T14:27:01.955Z",
+  "generatedAt": "2026-10-18T14:32:39.688Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-18T13:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792333608690,
+    "lastRunAt": 1792333947187,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 478.1338,
+      "squadScore": 673.4112,
       "lineupId": "Tasks::TaskLineup:0434e669-cb72-45f1-a30b-f9237f188926",
       "state": "READY",
-      "score": 141.58,
+      "score": 177.63,
       "finished": false,
       "cleared": false,
       "players": [
@@ -66,8 +66,8 @@
           "slug": "dan-ndoye",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-18T15:30:00Z"
         },
         {
@@ -80,7 +80,7 @@
           "kickoff": "2026-10-18T19:00:00Z"
         }
       ],
-      "scored": 3
+      "scored": 4
     },
     {
       "surface": "my set",
@@ -794,7 +794,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 155 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 478 so far.",
+      "status": "Locked and playing. 191 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 673 so far.",
       "tone": "good",
       "lockAt": "2026-10-18T13:00:00Z",
       "isSquad": true,
@@ -888,8 +888,8 @@
             "kickoff": "2026-10-18T13:30:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Dan Ndoye",
             "player": "Dan Ndoye",
@@ -947,9 +947,9 @@
           }
         ],
         "projected": 354.46,
-        "scoredSoFar": 154.84,
-        "played": 3,
-        "expectedFinal": 281
+        "scoredSoFar": 190.89,
+        "played": 4,
+        "expectedFinal": 252.24
       },
       "poolStrength": {
         "strong": 1,
@@ -959,7 +959,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 478.1338
+        "scoreSoFar": 673.4112
       },
       "level": 1,
       "lives": null,
