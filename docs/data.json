@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T14:32:39.688Z",
+  "generatedAt": "2026-10-18T14:38:20.149Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-18T13:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792333947187,
+    "lastRunAt": 1792334286980,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -27,7 +27,7 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 673.4112,
+      "squadScore": 681.2474,
       "lineupId": "Tasks::TaskLineup:0434e669-cb72-45f1-a30b-f9237f188926",
       "state": "READY",
       "score": 177.63,
@@ -794,7 +794,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 191 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 673 so far.",
+      "status": "Locked and playing. 191 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 681 so far.",
       "tone": "good",
       "lockAt": "2026-10-18T13:00:00Z",
       "isSquad": true,
@@ -959,7 +959,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 673.4112
+        "scoreSoFar": 681.2474
       },
       "level": 1,
       "lives": null,
@@ -1211,7 +1211,7 @@
             "starterPct": null,
             "startRate": 0.7,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 57,
             "picture": "https://assets.sorare.com/cardsamplepicture/e59d515e-09c0-406d-b134-c496e612645a/picture/tinified-2c17001b2ba49cda78ba8f2627b0e3ab.png",
@@ -1409,7 +1409,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 57,
           "picture": "https://assets.sorare.com/cardsamplepicture/e59d515e-09c0-406d-b134-c496e612645a/picture/tinified-2c17001b2ba49cda78ba8f2627b0e3ab.png",
