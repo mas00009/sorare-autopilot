@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T16:58:36.864Z",
+  "generatedAt": "2026-10-18T17:04:12.182Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-18T19:00:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1792342708259,
-    "reason": "last run 0m ago, next due in 15m (lock in 121m)"
+    "lastRunAt": 1792343043537,
+    "reason": "last run 0m ago, next due in 15m (lock in 116m)"
   },
   "packs": {
     "lastThreeStar": "Dávid Hancko",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 780.589,
+      "squadScore": 781.786,
       "lineupId": "Tasks::TaskLineup:0434e669-cb72-45f1-a30b-f9237f188926",
       "state": "READY",
-      "score": 201.08,
+      "score": 201.18,
       "finished": false,
       "cleared": false,
       "players": [
@@ -66,7 +66,7 @@
           "slug": "dan-ndoye",
           "position": "Forward",
           "captain": false,
-          "score": 31.42,
+          "score": 31.52,
           "status": "REVIEWING",
           "kickoff": "2026-10-23T19:00:00Z"
         },
@@ -794,7 +794,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 227 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 781 so far.",
+      "status": "Locked and playing. 227 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 782 so far.",
       "tone": "good",
       "lockAt": "2026-10-18T13:00:00Z",
       "isSquad": true,
@@ -888,7 +888,7 @@
             "kickoff": "2026-10-18T13:30:00Z"
           },
           {
-            "actual": 31.42,
+            "actual": 31.52,
             "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Dan Ndoye",
@@ -947,9 +947,9 @@
           }
         ],
         "projected": 354.46,
-        "scoredSoFar": 227.15,
+        "scoredSoFar": 227.25,
         "played": 4,
-        "expectedFinal": 288.5
+        "expectedFinal": 288.6
       },
       "poolStrength": {
         "strong": 1,
@@ -959,7 +959,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 780.589
+        "scoreSoFar": 781.786
       },
       "level": 1,
       "lives": null,
