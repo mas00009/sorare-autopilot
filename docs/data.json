@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T17:32:20.752Z",
+  "generatedAt": "2026-10-18T17:49:13.494Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-18T19:00:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1792344732494,
-    "reason": "last run 0m ago, next due in 15m (lock in 88m)"
+    "lastRunAt": 1792345744963,
+    "reason": "last run 0m ago, next due in 15m (lock in 71m)"
   },
   "packs": {
     "lastThreeStar": "Dávid Hancko",
@@ -27,7 +27,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 800.44,
+      "squadScore": 836.49,
       "lineupId": "Tasks::TaskLineup:0434e669-cb72-45f1-a30b-f9237f188926",
       "state": "READY",
       "score": 201.18,
@@ -794,7 +794,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 227 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 800 so far.",
+      "status": "Locked and playing. 227 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 836 so far.",
       "tone": "good",
       "lockAt": "2026-10-18T13:00:00Z",
       "isSquad": true,
@@ -959,7 +959,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 800.44
+        "scoreSoFar": 836.49
       },
       "level": 1,
       "lives": null,
@@ -1085,7 +1085,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 48,
           "picture": "https://assets.sorare.com/cardsamplepicture/412c34d9-fb94-4dd7-af41-638fa1bbcd7e/picture/tinified-9dc3fc082484b7951b28d2e7b7a3eadc.png",
@@ -1124,7 +1124,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 46,
           "picture": "https://assets.sorare.com/cardsamplepicture/d0bd3d19-e21e-46f6-bfec-2c2f379b0a13/picture/tinified-745fe1fbf135939fb2c08b39ae1540a3.png",
@@ -1163,7 +1163,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 56,
           "picture": "https://assets.sorare.com/cardsamplepicture/df726850-bd86-4a45-84d6-cd1ad25fd547/picture/tinified-04c2a475c04772517c029f1b04c3712f.png",
@@ -1202,7 +1202,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 46,
           "picture": "https://assets.sorare.com/cardsamplepicture/78d1f460-4347-43da-b1b0-d0ccdefd3a2f/picture/tinified-18c5667eb67715c5c5e34cc35c409a88.png",
@@ -1241,7 +1241,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 46,
           "picture": "https://assets.sorare.com/cardsamplepicture/b34f7df8-9487-425e-a6f7-beec242b7374/picture/tinified-46294cf75a5dc5f5a2da31ff9b55563a.png",
