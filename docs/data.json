@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T13:52:17.081Z",
+  "generatedAt": "2026-10-18T13:58:16.704Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-18T13:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792331518656,
+    "lastRunAt": 1792331873353,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 366.6412,
+      "squadScore": 371.5762,
       "lineupId": "Tasks::TaskLineup:0434e669-cb72-45f1-a30b-f9237f188926",
       "state": "READY",
-      "score": 101.03,
+      "score": 105.97,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,7 +48,7 @@
           "slug": "matthias-ginter",
           "position": "Defender",
           "captain": true,
-          "score": 18.33,
+          "score": 19.25,
           "status": "REVIEWING",
           "kickoff": "2026-10-22T19:00:00Z"
         },
@@ -57,7 +57,7 @@
           "slug": "maximilian-eggestein",
           "position": "Midfielder",
           "captain": false,
-          "score": 35.54,
+          "score": 39.55,
           "status": "REVIEWING",
           "kickoff": "2026-10-22T19:00:00Z"
         },
@@ -794,7 +794,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 108 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 365 so far.",
+      "status": "Locked and playing. 115 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 371 so far.",
       "tone": "good",
       "lockAt": "2026-10-18T13:00:00Z",
       "isSquad": true,
@@ -830,7 +830,7 @@
             "kickoff": "2026-10-18T13:00:00Z"
           },
           {
-            "actual": 17.2,
+            "actual": 19.46,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
@@ -859,7 +859,7 @@
             "kickoff": "2026-10-18T13:30:00Z"
           },
           {
-            "actual": 35.02,
+            "actual": 38.73,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Maximilian Eggestein",
@@ -947,9 +947,9 @@
           }
         ],
         "projected": 354.46,
-        "scoredSoFar": 107.99,
+        "scoredSoFar": 115.09,
         "played": 3,
-        "expectedFinal": 234.15
+        "expectedFinal": 241.25
       },
       "poolStrength": {
         "strong": 1,
@@ -959,7 +959,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 364.994
+        "scoreSoFar": 370.9664
       },
       "level": 1,
       "lives": null,
@@ -1106,7 +1106,7 @@
             "opponent": "D. Alavés",
             "opponentCode": "ALA",
             "code": "CEL",
-            "rank": 11,
+            "rank": 12,
             "opponentRank": 7,
             "home": true,
             "competition": "Primera División",
@@ -1223,7 +1223,7 @@
             "opponent": "D. Alavés",
             "opponentCode": "ALA",
             "code": "CEL",
-            "rank": 11,
+            "rank": 12,
             "opponentRank": 7,
             "home": true,
             "competition": "Primera División",
@@ -1304,7 +1304,7 @@
           "opponent": "D. Alavés",
           "opponentCode": "ALA",
           "code": "CEL",
-          "rank": 11,
+          "rank": 12,
           "opponentRank": 7,
           "home": true,
           "competition": "Primera División",
@@ -1421,7 +1421,7 @@
           "opponent": "D. Alavés",
           "opponentCode": "ALA",
           "code": "CEL",
-          "rank": 11,
+          "rank": 12,
           "opponentRank": 7,
           "home": true,
           "competition": "Primera División",
@@ -1448,7 +1448,7 @@
       "competition": "Primera División",
       "team": "RC Celta",
       "code": "CEL",
-      "rank": 11,
+      "rank": 12,
       "opponent": "D. Alavés",
       "opponentCode": "ALA",
       "opponentRank": 7,
