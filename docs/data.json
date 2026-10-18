@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T10:27:46.748Z",
+  "generatedAt": "2026-10-18T11:02:19.373Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-18T13:00:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1792319252849,
-    "reason": "last run 0m ago, next due in 15m (lock in 152m)"
+    "lastRunAt": 1792321326653,
+    "reason": "last run 0m ago, next due in 15m (lock in 118m)"
   },
   "packs": {
     "lastThreeStar": "Dávid Hancko",
@@ -1055,7 +1055,7 @@
             "starterPct": null,
             "startRate": 0.8,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 64,
             "picture": "https://assets.sorare.com/cardsamplepicture/430d8e95-0c8d-4d1a-b168-2a8cf77777f0/picture/tinified-c17df4e5bf14cfbbc58507f31e178feb.png",
@@ -1253,7 +1253,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 64,
           "picture": "https://assets.sorare.com/cardsamplepicture/430d8e95-0c8d-4d1a-b168-2a8cf77777f0/picture/tinified-c17df4e5bf14cfbbc58507f31e178feb.png",
