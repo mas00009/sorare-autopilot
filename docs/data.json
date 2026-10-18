@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T09:53:10.326Z",
+  "generatedAt": "2026-10-18T10:27:46.748Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-18T13:00:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1792317177335,
-    "reason": "last run 0m ago, next due in 15m (lock in 187m)"
+    "lastRunAt": 1792319252849,
+    "reason": "last run 0m ago, next due in 15m (lock in 152m)"
   },
   "packs": {
     "lastThreeStar": "Dávid Hancko",
@@ -26,7 +26,7 @@
       "target": 980,
       "stepState": "LINEUP_SET",
       "collaborative": true,
-      "squadLineups": 4,
+      "squadLineups": 5,
       "squadScore": 0,
       "lineupId": "Tasks::TaskLineup:0434e669-cb72-45f1-a30b-f9237f188926",
       "state": "READY",
@@ -957,7 +957,7 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 4,
+        "lineupsIn": 5,
         "needed": 3,
         "scoreSoFar": 0
       },
