@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T11:37:14.252Z",
+  "generatedAt": "2026-10-18T11:55:33.543Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -8,9 +8,9 @@
   },
   "schedule": {
     "nextLock": "2026-10-18T13:00:00Z",
-    "cadenceMin": 15,
-    "lastRunAt": 1792323406546,
-    "reason": "last run 0m ago, next due in 15m (lock in 83m)"
+    "cadenceMin": 5,
+    "lastRunAt": 1792324506336,
+    "reason": "last run 0m ago, next due in 5m (lock in 64m)"
   },
   "packs": {
     "lastThreeStar": "Dávid Hancko",
