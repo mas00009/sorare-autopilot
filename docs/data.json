@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T15:30:58.926Z",
+  "generatedAt": "2026-10-18T15:36:50.842Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-18T19:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1792337440360,
-    "reason": "last run 0m ago, next due in 60m (lock in 209m)"
+    "lastRunAt": 1792337792954,
+    "reason": "last run 0m ago, next due in 60m (lock in 203m)"
   },
   "packs": {
     "lastThreeStar": "Dávid Hancko",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 692.805,
+      "squadScore": 691.174,
       "lineupId": "Tasks::TaskLineup:0434e669-cb72-45f1-a30b-f9237f188926",
       "state": "READY",
-      "score": 205.71,
+      "score": 204.89,
       "finished": false,
       "cleared": false,
       "players": [
@@ -49,7 +49,7 @@
           "position": "Defender",
           "captain": true,
           "score": 52.14,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-22T19:00:00Z"
         },
         {
@@ -58,7 +58,7 @@
           "position": "Midfielder",
           "captain": false,
           "score": 43.36,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-22T19:00:00Z"
         },
         {
@@ -66,7 +66,7 @@
           "slug": "dan-ndoye",
           "position": "Forward",
           "captain": false,
-          "score": 36.05,
+          "score": 35.23,
           "status": "REVIEWING",
           "kickoff": "2026-10-23T19:00:00Z"
         },
@@ -831,7 +831,7 @@
           },
           {
             "actual": 52.14,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Matthias Ginter",
             "player": "Matthias Ginter",
@@ -860,7 +860,7 @@
           },
           {
             "actual": 43.36,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Maximilian Eggestein",
             "player": "Maximilian Eggestein",
@@ -888,7 +888,7 @@
             "kickoff": "2026-10-18T13:30:00Z"
           },
           {
-            "actual": 36.05,
+            "actual": 35.95,
             "scoreStatus": "REVIEWING",
             "teamSlug": "nottingham-forest-nottingham",
             "name": "Dan Ndoye",
@@ -947,9 +947,9 @@
           }
         ],
         "projected": 354.46,
-        "scoredSoFar": 231.78,
+        "scoredSoFar": 231.68,
         "played": 4,
-        "expectedFinal": 293.13
+        "expectedFinal": 293.03
       },
       "poolStrength": {
         "strong": 1,
@@ -959,7 +959,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 692.805
+        "scoreSoFar": 693.178
       },
       "level": 1,
       "lives": null,
@@ -973,7 +973,7 @@
         },
         {
           "level": 1,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 980
         },
         {
@@ -1000,7 +1000,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 980,
       "current": [
         {
@@ -1439,7 +1439,7 @@
           "blocked": null
         }
       ],
-      "projected": 257.5
+      "projected": 255
     }
   ],
   "fixtures": [
