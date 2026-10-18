@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T20:23:25.757Z",
+  "generatedAt": "2026-10-18T20:28:50.390Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,7 +9,7 @@
   "schedule": {
     "nextLock": "2026-10-18T19:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792355001048,
+    "lastRunAt": 1792355325598,
     "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 1062.5508,
+      "squadScore": 1074.1568,
       "lineupId": "Tasks::TaskLineup:0434e669-cb72-45f1-a30b-f9237f188926",
       "state": "READY",
-      "score": 251.68,
+      "score": 252.84,
       "finished": false,
       "cleared": true,
       "players": [
@@ -75,7 +75,7 @@
           "slug": "federico-santiago-valverde-dipetta",
           "position": "Midfielder",
           "captain": false,
-          "score": 50.51,
+          "score": 51.66,
           "status": "REVIEWING",
           "kickoff": "2026-10-21T19:00:00Z"
         }
@@ -794,7 +794,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 278 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1063 so far.",
+      "status": "Locked and playing. 279 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 1074 so far.",
       "tone": "good",
       "lockAt": "2026-10-18T13:00:00Z",
       "isSquad": true,
@@ -917,7 +917,7 @@
             "kickoff": "2026-10-18T15:30:00Z"
           },
           {
-            "actual": 50.51,
+            "actual": 51.66,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Federico Valverde",
@@ -947,9 +947,9 @@
           }
         ],
         "projected": 354.46,
-        "scoredSoFar": 277.76,
+        "scoredSoFar": 278.91,
         "played": 5,
-        "expectedFinal": 277.76
+        "expectedFinal": 278.91
       },
       "poolStrength": {
         "strong": 0,
@@ -959,7 +959,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 1062.5508
+        "scoreSoFar": 1074.1568
       },
       "level": 1,
       "lives": null,
