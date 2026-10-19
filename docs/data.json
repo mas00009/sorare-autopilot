@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T06:44:10.311Z",
+  "generatedAt": "2026-10-19T07:00:05.198Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-21T19:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792390972684,
-    "reason": "last run 21m ago, next due in 159m (lock in 3616m)"
+    "reason": "last run 37m ago, next due in 143m (lock in 3600m)"
   },
   "packs": {
     "lastThreeStar": "Dávid Hancko",
@@ -1411,7 +1411,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Not open for entry yet. A team goes in the moment it opens.",
+      "status": "No eligible cards for this step yet.",
       "tone": "neutral",
       "lockAt": null,
       "isSquad": true,
@@ -1465,7 +1465,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "PRE_MATCHDAY_LOCKED",
+      "state": "PLAYABLE",
       "target": 1060,
       "current": [],
       "plan": null,
