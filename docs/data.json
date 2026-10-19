@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T20:58:50.057Z",
+  "generatedAt": "2026-10-19T21:10:14.125Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-21T19:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792443515451,
-    "reason": "last run 0m ago, next due in 180m (lock in 2761m)"
+    "lastRunAt": 1792444200020,
+    "reason": "last run 0m ago, next due in 180m (lock in 2750m)"
   },
   "packs": {
     "lastThreeStar": "Pierre-Emerick Aubameyang",
@@ -269,68 +269,6 @@
       "scored": 5
     },
     {
-      "surface": "team set (Loadshift)",
-      "level": 1,
-      "target": 980,
-      "stepState": "CLAIMED",
-      "collaborative": true,
-      "squadLineups": 5,
-      "squadScore": 1089.6544,
-      "lineupId": "Tasks::TaskLineup:0434e669-cb72-45f1-a30b-f9237f188926",
-      "state": "SUCCESSFUL",
-      "score": 254.2,
-      "finished": true,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Bart Verbruggen",
-          "slug": "bart-verbruggen",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 74.16,
-          "status": "FINAL",
-          "kickoff": "2026-10-22T16:45:00Z"
-        },
-        {
-          "name": "Matthias Ginter",
-          "slug": "matthias-ginter",
-          "position": "Defender",
-          "captain": true,
-          "score": 52.14,
-          "status": "FINAL",
-          "kickoff": "2026-10-22T19:00:00Z"
-        },
-        {
-          "name": "Maximilian Eggestein",
-          "slug": "maximilian-eggestein",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 43.36,
-          "status": "FINAL",
-          "kickoff": "2026-10-22T19:00:00Z"
-        },
-        {
-          "name": "Dan Ndoye",
-          "slug": "dan-ndoye",
-          "position": "Forward",
-          "captain": false,
-          "score": 31.52,
-          "status": "FINAL",
-          "kickoff": "2026-10-23T19:00:00Z"
-        },
-        {
-          "name": "Federico Valverde",
-          "slug": "federico-santiago-valverde-dipetta",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 53.03,
-          "status": "FINAL",
-          "kickoff": "2026-10-21T19:00:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
       "surface": "my set",
       "level": 0,
       "target": 260,
@@ -574,68 +512,6 @@
           "score": 36.62,
           "status": "FINAL",
           "kickoff": "2026-10-21T19:00:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
-      "surface": "team set (Loadshift)",
-      "level": 0,
-      "target": 700,
-      "stepState": "CLAIMED",
-      "collaborative": true,
-      "squadLineups": 4,
-      "squadScore": 1186.6748,
-      "lineupId": "Tasks::TaskLineup:435451b0-82fd-4677-9c07-46b24226090a",
-      "state": "SUCCESSFUL",
-      "score": 354.51,
-      "finished": true,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Álvaro Valles",
-          "slug": "alvaro-valles-rosa",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 63,
-          "status": "FINAL",
-          "kickoff": "2026-10-21T19:00:00Z"
-        },
-        {
-          "name": "Lewis Hall",
-          "slug": "lewis-hall-2004-09-08",
-          "position": "Defender",
-          "captain": true,
-          "score": 107.21,
-          "status": "FINAL",
-          "kickoff": "2026-10-25T14:00:00Z"
-        },
-        {
-          "name": "Kaishu Sano",
-          "slug": "kaishu-sano",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 48.41,
-          "status": "FINAL",
-          "kickoff": "2026-10-24T13:30:00Z"
-        },
-        {
-          "name": "Álex Baena",
-          "slug": "alejandro-baena-rodriguez",
-          "position": "Forward",
-          "captain": false,
-          "score": 74.57,
-          "status": "FINAL",
-          "kickoff": "2026-10-20T19:00:00Z"
-        },
-        {
-          "name": "Marcos Llorente",
-          "slug": "marcos-llorente-moreno",
-          "position": "Defender",
-          "captain": false,
-          "score": 61.32,
-          "status": "FINAL",
-          "kickoff": "2026-10-20T19:00:00Z"
         }
       ],
       "scored": 5
@@ -1422,28 +1298,28 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 4,
+        "lineupsIn": 0,
         "needed": 3,
-        "scoreSoFar": 968.978
+        "scoreSoFar": 0
       },
-      "level": 2,
+      "level": 0,
       "lives": null,
       "totalLevels": 5,
-      "levelsDone": 2,
+      "levelsDone": 0,
       "ladder": [
         {
           "level": 0,
-          "state": "CLAIMED",
+          "state": "PRE_MATCHDAY_LOCKED",
           "target": 700
         },
         {
           "level": 1,
-          "state": "CLAIMED",
+          "state": "LOCKED",
           "target": 980
         },
         {
           "level": 2,
-          "state": "PRE_MATCHDAY_LOCKED",
+          "state": "LOCKED",
           "target": 1060
         },
         {
@@ -1466,7 +1342,7 @@
         }
       ],
       "state": "PRE_MATCHDAY_LOCKED",
-      "target": 1060,
+      "target": 700,
       "current": [],
       "plan": null,
       "candidates": [],
