@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T18:41:35.105Z",
+  "generatedAt": "2026-10-19T18:59:10.381Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-21T19:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792435278968,
-    "reason": "last run 0m ago, next due in 180m (lock in 2898m)"
+    "lastRunAt": 1792436333373,
+    "reason": "last run 0m ago, next due in 180m (lock in 2881m)"
   },
   "packs": {
     "lastThreeStar": "Pierre-Emerick Aubameyang",
@@ -1075,7 +1075,7 @@
             "opponentCode": "BJK",
             "code": "CRY",
             "rank": 14,
-            "opponentRank": 4,
+            "opponentRank": 5,
             "home": false,
             "competition": "UEFA Europa League",
             "intl": false,
@@ -1273,7 +1273,7 @@
           "opponentCode": "BJK",
           "code": "CRY",
           "rank": 14,
-          "opponentRank": 4,
+          "opponentRank": 5,
           "home": false,
           "competition": "UEFA Europa League",
           "intl": false,
@@ -2159,7 +2159,7 @@
       "rank": 14,
       "opponent": "Beşiktaş Jimnastik Kulübü",
       "opponentCode": "BJK",
-      "opponentRank": 4,
+      "opponentRank": 5,
       "intl": false,
       "ownRank": null,
       "oppRank": null,
