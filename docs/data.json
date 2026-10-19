@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T13:01:06.822Z",
+  "generatedAt": "2026-10-19T13:31:16.544Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-21T19:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792414822225,
-    "reason": "last run 1m ago, next due in 179m (lock in 3239m)"
+    "lastRunAt": 1792416657872,
+    "reason": "last run 0m ago, next due in 180m (lock in 3209m)"
   },
   "packs": {
     "lastThreeStar": "Pierre-Emerick Aubameyang",
