@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T17:54:23.637Z",
+  "generatedAt": "2026-10-19T18:00:20.314Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-21T19:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792432446606,
-    "reason": "last run 0m ago, next due in 180m (lock in 2946m)"
+    "lastRunAt": 1792432801834,
+    "reason": "last run 0m ago, next due in 180m (lock in 2940m)"
   },
   "packs": {
     "lastThreeStar": "Pierre-Emerick Aubameyang",
@@ -1424,7 +1424,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 0
+        "scoreSoFar": 505.75
       },
       "level": 2,
       "lives": null,
@@ -1714,7 +1714,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 40,
           "picture": "https://assets.sorare.com/cardsamplepicture/17a19c7b-e8e3-4087-919d-9b40fd2a9ddb/picture/tinified-b3b0f6905827397acbc9360d7673fdfb.png",
@@ -1792,7 +1792,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 40,
           "picture": "https://assets.sorare.com/cardsamplepicture/dbab2577-06a6-4f4e-9733-d3eb30a8e121/picture/tinified-0e047dea9596460720d750515477f898.png",
@@ -1909,7 +1909,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 32,
           "picture": "https://assets.sorare.com/cardsamplepicture/b969eb58-5c1b-424c-871a-5adf22b7fa6a/picture/tinified-679be6b9eddd9b26608756efc33d207e.png",
