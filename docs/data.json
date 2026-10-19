@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-19T07:06:40.618Z",
+  "generatedAt": "2026-10-19T07:13:14.018Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 20392,
-    "gems": 226
+    "essence": 18892,
+    "gems": 256
   },
   "schedule": {
     "nextLock": "2026-10-21T19:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792393571565,
-    "reason": "last run 0m ago, next due in 180m (lock in 3593m)"
+    "lastRunAt": 1792393967619,
+    "reason": "last run 0m ago, next due in 180m (lock in 3587m)"
   },
   "packs": {
-    "lastThreeStar": "Dávid Hancko",
+    "lastThreeStar": "Pierre-Emerick Aubameyang",
     "cycleDone": true
   },
   "health": {
@@ -642,7 +642,7 @@
     }
   ],
   "gems": {
-    "balance": 226,
+    "balance": 256,
     "level": 2,
     "ladder": [
       {
@@ -682,9 +682,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 830,
+        "progress": 835,
         "target": 860,
-        "remaining": 30,
+        "remaining": 25,
         "competition": null,
         "group": null,
         "teams": []
@@ -701,10 +701,10 @@
       },
       {
         "title": "Collect Big 3 LaLiga",
-        "gems": 30,
-        "progress": 49,
-        "target": 50,
-        "remaining": 1,
+        "gems": 75,
+        "progress": 50,
+        "target": 70,
+        "remaining": 20,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": [
@@ -726,9 +726,9 @@
       {
         "title": "Collect Spanish players in LaLiga",
         "gems": 30,
-        "progress": 233,
+        "progress": 236,
         "target": 279,
-        "remaining": 46,
+        "remaining": 43,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": []
@@ -740,7 +740,7 @@
     },
     "ladderGemsAhead": 40,
     "ladderCashAhead": 1100,
-    "collectionGemsOpen": 85
+    "collectionGemsOpen": 130
   },
   "odds": {
     "configured": true,
@@ -1422,7 +1422,7 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 0,
+        "lineupsIn": 1,
         "needed": 3,
         "scoreSoFar": 0
       },
