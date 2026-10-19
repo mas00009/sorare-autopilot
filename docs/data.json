@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T18:00:20.314Z",
+  "generatedAt": "2026-10-19T18:06:15.675Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-21T19:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792432801834,
-    "reason": "last run 0m ago, next due in 180m (lock in 2940m)"
+    "lastRunAt": 1792433158273,
+    "reason": "last run 0m ago, next due in 180m (lock in 2934m)"
   },
   "packs": {
     "lastThreeStar": "Pierre-Emerick Aubameyang",
@@ -1424,7 +1424,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 505.75
+        "scoreSoFar": 613.9
       },
       "level": 2,
       "lives": null,
@@ -1480,7 +1480,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 69,
           "picture": "https://assets.sorare.com/cardsamplepicture/b42e0564-de85-4382-9c36-9d764f4f797f/picture/tinified-4632c76a688e81b74e3542e811a0df1d.png",
@@ -1519,7 +1519,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 31,
           "picture": "https://assets.sorare.com/cardsamplepicture/0788ed95-9a8a-4c6a-95fc-237a247ca862/picture/tinified-6c7ada9e612fe9707b43dc9407117ef6.png",
@@ -1558,7 +1558,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 57,
           "picture": "https://assets.sorare.com/cardsamplepicture/08ecdd49-e541-4d56-a205-ae8f77748788/picture/tinified-2094877f5b31cbf076bc3397006aa095.png",
@@ -1597,7 +1597,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 54,
           "picture": "https://assets.sorare.com/cardsamplepicture/ece9de38-8ee0-44d0-ac65-bd5007c5a698/picture/tinified-77566dfb8585d97bbbef0d8910760327.png",
@@ -1636,7 +1636,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 46,
           "picture": "https://assets.sorare.com/cardsamplepicture/71408f9d-eff8-49e0-9d23-e645a90c97a1/picture/tinified-0d7ca82d14add2c50d84a246d0c1324b.png",
@@ -1675,7 +1675,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 50,
           "picture": "https://assets.sorare.com/cardsamplepicture/23320839-4e0d-40ff-bc36-00798b2042b2/picture/tinified-c6aeb24d6be45f41e14e939b83ceee25.png",
@@ -1753,7 +1753,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 31,
           "picture": "https://assets.sorare.com/cardsamplepicture/cb19891c-c16a-4760-aabc-647c09ff9ce9/picture/tinified-71097aab2f7d1660cb485d262825787e.png",
@@ -1831,7 +1831,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 40,
           "picture": "https://assets.sorare.com/cardsamplepicture/4fb668d5-2fd9-4186-83a1-dbd49ae09f27/picture/tinified-e657b8b866677fa0d2596a7d1073699d.png",
@@ -1870,7 +1870,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 35,
           "picture": "https://assets.sorare.com/cardsamplepicture/d4343880-f663-4c21-8bbb-2b767ba8c608/picture/tinified-2683e71f9ec76514377ac6cebc478c26.png",
