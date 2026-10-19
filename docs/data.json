@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T23:34:05.222Z",
+  "generatedAt": "2026-10-19T00:00:49.407Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-19T19:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792357928595,
-    "reason": "last run 142m ago, next due in 38m (lock in 1166m)"
+    "reason": "last run 169m ago, next due in 11m (lock in 1139m)"
   },
   "packs": {
     "lastThreeStar": "Dávid Hancko",
@@ -745,8 +745,8 @@
   "odds": {
     "configured": true,
     "month": "2026-10",
-    "used": 99,
-    "remaining": 401
+    "used": 106,
+    "remaining": 394
   },
   "control": {
     "paused": false,
@@ -1004,10 +1004,10 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 338.55,
+        "projected": 338.57,
         "lock": "2026-10-20T19:00:00Z",
         "shortfall": 21.4,
-        "tradedPointsForTime": 3.3,
+        "tradedPointsForTime": 3.7,
         "captain": "maximilian-eggestein",
         "captainPoints": 31.02,
         "withinReach": true,
@@ -1127,7 +1127,7 @@
             "oddsBooks": 13,
             "marketFactor": 1.116,
             "lockedAt": null,
-            "expected": 62.08,
+            "expected": 62.09,
             "blocked": null
           },
           {
@@ -1166,7 +1166,7 @@
             "oddsBooks": 21,
             "marketFactor": 1.018,
             "lockedAt": null,
-            "expected": 59.89,
+            "expected": 59.9,
             "blocked": null
           },
           {
@@ -1200,7 +1200,7 @@
             "ownRank": null,
             "oppFactor": null,
             "mismatch": false,
-            "pWin": 0.761,
+            "pWin": 0.762,
             "pLose": 0.086,
             "oddsBooks": 21,
             "marketFactor": 1.066,
@@ -1325,7 +1325,7 @@
           "oddsBooks": 13,
           "marketFactor": 1.116,
           "lockedAt": null,
-          "expected": 62.08,
+          "expected": 62.09,
           "blocked": null
         },
         {
@@ -1364,7 +1364,7 @@
           "oddsBooks": 21,
           "marketFactor": 1.018,
           "lockedAt": null,
-          "expected": 59.89,
+          "expected": 59.9,
           "blocked": null
         },
         {
@@ -1398,7 +1398,7 @@
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.761,
+          "pWin": 0.762,
           "pLose": 0.086,
           "oddsBooks": 21,
           "marketFactor": 1.066,
@@ -1407,7 +1407,7 @@
           "blocked": null
         }
       ],
-      "projected": 314.2
+      "projected": 314.9
     },
     {
       "surface": "team set (Loadshift)",
@@ -1511,7 +1511,7 @@
       "intl": false,
       "ownRank": null,
       "oppRank": null,
-      "pWin": 0.761,
+      "pWin": 0.762,
       "pLose": 0.086,
       "oppFactor": null,
       "home": true,
