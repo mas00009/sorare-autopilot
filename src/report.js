@@ -286,6 +286,29 @@ export function nbaDay(date) {
   });
 }
 
+/**
+ * Logins about to run out, for every signed-in account. The warning used to
+ * live only in the log, and the main login came within hours of lapsing
+ * unseen on 21 Oct 2026.
+ */
+export function loginWarnings(now = Date.now(), days = 5) {
+  const out = [];
+  try {
+    for (const f of readdirSync(path.join(ROOT, 'state')).filter((f) => /^tokens(-[\w-]+)?\.json$/.test(f))) {
+      try {
+        const t = JSON.parse(readFileSync(path.join(ROOT, 'state', f), 'utf8'));
+        if (!t.jwtExpiresAt) continue;
+        const left = (t.jwtExpiresAt - now) / 86_400_000;
+        if (left > days) continue;
+        const acct = f === 'tokens.json' ? '' : ` SORARE_ACCOUNT=${f.slice(7, -5)}`;
+        const when = new Date(t.jwtExpiresAt).toLocaleString('en-AU', { weekday: 'short', day: 'numeric', month: 'short', hour: 'numeric', minute: '2-digit', timeZone: 'Australia/Sydney' });
+        out.push({ account: t.nickname ?? f, expired: left <= 0, when, command: `cd ~/sorare-autopilot &&${acct} npm run signin` });
+      } catch {}
+    }
+  } catch {}
+  return out;
+}
+
 /** Human-readable digest for a day. */
 export function digest(date, entries) {
   const L = [];
@@ -314,6 +337,9 @@ export function digest(date, entries) {
     for (const [cur, chg] of totals) L.push(`  ${cur}  ${chg > 0 ? '+' : ''}${chg}`);
   }
 
+  for (const w of loginWarnings()) {
+    L.push('', `LOGIN ${w.expired ? 'EXPIRED' : 'EXPIRING'}: ${w.account} ${w.expired ? 'stopped' : 'runs out'} ${w.when}. Sign in again: ${w.command}`);
+  }
   const nba = nbaDay(date);
   if (nba.length) {
     L.push('', 'NBA WHEEL');
@@ -499,6 +525,9 @@ export function digestHtml(date, entries, snapshot = null) {
   <tr><td style="background:#11141f;padding:20px 26px">
     <img src="${SITE}img/wordmark.png" alt="Sorare Autopilot" width="190" style="display:block;width:190px;height:auto;border:0">
     <div style="font:500 13px/1.4 ${F};color:#8b95ad;padding-top:8px">${esc(pretty)}</div></td></tr>
+  ${loginWarnings().map((w) => `<tr><td style="padding:18px 26px 0"><div style="padding:12px 14px;border-radius:10px;background:#fdecef;border-left:4px solid ${C.stop}">
+    ${P(`<b style="color:${C.stop}">${esc(w.account)}: login ${w.expired ? 'has run out' : 'runs out'} ${esc(w.when)}.</b> ${w.expired ? 'The bot has stopped on this account.' : 'The bot stops on this account then.'} Sign in again in a terminal:`)}
+    <div style="font:600 12px/1.5 Menlo,monospace;color:${C.ink};padding-top:6px">${esc(w.command)}</div></div></td></tr>`).join('')}
   ${boards}
   ${nbaBlock(nbaDay(date))}
   <tr><td style="padding:22px 26px 0">
