@@ -1214,7 +1214,8 @@ export async function pass({ dryRun = false, options = {} } = {}) {
     const cycle = await dailyCycleId().catch(() => null);
     if (cycle) await writeState({ claimCycle: cycle });
   }
-  await writeState({ lastRunAt: Date.now() });
+  const seenCycle = await dailyCycleId().catch(() => null);
+  await writeState({ lastRunAt: Date.now(), ...(seenCycle ? { seenCycle } : {}) });
   report.finishedAt = new Date().toISOString();
   return report;
 }

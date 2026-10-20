@@ -460,7 +460,12 @@ const main = async () => {
         try {
           const { dailyCycleId } = await import('./autopilot.js');
           const cycle = await dailyCycleId();
-          rolled = !!cycle && !!st.claimCycle && cycle !== st.claimCycle;
+          // Compared with the cycle the last FULL pass saw. Comparing with
+          // claimCycle (written only when a reward is claimed) made every
+          // tick on a no-claim day look like a rollover - 32 full passes out
+          // of 52 ticks on 21 Oct instead of one every three hours.
+          const seen = st.seenCycle ?? st.claimCycle;
+          rolled = !!cycle && !!seen && cycle !== seen;
           if (rolled) console.log(`go: daily cycle rolled over (${cycle})`);
         } catch { /* fall through to the normal skip */ }
         if (!rolled) {

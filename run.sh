@@ -19,8 +19,9 @@ NODE="$(command -v node || echo /usr/local/bin/node)"
 {
   echo ""
   echo "======== $(date '+%Y-%m-%d %H:%M:%S %Z') ========"
-  "$NODE" src/cli.js run 2>&1
+  out=$("$NODE" src/cli.js run 2>&1)
   code=$?
+  printf '%s\n' "$out"
   echo "---- exit $code ----"
 
   # Second account: the NBA wheel and the DNP guard on lineups the owner set.
@@ -46,7 +47,12 @@ NODE="$(command -v node || echo /usr/local/bin/node)"
 
   # Refresh the published dashboard. Only pushes when something actually changed,
   # so a quiet pass leaves no commit noise.
-  "$NODE" src/cli.js dashboard >/dev/null 2>&1
+  # The dashboard build reads both boards and their benches from Sorare - dozens
+  # of calls. Only after a real pass, or every 30 minutes for live scores.
+  dash_age=$(( $(date +%s) - $(stat -f %m "$DIR/docs/data.json" 2>/dev/null || echo 0) ))
+  if ! printf '%s' "$out" | grep -q '^skip:' || [ "$dash_age" -gt 1800 ]; then
+    "$NODE" src/cli.js dashboard >/dev/null 2>&1
+  fi
   # Only timestamps change on most passes. Pushing those every 5 minutes ran
   # ~250 Pages deploys a day, at GitHub's ~10-an-hour limit, and every network
   # blip became a "Run failed" email. Push when something real changed, or

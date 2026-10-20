@@ -15,7 +15,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { gql, writeState } from './client.js';
+import { gql, readState, writeState } from './client.js';
 import { assertCostAllowed } from './guardrails.js';
 import { M_CLAIM_TASK } from './queries.js';
 
@@ -26,7 +26,7 @@ const Q_WHEEL = `
   query NbaWheel($sport: Sport!, $rarity: Rarity!) {
     market {
       activeWheelConfig(rarity: $rarity, sport: $sport) {
-        slug title endDate
+        slug title endDate ticketDistributionEndDate
         cost: wheelCost(wheelType: STANDARD) { currency quantity }
       }
       myWheelTasks(sport: $sport, rarity: $rarity) { id name title aasmState }
@@ -123,6 +123,13 @@ async function journal(row) {
 
 export async function spinNbaWheel({ dryRun = false } = {}) {
   const out = { claimed: false, spun: false, won: [], errors: [], reason: null };
+  // One free ticket a day needs a look about once an hour, not every tick.
+  const st = await readState();
+  if (!dryRun && st.wheelNextCheck && Date.now() < st.wheelNextCheck) {
+    out.reason = `next check ${new Date(st.wheelNextCheck).toLocaleTimeString('en-AU', { timeZone: 'Australia/Sydney', hour: 'numeric', minute: '2-digit' })}`;
+    return out;
+  }
+  const later = (hours) => (dryRun ? null : writeState({ wheelNextCheck: Date.now() + hours * 3600e3 }).catch(() => {}));
   const read = async () => gql(Q_WHEEL, { sport: SPORT, rarity: RARITY });
   let d = await read();
   const wheel = d.market?.activeWheelConfig;
@@ -130,7 +137,7 @@ export async function spinNbaWheel({ dryRun = false } = {}) {
   // Remembered in this account's own state so the mail can name an account
   // even on a day it did not spin.
   if (out.account && !dryRun) await writeState({ nickname: out.account }).catch(() => {});
-  if (!wheel) { out.reason = 'no NBA wheel running'; return out; }
+  if (!wheel) { out.reason = 'no NBA wheel running'; await later(24); return out; }
   out.wheel = wheel.title;
 
   // 1. The free ticket.
@@ -154,7 +161,10 @@ export async function spinNbaWheel({ dryRun = false } = {}) {
   }
   assertCostAllowed({ currency: cost.currency, amount: cost.quantity });
   if (held < cost.quantity) {
-    out.reason = daily?.aasmState === 'CLAIMED' ? 'already spun today - next free ticket in 24 hours' : 'no ticket yet';
+    const ended = wheel.ticketDistributionEndDate && Date.parse(wheel.ticketDistributionEndDate) < Date.now();
+    if (ended) { out.reason = 'free tickets have ended for this wheel'; await later(24); }
+    else if (daily?.aasmState === 'CLAIMED') { out.reason = 'already spun today - next free ticket in 24 hours'; await later(3); }
+    else { out.reason = 'no ticket yet'; await later(1); }
   } else if (dryRun) {
     out.reason = 'dry run - would spin';
   } else {
