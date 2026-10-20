@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T07:10:00.699Z",
+  "generatedAt": "2026-10-20T07:15:52.705Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-20T16:45:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1792480180461,
-    "reason": "last run 0m ago, next due in 60m (lock in 575m)"
+    "lastRunAt": 1792480534413,
+    "reason": "last run 0m ago, next due in 60m (lock in 569m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -274,7 +274,7 @@
       "target": 700,
       "stepState": "LINEUP_SET",
       "collaborative": true,
-      "squadLineups": 1,
+      "squadLineups": 2,
       "squadScore": 0,
       "lineupId": "Tasks::TaskLineup:4aa0ece8-3bcc-4f6e-8741-4b79aea6be64",
       "state": "READY",
@@ -620,9 +620,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 841,
+        "progress": 844,
         "target": 860,
-        "remaining": 19,
+        "remaining": 16,
         "competition": null,
         "group": null,
         "teams": []
@@ -654,9 +654,9 @@
       {
         "title": "Collect Goalkeepers",
         "gems": 10,
-        "progress": 99,
+        "progress": 100,
         "target": 112,
-        "remaining": 13,
+        "remaining": 12,
         "competition": null,
         "group": null,
         "teams": []
@@ -1512,7 +1512,7 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 1,
+        "lineupsIn": 2,
         "needed": 3,
         "scoreSoFar": 0
       },
