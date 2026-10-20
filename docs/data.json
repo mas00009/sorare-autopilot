@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T14:26:16.340Z",
+  "generatedAt": "2026-10-20T14:32:04.175Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-20T16:45:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1792506357832,
-    "reason": "last run 0m ago, next due in 15m (lock in 139m)"
+    "lastRunAt": 1792506706538,
+    "reason": "last run 0m ago, next due in 15m (lock in 133m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -855,7 +855,7 @@
         "expectedFinal": 385.59
       },
       "poolStrength": {
-        "strong": 9,
+        "strong": 10,
         "needed": 5
       },
       "collaborative": false,
@@ -1345,7 +1345,7 @@
           "blocked": null
         }
       ],
-      "projected": 315.4
+      "projected": 314.9
     },
     {
       "surface": "team set (Loadshift)",
@@ -1787,6 +1787,45 @@
           "blocked": null
         },
         {
+          "id": "ComposeTeamBenchCard:3ee67de1-0d21-4e30-92ae-57f776f6a91f",
+          "player": "Milos Kerkez",
+          "slug": "milos-kerkez",
+          "position": "DF",
+          "average": 45,
+          "bonus": 1.03,
+          "starterPct": null,
+          "startRate": 0.7,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 57,
+          "picture": "https://assets.sorare.com/cardsamplepicture/bb2370ad-f6f3-4859-af2f-bbdd9810330b/picture/tinified-227e327349fc51d540c9efa0251af3b2.png",
+          "rarity": "common",
+          "gameId": "Game:c8308cf6-75b7-4427-83e7-2f250e1ec843",
+          "kickoff": "2026-10-20T19:00:00Z",
+          "team": "Liverpool FC",
+          "teamSlug": "liverpool-liverpool",
+          "opponent": "Villarreal CF",
+          "opponentCode": "VIL",
+          "code": "LIV",
+          "rank": 5,
+          "opponentRank": 12,
+          "home": true,
+          "competition": "UEFA Champions League",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.626,
+          "pLose": 0.167,
+          "oddsBooks": 22,
+          "marketFactor": 1.055,
+          "lockedAt": null,
+          "expected": 40.73,
+          "blocked": null
+        },
+        {
           "id": "ComposeTeamBenchCard:9f2c6db6-67b2-4348-8bec-d556ad2d37b4",
           "player": "Santi Comesaña",
           "slug": "santiago-comesana-veiga",
@@ -1823,45 +1862,6 @@
           "marketFactor": 0.949,
           "lockedAt": null,
           "expected": 40.39,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:3ee67de1-0d21-4e30-92ae-57f776f6a91f",
-          "player": "Milos Kerkez",
-          "slug": "milos-kerkez",
-          "position": "DF",
-          "average": 43,
-          "bonus": 1.03,
-          "starterPct": null,
-          "startRate": 0.7,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 53,
-          "picture": "https://assets.sorare.com/cardsamplepicture/bb2370ad-f6f3-4859-af2f-bbdd9810330b/picture/tinified-227e327349fc51d540c9efa0251af3b2.png",
-          "rarity": "common",
-          "gameId": "Game:c8308cf6-75b7-4427-83e7-2f250e1ec843",
-          "kickoff": "2026-10-20T19:00:00Z",
-          "team": "Liverpool FC",
-          "teamSlug": "liverpool-liverpool",
-          "opponent": "Villarreal CF",
-          "opponentCode": "VIL",
-          "code": "LIV",
-          "rank": 5,
-          "opponentRank": 12,
-          "home": true,
-          "competition": "UEFA Champions League",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.626,
-          "pLose": 0.167,
-          "oddsBooks": 22,
-          "marketFactor": 1.055,
-          "lockedAt": null,
-          "expected": 38.34,
           "blocked": null
         },
         {
@@ -2006,6 +2006,31 @@
     {
       "kickoff": "2026-10-20T19:00:00Z",
       "competition": "UEFA Champions League",
+      "team": "Liverpool FC",
+      "code": "LIV",
+      "rank": 5,
+      "opponent": "Villarreal CF",
+      "opponentCode": "VIL",
+      "opponentRank": 12,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.626,
+      "pLose": 0.167,
+      "oppFactor": null,
+      "home": true,
+      "players": [
+        "Milos Kerkez"
+      ],
+      "points": 40.7,
+      "bestStarter": null,
+      "surfaces": [
+        "team set (Loadshift)"
+      ]
+    },
+    {
+      "kickoff": "2026-10-20T19:00:00Z",
+      "competition": "UEFA Champions League",
       "team": "Villarreal CF",
       "code": "VIL",
       "rank": 12,
@@ -2023,31 +2048,6 @@
         "Santi Comesaña"
       ],
       "points": 40.4,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
-    {
-      "kickoff": "2026-10-20T19:00:00Z",
-      "competition": "UEFA Champions League",
-      "team": "Liverpool FC",
-      "code": "LIV",
-      "rank": 5,
-      "opponent": "Villarreal CF",
-      "opponentCode": "VIL",
-      "opponentRank": 12,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.626,
-      "pLose": 0.167,
-      "oppFactor": null,
-      "home": true,
-      "players": [
-        "Milos Kerkez"
-      ],
-      "points": 38.3,
       "bestStarter": null,
       "surfaces": [
         "team set (Loadshift)"
