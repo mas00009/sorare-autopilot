@@ -210,6 +210,27 @@ export async function deliver(subject, body, { html = null, env = process.env } 
   };
 }
 
+/**
+ * Retry anything the outbox is holding, with the same direct Gmail send.
+ * A message only lands there when a direct send failed, so this replaces the
+ * Claude routine that drained it every 20 minutes (2,100 empty runs).
+ */
+export async function drainOutbox(env = process.env) {
+  const out = { sent: 0, left: 0 };
+  let files = [];
+  try { files = (await fs.readdir(OUTBOX)).filter((f) => f.endsWith('.txt')); } catch { return out; }
+  if (!files.length || !env.REPORT_TO) return out;
+  const gmail = await import('./gmail.js');
+  for (const f of files) {
+    const raw = await fs.readFile(path.join(OUTBOX, f), 'utf8');
+    const m = raw.match(/^Subject: (.*)\n\n([\s\S]*)$/);
+    if (!m) { out.left += 1; continue; }
+    const res = await gmail.send({ to: env.REPORT_TO, subject: m[1], body: m[2] }).catch(() => ({ sent: false }));
+    if (res.sent) { await fs.unlink(path.join(OUTBOX, f)); out.sent += 1; } else out.left += 1;
+  }
+  return out;
+}
+
 export async function alertBigPull(cards) {
   const sorted = [...cards].sort((a, b) => (b.stars ?? 0) - (a.stars ?? 0));
   const list = sorted.map((c) => `  ${c.name} - ${c.stars}-star (${c.tier})`).join('\n');

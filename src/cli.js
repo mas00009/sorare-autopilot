@@ -242,6 +242,8 @@ async function report(r) {
       } catch (e) { console.log(`  health check failed: ${e.message}`); }
 
       const dig = await rep.maybeSendDigest();
+      const ob = await rep.drainOutbox().catch(() => ({ sent: 0, left: 0 }));
+      if (ob.sent) console.log(`  sent ${ob.sent} queued message(s) from the outbox`);
       if (dig.sent) console.log(`  daily report for ${dig.date} emailed`);
       else if (dig.queued) console.log(`  daily report for ${dig.date} queued for delivery`);
       else if (dig.reason && !/already sent|no activity/.test(dig.reason)) console.log(`  daily report not sent: ${dig.reason}`);
