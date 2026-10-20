@@ -556,8 +556,13 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
     || step?.minimumLineupsToStartStep != null
     || step?.collaborative === true;
 
+  // The owner's final push, 21 Oct 2026: about six days of the season left,
+  // so the personal ladder takes the earliest team within 5% of its target.
+  const RUSH_UNTIL = Date.parse(process.env.AUTOPILOT_RUSH_UNTIL ?? '2026-10-27T23:59:59+11:00');
+  const rush = !collaborative && Date.now() < RUSH_UNTIL ? 0.05 : 0;
   const pickWith = (extra) => pickAcrossWindow(bench, {
     ...options,
+    ...(rush ? { rush } : {}),
     ...extra,
     target: collaborative ? null : (step?.target ?? null),
     reach: SPREAD,

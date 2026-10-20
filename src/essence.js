@@ -93,6 +93,9 @@ export async function openPacksUntilThreeStar({
   dryRun = false,
   essenceFloor = PACK_DEFAULTS.essenceFloor,
   maxPacks = PACK_DEFAULTS.maxPacks,
+  // Final push: spend the essence on packs regardless of the daily cycle or
+  // a 3-star, until it runs out or maxPacks is hit. Gems are still refused.
+  untilEmpty = false,
 } = {}) {
   const out = { opened: [], stopped: null, essenceBefore: null, essenceAfter: null, spent: 0, found: null };
 
@@ -107,7 +110,7 @@ export async function openPacksUntilThreeStar({
     out.essenceBefore = out.essenceAfter = (await readEssence()).amount;
     return out;
   }
-  if (state.lastPackCycle === cycle) {
+  if (state.lastPackCycle === cycle && !untilEmpty) {
     out.stopped = state.lastThreeStarName
       ? `already done this daily cycle - found ${state.lastThreeStarName}. Next buy after the daily resets.`
       : 'already bought this daily cycle. Next buy after the daily resets.';
@@ -179,7 +182,7 @@ export async function openPacksUntilThreeStar({
     });
 
     // Stop 1: got what we came for.
-    if (top && GOOD_TIERS.has(tierOf(top))) {
+    if (top && GOOD_TIERS.has(tierOf(top)) && !untilEmpty) {
       const tier = tierOf(top);
       out.found = { name: nameOf(top), tier, stars: TIER_STARS[tier] };
       out.stopped = `got a ${TIER_STARS[tier]}-star (${tier})`;

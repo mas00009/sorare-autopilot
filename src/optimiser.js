@@ -512,6 +512,15 @@ export function pickAcrossWindow(benchNodes, { target = null, tolerance = 0.03, 
 
   if (!target) return done(strongest);
 
+  // Final push (the season's last days): spare lives are worth nothing once
+  // it ends, so attempts beat certainty. Take the EARLIEST finish within
+  // `rush` of the target - a fail frees the cards and the next day tries
+  // again, a pass opens the next level while there is still time to play it.
+  if (options.rush) {
+    const quick = byDay.find((a) => a.projected >= target * (1 - options.rush));
+    if (quick) return done(quick);
+  }
+
   const clearing = byDay.filter((a) => a.projected >= target);
   if (clearing.length) return done(clearing[0]);
 
