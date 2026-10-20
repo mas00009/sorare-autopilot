@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T20:51:52.728Z",
+  "generatedAt": "2026-10-20T20:57:32.528Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-22T16:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792529499320,
-    "reason": "last run 0m ago, next due in 180m (lock in 2633m)"
+    "lastRunAt": 1792529838735,
+    "reason": "last run 0m ago, next due in 180m (lock in 2627m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -272,13 +272,13 @@
       "surface": "team set (Loadshift)",
       "level": 0,
       "target": 700,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 1098.3682,
+      "squadScore": 1102.2432,
       "lineupId": "Tasks::TaskLineup:4aa0ece8-3bcc-4f6e-8741-4b79aea6be64",
       "state": "READY",
-      "score": 263.08,
+      "score": 260.2,
       "finished": false,
       "cleared": true,
       "players": [
@@ -287,7 +287,7 @@
           "slug": "peter-gulacsi",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 25.58,
+          "score": 25.69,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T16:30:00Z"
         },
@@ -297,7 +297,7 @@
           "position": "Defender",
           "captain": true,
           "score": 61.26,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-24T19:00:00Z"
         },
         {
@@ -315,7 +315,7 @@
           "position": "Forward",
           "captain": false,
           "score": 54.86,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-24T19:00:00Z"
         },
         {
@@ -323,8 +323,8 @@
           "slug": "ruben-santos-gato-alves-dias",
           "position": "Defender",
           "captain": false,
-          "score": 76.68,
-          "status": "REVIEWING",
+          "score": 73.71,
+          "status": "FINAL",
           "kickoff": "2026-10-24T11:30:00Z"
         }
       ],
@@ -1349,14 +1349,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 294 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1098 so far.",
+      "status": "Locked and playing. 291 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1102 so far.",
       "tone": "good",
       "lockAt": "2026-10-20T16:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 25.58,
+            "actual": 25.69,
             "scoreStatus": "REVIEWING",
             "teamSlug": "villarreal-villarreal",
             "name": "Péter Gulácsi",
@@ -1386,7 +1386,7 @@
           },
           {
             "actual": 61.26,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Marcos Llorente",
             "player": "Marcos Llorente",
@@ -1444,7 +1444,7 @@
           },
           {
             "actual": 54.86,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Giuliano Simeone",
             "player": "Giuliano Simeone",
@@ -1472,8 +1472,8 @@
             "kickoff": "2026-10-20T19:00:00Z"
           },
           {
-            "actual": 76.68,
-            "scoreStatus": "REVIEWING",
+            "actual": 73.71,
+            "scoreStatus": "FINAL",
             "teamSlug": "manchester-city-manchester",
             "name": "Rúben Dias",
             "player": "Rúben Dias",
@@ -1502,9 +1502,9 @@
           }
         ],
         "projected": 280.8,
-        "scoredSoFar": 293.71,
+        "scoredSoFar": 290.85,
         "played": 5,
-        "expectedFinal": 293.71
+        "expectedFinal": 290.85
       },
       "poolStrength": {
         "strong": 0,
@@ -1514,7 +1514,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 1098.3682
+        "scoreSoFar": 1102.2432
       },
       "level": 0,
       "lives": null,
@@ -1523,7 +1523,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 700
         },
         {
@@ -1555,7 +1555,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 700,
       "current": [
         {
