@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-20T21:40:37.942Z",
+  "generatedAt": "2026-10-20T21:56:42.987Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 21478,
+    "essence": 11478,
     "gems": 256
   },
   "schedule": {
     "nextLock": "2026-10-22T16:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792530516237,
-    "reason": "last run 32m ago, next due in 148m (lock in 2584m)"
+    "reason": "last run 48m ago, next due in 132m (lock in 2568m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -620,9 +620,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 844,
+        "progress": 853,
         "target": 860,
-        "remaining": 16,
+        "remaining": 7,
         "competition": null,
         "group": null,
         "teams": []
@@ -640,9 +640,9 @@
       {
         "title": "Collect Big 3 LaLiga",
         "gems": 75,
-        "progress": 50,
+        "progress": 51,
         "target": 70,
-        "remaining": 20,
+        "remaining": 19,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": [
@@ -654,9 +654,9 @@
       {
         "title": "Collect Goalkeepers",
         "gems": 10,
-        "progress": 100,
+        "progress": 101,
         "target": 112,
-        "remaining": 12,
+        "remaining": 11,
         "competition": null,
         "group": null,
         "teams": []
@@ -664,9 +664,9 @@
       {
         "title": "Collect Spanish players in LaLiga",
         "gems": 30,
-        "progress": 236,
+        "progress": 242,
         "target": 279,
-        "remaining": 43,
+        "remaining": 37,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": []
