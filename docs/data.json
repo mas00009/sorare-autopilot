@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T19:22:22.419Z",
+  "generatedAt": "2026-10-20T19:27:58.133Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-22T16:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792524129065,
-    "reason": "last run 0m ago, next due in 180m (lock in 2723m)"
+    "lastRunAt": 1792524464701,
+    "reason": "last run 0m ago, next due in 180m (lock in 2717m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 765.0992,
+      "squadScore": 775.0912,
       "lineupId": "Tasks::TaskLineup:4aa0ece8-3bcc-4f6e-8741-4b79aea6be64",
       "state": "READY",
-      "score": 198.56,
+      "score": 210.15,
       "finished": false,
       "cleared": true,
       "players": [
@@ -287,7 +287,7 @@
           "slug": "peter-gulacsi",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 35.26,
+          "score": 41.6,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T16:30:00Z"
         },
@@ -323,7 +323,7 @@
           "slug": "ruben-santos-gato-alves-dias",
           "position": "Defender",
           "captain": false,
-          "score": 32.42,
+          "score": 37.66,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T11:30:00Z"
         }
@@ -1349,14 +1349,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 219 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 765 so far.",
+      "status": "Locked and playing. 231 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 775 so far.",
       "tone": "good",
       "lockAt": "2026-10-20T16:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 35.26,
+            "actual": 41.6,
             "scoreStatus": "REVIEWING",
             "teamSlug": "villarreal-villarreal",
             "name": "Péter Gulácsi",
@@ -1472,7 +1472,7 @@
             "kickoff": "2026-10-20T19:00:00Z"
           },
           {
-            "actual": 32.42,
+            "actual": 37.66,
             "scoreStatus": "REVIEWING",
             "teamSlug": "manchester-city-manchester",
             "name": "Rúben Dias",
@@ -1502,9 +1502,9 @@
           }
         ],
         "projected": 280.8,
-        "scoredSoFar": 219.36,
+        "scoredSoFar": 230.94,
         "played": 5,
-        "expectedFinal": 219.36
+        "expectedFinal": 230.94
       },
       "poolStrength": {
         "strong": 0,
@@ -1514,7 +1514,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 765.0992
+        "scoreSoFar": 775.0912
       },
       "level": 0,
       "lives": null,
