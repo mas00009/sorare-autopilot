@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T20:12:41.589Z",
+  "generatedAt": "2026-10-20T20:18:18.858Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-22T16:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792527148484,
-    "reason": "last run 0m ago, next due in 180m (lock in 2672m)"
+    "lastRunAt": 1792527485814,
+    "reason": "last run 0m ago, next due in 180m (lock in 2667m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 903.9382,
+      "squadScore": 969.0022,
       "lineupId": "Tasks::TaskLineup:4aa0ece8-3bcc-4f6e-8741-4b79aea6be64",
       "state": "READY",
-      "score": 252.23,
+      "score": 259.19,
       "finished": false,
       "cleared": true,
       "players": [
@@ -287,7 +287,7 @@
           "slug": "peter-gulacsi",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 31.2,
+          "score": 35.67,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T16:30:00Z"
         },
@@ -296,7 +296,7 @@
           "slug": "marcos-llorente-moreno",
           "position": "Defender",
           "captain": true,
-          "score": 47.43,
+          "score": 49.76,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -323,7 +323,7 @@
           "slug": "ruben-santos-gato-alves-dias",
           "position": "Defender",
           "captain": false,
-          "score": 76.23,
+          "score": 76.4,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T11:30:00Z"
         }
@@ -1349,14 +1349,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 276 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 904 so far.",
+      "status": "Locked and playing. 284 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 969 so far.",
       "tone": "good",
       "lockAt": "2026-10-20T16:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 31.2,
+            "actual": 35.67,
             "scoreStatus": "REVIEWING",
             "teamSlug": "villarreal-villarreal",
             "name": "Péter Gulácsi",
@@ -1385,7 +1385,7 @@
             "kickoff": "2026-10-20T19:00:00Z"
           },
           {
-            "actual": 47.43,
+            "actual": 49.76,
             "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Marcos Llorente",
@@ -1472,7 +1472,7 @@
             "kickoff": "2026-10-20T19:00:00Z"
           },
           {
-            "actual": 76.23,
+            "actual": 76.4,
             "scoreStatus": "REVIEWING",
             "teamSlug": "manchester-city-manchester",
             "name": "Rúben Dias",
@@ -1502,9 +1502,9 @@
           }
         ],
         "projected": 280.8,
-        "scoredSoFar": 275.95,
+        "scoredSoFar": 284.08,
         "played": 5,
-        "expectedFinal": 275.95
+        "expectedFinal": 284.08
       },
       "poolStrength": {
         "strong": 0,
@@ -1514,7 +1514,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 903.9382
+        "scoreSoFar": 969.0022
       },
       "level": 0,
       "lives": null,
