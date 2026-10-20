@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T18:30:34.922Z",
+  "generatedAt": "2026-10-20T18:36:28.909Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 256
   },
   "schedule": {
-    "nextLock": "2026-10-22T16:45:00Z",
-    "cadenceMin": 180,
-    "lastRunAt": 1792521011389,
-    "reason": "last run 0m ago, next due in 180m (lock in 2774m)"
+    "nextLock": "2026-10-20T19:00:00Z",
+    "cadenceMin": 5,
+    "lastRunAt": 1792521364177,
+    "reason": "last run 0m ago, next due in 5m (lock in 24m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -272,10 +272,10 @@
       "surface": "team set (Loadshift)",
       "level": 0,
       "target": 700,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 735.4872,
+      "squadScore": 735.6952,
       "lineupId": "Tasks::TaskLineup:4aa0ece8-3bcc-4f6e-8741-4b79aea6be64",
       "state": "READY",
       "score": 211.3,
@@ -1514,7 +1514,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 735.5912
+        "scoreSoFar": 735.6952
       },
       "level": 0,
       "lives": null,
@@ -1523,7 +1523,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 700
         },
         {
@@ -1555,7 +1555,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 700,
       "current": [
         {
