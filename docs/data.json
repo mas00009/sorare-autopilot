@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T17:55:38.876Z",
+  "generatedAt": "2026-10-20T18:01:27.510Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-22T16:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792518914425,
-    "reason": "last run 0m ago, next due in 180m (lock in 2809m)"
+    "lastRunAt": 1792519262494,
+    "reason": "last run 0m ago, next due in 180m (lock in 2804m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -275,20 +275,20 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 227.0756,
+      "squadScore": 727.598,
       "lineupId": "Tasks::TaskLineup:4aa0ece8-3bcc-4f6e-8741-4b79aea6be64",
       "state": "READY",
-      "score": 0,
+      "score": 166.6,
       "finished": false,
-      "cleared": false,
+      "cleared": true,
       "players": [
         {
           "name": "Péter Gulácsi",
           "slug": "peter-gulacsi",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.4,
+          "status": "REVIEWING",
           "kickoff": "2026-10-20T19:00:00Z"
         },
         {
@@ -296,8 +296,8 @@
           "slug": "marcos-llorente-moreno",
           "position": "Defender",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 54.25,
+          "status": "REVIEWING",
           "kickoff": "2026-10-20T19:00:00Z"
         },
         {
@@ -314,8 +314,8 @@
           "slug": "giuliano-simeone",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 40.25,
+          "status": "REVIEWING",
           "kickoff": "2026-10-20T19:00:00Z"
         },
         {
@@ -323,12 +323,12 @@
           "slug": "ruben-santos-gato-alves-dias",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 35.7,
+          "status": "REVIEWING",
           "kickoff": "2026-10-20T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 4
     },
     {
       "surface": "my set",
@@ -1117,7 +1117,7 @@
             "starterPct": null,
             "startRate": 0.8,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 68,
             "picture": "https://assets.sorare.com/cardsamplepicture/5b548359-bc8f-4a9e-bb94-7c4f2634d2e9/picture/tinified-bd84ddd57ee2327577ec617d517d10a9.png",
@@ -1315,7 +1315,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 68,
           "picture": "https://assets.sorare.com/cardsamplepicture/5b548359-bc8f-4a9e-bb94-7c4f2634d2e9/picture/tinified-bd84ddd57ee2327577ec617d517d10a9.png",
@@ -1349,15 +1349,15 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 0 scored so far, 0 of 5 played. The squad's top three lineups together need 700; the squad has 227 so far.",
+      "status": "Locked and playing. 194 scored so far, 4 of 5 played. The squad's top three lineups together need 700; the squad has 728 so far.",
       "tone": "good",
       "lockAt": "2026-10-20T16:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.4,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "villarreal-villarreal",
             "name": "Péter Gulácsi",
             "player": "Péter Gulácsi",
@@ -1385,8 +1385,8 @@
             "kickoff": "2026-10-20T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 54.25,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Marcos Llorente",
             "player": "Marcos Llorente",
@@ -1443,8 +1443,8 @@
             "kickoff": "2026-10-20T16:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 40.25,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Giuliano Simeone",
             "player": "Giuliano Simeone",
@@ -1472,8 +1472,8 @@
             "kickoff": "2026-10-20T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 35.7,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "manchester-city-manchester",
             "name": "Rúben Dias",
             "player": "Rúben Dias",
@@ -1502,9 +1502,9 @@
           }
         ],
         "projected": 280.8,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 282.24
+        "scoredSoFar": 193.73,
+        "played": 4,
+        "expectedFinal": 245.77
       },
       "poolStrength": {
         "strong": 2,
@@ -1514,7 +1514,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 227.0756
+        "scoreSoFar": 727.598
       },
       "level": 0,
       "lives": null,
@@ -1601,7 +1601,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 63,
           "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
@@ -1640,7 +1640,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 63,
           "picture": "https://assets.sorare.com/cardsamplepicture/9f3c05cc-969c-4eab-a31d-b928040c2e56/picture/tinified-e162098529622651d71ae2e902fb4f5d.png",
@@ -1679,7 +1679,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 52,
           "picture": "https://assets.sorare.com/cardsamplepicture/bc1882f2-d8bb-4598-a663-afc18152cee8/picture/tinified-da46af3e48a93cfa73faae121cf65bf5.png",
@@ -1718,7 +1718,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 57,
           "picture": "https://assets.sorare.com/cardsamplepicture/bb2370ad-f6f3-4859-af2f-bbdd9810330b/picture/tinified-227e327349fc51d540c9efa0251af3b2.png",
@@ -1757,7 +1757,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 49,
           "picture": "https://assets.sorare.com/cardsamplepicture/bcf2d322-cec2-4d72-82ef-3e25ff46a800/picture/tinified-4f50182395280ff4746e459d9d4d078f.png",
@@ -1796,7 +1796,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 41,
           "picture": "https://assets.sorare.com/cardsamplepicture/c0475601-be6e-48cd-8695-11c9abdbfaae/picture/tinified-ad5e0c5ba0ae359c3767973c1014476c.png",
@@ -1835,7 +1835,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 37,
           "picture": "https://assets.sorare.com/cardsamplepicture/41c3b3a4-070f-4ac9-ac01-54857a1543f7/picture/tinified-1a9a4befd097c3f20fefb2ac814cdbf9.png",
