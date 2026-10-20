@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T18:54:09.867Z",
+  "generatedAt": "2026-10-20T19:00:00.495Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-20T19:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792522426576,
-    "reason": "last run 0m ago, next due in 180m (lock in 6m)"
+    "lastRunAt": 1792522778527,
+    "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -174,7 +174,7 @@
           "captain": false,
           "score": 31.5,
           "status": "FINAL",
-          "kickoff": "2026-10-20T19:00:00Z"
+          "kickoff": "2026-10-24T11:30:00Z"
         },
         {
           "name": "Federico Valverde",
@@ -289,7 +289,7 @@
           "captain": false,
           "score": 36.4,
           "status": "REVIEWING",
-          "kickoff": "2026-10-20T19:00:00Z"
+          "kickoff": "2026-10-24T16:30:00Z"
         },
         {
           "name": "Marcos Llorente",
@@ -298,7 +298,7 @@
           "captain": true,
           "score": 54.25,
           "status": "REVIEWING",
-          "kickoff": "2026-10-20T19:00:00Z"
+          "kickoff": "2026-10-24T19:00:00Z"
         },
         {
           "name": "Jobe Bellingham",
@@ -316,7 +316,7 @@
           "captain": false,
           "score": 40.25,
           "status": "REVIEWING",
-          "kickoff": "2026-10-20T19:00:00Z"
+          "kickoff": "2026-10-24T19:00:00Z"
         },
         {
           "name": "Rúben Dias",
@@ -325,7 +325,7 @@
           "captain": false,
           "score": 35.7,
           "status": "REVIEWING",
-          "kickoff": "2026-10-20T19:00:00Z"
+          "kickoff": "2026-10-24T11:30:00Z"
         }
       ],
       "scored": 5
@@ -369,7 +369,7 @@
           "captain": false,
           "score": 45.24,
           "status": "FINAL",
-          "kickoff": "2026-10-20T19:00:00Z"
+          "kickoff": "2026-10-24T16:30:00Z"
         },
         {
           "name": "Álex Baena",
@@ -378,7 +378,7 @@
           "captain": false,
           "score": 74.78,
           "status": "FINAL",
-          "kickoff": "2026-10-20T19:00:00Z"
+          "kickoff": "2026-10-24T19:00:00Z"
         },
         {
           "name": "Cristian Romero",
@@ -387,7 +387,7 @@
           "captain": true,
           "score": 105.61,
           "status": "FINAL",
-          "kickoff": "2026-10-20T19:00:00Z"
+          "kickoff": "2026-10-24T19:00:00Z"
         }
       ],
       "scored": 5
@@ -413,7 +413,7 @@
           "captain": false,
           "score": 0,
           "status": "FINAL",
-          "kickoff": "2026-10-20T19:00:00Z"
+          "kickoff": "2026-10-24T16:30:00Z"
         },
         {
           "name": "Lisandro Martínez",
@@ -440,7 +440,7 @@
           "captain": false,
           "score": 0,
           "status": "FINAL",
-          "kickoff": "2026-10-20T19:00:00Z"
+          "kickoff": "2026-10-24T16:30:00Z"
         },
         {
           "name": "Tanguy Nianzou",
@@ -546,7 +546,7 @@
           "captain": true,
           "score": 46.94,
           "status": "FINAL",
-          "kickoff": "2026-10-20T19:00:00Z"
+          "kickoff": "2026-10-24T11:30:00Z"
         },
         {
           "name": "Jobe Bellingham",
@@ -564,7 +564,7 @@
           "captain": false,
           "score": 74.78,
           "status": "FINAL",
-          "kickoff": "2026-10-20T19:00:00Z"
+          "kickoff": "2026-10-24T19:00:00Z"
         },
         {
           "name": "Antonio Nusa",
@@ -1869,111 +1869,6 @@
     }
   ],
   "fixtures": [
-    {
-      "kickoff": "2026-10-20T19:00:00Z",
-      "competition": "UEFA Champions League",
-      "team": "Atlético de Madrid",
-      "code": "ATM",
-      "rank": 2,
-      "opponent": "VfB Stuttgart",
-      "opponentCode": "VFB",
-      "opponentRank": 13,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.456,
-      "pLose": 0.295,
-      "oppFactor": null,
-      "home": false,
-      "players": [
-        "Marcos Llorente",
-        "Álex Baena",
-        "Dávid Hancko",
-        "Giuliano Simeone",
-        "Ademola Lookman"
-      ],
-      "points": 256.7,
-      "bestStarter": null,
-      "surfaces": [
-        "my set",
-        "team set (Loadshift)"
-      ]
-    },
-    {
-      "kickoff": "2026-10-20T19:00:00Z",
-      "competition": "UEFA Champions League",
-      "team": "Liverpool FC",
-      "code": "LIV",
-      "rank": 5,
-      "opponent": "Villarreal CF",
-      "opponentCode": "VIL",
-      "opponentRank": 12,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.626,
-      "pLose": 0.167,
-      "oppFactor": null,
-      "home": true,
-      "players": [
-        "Milos Kerkez"
-      ],
-      "points": 40.7,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
-    {
-      "kickoff": "2026-10-20T19:00:00Z",
-      "competition": "UEFA Champions League",
-      "team": "Villarreal CF",
-      "code": "VIL",
-      "rank": 12,
-      "opponent": "Liverpool FC",
-      "opponentCode": "LIV",
-      "opponentRank": 5,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.167,
-      "pLose": 0.626,
-      "oppFactor": null,
-      "home": false,
-      "players": [
-        "Santi Comesaña"
-      ],
-      "points": 37.9,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
-    {
-      "kickoff": "2026-10-20T19:00:00Z",
-      "competition": "UEFA Champions League",
-      "team": "VfB Stuttgart",
-      "code": "VFB",
-      "rank": 13,
-      "opponent": "Atlético de Madrid",
-      "opponentCode": "ATM",
-      "opponentRank": 2,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.295,
-      "pLose": 0.456,
-      "oppFactor": null,
-      "home": true,
-      "players": [
-        "Ermedin Demirović"
-      ],
-      "points": 34.8,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
     {
       "kickoff": "2026-10-21T19:00:00Z",
       "competition": "UEFA Champions League",
