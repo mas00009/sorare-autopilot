@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T18:24:45.461Z",
+  "generatedAt": "2026-10-20T18:30:34.922Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-22T16:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792520662255,
-    "reason": "last run 0m ago, next due in 180m (lock in 2780m)"
+    "lastRunAt": 1792521011389,
+    "reason": "last run 0m ago, next due in 180m (lock in 2774m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 741.3992,
+      "squadScore": 735.4872,
       "lineupId": "Tasks::TaskLineup:4aa0ece8-3bcc-4f6e-8741-4b79aea6be64",
       "state": "READY",
-      "score": 206.87,
+      "score": 211.3,
       "finished": false,
       "cleared": true,
       "players": [
@@ -305,7 +305,7 @@
           "slug": "jobe-bellingham",
           "position": "Midfielder",
           "captain": false,
-          "score": 40.27,
+          "score": 44.7,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T16:30:00Z"
         },
@@ -1349,7 +1349,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 234 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 741 so far.",
+      "status": "Locked and playing. 238 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 736 so far.",
       "tone": "good",
       "lockAt": "2026-10-20T16:45:00Z",
       "isSquad": true,
@@ -1414,7 +1414,7 @@
             "kickoff": "2026-10-20T19:00:00Z"
           },
           {
-            "actual": 40.27,
+            "actual": 44.7,
             "scoreStatus": "REVIEWING",
             "teamSlug": "borussia-dortmund-dortmund",
             "name": "Jobe Bellingham",
@@ -1502,9 +1502,9 @@
           }
         ],
         "projected": 280.8,
-        "scoredSoFar": 234,
+        "scoredSoFar": 238.43,
         "played": 5,
-        "expectedFinal": 234
+        "expectedFinal": 238.43
       },
       "poolStrength": {
         "strong": 2,
@@ -1514,7 +1514,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 741.3992
+        "scoreSoFar": 735.5912
       },
       "level": 0,
       "lives": null,
