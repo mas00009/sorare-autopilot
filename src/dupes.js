@@ -6,7 +6,12 @@
  *     different edition of the same player is a different card and is kept;
  *   - keep one of each - the one with the most XP;
  *   - never a 4-star or 5-star player, duplicate or not;
- *   - never a card in a lineup or sealed.
+ *   - never a card in a lineup or sealed;
+ *   - keep TWO of a playing keeper (recent average 40+) or a top player
+ *     (3-star, or recent average 55+), so the personal set and the team set
+ *     can both field him. With one copy, a card in one board's lineup is
+ *     missing from the other's bench, and on 19 Oct the team set could not
+ *     make a full five and entered nothing.
  *
  * Dropping pays the essence Sorare quotes on the card (5 / 20 / 200 by tier)
  * and charges nothing. Gem collections count players, not copies, so keeping
@@ -19,8 +24,8 @@ const BATCH = 20;
 
 const Q_CARDS = `query Cards($after: String) { currentUser { cards(sport: FOOTBALL, first: 100, after: $after) {
   pageInfo { hasNextPage endCursor }
-  nodes { slug rarityTyped seasonYear cardEditionName xp sealed
-    anyPlayer { slug displayName ... on Player { gameplayTier } }
+  nodes { slug rarityTyped seasonYear cardEditionName xp sealed anyPositions
+    anyPlayer { slug displayName ... on Player { gameplayTier averageScore(type: LAST_FIFTEEN_SO5_AVERAGE_SCORE) } }
     activeTaskAppearances { __typename }
   } } } }`;
 
@@ -42,6 +47,16 @@ async function allCards() {
   return out;
 }
 
+/** How many copies of this card to keep. */
+export function keepCount(card) {
+  const p = card.anyPlayer ?? {};
+  const avg = p.averageScore ?? 0;
+  const keeper = /^goalkeeper$/i.test(card.anyPositions?.[0] ?? '');
+  if (keeper && avg >= 40) return 2;
+  if (p.gameplayTier === 'IMPACT' || avg >= 55) return 2;
+  return 1;
+}
+
 /** Which cards go. Pure, so the rules can be tested without Sorare. */
 export function planDrops(cards) {
   const groups = new Map();
@@ -53,12 +68,12 @@ export function planDrops(cards) {
   }
   const drop = [];
   for (const copies of groups.values()) {
-    if (copies.length < 2) continue;
+    if (copies.length <= keepCount(copies[0])) continue;
     if (PROTECTED_TIERS.has(copies[0].anyPlayer?.gameplayTier)) continue;
     // Keep the most-levelled copy, and any copy that is busy.
     const busy = (c) => c.sealed || (c.activeTaskAppearances ?? []).length > 0;
     const ranked = [...copies].sort((a, b) => Number(busy(b)) - Number(busy(a)) || (b.xp ?? 0) - (a.xp ?? 0));
-    for (const c of ranked.slice(1)) if (!busy(c)) drop.push(c);
+    for (const c of ranked.slice(keepCount(copies[0]))) if (!busy(c)) drop.push(c);
   }
   return drop;
 }

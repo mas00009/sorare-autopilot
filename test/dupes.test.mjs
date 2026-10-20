@@ -20,4 +20,21 @@ assert.equal(by('c').length + by('d').length, 0, '4- and 5-star are never droppe
 assert.equal(by('e').length, 1);
 assert.equal(by('e')[0].activeTaskAppearances.length, 0, 'the lineup copy stays');
 assert.equal(by('f').length, 0);
+// Two copies of playing keepers and top players, so both boards can use them.
+const more = [
+  card('gk', 'ROSTER', { anyPositions: ['Goalkeeper'], anyPlayer: { slug: 'gk', gameplayTier: 'ROSTER', averageScore: 52 } }),
+  card('gk', 'ROSTER', { anyPositions: ['Goalkeeper'], anyPlayer: { slug: 'gk', gameplayTier: 'ROSTER', averageScore: 52 } }),
+  card('gk', 'ROSTER', { anyPositions: ['Goalkeeper'], anyPlayer: { slug: 'gk', gameplayTier: 'ROSTER', averageScore: 52 } }),
+  card('bench', 'DNP', { anyPositions: ['Goalkeeper'], anyPlayer: { slug: 'bench', gameplayTier: 'DNP', averageScore: 0 } }),
+  card('bench', 'DNP', { anyPositions: ['Goalkeeper'], anyPlayer: { slug: 'bench', gameplayTier: 'DNP', averageScore: 0 } }),
+  card('top', 'ROSTER', { anyPositions: ['Defender'], anyPlayer: { slug: 'top', gameplayTier: 'ROSTER', averageScore: 61 } }),
+  card('top', 'ROSTER', { anyPositions: ['Defender'], anyPlayer: { slug: 'top', gameplayTier: 'ROSTER', averageScore: 61 } }),
+  card('three', 'IMPACT'), card('three', 'IMPACT'), card('three', 'IMPACT'),
+];
+const d2 = planDrops(more);
+const by2 = (p) => d2.filter((c) => c.anyPlayer.slug === p).length;
+assert.equal(by2('gk'), 1, 'a playing keeper keeps two of three');
+assert.equal(by2('bench'), 1, 'a keeper who never plays keeps one');
+assert.equal(by2('top'), 0, 'a 55+ average player keeps two');
+assert.equal(by2('three'), 1, 'a 3-star keeps two of three');
 console.log('dupes assertions passed');
