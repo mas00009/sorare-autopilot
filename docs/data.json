@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T20:46:16.450Z",
+  "generatedAt": "2026-10-20T20:51:52.728Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-22T16:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792529163572,
-    "reason": "last run 0m ago, next due in 180m (lock in 2639m)"
+    "lastRunAt": 1792529499320,
+    "reason": "last run 0m ago, next due in 180m (lock in 2633m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 1087.2102,
+      "squadScore": 1098.3682,
       "lineupId": "Tasks::TaskLineup:4aa0ece8-3bcc-4f6e-8741-4b79aea6be64",
       "state": "READY",
-      "score": 262.23,
+      "score": 263.08,
       "finished": false,
       "cleared": true,
       "players": [
@@ -287,7 +287,7 @@
           "slug": "peter-gulacsi",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 25.48,
+          "score": 25.58,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T16:30:00Z"
         },
@@ -296,7 +296,7 @@
           "slug": "marcos-llorente-moreno",
           "position": "Defender",
           "captain": true,
-          "score": 60.51,
+          "score": 61.26,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -1349,14 +1349,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 292 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1087 so far.",
+      "status": "Locked and playing. 294 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1098 so far.",
       "tone": "good",
       "lockAt": "2026-10-20T16:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 25.48,
+            "actual": 25.58,
             "scoreStatus": "REVIEWING",
             "teamSlug": "villarreal-villarreal",
             "name": "Péter Gulácsi",
@@ -1385,7 +1385,7 @@
             "kickoff": "2026-10-20T19:00:00Z"
           },
           {
-            "actual": 60.51,
+            "actual": 61.26,
             "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Marcos Llorente",
@@ -1502,9 +1502,9 @@
           }
         ],
         "projected": 280.8,
-        "scoredSoFar": 292.49,
+        "scoredSoFar": 293.71,
         "played": 5,
-        "expectedFinal": 292.49
+        "expectedFinal": 293.71
       },
       "poolStrength": {
         "strong": 0,
@@ -1514,7 +1514,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 1087.2102
+        "scoreSoFar": 1098.3682
       },
       "level": 0,
       "lives": null,
