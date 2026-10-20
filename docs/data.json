@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T19:44:47.144Z",
+  "generatedAt": "2026-10-20T19:50:21.492Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-22T16:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792525473901,
-    "reason": "last run 0m ago, next due in 180m (lock in 2700m)"
+    "lastRunAt": 1792525808802,
+    "reason": "last run 0m ago, next due in 180m (lock in 2695m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -275,10 +275,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 901.4732,
+      "squadScore": 915.9912,
       "lineupId": "Tasks::TaskLineup:4aa0ece8-3bcc-4f6e-8741-4b79aea6be64",
       "state": "READY",
-      "score": 221.97,
+      "score": 216.08,
       "finished": false,
       "cleared": true,
       "players": [
@@ -287,7 +287,7 @@
           "slug": "peter-gulacsi",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 35.05,
+          "score": 30.16,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T16:30:00Z"
         },
@@ -296,7 +296,7 @@
           "slug": "marcos-llorente-moreno",
           "position": "Defender",
           "captain": true,
-          "score": 44.11,
+          "score": 43.59,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -314,7 +314,7 @@
           "slug": "giuliano-simeone",
           "position": "Forward",
           "captain": false,
-          "score": 52.79,
+          "score": 51.98,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
@@ -323,7 +323,7 @@
           "slug": "ruben-santos-gato-alves-dias",
           "position": "Defender",
           "captain": false,
-          "score": 45.33,
+          "score": 45.66,
           "status": "REVIEWING",
           "kickoff": "2026-10-24T11:30:00Z"
         }
@@ -1349,14 +1349,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 244 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 901 so far.",
+      "status": "Locked and playing. 238 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 916 so far.",
       "tone": "good",
       "lockAt": "2026-10-20T16:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 35.05,
+            "actual": 30.16,
             "scoreStatus": "REVIEWING",
             "teamSlug": "villarreal-villarreal",
             "name": "Péter Gulácsi",
@@ -1385,7 +1385,7 @@
             "kickoff": "2026-10-20T19:00:00Z"
           },
           {
-            "actual": 44.11,
+            "actual": 43.59,
             "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Marcos Llorente",
@@ -1443,7 +1443,7 @@
             "kickoff": "2026-10-20T16:45:00Z"
           },
           {
-            "actual": 52.79,
+            "actual": 51.98,
             "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Giuliano Simeone",
@@ -1472,7 +1472,7 @@
             "kickoff": "2026-10-20T19:00:00Z"
           },
           {
-            "actual": 45.33,
+            "actual": 45.66,
             "scoreStatus": "REVIEWING",
             "teamSlug": "manchester-city-manchester",
             "name": "Rúben Dias",
@@ -1502,9 +1502,9 @@
           }
         ],
         "projected": 280.8,
-        "scoredSoFar": 244.03,
+        "scoredSoFar": 237.88,
         "played": 5,
-        "expectedFinal": 244.03
+        "expectedFinal": 237.88
       },
       "poolStrength": {
         "strong": 0,
@@ -1514,7 +1514,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 901.4732
+        "scoreSoFar": 915.9912
       },
       "level": 0,
       "lives": null,
