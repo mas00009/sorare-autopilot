@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T15:36:19.719Z",
+  "generatedAt": "2026-10-20T15:47:54.365Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-20T16:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1792510560788,
-    "reason": "last run 0m ago, next due in 5m (lock in 69m)"
+    "lastRunAt": 1792511255912,
+    "reason": "last run 0m ago, next due in 5m (lock in 57m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -275,7 +275,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 0,
+      "squadScore": 126.7,
       "lineupId": "Tasks::TaskLineup:4aa0ece8-3bcc-4f6e-8741-4b79aea6be64",
       "state": "READY",
       "score": 0,
@@ -1514,7 +1514,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 0
+        "scoreSoFar": 126.7
       },
       "level": 0,
       "lives": null,
@@ -1718,7 +1718,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 41,
           "picture": "https://assets.sorare.com/cardsamplepicture/5212f4d6-dd2f-4576-8041-e70b68c74f2e/picture/tinified-98159a13e32a4ffa7992c44956b344b3.png",
@@ -1757,7 +1757,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 48,
           "picture": "https://assets.sorare.com/cardsamplepicture/6457f23e-4d79-4b4d-81b3-08631c1aae13/picture/tinified-30817ab9961b8df4af37142044e31341.png",
