@@ -485,7 +485,13 @@ export function pickAcrossWindow(benchNodes, { target = null, tolerance = 0.03, 
     if (loose.ok) return { ...loose, underdogDefenceAllowed: true };
   }
   if (!attempts.length) {
-    return { ok: false, reason: 'No complete lineup possible from the eligible pool.', attempts };
+    // Say which slot could not be filled, so a miss can be diagnosed later.
+    const opts = { ...DEFAULTS, ...options };
+    const usable = benchNodes.map((n) => describe(n, opts)).filter((c) => !c.blocked && c.expected > 0);
+    const count = (p) => usable.filter((c) => c.position === p).length;
+    const short = ['GK', 'DF', 'MD', 'FW'].filter((p) => count(p) === 0);
+    const detail = `${benchNodes.length} cards in the pool, usable GK ${count('GK')} / DF ${count('DF')} / MD ${count('MD')} / FW ${count('FW')}`;
+    return { ok: false, reason: `No complete lineup possible${short.length ? ` - no usable ${short.join(', ')}` : ''} (${detail}).`, attempts };
   }
 
   // Keep the strongest candidate per finish day.
