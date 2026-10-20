@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T11:02:06.078Z",
+  "generatedAt": "2026-10-20T11:25:15.277Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-20T16:45:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1792494109001,
-    "reason": "last run 0m ago, next due in 60m (lock in 343m)"
+    "lastRunAt": 1792495498472,
+    "reason": "last run 0m ago, next due in 60m (lock in 320m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -274,7 +274,7 @@
       "target": 700,
       "stepState": "LINEUP_SET",
       "collaborative": true,
-      "squadLineups": 4,
+      "squadLineups": 6,
       "squadScore": 0,
       "lineupId": "Tasks::TaskLineup:4aa0ece8-3bcc-4f6e-8741-4b79aea6be64",
       "state": "READY",
@@ -1512,7 +1512,7 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 4,
+        "lineupsIn": 6,
         "needed": 3,
         "scoreSoFar": 0
       },
