@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-20T23:03:32.995Z",
+  "generatedAt": "2026-10-20T23:33:56.395Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 548,
-    "gems": 256
+    "essence": 4048,
+    "gems": 266
   },
   "schedule": {
     "nextLock": "2026-10-22T16:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792533592607,
-    "reason": "last run 64m ago, next due in 116m (lock in 2501m)"
+    "reason": "last run 94m ago, next due in 86m (lock in 2471m)"
   },
   "packs": {
     "lastThreeStar": "Dela",
@@ -580,7 +580,7 @@
     }
   ],
   "gems": {
-    "balance": 256,
+    "balance": 266,
     "level": 2,
     "ladder": [
       {
@@ -617,16 +617,6 @@
       }
     ],
     "collections": [
-      {
-        "title": "Collect Players",
-        "gems": 10,
-        "progress": 860,
-        "target": 860,
-        "remaining": 0,
-        "competition": null,
-        "group": null,
-        "teams": []
-      },
       {
         "title": "Collect English players in English League",
         "gems": 5,
@@ -670,6 +660,16 @@
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": []
+      },
+      {
+        "title": "Collect Players",
+        "gems": 30,
+        "progress": 860,
+        "target": 1115,
+        "remaining": 255,
+        "competition": null,
+        "group": null,
+        "teams": []
       }
     ],
     "preferredPack": {
@@ -678,7 +678,7 @@
     },
     "ladderGemsAhead": 40,
     "ladderCashAhead": 1100,
-    "collectionGemsOpen": 130
+    "collectionGemsOpen": 150
   },
   "odds": {
     "configured": true,
