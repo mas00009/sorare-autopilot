@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-10-20T07:04:02.165Z",
+  "generatedAt": "2026-10-20T07:10:00.699Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 18443,
+    "essence": 18943,
     "gems": 256
   },
   "schedule": {
     "nextLock": "2026-10-20T16:45:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1792479818251,
-    "reason": "last run 0m ago, next due in 60m (lock in 581m)"
+    "lastRunAt": 1792480180461,
+    "reason": "last run 0m ago, next due in 60m (lock in 575m)"
   },
   "packs": {
-    "lastThreeStar": "Troy Parrott",
+    "lastThreeStar": "Dela",
     "cycleDone": true
   },
   "health": {
@@ -620,9 +620,9 @@
       {
         "title": "Collect Players",
         "gems": 10,
-        "progress": 837,
+        "progress": 841,
         "target": 860,
-        "remaining": 23,
+        "remaining": 19,
         "competition": null,
         "group": null,
         "teams": []
@@ -630,9 +630,9 @@
       {
         "title": "Collect English players in English League",
         "gems": 5,
-        "progress": 53,
+        "progress": 54,
         "target": 77,
-        "remaining": 24,
+        "remaining": 23,
         "competition": "English League Players",
         "group": "glitch-premier-league",
         "teams": []
