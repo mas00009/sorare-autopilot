@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T17:01:05.293Z",
+  "generatedAt": "2026-10-21T17:31:36.757Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-21T16:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792600191889,
-    "reason": "last run 31m ago, next due in 149m"
+    "reason": "last run 62m ago, next due in 118m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -89,10 +89,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 115.0312,
+      "squadScore": 213.8752,
       "lineupId": "Tasks::TaskLineup:caaa51c7-1435-45b1-bfda-1f1461d8068c",
       "state": "READY",
-      "score": 40.19,
+      "score": 43.69,
       "finished": false,
       "cleared": false,
       "players": [
@@ -110,7 +110,7 @@
           "slug": "alexsandro-victor-de-souza-ribeiro",
           "position": "Defender",
           "captain": false,
-          "score": 40.19,
+          "score": 43.69,
           "status": "REVIEWING",
           "kickoff": "2026-10-25T14:00:00Z"
         },
@@ -1411,7 +1411,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 40 scored so far, 1 of 5 played. The squad's top three lineups together need 980; the squad has 115 so far.",
+      "status": "Locked and playing. 45 scored so far, 1 of 5 played. The squad's top three lineups together need 980; the squad has 216 so far.",
       "tone": "good",
       "lockAt": "2026-10-21T16:45:00Z",
       "isSquad": true,
@@ -1447,7 +1447,7 @@
             "kickoff": "2026-10-21T19:00:00Z"
           },
           {
-            "actual": 40.19,
+            "actual": 44.52,
             "scoreStatus": "REVIEWING",
             "teamSlug": "lille-villeneuve-d-ascq",
             "name": "Alexsandro",
@@ -1564,9 +1564,9 @@
           }
         ],
         "projected": 325.17,
-        "scoredSoFar": 40.19,
+        "scoredSoFar": 44.52,
         "played": 1,
-        "expectedFinal": 312.07
+        "expectedFinal": 316.4
       },
       "poolStrength": {
         "strong": 2,
@@ -1576,7 +1576,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 115.0312
+        "scoreSoFar": 215.5232
       },
       "level": 1,
       "lives": null,
@@ -1789,7 +1789,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 60,
             "picture": "https://assets.sorare.com/cardsamplepicture/348dbf5e-7660-4de2-aa70-f44e083fd7c6/picture/tinified-0ff8b72b06b5e4151bf4b85699bc89b3.png",
@@ -1987,7 +1987,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 60,
           "picture": "https://assets.sorare.com/cardsamplepicture/348dbf5e-7660-4de2-aa70-f44e083fd7c6/picture/tinified-0ff8b72b06b5e4151bf4b85699bc89b3.png",
