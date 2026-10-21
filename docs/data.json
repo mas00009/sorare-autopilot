@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T08:05:26.492Z",
+  "generatedAt": "2026-10-21T08:35:56.338Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-21T16:45:00Z",
     "cadenceMin": 60,
     "lastRunAt": 1792569906980,
-    "reason": "last run 0m ago, next due in 60m (lock in 520m)"
+    "reason": "last run 31m ago, next due in 29m (lock in 489m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -726,9 +726,9 @@
       {
         "title": "Collect Players",
         "gems": 30,
-        "progress": 866,
+        "progress": 867,
         "target": 1115,
-        "remaining": 249,
+        "remaining": 248,
         "competition": null,
         "group": null,
         "teams": []
