@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T15:40:59.244Z",
+  "generatedAt": "2026-10-21T15:47:09.154Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-21T16:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1792597231847,
-    "reason": "last run 0m ago, next due in 5m (lock in 64m)"
+    "lastRunAt": 1792597603704,
+    "reason": "last run 0m ago, next due in 5m (lock in 58m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -89,10 +89,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 0,
+      "squadScore": 108.85,
       "lineupId": "Tasks::TaskLineup:caaa51c7-1435-45b1-bfda-1f1461d8068c",
       "state": "READY",
-      "score": 0,
+      "score": 36.05,
       "finished": false,
       "cleared": false,
       "players": [
@@ -110,8 +110,8 @@
           "slug": "alexsandro-victor-de-souza-ribeiro",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-21T16:45:00Z"
         },
         {
@@ -142,7 +142,7 @@
           "kickoff": "2026-10-21T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 1
     },
     {
       "surface": "my set",
@@ -1411,7 +1411,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Team entered, locks Thu 03:45 am Sydney. The squad's top three lineups together need 980; this one is expected to add about 325.",
+      "status": "Locked and playing. 36 scored so far, 1 of 5 played. The squad's top three lineups together need 980; the squad has 109 so far.",
       "tone": "good",
       "lockAt": "2026-10-21T16:45:00Z",
       "isSquad": true,
@@ -1447,8 +1447,8 @@
             "kickoff": "2026-10-21T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "lille-villeneuve-d-ascq",
             "name": "Alexsandro",
             "player": "Alexsandro",
@@ -1564,9 +1564,9 @@
           }
         ],
         "projected": 325.17,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 326.62
+        "scoredSoFar": 36.05,
+        "played": 1,
+        "expectedFinal": 307.93
       },
       "poolStrength": {
         "strong": 2,
@@ -1576,7 +1576,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 0
+        "scoreSoFar": 108.85
       },
       "level": 1,
       "lives": null,
