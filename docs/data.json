@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T16:30:17.846Z",
+  "generatedAt": "2026-10-21T17:01:05.293Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -8,9 +8,9 @@
   },
   "schedule": {
     "nextLock": "2026-10-21T16:45:00Z",
-    "cadenceMin": 5,
+    "cadenceMin": 180,
     "lastRunAt": 1792600191889,
-    "reason": "last run 0m ago, next due in 5m (lock in 15m)"
+    "reason": "last run 31m ago, next due in 149m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -86,13 +86,13 @@
       "surface": "team set (Loadshift)",
       "level": 1,
       "target": 980,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 108.85,
+      "squadScore": 115.0312,
       "lineupId": "Tasks::TaskLineup:caaa51c7-1435-45b1-bfda-1f1461d8068c",
       "state": "READY",
-      "score": 36.05,
+      "score": 40.19,
       "finished": false,
       "cleared": false,
       "players": [
@@ -110,9 +110,9 @@
           "slug": "alexsandro-victor-de-souza-ribeiro",
           "position": "Defender",
           "captain": false,
-          "score": 36.05,
+          "score": 40.19,
           "status": "REVIEWING",
-          "kickoff": "2026-10-21T16:45:00Z"
+          "kickoff": "2026-10-25T14:00:00Z"
         },
         {
           "name": "Jude Bellingham",
@@ -351,7 +351,7 @@
           "captain": false,
           "score": 44.7,
           "status": "FINAL",
-          "kickoff": "2026-10-21T16:45:00Z"
+          "kickoff": "2026-10-25T14:00:00Z"
         },
         {
           "name": "Alexsandro",
@@ -360,7 +360,7 @@
           "captain": false,
           "score": 50.72,
           "status": "FINAL",
-          "kickoff": "2026-10-21T16:45:00Z"
+          "kickoff": "2026-10-25T14:00:00Z"
         },
         {
           "name": "Nathan Saliba",
@@ -422,7 +422,7 @@
           "captain": true,
           "score": 111.02,
           "status": "FINAL",
-          "kickoff": "2026-10-21T16:45:00Z"
+          "kickoff": "2026-10-25T14:00:00Z"
         },
         {
           "name": "Konrad Laimer",
@@ -449,7 +449,7 @@
           "captain": false,
           "score": 0,
           "status": "FINAL",
-          "kickoff": "2026-10-21T16:45:00Z"
+          "kickoff": "2026-10-25T14:00:00Z"
         }
       ],
       "scored": 5
@@ -917,7 +917,7 @@
         "expectedFinal": 349.99
       },
       "poolStrength": {
-        "strong": 18,
+        "strong": 17,
         "needed": 5
       },
       "collaborative": false,
@@ -1411,7 +1411,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 36 scored so far, 1 of 5 played. The squad's top three lineups together need 980; the squad has 109 so far.",
+      "status": "Locked and playing. 40 scored so far, 1 of 5 played. The squad's top three lineups together need 980; the squad has 115 so far.",
       "tone": "good",
       "lockAt": "2026-10-21T16:45:00Z",
       "isSquad": true,
@@ -1447,7 +1447,7 @@
             "kickoff": "2026-10-21T19:00:00Z"
           },
           {
-            "actual": 36.05,
+            "actual": 40.19,
             "scoreStatus": "REVIEWING",
             "teamSlug": "lille-villeneuve-d-ascq",
             "name": "Alexsandro",
@@ -1472,7 +1472,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-21T16:45:00Z"
           },
           {
@@ -1564,9 +1564,9 @@
           }
         ],
         "projected": 325.17,
-        "scoredSoFar": 36.05,
+        "scoredSoFar": 40.19,
         "played": 1,
-        "expectedFinal": 307.93
+        "expectedFinal": 312.07
       },
       "poolStrength": {
         "strong": 2,
@@ -1576,7 +1576,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 108.85
+        "scoreSoFar": 115.0312
       },
       "level": 1,
       "lives": null,
@@ -1590,7 +1590,7 @@
         },
         {
           "level": 1,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 980
         },
         {
@@ -1617,7 +1617,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 980,
       "current": [
         {
@@ -1629,8 +1629,8 @@
         {
           "name": "Alexsandro",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-21T16:45:00Z"
+          "locked": true,
+          "nextGame": "2026-10-25T14:00:00Z"
         },
         {
           "name": "Jude Bellingham",
