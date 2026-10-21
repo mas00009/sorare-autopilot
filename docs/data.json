@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T08:35:56.338Z",
+  "generatedAt": "2026-10-21T09:07:11.756Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-21T16:45:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1792569906980,
-    "reason": "last run 31m ago, next due in 29m (lock in 489m)"
+    "lastRunAt": 1792573612587,
+    "reason": "last run 0m ago, next due in 60m (lock in 458m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -88,7 +88,7 @@
       "target": 980,
       "stepState": "LINEUP_SET",
       "collaborative": true,
-      "squadLineups": 2,
+      "squadLineups": 3,
       "squadScore": 0,
       "lineupId": "Tasks::TaskLineup:caaa51c7-1435-45b1-bfda-1f1461d8068c",
       "state": "READY",
@@ -1574,7 +1574,7 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 2,
+        "lineupsIn": 3,
         "needed": 3,
         "scoreSoFar": 0
       },
