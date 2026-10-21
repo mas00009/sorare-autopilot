@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T07:03:27.497Z",
+  "generatedAt": "2026-10-21T07:34:02.396Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-21T16:45:00Z",
     "cadenceMin": 60,
     "lastRunAt": 1792566184859,
-    "reason": "last run 0m ago, next due in 60m (lock in 582m)"
+    "reason": "last run 31m ago, next due in 29m (lock in 551m)"
   },
   "packs": {
     "lastThreeStar": "Alex Freeman",
@@ -88,7 +88,7 @@
       "target": 980,
       "stepState": "LINEUP_SET",
       "collaborative": true,
-      "squadLineups": 1,
+      "squadLineups": 2,
       "squadScore": 0,
       "lineupId": "Tasks::TaskLineup:caaa51c7-1435-45b1-bfda-1f1461d8068c",
       "state": "READY",
@@ -726,9 +726,9 @@
       {
         "title": "Collect Players",
         "gems": 30,
-        "progress": 861,
+        "progress": 864,
         "target": 1115,
-        "remaining": 254,
+        "remaining": 251,
         "competition": null,
         "group": null,
         "teams": []
@@ -1004,7 +1004,7 @@
       ],
       "plan": {
         "clearsTarget": true,
-        "projected": 388.99,
+        "projected": 389.61,
         "lock": "2026-10-21T19:00:00Z",
         "shortfall": null,
         "tradedPointsForTime": 0,
@@ -1175,7 +1175,7 @@
             "slug": "zion-suzuki",
             "position": "GK",
             "average": 60,
-            "bonus": 1.03,
+            "bonus": 1.04,
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
@@ -1205,7 +1205,7 @@
             "oddsBooks": 22,
             "marketFactor": 1.136,
             "lockedAt": null,
-            "expected": 63.69,
+            "expected": 64.31,
             "blocked": null
           }
         ]
@@ -1373,7 +1373,7 @@
           "slug": "zion-suzuki",
           "position": "GK",
           "average": 60,
-          "bonus": 1.03,
+          "bonus": 1.04,
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
@@ -1403,7 +1403,7 @@
           "oddsBooks": 22,
           "marketFactor": 1.136,
           "lockedAt": null,
-          "expected": 63.69,
+          "expected": 64.31,
           "blocked": null
         }
       ],
@@ -1574,7 +1574,7 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 1,
+        "lineupsIn": 2,
         "needed": 3,
         "scoreSoFar": 0
       },
@@ -1653,9 +1653,9 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 302.9,
+        "projected": 303.95,
         "lock": "2026-10-21T18:00:00Z",
-        "shortfall": 677.1,
+        "shortfall": 676,
         "tradedPointsForTime": 0,
         "captain": "boubacar-kamara",
         "captainPoints": 27.04,
@@ -1707,7 +1707,7 @@
             "slug": "boubacar-kamara",
             "position": "MD",
             "average": 53,
-            "bonus": 1.03,
+            "bonus": 1.04,
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
@@ -1737,7 +1737,7 @@
             "oddsBooks": 22,
             "marketFactor": 1.073,
             "lockedAt": null,
-            "expected": 55.71,
+            "expected": 56.25,
             "blocked": null
           },
           {
@@ -1746,7 +1746,7 @@
             "slug": "victor-nilsson-lindelof",
             "position": "DF",
             "average": 44,
-            "bonus": 1.03,
+            "bonus": 1.04,
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
@@ -1776,7 +1776,7 @@
             "oddsBooks": 22,
             "marketFactor": 1.084,
             "lockedAt": null,
-            "expected": 53.05,
+            "expected": 53.56,
             "blocked": null
           },
           {
@@ -1905,7 +1905,7 @@
           "slug": "boubacar-kamara",
           "position": "MD",
           "average": 53,
-          "bonus": 1.03,
+          "bonus": 1.04,
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
@@ -1935,7 +1935,7 @@
           "oddsBooks": 22,
           "marketFactor": 1.073,
           "lockedAt": null,
-          "expected": 55.71,
+          "expected": 56.25,
           "blocked": null
         },
         {
@@ -1944,7 +1944,7 @@
           "slug": "victor-nilsson-lindelof",
           "position": "DF",
           "average": 44,
-          "bonus": 1.03,
+          "bonus": 1.04,
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
@@ -1974,7 +1974,7 @@
           "oddsBooks": 22,
           "marketFactor": 1.084,
           "lockedAt": null,
-          "expected": 53.05,
+          "expected": 53.56,
           "blocked": null
         },
         {
@@ -2056,7 +2056,7 @@
           "blocked": null
         }
       ],
-      "projected": 276.6
+      "projected": 277.7
     }
   ],
   "fixtures": [
@@ -2106,7 +2106,7 @@
         "Boubacar Kamara",
         "Victor Lindelöf"
       ],
-      "points": 172.4,
+      "points": 174.1,
       "bestStarter": null,
       "surfaces": [
         "my set",
