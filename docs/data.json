@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T17:31:36.757Z",
+  "generatedAt": "2026-10-21T18:02:08.494Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-21T16:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792600191889,
-    "reason": "last run 62m ago, next due in 118m"
+    "reason": "last run 92m ago, next due in 88m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:ecd3473c-1420-4acf-a292-f0bc640a7f19",
       "state": "READY",
-      "score": 0,
+      "score": 36.05,
       "finished": false,
       "cleared": false,
       "players": [
@@ -66,8 +66,8 @@
           "slug": "emiliano-buendia",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-21T19:00:00Z"
         },
         {
@@ -80,7 +80,7 @@
           "kickoff": "2026-10-22T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 1
     },
     {
       "surface": "team set (Loadshift)",
@@ -89,10 +89,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 213.8752,
+      "squadScore": 618.3164,
       "lineupId": "Tasks::TaskLineup:caaa51c7-1435-45b1-bfda-1f1461d8068c",
       "state": "READY",
-      "score": 43.69,
+      "score": 222.77,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,8 +101,8 @@
           "slug": "zion-suzuki",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-21T19:00:00Z"
         },
         {
@@ -110,7 +110,7 @@
           "slug": "alexsandro-victor-de-souza-ribeiro",
           "position": "Defender",
           "captain": false,
-          "score": 43.69,
+          "score": 59.68,
           "status": "REVIEWING",
           "kickoff": "2026-10-25T14:00:00Z"
         },
@@ -119,8 +119,8 @@
           "slug": "jude-bellingham",
           "position": "Midfielder",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 54.25,
+          "status": "REVIEWING",
           "kickoff": "2026-10-21T19:00:00Z"
         },
         {
@@ -128,8 +128,8 @@
           "slug": "emiliano-buendia",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-21T19:00:00Z"
         },
         {
@@ -137,12 +137,12 @@
           "slug": "federico-santiago-valverde-dipetta",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-21T19:00:00Z"
         }
       ],
-      "scored": 1
+      "scored": 5
     },
     {
       "surface": "my set",
@@ -759,7 +759,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Team entered, locks Thu 06:00 am Sydney. Expected about 349; needs 360 (11 short). It keeps being updated until it locks.",
+      "status": "Locked and playing. 36 scored so far, 1 of 5 played. On course for about 330; needs 360 (30 short).",
       "tone": "warn",
       "lockAt": "2026-10-21T19:00:00Z",
       "isSquad": false,
@@ -853,8 +853,8 @@
             "kickoff": "2026-10-22T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "aston-villa-birmingham",
             "name": "Emiliano Buendía",
             "player": "Emiliano Buendía",
@@ -912,9 +912,9 @@
           }
         ],
         "projected": 348.97,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 349.99
+        "scoredSoFar": 36.05,
+        "played": 1,
+        "expectedFinal": 330.16
       },
       "poolStrength": {
         "strong": 17,
@@ -1140,7 +1140,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 61,
             "picture": "https://assets.sorare.com/cardsamplepicture/5c1b2cb2-6b15-4016-8e17-e4daa4221290/picture/tinified-596d7f1653c75ea02cd01a3829b1fafe.png",
@@ -1338,7 +1338,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 61,
           "picture": "https://assets.sorare.com/cardsamplepicture/5c1b2cb2-6b15-4016-8e17-e4daa4221290/picture/tinified-596d7f1653c75ea02cd01a3829b1fafe.png",
@@ -1411,15 +1411,15 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 45 scored so far, 1 of 5 played. The squad's top three lineups together need 980; the squad has 216 so far.",
+      "status": "Locked and playing. 250 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 618 so far.",
       "tone": "good",
       "lockAt": "2026-10-21T16:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "aston-villa-birmingham",
             "name": "Zion Suzuki",
             "player": "Zion Suzuki",
@@ -1447,7 +1447,7 @@
             "kickoff": "2026-10-21T19:00:00Z"
           },
           {
-            "actual": 44.52,
+            "actual": 59.68,
             "scoreStatus": "REVIEWING",
             "teamSlug": "lille-villeneuve-d-ascq",
             "name": "Alexsandro",
@@ -1476,8 +1476,8 @@
             "kickoff": "2026-10-21T16:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 54.25,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Jude Bellingham",
             "player": "Jude Bellingham",
@@ -1505,8 +1505,8 @@
             "kickoff": "2026-10-21T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.05,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "aston-villa-birmingham",
             "name": "Emiliano Buendía",
             "player": "Emiliano Buendía",
@@ -1534,8 +1534,8 @@
             "kickoff": "2026-10-21T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Federico Valverde",
             "player": "Federico Valverde",
@@ -1564,9 +1564,9 @@
           }
         ],
         "projected": 325.17,
-        "scoredSoFar": 44.52,
-        "played": 1,
-        "expectedFinal": 316.4
+        "scoredSoFar": 249.9,
+        "played": 5,
+        "expectedFinal": 249.9
       },
       "poolStrength": {
         "strong": 2,
@@ -1576,7 +1576,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 215.5232
+        "scoreSoFar": 618.3164
       },
       "level": 1,
       "lives": null,
@@ -1653,9 +1653,9 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 303.95,
-        "lock": "2026-10-21T18:00:00Z",
-        "shortfall": 676,
+        "projected": 306.89,
+        "lock": "2026-10-21T19:00:00Z",
+        "shortfall": 673.1,
         "tradedPointsForTime": 0,
         "captain": "boubacar-kamara",
         "captainPoints": 27.04,
@@ -1672,7 +1672,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 55,
             "picture": "https://assets.sorare.com/cardsamplepicture/57436ab3-40cd-44f1-aa75-52fceda9a50a/picture/tinified-227bf23d25d50928b9427c3151ed7ee0.png",
@@ -1711,7 +1711,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 59,
             "picture": "https://assets.sorare.com/cardsamplepicture/027c036a-22f1-4c0c-a2ec-7082d7a440ca/picture/tinified-8cf797d67269905d861c0327c2f59db2.png",
@@ -1741,6 +1741,45 @@
             "blocked": null
           },
           {
+            "id": "ComposeTeamBenchCard:eaf70e48-07e6-49f8-a030-c5efa32f7a3b",
+            "player": "Yuri",
+            "slug": "yuri-berchiche-izeta",
+            "position": "DF",
+            "average": 63,
+            "bonus": 1.1,
+            "starterPct": null,
+            "startRate": 0.7,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 70,
+            "picture": "https://assets.sorare.com/cardsamplepicture/20cb1e5b-7bf9-488c-ab8b-4836a80bdb68/picture/tinified-f8d0e6bfe4dddcc1ef46abb1f19042e6.png",
+            "rarity": "common",
+            "gameId": "Game:517bf270-85ae-489c-b24f-498ac79c8531",
+            "kickoff": "2026-10-25T13:00:00Z",
+            "team": "Athletic Club",
+            "teamSlug": "athletic-club-bilbao",
+            "opponent": "Getafe CF",
+            "opponentCode": "GET",
+            "code": "ATH",
+            "rank": 11,
+            "opponentRank": 14,
+            "home": true,
+            "competition": "Primera División",
+            "intl": false,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "mismatch": false,
+            "pWin": 0.587,
+            "pLose": 0.169,
+            "oddsBooks": 20,
+            "marketFactor": 1.051,
+            "lockedAt": null,
+            "expected": 53.8,
+            "blocked": null
+          },
+          {
             "id": "ComposeTeamBenchCard:0d1dfb77-c79c-4350-b1cd-03d46fd2ce27",
             "player": "Victor Lindelöf",
             "slug": "victor-nilsson-lindelof",
@@ -1750,7 +1789,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 51,
             "picture": "https://assets.sorare.com/cardsamplepicture/17e6c169-6407-43c4-af91-f50fd1f2a79e/picture/tinified-c12f4473ee6fb7babdd59fb754d02b7a.png",
@@ -1780,29 +1819,29 @@
             "blocked": null
           },
           {
-            "id": "ComposeTeamBenchCard:47c3e7d2-375f-48b8-9d52-fb7596f9c06c",
-            "player": "I.Romero",
-            "slug": "ivan-romero-de-avila-araque",
+            "id": "ComposeTeamBenchCard:9963c1ce-17ba-4050-ba15-d53690a2e784",
+            "player": "Williams",
+            "slug": "inaki-williams-arthuer",
             "position": "FW",
-            "average": 48,
-            "bonus": 1.05,
+            "average": 46,
+            "bonus": 1.25,
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": true,
+            "onGameSheet": false,
             "reliability": null,
-            "formL5": 60,
-            "picture": "https://assets.sorare.com/cardsamplepicture/348dbf5e-7660-4de2-aa70-f44e083fd7c6/picture/tinified-0ff8b72b06b5e4151bf4b85699bc89b3.png",
+            "formL5": 44,
+            "picture": "https://assets.sorare.com/cardsamplepicture/f7cea8e7-64f9-4dbc-89e6-fbceeae7a42c/picture/tinified-ab2295182caf1277a13b3746d294b53f.png",
             "rarity": "common",
-            "gameId": "Game:3ce0556b-0db7-4306-9296-cb18cf7a9f32",
-            "kickoff": "2026-10-21T18:00:00Z",
-            "team": "Levante UD",
-            "teamSlug": "levante-valencia",
-            "opponent": "Athletic Club",
-            "opponentCode": "ATH",
-            "code": "LEV",
-            "rank": 17,
-            "opponentRank": 11,
+            "gameId": "Game:517bf270-85ae-489c-b24f-498ac79c8531",
+            "kickoff": "2026-10-25T13:00:00Z",
+            "team": "Athletic Club",
+            "teamSlug": "athletic-club-bilbao",
+            "opponent": "Getafe CF",
+            "opponentCode": "GET",
+            "code": "ATH",
+            "rank": 11,
+            "opponentRank": 14,
             "home": true,
             "competition": "Primera División",
             "intl": false,
@@ -1810,51 +1849,12 @@
             "ownRank": null,
             "oppFactor": null,
             "mismatch": false,
-            "pWin": 0.267,
-            "pLose": 0.441,
-            "oddsBooks": 21,
-            "marketFactor": 0.981,
+            "pWin": 0.587,
+            "pLose": 0.169,
+            "oddsBooks": 20,
+            "marketFactor": 1.039,
             "lockedAt": null,
-            "expected": 51.98,
-            "blocked": null
-          },
-          {
-            "id": "ComposeTeamBenchCard:8afd15b3-b264-4a4f-85b4-d4c5e05a954c",
-            "player": "Isco",
-            "slug": "francisco-roman-alarcon-suarez",
-            "position": "MD",
-            "average": 54,
-            "bonus": 1.05,
-            "starterPct": null,
-            "startRate": 0.7,
-            "oddsKnown": false,
-            "onGameSheet": false,
-            "reliability": null,
-            "formL5": 68,
-            "picture": "https://assets.sorare.com/cardsamplepicture/7946c5b9-f5fd-4576-8864-c3b8d4016a3a/picture/tinified-db6a298d976a9a4e8e9ac94a3103977a.png",
-            "rarity": "common",
-            "gameId": "Game:f3d96d6e-fa20-4d6d-92b6-af252cc311cb",
-            "kickoff": "2026-10-21T19:00:00Z",
-            "team": "Real Betis",
-            "teamSlug": "real-betis-sevilla",
-            "opponent": "Feyenoord Rotterdam",
-            "opponentCode": "FEY",
-            "code": "BET",
-            "rank": 4,
-            "opponentRank": 1,
-            "home": true,
-            "competition": "UEFA Champions League",
-            "intl": false,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "mismatch": false,
-            "pWin": 0.614,
-            "pLose": 0.185,
-            "oddsBooks": 22,
-            "marketFactor": 1.044,
-            "lockedAt": null,
-            "expected": 51.48,
+            "expected": 52.6,
             "blocked": null
           }
         ]
@@ -1870,7 +1870,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 55,
           "picture": "https://assets.sorare.com/cardsamplepicture/57436ab3-40cd-44f1-aa75-52fceda9a50a/picture/tinified-227bf23d25d50928b9427c3151ed7ee0.png",
@@ -1909,7 +1909,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 59,
           "picture": "https://assets.sorare.com/cardsamplepicture/027c036a-22f1-4c0c-a2ec-7082d7a440ca/picture/tinified-8cf797d67269905d861c0327c2f59db2.png",
@@ -1939,6 +1939,45 @@
           "blocked": null
         },
         {
+          "id": "ComposeTeamBenchCard:eaf70e48-07e6-49f8-a030-c5efa32f7a3b",
+          "player": "Yuri",
+          "slug": "yuri-berchiche-izeta",
+          "position": "DF",
+          "average": 63,
+          "bonus": 1.1,
+          "starterPct": null,
+          "startRate": 0.7,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 70,
+          "picture": "https://assets.sorare.com/cardsamplepicture/20cb1e5b-7bf9-488c-ab8b-4836a80bdb68/picture/tinified-f8d0e6bfe4dddcc1ef46abb1f19042e6.png",
+          "rarity": "common",
+          "gameId": "Game:517bf270-85ae-489c-b24f-498ac79c8531",
+          "kickoff": "2026-10-25T13:00:00Z",
+          "team": "Athletic Club",
+          "teamSlug": "athletic-club-bilbao",
+          "opponent": "Getafe CF",
+          "opponentCode": "GET",
+          "code": "ATH",
+          "rank": 11,
+          "opponentRank": 14,
+          "home": true,
+          "competition": "Primera División",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.587,
+          "pLose": 0.169,
+          "oddsBooks": 20,
+          "marketFactor": 1.051,
+          "lockedAt": null,
+          "expected": 53.8,
+          "blocked": null
+        },
+        {
           "id": "ComposeTeamBenchCard:0d1dfb77-c79c-4350-b1cd-03d46fd2ce27",
           "player": "Victor Lindelöf",
           "slug": "victor-nilsson-lindelof",
@@ -1948,7 +1987,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 51,
           "picture": "https://assets.sorare.com/cardsamplepicture/17e6c169-6407-43c4-af91-f50fd1f2a79e/picture/tinified-c12f4473ee6fb7babdd59fb754d02b7a.png",
@@ -1978,29 +2017,29 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:47c3e7d2-375f-48b8-9d52-fb7596f9c06c",
-          "player": "I.Romero",
-          "slug": "ivan-romero-de-avila-araque",
+          "id": "ComposeTeamBenchCard:9963c1ce-17ba-4050-ba15-d53690a2e784",
+          "player": "Williams",
+          "slug": "inaki-williams-arthuer",
           "position": "FW",
-          "average": 48,
-          "bonus": 1.05,
+          "average": 46,
+          "bonus": 1.25,
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": true,
+          "onGameSheet": false,
           "reliability": null,
-          "formL5": 60,
-          "picture": "https://assets.sorare.com/cardsamplepicture/348dbf5e-7660-4de2-aa70-f44e083fd7c6/picture/tinified-0ff8b72b06b5e4151bf4b85699bc89b3.png",
+          "formL5": 44,
+          "picture": "https://assets.sorare.com/cardsamplepicture/f7cea8e7-64f9-4dbc-89e6-fbceeae7a42c/picture/tinified-ab2295182caf1277a13b3746d294b53f.png",
           "rarity": "common",
-          "gameId": "Game:3ce0556b-0db7-4306-9296-cb18cf7a9f32",
-          "kickoff": "2026-10-21T18:00:00Z",
-          "team": "Levante UD",
-          "teamSlug": "levante-valencia",
-          "opponent": "Athletic Club",
-          "opponentCode": "ATH",
-          "code": "LEV",
-          "rank": 17,
-          "opponentRank": 11,
+          "gameId": "Game:517bf270-85ae-489c-b24f-498ac79c8531",
+          "kickoff": "2026-10-25T13:00:00Z",
+          "team": "Athletic Club",
+          "teamSlug": "athletic-club-bilbao",
+          "opponent": "Getafe CF",
+          "opponentCode": "GET",
+          "code": "ATH",
+          "rank": 11,
+          "opponentRank": 14,
           "home": true,
           "competition": "Primera División",
           "intl": false,
@@ -2008,83 +2047,19 @@
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.267,
-          "pLose": 0.441,
-          "oddsBooks": 21,
-          "marketFactor": 0.981,
+          "pWin": 0.587,
+          "pLose": 0.169,
+          "oddsBooks": 20,
+          "marketFactor": 1.039,
           "lockedAt": null,
-          "expected": 51.98,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:8afd15b3-b264-4a4f-85b4-d4c5e05a954c",
-          "player": "Isco",
-          "slug": "francisco-roman-alarcon-suarez",
-          "position": "MD",
-          "average": 54,
-          "bonus": 1.05,
-          "starterPct": null,
-          "startRate": 0.7,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 68,
-          "picture": "https://assets.sorare.com/cardsamplepicture/7946c5b9-f5fd-4576-8864-c3b8d4016a3a/picture/tinified-db6a298d976a9a4e8e9ac94a3103977a.png",
-          "rarity": "common",
-          "gameId": "Game:f3d96d6e-fa20-4d6d-92b6-af252cc311cb",
-          "kickoff": "2026-10-21T19:00:00Z",
-          "team": "Real Betis",
-          "teamSlug": "real-betis-sevilla",
-          "opponent": "Feyenoord Rotterdam",
-          "opponentCode": "FEY",
-          "code": "BET",
-          "rank": 4,
-          "opponentRank": 1,
-          "home": true,
-          "competition": "UEFA Champions League",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.614,
-          "pLose": 0.185,
-          "oddsBooks": 22,
-          "marketFactor": 1.044,
-          "lockedAt": null,
-          "expected": 51.48,
+          "expected": 52.6,
           "blocked": null
         }
       ],
-      "projected": 277.7
+      "projected": 279.9
     }
   ],
   "fixtures": [
-    {
-      "kickoff": "2026-10-21T18:00:00Z",
-      "competition": "Primera División",
-      "team": "Levante UD",
-      "code": "LEV",
-      "rank": 17,
-      "opponent": "Athletic Club",
-      "opponentCode": "ATH",
-      "opponentRank": 11,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.267,
-      "pLose": 0.441,
-      "oppFactor": null,
-      "home": true,
-      "players": [
-        "I.Romero"
-      ],
-      "points": 52,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
     {
       "kickoff": "2026-10-21T19:00:00Z",
       "competition": "UEFA Champions League",
@@ -2130,10 +2105,9 @@
       "oppFactor": null,
       "home": true,
       "players": [
-        "Álvaro Valles",
-        "Isco"
+        "Álvaro Valles"
       ],
-      "points": 115.1,
+      "points": 63.6,
       "bestStarter": null,
       "surfaces": [
         "team set (Loadshift)"
@@ -2213,6 +2187,32 @@
       "bestStarter": null,
       "surfaces": [
         "my set"
+      ]
+    },
+    {
+      "kickoff": "2026-10-25T13:00:00Z",
+      "competition": "Primera División",
+      "team": "Athletic Club",
+      "code": "ATH",
+      "rank": 11,
+      "opponent": "Getafe CF",
+      "opponentCode": "GET",
+      "opponentRank": 14,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.587,
+      "pLose": 0.169,
+      "oppFactor": null,
+      "home": true,
+      "players": [
+        "Yuri",
+        "Williams"
+      ],
+      "points": 106.4,
+      "bestStarter": null,
+      "surfaces": [
+        "team set (Loadshift)"
       ]
     }
   ]
