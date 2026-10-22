@@ -1174,10 +1174,17 @@ export async function pass({ dryRun = false, options = {} } = {}) {
 
   if (options.packs !== false) {
     try {
+      // The HyperGlitch set ends 27 Oct 16:00 UTC, and its common essence
+      // chest belongs to that set. Until then, spend whatever comes in rather
+      // than one pack a day: essence left at the end is likely worthless, and
+      // packs are the only route to the gem collections.
+      const setEnds = Date.parse(process.env.AUTOPILOT_SET_ENDS ?? '2026-10-27T16:00:00Z');
+      const spendAll = Date.now() < setEnds;
       report.packs = await openPacksUntilThreeStar({
         dryRun,
         essenceFloor: options.essenceFloor,
-        maxPacks: options.maxPacks,
+        maxPacks: spendAll ? 10 : options.maxPacks,
+        untilEmpty: spendAll,
       });
     } catch (err) {
       report.packs = { stopped: err.message, opened: [] };
