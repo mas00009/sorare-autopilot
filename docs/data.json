@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T20:39:26.248Z",
+  "generatedAt": "2026-10-22T21:09:53.340Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-22T16:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792697896498,
-    "reason": "last run 61m ago, next due in 119m"
+    "reason": "last run 92m ago, next due in 88m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -24,13 +24,13 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:72a3cf10-c60a-4e1a-a4e1-2238b55f4e12",
       "state": "READY",
-      "score": 61.91,
+      "score": 66.44,
       "finished": false,
       "cleared": false,
       "players": [
@@ -75,8 +75,8 @@
           "slug": "maximilian-eggestein",
           "position": "Midfielder",
           "captain": true,
-          "score": 61.91,
-          "status": "REVIEWING",
+          "score": 66.44,
+          "status": "FINAL",
           "kickoff": "2026-10-25T16:30:00Z"
         }
       ],
@@ -86,7 +86,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -145,78 +145,16 @@
       "scored": 0
     },
     {
-      "surface": "team set (Loadshift)",
-      "level": 2,
-      "target": 1060,
-      "stepState": "LIVE",
-      "collaborative": true,
-      "squadLineups": 7,
-      "squadScore": 1020.7392,
-      "lineupId": "Tasks::TaskLineup:461079bd-28be-4371-8bec-0ebe9c204da2",
-      "state": "READY",
-      "score": 329.58,
-      "finished": false,
-      "cleared": false,
-      "players": [
-        {
-          "name": "Bart Verbruggen",
-          "slug": "bart-verbruggen",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 78.38,
-          "status": "FINAL",
-          "kickoff": "2026-10-25T14:00:00Z"
-        },
-        {
-          "name": "Olivier Boscagli",
-          "slug": "olivier-boscagli",
-          "position": "Defender",
-          "captain": true,
-          "score": 126.75,
-          "status": "FINAL",
-          "kickoff": "2026-10-25T14:00:00Z"
-        },
-        {
-          "name": "Maximilian Eggestein",
-          "slug": "maximilian-eggestein",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 41.41,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-25T16:30:00Z"
-        },
-        {
-          "name": "Ferran Jutglà",
-          "slug": "ferran-jutlga-blanc",
-          "position": "Forward",
-          "captain": false,
-          "score": 43.05,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-25T15:15:00Z"
-        },
-        {
-          "name": "Adam Wharton",
-          "slug": "adam-wharton",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 40,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-25T14:00:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:ecd3473c-1420-4acf-a292-f0bc640a7f19",
       "state": "CANCELLED",
-      "score": 354.41,
+      "score": 357.91,
       "finished": true,
       "cleared": false,
       "players": [
@@ -243,8 +181,8 @@
           "slug": "maximilian-eggestein",
           "position": "Midfielder",
           "captain": false,
-          "score": 42.23,
-          "status": "REVIEWING",
+          "score": 45.32,
+          "status": "FINAL",
           "kickoff": "2026-10-25T16:30:00Z"
         },
         {
@@ -261,8 +199,70 @@
           "slug": "adam-wharton",
           "position": "Midfielder",
           "captain": false,
-          "score": 40.79,
-          "status": "REVIEWING",
+          "score": 41.2,
+          "status": "FINAL",
+          "kickoff": "2026-10-25T14:00:00Z"
+        }
+      ],
+      "scored": 5
+    },
+    {
+      "surface": "team set (Loadshift)",
+      "level": 2,
+      "target": 1060,
+      "stepState": "FAILED",
+      "collaborative": true,
+      "squadLineups": 7,
+      "squadScore": 1026.2552,
+      "lineupId": "Tasks::TaskLineup:461079bd-28be-4371-8bec-0ebe9c204da2",
+      "state": "FAILED",
+      "score": 334.17,
+      "finished": true,
+      "cleared": false,
+      "players": [
+        {
+          "name": "Bart Verbruggen",
+          "slug": "bart-verbruggen",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 78.38,
+          "status": "FINAL",
+          "kickoff": "2026-10-25T14:00:00Z"
+        },
+        {
+          "name": "Olivier Boscagli",
+          "slug": "olivier-boscagli",
+          "position": "Defender",
+          "captain": true,
+          "score": 126.75,
+          "status": "FINAL",
+          "kickoff": "2026-10-25T14:00:00Z"
+        },
+        {
+          "name": "Maximilian Eggestein",
+          "slug": "maximilian-eggestein",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 44.44,
+          "status": "FINAL",
+          "kickoff": "2026-10-25T16:30:00Z"
+        },
+        {
+          "name": "Ferran Jutglà",
+          "slug": "ferran-jutlga-blanc",
+          "position": "Forward",
+          "captain": false,
+          "score": 44.21,
+          "status": "FINAL",
+          "kickoff": "2026-10-25T15:15:00Z"
+        },
+        {
+          "name": "Adam Wharton",
+          "slug": "adam-wharton",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 40.4,
+          "status": "FINAL",
           "kickoff": "2026-10-25T14:00:00Z"
         }
       ],
@@ -833,7 +833,7 @@
     "ladder": [
       {
         "level": 2,
-        "state": "LIVE",
+        "state": "LINEUP_SET",
         "target": 360,
         "gems": 10,
         "usd": 0,
@@ -945,7 +945,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 93 scored so far, 1 of 5 played. On course for about 267; needs 360 (93 short).",
+      "status": "Locked and playing. 100 scored so far, 1 of 5 played. On course for about 274; needs 360 (86 short).",
       "tone": "warn",
       "lockAt": "2026-10-22T19:00:00Z",
       "isSquad": false,
@@ -1068,8 +1068,8 @@
             "kickoff": "2026-10-24T12:00:00Z"
           },
           {
-            "actual": 61.91,
-            "scoreStatus": "REVIEWING",
+            "actual": 66.44,
+            "scoreStatus": "FINAL",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Maximilian Eggestein",
             "player": "Maximilian Eggestein",
@@ -1098,9 +1098,9 @@
           }
         ],
         "projected": 259.89,
-        "scoredSoFar": 92.86,
+        "scoredSoFar": 99.66,
         "played": 1,
-        "expectedFinal": 266.91
+        "expectedFinal": 273.7
       },
       "poolStrength": {
         "strong": 5,
@@ -1128,7 +1128,7 @@
         },
         {
           "level": 2,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 360
         },
         {
@@ -1154,7 +1154,7 @@
           "currency": "COMMON_GEM"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 360,
       "current": [
         {
@@ -1597,163 +1597,11 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 393 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 1021 so far.",
-      "tone": "good",
-      "lockAt": "2026-10-22T16:45:00Z",
+      "status": "Missed the target. A fresh team goes in when the step reopens.",
+      "tone": "bad",
+      "lockAt": null,
       "isSquad": true,
-      "entered": {
-        "five": [
-          {
-            "actual": 78.38,
-            "scoreStatus": "FINAL",
-            "teamSlug": "brighton-hove-albion-brighton-east-sussex",
-            "name": "Bart Verbruggen",
-            "player": "Bart Verbruggen",
-            "slug": "bart-verbruggen",
-            "pos": "GK",
-            "position": "GK",
-            "pic": "https://assets.sorare.com/cardsamplepicture/55041af4-14cf-411b-8299-c09c5593a95b/picture/tinified-af6e881c6db908f044561785d1f233de.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/55041af4-14cf-411b-8299-c09c5593a95b/picture/tinified-af6e881c6db908f044561785d1f233de.png",
-            "captain": false,
-            "exp": 65.04,
-            "expected": 65.04,
-            "opp": "FK Jablonec",
-            "opponent": "FK Jablonec",
-            "home": false,
-            "average": 56,
-            "formL5": 58,
-            "intl": false,
-            "pWin": 0.754,
-            "pLose": 0.087,
-            "marketFactor": 1.13,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-22T16:45:00Z"
-          },
-          {
-            "actual": 126.75,
-            "scoreStatus": "FINAL",
-            "teamSlug": "brighton-hove-albion-brighton-east-sussex",
-            "name": "Olivier Boscagli",
-            "player": "Olivier Boscagli",
-            "slug": "olivier-boscagli",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/ed8a4e34-52d4-4646-bf85-5230855660ac/picture/tinified-c3677acaab0cf9e271b474cb06e04364.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/ed8a4e34-52d4-4646-bf85-5230855660ac/picture/tinified-c3677acaab0cf9e271b474cb06e04364.png",
-            "captain": true,
-            "exp": 69.29,
-            "expected": 69.29,
-            "opp": "FK Jablonec",
-            "opponent": "FK Jablonec",
-            "home": false,
-            "average": 64,
-            "formL5": 63,
-            "intl": false,
-            "pWin": 0.754,
-            "pLose": 0.087,
-            "marketFactor": 1.08,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-22T16:45:00Z"
-          },
-          {
-            "actual": 41.41,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "freiburg-freiburg-im-breisgau",
-            "name": "Maximilian Eggestein",
-            "player": "Maximilian Eggestein",
-            "slug": "maximilian-eggestein",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/1d4b5f69-5f34-46ea-ba50-4aa46a5ec084/picture/tinified-3b5a79de2735599840c29deed91f5cfb.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/1d4b5f69-5f34-46ea-ba50-4aa46a5ec084/picture/tinified-3b5a79de2735599840c29deed91f5cfb.png",
-            "captain": false,
-            "exp": 60.18,
-            "expected": 60.18,
-            "opp": "AS Monaco",
-            "opponent": "AS Monaco",
-            "home": false,
-            "average": 56,
-            "formL5": 65,
-            "intl": false,
-            "pWin": 0.307,
-            "pLose": 0.428,
-            "marketFactor": 0.985,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-22T19:00:00Z"
-          },
-          {
-            "actual": 43.05,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "celta-de-vigo-vigo",
-            "name": "Ferran Jutglà",
-            "player": "Ferran Jutglà",
-            "slug": "ferran-jutlga-blanc",
-            "pos": "FW",
-            "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/0ff3b185-00ff-46bf-a60d-0c6b556eda61/picture/tinified-af19ddc2f2ca039c444da5d717329ce4.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/0ff3b185-00ff-46bf-a60d-0c6b556eda61/picture/tinified-af19ddc2f2ca039c444da5d717329ce4.png",
-            "captain": false,
-            "exp": 41.13,
-            "expected": 41.13,
-            "opp": "Celtic FC",
-            "opponent": "Celtic FC",
-            "home": false,
-            "average": 45,
-            "formL5": 45,
-            "intl": false,
-            "pWin": 0.378,
-            "pLose": 0.351,
-            "marketFactor": 1.001,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-22T19:00:00Z"
-          },
-          {
-            "actual": 40,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "crystal-palace-london",
-            "name": "Adam Wharton",
-            "player": "Adam Wharton",
-            "slug": "adam-wharton",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/c8ae800b-3d4c-4ddd-a1f0-e3cc6c27bc25/picture/tinified-5be2edc295b989c521e458d0a17c112f.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/c8ae800b-3d4c-4ddd-a1f0-e3cc6c27bc25/picture/tinified-5be2edc295b989c521e458d0a17c112f.png",
-            "captain": false,
-            "exp": 60.09,
-            "expected": 60.09,
-            "opp": "Beşiktaş Jimnastik Kulübü",
-            "opponent": "Beşiktaş Jimnastik Kulübü",
-            "home": false,
-            "average": 55,
-            "formL5": 64,
-            "intl": false,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-22T19:00:00Z"
-          }
-        ],
-        "projected": 330.03,
-        "scoredSoFar": 392.96,
-        "played": 5,
-        "expectedFinal": 392.96
-      },
+      "entered": null,
       "poolStrength": {
         "strong": 0,
         "needed": 5
@@ -1762,7 +1610,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 1020.7392
+        "scoreSoFar": 1026.2552
       },
       "level": 2,
       "lives": null,
@@ -1781,7 +1629,7 @@
         },
         {
           "level": 2,
-          "state": "LIVE",
+          "state": "FAILED",
           "target": 1060
         },
         {
@@ -1803,7 +1651,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "FAILED",
       "target": 1060,
       "current": [
         {
