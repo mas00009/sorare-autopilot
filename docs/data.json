@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T20:08:58.693Z",
+  "generatedAt": "2026-10-22T20:39:26.248Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-22T16:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792697896498,
-    "reason": "last run 31m ago, next due in 149m"
+    "reason": "last run 61m ago, next due in 119m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:72a3cf10-c60a-4e1a-a4e1-2238b55f4e12",
       "state": "READY",
-      "score": 53,
+      "score": 61.91,
       "finished": false,
       "cleared": false,
       "players": [
@@ -75,7 +75,7 @@
           "slug": "maximilian-eggestein",
           "position": "Midfielder",
           "captain": true,
-          "score": 53,
+          "score": 61.91,
           "status": "REVIEWING",
           "kickoff": "2026-10-25T16:30:00Z"
         }
@@ -151,10 +151,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 981.7742,
+      "squadScore": 1020.7392,
       "lineupId": "Tasks::TaskLineup:461079bd-28be-4371-8bec-0ebe9c204da2",
       "state": "READY",
-      "score": 327.64,
+      "score": 329.58,
       "finished": false,
       "cleared": false,
       "players": [
@@ -181,7 +181,7 @@
           "slug": "maximilian-eggestein",
           "position": "Midfielder",
           "captain": false,
-          "score": 35.45,
+          "score": 41.41,
           "status": "REVIEWING",
           "kickoff": "2026-10-25T16:30:00Z"
         },
@@ -190,7 +190,7 @@
           "slug": "ferran-jutlga-blanc",
           "position": "Forward",
           "captain": false,
-          "score": 45.15,
+          "score": 43.05,
           "status": "REVIEWING",
           "kickoff": "2026-10-25T15:15:00Z"
         },
@@ -199,7 +199,7 @@
           "slug": "adam-wharton",
           "position": "Midfielder",
           "captain": false,
-          "score": 41.92,
+          "score": 40,
           "status": "REVIEWING",
           "kickoff": "2026-10-25T14:00:00Z"
         }
@@ -216,7 +216,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:ecd3473c-1420-4acf-a292-f0bc640a7f19",
       "state": "CANCELLED",
-      "score": 350.29,
+      "score": 354.41,
       "finished": true,
       "cleared": false,
       "players": [
@@ -243,7 +243,7 @@
           "slug": "maximilian-eggestein",
           "position": "Midfielder",
           "captain": false,
-          "score": 36.15,
+          "score": 42.23,
           "status": "REVIEWING",
           "kickoff": "2026-10-25T16:30:00Z"
         },
@@ -261,7 +261,7 @@
           "slug": "adam-wharton",
           "position": "Midfielder",
           "captain": false,
-          "score": 42.75,
+          "score": 40.79,
           "status": "REVIEWING",
           "kickoff": "2026-10-25T14:00:00Z"
         }
@@ -945,7 +945,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 80 scored so far, 1 of 5 played. On course for about 254; needs 360 (106 short).",
+      "status": "Locked and playing. 93 scored so far, 1 of 5 played. On course for about 267; needs 360 (93 short).",
       "tone": "warn",
       "lockAt": "2026-10-22T19:00:00Z",
       "isSquad": false,
@@ -1068,7 +1068,7 @@
             "kickoff": "2026-10-24T12:00:00Z"
           },
           {
-            "actual": 53,
+            "actual": 61.91,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Maximilian Eggestein",
@@ -1098,9 +1098,9 @@
           }
         ],
         "projected": 259.89,
-        "scoredSoFar": 79.5,
+        "scoredSoFar": 92.86,
         "played": 1,
-        "expectedFinal": 253.54
+        "expectedFinal": 266.91
       },
       "poolStrength": {
         "strong": 5,
@@ -1597,7 +1597,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 391 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 982 so far.",
+      "status": "Locked and playing. 393 scored so far, 5 of 5 played. The squad's top three lineups together need 1060; the squad has 1021 so far.",
       "tone": "good",
       "lockAt": "2026-10-22T16:45:00Z",
       "isSquad": true,
@@ -1662,7 +1662,7 @@
             "kickoff": "2026-10-22T16:45:00Z"
           },
           {
-            "actual": 35.45,
+            "actual": 41.41,
             "scoreStatus": "REVIEWING",
             "teamSlug": "freiburg-freiburg-im-breisgau",
             "name": "Maximilian Eggestein",
@@ -1691,7 +1691,7 @@
             "kickoff": "2026-10-22T19:00:00Z"
           },
           {
-            "actual": 45.15,
+            "actual": 43.05,
             "scoreStatus": "REVIEWING",
             "teamSlug": "celta-de-vigo-vigo",
             "name": "Ferran Jutglà",
@@ -1720,7 +1720,7 @@
             "kickoff": "2026-10-22T19:00:00Z"
           },
           {
-            "actual": 41.92,
+            "actual": 40,
             "scoreStatus": "REVIEWING",
             "teamSlug": "crystal-palace-london",
             "name": "Adam Wharton",
@@ -1750,9 +1750,9 @@
           }
         ],
         "projected": 330.03,
-        "scoredSoFar": 391.02,
+        "scoredSoFar": 392.96,
         "played": 5,
-        "expectedFinal": 391.02
+        "expectedFinal": 392.96
       },
       "poolStrength": {
         "strong": 0,
@@ -1762,7 +1762,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 981.7742
+        "scoreSoFar": 1020.7392
       },
       "level": 2,
       "lives": null,
