@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T15:50:47.066Z",
+  "generatedAt": "2026-10-22T16:03:30.000Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-22T16:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1792684211815,
-    "reason": "last run 1m ago, next due in 4m (lock in 54m)"
+    "lastRunAt": 1792684973875,
+    "reason": "last run 1m ago, next due in 4m (lock in 42m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -151,10 +151,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 7,
-      "squadScore": 200.9,
+      "squadScore": 390.6,
       "lineupId": "Tasks::TaskLineup:461079bd-28be-4371-8bec-0ebe9c204da2",
       "state": "READY",
-      "score": 0,
+      "score": 88.2,
       "finished": false,
       "cleared": false,
       "players": [
@@ -163,8 +163,8 @@
           "slug": "bart-verbruggen",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 35.35,
+          "status": "REVIEWING",
           "kickoff": "2026-10-22T16:45:00Z"
         },
         {
@@ -172,8 +172,8 @@
           "slug": "olivier-boscagli",
           "position": "Defender",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 52.85,
+          "status": "REVIEWING",
           "kickoff": "2026-10-22T16:45:00Z"
         },
         {
@@ -204,7 +204,7 @@
           "kickoff": "2026-10-22T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 2
     },
     {
       "surface": "my set",
@@ -216,7 +216,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:ecd3473c-1420-4acf-a292-f0bc640a7f19",
       "state": "CANCELLED",
-      "score": 63.03,
+      "score": 152.63,
       "finished": true,
       "cleared": false,
       "players": [
@@ -225,8 +225,8 @@
           "slug": "bart-verbruggen",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.05,
+          "status": "REVIEWING",
           "kickoff": "2026-10-22T16:45:00Z"
         },
         {
@@ -234,8 +234,8 @@
           "slug": "olivier-boscagli",
           "position": "Defender",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 53.55,
+          "status": "REVIEWING",
           "kickoff": "2026-10-22T16:45:00Z"
         },
         {
@@ -266,7 +266,7 @@
           "kickoff": "2026-10-22T19:00:00Z"
         }
       ],
-      "scored": 1
+      "scored": 3
     },
     {
       "surface": "my set",
@@ -1209,7 +1209,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 63,
             "picture": "https://assets.sorare.com/cardsamplepicture/ed8a4e34-52d4-4646-bf85-5230855660ac/picture/tinified-c3677acaab0cf9e271b474cb06e04364.png",
@@ -1248,7 +1248,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 58,
             "picture": "https://assets.sorare.com/cardsamplepicture/55041af4-14cf-411b-8299-c09c5593a95b/picture/tinified-af6e881c6db908f044561785d1f233de.png",
@@ -1407,7 +1407,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 63,
           "picture": "https://assets.sorare.com/cardsamplepicture/ed8a4e34-52d4-4646-bf85-5230855660ac/picture/tinified-c3677acaab0cf9e271b474cb06e04364.png",
@@ -1446,7 +1446,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 58,
           "picture": "https://assets.sorare.com/cardsamplepicture/55041af4-14cf-411b-8299-c09c5593a95b/picture/tinified-af6e881c6db908f044561785d1f233de.png",
@@ -1597,15 +1597,15 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Team entered, locks Fri 03:45 am Sydney. The squad's top three lineups together need 1060; this one is expected to add about 330.",
+      "status": "Locked and playing. 115 scored so far, 2 of 5 played. The squad's top three lineups together need 1060; the squad has 391 so far.",
       "tone": "good",
       "lockAt": "2026-10-22T16:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 35.35,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "brighton-hove-albion-brighton-east-sussex",
             "name": "Bart Verbruggen",
             "player": "Bart Verbruggen",
@@ -1633,8 +1633,8 @@
             "kickoff": "2026-10-22T16:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 52.85,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "brighton-hove-albion-brighton-east-sussex",
             "name": "Olivier Boscagli",
             "player": "Olivier Boscagli",
@@ -1750,9 +1750,9 @@
           }
         ],
         "projected": 330.03,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 330.38
+        "scoredSoFar": 114.63,
+        "played": 2,
+        "expectedFinal": 276.02
       },
       "poolStrength": {
         "strong": 1,
@@ -1762,7 +1762,7 @@
       "squad": {
         "lineupsIn": 7,
         "needed": 3,
-        "scoreSoFar": 200.9
+        "scoreSoFar": 390.6
       },
       "level": 2,
       "lives": null,
@@ -1897,7 +1897,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 53,
             "picture": "https://assets.sorare.com/cardsamplepicture/aec76e6b-9e0a-47c5-bf75-a4c0d017420f/picture/tinified-fbe8e9850976a7f65e83eeded5d7ffb4.png",
@@ -1975,7 +1975,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 48,
             "picture": "https://assets.sorare.com/cardsamplepicture/7d5227b5-40e6-44db-9f3c-0ce07635501a/picture/tinified-25b2cbef4b8b98afcaf54fdf97175ace.png",
@@ -2095,7 +2095,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 53,
           "picture": "https://assets.sorare.com/cardsamplepicture/aec76e6b-9e0a-47c5-bf75-a4c0d017420f/picture/tinified-fbe8e9850976a7f65e83eeded5d7ffb4.png",
@@ -2173,7 +2173,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 48,
           "picture": "https://assets.sorare.com/cardsamplepicture/7d5227b5-40e6-44db-9f3c-0ce07635501a/picture/tinified-25b2cbef4b8b98afcaf54fdf97175ace.png",
