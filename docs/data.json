@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T10:09:13.061Z",
+  "generatedAt": "2026-10-22T10:39:43.730Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-22T16:45:00Z",
     "cadenceMin": 60,
     "lastRunAt": 1792663734319,
-    "reason": "last run 0m ago, next due in 60m (lock in 396m)"
+    "reason": "last run 31m ago, next due in 29m (lock in 365m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -912,9 +912,9 @@
       {
         "title": "Collect Players",
         "gems": 30,
-        "progress": 381,
+        "progress": 385,
         "target": 1115,
-        "remaining": 734,
+        "remaining": 730,
         "competition": null,
         "group": null,
         "teams": []
@@ -1103,7 +1103,7 @@
         "expectedFinal": 264.31
       },
       "poolStrength": {
-        "strong": 5,
+        "strong": 6,
         "needed": 5
       },
       "collaborative": false,
@@ -1593,7 +1593,7 @@
           "blocked": null
         }
       ],
-      "projected": 314.4
+      "projected": 315.8
     },
     {
       "surface": "team set (Loadshift)",
@@ -1755,7 +1755,7 @@
         "expectedFinal": 330.38
       },
       "poolStrength": {
-        "strong": 0,
+        "strong": 1,
         "needed": 5
       },
       "collaborative": true,
@@ -1839,15 +1839,54 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 263.72,
+        "projected": 283.47,
         "lock": "2026-10-22T16:45:00Z",
-        "shortfall": 796.3,
+        "shortfall": 776.5,
         "tradedPointsForTime": 0,
-        "captain": "jon-martin-vicente",
-        "captainPoints": 26.3,
+        "captain": "granit-xhaka",
+        "captainPoints": 29.49,
         "withinReach": false,
         "enteredProjected": 330.03,
         "five": [
+          {
+            "id": "ComposeTeamBenchCard:78a84539-8e2b-4dc3-b156-0223149caa96",
+            "player": "Granit Xhaka",
+            "slug": "granit-xhaka",
+            "position": "MD",
+            "average": 61,
+            "bonus": 1.01,
+            "starterPct": null,
+            "startRate": 0.9,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 61,
+            "picture": "https://assets.sorare.com/cardsamplepicture/5a44465a-bbba-4abf-b549-5f6c7a285458/picture/tinified-5f9a129886375fa837b5bfe03c049bcd.png",
+            "rarity": "common",
+            "gameId": "Game:3d6882e0-f5ac-4acc-b279-2efbe9b84bc8",
+            "kickoff": "2026-10-22T16:45:00Z",
+            "team": "Sunderland AFC",
+            "teamSlug": "sunderland-sunderland",
+            "opponent": "KKS Lech Poznań",
+            "opponentCode": "LPO",
+            "code": "SUN",
+            "rank": 20,
+            "opponentRank": null,
+            "home": false,
+            "competition": "UEFA Europa League",
+            "intl": false,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "mismatch": false,
+            "pWin": 0.549,
+            "pLose": 0.209,
+            "oddsBooks": 20,
+            "marketFactor": 1.034,
+            "lockedAt": null,
+            "expected": 59.57,
+            "blocked": null
+          },
           {
             "id": "ComposeTeamBenchCard:1b641524-fbe3-4d97-9673-f32ee6b3ea2e",
             "player": "David Soria",
@@ -1966,45 +2005,6 @@
             "blocked": null
           },
           {
-            "id": "ComposeTeamBenchCard:bcabbdc7-0fe0-441a-b1fd-a56851c1146f",
-            "player": "Yoel Lago",
-            "slug": "yoel-lago-amil",
-            "position": "DF",
-            "average": 50,
-            "bonus": 1.05,
-            "starterPct": null,
-            "startRate": 0.8,
-            "oddsKnown": false,
-            "onGameSheet": false,
-            "reliability": null,
-            "formL5": 48,
-            "picture": "https://assets.sorare.com/cardsamplepicture/35bd9352-05de-42b7-ad7c-a601ef4b2835/picture/tinified-60b2814076351ce19aa073695a2750ce.png",
-            "rarity": "common",
-            "gameId": "Game:0f86a897-42a1-40b6-a126-479d96150ae2",
-            "kickoff": "2026-10-22T19:00:00Z",
-            "team": "RC Celta",
-            "teamSlug": "celta-de-vigo-vigo",
-            "opponent": "Celtic FC",
-            "opponentCode": "CEL",
-            "code": "CEL",
-            "rank": 8,
-            "opponentRank": 1,
-            "home": false,
-            "competition": "UEFA Europa League",
-            "intl": false,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "mismatch": false,
-            "pWin": 0.378,
-            "pLose": 0.351,
-            "oddsBooks": 20,
-            "marketFactor": 1.001,
-            "lockedAt": null,
-            "expected": 43.01,
-            "blocked": null
-          },
-          {
             "id": "ComposeTeamBenchCard:00494635-3864-430c-b7aa-409d9a7b2a84",
             "player": "Oyarzabal",
             "slug": "mikel-oyarzabal-ugarte",
@@ -2046,6 +2046,45 @@
         ]
       },
       "candidates": [
+        {
+          "id": "ComposeTeamBenchCard:78a84539-8e2b-4dc3-b156-0223149caa96",
+          "player": "Granit Xhaka",
+          "slug": "granit-xhaka",
+          "position": "MD",
+          "average": 61,
+          "bonus": 1.01,
+          "starterPct": null,
+          "startRate": 0.9,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 61,
+          "picture": "https://assets.sorare.com/cardsamplepicture/5a44465a-bbba-4abf-b549-5f6c7a285458/picture/tinified-5f9a129886375fa837b5bfe03c049bcd.png",
+          "rarity": "common",
+          "gameId": "Game:3d6882e0-f5ac-4acc-b279-2efbe9b84bc8",
+          "kickoff": "2026-10-22T16:45:00Z",
+          "team": "Sunderland AFC",
+          "teamSlug": "sunderland-sunderland",
+          "opponent": "KKS Lech Poznań",
+          "opponentCode": "LPO",
+          "code": "SUN",
+          "rank": 20,
+          "opponentRank": null,
+          "home": false,
+          "competition": "UEFA Europa League",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.549,
+          "pLose": 0.209,
+          "oddsBooks": 20,
+          "marketFactor": 1.034,
+          "lockedAt": null,
+          "expected": 59.57,
+          "blocked": null
+        },
         {
           "id": "ComposeTeamBenchCard:1b641524-fbe3-4d97-9673-f32ee6b3ea2e",
           "player": "David Soria",
@@ -2164,45 +2203,6 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:bcabbdc7-0fe0-441a-b1fd-a56851c1146f",
-          "player": "Yoel Lago",
-          "slug": "yoel-lago-amil",
-          "position": "DF",
-          "average": 50,
-          "bonus": 1.05,
-          "starterPct": null,
-          "startRate": 0.8,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 48,
-          "picture": "https://assets.sorare.com/cardsamplepicture/35bd9352-05de-42b7-ad7c-a601ef4b2835/picture/tinified-60b2814076351ce19aa073695a2750ce.png",
-          "rarity": "common",
-          "gameId": "Game:0f86a897-42a1-40b6-a126-479d96150ae2",
-          "kickoff": "2026-10-22T19:00:00Z",
-          "team": "RC Celta",
-          "teamSlug": "celta-de-vigo-vigo",
-          "opponent": "Celtic FC",
-          "opponentCode": "CEL",
-          "code": "CEL",
-          "rank": 8,
-          "opponentRank": 1,
-          "home": false,
-          "competition": "UEFA Europa League",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.378,
-          "pLose": 0.351,
-          "oddsBooks": 20,
-          "marketFactor": 1.001,
-          "lockedAt": null,
-          "expected": 43.01,
-          "blocked": null
-        },
-        {
           "id": "ComposeTeamBenchCard:00494635-3864-430c-b7aa-409d9a7b2a84",
           "player": "Oyarzabal",
           "slug": "mikel-oyarzabal-ugarte",
@@ -2242,7 +2242,7 @@
           "blocked": null
         }
       ],
-      "projected": 249.6
+      "projected": 265.4
     }
   ],
   "fixtures": [
@@ -2270,6 +2270,31 @@
       "bestStarter": null,
       "surfaces": [
         "my set"
+      ]
+    },
+    {
+      "kickoff": "2026-10-22T16:45:00Z",
+      "competition": "UEFA Europa League",
+      "team": "Sunderland AFC",
+      "code": "SUN",
+      "rank": 20,
+      "opponent": "KKS Lech Poznań",
+      "opponentCode": "LPO",
+      "opponentRank": null,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.549,
+      "pLose": 0.209,
+      "oppFactor": null,
+      "home": false,
+      "players": [
+        "Granit Xhaka"
+      ],
+      "points": 59.6,
+      "bestStarter": null,
+      "surfaces": [
+        "team set (Loadshift)"
       ]
     },
     {
@@ -2344,31 +2369,6 @@
         "Oyarzabal"
       ],
       "points": 92,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
-    {
-      "kickoff": "2026-10-22T19:00:00Z",
-      "competition": "UEFA Europa League",
-      "team": "RC Celta",
-      "code": "CEL",
-      "rank": 8,
-      "opponent": "Celtic FC",
-      "opponentCode": "CEL",
-      "opponentRank": 1,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.378,
-      "pLose": 0.351,
-      "oppFactor": null,
-      "home": false,
-      "players": [
-        "Yoel Lago"
-      ],
-      "points": 43,
       "bestStarter": null,
       "surfaces": [
         "team set (Loadshift)"
