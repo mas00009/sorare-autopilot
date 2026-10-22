@@ -503,6 +503,19 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
     }
   }
 
+  // The owner set this lineup by hand. Hands off: no re-pick, no "finishes
+  // earlier" swap. The lineup guard still replaces a player who will not
+  // play. The hold is tied to that lineup's id, so it ends by itself once the
+  // lineup resolves and the next one is the bot's again.
+  {
+    const hold = (await readState()).ownerHold?.[surface];
+    const live = liveLineupOf(step);
+    if (hold && live && live.id === hold) {
+      return { skipped: true, stepId, surface, action: 'owner-held',
+               reason: 'You set this lineup yourself - the bot leaves it alone apart from replacing a player who will not play.' };
+    }
+  }
+
   if (step?.state && !EDITABLE.includes(step.state)) {
     // PRE_MATCHDAY_LOCKED is "not open yet", not "too late" - the step opens for
     // entry closer to its matchday. Every pass re-checks, so it will be filled

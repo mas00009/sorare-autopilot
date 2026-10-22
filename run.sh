@@ -24,6 +24,9 @@ NODE="$(command -v node || echo /usr/local/bin/node)"
   printf '%s\n' "$out"
   echo "---- exit $code ----"
 
+  # Main account: the same DNP guard, for any lineup the owner set by hand.
+  "$NODE" src/cli.js guard 2>&1
+
   # Second account: the NBA wheel and the DNP guard on lineups the owner set.
   # Nothing else runs there. The guard keeps its own clock keyed to the lock.
   if [ -f "$DIR/state/tokens-second.json" ]; then
