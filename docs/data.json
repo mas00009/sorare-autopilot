@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T22:10:49.949Z",
+  "generatedAt": "2026-10-22T22:41:34.875Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-22T16:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792697896498,
-    "reason": "last run 153m ago, next due in 27m"
+    "lastRunAt": 1792708876548,
+    "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -207,68 +207,6 @@
       "scored": 5
     },
     {
-      "surface": "team set (Loadshift)",
-      "level": 2,
-      "target": 1060,
-      "stepState": "FAILED",
-      "collaborative": true,
-      "squadLineups": 7,
-      "squadScore": 1026.2552,
-      "lineupId": "Tasks::TaskLineup:461079bd-28be-4371-8bec-0ebe9c204da2",
-      "state": "FAILED",
-      "score": 334.17,
-      "finished": true,
-      "cleared": false,
-      "players": [
-        {
-          "name": "Bart Verbruggen",
-          "slug": "bart-verbruggen",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 78.38,
-          "status": "FINAL",
-          "kickoff": "2026-10-25T14:00:00Z"
-        },
-        {
-          "name": "Olivier Boscagli",
-          "slug": "olivier-boscagli",
-          "position": "Defender",
-          "captain": true,
-          "score": 126.75,
-          "status": "FINAL",
-          "kickoff": "2026-10-25T14:00:00Z"
-        },
-        {
-          "name": "Maximilian Eggestein",
-          "slug": "maximilian-eggestein",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 44.44,
-          "status": "FINAL",
-          "kickoff": "2026-10-25T16:30:00Z"
-        },
-        {
-          "name": "Ferran Jutglà",
-          "slug": "ferran-jutlga-blanc",
-          "position": "Forward",
-          "captain": false,
-          "score": 44.21,
-          "status": "FINAL",
-          "kickoff": "2026-10-25T15:15:00Z"
-        },
-        {
-          "name": "Adam Wharton",
-          "slug": "adam-wharton",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 40.4,
-          "status": "FINAL",
-          "kickoff": "2026-10-25T14:00:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
       "surface": "my set",
       "level": 1,
       "target": 300,
@@ -450,68 +388,6 @@
           "score": 66,
           "status": "FINAL",
           "kickoff": "2026-10-24T19:00:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
-      "surface": "team set (Loadshift)",
-      "level": 1,
-      "target": 980,
-      "stepState": "CLAIMED",
-      "collaborative": true,
-      "squadLineups": 5,
-      "squadScore": 1115.8814,
-      "lineupId": "Tasks::TaskLineup:caaa51c7-1435-45b1-bfda-1f1461d8068c",
-      "state": "SUCCESSFUL",
-      "score": 366.33,
-      "finished": true,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Zion Suzuki",
-          "slug": "zion-suzuki",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 41.41,
-          "status": "FINAL",
-          "kickoff": "2026-10-24T11:30:00Z"
-        },
-        {
-          "name": "Alexsandro",
-          "slug": "alexsandro-victor-de-souza-ribeiro",
-          "position": "Defender",
-          "captain": false,
-          "score": 85.78,
-          "status": "FINAL",
-          "kickoff": "2026-10-25T14:00:00Z"
-        },
-        {
-          "name": "Jude Bellingham",
-          "slug": "jude-bellingham",
-          "position": "Midfielder",
-          "captain": true,
-          "score": 83.08,
-          "status": "FINAL",
-          "kickoff": "2026-10-25T20:00:00Z"
-        },
-        {
-          "name": "Emiliano Buendía",
-          "slug": "emiliano-buendia",
-          "position": "Forward",
-          "captain": false,
-          "score": 63.04,
-          "status": "FINAL",
-          "kickoff": "2026-10-24T11:30:00Z"
-        },
-        {
-          "name": "Federico Valverde",
-          "slug": "federico-santiago-valverde-dipetta",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 93.03,
-          "status": "FINAL",
-          "kickoff": "2026-10-25T20:00:00Z"
         }
       ],
       "scored": 5
@@ -760,68 +636,6 @@
           "score": 36.62,
           "status": "FINAL",
           "kickoff": "2026-10-24T13:30:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
-      "surface": "team set (Loadshift)",
-      "level": 0,
-      "target": 700,
-      "stepState": "CLAIMED",
-      "collaborative": true,
-      "squadLineups": 6,
-      "squadScore": 1102.2432,
-      "lineupId": "Tasks::TaskLineup:4aa0ece8-3bcc-4f6e-8741-4b79aea6be64",
-      "state": "SUCCESSFUL",
-      "score": 260.2,
-      "finished": true,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Péter Gulácsi",
-          "slug": "peter-gulacsi",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 25.69,
-          "status": "FINAL",
-          "kickoff": "2026-10-24T16:30:00Z"
-        },
-        {
-          "name": "Marcos Llorente",
-          "slug": "marcos-llorente-moreno",
-          "position": "Defender",
-          "captain": true,
-          "score": 61.26,
-          "status": "FINAL",
-          "kickoff": "2026-10-24T19:00:00Z"
-        },
-        {
-          "name": "Jobe Bellingham",
-          "slug": "jobe-bellingham",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 44.7,
-          "status": "FINAL",
-          "kickoff": "2026-10-24T16:30:00Z"
-        },
-        {
-          "name": "Giuliano Simeone",
-          "slug": "giuliano-simeone",
-          "position": "Forward",
-          "captain": false,
-          "score": 54.86,
-          "status": "FINAL",
-          "kickoff": "2026-10-24T19:00:00Z"
-        },
-        {
-          "name": "Rúben Dias",
-          "slug": "ruben-santos-gato-alves-dias",
-          "position": "Defender",
-          "captain": false,
-          "score": 73.71,
-          "status": "FINAL",
-          "kickoff": "2026-10-24T11:30:00Z"
         }
       ],
       "scored": 5
@@ -1597,8 +1411,8 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Missed the target. A fresh team goes in when the step reopens.",
-      "tone": "bad",
+      "status": "Not open for entry yet. A team goes in the moment it opens.",
+      "tone": "neutral",
       "lockAt": null,
       "isSquad": true,
       "entered": null,
@@ -1608,28 +1422,28 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 7,
+        "lineupsIn": 0,
         "needed": 3,
-        "scoreSoFar": 1026.2552
+        "scoreSoFar": 0
       },
-      "level": 2,
+      "level": 0,
       "lives": null,
       "totalLevels": 5,
-      "levelsDone": 2,
+      "levelsDone": 0,
       "ladder": [
         {
           "level": 0,
-          "state": "CLAIMED",
+          "state": "PRE_MATCHDAY_LOCKED",
           "target": 700
         },
         {
           "level": 1,
-          "state": "CLAIMED",
+          "state": "LOCKED",
           "target": 980
         },
         {
           "level": 2,
-          "state": "FAILED",
+          "state": "LOCKED",
           "target": 1060
         },
         {
@@ -1651,40 +1465,9 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "FAILED",
-      "target": 1060,
-      "current": [
-        {
-          "name": "Bart Verbruggen",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-25T14:00:00Z"
-        },
-        {
-          "name": "Olivier Boscagli",
-          "captain": true,
-          "locked": true,
-          "nextGame": "2026-10-25T14:00:00Z"
-        },
-        {
-          "name": "Maximilian Eggestein",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-25T16:30:00Z"
-        },
-        {
-          "name": "Ferran Jutglà",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-25T15:15:00Z"
-        },
-        {
-          "name": "Adam Wharton",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-25T14:00:00Z"
-        }
-      ],
+      "state": "PRE_MATCHDAY_LOCKED",
+      "target": 700,
+      "current": [],
       "plan": null,
       "candidates": [],
       "projected": 0
