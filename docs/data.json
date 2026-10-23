@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T20:23:14.635Z",
+  "generatedAt": "2026-10-23T20:53:40.838Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-22T16:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792783323867,
-    "reason": "last run 61m ago, next due in 119m"
+    "reason": "last run 92m ago, next due in 88m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -24,13 +24,13 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:72a3cf10-c60a-4e1a-a4e1-2238b55f4e12",
       "state": "READY",
-      "score": 95.22,
+      "score": 95.42,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,8 +39,8 @@
           "slug": "dennis-seimen",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 28.79,
-          "status": "REVIEWING",
+          "score": 28.99,
+          "status": "FINAL",
           "kickoff": "2026-10-31T14:30:00Z"
         },
         {
@@ -86,7 +86,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -148,7 +148,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -647,7 +647,7 @@
     "ladder": [
       {
         "level": 2,
-        "state": "LIVE",
+        "state": "LINEUP_SET",
         "target": 360,
         "gems": 10,
         "usd": 0,
@@ -766,8 +766,8 @@
       "entered": {
         "five": [
           {
-            "actual": 28.79,
-            "scoreStatus": "REVIEWING",
+            "actual": 28.99,
+            "scoreStatus": "FINAL",
             "teamSlug": null,
             "name": "Dennis Seimen",
             "player": "Dennis Seimen",
@@ -942,7 +942,7 @@
         },
         {
           "level": 2,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 360
         },
         {
@@ -968,7 +968,7 @@
           "currency": "COMMON_GEM"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 360,
       "current": [
         {
@@ -1424,7 +1424,7 @@
       "squad": {
         "lineupsIn": 2,
         "needed": 3,
-        "scoreSoFar": 386.3946
+        "scoreSoFar": 472.593
       },
       "level": 0,
       "lives": null,
