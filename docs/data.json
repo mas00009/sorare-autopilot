@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T15:46:35.552Z",
+  "generatedAt": "2026-10-23T16:17:53.469Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-22T16:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792761209653,
-    "reason": "last run 153m ago, next due in 27m"
+    "lastRunAt": 1792772255925,
+    "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -759,7 +759,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 100 scored so far, 1 of 5 played. On course for about 274; needs 360 (86 short).",
+      "status": "Locked and playing. 100 scored so far, 1 of 5 played. On course for about 271; needs 360 (89 short).",
       "tone": "warn",
       "lockAt": "2026-10-22T19:00:00Z",
       "isSquad": false,
@@ -806,13 +806,13 @@
             "pic": "https://assets.sorare.com/cardsamplepicture/e1a182c0-7cb6-4e5d-999f-f95521ac797d/picture/tinified-a45048630f3cf2366e0a60adcdecf43f.png",
             "picture": "https://assets.sorare.com/cardsamplepicture/e1a182c0-7cb6-4e5d-999f-f95521ac797d/picture/tinified-a45048630f3cf2366e0a60adcdecf43f.png",
             "captain": false,
-            "exp": 47.45,
-            "expected": 47.45,
+            "exp": 44.11,
+            "expected": 44.11,
             "opp": "Getafe CF",
             "opponent": "Getafe CF",
             "home": true,
-            "average": 63,
-            "formL5": 65,
+            "average": 59,
+            "formL5": 60,
             "intl": false,
             "pWin": 0.602,
             "pLose": 0.158,
@@ -893,13 +893,13 @@
             "pic": "https://assets.sorare.com/cardsamplepicture/1d4b5f69-5f34-46ea-ba50-4aa46a5ec084/picture/tinified-3b5a79de2735599840c29deed91f5cfb.png",
             "picture": "https://assets.sorare.com/cardsamplepicture/1d4b5f69-5f34-46ea-ba50-4aa46a5ec084/picture/tinified-3b5a79de2735599840c29deed91f5cfb.png",
             "captain": true,
-            "exp": 57.45,
-            "expected": 57.45,
+            "exp": 53.65,
+            "expected": 53.65,
             "opp": "AS Monaco",
             "opponent": "AS Monaco",
             "home": false,
-            "average": 56,
-            "formL5": 65,
+            "average": 55,
+            "formL5": 58,
             "intl": false,
             "pWin": 0.144,
             "pLose": 0.69,
@@ -911,10 +911,10 @@
             "kickoff": "2026-10-22T19:00:00Z"
           }
         ],
-        "projected": 260.08,
+        "projected": 251.06,
         "scoredSoFar": 99.66,
         "played": 1,
-        "expectedFinal": 273.85
+        "expectedFinal": 270.51
       },
       "poolStrength": {
         "strong": 5,
@@ -1007,11 +1007,11 @@
         "projected": 315.02,
         "lock": "2026-10-23T19:00:00Z",
         "shortfall": 45,
-        "tradedPointsForTime": 9,
+        "tradedPointsForTime": 8.9,
         "captain": "unai-lopez-cabrera",
         "captainPoints": 29.69,
         "withinReach": true,
-        "enteredProjected": 260.08,
+        "enteredProjected": 251.06,
         "five": [
           {
             "id": "ComposeTeamBenchCard:e7000b5f-c131-415b-9683-84549dbbeb80",
