@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-23T09:38:26.892Z",
+  "generatedAt": "2026-10-23T10:09:37.976Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 734,
+    "essence": 234,
     "gems": 266
   },
   "schedule": {
     "nextLock": "2026-10-22T16:45:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792739125891,
-    "reason": "last run 153m ago, next due in 27m"
+    "lastRunAt": 1792750159668,
+    "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -726,9 +726,9 @@
       {
         "title": "Collect Players",
         "gems": 30,
-        "progress": 394,
+        "progress": 396,
         "target": 1115,
-        "remaining": 721,
+        "remaining": 719,
         "competition": null,
         "group": null,
         "teams": []
@@ -1004,10 +1004,10 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 314.54,
+        "projected": 315.02,
         "lock": "2026-10-23T19:00:00Z",
-        "shortfall": 45.5,
-        "tradedPointsForTime": 8.9,
+        "shortfall": 45,
+        "tradedPointsForTime": 9,
         "captain": "unai-lopez-cabrera",
         "captainPoints": 29.69,
         "withinReach": true,
@@ -1175,7 +1175,7 @@
             "slug": "francisco-javier-hernandez-coarasa",
             "position": "MD",
             "average": 50,
-            "bonus": 1.09,
+            "bonus": 1.1,
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
@@ -1205,7 +1205,7 @@
             "oddsBooks": 19,
             "marketFactor": 0.991,
             "lockedAt": null,
-            "expected": 52.41,
+            "expected": 52.89,
             "blocked": null
           }
         ]
@@ -1373,7 +1373,7 @@
           "slug": "francisco-javier-hernandez-coarasa",
           "position": "MD",
           "average": 50,
-          "bonus": 1.09,
+          "bonus": 1.1,
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
@@ -1403,11 +1403,11 @@
           "oddsBooks": 19,
           "marketFactor": 0.991,
           "lockedAt": null,
-          "expected": 52.41,
+          "expected": 52.89,
           "blocked": null
         }
       ],
-      "projected": 293.8
+      "projected": 294.4
     },
     {
       "surface": "team set (Loadshift)",
@@ -2073,7 +2073,7 @@
       "players": [
         "Javi Hernández"
       ],
-      "points": 52.4,
+      "points": 52.9,
       "bestStarter": null,
       "surfaces": [
         "my set"
