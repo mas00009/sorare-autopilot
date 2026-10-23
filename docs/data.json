@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T19:52:46.515Z",
+  "generatedAt": "2026-10-23T20:23:14.635Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-22T16:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792783323867,
-    "reason": "last run 31m ago, next due in 149m"
+    "reason": "last run 61m ago, next due in 119m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:72a3cf10-c60a-4e1a-a4e1-2238b55f4e12",
       "state": "READY",
-      "score": 98.15,
+      "score": 95.22,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "dennis-seimen",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 31.71,
+          "score": 28.79,
           "status": "REVIEWING",
           "kickoff": "2026-10-31T14:30:00Z"
         },
@@ -766,7 +766,7 @@
       "entered": {
         "five": [
           {
-            "actual": 31.71,
+            "actual": 28.79,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Dennis Seimen",
@@ -1424,7 +1424,7 @@
       "squad": {
         "lineupsIn": 2,
         "needed": 3,
-        "scoreSoFar": 327.7094
+        "scoreSoFar": 386.3946
       },
       "level": 0,
       "lives": null,
