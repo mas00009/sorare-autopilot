@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T23:56:45.545Z",
+  "generatedAt": "2026-10-24T00:27:18.029Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-22T16:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792794302743,
-    "reason": "last run 92m ago, next due in 88m"
+    "reason": "last run 122m ago, next due in 58m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -745,8 +745,8 @@
   "odds": {
     "configured": true,
     "month": "2026-10",
-    "used": 130,
-    "remaining": 370
+    "used": 134,
+    "remaining": 366
   },
   "control": {
     "paused": false,
@@ -1004,12 +1004,12 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 322.29,
+        "projected": 322.73,
         "lock": "2026-10-24T12:00:00Z",
-        "shortfall": 37.7,
+        "shortfall": 37.3,
         "tradedPointsForTime": 0,
         "captain": "unai-lopez-cabrera",
-        "captainPoints": 29.69,
+        "captainPoints": 29.7,
         "withinReach": true,
         "enteredProjected": null,
         "five": [
@@ -1044,12 +1044,12 @@
             "ownRank": null,
             "oppFactor": null,
             "mismatch": false,
-            "pWin": 0.539,
-            "pLose": 0.211,
+            "pWin": 0.54,
+            "pLose": 0.209,
             "oddsBooks": 20,
             "marketFactor": 1.033,
             "lockedAt": null,
-            "expected": 61.76,
+            "expected": 61.78,
             "blocked": null
           },
           {
@@ -1084,11 +1084,11 @@
             "oppFactor": null,
             "mismatch": false,
             "pWin": 0.243,
-            "pLose": 0.592,
+            "pLose": 0.589,
             "oddsBooks": 20,
-            "marketFactor": 0.961,
+            "marketFactor": 0.962,
             "lockedAt": null,
-            "expected": 60.55,
+            "expected": 60.57,
             "blocked": null
           },
           {
@@ -1122,12 +1122,12 @@
             "ownRank": null,
             "oppFactor": null,
             "mismatch": false,
-            "pWin": 0.399,
-            "pLose": 0.323,
+            "pWin": 0.414,
+            "pLose": 0.308,
             "oddsBooks": 20,
-            "marketFactor": 1.013,
+            "marketFactor": 1.019,
             "lockedAt": null,
-            "expected": 59.5,
+            "expected": 59.88,
             "blocked": null
           },
           {
@@ -1161,10 +1161,10 @@
             "ownRank": null,
             "oppFactor": null,
             "mismatch": false,
-            "pWin": 0.744,
+            "pWin": 0.745,
             "pLose": 0.093,
             "oddsBooks": 18,
-            "marketFactor": 1.078,
+            "marketFactor": 1.079,
             "lockedAt": null,
             "expected": 56.52,
             "blocked": null
@@ -1200,12 +1200,12 @@
             "ownRank": null,
             "oppFactor": null,
             "mismatch": false,
-            "pWin": 0.744,
+            "pWin": 0.745,
             "pLose": 0.093,
             "oddsBooks": 18,
             "marketFactor": 1.063,
             "lockedAt": null,
-            "expected": 54.27,
+            "expected": 54.28,
             "blocked": null
           }
         ]
@@ -1242,12 +1242,12 @@
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.539,
-          "pLose": 0.211,
+          "pWin": 0.54,
+          "pLose": 0.209,
           "oddsBooks": 20,
           "marketFactor": 1.033,
           "lockedAt": null,
-          "expected": 61.76,
+          "expected": 61.78,
           "blocked": null
         },
         {
@@ -1282,11 +1282,11 @@
           "oppFactor": null,
           "mismatch": false,
           "pWin": 0.243,
-          "pLose": 0.592,
+          "pLose": 0.589,
           "oddsBooks": 20,
-          "marketFactor": 0.961,
+          "marketFactor": 0.962,
           "lockedAt": null,
-          "expected": 60.55,
+          "expected": 60.57,
           "blocked": null
         },
         {
@@ -1320,12 +1320,12 @@
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.399,
-          "pLose": 0.323,
+          "pWin": 0.414,
+          "pLose": 0.308,
           "oddsBooks": 20,
-          "marketFactor": 1.013,
+          "marketFactor": 1.019,
           "lockedAt": null,
-          "expected": 59.5,
+          "expected": 59.88,
           "blocked": null
         },
         {
@@ -1359,10 +1359,10 @@
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.744,
+          "pWin": 0.745,
           "pLose": 0.093,
           "oddsBooks": 18,
-          "marketFactor": 1.078,
+          "marketFactor": 1.079,
           "lockedAt": null,
           "expected": 56.52,
           "blocked": null
@@ -1398,16 +1398,16 @@
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.744,
+          "pWin": 0.745,
           "pLose": 0.093,
           "oddsBooks": 18,
           "marketFactor": 1.063,
           "lockedAt": null,
-          "expected": 54.27,
+          "expected": 54.28,
           "blocked": null
         }
       ],
-      "projected": 296.4
+      "projected": 297
     },
     {
       "surface": "team set (Loadshift)",
@@ -1486,8 +1486,8 @@
       "intl": false,
       "ownRank": null,
       "oppRank": null,
-      "pWin": 0.539,
-      "pLose": 0.211,
+      "pWin": 0.54,
+      "pLose": 0.209,
       "oppFactor": null,
       "home": true,
       "players": [
@@ -1511,7 +1511,7 @@
       "intl": false,
       "ownRank": null,
       "oppRank": null,
-      "pWin": 0.744,
+      "pWin": 0.745,
       "pLose": 0.093,
       "oppFactor": null,
       "home": true,
@@ -1537,14 +1537,14 @@
       "intl": false,
       "ownRank": null,
       "oppRank": null,
-      "pWin": 0.399,
-      "pLose": 0.323,
+      "pWin": 0.414,
+      "pLose": 0.308,
       "oppFactor": null,
       "home": false,
       "players": [
         "Álvaro Valles"
       ],
-      "points": 59.5,
+      "points": 59.9,
       "bestStarter": null,
       "surfaces": [
         "my set"
@@ -1563,13 +1563,13 @@
       "ownRank": null,
       "oppRank": null,
       "pWin": 0.243,
-      "pLose": 0.592,
+      "pLose": 0.589,
       "oppFactor": null,
       "home": false,
       "players": [
         "Federico Valverde"
       ],
-      "points": 60.5,
+      "points": 60.6,
       "bestStarter": null,
       "surfaces": [
         "my set"
