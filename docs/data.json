@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T14:54:03.121Z",
+  "generatedAt": "2026-10-24T15:24:34.175Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-24T12:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792853625241,
-    "reason": "last run 0m ago, next due in 180m"
+    "reason": "last run 31m ago, next due in 149m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:42bfc92b-9a02-4fc7-a7aa-ee58baab1811",
       "state": "READY",
-      "score": 39.93,
+      "score": 42.95,
       "finished": false,
       "cleared": false,
       "players": [
@@ -66,7 +66,7 @@
           "slug": "inigo-vicente-elorduy",
           "position": "Forward",
           "captain": false,
-          "score": 39.94,
+          "score": 42.95,
           "status": "REVIEWING",
           "kickoff": "2026-11-01T15:15:00Z"
         },
@@ -399,10 +399,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 555.3428,
+      "squadScore": 632.7746,
       "lineupId": "Tasks::TaskLineup:1f64ce8f-6521-41ea-97a3-f0d1c7278ede",
       "state": "READY",
-      "score": 150.03,
+      "score": 154.49,
       "finished": false,
       "cleared": false,
       "players": [
@@ -438,7 +438,7 @@
           "slug": "inigo-vicente-elorduy",
           "position": "Forward",
           "captain": true,
-          "score": 59.14,
+          "score": 63.6,
           "status": "REVIEWING",
           "kickoff": "2026-11-01T15:15:00Z"
         },
@@ -915,7 +915,7 @@
             "kickoff": "2026-10-25T20:00:00Z"
           },
           {
-            "actual": 39.52,
+            "actual": 42.95,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Iñigo Vicente",
@@ -1473,7 +1473,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 180 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 555 so far.",
+      "status": "Locked and playing. 186 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 633 so far.",
       "tone": "good",
       "lockAt": "2026-10-24T12:00:00Z",
       "isSquad": true,
@@ -1567,7 +1567,7 @@
             "kickoff": "2026-10-24T12:00:00Z"
           },
           {
-            "actual": 59.14,
+            "actual": 63.6,
             "scoreStatus": "REVIEWING",
             "teamSlug": "racing-santander-santander",
             "name": "Iñigo Vicente",
@@ -1626,9 +1626,9 @@
           }
         ],
         "projected": 328.29,
-        "scoredSoFar": 179.61,
+        "scoredSoFar": 186.3,
         "played": 2,
-        "expectedFinal": 349.22
+        "expectedFinal": 355.91
       },
       "poolStrength": {
         "strong": 1,
@@ -1638,7 +1638,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 555.3428
+        "scoreSoFar": 632.7746
       },
       "level": 0,
       "lives": null,
