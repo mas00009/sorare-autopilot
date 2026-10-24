@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T21:51:29.187Z",
+  "generatedAt": "2026-10-24T22:21:57.024Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-24T19:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792878673315,
-    "reason": "last run 0m ago, next due in 180m"
+    "reason": "last run 31m ago, next due in 149m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -768,9 +768,9 @@
       {
         "title": "Collect Goalkeepers",
         "gems": 10,
-        "progress": 104,
+        "progress": 105,
         "target": 112,
-        "remaining": 8,
+        "remaining": 7,
         "competition": null,
         "group": null,
         "teams": []
@@ -788,9 +788,9 @@
       {
         "title": "Collect Players",
         "gems": 30,
-        "progress": 404,
+        "progress": 408,
         "target": 1115,
-        "remaining": 711,
+        "remaining": 707,
         "competition": null,
         "group": null,
         "teams": []
