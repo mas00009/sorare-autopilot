@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T15:55:03.058Z",
+  "generatedAt": "2026-10-24T16:25:32.513Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-24T12:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792853625241,
-    "reason": "last run 61m ago, next due in 119m"
+    "reason": "last run 92m ago, next due in 88m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -24,13 +24,13 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:42bfc92b-9a02-4fc7-a7aa-ee58baab1811",
       "state": "READY",
-      "score": 55.64,
+      "score": 56.05,
       "finished": false,
       "cleared": false,
       "players": [
@@ -66,8 +66,8 @@
           "slug": "inigo-vicente-elorduy",
           "position": "Forward",
           "captain": false,
-          "score": 55.64,
-          "status": "REVIEWING",
+          "score": 56.06,
+          "status": "FINAL",
           "kickoff": "2026-11-01T15:15:00Z"
         },
         {
@@ -86,7 +86,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -148,7 +148,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -396,13 +396,13 @@
       "surface": "team set (Loadshift)",
       "level": 0,
       "target": 700,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 743.1558,
+      "squadScore": 742.4548,
       "lineupId": "Tasks::TaskLineup:1f64ce8f-6521-41ea-97a3-f0d1c7278ede",
       "state": "READY",
-      "score": 173.28,
+      "score": 173.9,
       "finished": false,
       "cleared": true,
       "players": [
@@ -438,8 +438,8 @@
           "slug": "inigo-vicente-elorduy",
           "position": "Forward",
           "captain": true,
-          "score": 82.39,
-          "status": "REVIEWING",
+          "score": 83.01,
+          "status": "FINAL",
           "kickoff": "2026-11-01T15:15:00Z"
         },
         {
@@ -709,7 +709,7 @@
     "ladder": [
       {
         "level": 2,
-        "state": "LIVE",
+        "state": "LINEUP_SET",
         "target": 360,
         "gems": 10,
         "usd": 0,
@@ -915,8 +915,8 @@
             "kickoff": "2026-10-25T20:00:00Z"
           },
           {
-            "actual": 55.64,
-            "scoreStatus": "REVIEWING",
+            "actual": 56.06,
+            "scoreStatus": "FINAL",
             "teamSlug": null,
             "name": "Iñigo Vicente",
             "player": "Iñigo Vicente",
@@ -1004,7 +1004,7 @@
         },
         {
           "level": 2,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 360
         },
         {
@@ -1030,7 +1030,7 @@
           "currency": "COMMON_GEM"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 360,
       "current": [
         {
@@ -1473,7 +1473,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 214 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 743 so far.",
+      "status": "Locked and playing. 215 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 742 so far.",
       "tone": "good",
       "lockAt": "2026-10-24T12:00:00Z",
       "isSquad": true,
@@ -1567,8 +1567,8 @@
             "kickoff": "2026-10-24T12:00:00Z"
           },
           {
-            "actual": 82.39,
-            "scoreStatus": "REVIEWING",
+            "actual": 83.01,
+            "scoreStatus": "FINAL",
             "teamSlug": "racing-santander-santander",
             "name": "Iñigo Vicente",
             "player": "Iñigo Vicente",
@@ -1626,9 +1626,9 @@
           }
         ],
         "projected": 328.29,
-        "scoredSoFar": 214.49,
+        "scoredSoFar": 215.42,
         "played": 3,
-        "expectedFinal": 334
+        "expectedFinal": 334.94
       },
       "poolStrength": {
         "strong": 1,
@@ -1638,7 +1638,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 743.1558
+        "scoreSoFar": 742.4548
       },
       "level": 0,
       "lives": null,
@@ -1647,7 +1647,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 700
         },
         {
@@ -1679,7 +1679,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 700,
       "current": [
         {
@@ -1855,7 +1855,7 @@
           "opponentCode": "VIL",
           "code": "VCF",
           "rank": 19,
-          "opponentRank": 13,
+          "opponentRank": 14,
           "home": true,
           "competition": "Primera División",
           "intl": false,
@@ -1933,7 +1933,7 @@
           "opponentCode": "VIL",
           "code": "VCF",
           "rank": 19,
-          "opponentRank": 13,
+          "opponentRank": 14,
           "home": true,
           "competition": "Primera División",
           "intl": false,
@@ -1971,7 +1971,7 @@
           "opponent": "Valencia CF",
           "opponentCode": "VCF",
           "code": "VIL",
-          "rank": 13,
+          "rank": 14,
           "opponentRank": 19,
           "home": false,
           "competition": "Primera División",
@@ -2049,7 +2049,7 @@
           "opponent": "Valencia CF",
           "opponentCode": "VCF",
           "code": "VIL",
-          "rank": 13,
+          "rank": 14,
           "opponentRank": 19,
           "home": false,
           "competition": "Primera División",
@@ -2089,7 +2089,7 @@
           "opponentCode": "VIL",
           "code": "VCF",
           "rank": 19,
-          "opponentRank": 13,
+          "opponentRank": 14,
           "home": true,
           "competition": "Primera División",
           "intl": false,
@@ -2127,7 +2127,7 @@
           "opponent": "Valencia CF",
           "opponentCode": "VCF",
           "code": "VIL",
-          "rank": 13,
+          "rank": 14,
           "opponentRank": 19,
           "home": false,
           "competition": "Primera División",
@@ -2166,7 +2166,7 @@
           "opponent": "Valencia CF",
           "opponentCode": "VCF",
           "code": "VIL",
-          "rank": 13,
+          "rank": 14,
           "opponentRank": 19,
           "home": false,
           "competition": "Primera División",
@@ -2196,7 +2196,7 @@
       "rank": 19,
       "opponent": "Villarreal CF",
       "opponentCode": "VIL",
-      "opponentRank": 13,
+      "opponentRank": 14,
       "intl": false,
       "ownRank": null,
       "oppRank": null,
@@ -2220,7 +2220,7 @@
       "competition": "Primera División",
       "team": "Villarreal CF",
       "code": "VIL",
-      "rank": 13,
+      "rank": 14,
       "opponent": "Valencia CF",
       "opponentCode": "VCF",
       "opponentRank": 19,
