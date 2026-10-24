@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T09:58:21.003Z",
+  "generatedAt": "2026-10-24T10:30:40.901Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-24T12:00:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1792835880776,
-    "reason": "last run 0m ago, next due in 15m (lock in 122m)"
+    "lastRunAt": 1792837819989,
+    "reason": "last run 0m ago, next due in 15m (lock in 89m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -399,7 +399,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 0,
+      "squadScore": 36.75,
       "lineupId": "Tasks::TaskLineup:1f64ce8f-6521-41ea-97a3-f0d1c7278ede",
       "state": "READY",
       "score": 0,
@@ -1638,7 +1638,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 0
+        "scoreSoFar": 36.75
       },
       "level": 0,
       "lives": null,
@@ -1812,7 +1812,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 62,
             "picture": "https://assets.sorare.com/cardsamplepicture/fc7c6891-6864-48f4-8d75-592f5782333e/picture/tinified-7ca33683a069ad99e5fc888f47e7d30a.png",
@@ -2010,7 +2010,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 62,
           "picture": "https://assets.sorare.com/cardsamplepicture/fc7c6891-6864-48f4-8d75-592f5782333e/picture/tinified-7ca33683a069ad99e5fc888f47e7d30a.png",
