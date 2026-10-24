@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-24T12:50:39.211Z",
+  "generatedAt": "2026-10-24T13:21:50.316Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 829,
+    "essence": 884,
     "gems": 266
   },
   "schedule": {
     "nextLock": "2026-10-24T12:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792842516442,
-    "reason": "last run 62m ago, next due in 118m"
+    "reason": "last run 93m ago, next due in 87m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:72a3cf10-c60a-4e1a-a4e1-2238b55f4e12",
       "state": "READY",
-      "score": 133.49,
+      "score": 134.94,
       "finished": false,
       "cleared": false,
       "players": [
@@ -66,7 +66,7 @@
           "slug": "sergio-camello-perez",
           "position": "Forward",
           "captain": false,
-          "score": 38.06,
+          "score": 39.52,
           "status": "REVIEWING",
           "kickoff": "2026-10-31T15:15:00Z"
         },
@@ -399,10 +399,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 254.998,
+      "squadScore": 402.925,
       "lineupId": "Tasks::TaskLineup:1f64ce8f-6521-41ea-97a3-f0d1c7278ede",
       "state": "READY",
-      "score": 64.16,
+      "score": 67.39,
       "finished": false,
       "cleared": false,
       "players": [
@@ -429,7 +429,7 @@
           "slug": "unai-lopez-cabrera",
           "position": "Midfielder",
           "captain": false,
-          "score": 64.17,
+          "score": 67.39,
           "status": "REVIEWING",
           "kickoff": "2026-10-31T15:15:00Z"
         },
@@ -915,7 +915,7 @@
             "kickoff": "2026-10-24T19:00:00Z"
           },
           {
-            "actual": 38.06,
+            "actual": 39.52,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Sergio Camello",
@@ -1473,7 +1473,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 64 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 255 so far.",
+      "status": "Locked and playing. 67 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 403 so far.",
       "tone": "good",
       "lockAt": "2026-10-24T12:00:00Z",
       "isSquad": true,
@@ -1538,7 +1538,7 @@
             "kickoff": "2026-10-24T19:00:00Z"
           },
           {
-            "actual": 64.17,
+            "actual": 67.39,
             "scoreStatus": "REVIEWING",
             "teamSlug": "rayo-vallecano-madrid",
             "name": "Unai López",
@@ -1626,9 +1626,9 @@
           }
         ],
         "projected": 328.29,
-        "scoredSoFar": 64.17,
+        "scoredSoFar": 67.39,
         "played": 1,
-        "expectedFinal": 331.94
+        "expectedFinal": 335.16
       },
       "poolStrength": {
         "strong": 1,
@@ -1638,7 +1638,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 254.998
+        "scoreSoFar": 402.925
       },
       "level": 0,
       "lives": null,
