@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T15:24:34.175Z",
+  "generatedAt": "2026-10-24T15:55:03.058Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-24T12:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792853625241,
-    "reason": "last run 31m ago, next due in 149m"
+    "reason": "last run 61m ago, next due in 119m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:42bfc92b-9a02-4fc7-a7aa-ee58baab1811",
       "state": "READY",
-      "score": 42.95,
+      "score": 55.64,
       "finished": false,
       "cleared": false,
       "players": [
@@ -40,7 +40,7 @@
           "position": "Goalkeeper",
           "captain": false,
           "score": 0,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-31T14:30:00Z"
         },
         {
@@ -66,7 +66,7 @@
           "slug": "inigo-vicente-elorduy",
           "position": "Forward",
           "captain": false,
-          "score": 42.95,
+          "score": 55.64,
           "status": "REVIEWING",
           "kickoff": "2026-11-01T15:15:00Z"
         },
@@ -80,7 +80,7 @@
           "kickoff": "2026-10-24T19:00:00Z"
         }
       ],
-      "scored": 1
+      "scored": 2
     },
     {
       "surface": "my set",
@@ -399,12 +399,12 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 632.7746,
+      "squadScore": 743.1558,
       "lineupId": "Tasks::TaskLineup:1f64ce8f-6521-41ea-97a3-f0d1c7278ede",
       "state": "READY",
-      "score": 154.49,
+      "score": 173.28,
       "finished": false,
-      "cleared": false,
+      "cleared": true,
       "players": [
         {
           "name": "Maarten Vandevoordt",
@@ -412,7 +412,7 @@
           "position": "Goalkeeper",
           "captain": false,
           "score": 0,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-31T14:30:00Z"
         },
         {
@@ -438,7 +438,7 @@
           "slug": "inigo-vicente-elorduy",
           "position": "Forward",
           "captain": true,
-          "score": 63.6,
+          "score": 82.39,
           "status": "REVIEWING",
           "kickoff": "2026-11-01T15:15:00Z"
         },
@@ -452,7 +452,7 @@
           "kickoff": "2026-10-24T19:00:00Z"
         }
       ],
-      "scored": 2
+      "scored": 3
     },
     {
       "surface": "my set",
@@ -828,8 +828,8 @@
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "REVIEWING",
+            "actual": 0,
+            "scoreStatus": "FINAL",
             "teamSlug": null,
             "name": "Maarten Vandevoordt",
             "player": "Maarten Vandevoordt",
@@ -915,7 +915,7 @@
             "kickoff": "2026-10-25T20:00:00Z"
           },
           {
-            "actual": 42.95,
+            "actual": 55.64,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Iñigo Vicente",
@@ -1473,15 +1473,15 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 186 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 633 so far.",
+      "status": "Locked and playing. 214 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 743 so far.",
       "tone": "good",
       "lockAt": "2026-10-24T12:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "REVIEWING",
+            "actual": 0,
+            "scoreStatus": "FINAL",
             "teamSlug": "rb-leipzig-leipzig",
             "name": "Maarten Vandevoordt",
             "player": "Maarten Vandevoordt",
@@ -1567,7 +1567,7 @@
             "kickoff": "2026-10-24T12:00:00Z"
           },
           {
-            "actual": 63.6,
+            "actual": 82.39,
             "scoreStatus": "REVIEWING",
             "teamSlug": "racing-santander-santander",
             "name": "Iñigo Vicente",
@@ -1626,9 +1626,9 @@
           }
         ],
         "projected": 328.29,
-        "scoredSoFar": 186.3,
-        "played": 2,
-        "expectedFinal": 355.91
+        "scoredSoFar": 214.49,
+        "played": 3,
+        "expectedFinal": 334
       },
       "poolStrength": {
         "strong": 1,
@@ -1638,7 +1638,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 632.7746
+        "scoreSoFar": 743.1558
       },
       "level": 0,
       "lives": null,
@@ -1842,7 +1842,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 46,
           "picture": "https://assets.sorare.com/cardsamplepicture/67b7893b-b022-42d0-b44f-e8eae09035c7/picture/tinified-602e876d52c7efd9bad3950b6750f94e.png",
@@ -1920,7 +1920,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 44,
           "picture": "https://assets.sorare.com/cardsamplepicture/69731c58-132e-4125-87f6-232490b5413f/picture/tinified-ea6d1b0153f6e9d457057186ee0aacb3.png",
@@ -1959,7 +1959,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 53,
           "picture": "https://assets.sorare.com/cardsamplepicture/deb88871-dad9-44d3-935b-8e9e2383798c/picture/tinified-399486b8e2624313ad364654d31c324b.png",
@@ -2037,7 +2037,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 43,
           "picture": "https://assets.sorare.com/cardsamplepicture/bcf2d322-cec2-4d72-82ef-3e25ff46a800/picture/tinified-4f50182395280ff4746e459d9d4d078f.png",
@@ -2076,7 +2076,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 45,
           "picture": "https://assets.sorare.com/cardsamplepicture/9d08ffb8-d99e-44b0-ab6c-d18b0c480b0e/picture/tinified-378b2fdb3334577a25dbed9d1d65a9ea.png",
@@ -2115,7 +2115,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 46,
           "picture": "https://assets.sorare.com/cardsamplepicture/a83c4f83-b4fb-4eff-9561-c807571d8d93/picture/tinified-e9ca38beb8ad8d86a75640f7bec93189.png",
@@ -2154,7 +2154,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 44,
           "picture": "https://assets.sorare.com/cardsamplepicture/9a426abb-8694-48ff-b293-335990a72e88/picture/tinified-140ecf434d7aa9c84e20eae1f7b58438.png",
