@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T13:21:50.316Z",
+  "generatedAt": "2026-10-24T13:52:27.605Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-24T12:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792842516442,
-    "reason": "last run 93m ago, next due in 87m"
+    "reason": "last run 124m ago, next due in 56m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -92,7 +92,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:42bfc92b-9a02-4fc7-a7aa-ee58baab1811",
       "state": "READY",
-      "score": 0,
+      "score": 36.4,
       "finished": false,
       "cleared": false,
       "players": [
@@ -102,8 +102,8 @@
           "position": "Goalkeeper",
           "captain": false,
           "score": 0,
-          "status": "PENDING",
-          "kickoff": "2026-10-24T13:30:00Z"
+          "status": "REVIEWING",
+          "kickoff": "2026-10-31T14:30:00Z"
         },
         {
           "name": "Gerard Martín",
@@ -128,8 +128,8 @@
           "slug": "inigo-vicente-elorduy",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.4,
+          "status": "REVIEWING",
           "kickoff": "2026-10-24T14:15:00Z"
         },
         {
@@ -142,7 +142,7 @@
           "kickoff": "2026-10-24T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 1
     },
     {
       "surface": "my set",
@@ -399,10 +399,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 402.925,
+      "squadScore": 415.1624,
       "lineupId": "Tasks::TaskLineup:1f64ce8f-6521-41ea-97a3-f0d1c7278ede",
       "state": "READY",
-      "score": 67.39,
+      "score": 135.02,
       "finished": false,
       "cleared": false,
       "players": [
@@ -412,8 +412,8 @@
           "position": "Goalkeeper",
           "captain": false,
           "score": 0,
-          "status": "PENDING",
-          "kickoff": "2026-10-24T13:30:00Z"
+          "status": "REVIEWING",
+          "kickoff": "2026-10-31T14:30:00Z"
         },
         {
           "name": "Marcos Llorente",
@@ -429,7 +429,7 @@
           "slug": "unai-lopez-cabrera",
           "position": "Midfielder",
           "captain": false,
-          "score": 67.39,
+          "score": 81.12,
           "status": "REVIEWING",
           "kickoff": "2026-10-31T15:15:00Z"
         },
@@ -438,8 +438,8 @@
           "slug": "inigo-vicente-elorduy",
           "position": "Forward",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 53.9,
+          "status": "REVIEWING",
           "kickoff": "2026-10-24T14:15:00Z"
         },
         {
@@ -452,7 +452,7 @@
           "kickoff": "2026-10-24T19:00:00Z"
         }
       ],
-      "scored": 1
+      "scored": 2
     },
     {
       "surface": "my set",
@@ -661,7 +661,7 @@
           "captain": false,
           "score": 102,
           "status": "FINAL",
-          "kickoff": "2026-10-24T13:30:00Z"
+          "kickoff": "2026-10-31T14:30:00Z"
         },
         {
           "name": "Rúben Dias",
@@ -697,7 +697,7 @@
           "captain": false,
           "score": 36.62,
           "status": "FINAL",
-          "kickoff": "2026-10-24T13:30:00Z"
+          "kickoff": "2026-10-31T14:30:00Z"
         }
       ],
       "scored": 5
@@ -1473,7 +1473,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 67 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 403 so far.",
+      "status": "Locked and playing. 162 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 415 so far.",
       "tone": "good",
       "lockAt": "2026-10-24T12:00:00Z",
       "isSquad": true,
@@ -1481,7 +1481,7 @@
         "five": [
           {
             "actual": null,
-            "scoreStatus": "PENDING",
+            "scoreStatus": "REVIEWING",
             "teamSlug": "rb-leipzig-leipzig",
             "name": "Maarten Vandevoordt",
             "player": "Maarten Vandevoordt",
@@ -1505,7 +1505,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-24T13:30:00Z"
           },
           {
@@ -1538,7 +1538,7 @@
             "kickoff": "2026-10-24T19:00:00Z"
           },
           {
-            "actual": 67.39,
+            "actual": 81.12,
             "scoreStatus": "REVIEWING",
             "teamSlug": "rayo-vallecano-madrid",
             "name": "Unai López",
@@ -1567,8 +1567,8 @@
             "kickoff": "2026-10-24T12:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 53.9,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "racing-santander-santander",
             "name": "Iñigo Vicente",
             "player": "Iñigo Vicente",
@@ -1626,9 +1626,9 @@
           }
         ],
         "projected": 328.29,
-        "scoredSoFar": 67.39,
-        "played": 1,
-        "expectedFinal": 335.16
+        "scoredSoFar": 161.97,
+        "played": 2,
+        "expectedFinal": 331.58
       },
       "poolStrength": {
         "strong": 1,
@@ -1638,7 +1638,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 402.925
+        "scoreSoFar": 415.1624
       },
       "level": 0,
       "lives": null,
@@ -1685,8 +1685,8 @@
         {
           "name": "Maarten Vandevoordt",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-24T13:30:00Z"
+          "locked": true,
+          "nextGame": "2026-10-31T14:30:00Z"
         },
         {
           "name": "Marcos Llorente",
@@ -1773,7 +1773,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 50,
             "picture": "https://assets.sorare.com/cardsamplepicture/be4f93b1-1f26-412c-b8ab-9f865bc7e809/picture/tinified-f8c30f1194a81a65457a38434fa7597f.png",
@@ -1851,7 +1851,7 @@
             "starterPct": null,
             "startRate": 0.8,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 46,
             "picture": "https://assets.sorare.com/cardsamplepicture/acff47e8-d292-402e-bde0-2e39f83dea31/picture/tinified-831f222df7d8695f433412e42344852a.png",
@@ -1971,7 +1971,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 50,
           "picture": "https://assets.sorare.com/cardsamplepicture/be4f93b1-1f26-412c-b8ab-9f865bc7e809/picture/tinified-f8c30f1194a81a65457a38434fa7597f.png",
@@ -2049,7 +2049,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 46,
           "picture": "https://assets.sorare.com/cardsamplepicture/acff47e8-d292-402e-bde0-2e39f83dea31/picture/tinified-831f222df7d8695f433412e42344852a.png",
