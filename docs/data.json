@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T20:49:56.030Z",
+  "generatedAt": "2026-10-24T21:20:25.045Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-24T19:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792867665061,
-    "reason": "last run 122m ago, next due in 58m"
+    "reason": "last run 153m ago, next due in 27m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -24,7 +24,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -58,7 +58,7 @@
           "position": "Midfielder",
           "captain": false,
           "score": 41.27,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-31T13:00:00Z"
         },
         {
@@ -86,13 +86,13 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:42bfc92b-9a02-4fc7-a7aa-ee58baab1811",
       "state": "READY",
-      "score": 113.26,
+      "score": 111.76,
       "finished": false,
       "cleared": false,
       "players": [
@@ -137,8 +137,8 @@
           "slug": "marcos-llorente-moreno",
           "position": "Defender",
           "captain": false,
-          "score": 57.2,
-          "status": "REVIEWING",
+          "score": 55.71,
+          "status": "FINAL",
           "kickoff": "2026-10-31T13:00:00Z"
         }
       ],
@@ -148,7 +148,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -388,68 +388,6 @@
           "score": 66,
           "status": "FINAL",
           "kickoff": "2026-11-02T20:00:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
-      "surface": "team set (Loadshift)",
-      "level": 0,
-      "target": 700,
-      "stepState": "LIVE",
-      "collaborative": true,
-      "squadLineups": 4,
-      "squadScore": 949.148,
-      "lineupId": "Tasks::TaskLineup:1f64ce8f-6521-41ea-97a3-f0d1c7278ede",
-      "state": "READY",
-      "score": 304.12,
-      "finished": false,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Maarten Vandevoordt",
-          "slug": "maarten-vandevoordt",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 0,
-          "status": "FINAL",
-          "kickoff": "2026-10-31T14:30:00Z"
-        },
-        {
-          "name": "Marcos Llorente",
-          "slug": "marcos-llorente-moreno",
-          "position": "Defender",
-          "captain": false,
-          "score": 57.2,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-31T13:00:00Z"
-        },
-        {
-          "name": "Unai López",
-          "slug": "unai-lopez-cabrera",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 90.9,
-          "status": "FINAL",
-          "kickoff": "2026-10-31T15:15:00Z"
-        },
-        {
-          "name": "Iñigo Vicente",
-          "slug": "inigo-vicente-elorduy",
-          "position": "Forward",
-          "captain": true,
-          "score": 83.01,
-          "status": "FINAL",
-          "kickoff": "2026-11-01T15:15:00Z"
-        },
-        {
-          "name": "Dávid Hancko",
-          "slug": "david-hancko",
-          "position": "Defender",
-          "captain": false,
-          "score": 73.02,
-          "status": "REVIEWING",
-          "kickoff": "2026-10-31T13:00:00Z"
         }
       ],
       "scored": 5
@@ -701,6 +639,68 @@
         }
       ],
       "scored": 5
+    },
+    {
+      "surface": "team set (Loadshift)",
+      "level": 0,
+      "target": 700,
+      "stepState": "CLAIMABLE",
+      "collaborative": true,
+      "squadLineups": 4,
+      "squadScore": 948.567,
+      "lineupId": "Tasks::TaskLineup:1f64ce8f-6521-41ea-97a3-f0d1c7278ede",
+      "state": "SUCCESSFUL",
+      "score": 304.73,
+      "finished": true,
+      "cleared": true,
+      "players": [
+        {
+          "name": "Maarten Vandevoordt",
+          "slug": "maarten-vandevoordt",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 0,
+          "status": "FINAL",
+          "kickoff": "2026-10-31T14:30:00Z"
+        },
+        {
+          "name": "Marcos Llorente",
+          "slug": "marcos-llorente-moreno",
+          "position": "Defender",
+          "captain": false,
+          "score": 55.71,
+          "status": "FINAL",
+          "kickoff": "2026-10-31T13:00:00Z"
+        },
+        {
+          "name": "Unai López",
+          "slug": "unai-lopez-cabrera",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 90.9,
+          "status": "FINAL",
+          "kickoff": "2026-10-31T15:15:00Z"
+        },
+        {
+          "name": "Iñigo Vicente",
+          "slug": "inigo-vicente-elorduy",
+          "position": "Forward",
+          "captain": true,
+          "score": 83.01,
+          "status": "FINAL",
+          "kickoff": "2026-11-01T15:15:00Z"
+        },
+        {
+          "name": "Dávid Hancko",
+          "slug": "david-hancko",
+          "position": "Defender",
+          "captain": false,
+          "score": 75.12,
+          "status": "FINAL",
+          "kickoff": "2026-10-31T13:00:00Z"
+        }
+      ],
+      "scored": 5
     }
   ],
   "gems": {
@@ -709,7 +709,7 @@
     "ladder": [
       {
         "level": 2,
-        "state": "LIVE",
+        "state": "LINEUP_SET",
         "target": 360,
         "gems": 10,
         "usd": 0,
@@ -887,7 +887,7 @@
           },
           {
             "actual": 41.27,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": null,
             "name": "Pablo Barrios",
             "player": "Pablo Barrios",
@@ -1004,7 +1004,7 @@
         },
         {
           "level": 2,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 360
         },
         {
@@ -1030,7 +1030,7 @@
           "currency": "COMMON_GEM"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 360,
       "current": [
         {
@@ -1473,163 +1473,11 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 346 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 949 so far.",
+      "status": "Passed. The reward is waiting and will be claimed after the daily reset.",
       "tone": "good",
-      "lockAt": "2026-10-24T12:00:00Z",
+      "lockAt": null,
       "isSquad": true,
-      "entered": {
-        "five": [
-          {
-            "actual": 0,
-            "scoreStatus": "FINAL",
-            "teamSlug": "rb-leipzig-leipzig",
-            "name": "Maarten Vandevoordt",
-            "player": "Maarten Vandevoordt",
-            "slug": "maarten-vandevoordt",
-            "pos": "GK",
-            "position": "GK",
-            "pic": "https://assets.sorare.com/cardsamplepicture/14a419d8-5d77-4f75-8258-2910a2f906ea/picture/tinified-d8e982bf30beb7a61f444bb61800cd53.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/14a419d8-5d77-4f75-8258-2910a2f906ea/picture/tinified-d8e982bf30beb7a61f444bb61800cd53.png",
-            "captain": false,
-            "exp": 50.09,
-            "expected": 50.09,
-            "opp": "SV 07 Elversberg",
-            "opponent": "SV 07 Elversberg",
-            "home": true,
-            "average": 60,
-            "formL5": 69,
-            "intl": false,
-            "pWin": 0.664,
-            "pLose": 0.154,
-            "marketFactor": 1.098,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-24T13:30:00Z"
-          },
-          {
-            "actual": 57.2,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "atletico-madrid-madrid",
-            "name": "Marcos Llorente",
-            "player": "Marcos Llorente",
-            "slug": "marcos-llorente-moreno",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/5b548359-bc8f-4a9e-bb94-7c4f2634d2e9/picture/tinified-bd84ddd57ee2327577ec617d517d10a9.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/5b548359-bc8f-4a9e-bb94-7c4f2634d2e9/picture/tinified-bd84ddd57ee2327577ec617d517d10a9.png",
-            "captain": false,
-            "exp": 63,
-            "expected": 63,
-            "opp": "Real Club Deportivo de La Coruña",
-            "opponent": "Real Club Deportivo de La Coruña",
-            "home": true,
-            "average": 60,
-            "formL5": 59,
-            "intl": false,
-            "pWin": 0.745,
-            "pLose": 0.093,
-            "marketFactor": 1.079,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-24T19:00:00Z"
-          },
-          {
-            "actual": 90.9,
-            "scoreStatus": "FINAL",
-            "teamSlug": "rayo-vallecano-madrid",
-            "name": "Unai López",
-            "player": "Unai López",
-            "slug": "unai-lopez-cabrera",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/08ecdd49-e541-4d56-a205-ae8f77748788/picture/tinified-2094877f5b31cbf076bc3397006aa095.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/08ecdd49-e541-4d56-a205-ae8f77748788/picture/tinified-2094877f5b31cbf076bc3397006aa095.png",
-            "captain": false,
-            "exp": 61.78,
-            "expected": 61.78,
-            "opp": "Elche CF",
-            "opponent": "Elche CF",
-            "home": true,
-            "average": 54,
-            "formL5": 61,
-            "intl": false,
-            "pWin": 0.54,
-            "pLose": 0.209,
-            "marketFactor": 1.033,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-24T12:00:00Z"
-          },
-          {
-            "actual": 83.01,
-            "scoreStatus": "FINAL",
-            "teamSlug": "racing-santander-santander",
-            "name": "Iñigo Vicente",
-            "player": "Iñigo Vicente",
-            "slug": "inigo-vicente-elorduy",
-            "pos": "FW",
-            "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/430d8e95-0c8d-4d1a-b168-2a8cf77777f0/picture/tinified-c17df4e5bf14cfbbc58507f31e178feb.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/430d8e95-0c8d-4d1a-b168-2a8cf77777f0/picture/tinified-c17df4e5bf14cfbbc58507f31e178feb.png",
-            "captain": true,
-            "exp": 65.44,
-            "expected": 65.44,
-            "opp": "RCD Espanyol de Barcelona",
-            "opponent": "RCD Espanyol de Barcelona",
-            "home": true,
-            "average": 70,
-            "formL5": 64,
-            "intl": false,
-            "pWin": 0.401,
-            "pLose": 0.336,
-            "marketFactor": 1.004,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-24T14:15:00Z"
-          },
-          {
-            "actual": 73.02,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": "atletico-madrid-madrid",
-            "name": "Dávid Hancko",
-            "player": "Dávid Hancko",
-            "slug": "david-hancko",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/9f3c05cc-969c-4eab-a31d-b928040c2e56/picture/tinified-e162098529622651d71ae2e902fb4f5d.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/9f3c05cc-969c-4eab-a31d-b928040c2e56/picture/tinified-e162098529622651d71ae2e902fb4f5d.png",
-            "captain": false,
-            "exp": 56.52,
-            "expected": 56.52,
-            "opp": "Real Club Deportivo de La Coruña",
-            "opponent": "Real Club Deportivo de La Coruña",
-            "home": true,
-            "average": 59,
-            "formL5": 65,
-            "intl": false,
-            "pWin": 0.745,
-            "pLose": 0.093,
-            "marketFactor": 1.079,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-24T19:00:00Z"
-          }
-        ],
-        "projected": 328.29,
-        "scoredSoFar": 345.63,
-        "played": 5,
-        "expectedFinal": 345.63
-      },
+      "entered": null,
       "poolStrength": {
         "strong": 0,
         "needed": 5
@@ -1638,7 +1486,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 949.148
+        "scoreSoFar": 948.567
       },
       "level": 0,
       "lives": null,
@@ -1647,12 +1495,12 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LIVE",
+          "state": "CLAIMABLE",
           "target": 700
         },
         {
           "level": 1,
-          "state": "LOCKED",
+          "state": "PRE_MATCHDAY_LOCKED",
           "target": 980
         },
         {
@@ -1679,7 +1527,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "CLAIMABLE",
       "target": 700,
       "current": [
         {
