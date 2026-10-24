@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T07:04:39.938Z",
+  "generatedAt": "2026-10-24T07:35:32.009Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-24T11:30:00Z",
     "cadenceMin": 60,
     "lastRunAt": 1792825455553,
-    "reason": "last run 0m ago, next due in 60m (lock in 265m)"
+    "reason": "last run 31m ago, next due in 29m (lock in 234m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -398,7 +398,7 @@
       "target": 700,
       "stepState": "LINEUP_SET",
       "collaborative": true,
-      "squadLineups": 1,
+      "squadLineups": 2,
       "squadScore": 0,
       "lineupId": "Tasks::TaskLineup:1f64ce8f-6521-41ea-97a3-f0d1c7278ede",
       "state": "READY",
@@ -768,9 +768,9 @@
       {
         "title": "Collect Goalkeepers",
         "gems": 10,
-        "progress": 103,
+        "progress": 104,
         "target": 112,
-        "remaining": 9,
+        "remaining": 8,
         "competition": null,
         "group": null,
         "teams": []
@@ -788,9 +788,9 @@
       {
         "title": "Collect Players",
         "gems": 30,
-        "progress": 401,
+        "progress": 404,
         "target": 1115,
-        "remaining": 714,
+        "remaining": 711,
         "competition": null,
         "group": null,
         "teams": []
@@ -1636,7 +1636,7 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 1,
+        "lineupsIn": 2,
         "needed": 3,
         "scoreSoFar": 0
       },
