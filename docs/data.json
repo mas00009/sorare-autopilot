@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T17:58:01.183Z",
+  "generatedAt": "2026-10-24T18:04:20.386Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-24T19:00:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1792864663109,
-    "reason": "last run 0m ago, next due in 5m (lock in 62m)"
+    "lastRunAt": 1792865041324,
+    "reason": "last run 0m ago, next due in 5m (lock in 56m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:42bfc92b-9a02-4fc7-a7aa-ee58baab1811",
       "state": "READY",
-      "score": 56.05,
+      "score": 92.8,
       "finished": false,
       "cleared": false,
       "players": [
@@ -75,12 +75,12 @@
           "slug": "marcos-llorente-moreno",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         }
       ],
-      "scored": 2
+      "scored": 3
     },
     {
       "surface": "my set",
@@ -92,7 +92,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:72a3cf10-c60a-4e1a-a4e1-2238b55f4e12",
       "state": "READY",
-      "score": 134.94,
+      "score": 171.69,
       "finished": false,
       "cleared": false,
       "players": [
@@ -119,8 +119,8 @@
           "slug": "pablo-barrios-rivas",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
         {
@@ -142,7 +142,7 @@
           "kickoff": "2026-10-25T16:30:00Z"
         }
       ],
-      "scored": 3
+      "scored": 4
     },
     {
       "surface": "my set",
@@ -399,10 +399,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 800.0868,
+      "squadScore": 871.197,
       "lineupId": "Tasks::TaskLineup:1f64ce8f-6521-41ea-97a3-f0d1c7278ede",
       "state": "READY",
-      "score": 173.9,
+      "score": 247.4,
       "finished": false,
       "cleared": true,
       "players": [
@@ -420,8 +420,8 @@
           "slug": "marcos-llorente-moreno",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         },
         {
@@ -447,12 +447,12 @@
           "slug": "david-hancko",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-24T19:00:00Z"
         }
       ],
-      "scored": 3
+      "scored": 5
     },
     {
       "surface": "my set",
@@ -944,8 +944,8 @@
             "kickoff": "2026-10-24T14:15:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Marcos Llorente",
             "player": "Marcos Llorente",
@@ -1202,7 +1202,7 @@
             "starterPct": null,
             "startRate": 0.7,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 65,
             "picture": "https://assets.sorare.com/cardsamplepicture/9f3c05cc-969c-4eab-a31d-b928040c2e56/picture/tinified-e162098529622651d71ae2e902fb4f5d.png",
@@ -1241,7 +1241,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 54,
             "picture": "https://assets.sorare.com/cardsamplepicture/bc1882f2-d8bb-4598-a663-afc18152cee8/picture/tinified-da46af3e48a93cfa73faae121cf65bf5.png",
@@ -1400,7 +1400,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 65,
           "picture": "https://assets.sorare.com/cardsamplepicture/9f3c05cc-969c-4eab-a31d-b928040c2e56/picture/tinified-e162098529622651d71ae2e902fb4f5d.png",
@@ -1439,7 +1439,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 54,
           "picture": "https://assets.sorare.com/cardsamplepicture/bc1882f2-d8bb-4598-a663-afc18152cee8/picture/tinified-da46af3e48a93cfa73faae121cf65bf5.png",
@@ -1473,7 +1473,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 215 scored so far, 3 of 5 played. The squad's top three lineups together need 700; the squad has 800 so far.",
+      "status": "Locked and playing. 289 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 871 so far.",
       "tone": "good",
       "lockAt": "2026-10-24T12:00:00Z",
       "isSquad": true,
@@ -1509,8 +1509,8 @@
             "kickoff": "2026-10-24T13:30:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Marcos Llorente",
             "player": "Marcos Llorente",
@@ -1596,8 +1596,8 @@
             "kickoff": "2026-10-24T14:15:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Dávid Hancko",
             "player": "Dávid Hancko",
@@ -1626,9 +1626,9 @@
           }
         ],
         "projected": 328.29,
-        "scoredSoFar": 215.42,
-        "played": 3,
-        "expectedFinal": 334.94
+        "scoredSoFar": 288.92,
+        "played": 5,
+        "expectedFinal": 288.92
       },
       "poolStrength": {
         "strong": 1,
@@ -1638,7 +1638,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 800.0868
+        "scoreSoFar": 871.197
       },
       "level": 0,
       "lives": null,
@@ -1725,7 +1725,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 54,
           "picture": "https://assets.sorare.com/cardsamplepicture/bc1882f2-d8bb-4598-a663-afc18152cee8/picture/tinified-da46af3e48a93cfa73faae121cf65bf5.png",
@@ -1764,7 +1764,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 59,
           "picture": "https://assets.sorare.com/cardsamplepicture/bdd31b76-1e86-4bd3-a2cc-6b19137af0d7/picture/tinified-e012266f60f0aceaccdd5e3a5e9f9868.png",
@@ -1803,7 +1803,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 62,
           "picture": "https://assets.sorare.com/cardsamplepicture/22867681-bde0-4ca9-b7ef-0db5f4316ff6/picture/tinified-dd97d33890976520396d8d3586880105.png",
@@ -1842,7 +1842,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 56,
           "picture": "https://assets.sorare.com/cardsamplepicture/d8bd0e67-84d9-4791-a3e8-155a9ed3f073/picture/tinified-8a4837509cb959bfbcbb672896e958d5.png",
@@ -1881,7 +1881,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 46,
           "picture": "https://assets.sorare.com/cardsamplepicture/e43b770d-23aa-4bf5-b899-8c24be687380/picture/tinified-54b6fb31c4741e3f84a493f103165e12.png",
