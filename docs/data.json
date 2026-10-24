@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T10:53:10.713Z",
+  "generatedAt": "2026-10-24T11:05:34.679Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-24T12:00:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1792839165062,
-    "reason": "last run 0m ago, next due in 5m (lock in 67m)"
+    "lastRunAt": 1792839909769,
+    "reason": "last run 0m ago, next due in 5m (lock in 54m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:72a3cf10-c60a-4e1a-a4e1-2238b55f4e12",
       "state": "READY",
-      "score": 95.42,
+      "score": 131.82,
       "finished": false,
       "cleared": false,
       "players": [
@@ -66,8 +66,8 @@
           "slug": "sergio-camello-perez",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.4,
+          "status": "REVIEWING",
           "kickoff": "2026-10-24T12:00:00Z"
         },
         {
@@ -80,7 +80,7 @@
           "kickoff": "2026-10-25T16:30:00Z"
         }
       ],
-      "scored": 2
+      "scored": 3
     },
     {
       "surface": "my set",
@@ -399,10 +399,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 36.75,
+      "squadScore": 111.65,
       "lineupId": "Tasks::TaskLineup:1f64ce8f-6521-41ea-97a3-f0d1c7278ede",
       "state": "READY",
-      "score": 0,
+      "score": 36.4,
       "finished": false,
       "cleared": false,
       "players": [
@@ -429,8 +429,8 @@
           "slug": "unai-lopez-cabrera",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.4,
+          "status": "REVIEWING",
           "kickoff": "2026-10-24T12:00:00Z"
         },
         {
@@ -452,7 +452,7 @@
           "kickoff": "2026-10-24T19:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 1
     },
     {
       "surface": "my set",
@@ -915,8 +915,8 @@
             "kickoff": "2026-10-24T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.4,
+            "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Sergio Camello",
             "player": "Sergio Camello",
@@ -1085,7 +1085,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 61,
             "picture": "https://assets.sorare.com/cardsamplepicture/08ecdd49-e541-4d56-a205-ae8f77748788/picture/tinified-2094877f5b31cbf076bc3397006aa095.png",
@@ -1283,7 +1283,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 61,
           "picture": "https://assets.sorare.com/cardsamplepicture/08ecdd49-e541-4d56-a205-ae8f77748788/picture/tinified-2094877f5b31cbf076bc3397006aa095.png",
@@ -1473,7 +1473,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Team entered, locks Sat 11:00 pm Sydney. The squad's top three lineups together need 700; this one is expected to add about 328.",
+      "status": "Locked and playing. 36 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 112 so far.",
       "tone": "good",
       "lockAt": "2026-10-24T12:00:00Z",
       "isSquad": true,
@@ -1538,8 +1538,8 @@
             "kickoff": "2026-10-24T19:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.4,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "rayo-vallecano-madrid",
             "name": "Unai López",
             "player": "Unai López",
@@ -1626,9 +1626,9 @@
           }
         ],
         "projected": 328.29,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 329.55
+        "scoredSoFar": 36.4,
+        "played": 1,
+        "expectedFinal": 304.17
       },
       "poolStrength": {
         "strong": 1,
@@ -1638,7 +1638,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 36.75
+        "scoreSoFar": 111.65
       },
       "level": 0,
       "lives": null,
@@ -1734,7 +1734,7 @@
             "starterPct": null,
             "startRate": 0.8,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 61,
             "picture": "https://assets.sorare.com/cardsamplepicture/b42e0564-de85-4382-9c36-9d764f4f797f/picture/tinified-4632c76a688e81b74e3542e811a0df1d.png",
@@ -1932,7 +1932,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 61,
           "picture": "https://assets.sorare.com/cardsamplepicture/b42e0564-de85-4382-9c36-9d764f4f797f/picture/tinified-4632c76a688e81b74e3542e811a0df1d.png",
