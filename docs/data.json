@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T13:19:58.784Z",
+  "generatedAt": "2026-10-25T13:51:11.632Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-25T13:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792932477799,
-    "reason": "last run 32m ago, next due in 148m"
+    "reason": "last run 63m ago, next due in 117m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:72a3cf10-c60a-4e1a-a4e1-2238b55f4e12",
       "state": "READY",
-      "score": 217.98,
+      "score": 227.43,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,7 +48,7 @@
           "slug": "aitor-paredes-casamichana",
           "position": "Defender",
           "captain": false,
-          "score": 41.77,
+          "score": 51.22,
           "status": "REVIEWING",
           "kickoff": "2026-11-01T20:00:00Z"
         },
@@ -213,7 +213,7 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 270.634,
+      "squadScore": 280.525,
       "lineupId": "Tasks::TaskLineup:267160a5-16d1-4c2d-b5ef-aba8cbd76f20",
       "state": "READY",
       "score": 0,
@@ -919,7 +919,7 @@
             "kickoff": "2026-10-23T18:30:00Z"
           },
           {
-            "actual": 41.77,
+            "actual": 51.22,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Aitor Paredes",
@@ -1303,7 +1303,7 @@
             "starterPct": null,
             "startRate": 0.8,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 50,
             "picture": "https://assets.sorare.com/cardsamplepicture/3d08a354-0841-4fce-bef8-d5c60a320731/picture/tinified-236726321dbf749d14be8a495fa85f88.png",
@@ -1501,7 +1501,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 50,
           "picture": "https://assets.sorare.com/cardsamplepicture/3d08a354-0841-4fce-bef8-d5c60a320731/picture/tinified-236726321dbf749d14be8a495fa85f88.png",
@@ -1535,7 +1535,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 0 scored so far, 0 of 5 played. The squad's top three lineups together need 980; the squad has 271 so far.",
+      "status": "Locked and playing. 0 scored so far, 0 of 5 played. The squad's top three lineups together need 980; the squad has 281 so far.",
       "tone": "good",
       "lockAt": "2026-10-25T13:00:00Z",
       "isSquad": true,
@@ -1700,7 +1700,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 270.634
+        "scoreSoFar": 280.525
       },
       "level": 1,
       "lives": null,
@@ -1952,7 +1952,7 @@
             "starterPct": null,
             "startRate": 0.8,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 50,
             "picture": "https://assets.sorare.com/cardsamplepicture/3d08a354-0841-4fce-bef8-d5c60a320731/picture/tinified-236726321dbf749d14be8a495fa85f88.png",
@@ -2150,7 +2150,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 50,
           "picture": "https://assets.sorare.com/cardsamplepicture/3d08a354-0841-4fce-bef8-d5c60a320731/picture/tinified-236726321dbf749d14be8a495fa85f88.png",
