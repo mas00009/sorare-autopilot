@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T22:07:31.135Z",
+  "generatedAt": "2026-10-25T22:37:53.565Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-25T16:15:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792966042402,
-    "reason": "last run 0m ago, next due in 180m"
+    "reason": "last run 31m ago, next due in 149m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -207,68 +207,6 @@
       "scored": 5
     },
     {
-      "surface": "team set (Loadshift)",
-      "level": 1,
-      "target": 980,
-      "stepState": "LINEUP_SET",
-      "collaborative": true,
-      "squadLineups": 5,
-      "squadScore": 972.6152,
-      "lineupId": "Tasks::TaskLineup:267160a5-16d1-4c2d-b5ef-aba8cbd76f20",
-      "state": "READY",
-      "score": 261.57,
-      "finished": false,
-      "cleared": false,
-      "players": [
-        {
-          "name": "Álvaro Valles",
-          "slug": "alvaro-valles-rosa",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 81.43,
-          "status": "FINAL",
-          "kickoff": "2026-10-31T17:30:00Z"
-        },
-        {
-          "name": "Sergio Gómez",
-          "slug": "sergio-gomez-martin",
-          "position": "Defender",
-          "captain": false,
-          "score": 46.74,
-          "status": "FINAL",
-          "kickoff": "2026-11-01T20:00:00Z"
-        },
-        {
-          "name": "Federico Valverde",
-          "slug": "federico-santiago-valverde-dipetta",
-          "position": "Midfielder",
-          "captain": true,
-          "score": 77.35,
-          "status": "FINAL",
-          "kickoff": "2026-11-01T15:15:00Z"
-        },
-        {
-          "name": "Navarro",
-          "slug": "robert-navarro-munoz",
-          "position": "Forward",
-          "captain": false,
-          "score": 0,
-          "status": "FINAL",
-          "kickoff": "2026-11-01T20:00:00Z"
-        },
-        {
-          "name": "Isco",
-          "slug": "francisco-roman-alarcon-suarez",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 56.06,
-          "status": "FINAL",
-          "kickoff": "2026-10-31T17:30:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
       "surface": "my set",
       "level": 1,
       "target": 300,
@@ -450,6 +388,68 @@
           "score": 66,
           "status": "FINAL",
           "kickoff": "2026-11-02T20:00:00Z"
+        }
+      ],
+      "scored": 5
+    },
+    {
+      "surface": "team set (Loadshift)",
+      "level": 1,
+      "target": 980,
+      "stepState": "FAILED",
+      "collaborative": true,
+      "squadLineups": 5,
+      "squadScore": 972.6152,
+      "lineupId": "Tasks::TaskLineup:267160a5-16d1-4c2d-b5ef-aba8cbd76f20",
+      "state": "FAILED",
+      "score": 261.57,
+      "finished": true,
+      "cleared": false,
+      "players": [
+        {
+          "name": "Álvaro Valles",
+          "slug": "alvaro-valles-rosa",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 81.43,
+          "status": "FINAL",
+          "kickoff": "2026-10-31T17:30:00Z"
+        },
+        {
+          "name": "Sergio Gómez",
+          "slug": "sergio-gomez-martin",
+          "position": "Defender",
+          "captain": false,
+          "score": 46.74,
+          "status": "FINAL",
+          "kickoff": "2026-11-01T20:00:00Z"
+        },
+        {
+          "name": "Federico Valverde",
+          "slug": "federico-santiago-valverde-dipetta",
+          "position": "Midfielder",
+          "captain": true,
+          "score": 77.35,
+          "status": "FINAL",
+          "kickoff": "2026-11-01T15:15:00Z"
+        },
+        {
+          "name": "Navarro",
+          "slug": "robert-navarro-munoz",
+          "position": "Forward",
+          "captain": false,
+          "score": 0,
+          "status": "FINAL",
+          "kickoff": "2026-11-01T20:00:00Z"
+        },
+        {
+          "name": "Isco",
+          "slug": "francisco-roman-alarcon-suarez",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 56.06,
+          "status": "FINAL",
+          "kickoff": "2026-10-31T17:30:00Z"
         }
       ],
       "scored": 5
@@ -1254,163 +1254,11 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 300 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 973 so far.",
-      "tone": "good",
-      "lockAt": "2026-10-25T13:00:00Z",
+      "status": "Missed the target. A fresh team goes in when the step reopens.",
+      "tone": "bad",
+      "lockAt": null,
       "isSquad": true,
-      "entered": {
-        "five": [
-          {
-            "actual": 81.43,
-            "scoreStatus": "FINAL",
-            "teamSlug": "real-betis-sevilla",
-            "name": "Álvaro Valles",
-            "player": "Álvaro Valles",
-            "slug": "alvaro-valles-rosa",
-            "pos": "GK",
-            "position": "GK",
-            "pic": "https://assets.sorare.com/cardsamplepicture/57436ab3-40cd-44f1-aa75-52fceda9a50a/picture/tinified-227bf23d25d50928b9427c3151ed7ee0.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/57436ab3-40cd-44f1-aa75-52fceda9a50a/picture/tinified-227bf23d25d50928b9427c3151ed7ee0.png",
-            "captain": false,
-            "exp": 60.11,
-            "expected": 60.11,
-            "opp": "RC Celta",
-            "opponent": "RC Celta",
-            "home": false,
-            "average": 59,
-            "formL5": 54,
-            "intl": false,
-            "pWin": 0.426,
-            "pLose": 0.301,
-            "marketFactor": 1.023,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-25T15:15:00Z"
-          },
-          {
-            "actual": 46.74,
-            "scoreStatus": "FINAL",
-            "teamSlug": "real-sociedad-donostia-san-sebastian",
-            "name": "Sergio Gómez",
-            "player": "Sergio Gómez",
-            "slug": "sergio-gomez-martin",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/bb8e179a-f62c-4661-b1a4-1c90addb9864/picture/tinified-6fda950b16a66e4b41f955f2c978d7fc.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/bb8e179a-f62c-4661-b1a4-1c90addb9864/picture/tinified-6fda950b16a66e4b41f955f2c978d7fc.png",
-            "captain": false,
-            "exp": 53.56,
-            "expected": 53.56,
-            "opp": "Levante UD",
-            "opponent": "Levante UD",
-            "home": true,
-            "average": 53,
-            "formL5": 52,
-            "intl": false,
-            "pWin": 0.597,
-            "pLose": 0.185,
-            "marketFactor": 1.049,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-25T17:30:00Z"
-          },
-          {
-            "actual": 77.35,
-            "scoreStatus": "FINAL",
-            "teamSlug": "real-madrid-madrid",
-            "name": "Federico Valverde",
-            "player": "Federico Valverde",
-            "slug": "federico-santiago-valverde-dipetta",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/6ec8824f-8d96-4992-ab6b-4190fa361ea4/picture/tinified-968cbc3d20b6062624831e4f1d473e3d.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/6ec8824f-8d96-4992-ab6b-4190fa361ea4/picture/tinified-968cbc3d20b6062624831e4f1d473e3d.png",
-            "captain": true,
-            "exp": 60.64,
-            "expected": 60.64,
-            "opp": "FC Barcelona",
-            "opponent": "FC Barcelona",
-            "home": false,
-            "average": 58,
-            "formL5": 62,
-            "intl": false,
-            "pWin": 0.248,
-            "pLose": 0.584,
-            "marketFactor": 0.963,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-25T20:00:00Z"
-          },
-          {
-            "actual": 0,
-            "scoreStatus": "FINAL",
-            "teamSlug": "athletic-club-bilbao",
-            "name": "Navarro",
-            "player": "Navarro",
-            "slug": "robert-navarro-munoz",
-            "pos": "FW",
-            "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/397f6ba3-e24a-4cbf-9652-d9274aa2f096/picture/tinified-f459c995687305efc1bd350a82b1d6ec.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/397f6ba3-e24a-4cbf-9652-d9274aa2f096/picture/tinified-f459c995687305efc1bd350a82b1d6ec.png",
-            "captain": false,
-            "exp": 48.91,
-            "expected": 48.91,
-            "opp": "Getafe CF",
-            "opponent": "Getafe CF",
-            "home": true,
-            "average": 50,
-            "formL5": 57,
-            "intl": false,
-            "pWin": 0.606,
-            "pLose": 0.152,
-            "marketFactor": 1.043,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-25T13:00:00Z"
-          },
-          {
-            "actual": 56.06,
-            "scoreStatus": "FINAL",
-            "teamSlug": "real-betis-sevilla",
-            "name": "Isco",
-            "player": "Isco",
-            "slug": "francisco-roman-alarcon-suarez",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/7946c5b9-f5fd-4576-8864-c3b8d4016a3a/picture/tinified-db6a298d976a9a4e8e9ac94a3103977a.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/7946c5b9-f5fd-4576-8864-c3b8d4016a3a/picture/tinified-db6a298d976a9a4e8e9ac94a3103977a.png",
-            "captain": false,
-            "exp": 58.39,
-            "expected": 58.39,
-            "opp": "RC Celta",
-            "opponent": "RC Celta",
-            "home": false,
-            "average": 58,
-            "formL5": 75,
-            "intl": false,
-            "pWin": 0.426,
-            "pLose": 0.301,
-            "marketFactor": 1.011,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-25T15:15:00Z"
-          }
-        ],
-        "projected": 310.49,
-        "scoredSoFar": 300.25,
-        "played": 5,
-        "expectedFinal": 300.25
-      },
+      "entered": null,
       "poolStrength": {
         "strong": 0,
         "needed": 5
@@ -1433,7 +1281,7 @@
         },
         {
           "level": 1,
-          "state": "LINEUP_SET",
+          "state": "FAILED",
           "target": 980
         },
         {
@@ -1460,7 +1308,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "FAILED",
       "target": 980,
       "current": [
         {
