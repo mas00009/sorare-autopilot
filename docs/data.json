@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T21:05:52.919Z",
+  "generatedAt": "2026-10-25T21:36:19.682Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-25T16:15:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792955052402,
-    "reason": "last run 122m ago, next due in 58m"
+    "reason": "last run 152m ago, next due in 28m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:42bfc92b-9a02-4fc7-a7aa-ee58baab1811",
       "state": "READY",
-      "score": 203.06,
+      "score": 211,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,7 +48,7 @@
           "slug": "gerard-martin-langreo",
           "position": "Defender",
           "captain": true,
-          "score": 52.61,
+          "score": 55.66,
           "status": "REVIEWING",
           "kickoff": "2026-10-31T20:00:00Z"
         },
@@ -57,7 +57,7 @@
           "slug": "fermin-lopez-martin",
           "position": "Midfielder",
           "captain": false,
-          "score": 38.69,
+          "score": 43.58,
           "status": "REVIEWING",
           "kickoff": "2026-10-31T20:00:00Z"
         },
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 963.1602,
+      "squadScore": 966.2102,
       "lineupId": "Tasks::TaskLineup:267160a5-16d1-4c2d-b5ef-aba8cbd76f20",
       "state": "READY",
-      "score": 258.93,
+      "score": 261.57,
       "finished": false,
       "cleared": false,
       "players": [
@@ -243,7 +243,7 @@
           "slug": "federico-santiago-valverde-dipetta",
           "position": "Midfielder",
           "captain": true,
-          "score": 74.71,
+          "score": 77.35,
           "status": "REVIEWING",
           "kickoff": "2026-11-01T15:15:00Z"
         },
@@ -919,7 +919,7 @@
             "kickoff": "2026-10-24T13:30:00Z"
           },
           {
-            "actual": 52.61,
+            "actual": 55.66,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Gerard Martín",
@@ -948,7 +948,7 @@
             "kickoff": "2026-10-25T20:00:00Z"
           },
           {
-            "actual": 38.69,
+            "actual": 43.58,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Fermín",
@@ -1406,7 +1406,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 296 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 963 so far.",
+      "status": "Locked and playing. 300 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 966 so far.",
       "tone": "good",
       "lockAt": "2026-10-25T13:00:00Z",
       "isSquad": true,
@@ -1471,7 +1471,7 @@
             "kickoff": "2026-10-25T17:30:00Z"
           },
           {
-            "actual": 74.71,
+            "actual": 77.35,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Federico Valverde",
@@ -1559,9 +1559,9 @@
           }
         ],
         "projected": 310.49,
-        "scoredSoFar": 296.3,
+        "scoredSoFar": 300.25,
         "played": 5,
-        "expectedFinal": 296.3
+        "expectedFinal": 300.25
       },
       "poolStrength": {
         "strong": 0,
@@ -1571,7 +1571,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 963.1602
+        "scoreSoFar": 966.2102
       },
       "level": 1,
       "lives": null,
