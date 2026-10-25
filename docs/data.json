@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-25T12:48:28.443Z",
+  "generatedAt": "2026-10-25T13:19:58.784Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 384,
+    "essence": 504,
     "gems": 266
   },
   "schedule": {
     "nextLock": "2026-10-25T13:00:00Z",
-    "cadenceMin": 5,
+    "cadenceMin": 180,
     "lastRunAt": 1792932477799,
-    "reason": "last run 1m ago, next due in 4m (lock in 12m)"
+    "reason": "last run 32m ago, next due in 148m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -24,13 +24,13 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:72a3cf10-c60a-4e1a-a4e1-2238b55f4e12",
       "state": "READY",
-      "score": 212.96,
+      "score": 217.98,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,9 +48,9 @@
           "slug": "aitor-paredes-casamichana",
           "position": "Defender",
           "captain": false,
-          "score": 36.75,
+          "score": 41.77,
           "status": "REVIEWING",
-          "kickoff": "2026-10-25T13:00:00Z"
+          "kickoff": "2026-11-01T20:00:00Z"
         },
         {
           "name": "Pablo Barrios",
@@ -86,7 +86,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -148,7 +148,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -210,10 +210,10 @@
       "surface": "team set (Loadshift)",
       "level": 1,
       "target": 980,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 36.75,
+      "squadScore": 270.634,
       "lineupId": "Tasks::TaskLineup:267160a5-16d1-4c2d-b5ef-aba8cbd76f20",
       "state": "READY",
       "score": 0,
@@ -253,8 +253,8 @@
           "position": "Forward",
           "captain": false,
           "score": 0,
-          "status": "PENDING",
-          "kickoff": "2026-10-25T13:00:00Z"
+          "status": "REVIEWING",
+          "kickoff": "2026-11-01T20:00:00Z"
         },
         {
           "name": "Isco",
@@ -771,7 +771,7 @@
     "ladder": [
       {
         "level": 2,
-        "state": "LINEUP_SET",
+        "state": "LIVE",
         "target": 360,
         "gems": 10,
         "usd": 0,
@@ -919,7 +919,7 @@
             "kickoff": "2026-10-23T18:30:00Z"
           },
           {
-            "actual": 36.75,
+            "actual": 41.77,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Aitor Paredes",
@@ -1041,7 +1041,7 @@
         "expectedFinal": null
       },
       "poolStrength": {
-        "strong": 3,
+        "strong": 2,
         "needed": 5
       },
       "collaborative": false,
@@ -1066,7 +1066,7 @@
         },
         {
           "level": 2,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 360
         },
         {
@@ -1092,7 +1092,7 @@
           "currency": "COMMON_GEM"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 360,
       "current": [
         {
@@ -1105,7 +1105,7 @@
           "name": "Aitor Paredes",
           "captain": false,
           "locked": true,
-          "nextGame": "2026-10-25T13:00:00Z"
+          "nextGame": "2026-11-01T20:00:00Z"
         },
         {
           "name": "Pablo Barrios",
@@ -1128,9 +1128,9 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 310.49,
-        "lock": "2026-10-25T13:00:00Z",
-        "shortfall": 49.5,
+        "projected": 308.17,
+        "lock": "2026-10-25T14:30:00Z",
+        "shortfall": 51.8,
         "tradedPointsForTime": 0,
         "captain": "federico-santiago-valverde-dipetta",
         "captainPoints": 28.88,
@@ -1294,42 +1294,42 @@
             "blocked": null
           },
           {
-            "id": "ComposeTeamBenchCard:71f7fb39-32bd-4a34-8c1c-956aa5840490",
-            "player": "Navarro",
-            "slug": "robert-navarro-munoz",
+            "id": "ComposeTeamBenchCard:f76b7fd1-43a3-49f4-b5c3-2ad23369ebff",
+            "player": "Afonso Moreira",
+            "slug": "afonso-bastardo-moreira",
             "position": "FW",
-            "average": 50,
-            "bonus": 1.05,
+            "average": 55,
+            "bonus": 1.02,
             "starterPct": null,
             "startRate": 0.8,
             "oddsKnown": false,
-            "onGameSheet": true,
+            "onGameSheet": false,
             "reliability": null,
-            "formL5": 57,
-            "picture": "https://assets.sorare.com/cardsamplepicture/397f6ba3-e24a-4cbf-9652-d9274aa2f096/picture/tinified-f459c995687305efc1bd350a82b1d6ec.png",
+            "formL5": 50,
+            "picture": "https://assets.sorare.com/cardsamplepicture/3d08a354-0841-4fce-bef8-d5c60a320731/picture/tinified-236726321dbf749d14be8a495fa85f88.png",
             "rarity": "common",
-            "gameId": "Game:517bf270-85ae-489c-b24f-498ac79c8531",
-            "kickoff": "2026-10-25T13:00:00Z",
-            "team": "Athletic Club",
-            "teamSlug": "athletic-club-bilbao",
-            "opponent": "Getafe CF",
-            "opponentCode": "GET",
-            "code": "ATH",
-            "rank": 15,
-            "opponentRank": 16,
-            "home": true,
-            "competition": "Primera División",
+            "gameId": "Game:0e4e1cfc-0299-455f-b0fe-25e660cc6456",
+            "kickoff": "2026-10-25T14:30:00Z",
+            "team": "Bayer 04 Leverkusen",
+            "teamSlug": "bayer-leverkusen-leverkusen",
+            "opponent": "TSG Hoffenheim",
+            "opponentCode": "TSG",
+            "code": "B04",
+            "rank": 4,
+            "opponentRank": 14,
+            "home": false,
+            "competition": "Bundesliga",
             "intl": false,
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
             "mismatch": false,
-            "pWin": 0.606,
-            "pLose": 0.152,
-            "oddsBooks": 20,
-            "marketFactor": 1.043,
+            "pWin": null,
+            "pLose": null,
+            "oddsBooks": null,
+            "marketFactor": null,
             "lockedAt": null,
-            "expected": 48.91,
+            "expected": 46.59,
             "blocked": null
           }
         ]
@@ -1492,42 +1492,42 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:71f7fb39-32bd-4a34-8c1c-956aa5840490",
-          "player": "Navarro",
-          "slug": "robert-navarro-munoz",
+          "id": "ComposeTeamBenchCard:f76b7fd1-43a3-49f4-b5c3-2ad23369ebff",
+          "player": "Afonso Moreira",
+          "slug": "afonso-bastardo-moreira",
           "position": "FW",
-          "average": 50,
-          "bonus": 1.05,
+          "average": 55,
+          "bonus": 1.02,
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": true,
+          "onGameSheet": false,
           "reliability": null,
-          "formL5": 57,
-          "picture": "https://assets.sorare.com/cardsamplepicture/397f6ba3-e24a-4cbf-9652-d9274aa2f096/picture/tinified-f459c995687305efc1bd350a82b1d6ec.png",
+          "formL5": 50,
+          "picture": "https://assets.sorare.com/cardsamplepicture/3d08a354-0841-4fce-bef8-d5c60a320731/picture/tinified-236726321dbf749d14be8a495fa85f88.png",
           "rarity": "common",
-          "gameId": "Game:517bf270-85ae-489c-b24f-498ac79c8531",
-          "kickoff": "2026-10-25T13:00:00Z",
-          "team": "Athletic Club",
-          "teamSlug": "athletic-club-bilbao",
-          "opponent": "Getafe CF",
-          "opponentCode": "GET",
-          "code": "ATH",
-          "rank": 15,
-          "opponentRank": 16,
-          "home": true,
-          "competition": "Primera División",
+          "gameId": "Game:0e4e1cfc-0299-455f-b0fe-25e660cc6456",
+          "kickoff": "2026-10-25T14:30:00Z",
+          "team": "Bayer 04 Leverkusen",
+          "teamSlug": "bayer-leverkusen-leverkusen",
+          "opponent": "TSG Hoffenheim",
+          "opponentCode": "TSG",
+          "code": "B04",
+          "rank": 4,
+          "opponentRank": 14,
+          "home": false,
+          "competition": "Bundesliga",
           "intl": false,
           "oppRank": null,
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.606,
-          "pLose": 0.152,
-          "oddsBooks": 20,
-          "marketFactor": 1.043,
+          "pWin": null,
+          "pLose": null,
+          "oddsBooks": null,
+          "marketFactor": null,
           "lockedAt": null,
-          "expected": 48.91,
+          "expected": 46.59,
           "blocked": null
         }
       ],
@@ -1535,7 +1535,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Team entered, locks Mon 12:00 am Sydney. The squad's top three lineups together need 980; this one is expected to add about 310.",
+      "status": "Locked and playing. 0 scored so far, 0 of 5 played. The squad's top three lineups together need 980; the squad has 271 so far.",
       "tone": "good",
       "lockAt": "2026-10-25T13:00:00Z",
       "isSquad": true,
@@ -1630,7 +1630,7 @@
           },
           {
             "actual": null,
-            "scoreStatus": "PENDING",
+            "scoreStatus": "REVIEWING",
             "teamSlug": "athletic-club-bilbao",
             "name": "Navarro",
             "player": "Navarro",
@@ -1654,7 +1654,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-25T13:00:00Z"
           },
           {
@@ -1693,14 +1693,14 @@
         "expectedFinal": 311.93
       },
       "poolStrength": {
-        "strong": 4,
+        "strong": 3,
         "needed": 5
       },
       "collaborative": true,
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 36.75
+        "scoreSoFar": 270.634
       },
       "level": 1,
       "lives": null,
@@ -1714,7 +1714,7 @@
         },
         {
           "level": 1,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 980
         },
         {
@@ -1741,7 +1741,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 980,
       "current": [
         {
@@ -1765,8 +1765,8 @@
         {
           "name": "Navarro",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-25T13:00:00Z"
+          "locked": true,
+          "nextGame": "2026-11-01T20:00:00Z"
         },
         {
           "name": "Isco",
@@ -2185,31 +2185,6 @@
   ],
   "fixtures": [
     {
-      "kickoff": "2026-10-25T13:00:00Z",
-      "competition": "Primera División",
-      "team": "Athletic Club",
-      "code": "ATH",
-      "rank": 15,
-      "opponent": "Getafe CF",
-      "opponentCode": "GET",
-      "opponentRank": 16,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.606,
-      "pLose": 0.152,
-      "oppFactor": null,
-      "home": true,
-      "players": [
-        "Navarro"
-      ],
-      "points": 48.9,
-      "bestStarter": null,
-      "surfaces": [
-        "my set"
-      ]
-    },
-    {
       "kickoff": "2026-10-25T14:30:00Z",
       "competition": "Bundesliga",
       "team": "Bayer 04 Leverkusen",
@@ -2226,11 +2201,13 @@
       "oppFactor": null,
       "home": false,
       "players": [
+        "Afonso Moreira",
         "Afonso Moreira"
       ],
-      "points": 46.6,
+      "points": 93.2,
       "bestStarter": null,
       "surfaces": [
+        "my set",
         "team set (Loadshift)"
       ]
     },
