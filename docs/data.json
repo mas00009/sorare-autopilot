@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T15:55:11.251Z",
+  "generatedAt": "2026-10-25T16:01:19.853Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-25T16:15:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1792943694144,
-    "reason": "last run 0m ago, next due in 5m (lock in 20m)"
+    "lastRunAt": 1792944062668,
+    "reason": "last run 0m ago, next due in 5m (lock in 14m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 657.078,
+      "squadScore": 656.1628,
       "lineupId": "Tasks::TaskLineup:267160a5-16d1-4c2d-b5ef-aba8cbd76f20",
       "state": "READY",
-      "score": 107.12,
+      "score": 106.08,
       "finished": false,
       "cleared": false,
       "players": [
@@ -225,7 +225,7 @@
           "slug": "alvaro-valles-rosa",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 53.77,
+          "score": 53.87,
           "status": "REVIEWING",
           "kickoff": "2026-10-31T17:30:00Z"
         },
@@ -261,7 +261,7 @@
           "slug": "francisco-roman-alarcon-suarez",
           "position": "Midfielder",
           "captain": false,
-          "score": 53.35,
+          "score": 52.21,
           "status": "REVIEWING",
           "kickoff": "2026-10-31T17:30:00Z"
         }
@@ -1238,7 +1238,7 @@
             "opponentCode": "LEE",
             "code": "SUN",
             "rank": 20,
-            "opponentRank": 8,
+            "opponentRank": 9,
             "home": true,
             "competition": "Premier League",
             "intl": false,
@@ -1436,7 +1436,7 @@
           "opponentCode": "LEE",
           "code": "SUN",
           "rank": 20,
-          "opponentRank": 8,
+          "opponentRank": 9,
           "home": true,
           "competition": "Premier League",
           "intl": false,
@@ -1535,14 +1535,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 107 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 657 so far.",
+      "status": "Locked and playing. 106 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 656 so far.",
       "tone": "good",
       "lockAt": "2026-10-25T13:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 53.77,
+            "actual": 53.87,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-betis-sevilla",
             "name": "Álvaro Valles",
@@ -1658,7 +1658,7 @@
             "kickoff": "2026-10-25T13:00:00Z"
           },
           {
-            "actual": 53.35,
+            "actual": 52.21,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-betis-sevilla",
             "name": "Isco",
@@ -1688,9 +1688,9 @@
           }
         ],
         "projected": 310.49,
-        "scoredSoFar": 107.12,
+        "scoredSoFar": 106.08,
         "played": 3,
-        "expectedFinal": 251.64
+        "expectedFinal": 250.6
       },
       "poolStrength": {
         "strong": 3,
@@ -1700,7 +1700,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 657.078
+        "scoreSoFar": 656.1628
       },
       "level": 1,
       "lives": null,
@@ -1848,7 +1848,7 @@
             "opponentCode": "LEE",
             "code": "SUN",
             "rank": 20,
-            "opponentRank": 8,
+            "opponentRank": 9,
             "home": true,
             "competition": "Premier League",
             "intl": false,
@@ -2046,7 +2046,7 @@
           "opponentCode": "LEE",
           "code": "SUN",
           "rank": 20,
-          "opponentRank": 8,
+          "opponentRank": 9,
           "home": true,
           "competition": "Premier League",
           "intl": false,
@@ -2219,7 +2219,7 @@
       "rank": 20,
       "opponent": "Leeds United FC",
       "opponentCode": "LEE",
-      "opponentRank": 8,
+      "opponentRank": 9,
       "intl": false,
       "ownRank": null,
       "oppRank": null,
