@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T19:04:24.997Z",
+  "generatedAt": "2026-10-25T19:34:48.070Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-25T16:15:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792955052402,
-    "reason": "last run 0m ago, next due in 180m"
+    "reason": "last run 31m ago, next due in 149m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -210,13 +210,13 @@
       "surface": "team set (Loadshift)",
       "level": 1,
       "target": 980,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
       "squadScore": 960.4152,
       "lineupId": "Tasks::TaskLineup:267160a5-16d1-4c2d-b5ef-aba8cbd76f20",
       "state": "READY",
-      "score": 236.52,
+      "score": 238.47,
       "finished": false,
       "cleared": false,
       "players": [
@@ -234,8 +234,8 @@
           "slug": "sergio-gomez-martin",
           "position": "Defender",
           "captain": false,
-          "score": 44.78,
-          "status": "REVIEWING",
+          "score": 46.74,
+          "status": "FINAL",
           "kickoff": "2026-11-01T20:00:00Z"
         },
         {
@@ -1484,7 +1484,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 264 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 960 so far.",
+      "status": "Locked and playing. 266 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 960 so far.",
       "tone": "good",
       "lockAt": "2026-10-25T13:00:00Z",
       "isSquad": true,
@@ -1520,8 +1520,8 @@
             "kickoff": "2026-10-25T15:15:00Z"
           },
           {
-            "actual": 44.78,
-            "scoreStatus": "REVIEWING",
+            "actual": 46.74,
+            "scoreStatus": "FINAL",
             "teamSlug": "real-sociedad-donostia-san-sebastian",
             "name": "Sergio Gómez",
             "player": "Sergio Gómez",
@@ -1637,9 +1637,9 @@
           }
         ],
         "projected": 310.49,
-        "scoredSoFar": 263.64,
+        "scoredSoFar": 265.61,
         "played": 5,
-        "expectedFinal": 263.64
+        "expectedFinal": 265.61
       },
       "poolStrength": {
         "strong": 2,
@@ -1663,7 +1663,7 @@
         },
         {
           "level": 1,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 980
         },
         {
@@ -1690,7 +1690,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 980,
       "current": [
         {
