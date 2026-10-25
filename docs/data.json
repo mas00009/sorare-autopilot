@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T21:36:19.682Z",
+  "generatedAt": "2026-10-25T22:07:31.135Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-25T16:15:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792955052402,
-    "reason": "last run 152m ago, next due in 28m"
+    "lastRunAt": 1792966042402,
+    "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -24,14 +24,14 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:42bfc92b-9a02-4fc7-a7aa-ee58baab1811",
-      "state": "READY",
-      "score": 211,
-      "finished": false,
+      "state": "FAILED",
+      "score": 209.02,
+      "finished": true,
       "cleared": false,
       "players": [
         {
@@ -48,8 +48,8 @@
           "slug": "gerard-martin-langreo",
           "position": "Defender",
           "captain": true,
-          "score": 55.66,
-          "status": "REVIEWING",
+          "score": 53.68,
+          "status": "FINAL",
           "kickoff": "2026-10-31T20:00:00Z"
         },
         {
@@ -58,7 +58,7 @@
           "position": "Midfielder",
           "captain": false,
           "score": 43.58,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-10-31T20:00:00Z"
         },
         {
@@ -86,7 +86,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -148,7 +148,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -210,10 +210,10 @@
       "surface": "team set (Loadshift)",
       "level": 1,
       "target": 980,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 966.2102,
+      "squadScore": 972.6152,
       "lineupId": "Tasks::TaskLineup:267160a5-16d1-4c2d-b5ef-aba8cbd76f20",
       "state": "READY",
       "score": 261.57,
@@ -244,7 +244,7 @@
           "position": "Midfielder",
           "captain": true,
           "score": 77.35,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-11-01T15:15:00Z"
         },
         {
@@ -771,7 +771,7 @@
     "ladder": [
       {
         "level": 2,
-        "state": "LIVE",
+        "state": "LINEUP_SET",
         "target": 360,
         "gems": 10,
         "usd": 0,
@@ -883,163 +883,11 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. NaN scored so far, 0 of 5 played. On course for about 0; needs 360 (360 short).",
-      "tone": "warn",
-      "lockAt": "2026-10-24T13:30:00Z",
+      "status": "No eligible cards for this step yet.",
+      "tone": "neutral",
+      "lockAt": null,
       "isSquad": false,
-      "entered": {
-        "five": [
-          {
-            "actual": 0,
-            "scoreStatus": "FINAL",
-            "teamSlug": null,
-            "name": "Maarten Vandevoordt",
-            "player": "Maarten Vandevoordt",
-            "slug": "maarten-vandevoordt",
-            "pos": "GK",
-            "position": "GK",
-            "pic": "https://assets.sorare.com/cardsamplepicture/14a419d8-5d77-4f75-8258-2910a2f906ea/picture/tinified-d8e982bf30beb7a61f444bb61800cd53.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/14a419d8-5d77-4f75-8258-2910a2f906ea/picture/tinified-d8e982bf30beb7a61f444bb61800cd53.png",
-            "captain": false,
-            "exp": null,
-            "expected": null,
-            "opp": null,
-            "opponent": null,
-            "home": null,
-            "average": null,
-            "formL5": null,
-            "intl": false,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-24T13:30:00Z"
-          },
-          {
-            "actual": 55.66,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": null,
-            "name": "Gerard Martín",
-            "player": "Gerard Martín",
-            "slug": "gerard-martin-langreo",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/a0277700-3f4a-4ff4-8252-cd8e75d49969/picture/tinified-5eaddd524e619da5a6d12fd41fd6c776.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/a0277700-3f4a-4ff4-8252-cd8e75d49969/picture/tinified-5eaddd524e619da5a6d12fd41fd6c776.png",
-            "captain": true,
-            "exp": null,
-            "expected": null,
-            "opp": null,
-            "opponent": null,
-            "home": null,
-            "average": null,
-            "formL5": null,
-            "intl": false,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-25T20:00:00Z"
-          },
-          {
-            "actual": 43.58,
-            "scoreStatus": "REVIEWING",
-            "teamSlug": null,
-            "name": "Fermín",
-            "player": "Fermín",
-            "slug": "fermin-lopez-martin",
-            "pos": "MD",
-            "position": "MD",
-            "pic": "https://assets.sorare.com/cardsamplepicture/330ef413-992b-4167-ad85-b92b544d448c/picture/tinified-9098fd2dec5b7b586e99196b51198a13.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/330ef413-992b-4167-ad85-b92b544d448c/picture/tinified-9098fd2dec5b7b586e99196b51198a13.png",
-            "captain": false,
-            "exp": null,
-            "expected": null,
-            "opp": null,
-            "opponent": null,
-            "home": null,
-            "average": null,
-            "formL5": null,
-            "intl": false,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-25T20:00:00Z"
-          },
-          {
-            "actual": 56.06,
-            "scoreStatus": "FINAL",
-            "teamSlug": null,
-            "name": "Iñigo Vicente",
-            "player": "Iñigo Vicente",
-            "slug": "inigo-vicente-elorduy",
-            "pos": "FW",
-            "position": "FW",
-            "pic": "https://assets.sorare.com/cardsamplepicture/430d8e95-0c8d-4d1a-b168-2a8cf77777f0/picture/tinified-c17df4e5bf14cfbbc58507f31e178feb.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/430d8e95-0c8d-4d1a-b168-2a8cf77777f0/picture/tinified-c17df4e5bf14cfbbc58507f31e178feb.png",
-            "captain": false,
-            "exp": null,
-            "expected": null,
-            "opp": null,
-            "opponent": null,
-            "home": null,
-            "average": null,
-            "formL5": null,
-            "intl": false,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-24T14:15:00Z"
-          },
-          {
-            "actual": 55.71,
-            "scoreStatus": "FINAL",
-            "teamSlug": null,
-            "name": "Marcos Llorente",
-            "player": "Marcos Llorente",
-            "slug": "marcos-llorente-moreno",
-            "pos": "DF",
-            "position": "DF",
-            "pic": "https://assets.sorare.com/cardsamplepicture/5b548359-bc8f-4a9e-bb94-7c4f2634d2e9/picture/tinified-bd84ddd57ee2327577ec617d517d10a9.png",
-            "picture": "https://assets.sorare.com/cardsamplepicture/5b548359-bc8f-4a9e-bb94-7c4f2634d2e9/picture/tinified-bd84ddd57ee2327577ec617d517d10a9.png",
-            "captain": false,
-            "exp": null,
-            "expected": null,
-            "opp": null,
-            "opponent": null,
-            "home": null,
-            "average": null,
-            "formL5": null,
-            "intl": false,
-            "pWin": null,
-            "pLose": null,
-            "marketFactor": null,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "locked": true,
-            "kickoff": "2026-10-24T19:00:00Z"
-          }
-        ],
-        "projected": null,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": null
-      },
+      "entered": null,
       "poolStrength": {
         "strong": 0,
         "needed": 5
@@ -1066,7 +914,7 @@
         },
         {
           "level": 2,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 360
         },
         {
@@ -1092,7 +940,7 @@
           "currency": "COMMON_GEM"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 360,
       "current": [
         {
@@ -1406,7 +1254,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 300 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 966 so far.",
+      "status": "Locked and playing. 300 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 973 so far.",
       "tone": "good",
       "lockAt": "2026-10-25T13:00:00Z",
       "isSquad": true,
@@ -1472,7 +1320,7 @@
           },
           {
             "actual": 77.35,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "real-madrid-madrid",
             "name": "Federico Valverde",
             "player": "Federico Valverde",
@@ -1571,7 +1419,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 966.2102
+        "scoreSoFar": 972.6152
       },
       "level": 1,
       "lives": null,
@@ -1585,7 +1433,7 @@
         },
         {
           "level": 1,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 980
         },
         {
@@ -1612,7 +1460,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 980,
       "current": [
         {
