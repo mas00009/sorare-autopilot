@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T15:49:04.572Z",
+  "generatedAt": "2026-10-25T15:55:11.251Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-25T16:15:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1792943328176,
-    "reason": "last run 0m ago, next due in 5m (lock in 26m)"
+    "lastRunAt": 1792943694144,
+    "reason": "last run 0m ago, next due in 5m (lock in 20m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 545.0942,
+      "squadScore": 657.078,
       "lineupId": "Tasks::TaskLineup:267160a5-16d1-4c2d-b5ef-aba8cbd76f20",
       "state": "READY",
-      "score": 101.71,
+      "score": 107.12,
       "finished": false,
       "cleared": false,
       "players": [
@@ -261,7 +261,7 @@
           "slug": "francisco-roman-alarcon-suarez",
           "position": "Midfielder",
           "captain": false,
-          "score": 47.94,
+          "score": 53.35,
           "status": "REVIEWING",
           "kickoff": "2026-10-31T17:30:00Z"
         }
@@ -1535,7 +1535,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 102 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 545 so far.",
+      "status": "Locked and playing. 107 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 657 so far.",
       "tone": "good",
       "lockAt": "2026-10-25T13:00:00Z",
       "isSquad": true,
@@ -1658,7 +1658,7 @@
             "kickoff": "2026-10-25T13:00:00Z"
           },
           {
-            "actual": 47.94,
+            "actual": 53.35,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-betis-sevilla",
             "name": "Isco",
@@ -1688,9 +1688,9 @@
           }
         ],
         "projected": 310.49,
-        "scoredSoFar": 101.71,
+        "scoredSoFar": 107.12,
         "played": 3,
-        "expectedFinal": 246.23
+        "expectedFinal": 251.64
       },
       "poolStrength": {
         "strong": 3,
@@ -1700,7 +1700,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 545.0942
+        "scoreSoFar": 657.078
       },
       "level": 1,
       "lives": null,
