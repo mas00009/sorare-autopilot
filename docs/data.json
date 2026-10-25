@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T19:34:48.070Z",
+  "generatedAt": "2026-10-25T20:05:10.206Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-25T16:15:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792955052402,
-    "reason": "last run 31m ago, next due in 149m"
+    "reason": "last run 61m ago, next due in 119m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -24,7 +24,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -50,7 +50,7 @@
           "captain": true,
           "score": 53.9,
           "status": "REVIEWING",
-          "kickoff": "2026-10-25T20:00:00Z"
+          "kickoff": "2026-10-31T20:00:00Z"
         },
         {
           "name": "Fermín",
@@ -59,7 +59,7 @@
           "captain": false,
           "score": 36.4,
           "status": "REVIEWING",
-          "kickoff": "2026-10-25T20:00:00Z"
+          "kickoff": "2026-10-31T20:00:00Z"
         },
         {
           "name": "Iñigo Vicente",
@@ -86,7 +86,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -148,7 +148,7 @@
       "surface": "my set",
       "level": 2,
       "target": 360,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -210,7 +210,7 @@
       "surface": "team set (Loadshift)",
       "level": 1,
       "target": 980,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
       "squadScore": 960.4152,
@@ -245,7 +245,7 @@
           "captain": true,
           "score": 54.25,
           "status": "REVIEWING",
-          "kickoff": "2026-10-25T20:00:00Z"
+          "kickoff": "2026-11-01T15:15:00Z"
         },
         {
           "name": "Navarro",
@@ -369,7 +369,7 @@
           "captain": true,
           "score": 67.89,
           "status": "FINAL",
-          "kickoff": "2026-10-25T20:00:00Z"
+          "kickoff": "2026-11-01T15:15:00Z"
         },
         {
           "name": "Emiliano Buendía",
@@ -387,7 +387,7 @@
           "captain": false,
           "score": 39.69,
           "status": "FINAL",
-          "kickoff": "2026-10-25T20:00:00Z"
+          "kickoff": "2026-11-01T15:15:00Z"
         }
       ],
       "scored": 5
@@ -617,7 +617,7 @@
           "captain": true,
           "score": 58.59,
           "status": "FINAL",
-          "kickoff": "2026-10-25T20:00:00Z"
+          "kickoff": "2026-11-01T15:15:00Z"
         },
         {
           "name": "Emiliano Buendía",
@@ -635,7 +635,7 @@
           "captain": false,
           "score": 45.99,
           "status": "FINAL",
-          "kickoff": "2026-10-25T20:00:00Z"
+          "kickoff": "2026-11-01T15:15:00Z"
         }
       ],
       "scored": 5
@@ -771,7 +771,7 @@
     "ladder": [
       {
         "level": 2,
-        "state": "LINEUP_SET",
+        "state": "LIVE",
         "target": 360,
         "gems": 10,
         "usd": 0,
@@ -1041,7 +1041,7 @@
         "expectedFinal": null
       },
       "poolStrength": {
-        "strong": 1,
+        "strong": 0,
         "needed": 5
       },
       "collaborative": false,
@@ -1066,7 +1066,7 @@
         },
         {
           "level": 2,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 360
         },
         {
@@ -1092,7 +1092,7 @@
           "currency": "COMMON_GEM"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 360,
       "current": [
         {
@@ -1105,13 +1105,13 @@
           "name": "Gerard Martín",
           "captain": true,
           "locked": true,
-          "nextGame": "2026-10-25T20:00:00Z"
+          "nextGame": "2026-10-31T20:00:00Z"
         },
         {
           "name": "Fermín",
           "captain": false,
           "locked": true,
-          "nextGame": "2026-10-25T20:00:00Z"
+          "nextGame": "2026-10-31T20:00:00Z"
         },
         {
           "name": "Iñigo Vicente",
@@ -1128,45 +1128,6 @@
       ],
       "plan": null,
       "candidates": [
-        {
-          "id": "ComposeTeamBenchCard:54e386b3-7eb7-40c6-83dc-10ebfe9894bd",
-          "player": "Federico Valverde",
-          "slug": "federico-santiago-valverde-dipetta",
-          "position": "MD",
-          "average": 58,
-          "bonus": 1.05,
-          "starterPct": null,
-          "startRate": 1,
-          "oddsKnown": false,
-          "onGameSheet": true,
-          "reliability": null,
-          "formL5": 62,
-          "picture": "https://assets.sorare.com/cardsamplepicture/6ec8824f-8d96-4992-ab6b-4190fa361ea4/picture/tinified-968cbc3d20b6062624831e4f1d473e3d.png",
-          "rarity": "common",
-          "gameId": "Game:0468597c-6df3-401f-86b4-9b0a2edf8e9e",
-          "kickoff": "2026-10-25T20:00:00Z",
-          "team": "Real Madrid",
-          "teamSlug": "real-madrid-madrid",
-          "opponent": "FC Barcelona",
-          "opponentCode": "FCB",
-          "code": "RMA",
-          "rank": 3,
-          "opponentRank": 1,
-          "home": false,
-          "competition": "Primera División",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.248,
-          "pLose": 0.584,
-          "oddsBooks": 20,
-          "marketFactor": 0.963,
-          "lockedAt": null,
-          "expected": 60.64,
-          "blocked": null
-        },
         {
           "id": "ComposeTeamBenchCard:c1a00838-d939-4969-b5f4-2df7a6191d04",
           "player": "Juan Iglesias",
@@ -1243,45 +1204,6 @@
           "marketFactor": 1.033,
           "lockedAt": null,
           "expected": 52.62,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:7249677c-f247-4538-bd28-a727608d184b",
-          "player": "Jude Bellingham",
-          "slug": "jude-bellingham",
-          "position": "MD",
-          "average": 64,
-          "bonus": 1.05,
-          "starterPct": null,
-          "startRate": 0.8,
-          "oddsKnown": false,
-          "onGameSheet": true,
-          "reliability": null,
-          "formL5": 50,
-          "picture": "https://assets.sorare.com/cardsamplepicture/fe3313a1-5c73-436d-a698-dbc049dee59b/picture/tinified-61dbd25acb89afe827003670d06ba75a.png",
-          "rarity": "common",
-          "gameId": "Game:0468597c-6df3-401f-86b4-9b0a2edf8e9e",
-          "kickoff": "2026-10-25T20:00:00Z",
-          "team": "Real Madrid",
-          "teamSlug": "real-madrid-madrid",
-          "opponent": "FC Barcelona",
-          "opponentCode": "FCB",
-          "code": "RMA",
-          "rank": 3,
-          "opponentRank": 1,
-          "home": false,
-          "competition": "Primera División",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.248,
-          "pLose": 0.584,
-          "oddsBooks": 20,
-          "marketFactor": 0.963,
-          "lockedAt": null,
-          "expected": 50.12,
           "blocked": null
         },
         {
@@ -1480,7 +1402,7 @@
           "blocked": null
         }
       ],
-      "projected": 258.1
+      "projected": 228.8
     },
     {
       "surface": "team set (Loadshift)",
@@ -1574,7 +1496,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-25T20:00:00Z"
           },
           {
@@ -1642,7 +1564,7 @@
         "expectedFinal": 265.61
       },
       "poolStrength": {
-        "strong": 2,
+        "strong": 0,
         "needed": 5
       },
       "collaborative": true,
@@ -1663,7 +1585,7 @@
         },
         {
           "level": 1,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 980
         },
         {
@@ -1690,7 +1612,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 980,
       "current": [
         {
@@ -1708,8 +1630,8 @@
         {
           "name": "Federico Valverde",
           "captain": true,
-          "locked": false,
-          "nextGame": "2026-10-25T20:00:00Z"
+          "locked": true,
+          "nextGame": "2026-11-01T15:15:00Z"
         },
         {
           "name": "Navarro",
@@ -1725,143 +1647,11 @@
         }
       ],
       "plan": null,
-      "candidates": [
-        {
-          "id": "ComposeTeamBenchCard:7249677c-f247-4538-bd28-a727608d184b",
-          "player": "Jude Bellingham",
-          "slug": "jude-bellingham",
-          "position": "MD",
-          "average": 64,
-          "bonus": 1.05,
-          "starterPct": null,
-          "startRate": 0.8,
-          "oddsKnown": false,
-          "onGameSheet": true,
-          "reliability": null,
-          "formL5": 50,
-          "picture": "https://assets.sorare.com/cardsamplepicture/fe3313a1-5c73-436d-a698-dbc049dee59b/picture/tinified-61dbd25acb89afe827003670d06ba75a.png",
-          "rarity": "common",
-          "gameId": "Game:0468597c-6df3-401f-86b4-9b0a2edf8e9e",
-          "kickoff": "2026-10-25T20:00:00Z",
-          "team": "Real Madrid",
-          "teamSlug": "real-madrid-madrid",
-          "opponent": "FC Barcelona",
-          "opponentCode": "FCB",
-          "code": "RMA",
-          "rank": 3,
-          "opponentRank": 1,
-          "home": false,
-          "competition": "Primera División",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.248,
-          "pLose": 0.584,
-          "oddsBooks": 20,
-          "marketFactor": 0.963,
-          "lockedAt": null,
-          "expected": 50.12,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:11f060fe-aa13-4d2a-8be9-4d1b405b3276",
-          "player": "Gerard Martín",
-          "slug": "gerard-martin-langreo",
-          "position": "DF",
-          "average": 62,
-          "bonus": 1.04,
-          "starterPct": null,
-          "startRate": 0.7,
-          "oddsKnown": false,
-          "onGameSheet": true,
-          "reliability": null,
-          "formL5": 56,
-          "picture": "https://assets.sorare.com/cardsamplepicture/a0277700-3f4a-4ff4-8252-cd8e75d49969/picture/tinified-5eaddd524e619da5a6d12fd41fd6c776.png",
-          "rarity": "common",
-          "gameId": "Game:0468597c-6df3-401f-86b4-9b0a2edf8e9e",
-          "kickoff": "2026-10-25T20:00:00Z",
-          "team": "FC Barcelona",
-          "teamSlug": "barcelona-barcelona",
-          "opponent": "Real Madrid",
-          "opponentCode": "RMA",
-          "code": "FCB",
-          "rank": 1,
-          "opponentRank": 3,
-          "home": true,
-          "competition": "Primera División",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.584,
-          "pLose": 0.248,
-          "oddsBooks": 20,
-          "marketFactor": 1.038,
-          "lockedAt": null,
-          "expected": 46.82,
-          "blocked": null
-        }
-      ],
-      "projected": 96.9
+      "candidates": [],
+      "projected": 0
     }
   ],
   "fixtures": [
-    {
-      "kickoff": "2026-10-25T20:00:00Z",
-      "competition": "Primera División",
-      "team": "Real Madrid",
-      "code": "RMA",
-      "rank": 3,
-      "opponent": "FC Barcelona",
-      "opponentCode": "FCB",
-      "opponentRank": 1,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.248,
-      "pLose": 0.584,
-      "oppFactor": null,
-      "home": false,
-      "players": [
-        "Federico Valverde",
-        "Jude Bellingham",
-        "Jude Bellingham"
-      ],
-      "points": 160.9,
-      "bestStarter": null,
-      "surfaces": [
-        "my set",
-        "team set (Loadshift)"
-      ]
-    },
-    {
-      "kickoff": "2026-10-25T20:00:00Z",
-      "competition": "Primera División",
-      "team": "FC Barcelona",
-      "code": "FCB",
-      "rank": 1,
-      "opponent": "Real Madrid",
-      "opponentCode": "RMA",
-      "opponentRank": 3,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.584,
-      "pLose": 0.248,
-      "oppFactor": null,
-      "home": true,
-      "players": [
-        "Gerard Martín"
-      ],
-      "points": 46.8,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
     {
       "kickoff": "2026-10-26T20:00:00Z",
       "competition": "Primera División",
