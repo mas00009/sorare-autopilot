@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T18:33:23.755Z",
+  "generatedAt": "2026-10-25T19:04:24.997Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-25T16:15:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792944062668,
-    "reason": "last run 152m ago, next due in 28m"
+    "lastRunAt": 1792955052402,
+    "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:42bfc92b-9a02-4fc7-a7aa-ee58baab1811",
       "state": "READY",
-      "score": 111.76,
+      "score": 202.06,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,8 +48,8 @@
           "slug": "gerard-martin-langreo",
           "position": "Defender",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 53.9,
+          "status": "REVIEWING",
           "kickoff": "2026-10-25T20:00:00Z"
         },
         {
@@ -57,8 +57,8 @@
           "slug": "fermin-lopez-martin",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.4,
+          "status": "REVIEWING",
           "kickoff": "2026-10-25T20:00:00Z"
         },
         {
@@ -80,7 +80,7 @@
           "kickoff": "2026-10-31T13:00:00Z"
         }
       ],
-      "scored": 3
+      "scored": 5
     },
     {
       "surface": "my set",
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 853.6652,
+      "squadScore": 960.4152,
       "lineupId": "Tasks::TaskLineup:267160a5-16d1-4c2d-b5ef-aba8cbd76f20",
       "state": "READY",
-      "score": 180.08,
+      "score": 236.52,
       "finished": false,
       "cleared": false,
       "players": [
@@ -234,7 +234,7 @@
           "slug": "sergio-gomez-martin",
           "position": "Defender",
           "captain": false,
-          "score": 42.6,
+          "score": 44.78,
           "status": "REVIEWING",
           "kickoff": "2026-11-01T20:00:00Z"
         },
@@ -243,8 +243,8 @@
           "slug": "federico-santiago-valverde-dipetta",
           "position": "Midfielder",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 54.25,
+          "status": "REVIEWING",
           "kickoff": "2026-10-25T20:00:00Z"
         },
         {
@@ -266,7 +266,7 @@
           "kickoff": "2026-10-31T17:30:00Z"
         }
       ],
-      "scored": 4
+      "scored": 5
     },
     {
       "surface": "my set",
@@ -919,8 +919,8 @@
             "kickoff": "2026-10-24T13:30:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 53.9,
+            "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Gerard Martín",
             "player": "Gerard Martín",
@@ -948,8 +948,8 @@
             "kickoff": "2026-10-25T20:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.4,
+            "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Fermín",
             "player": "Fermín",
@@ -1138,7 +1138,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 62,
           "picture": "https://assets.sorare.com/cardsamplepicture/6ec8824f-8d96-4992-ab6b-4190fa361ea4/picture/tinified-968cbc3d20b6062624831e4f1d473e3d.png",
@@ -1255,7 +1255,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 50,
           "picture": "https://assets.sorare.com/cardsamplepicture/fe3313a1-5c73-436d-a698-dbc049dee59b/picture/tinified-61dbd25acb89afe827003670d06ba75a.png",
@@ -1484,7 +1484,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 180 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 854 so far.",
+      "status": "Locked and playing. 264 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 960 so far.",
       "tone": "good",
       "lockAt": "2026-10-25T13:00:00Z",
       "isSquad": true,
@@ -1520,7 +1520,7 @@
             "kickoff": "2026-10-25T15:15:00Z"
           },
           {
-            "actual": 42.6,
+            "actual": 44.78,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-sociedad-donostia-san-sebastian",
             "name": "Sergio Gómez",
@@ -1549,8 +1549,8 @@
             "kickoff": "2026-10-25T17:30:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 54.25,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "real-madrid-madrid",
             "name": "Federico Valverde",
             "player": "Federico Valverde",
@@ -1637,9 +1637,9 @@
           }
         ],
         "projected": 310.49,
-        "scoredSoFar": 180.09,
-        "played": 4,
-        "expectedFinal": 271.05
+        "scoredSoFar": 263.64,
+        "played": 5,
+        "expectedFinal": 263.64
       },
       "poolStrength": {
         "strong": 2,
@@ -1649,7 +1649,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 853.6652
+        "scoreSoFar": 960.4152
       },
       "level": 1,
       "lives": null,
@@ -1736,7 +1736,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 50,
           "picture": "https://assets.sorare.com/cardsamplepicture/fe3313a1-5c73-436d-a698-dbc049dee59b/picture/tinified-61dbd25acb89afe827003670d06ba75a.png",
@@ -1775,7 +1775,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 56,
           "picture": "https://assets.sorare.com/cardsamplepicture/a0277700-3f4a-4ff4-8252-cd8e75d49969/picture/tinified-5eaddd524e619da5a6d12fd41fd6c776.png",
