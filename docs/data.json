@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T16:31:46.014Z",
+  "generatedAt": "2026-10-25T17:02:12.763Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-25T16:15:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792944062668,
-    "reason": "last run 31m ago, next due in 149m"
+    "reason": "last run 61m ago, next due in 119m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 666.2654,
+      "squadScore": 735.203,
       "lineupId": "Tasks::TaskLineup:267160a5-16d1-4c2d-b5ef-aba8cbd76f20",
       "state": "READY",
-      "score": 145.6,
+      "score": 173.88,
       "finished": false,
       "cleared": false,
       "players": [
@@ -225,7 +225,7 @@
           "slug": "alvaro-valles-rosa",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 54.29,
+          "score": 81.43,
           "status": "REVIEWING",
           "kickoff": "2026-10-31T17:30:00Z"
         },
@@ -261,7 +261,7 @@
           "slug": "francisco-roman-alarcon-suarez",
           "position": "Midfielder",
           "captain": false,
-          "score": 54.91,
+          "score": 56.06,
           "status": "REVIEWING",
           "kickoff": "2026-10-31T17:30:00Z"
         }
@@ -1535,14 +1535,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 146 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 666 so far.",
+      "status": "Locked and playing. 174 scored so far, 4 of 5 played. The squad's top three lineups together need 980; the squad has 735 so far.",
       "tone": "good",
       "lockAt": "2026-10-25T13:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 54.29,
+            "actual": 81.43,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-betis-sevilla",
             "name": "Álvaro Valles",
@@ -1658,7 +1658,7 @@
             "kickoff": "2026-10-25T13:00:00Z"
           },
           {
-            "actual": 54.91,
+            "actual": 56.06,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-betis-sevilla",
             "name": "Isco",
@@ -1688,9 +1688,9 @@
           }
         ],
         "projected": 310.49,
-        "scoredSoFar": 145.6,
+        "scoredSoFar": 173.89,
         "played": 4,
-        "expectedFinal": 236.56
+        "expectedFinal": 264.85
       },
       "poolStrength": {
         "strong": 2,
@@ -1700,7 +1700,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 666.2654
+        "scoreSoFar": 735.203
       },
       "level": 1,
       "lives": null,
