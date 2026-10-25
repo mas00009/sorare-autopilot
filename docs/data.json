@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T15:22:52.020Z",
+  "generatedAt": "2026-10-25T15:49:04.572Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 266
   },
   "schedule": {
-    "nextLock": "2026-10-25T13:00:00Z",
-    "cadenceMin": 180,
-    "lastRunAt": 1792932477799,
-    "reason": "last run 155m ago, next due in 25m"
+    "nextLock": "2026-10-25T16:15:00Z",
+    "cadenceMin": 5,
+    "lastRunAt": 1792943328176,
+    "reason": "last run 0m ago, next due in 5m (lock in 26m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 422.0638,
+      "squadScore": 545.0942,
       "lineupId": "Tasks::TaskLineup:267160a5-16d1-4c2d-b5ef-aba8cbd76f20",
       "state": "READY",
-      "score": 71.96,
+      "score": 101.71,
       "finished": false,
       "cleared": false,
       "players": [
@@ -225,7 +225,7 @@
           "slug": "alvaro-valles-rosa",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 36.82,
+          "score": 53.77,
           "status": "REVIEWING",
           "kickoff": "2026-10-31T17:30:00Z"
         },
@@ -261,7 +261,7 @@
           "slug": "francisco-roman-alarcon-suarez",
           "position": "Midfielder",
           "captain": false,
-          "score": 35.15,
+          "score": 47.94,
           "status": "REVIEWING",
           "kickoff": "2026-10-31T17:30:00Z"
         }
@@ -1186,7 +1186,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 53,
             "picture": "https://assets.sorare.com/cardsamplepicture/b6b53978-256a-4e54-9fdd-e8dad111f4c3/picture/tinified-b106403f545221f7c8b1d541a5593868.png",
@@ -1225,7 +1225,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 59,
             "picture": "https://assets.sorare.com/cardsamplepicture/5a44465a-bbba-4abf-b549-5f6c7a285458/picture/tinified-5f9a129886375fa837b5bfe03c049bcd.png",
@@ -1384,7 +1384,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 53,
           "picture": "https://assets.sorare.com/cardsamplepicture/b6b53978-256a-4e54-9fdd-e8dad111f4c3/picture/tinified-b106403f545221f7c8b1d541a5593868.png",
@@ -1423,7 +1423,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 59,
           "picture": "https://assets.sorare.com/cardsamplepicture/5a44465a-bbba-4abf-b549-5f6c7a285458/picture/tinified-5f9a129886375fa837b5bfe03c049bcd.png",
@@ -1535,14 +1535,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 72 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 422 so far.",
+      "status": "Locked and playing. 102 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 545 so far.",
       "tone": "good",
       "lockAt": "2026-10-25T13:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 36.82,
+            "actual": 53.77,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-betis-sevilla",
             "name": "Álvaro Valles",
@@ -1658,7 +1658,7 @@
             "kickoff": "2026-10-25T13:00:00Z"
           },
           {
-            "actual": 35.15,
+            "actual": 47.94,
             "scoreStatus": "REVIEWING",
             "teamSlug": "real-betis-sevilla",
             "name": "Isco",
@@ -1688,9 +1688,9 @@
           }
         ],
         "projected": 310.49,
-        "scoredSoFar": 71.97,
+        "scoredSoFar": 101.71,
         "played": 3,
-        "expectedFinal": 216.49
+        "expectedFinal": 246.23
       },
       "poolStrength": {
         "strong": 3,
@@ -1700,7 +1700,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 422.0638
+        "scoreSoFar": 545.0942
       },
       "level": 1,
       "lives": null,
@@ -1796,7 +1796,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 53,
             "picture": "https://assets.sorare.com/cardsamplepicture/b6b53978-256a-4e54-9fdd-e8dad111f4c3/picture/tinified-b106403f545221f7c8b1d541a5593868.png",
@@ -1835,7 +1835,7 @@
             "starterPct": null,
             "startRate": 0.9,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 59,
             "picture": "https://assets.sorare.com/cardsamplepicture/5a44465a-bbba-4abf-b549-5f6c7a285458/picture/tinified-5f9a129886375fa837b5bfe03c049bcd.png",
@@ -1874,7 +1874,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 58,
             "picture": "https://assets.sorare.com/cardsamplepicture/1d4b5f69-5f34-46ea-ba50-4aa46a5ec084/picture/tinified-3b5a79de2735599840c29deed91f5cfb.png",
@@ -1994,7 +1994,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 53,
           "picture": "https://assets.sorare.com/cardsamplepicture/b6b53978-256a-4e54-9fdd-e8dad111f4c3/picture/tinified-b106403f545221f7c8b1d541a5593868.png",
@@ -2033,7 +2033,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 59,
           "picture": "https://assets.sorare.com/cardsamplepicture/5a44465a-bbba-4abf-b549-5f6c7a285458/picture/tinified-5f9a129886375fa837b5bfe03c049bcd.png",
@@ -2072,7 +2072,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 58,
           "picture": "https://assets.sorare.com/cardsamplepicture/1d4b5f69-5f34-46ea-ba50-4aa46a5ec084/picture/tinified-3b5a79de2735599840c29deed91f5cfb.png",
