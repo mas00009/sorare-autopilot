@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T11:52:35.215Z",
+  "generatedAt": "2026-10-25T12:11:07.098Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-25T13:00:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1792929127154,
-    "reason": "last run 0m ago, next due in 5m (lock in 67m)"
+    "lastRunAt": 1792930234571,
+    "reason": "last run 1m ago, next due in 4m (lock in 49m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:72a3cf10-c60a-4e1a-a4e1-2238b55f4e12",
       "state": "READY",
-      "score": 176.21,
+      "score": 212.96,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,8 +48,8 @@
           "slug": "aitor-paredes-casamichana",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.75,
+          "status": "REVIEWING",
           "kickoff": "2026-10-25T13:00:00Z"
         },
         {
@@ -80,7 +80,7 @@
           "kickoff": "2026-10-25T16:30:00Z"
         }
       ],
-      "scored": 4
+      "scored": 5
     },
     {
       "surface": "my set",
@@ -213,7 +213,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 0,
+      "squadScore": 36.75,
       "lineupId": "Tasks::TaskLineup:267160a5-16d1-4c2d-b5ef-aba8cbd76f20",
       "state": "READY",
       "score": 0,
@@ -919,8 +919,8 @@
             "kickoff": "2026-10-23T18:30:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.75,
+            "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Aitor Paredes",
             "player": "Aitor Paredes",
@@ -1303,7 +1303,7 @@
             "starterPct": null,
             "startRate": 0.8,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 57,
             "picture": "https://assets.sorare.com/cardsamplepicture/397f6ba3-e24a-4cbf-9652-d9274aa2f096/picture/tinified-f459c995687305efc1bd350a82b1d6ec.png",
@@ -1501,7 +1501,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 57,
           "picture": "https://assets.sorare.com/cardsamplepicture/397f6ba3-e24a-4cbf-9652-d9274aa2f096/picture/tinified-f459c995687305efc1bd350a82b1d6ec.png",
@@ -1700,7 +1700,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 0
+        "scoreSoFar": 36.75
       },
       "level": 1,
       "lives": null,
