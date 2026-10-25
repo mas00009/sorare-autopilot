@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T13:51:11.632Z",
+  "generatedAt": "2026-10-25T14:21:50.540Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-25T13:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1792932477799,
-    "reason": "last run 63m ago, next due in 117m"
+    "reason": "last run 94m ago, next due in 86m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:72a3cf10-c60a-4e1a-a4e1-2238b55f4e12",
       "state": "READY",
-      "score": 227.43,
+      "score": 240.68,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,7 +48,7 @@
           "slug": "aitor-paredes-casamichana",
           "position": "Defender",
           "captain": false,
-          "score": 51.22,
+          "score": 64.47,
           "status": "REVIEWING",
           "kickoff": "2026-11-01T20:00:00Z"
         },
@@ -165,7 +165,7 @@
           "captain": false,
           "score": 79.93,
           "status": "FINAL",
-          "kickoff": "2026-10-25T14:00:00Z"
+          "kickoff": "2026-10-31T15:00:00Z"
         },
         {
           "name": "Olivier Boscagli",
@@ -174,7 +174,7 @@
           "captain": true,
           "score": 128.43,
           "status": "FINAL",
-          "kickoff": "2026-10-25T14:00:00Z"
+          "kickoff": "2026-10-31T15:00:00Z"
         },
         {
           "name": "Maximilian Eggestein",
@@ -201,7 +201,7 @@
           "captain": false,
           "score": 41.2,
           "status": "FINAL",
-          "kickoff": "2026-10-25T14:00:00Z"
+          "kickoff": "2026-10-31T17:30:00Z"
         }
       ],
       "scored": 5
@@ -213,10 +213,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 280.525,
+      "squadScore": 313.669,
       "lineupId": "Tasks::TaskLineup:267160a5-16d1-4c2d-b5ef-aba8cbd76f20",
       "state": "READY",
-      "score": 0,
+      "score": 72.8,
       "finished": false,
       "cleared": false,
       "players": [
@@ -225,8 +225,8 @@
           "slug": "alvaro-valles-rosa",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.4,
+          "status": "REVIEWING",
           "kickoff": "2026-10-25T15:15:00Z"
         },
         {
@@ -261,12 +261,12 @@
           "slug": "francisco-roman-alarcon-suarez",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 36.4,
+          "status": "REVIEWING",
           "kickoff": "2026-10-25T15:15:00Z"
         }
       ],
-      "scored": 0
+      "scored": 2
     },
     {
       "surface": "my set",
@@ -289,7 +289,7 @@
           "captain": false,
           "score": 70.56,
           "status": "FINAL",
-          "kickoff": "2026-10-25T14:00:00Z"
+          "kickoff": "2026-10-31T15:00:00Z"
         },
         {
           "name": "Matthias Ginter",
@@ -475,7 +475,7 @@
           "captain": false,
           "score": 44.7,
           "status": "FINAL",
-          "kickoff": "2026-10-25T14:00:00Z"
+          "kickoff": "2026-10-31T12:30:00Z"
         },
         {
           "name": "Alexsandro",
@@ -484,7 +484,7 @@
           "captain": false,
           "score": 50.72,
           "status": "FINAL",
-          "kickoff": "2026-10-25T14:00:00Z"
+          "kickoff": "2026-10-30T20:05:00Z"
         },
         {
           "name": "Nathan Saliba",
@@ -546,7 +546,7 @@
           "captain": true,
           "score": 111.02,
           "status": "FINAL",
-          "kickoff": "2026-10-25T14:00:00Z"
+          "kickoff": "2026-10-31T12:30:00Z"
         },
         {
           "name": "Konrad Laimer",
@@ -573,7 +573,7 @@
           "captain": false,
           "score": 0,
           "status": "FINAL",
-          "kickoff": "2026-10-25T14:00:00Z"
+          "kickoff": "2026-10-30T20:05:00Z"
         }
       ],
       "scored": 5
@@ -919,7 +919,7 @@
             "kickoff": "2026-10-23T18:30:00Z"
           },
           {
-            "actual": 51.22,
+            "actual": 64.47,
             "scoreStatus": "REVIEWING",
             "teamSlug": null,
             "name": "Aitor Paredes",
@@ -1186,7 +1186,7 @@
             "starterPct": null,
             "startRate": 1,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 54,
             "picture": "https://assets.sorare.com/cardsamplepicture/57436ab3-40cd-44f1-aa75-52fceda9a50a/picture/tinified-227bf23d25d50928b9427c3151ed7ee0.png",
@@ -1225,7 +1225,7 @@
             "starterPct": null,
             "startRate": 0.8,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 75,
             "picture": "https://assets.sorare.com/cardsamplepicture/7946c5b9-f5fd-4576-8864-c3b8d4016a3a/picture/tinified-db6a298d976a9a4e8e9ac94a3103977a.png",
@@ -1384,7 +1384,7 @@
           "starterPct": null,
           "startRate": 1,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 54,
           "picture": "https://assets.sorare.com/cardsamplepicture/57436ab3-40cd-44f1-aa75-52fceda9a50a/picture/tinified-227bf23d25d50928b9427c3151ed7ee0.png",
@@ -1423,7 +1423,7 @@
           "starterPct": null,
           "startRate": 0.8,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 75,
           "picture": "https://assets.sorare.com/cardsamplepicture/7946c5b9-f5fd-4576-8864-c3b8d4016a3a/picture/tinified-db6a298d976a9a4e8e9ac94a3103977a.png",
@@ -1535,15 +1535,15 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 0 scored so far, 0 of 5 played. The squad's top three lineups together need 980; the squad has 281 so far.",
+      "status": "Locked and playing. 73 scored so far, 2 of 5 played. The squad's top three lineups together need 980; the squad has 314 so far.",
       "tone": "good",
       "lockAt": "2026-10-25T13:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.4,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "real-betis-sevilla",
             "name": "Álvaro Valles",
             "player": "Álvaro Valles",
@@ -1658,8 +1658,8 @@
             "kickoff": "2026-10-25T13:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 36.4,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "real-betis-sevilla",
             "name": "Isco",
             "player": "Isco",
@@ -1688,9 +1688,9 @@
           }
         ],
         "projected": 310.49,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 311.93
+        "scoredSoFar": 72.8,
+        "played": 2,
+        "expectedFinal": 266.23
       },
       "poolStrength": {
         "strong": 3,
@@ -1700,7 +1700,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 280.525
+        "scoreSoFar": 313.669
       },
       "level": 1,
       "lives": null,
@@ -2180,7 +2180,7 @@
           "blocked": null
         }
       ],
-      "projected": 271.1
+      "projected": 268.3
     }
   ],
   "fixtures": [
