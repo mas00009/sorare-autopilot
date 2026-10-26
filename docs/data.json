@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T19:22:10.592Z",
+  "generatedAt": "2026-10-26T19:52:58.218Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-25T16:15:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793042525709,
-    "reason": "last run 0m ago, next due in 180m"
+    "reason": "last run 31m ago, next due in 149m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -706,9 +706,9 @@
       {
         "title": "Collect Goalkeepers",
         "gems": 10,
-        "progress": 10,
+        "progress": 11,
         "target": 112,
-        "remaining": 102,
+        "remaining": 101,
         "competition": null,
         "group": null,
         "teams": []
@@ -716,9 +716,9 @@
       {
         "title": "Collect Spanish players in LaLiga",
         "gems": 30,
-        "progress": 19,
+        "progress": 23,
         "target": 279,
-        "remaining": 260,
+        "remaining": 256,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": []
@@ -726,9 +726,9 @@
       {
         "title": "Collect Players",
         "gems": 30,
-        "progress": 36,
+        "progress": 41,
         "target": 1115,
-        "remaining": 1079,
+        "remaining": 1074,
         "competition": null,
         "group": null,
         "teams": []
@@ -851,8 +851,48 @@
         }
       ],
       "plan": null,
-      "candidates": [],
-      "projected": 0
+      "candidates": [
+        {
+          "id": "ComposeTeamBenchCard:14ac74ec-813c-466e-8de9-0f6f6e74f44f",
+          "player": "Moncayola",
+          "slug": "jon-moncayola-tollar",
+          "position": "MD",
+          "average": 42,
+          "bonus": 1.01,
+          "starterPct": null,
+          "startRate": 0.9,
+          "oddsKnown": false,
+          "onGameSheet": true,
+          "reliability": null,
+          "formL5": 36,
+          "picture": "https://assets.sorare.com/cardsamplepicture/bb491642-4e2c-4c48-93ab-be5d6425d083/picture/tinified-c6d25e696e327fd3d37e459f28ebeb5e.png",
+          "rarity": "common",
+          "gameId": "Game:2fbaf245-7071-4853-a529-78eaedec0455",
+          "kickoff": "2026-10-26T20:00:00Z",
+          "team": "CA Osasuna",
+          "teamSlug": "osasuna-pamplona-irunea",
+          "opponent": "Sevilla FC",
+          "opponentCode": "SEV",
+          "code": "OSA",
+          "rank": 12,
+          "opponentRank": 6,
+          "home": false,
+          "competition": "Primera División",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.222,
+          "pLose": 0.5,
+          "oddsBooks": 21,
+          "marketFactor": 0.968,
+          "lockedAt": null,
+          "expected": 35.66,
+          "blocked": null
+        }
+      ],
+      "projected": 35.7
     },
     {
       "surface": "team set (Loadshift)",
@@ -869,7 +909,7 @@
       "squad": {
         "lineupsIn": 2,
         "needed": 3,
-        "scoreSoFar": 405.3
+        "scoreSoFar": 450.7764
       },
       "level": 0,
       "lives": null,
@@ -914,9 +954,77 @@
       "target": 700,
       "current": [],
       "plan": null,
-      "candidates": [],
-      "projected": 0
+      "candidates": [
+        {
+          "id": "ComposeTeamBenchCard:14ac74ec-813c-466e-8de9-0f6f6e74f44f",
+          "player": "Moncayola",
+          "slug": "jon-moncayola-tollar",
+          "position": "MD",
+          "average": 42,
+          "bonus": 1.01,
+          "starterPct": null,
+          "startRate": 0.9,
+          "oddsKnown": false,
+          "onGameSheet": true,
+          "reliability": null,
+          "formL5": 36,
+          "picture": "https://assets.sorare.com/cardsamplepicture/bb491642-4e2c-4c48-93ab-be5d6425d083/picture/tinified-c6d25e696e327fd3d37e459f28ebeb5e.png",
+          "rarity": "common",
+          "gameId": "Game:2fbaf245-7071-4853-a529-78eaedec0455",
+          "kickoff": "2026-10-26T20:00:00Z",
+          "team": "CA Osasuna",
+          "teamSlug": "osasuna-pamplona-irunea",
+          "opponent": "Sevilla FC",
+          "opponentCode": "SEV",
+          "code": "OSA",
+          "rank": 12,
+          "opponentRank": 6,
+          "home": false,
+          "competition": "Primera División",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.222,
+          "pLose": 0.5,
+          "oddsBooks": 21,
+          "marketFactor": 0.968,
+          "lockedAt": null,
+          "expected": 35.66,
+          "blocked": null
+        }
+      ],
+      "projected": 35.7
     }
   ],
-  "fixtures": []
+  "fixtures": [
+    {
+      "kickoff": "2026-10-26T20:00:00Z",
+      "competition": "Primera División",
+      "team": "CA Osasuna",
+      "code": "OSA",
+      "rank": 12,
+      "opponent": "Sevilla FC",
+      "opponentCode": "SEV",
+      "opponentRank": 6,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.222,
+      "pLose": 0.5,
+      "oppFactor": null,
+      "home": false,
+      "players": [
+        "Moncayola",
+        "Moncayola"
+      ],
+      "points": 71.3,
+      "bestStarter": null,
+      "surfaces": [
+        "my set",
+        "team set (Loadshift)"
+      ]
+    }
+  ]
 }
