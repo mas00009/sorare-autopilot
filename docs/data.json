@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T20:23:20.665Z",
+  "generatedAt": "2026-10-26T20:53:40.540Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-25T16:15:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793042525709,
-    "reason": "last run 61m ago, next due in 119m"
+    "reason": "last run 92m ago, next due in 88m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -869,7 +869,7 @@
       "squad": {
         "lineupsIn": 2,
         "needed": 3,
-        "scoreSoFar": 512.638
+        "scoreSoFar": 561.4532
       },
       "level": 0,
       "lives": null,
