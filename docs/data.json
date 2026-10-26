@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T00:41:28.556Z",
+  "generatedAt": "2026-10-26T01:12:33.687Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-25T16:15:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1792966042402,
-    "reason": "last run 154m ago, next due in 26m"
+    "lastRunAt": 1792977146044,
+    "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -393,68 +393,6 @@
       "scored": 5
     },
     {
-      "surface": "team set (Loadshift)",
-      "level": 1,
-      "target": 980,
-      "stepState": "FAILED",
-      "collaborative": true,
-      "squadLineups": 5,
-      "squadScore": 972.6152,
-      "lineupId": "Tasks::TaskLineup:267160a5-16d1-4c2d-b5ef-aba8cbd76f20",
-      "state": "FAILED",
-      "score": 261.57,
-      "finished": true,
-      "cleared": false,
-      "players": [
-        {
-          "name": "Álvaro Valles",
-          "slug": "alvaro-valles-rosa",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 81.43,
-          "status": "FINAL",
-          "kickoff": "2026-10-31T17:30:00Z"
-        },
-        {
-          "name": "Sergio Gómez",
-          "slug": "sergio-gomez-martin",
-          "position": "Defender",
-          "captain": false,
-          "score": 46.74,
-          "status": "FINAL",
-          "kickoff": "2026-11-01T20:00:00Z"
-        },
-        {
-          "name": "Federico Valverde",
-          "slug": "federico-santiago-valverde-dipetta",
-          "position": "Midfielder",
-          "captain": true,
-          "score": 77.35,
-          "status": "FINAL",
-          "kickoff": "2026-11-01T15:15:00Z"
-        },
-        {
-          "name": "Navarro",
-          "slug": "robert-navarro-munoz",
-          "position": "Forward",
-          "captain": false,
-          "score": 0,
-          "status": "FINAL",
-          "kickoff": "2026-11-01T20:00:00Z"
-        },
-        {
-          "name": "Isco",
-          "slug": "francisco-roman-alarcon-suarez",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 56.06,
-          "status": "FINAL",
-          "kickoff": "2026-10-31T17:30:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
       "surface": "my set",
       "level": 0,
       "target": 260,
@@ -698,68 +636,6 @@
           "score": 36.62,
           "status": "FINAL",
           "kickoff": "2026-10-31T14:30:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
-      "surface": "team set (Loadshift)",
-      "level": 0,
-      "target": 700,
-      "stepState": "CLAIMED",
-      "collaborative": true,
-      "squadLineups": 4,
-      "squadScore": 948.567,
-      "lineupId": "Tasks::TaskLineup:1f64ce8f-6521-41ea-97a3-f0d1c7278ede",
-      "state": "SUCCESSFUL",
-      "score": 304.73,
-      "finished": true,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Maarten Vandevoordt",
-          "slug": "maarten-vandevoordt",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 0,
-          "status": "FINAL",
-          "kickoff": "2026-10-31T14:30:00Z"
-        },
-        {
-          "name": "Marcos Llorente",
-          "slug": "marcos-llorente-moreno",
-          "position": "Defender",
-          "captain": false,
-          "score": 55.71,
-          "status": "FINAL",
-          "kickoff": "2026-10-31T13:00:00Z"
-        },
-        {
-          "name": "Unai López",
-          "slug": "unai-lopez-cabrera",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 90.9,
-          "status": "FINAL",
-          "kickoff": "2026-10-31T15:15:00Z"
-        },
-        {
-          "name": "Iñigo Vicente",
-          "slug": "inigo-vicente-elorduy",
-          "position": "Forward",
-          "captain": true,
-          "score": 83.01,
-          "status": "FINAL",
-          "kickoff": "2026-11-01T15:15:00Z"
-        },
-        {
-          "name": "Dávid Hancko",
-          "slug": "david-hancko",
-          "position": "Defender",
-          "captain": false,
-          "score": 75.12,
-          "status": "FINAL",
-          "kickoff": "2026-10-31T13:00:00Z"
         }
       ],
       "scored": 5
@@ -1254,8 +1130,8 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Missed the target. A fresh team goes in when the step reopens.",
-      "tone": "bad",
+      "status": "Not open for entry yet. A team goes in the moment it opens.",
+      "tone": "neutral",
       "lockAt": null,
       "isSquad": true,
       "entered": null,
@@ -1265,23 +1141,23 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 5,
+        "lineupsIn": 0,
         "needed": 3,
-        "scoreSoFar": 972.6152
+        "scoreSoFar": 0
       },
-      "level": 1,
+      "level": 0,
       "lives": null,
       "totalLevels": 5,
-      "levelsDone": 1,
+      "levelsDone": 0,
       "ladder": [
         {
           "level": 0,
-          "state": "CLAIMED",
+          "state": "PRE_MATCHDAY_LOCKED",
           "target": 700
         },
         {
           "level": 1,
-          "state": "FAILED",
+          "state": "LOCKED",
           "target": 980
         },
         {
@@ -1308,40 +1184,9 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "FAILED",
-      "target": 980,
-      "current": [
-        {
-          "name": "Álvaro Valles",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-31T17:30:00Z"
-        },
-        {
-          "name": "Sergio Gómez",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-11-01T20:00:00Z"
-        },
-        {
-          "name": "Federico Valverde",
-          "captain": true,
-          "locked": true,
-          "nextGame": "2026-11-01T15:15:00Z"
-        },
-        {
-          "name": "Navarro",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-11-01T20:00:00Z"
-        },
-        {
-          "name": "Isco",
-          "captain": false,
-          "locked": true,
-          "nextGame": "2026-10-31T17:30:00Z"
-        }
-      ],
+      "state": "PRE_MATCHDAY_LOCKED",
+      "target": 700,
+      "current": [],
       "plan": null,
       "candidates": [],
       "projected": 0
