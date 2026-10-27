@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T16:15:35.435Z",
+  "generatedAt": "2026-10-27T16:45:54.580Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-25T16:15:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793117712480,
-    "reason": "last run 0m ago, next due in 180m"
+    "reason": "last run 31m ago, next due in 149m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -34,46 +34,12 @@
         "competition": "English League Players",
         "group": "glitch-premier-league",
         "teams": []
-      },
-      {
-        "title": "Collect Big 3 LaLiga",
-        "gems": 75,
-        "progress": 10,
-        "target": 70,
-        "remaining": 60,
-        "competition": "LALIGA EA Sports",
-        "group": "glitch-laliga",
-        "teams": [
-          "Real Madrid",
-          "FC Barcelona",
-          "Atlético de Madrid"
-        ]
-      },
-      {
-        "title": "Collect Goalkeepers",
-        "gems": 10,
-        "progress": 12,
-        "target": 112,
-        "remaining": 100,
-        "competition": null,
-        "group": null,
-        "teams": []
-      },
-      {
-        "title": "Collect Players",
-        "gems": 30,
-        "progress": 56,
-        "target": 1115,
-        "remaining": 1059,
-        "competition": null,
-        "group": null,
-        "teams": []
       }
     ],
     "preferredPack": null,
     "ladderGemsAhead": 0,
     "ladderCashAhead": 0,
-    "collectionGemsOpen": 120
+    "collectionGemsOpen": 5
   },
   "odds": {
     "configured": true,
