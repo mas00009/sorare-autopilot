@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T01:30:55.030Z",
+  "generatedAt": "2026-10-27T02:01:24.415Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-25T16:15:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793064648921,
-    "reason": "last run 0m ago, next due in 180m"
+    "reason": "last run 31m ago, next due in 149m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -692,9 +692,9 @@
       {
         "title": "Collect Big 3 LaLiga",
         "gems": 75,
-        "progress": 8,
+        "progress": 10,
         "target": 70,
-        "remaining": 62,
+        "remaining": 60,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": [
@@ -716,9 +716,9 @@
       {
         "title": "Collect Spanish players in LaLiga",
         "gems": 30,
-        "progress": 26,
+        "progress": 29,
         "target": 279,
-        "remaining": 253,
+        "remaining": 250,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": []
@@ -726,9 +726,9 @@
       {
         "title": "Collect Players",
         "gems": 30,
-        "progress": 46,
+        "progress": 51,
         "target": 1115,
-        "remaining": 1069,
+        "remaining": 1064,
         "competition": null,
         "group": null,
         "teams": []
