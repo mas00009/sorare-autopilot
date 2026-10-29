@@ -70,6 +70,17 @@ export const DEFAULTS = {
    */
   captainBonus: 0.5,
   /**
+   * What a picked five actually scores against its projection. Measured over
+   * the HyperGlitch set (Sep-Oct 2026): 35 picked players expected 2,137 and
+   * scored 1,782 (0.83); whole lineups 0.73 including one wipe-out. Picking
+   * the best-looking five out of ~200 selects players on a hot run, and they
+   * fall back. Uncorrected, the bot entered teams it thought were near 360
+   * that were really near 300, and level 2 failed all 7 attempts. Applied to
+   * the projected TOTAL (the entry gate and what the owner sees), not to the
+   * ranking, which only needs the order.
+   */
+  calibration: 0.83,
+  /**
    * Opponent strength, for international fixtures only. See opponents.js: the
    * effect is real and holdout-validated for internationals, and measured at
    * nothing for club games, so club league position is deliberately ignored.
@@ -376,7 +387,7 @@ export function pickLineup(benchNodes, options = {}) {
   const captain = (eligible.length ? eligible : chosen)
     .reduce((a, b) => (captainValue(b) > captainValue(a) ? b : a));
   const captainPoints = Number(uplift(captain).toFixed(2));
-  const projected = chosen.reduce((s, c) => s + c.expected, 0) + captainPoints;
+  const projected = (chosen.reduce((s, c) => s + c.expected, 0) + captainPoints) * (opts.calibration ?? 1);
 
   return {
     ok: true,

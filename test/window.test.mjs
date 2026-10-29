@@ -22,7 +22,7 @@ const bench = [
 // The step resolves when the last card has played. Among lineups within reach
 // of the target, the one that FINISHES earliest wins; a slightly stronger side
 // that keeps the step open for days is not worth it.
-const early = pickAcrossWindow(bench, { target: 300 });
+const early = pickAcrossWindow(bench, { target: 300, calibration: 1 });
 assert.equal(early.ok, true);
 assert.equal(early.clearsTarget, true);
 assert.equal(early.finishDay, '2026-09-26', 'nothing complete can finish before the 26th');
@@ -43,26 +43,26 @@ const fast = [
   card({ n: 'X2', pos: 'DF', avg: 65, day: '2026-09-30', game: 'b5' }),
 ];
 // (55 x 0.957 availability x 5, plus the armband, is about 289; the 30th side about 341.)
-const soon = pickAcrossWindow(fast, { target: 280 });
+const soon = pickAcrossWindow(fast, { target: 280, calibration: 1 });
 assert.equal(soon.finishDay, '2026-09-24', 'the 24th side clears 280, so finish on the 24th');
 assert.ok(soon.tradedPointsForTime > 0, 'and say what was given up for it');
 // The 24th side falls short of 320 and is not nearly as strong, so the later
 // side that clears it is taken instead.
-const later = pickAcrossWindow(fast, { target: 320 });
+const later = pickAcrossWindow(fast, { target: 320, calibration: 1 });
 assert.equal(later.finishDay, '2026-09-30');
 assert.equal(later.clearsTarget, true);
 // Nothing clears 400: strongest within reach, which is still the 30th.
-const none = pickAcrossWindow(fast, { target: 400 });
+const none = pickAcrossWindow(fast, { target: 400, calibration: 1 });
 assert.equal(none.clearsTarget, false);
 assert.equal(none.finishDay, '2026-09-30');
 
 // Target out of reach from any day -> report the best and flag it, do not pretend.
-const short = pickAcrossWindow(bench, { target: 999 });
+const short = pickAcrossWindow(bench, { target: 999, calibration: 1 });
 assert.equal(short.clearsTarget, false);
 assert.ok(short.shortfall > 0);
 
 // No target -> still returns a valid lineup.
-assert.equal(pickAcrossWindow(bench, {}).ok, true);
+assert.equal(pickAcrossWindow(bench, { calibration: 1 }).ok, true);
 console.log('window assertions passed  | finishes', early.finishDay, '| fast side traded', soon.tradedPointsForTime, 'pts to finish six days sooner');
 
 // --- a gap inside the natural spread is worth playing ---

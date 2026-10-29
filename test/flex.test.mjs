@@ -45,12 +45,15 @@ test('the armband goes on the best raw scorer, not the best projection', () => {
     card('md1', 'Midfielder', 70, 'g4'),
     card('df2', 'Defender', 40, 'g5'),
   ];
-  const picked = pickLineup(bench);
+  const picked = pickLineup(bench, { calibration: 1 });
   assert.equal(picked.ok, true, picked.reason);
   assert.equal(picked.captain.slug, 'md1');
   assert.ok(picked.captainPoints > 0);
   const flat = picked.chosen.reduce((s, c) => s + c.expected, 0);
   assert.ok(picked.projected > flat, 'the armband must be in the projection');
+  // The default projection is calibrated to what picked fives really scored.
+  const real = pickLineup(bench);
+  assert.ok(Math.abs(real.projected - picked.projected * 0.83) < 0.01, 'projection scaled to last season\'s measured 0.83');
 });
 
 test('appearances go out in slot order, not ranking order', async () => {

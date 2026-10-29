@@ -64,7 +64,11 @@ export function liveLineupOf(step) {
   return (step?.myLineups ?? []).find((l) => !SPENT_LINEUP.has(l.aasmState)) ?? null;
 }
 
-export const SPREAD = 56;
+// Calibrated, how far short a five can project and still be worth a life.
+// Last set, honest outcomes spread about 58 points either side of the
+// calibrated projection; 56 short passed about one time in six, and burned
+// lives on L2 seven times. 40 short is about a one-in-four shot.
+export const SPREAD = 40;
 
 /** Fallback when the step does not name one; see optimiser DEFAULTS. */
 const CAPTAIN_BONUS = DEFAULTS.captainBonus;
@@ -1195,8 +1199,12 @@ export async function pass({ dryRun = false, options = {} } = {}) {
       // chest belongs to that set. Until then, spend whatever comes in rather
       // than one pack a day: essence left at the end is likely worthless, and
       // packs are the only route to the gem collections.
-      const setEnds = Date.parse(process.env.AUTOPILOT_SET_ENDS ?? '2026-10-27T16:00:00Z');
-      const spendAll = Date.now() < setEnds;
+      // Spend it all, every day, from the first day of the Set. Last set the
+      // essence was saved and spent in the final week, when packs mostly
+      // repeat players already held: 40 packs then found ONE new Big 3
+      // player. Early packs are where new players - and gem collections -
+      // come from. Essence is worthless once the Set ends anyway.
+      const spendAll = true;
       report.packs = await openPacksUntilThreeStar({
         dryRun,
         essenceFloor: options.essenceFloor,
