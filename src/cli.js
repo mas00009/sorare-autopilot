@@ -140,6 +140,10 @@ async function report(r) {
     for (const e of m.errors.slice(0, 3)) console.log(`  ! ${e}`);
   }
 
+  if (r.starter) {
+    console.log(`\nStarter pack: ${r.starter.claimed ? `claimed for ${r.starter.set} - ${r.starter.cards.join(', ')}` : r.starter.reason}`);
+  }
+
   if (r.nbaWheel) {
     const w = r.nbaWheel;
     console.log('\nNBA wheel');

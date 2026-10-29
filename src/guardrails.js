@@ -72,6 +72,9 @@ export const ALLOWED_MUTATIONS = new Set([
   // charges: the input is only card slugs and Sorare's own signed price.
   // Reachable only from dupes.js, which never drops a 4- or 5-star card.
   'dropAndAddCards',
+  // The free starter pack of common cards a new Set hands out. No price in
+  // its input. Football only, from starter.js.
+  'claimStarterPack',
   // Free daily pack pull flow
   'pullCards',
   'confirmCardPull',

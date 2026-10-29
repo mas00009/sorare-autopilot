@@ -1104,6 +1104,12 @@ export async function pass({ dryRun = false, options = {} } = {}) {
     report.balanceError = err.message;
   }
 
+  // A new Set starts everyone from nothing: claim the free starter pack first.
+  try {
+    const { claimFootballStarter } = await import('./starter.js');
+    report.starter = await claimFootballStarter({ dryRun });
+  } catch (err) { report.starter = { reason: `starter pack: ${err.message}` }; }
+
   try {
     const { boards, squad, nickname } = await resolveBoards();
     report.squad = squad?.name ?? null;
@@ -1142,10 +1148,8 @@ export async function pass({ dryRun = false, options = {} } = {}) {
     report.freePacks = await openFreePacks({ dryRun });
   } catch (err) { report.freePacks = { opened: [], cards: [], errors: [err.message] }; }
 
-  try {
-    const { spinNbaWheel } = await import('./wheel.js');
-    report.nbaWheel = await spinNbaWheel({ dryRun });
-  } catch (err) { report.nbaWheel = { spun: false, won: [], errors: [err.message] }; }
+  // The NBA wheel is off: from 30 Oct 2026 the owner plays the NBA side
+  // himself and the bot does football only.
 
   // Did anything claimed this pass already give us a 3-star? If so the daily
   // collect challenge is done, and there is no reason to spend a bonus pack or

@@ -27,10 +27,13 @@ NODE="$(command -v node || echo /usr/local/bin/node)"
   # Main account: the same DNP guard, for any lineup the owner set by hand.
   "$NODE" src/cli.js guard 2>&1
 
-  # Second account: the NBA wheel and the DNP guard on lineups the owner set.
-  # Nothing else runs there. The guard keeps its own clock keyed to the lock.
+  # Second account (Kobe-8-24): since 26 Oct 2026 the owner wants it fully automated on
+  # soccer, same as main (lineups, missions, packs), to earn gems for the NBA launch.
+  # It keeps its own state file and schedule clock, plus the DNP guard. No NBA: the
+  # owner plays that side himself (30 Oct 2026).
   if [ -f "$DIR/state/tokens-second.json" ]; then
-    SORARE_ACCOUNT=second "$NODE" src/cli.js wheel 2>&1
+    out2=$(SORARE_ACCOUNT=second "$NODE" src/cli.js run 2>&1)
+    echo "---- second account ----"; printf '%s\n' "$out2"
     SORARE_ACCOUNT=second "$NODE" src/cli.js guard 2>&1
   fi
 
