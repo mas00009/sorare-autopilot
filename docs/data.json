@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T19:42:46.690Z",
+  "generatedAt": "2026-10-30T20:13:09.092Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-30T13:15:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793387451160,
-    "reason": "last run 32m ago, next due in 148m"
+    "reason": "last run 62m ago, next due in 118m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -36,8 +36,8 @@
   "odds": {
     "configured": true,
     "month": "2026-10",
-    "used": 144,
-    "remaining": 356
+    "used": 145,
+    "remaining": 355
   },
   "control": {
     "paused": false,
@@ -181,7 +181,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "No eligible cards for this step yet.",
+      "status": "Not open for entry yet. A team goes in the moment it opens.",
       "tone": "neutral",
       "lockAt": null,
       "isSquad": true,
@@ -203,7 +203,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "PLAYABLE",
+          "state": "PRE_MATCHDAY_LOCKED",
           "target": 700
         },
         {
@@ -235,7 +235,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "PLAYABLE",
+      "state": "PRE_MATCHDAY_LOCKED",
       "target": 700,
       "current": [],
       "plan": null,
