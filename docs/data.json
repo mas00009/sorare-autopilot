@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-30T10:18:27.078Z",
+  "generatedAt": "2026-10-30T10:35:01.869Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 0,
+    "essence": 500,
     "gems": 266
   },
   "schedule": {
     "nextLock": "2026-10-30T13:15:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1793355461609,
-    "reason": "last run 1m ago, next due in 14m (lock in 177m)"
+    "lastRunAt": 1793356457469,
+    "reason": "last run 1m ago, next due in 14m (lock in 160m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -36,8 +36,8 @@
   "odds": {
     "configured": true,
     "month": "2026-10",
-    "used": 140,
-    "remaining": 360
+    "used": 144,
+    "remaining": 356
   },
   "control": {
     "paused": false,
@@ -97,8 +97,87 @@
       "target": 40,
       "current": [],
       "plan": null,
-      "candidates": [],
-      "projected": 0
+      "candidates": [
+        {
+          "id": "ComposeTeamBenchCard:4409f1ca-4568-49af-ae33-8b4033a557c3",
+          "player": "Mario Soriano",
+          "slug": "mario-soriano-carreno",
+          "position": "MD",
+          "average": 58,
+          "bonus": 1,
+          "starterPct": null,
+          "startRate": 0.9,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 64,
+          "picture": "https://assets.sorare.com/cardsamplepicture/72c85777-2115-4366-992c-425f58ea6f39/picture/tinified-9b53b12903f24486bb9aeaa82ffefb7b.png",
+          "rarity": "common",
+          "gameId": "Game:0610d24e-2b42-42b9-b907-b9ae2e3b96fc",
+          "kickoff": "2026-11-02T20:00:00Z",
+          "team": "Real Club Deportivo de La Coruña",
+          "teamSlug": "deportivo-la-coruna-a-coruna",
+          "opponent": "CA Osasuna",
+          "opponentCode": "OSA",
+          "code": "DEP",
+          "rank": 11,
+          "opponentRank": 12,
+          "home": true,
+          "competition": "Primera División",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.441,
+          "pLose": 0.269,
+          "oddsBooks": 21,
+          "marketFactor": 1.016,
+          "lockedAt": null,
+          "expected": 57.95,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:44a612f0-68fa-49fb-89d1-905c2a56a71e",
+          "player": "Matías Dituro",
+          "slug": "matias-ezequiel-dituro",
+          "position": "GK",
+          "average": 44,
+          "bonus": 1.05,
+          "starterPct": null,
+          "startRate": 1,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 60,
+          "picture": "https://assets.sorare.com/cardsamplepicture/7fd36ce7-2131-4b12-957c-72e7733507d5/picture/tinified-30e880404a439e8921cbd57e5f727c9e.png",
+          "rarity": "common",
+          "gameId": "Game:fce5d8ab-b45a-4027-b9cb-37e9759a6c0b",
+          "kickoff": "2026-11-01T17:30:00Z",
+          "team": "Elche CF",
+          "teamSlug": "elche-elche",
+          "opponent": "Valencia CF",
+          "opponentCode": "VCF",
+          "code": "ELC",
+          "rank": 15,
+          "opponentRank": 19,
+          "home": true,
+          "competition": "Primera División",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.407,
+          "pLose": 0.312,
+          "oddsBooks": 21,
+          "marketFactor": 1.017,
+          "lockedAt": null,
+          "expected": 55.53,
+          "blocked": null
+        }
+      ],
+      "projected": 113.5
     },
     {
       "surface": "team set (Loadshift)",
@@ -164,5 +243,56 @@
       "projected": 0
     }
   ],
-  "fixtures": []
+  "fixtures": [
+    {
+      "kickoff": "2026-11-01T17:30:00Z",
+      "competition": "Primera División",
+      "team": "Elche CF",
+      "code": "ELC",
+      "rank": 15,
+      "opponent": "Valencia CF",
+      "opponentCode": "VCF",
+      "opponentRank": 19,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.407,
+      "pLose": 0.312,
+      "oppFactor": null,
+      "home": true,
+      "players": [
+        "Matías Dituro"
+      ],
+      "points": 55.5,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
+      ]
+    },
+    {
+      "kickoff": "2026-11-02T20:00:00Z",
+      "competition": "Primera División",
+      "team": "Real Club Deportivo de La Coruña",
+      "code": "DEP",
+      "rank": 11,
+      "opponent": "CA Osasuna",
+      "opponentCode": "OSA",
+      "opponentRank": 12,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.441,
+      "pLose": 0.269,
+      "oppFactor": null,
+      "home": true,
+      "players": [
+        "Mario Soriano"
+      ],
+      "points": 58,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
+      ]
+    }
+  ]
 }
