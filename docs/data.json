@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-30T20:43:32.738Z",
+  "generatedAt": "2026-10-30T21:13:54.899Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 500,
-    "gems": 266
+    "essence": 2500,
+    "gems": 16
   },
   "schedule": {
     "nextLock": "2026-10-30T13:15:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793387451160,
-    "reason": "last run 93m ago, next due in 87m"
+    "reason": "last run 123m ago, next due in 57m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -21,16 +21,49 @@
   },
   "results": [],
   "gems": {
-    "balance": 266,
+    "balance": 16,
     "level": 0,
-    "ladder": [],
+    "ladder": [
+      {
+        "level": 2,
+        "state": "LOCKED",
+        "target": 360,
+        "gems": 10,
+        "usd": 0,
+        "current": false
+      },
+      {
+        "level": 3,
+        "state": "LOCKED",
+        "target": 400,
+        "gems": 30,
+        "usd": 0,
+        "current": false
+      },
+      {
+        "level": 4,
+        "state": "LOCKED",
+        "target": 440,
+        "gems": 0,
+        "usd": 100,
+        "current": false
+      },
+      {
+        "level": 5,
+        "state": "LOCKED",
+        "target": 480,
+        "gems": 0,
+        "usd": 1000,
+        "current": false
+      }
+    ],
     "collections": [],
     "preferredPack": {
       "group": "LaLiga Packs",
       "slug": "divination-divination-laliga-bronze-laliga"
     },
-    "ladderGemsAhead": 0,
-    "ladderCashAhead": 0,
+    "ladderGemsAhead": 40,
+    "ladderCashAhead": 1100,
     "collectionGemsOpen": 0
   },
   "odds": {
@@ -63,38 +96,52 @@
       "squad": null,
       "level": 0,
       "lives": {
-        "left": 100,
-        "of": 100
+        "left": 4,
+        "of": 4
       },
-      "totalLevels": 3,
+      "totalLevels": 6,
       "levelsDone": 0,
       "ladder": [
         {
           "level": 0,
           "state": "PLAYABLE",
-          "target": 40
+          "target": 260
         },
         {
           "level": 1,
           "state": "LOCKED",
-          "target": 80
+          "target": 300
         },
         {
           "level": 2,
           "state": "LOCKED",
-          "target": 120
+          "target": 360
+        },
+        {
+          "level": 3,
+          "state": "LOCKED",
+          "target": 400
+        },
+        {
+          "level": 4,
+          "state": "LOCKED",
+          "target": 440
+        },
+        {
+          "level": 5,
+          "state": "LOCKED",
+          "target": 480
         }
       ],
       "rewards": [
         {
-          "kind": "pack",
-          "cards": 5,
-          "worth": 0,
-          "currency": "COMMON_ESSENCE"
+          "kind": "essence",
+          "amount": 2000,
+          "rarity": "common"
         }
       ],
       "state": "PLAYABLE",
-      "target": 40,
+      "target": 260,
       "current": [],
       "plan": null,
       "candidates": [
@@ -175,9 +222,48 @@
           "lockedAt": null,
           "expected": 55.53,
           "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:abfe98f0-30c6-4e46-a146-81288a31494c",
+          "player": "Josip Stanišić",
+          "slug": "josip-stanisic",
+          "position": "DF",
+          "average": 39,
+          "bonus": 1.05,
+          "starterPct": null,
+          "startRate": 0.7,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 42,
+          "picture": "https://assets.sorare.com/cardsamplepicture/d75e674f-4ced-4a7c-b62f-0a71ec7abf25/picture/tinified-688d7dfa5e4c46a9e5e38d5a8d313bc0.png",
+          "rarity": "common",
+          "gameId": "Game:b5868f64-a32f-4817-a39f-1b5bf6ddf04e",
+          "kickoff": "2026-10-31T17:30:00Z",
+          "team": "FC Bayern München",
+          "teamSlug": "bayern-munchen-munchen",
+          "opponent": "Borussia Dortmund",
+          "opponentCode": "BVB",
+          "code": "BAY",
+          "rank": 1,
+          "opponentRank": 2,
+          "home": true,
+          "competition": "Bundesliga",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.711,
+          "pLose": 0.124,
+          "oddsBooks": 23,
+          "marketFactor": 1.07,
+          "lockedAt": null,
+          "expected": 35.05,
+          "blocked": null
         }
       ],
-      "projected": 113.5
+      "projected": 148.5
     },
     {
       "surface": "team set (Loadshift)",
@@ -244,6 +330,31 @@
     }
   ],
   "fixtures": [
+    {
+      "kickoff": "2026-10-31T17:30:00Z",
+      "competition": "Bundesliga",
+      "team": "FC Bayern München",
+      "code": "BAY",
+      "rank": 1,
+      "opponent": "Borussia Dortmund",
+      "opponentCode": "BVB",
+      "opponentRank": 2,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.711,
+      "pLose": 0.124,
+      "oppFactor": null,
+      "home": true,
+      "players": [
+        "Josip Stanišić"
+      ],
+      "points": 35,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
+      ]
+    },
     {
       "kickoff": "2026-11-01T17:30:00Z",
       "competition": "Primera División",
