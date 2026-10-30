@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-30T21:44:17.708Z",
+  "generatedAt": "2026-10-30T22:15:05.953Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 2500,
+    "essence": 500,
     "gems": 16
   },
   "schedule": {
     "nextLock": "2026-10-30T13:15:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1793387451160,
-    "reason": "last run 153m ago, next due in 27m"
+    "lastRunAt": 1793398497853,
+    "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -168,7 +168,7 @@
           "opponentCode": "OSA",
           "code": "DEP",
           "rank": 11,
-          "opponentRank": 12,
+          "opponentRank": 13,
           "home": true,
           "competition": "Primera División",
           "intl": false,
@@ -206,7 +206,7 @@
           "opponent": "Valencia CF",
           "opponentCode": "VCF",
           "code": "ELC",
-          "rank": 15,
+          "rank": 16,
           "opponentRank": 19,
           "home": true,
           "competition": "Primera División",
@@ -360,7 +360,7 @@
       "competition": "Primera División",
       "team": "Elche CF",
       "code": "ELC",
-      "rank": 15,
+      "rank": 16,
       "opponent": "Valencia CF",
       "opponentCode": "VCF",
       "opponentRank": 19,
@@ -388,7 +388,7 @@
       "rank": 11,
       "opponent": "CA Osasuna",
       "opponentCode": "OSA",
-      "opponentRank": 12,
+      "opponentRank": 13,
       "intl": false,
       "ownRank": null,
       "oppRank": null,
