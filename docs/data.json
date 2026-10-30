@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T10:11:58.560Z",
+  "generatedAt": "2026-10-30T10:18:27.078Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-30T13:15:00Z",
     "cadenceMin": 15,
-    "lastRunAt": 1793355087239,
-    "reason": "last run 1m ago, next due in 14m (lock in 183m)"
+    "lastRunAt": 1793355461609,
+    "reason": "last run 1m ago, next due in 14m (lock in 177m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -25,7 +25,10 @@
     "level": 0,
     "ladder": [],
     "collections": [],
-    "preferredPack": null,
+    "preferredPack": {
+      "group": "LaLiga Packs",
+      "slug": "divination-divination-laliga-bronze-laliga"
+    },
     "ladderGemsAhead": 0,
     "ladderCashAhead": 0,
     "collectionGemsOpen": 0
@@ -44,6 +47,122 @@
     "note": "Edit this file on GitHub to control the bot. It is read at the start of every pass.",
     "source": "github"
   },
-  "surfaces": [],
+  "surfaces": [
+    {
+      "surface": "my set",
+      "status": "No eligible cards for this step yet.",
+      "tone": "neutral",
+      "lockAt": null,
+      "isSquad": false,
+      "entered": null,
+      "poolStrength": {
+        "strong": 0,
+        "needed": 5
+      },
+      "collaborative": false,
+      "squad": null,
+      "level": 0,
+      "lives": {
+        "left": 100,
+        "of": 100
+      },
+      "totalLevels": 3,
+      "levelsDone": 0,
+      "ladder": [
+        {
+          "level": 0,
+          "state": "PLAYABLE",
+          "target": 40
+        },
+        {
+          "level": 1,
+          "state": "LOCKED",
+          "target": 80
+        },
+        {
+          "level": 2,
+          "state": "LOCKED",
+          "target": 120
+        }
+      ],
+      "rewards": [
+        {
+          "kind": "pack",
+          "cards": 5,
+          "worth": 0,
+          "currency": "COMMON_ESSENCE"
+        }
+      ],
+      "state": "PLAYABLE",
+      "target": 40,
+      "current": [],
+      "plan": null,
+      "candidates": [],
+      "projected": 0
+    },
+    {
+      "surface": "team set (Loadshift)",
+      "status": "No eligible cards for this step yet.",
+      "tone": "neutral",
+      "lockAt": null,
+      "isSquad": true,
+      "entered": null,
+      "poolStrength": {
+        "strong": 0,
+        "needed": 5
+      },
+      "collaborative": true,
+      "squad": {
+        "lineupsIn": 0,
+        "needed": 3,
+        "scoreSoFar": 0
+      },
+      "level": 0,
+      "lives": null,
+      "totalLevels": 5,
+      "levelsDone": 0,
+      "ladder": [
+        {
+          "level": 0,
+          "state": "PLAYABLE",
+          "target": 700
+        },
+        {
+          "level": 1,
+          "state": "LOCKED",
+          "target": 980
+        },
+        {
+          "level": 2,
+          "state": "LOCKED",
+          "target": 1060
+        },
+        {
+          "level": 3,
+          "state": "LOCKED",
+          "target": 1140
+        },
+        {
+          "level": 4,
+          "state": "LOCKED",
+          "target": 1280
+        }
+      ],
+      "rewards": [
+        {
+          "kind": "pack",
+          "cards": 5,
+          "worth": 0,
+          "currency": "COMMON_ESSENCE"
+        }
+      ],
+      "state": "PLAYABLE",
+      "target": 700,
+      "current": [],
+      "plan": null,
+      "candidates": [],
+      "projected": 0
+    }
+  ],
   "fixtures": []
 }
