@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T19:29:17.773Z",
+  "generatedAt": "2026-10-31T20:01:31.583Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-31T15:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793469212355,
-    "reason": "last run 96m ago, next due in 84m"
+    "reason": "last run 128m ago, next due in 52m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -49,7 +49,7 @@
           "position": "Defender",
           "captain": false,
           "score": 45.89,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-11-03T20:00:00Z"
         },
         {
@@ -89,7 +89,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 1019.08,
+      "squadScore": 1020.58,
       "lineupId": "Tasks::TaskLineup:5c1c3b53-180e-4a99-83e4-476e53f77ead",
       "state": "READY",
       "score": 194.35,
@@ -103,7 +103,7 @@
           "captain": false,
           "score": 35,
           "status": "REVIEWING",
-          "kickoff": "2026-10-31T20:00:00Z"
+          "kickoff": "2026-11-06T20:00:00Z"
         },
         {
           "name": "Ville Koski",
@@ -112,7 +112,7 @@
           "captain": false,
           "score": 35,
           "status": "REVIEWING",
-          "kickoff": "2026-10-31T20:00:00Z"
+          "kickoff": "2026-11-06T20:00:00Z"
         },
         {
           "name": "Nelson Deossa",
@@ -120,7 +120,7 @@
           "position": "Midfielder",
           "captain": false,
           "score": 31.9,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-11-04T20:00:00Z"
         },
         {
@@ -208,7 +208,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 78 scored so far, 2 of 5 played. On course for about 265; needs 260 (5 over).",
+      "status": "Locked and playing. 82 scored so far, 2 of 5 played. On course for about 269; needs 260 (9 over).",
       "tone": "good",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": false,
@@ -244,8 +244,8 @@
             "kickoff": "2026-11-01T17:30:00Z"
           },
           {
-            "actual": 42.17,
-            "scoreStatus": "REVIEWING",
+            "actual": 45.89,
+            "scoreStatus": "FINAL",
             "teamSlug": "bayern-munchen-munchen",
             "name": "Josip Stanišić",
             "player": "Josip Stanišić",
@@ -361,9 +361,9 @@
           }
         ],
         "projected": 220.17,
-        "scoredSoFar": 77.87,
+        "scoredSoFar": 81.59,
         "played": 2,
-        "expectedFinal": 265.22
+        "expectedFinal": 268.94
       },
       "poolStrength": {
         "strong": 0,
@@ -381,7 +381,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 260
         },
         {
@@ -417,7 +417,7 @@
           "rarity": "common"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 260,
       "current": [
         {
@@ -453,9 +453,9 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 192.15,
-        "lock": "2026-10-31T20:00:00Z",
-        "shortfall": 67.8,
+        "projected": 195,
+        "lock": "2026-11-01T15:15:00Z",
+        "shortfall": 65,
         "tradedPointsForTime": 0,
         "captain": "hugo-alvarez-antunez",
         "captainPoints": 21.59,
@@ -541,6 +541,45 @@
             "blocked": null
           },
           {
+            "id": "ComposeTeamBenchCard:39443dab-7bc9-426d-bcc6-2071a34d7840",
+            "player": "Ville Koski",
+            "slug": "ville-koski",
+            "position": "DF",
+            "average": 51,
+            "bonus": 1,
+            "starterPct": null,
+            "startRate": 0.7,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 63,
+            "picture": "https://assets.sorare.com/cardsamplepicture/6d467f72-6585-4134-800e-bb53131bf212/picture/tinified-ecf6fe372e3b1cc17a8c4f0da97fbcce.png",
+            "rarity": "common",
+            "gameId": "Game:4b564965-b0f4-4e1d-97c9-7c78048aa72d",
+            "kickoff": "2026-11-06T20:00:00Z",
+            "team": "D. Alavés",
+            "teamSlug": "deportivo-alaves-vitoria-gasteiz",
+            "opponent": "Sevilla FC",
+            "opponentCode": "SEV",
+            "code": "ALA",
+            "rank": 7,
+            "opponentRank": 6,
+            "home": false,
+            "competition": "Primera División",
+            "intl": false,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "mismatch": false,
+            "pWin": 0.249,
+            "pLose": 0.464,
+            "oddsBooks": 17,
+            "marketFactor": 0.97,
+            "lockedAt": null,
+            "expected": 40.66,
+            "blocked": null
+          },
+          {
             "id": "ComposeTeamBenchCard:ea3546b0-86fc-49bc-880b-7f909f5d8359",
             "player": "Pablo Ramón",
             "slug": "pablo-ramon-parra",
@@ -616,45 +655,6 @@
             "marketFactor": 0.925,
             "lockedAt": null,
             "expected": 37.63,
-            "blocked": null
-          },
-          {
-            "id": "ComposeTeamBenchCard:39443dab-7bc9-426d-bcc6-2071a34d7840",
-            "player": "Ville Koski",
-            "slug": "ville-koski",
-            "position": "DF",
-            "average": 51,
-            "bonus": 1,
-            "starterPct": null,
-            "startRate": 0.7,
-            "oddsKnown": false,
-            "onGameSheet": true,
-            "reliability": null,
-            "formL5": 63,
-            "picture": "https://assets.sorare.com/cardsamplepicture/6d467f72-6585-4134-800e-bb53131bf212/picture/tinified-ecf6fe372e3b1cc17a8c4f0da97fbcce.png",
-            "rarity": "common",
-            "gameId": "Game:722ceb32-35fd-4685-9d4e-534a8ba33629",
-            "kickoff": "2026-10-31T20:00:00Z",
-            "team": "D. Alavés",
-            "teamSlug": "deportivo-alaves-vitoria-gasteiz",
-            "opponent": "FC Barcelona",
-            "opponentCode": "FCB",
-            "code": "ALA",
-            "rank": 7,
-            "opponentRank": 2,
-            "home": false,
-            "competition": "Primera División",
-            "intl": false,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "mismatch": false,
-            "pWin": 0.047,
-            "pLose": 0.861,
-            "oddsBooks": 20,
-            "marketFactor": 0.889,
-            "lockedAt": null,
-            "expected": 37.23,
             "blocked": null
           }
         ]
@@ -739,6 +739,45 @@
           "blocked": null
         },
         {
+          "id": "ComposeTeamBenchCard:39443dab-7bc9-426d-bcc6-2071a34d7840",
+          "player": "Ville Koski",
+          "slug": "ville-koski",
+          "position": "DF",
+          "average": 51,
+          "bonus": 1,
+          "starterPct": null,
+          "startRate": 0.7,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 63,
+          "picture": "https://assets.sorare.com/cardsamplepicture/6d467f72-6585-4134-800e-bb53131bf212/picture/tinified-ecf6fe372e3b1cc17a8c4f0da97fbcce.png",
+          "rarity": "common",
+          "gameId": "Game:4b564965-b0f4-4e1d-97c9-7c78048aa72d",
+          "kickoff": "2026-11-06T20:00:00Z",
+          "team": "D. Alavés",
+          "teamSlug": "deportivo-alaves-vitoria-gasteiz",
+          "opponent": "Sevilla FC",
+          "opponentCode": "SEV",
+          "code": "ALA",
+          "rank": 7,
+          "opponentRank": 6,
+          "home": false,
+          "competition": "Primera División",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.249,
+          "pLose": 0.464,
+          "oddsBooks": 17,
+          "marketFactor": 0.97,
+          "lockedAt": null,
+          "expected": 40.66,
+          "blocked": null
+        },
+        {
           "id": "ComposeTeamBenchCard:ea3546b0-86fc-49bc-880b-7f909f5d8359",
           "player": "Pablo Ramón",
           "slug": "pablo-ramon-parra",
@@ -815,52 +854,13 @@
           "lockedAt": null,
           "expected": 37.63,
           "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:39443dab-7bc9-426d-bcc6-2071a34d7840",
-          "player": "Ville Koski",
-          "slug": "ville-koski",
-          "position": "DF",
-          "average": 51,
-          "bonus": 1,
-          "starterPct": null,
-          "startRate": 0.7,
-          "oddsKnown": false,
-          "onGameSheet": true,
-          "reliability": null,
-          "formL5": 63,
-          "picture": "https://assets.sorare.com/cardsamplepicture/6d467f72-6585-4134-800e-bb53131bf212/picture/tinified-ecf6fe372e3b1cc17a8c4f0da97fbcce.png",
-          "rarity": "common",
-          "gameId": "Game:722ceb32-35fd-4685-9d4e-534a8ba33629",
-          "kickoff": "2026-10-31T20:00:00Z",
-          "team": "D. Alavés",
-          "teamSlug": "deportivo-alaves-vitoria-gasteiz",
-          "opponent": "FC Barcelona",
-          "opponentCode": "FCB",
-          "code": "ALA",
-          "rank": 7,
-          "opponentRank": 2,
-          "home": false,
-          "competition": "Primera División",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.047,
-          "pLose": 0.861,
-          "oddsBooks": 20,
-          "marketFactor": 0.889,
-          "lockedAt": null,
-          "expected": 37.23,
-          "blocked": null
         }
       ],
       "projected": 153.8
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 221 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1019 so far.",
+      "status": "Locked and playing. 221 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1021 so far.",
       "tone": "good",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": true,
@@ -892,7 +892,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-31T20:00:00Z"
           },
           {
@@ -921,12 +921,12 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-31T20:00:00Z"
           },
           {
             "actual": 31.9,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "real-betis-sevilla",
             "name": "Nelson Deossa",
             "player": "Nelson Deossa",
@@ -1025,7 +1025,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 1019.08
+        "scoreSoFar": 1020.58
       },
       "level": 0,
       "lives": null,
@@ -1072,14 +1072,14 @@
         {
           "name": "Sivera",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-31T20:00:00Z"
+          "locked": true,
+          "nextGame": "2026-11-06T20:00:00Z"
         },
         {
           "name": "Ville Koski",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-31T20:00:00Z"
+          "locked": true,
+          "nextGame": "2026-11-06T20:00:00Z"
         },
         {
           "name": "Nelson Deossa",
@@ -1106,31 +1106,6 @@
     }
   ],
   "fixtures": [
-    {
-      "kickoff": "2026-10-31T20:00:00Z",
-      "competition": "Primera División",
-      "team": "D. Alavés",
-      "code": "ALA",
-      "rank": 7,
-      "opponent": "FC Barcelona",
-      "opponentCode": "FCB",
-      "opponentRank": 2,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.047,
-      "pLose": 0.861,
-      "oppFactor": null,
-      "home": false,
-      "players": [
-        "Ville Koski"
-      ],
-      "points": 37.2,
-      "bestStarter": null,
-      "surfaces": [
-        "my set"
-      ]
-    },
     {
       "kickoff": "2026-11-01T15:15:00Z",
       "competition": "Primera División",
@@ -1202,6 +1177,31 @@
         "Hugo Álvarez"
       ],
       "points": 43.2,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
+      ]
+    },
+    {
+      "kickoff": "2026-11-06T20:00:00Z",
+      "competition": "Primera División",
+      "team": "D. Alavés",
+      "code": "ALA",
+      "rank": 7,
+      "opponent": "Sevilla FC",
+      "opponentCode": "SEV",
+      "opponentRank": 6,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.249,
+      "pLose": 0.464,
+      "oppFactor": null,
+      "home": false,
+      "players": [
+        "Ville Koski"
+      ],
+      "points": 40.7,
       "bestStarter": null,
       "surfaces": [
         "my set"
