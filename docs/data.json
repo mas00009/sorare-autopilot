@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T18:24:03.902Z",
+  "generatedAt": "2026-10-31T18:55:09.666Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-31T15:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793469212355,
-    "reason": "last run 31m ago, next due in 149m"
+    "reason": "last run 62m ago, next due in 118m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:202f0490-8644-477e-8376-892923bb82b6",
       "state": "READY",
-      "score": 78.62,
+      "score": 69.09,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,7 +48,7 @@
           "slug": "josip-stanisic",
           "position": "Defender",
           "captain": false,
-          "score": 42.92,
+          "score": 33.39,
           "status": "REVIEWING",
           "kickoff": "2026-11-03T20:00:00Z"
         },
@@ -89,7 +89,7 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 840.66,
+      "squadScore": 907.23,
       "lineupId": "Tasks::TaskLineup:5c1c3b53-180e-4a99-83e4-476e53f77ead",
       "state": "READY",
       "score": 92.45,
@@ -208,8 +208,8 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 79 scored so far, 2 of 5 played. On course for about 266; needs 260 (6 over).",
-      "tone": "good",
+      "status": "Locked and playing. 69 scored so far, 2 of 5 played. On course for about 256; needs 260 (4 short).",
+      "tone": "warn",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": false,
       "entered": {
@@ -244,7 +244,7 @@
             "kickoff": "2026-11-01T17:30:00Z"
           },
           {
-            "actual": 42.92,
+            "actual": 33.39,
             "scoreStatus": "REVIEWING",
             "teamSlug": "bayern-munchen-munchen",
             "name": "Josip Stanišić",
@@ -361,9 +361,9 @@
           }
         ],
         "projected": 220.17,
-        "scoredSoFar": 78.62,
+        "scoredSoFar": 69.09,
         "played": 2,
-        "expectedFinal": 265.97
+        "expectedFinal": 256.44
       },
       "poolStrength": {
         "strong": 0,
@@ -860,7 +860,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 119 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 841 so far.",
+      "status": "Locked and playing. 119 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 907 so far.",
       "tone": "good",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": true,
@@ -1025,7 +1025,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 840.66
+        "scoreSoFar": 907.23
       },
       "level": 0,
       "lives": null,
