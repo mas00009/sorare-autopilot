@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T16:21:53.636Z",
+  "generatedAt": "2026-10-31T16:52:18.857Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-31T15:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793458179417,
-    "reason": "last run 92m ago, next due in 88m"
+    "reason": "last run 123m ago, next due in 57m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:202f0490-8644-477e-8376-892923bb82b6",
       "state": "READY",
-      "score": 38.2,
+      "score": 35.7,
       "finished": false,
       "cleared": false,
       "players": [
@@ -75,7 +75,7 @@
           "slug": "emersonn-correia-da-silva",
           "position": "Forward",
           "captain": false,
-          "score": 38.2,
+          "score": 35.7,
           "status": "REVIEWING",
           "kickoff": "2026-11-08T14:00:00Z"
         }
@@ -89,12 +89,12 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 569.3,
+      "squadScore": 733.38,
       "lineupId": "Tasks::TaskLineup:5c1c3b53-180e-4a99-83e4-476e53f77ead",
       "state": "READY",
-      "score": 90.2,
+      "score": 92.45,
       "finished": false,
-      "cleared": false,
+      "cleared": true,
       "players": [
         {
           "name": "Sivera",
@@ -128,7 +128,7 @@
           "slug": "emersonn-correia-da-silva",
           "position": "Forward",
           "captain": true,
-          "score": 57.3,
+          "score": 53.55,
           "status": "REVIEWING",
           "kickoff": "2026-11-08T14:00:00Z"
         },
@@ -137,7 +137,7 @@
           "slug": "hugo-alvarez-antunez",
           "position": "Forward",
           "captain": false,
-          "score": 32.9,
+          "score": 38.9,
           "status": "REVIEWING",
           "kickoff": "2026-11-05T20:00:00Z"
         }
@@ -208,8 +208,8 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 38 scored so far, 1 of 5 played. On course for about 261; needs 260 (1 over).",
-      "tone": "good",
+      "status": "Locked and playing. 36 scored so far, 1 of 5 played. On course for about 258; needs 260 (2 short).",
+      "tone": "warn",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": false,
       "entered": {
@@ -331,7 +331,7 @@
             "kickoff": "2026-11-01T13:00:00Z"
           },
           {
-            "actual": 38.2,
+            "actual": 35.7,
             "scoreStatus": "REVIEWING",
             "teamSlug": "ipswich-town-ipswich-suffolk",
             "name": "Emersonn",
@@ -361,9 +361,9 @@
           }
         ],
         "projected": 220.17,
-        "scoredSoFar": 38.2,
+        "scoredSoFar": 35.7,
         "played": 1,
-        "expectedFinal": 260.61
+        "expectedFinal": 258.11
       },
       "poolStrength": {
         "strong": 0,
@@ -860,7 +860,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 119 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 567 so far.",
+      "status": "Locked and playing. 119 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 733 so far.",
       "tone": "good",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": true,
@@ -954,7 +954,7 @@
             "kickoff": "2026-10-31T17:30:00Z"
           },
           {
-            "actual": 57.3,
+            "actual": 53.55,
             "scoreStatus": "REVIEWING",
             "teamSlug": "ipswich-town-ipswich-suffolk",
             "name": "Emersonn",
@@ -983,7 +983,7 @@
             "kickoff": "2026-10-31T15:00:00Z"
           },
           {
-            "actual": 32.9,
+            "actual": 38.9,
             "scoreStatus": "REVIEWING",
             "teamSlug": "celta-de-vigo-vigo",
             "name": "Hugo Álvarez",
@@ -1013,9 +1013,9 @@
           }
         ],
         "projected": 171,
-        "scoredSoFar": 118.85,
+        "scoredSoFar": 119.22,
         "played": 2,
-        "expectedFinal": 223.49
+        "expectedFinal": 223.87
       },
       "poolStrength": {
         "strong": 0,
@@ -1025,7 +1025,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 567.14
+        "scoreSoFar": 733.38
       },
       "level": 0,
       "lives": null,
@@ -1112,7 +1112,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 42,
           "picture": "https://assets.sorare.com/cardsamplepicture/d75e674f-4ced-4a7c-b62f-0a71ec7abf25/picture/tinified-688d7dfa5e4c46a9e5e38d5a8d313bc0.png",
