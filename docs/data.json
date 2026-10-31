@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T16:52:18.857Z",
+  "generatedAt": "2026-10-31T17:22:44.632Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-31T15:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793458179417,
-    "reason": "last run 123m ago, next due in 57m"
+    "reason": "last run 153m ago, next due in 27m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -24,7 +24,7 @@
       "surface": "my set",
       "level": 0,
       "target": 260,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -76,7 +76,7 @@
           "position": "Forward",
           "captain": false,
           "score": 35.7,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-11-08T14:00:00Z"
         }
       ],
@@ -86,10 +86,10 @@
       "surface": "team set (Loadshift)",
       "level": 0,
       "target": 700,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 733.38,
+      "squadScore": 760.08,
       "lineupId": "Tasks::TaskLineup:5c1c3b53-180e-4a99-83e4-476e53f77ead",
       "state": "READY",
       "score": 92.45,
@@ -129,7 +129,7 @@
           "position": "Forward",
           "captain": true,
           "score": 53.55,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-11-08T14:00:00Z"
         },
         {
@@ -138,7 +138,7 @@
           "position": "Forward",
           "captain": false,
           "score": 38.9,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-11-05T20:00:00Z"
         }
       ],
@@ -332,7 +332,7 @@
           },
           {
             "actual": 35.7,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "ipswich-town-ipswich-suffolk",
             "name": "Emersonn",
             "player": "Emersonn",
@@ -381,7 +381,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 260
         },
         {
@@ -417,7 +417,7 @@
           "rarity": "common"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 260,
       "current": [
         {
@@ -523,7 +523,7 @@
             "opponent": "Royal Union Saint-Gilloise",
             "opponentCode": "USG",
             "code": "CEL",
-            "rank": 9,
+            "rank": 10,
             "opponentRank": 3,
             "home": true,
             "competition": "UEFA Europa League",
@@ -562,7 +562,7 @@
             "opponent": "Real Madrid",
             "opponentCode": "RMA",
             "code": "RAC",
-            "rank": 14,
+            "rank": 15,
             "opponentRank": 3,
             "home": true,
             "competition": "Primera División",
@@ -601,7 +601,7 @@
             "opponent": "Real Madrid",
             "opponentCode": "RMA",
             "code": "RAC",
-            "rank": 14,
+            "rank": 15,
             "opponentRank": 3,
             "home": true,
             "competition": "Primera División",
@@ -721,7 +721,7 @@
           "opponent": "Royal Union Saint-Gilloise",
           "opponentCode": "USG",
           "code": "CEL",
-          "rank": 9,
+          "rank": 10,
           "opponentRank": 3,
           "home": true,
           "competition": "UEFA Europa League",
@@ -760,7 +760,7 @@
           "opponent": "Real Madrid",
           "opponentCode": "RMA",
           "code": "RAC",
-          "rank": 14,
+          "rank": 15,
           "opponentRank": 3,
           "home": true,
           "competition": "Primera División",
@@ -799,7 +799,7 @@
           "opponent": "Real Madrid",
           "opponentCode": "RMA",
           "code": "RAC",
-          "rank": 14,
+          "rank": 15,
           "opponentRank": 3,
           "home": true,
           "competition": "Primera División",
@@ -860,7 +860,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 119 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 733 so far.",
+      "status": "Locked and playing. 119 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 760 so far.",
       "tone": "good",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": true,
@@ -955,7 +955,7 @@
           },
           {
             "actual": 53.55,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "ipswich-town-ipswich-suffolk",
             "name": "Emersonn",
             "player": "Emersonn",
@@ -984,7 +984,7 @@
           },
           {
             "actual": 38.9,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "celta-de-vigo-vigo",
             "name": "Hugo Álvarez",
             "player": "Hugo Álvarez",
@@ -1025,7 +1025,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 733.38
+        "scoreSoFar": 760.08
       },
       "level": 0,
       "lives": null,
@@ -1034,7 +1034,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 700
         },
         {
@@ -1066,7 +1066,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 700,
       "current": [
         {
@@ -1201,7 +1201,7 @@
       "competition": "Primera División",
       "team": "Real Racing Club de Santander",
       "code": "RAC",
-      "rank": 14,
+      "rank": 15,
       "opponent": "Real Madrid",
       "opponentCode": "RMA",
       "opponentRank": 3,
@@ -1252,7 +1252,7 @@
       "competition": "UEFA Europa League",
       "team": "RC Celta",
       "code": "CEL",
-      "rank": 9,
+      "rank": 10,
       "opponent": "Royal Union Saint-Gilloise",
       "opponentCode": "USG",
       "opponentRank": 3,
