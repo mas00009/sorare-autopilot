@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T15:51:28.841Z",
+  "generatedAt": "2026-10-31T16:21:53.636Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-31T15:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793458179417,
-    "reason": "last run 62m ago, next due in 118m"
+    "reason": "last run 92m ago, next due in 88m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:202f0490-8644-477e-8376-892923bb82b6",
       "state": "READY",
-      "score": 36,
+      "score": 38.2,
       "finished": false,
       "cleared": false,
       "players": [
@@ -75,7 +75,7 @@
           "slug": "emersonn-correia-da-silva",
           "position": "Forward",
           "captain": false,
-          "score": 36,
+          "score": 38.2,
           "status": "REVIEWING",
           "kickoff": "2026-11-08T14:00:00Z"
         }
@@ -89,10 +89,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 565.6,
+      "squadScore": 569.3,
       "lineupId": "Tasks::TaskLineup:5c1c3b53-180e-4a99-83e4-476e53f77ead",
       "state": "READY",
-      "score": 86.7,
+      "score": 90.2,
       "finished": false,
       "cleared": false,
       "players": [
@@ -128,7 +128,7 @@
           "slug": "emersonn-correia-da-silva",
           "position": "Forward",
           "captain": true,
-          "score": 54,
+          "score": 57.3,
           "status": "REVIEWING",
           "kickoff": "2026-11-08T14:00:00Z"
         },
@@ -137,7 +137,7 @@
           "slug": "hugo-alvarez-antunez",
           "position": "Forward",
           "captain": false,
-          "score": 32.7,
+          "score": 32.9,
           "status": "REVIEWING",
           "kickoff": "2026-11-05T20:00:00Z"
         }
@@ -208,8 +208,8 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 36 scored so far, 1 of 5 played. On course for about 258; needs 260 (2 short).",
-      "tone": "warn",
+      "status": "Locked and playing. 38 scored so far, 1 of 5 played. On course for about 261; needs 260 (1 over).",
+      "tone": "good",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": false,
       "entered": {
@@ -331,7 +331,7 @@
             "kickoff": "2026-11-01T13:00:00Z"
           },
           {
-            "actual": 36,
+            "actual": 38.2,
             "scoreStatus": "REVIEWING",
             "teamSlug": "ipswich-town-ipswich-suffolk",
             "name": "Emersonn",
@@ -361,9 +361,9 @@
           }
         ],
         "projected": 220.17,
-        "scoredSoFar": 36,
+        "scoredSoFar": 38.2,
         "played": 1,
-        "expectedFinal": 258.41
+        "expectedFinal": 260.61
       },
       "poolStrength": {
         "strong": 0,
@@ -860,7 +860,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 114 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 566 so far.",
+      "status": "Locked and playing. 119 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 567 so far.",
       "tone": "good",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": true,
@@ -954,7 +954,7 @@
             "kickoff": "2026-10-31T17:30:00Z"
           },
           {
-            "actual": 54,
+            "actual": 57.3,
             "scoreStatus": "REVIEWING",
             "teamSlug": "ipswich-town-ipswich-suffolk",
             "name": "Emersonn",
@@ -983,7 +983,7 @@
             "kickoff": "2026-10-31T15:00:00Z"
           },
           {
-            "actual": 32.7,
+            "actual": 32.9,
             "scoreStatus": "REVIEWING",
             "teamSlug": "celta-de-vigo-vigo",
             "name": "Hugo Álvarez",
@@ -1013,9 +1013,9 @@
           }
         ],
         "projected": 171,
-        "scoredSoFar": 113.7,
+        "scoredSoFar": 118.85,
         "played": 2,
-        "expectedFinal": 218.34
+        "expectedFinal": 223.49
       },
       "poolStrength": {
         "strong": 0,
@@ -1025,7 +1025,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 565.6
+        "scoreSoFar": 567.14
       },
       "level": 0,
       "lives": null,
