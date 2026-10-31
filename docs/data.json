@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T14:07:34.301Z",
+  "generatedAt": "2026-10-31T14:13:36.712Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-31T15:00:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1793455638013,
-    "reason": "last run 0m ago, next due in 5m (lock in 52m)"
+    "lastRunAt": 1793456001515,
+    "reason": "last run 0m ago, next due in 5m (lock in 46m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -89,7 +89,7 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 464.47,
+      "squadScore": 472.57,
       "lineupId": "Tasks::TaskLineup:5c1c3b53-180e-4a99-83e4-476e53f77ead",
       "state": "READY",
       "score": 52.5,
@@ -860,7 +860,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 79 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 464 so far.",
+      "status": "Locked and playing. 79 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 473 so far.",
       "tone": "good",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": true,
@@ -1025,7 +1025,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 464.47
+        "scoreSoFar": 472.57
       },
       "level": 0,
       "lives": null,
