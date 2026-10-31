@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T17:22:44.632Z",
+  "generatedAt": "2026-10-31T17:53:40.624Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-10-31T15:00:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1793458179417,
-    "reason": "last run 153m ago, next due in 27m"
+    "lastRunAt": 1793469212355,
+    "reason": "last run 0m ago, next due in 180m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -24,7 +24,7 @@
       "surface": "my set",
       "level": 0,
       "target": 260,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -49,8 +49,8 @@
           "position": "Defender",
           "captain": false,
           "score": 0,
-          "status": "PENDING",
-          "kickoff": "2026-10-31T17:30:00Z"
+          "status": "REVIEWING",
+          "kickoff": "2026-11-03T20:00:00Z"
         },
         {
           "name": "Mario Soriano",
@@ -86,10 +86,10 @@
       "surface": "team set (Loadshift)",
       "level": 0,
       "target": 700,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 760.08,
+      "squadScore": 781.28,
       "lineupId": "Tasks::TaskLineup:5c1c3b53-180e-4a99-83e4-476e53f77ead",
       "state": "READY",
       "score": 92.45,
@@ -120,8 +120,8 @@
           "position": "Midfielder",
           "captain": false,
           "score": 0,
-          "status": "PENDING",
-          "kickoff": "2026-10-31T17:30:00Z"
+          "status": "REVIEWING",
+          "kickoff": "2026-11-04T20:00:00Z"
         },
         {
           "name": "Emersonn",
@@ -245,7 +245,7 @@
           },
           {
             "actual": null,
-            "scoreStatus": "PENDING",
+            "scoreStatus": "REVIEWING",
             "teamSlug": "bayern-munchen-munchen",
             "name": "Josip Stanišić",
             "player": "Josip Stanišić",
@@ -381,7 +381,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 260
         },
         {
@@ -417,7 +417,7 @@
           "rarity": "common"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 260,
       "current": [
         {
@@ -430,7 +430,7 @@
           "name": "Josip Stanišić",
           "captain": false,
           "locked": true,
-          "nextGame": "2026-10-31T17:30:00Z"
+          "nextGame": "2026-11-03T20:00:00Z"
         },
         {
           "name": "Mario Soriano",
@@ -860,7 +860,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 119 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 760 so far.",
+      "status": "Locked and playing. 119 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 781 so far.",
       "tone": "good",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": true,
@@ -926,7 +926,7 @@
           },
           {
             "actual": null,
-            "scoreStatus": "PENDING",
+            "scoreStatus": "REVIEWING",
             "teamSlug": "real-betis-sevilla",
             "name": "Nelson Deossa",
             "player": "Nelson Deossa",
@@ -950,7 +950,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-31T17:30:00Z"
           },
           {
@@ -1025,7 +1025,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 760.08
+        "scoreSoFar": 781.28
       },
       "level": 0,
       "lives": null,
@@ -1034,7 +1034,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 700
         },
         {
@@ -1066,7 +1066,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 700,
       "current": [
         {
@@ -1084,8 +1084,8 @@
         {
           "name": "Nelson Deossa",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-31T17:30:00Z"
+          "locked": true,
+          "nextGame": "2026-11-04T20:00:00Z"
         },
         {
           "name": "Emersonn",
@@ -1101,76 +1101,11 @@
         }
       ],
       "plan": null,
-      "candidates": [
-        {
-          "id": "ComposeTeamBenchCard:abfe98f0-30c6-4e46-a146-81288a31494c",
-          "player": "Josip Stanišić",
-          "slug": "josip-stanisic",
-          "position": "DF",
-          "average": 39,
-          "bonus": 1.05,
-          "starterPct": null,
-          "startRate": 0.7,
-          "oddsKnown": false,
-          "onGameSheet": true,
-          "reliability": null,
-          "formL5": 42,
-          "picture": "https://assets.sorare.com/cardsamplepicture/d75e674f-4ced-4a7c-b62f-0a71ec7abf25/picture/tinified-688d7dfa5e4c46a9e5e38d5a8d313bc0.png",
-          "rarity": "common",
-          "gameId": "Game:b5868f64-a32f-4817-a39f-1b5bf6ddf04e",
-          "kickoff": "2026-10-31T17:30:00Z",
-          "team": "FC Bayern München",
-          "teamSlug": "bayern-munchen-munchen",
-          "opponent": "Borussia Dortmund",
-          "opponentCode": "BVB",
-          "code": "BAY",
-          "rank": 1,
-          "opponentRank": 2,
-          "home": true,
-          "competition": "Bundesliga",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.712,
-          "pLose": 0.123,
-          "oddsBooks": 22,
-          "marketFactor": 1.071,
-          "lockedAt": null,
-          "expected": 35.06,
-          "blocked": null
-        }
-      ],
-      "projected": 35.1
+      "candidates": [],
+      "projected": 0
     }
   ],
   "fixtures": [
-    {
-      "kickoff": "2026-10-31T17:30:00Z",
-      "competition": "Bundesliga",
-      "team": "FC Bayern München",
-      "code": "BAY",
-      "rank": 1,
-      "opponent": "Borussia Dortmund",
-      "opponentCode": "BVB",
-      "opponentRank": 2,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.712,
-      "pLose": 0.123,
-      "oppFactor": null,
-      "home": true,
-      "players": [
-        "Josip Stanišić"
-      ],
-      "points": 35.1,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
     {
       "kickoff": "2026-10-31T20:00:00Z",
       "competition": "Primera División",
