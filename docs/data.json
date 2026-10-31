@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T15:20:27.671Z",
+  "generatedAt": "2026-10-31T15:51:28.841Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-31T15:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793458179417,
-    "reason": "last run 31m ago, next due in 149m"
+    "reason": "last run 62m ago, next due in 118m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:202f0490-8644-477e-8376-892923bb82b6",
       "state": "READY",
-      "score": 34.6,
+      "score": 36,
       "finished": false,
       "cleared": false,
       "players": [
@@ -75,7 +75,7 @@
           "slug": "emersonn-correia-da-silva",
           "position": "Forward",
           "captain": false,
-          "score": 34.6,
+          "score": 36,
           "status": "REVIEWING",
           "kickoff": "2026-11-08T14:00:00Z"
         }
@@ -89,10 +89,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 568.14,
+      "squadScore": 565.6,
       "lineupId": "Tasks::TaskLineup:5c1c3b53-180e-4a99-83e4-476e53f77ead",
       "state": "READY",
-      "score": 86.9,
+      "score": 86.7,
       "finished": false,
       "cleared": false,
       "players": [
@@ -128,7 +128,7 @@
           "slug": "emersonn-correia-da-silva",
           "position": "Forward",
           "captain": true,
-          "score": 51.9,
+          "score": 54,
           "status": "REVIEWING",
           "kickoff": "2026-11-08T14:00:00Z"
         },
@@ -137,7 +137,7 @@
           "slug": "hugo-alvarez-antunez",
           "position": "Forward",
           "captain": false,
-          "score": 35,
+          "score": 32.7,
           "status": "REVIEWING",
           "kickoff": "2026-11-05T20:00:00Z"
         }
@@ -208,7 +208,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 35 scored so far, 1 of 5 played. On course for about 257; needs 260 (3 short).",
+      "status": "Locked and playing. 36 scored so far, 1 of 5 played. On course for about 258; needs 260 (2 short).",
       "tone": "warn",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": false,
@@ -331,7 +331,7 @@
             "kickoff": "2026-11-01T13:00:00Z"
           },
           {
-            "actual": 34.6,
+            "actual": 36,
             "scoreStatus": "REVIEWING",
             "teamSlug": "ipswich-town-ipswich-suffolk",
             "name": "Emersonn",
@@ -361,9 +361,9 @@
           }
         ],
         "projected": 220.17,
-        "scoredSoFar": 34.6,
+        "scoredSoFar": 36,
         "played": 1,
-        "expectedFinal": 257.01
+        "expectedFinal": 258.41
       },
       "poolStrength": {
         "strong": 0,
@@ -453,12 +453,12 @@
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 185.71,
+        "projected": 192.15,
         "lock": "2026-10-31T20:00:00Z",
-        "shortfall": 74.3,
+        "shortfall": 67.8,
         "tradedPointsForTime": 0,
         "captain": "hugo-alvarez-antunez",
-        "captainPoints": 19,
+        "captainPoints": 21.59,
         "withinReach": false,
         "enteredProjected": 220.17,
         "five": [
@@ -509,7 +509,7 @@
             "average": 48,
             "bonus": 1,
             "starterPct": null,
-            "startRate": 0.7,
+            "startRate": 0.8,
             "oddsKnown": false,
             "onGameSheet": false,
             "reliability": null,
@@ -537,7 +537,7 @@
             "oddsBooks": 19,
             "marketFactor": 1.014,
             "lockedAt": null,
-            "expected": 38,
+            "expected": 43.17,
             "blocked": null
           },
           {
@@ -707,7 +707,7 @@
           "average": 48,
           "bonus": 1,
           "starterPct": null,
-          "startRate": 0.7,
+          "startRate": 0.8,
           "oddsKnown": false,
           "onGameSheet": false,
           "reliability": null,
@@ -735,7 +735,7 @@
           "oddsBooks": 19,
           "marketFactor": 1.014,
           "lockedAt": null,
-          "expected": 38,
+          "expected": 43.17,
           "blocked": null
         },
         {
@@ -856,11 +856,11 @@
           "blocked": null
         }
       ],
-      "projected": 148.6
+      "projected": 153.8
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 113 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 568 so far.",
+      "status": "Locked and playing. 114 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 566 so far.",
       "tone": "good",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": true,
@@ -954,7 +954,7 @@
             "kickoff": "2026-10-31T17:30:00Z"
           },
           {
-            "actual": 51.9,
+            "actual": 54,
             "scoreStatus": "REVIEWING",
             "teamSlug": "ipswich-town-ipswich-suffolk",
             "name": "Emersonn",
@@ -983,7 +983,7 @@
             "kickoff": "2026-10-31T15:00:00Z"
           },
           {
-            "actual": 35,
+            "actual": 32.7,
             "scoreStatus": "REVIEWING",
             "teamSlug": "celta-de-vigo-vigo",
             "name": "Hugo Álvarez",
@@ -1013,9 +1013,9 @@
           }
         ],
         "projected": 171,
-        "scoredSoFar": 112.85,
+        "scoredSoFar": 113.7,
         "played": 2,
-        "expectedFinal": 217.49
+        "expectedFinal": 218.34
       },
       "poolStrength": {
         "strong": 0,
@@ -1025,7 +1025,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 568.14
+        "scoreSoFar": 565.6
       },
       "level": 0,
       "lives": null,
@@ -1266,7 +1266,7 @@
       "players": [
         "Hugo Álvarez"
       ],
-      "points": 38,
+      "points": 43.2,
       "bestStarter": null,
       "surfaces": [
         "my set"
