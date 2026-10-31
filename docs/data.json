@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T23:46:45.017Z",
+  "generatedAt": "2026-10-31T00:17:10.184Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-30T13:15:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793398497853,
-    "reason": "last run 92m ago, next due in 88m"
+    "reason": "last run 122m ago, next due in 58m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -69,8 +69,8 @@
   "odds": {
     "configured": true,
     "month": "2026-10",
-    "used": 145,
-    "remaining": 355
+    "used": 150,
+    "remaining": 350
   },
   "control": {
     "paused": false,
@@ -176,12 +176,12 @@
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.441,
+          "pWin": 0.439,
           "pLose": 0.269,
-          "oddsBooks": 21,
+          "oddsBooks": 20,
           "marketFactor": 1.016,
           "lockedAt": null,
-          "expected": 57.95,
+          "expected": 57.94,
           "blocked": null
         },
         {
@@ -216,11 +216,11 @@
           "oppFactor": null,
           "mismatch": false,
           "pWin": 0.407,
-          "pLose": 0.312,
-          "oddsBooks": 21,
+          "pLose": 0.311,
+          "oddsBooks": 20,
           "marketFactor": 1.017,
           "lockedAt": null,
-          "expected": 55.53,
+          "expected": 55.54,
           "blocked": null
         },
         {
@@ -254,12 +254,12 @@
           "ownRank": null,
           "oppFactor": null,
           "mismatch": false,
-          "pWin": 0.711,
-          "pLose": 0.124,
-          "oddsBooks": 23,
-          "marketFactor": 1.07,
+          "pWin": 0.712,
+          "pLose": 0.123,
+          "oddsBooks": 22,
+          "marketFactor": 1.071,
           "lockedAt": null,
-          "expected": 35.05,
+          "expected": 35.06,
           "blocked": null
         }
       ],
@@ -342,14 +342,14 @@
       "intl": false,
       "ownRank": null,
       "oppRank": null,
-      "pWin": 0.711,
-      "pLose": 0.124,
+      "pWin": 0.712,
+      "pLose": 0.123,
       "oppFactor": null,
       "home": true,
       "players": [
         "Josip Stanišić"
       ],
-      "points": 35,
+      "points": 35.1,
       "bestStarter": null,
       "surfaces": [
         "my set"
@@ -368,7 +368,7 @@
       "ownRank": null,
       "oppRank": null,
       "pWin": 0.407,
-      "pLose": 0.312,
+      "pLose": 0.311,
       "oppFactor": null,
       "home": true,
       "players": [
@@ -392,14 +392,14 @@
       "intl": false,
       "ownRank": null,
       "oppRank": null,
-      "pWin": 0.441,
+      "pWin": 0.439,
       "pLose": 0.269,
       "oppFactor": null,
       "home": true,
       "players": [
         "Mario Soriano"
       ],
-      "points": 58,
+      "points": 57.9,
       "bestStarter": null,
       "surfaces": [
         "my set"
