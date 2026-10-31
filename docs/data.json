@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-31T06:55:36.549Z",
+  "generatedAt": "2026-10-31T07:02:38.737Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 500,
+    "essence": 0,
     "gems": 16
   },
   "schedule": {
     "nextLock": "2026-10-30T13:15:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1793420547987,
-    "reason": "last run 153m ago, next due in 27m"
+    "lastRunAt": 1793430093650,
+    "reason": "last run 1m ago, next due in 179m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -267,7 +267,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Not open for entry yet. A team goes in the moment it opens.",
+      "status": "No eligible cards for this step yet.",
       "tone": "neutral",
       "lockAt": null,
       "isSquad": true,
@@ -278,7 +278,7 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 0,
+        "lineupsIn": 1,
         "needed": 3,
         "scoreSoFar": 0
       },
@@ -289,7 +289,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "PRE_MATCHDAY_LOCKED",
+          "state": "PLAYABLE",
           "target": 700
         },
         {
@@ -321,12 +321,52 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "PRE_MATCHDAY_LOCKED",
+      "state": "PLAYABLE",
       "target": 700,
       "current": [],
       "plan": null,
-      "candidates": [],
-      "projected": 0
+      "candidates": [
+        {
+          "id": "ComposeTeamBenchCard:abfe98f0-30c6-4e46-a146-81288a31494c",
+          "player": "Josip Stanišić",
+          "slug": "josip-stanisic",
+          "position": "DF",
+          "average": 39,
+          "bonus": 1.05,
+          "starterPct": null,
+          "startRate": 0.7,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 42,
+          "picture": "https://assets.sorare.com/cardsamplepicture/d75e674f-4ced-4a7c-b62f-0a71ec7abf25/picture/tinified-688d7dfa5e4c46a9e5e38d5a8d313bc0.png",
+          "rarity": "common",
+          "gameId": "Game:b5868f64-a32f-4817-a39f-1b5bf6ddf04e",
+          "kickoff": "2026-10-31T17:30:00Z",
+          "team": "FC Bayern München",
+          "teamSlug": "bayern-munchen-munchen",
+          "opponent": "Borussia Dortmund",
+          "opponentCode": "BVB",
+          "code": "BAY",
+          "rank": 1,
+          "opponentRank": 2,
+          "home": true,
+          "competition": "Bundesliga",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.712,
+          "pLose": 0.123,
+          "oddsBooks": 22,
+          "marketFactor": 1.071,
+          "lockedAt": null,
+          "expected": 35.06,
+          "blocked": null
+        }
+      ],
+      "projected": 35.1
     }
   ],
   "fixtures": [
@@ -347,12 +387,14 @@
       "oppFactor": null,
       "home": true,
       "players": [
+        "Josip Stanišić",
         "Josip Stanišić"
       ],
-      "points": 35.1,
+      "points": 70.1,
       "bestStarter": null,
       "surfaces": [
-        "my set"
+        "my set",
+        "team set (Loadshift)"
       ]
     },
     {
