@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T20:01:31.583Z",
+  "generatedAt": "2026-10-31T20:31:54.825Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-10-31T15:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793469212355,
-    "reason": "last run 128m ago, next due in 52m"
+    "reason": "last run 158m ago, next due in 22m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -86,13 +86,13 @@
       "surface": "team set (Loadshift)",
       "level": 0,
       "target": 700,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 1020.58,
+      "squadScore": 1095.18,
       "lineupId": "Tasks::TaskLineup:5c1c3b53-180e-4a99-83e4-476e53f77ead",
       "state": "READY",
-      "score": 194.35,
+      "score": 196.37,
       "finished": false,
       "cleared": true,
       "players": [
@@ -101,7 +101,7 @@
           "slug": "antonio-sivera-salva",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 35,
+          "score": 30.7,
           "status": "REVIEWING",
           "kickoff": "2026-11-06T20:00:00Z"
         },
@@ -110,7 +110,7 @@
           "slug": "ville-koski",
           "position": "Defender",
           "captain": false,
-          "score": 35,
+          "score": 41.32,
           "status": "REVIEWING",
           "kickoff": "2026-11-06T20:00:00Z"
         },
@@ -860,14 +860,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 221 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1021 so far.",
+      "status": "Locked and playing. 223 scored so far, 5 of 5 played. The squad's top three lineups together need 700; the squad has 1095 so far.",
       "tone": "good",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 35,
+            "actual": 30.7,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
             "name": "Sivera",
@@ -896,7 +896,7 @@
             "kickoff": "2026-10-31T20:00:00Z"
           },
           {
-            "actual": 35,
+            "actual": 41.32,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-alaves-vitoria-gasteiz",
             "name": "Ville Koski",
@@ -1013,9 +1013,9 @@
           }
         ],
         "projected": 171,
-        "scoredSoFar": 221.13,
+        "scoredSoFar": 223.14,
         "played": 5,
-        "expectedFinal": 221.13
+        "expectedFinal": 223.14
       },
       "poolStrength": {
         "strong": 0,
@@ -1025,7 +1025,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 1020.58
+        "scoreSoFar": 1095.18
       },
       "level": 0,
       "lives": null,
@@ -1034,7 +1034,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 700
         },
         {
@@ -1066,7 +1066,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 700,
       "current": [
         {
