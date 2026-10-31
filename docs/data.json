@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T14:49:55.065Z",
+  "generatedAt": "2026-10-31T15:20:27.671Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -8,9 +8,9 @@
   },
   "schedule": {
     "nextLock": "2026-10-31T15:00:00Z",
-    "cadenceMin": 5,
+    "cadenceMin": 180,
     "lastRunAt": 1793458179417,
-    "reason": "last run 0m ago, next due in 5m (lock in 10m)"
+    "reason": "last run 31m ago, next due in 149m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -24,13 +24,13 @@
       "surface": "my set",
       "level": 0,
       "target": 260,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:202f0490-8644-477e-8376-892923bb82b6",
       "state": "READY",
-      "score": 35,
+      "score": 34.6,
       "finished": false,
       "cleared": false,
       "players": [
@@ -75,9 +75,9 @@
           "slug": "emersonn-correia-da-silva",
           "position": "Forward",
           "captain": false,
-          "score": 35,
+          "score": 34.6,
           "status": "REVIEWING",
-          "kickoff": "2026-10-31T15:00:00Z"
+          "kickoff": "2026-11-08T14:00:00Z"
         }
       ],
       "scored": 1
@@ -86,13 +86,13 @@
       "surface": "team set (Loadshift)",
       "level": 0,
       "target": 700,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 6,
-      "squadScore": 565.62,
+      "squadScore": 568.14,
       "lineupId": "Tasks::TaskLineup:5c1c3b53-180e-4a99-83e4-476e53f77ead",
       "state": "READY",
-      "score": 87.5,
+      "score": 86.9,
       "finished": false,
       "cleared": false,
       "players": [
@@ -128,9 +128,9 @@
           "slug": "emersonn-correia-da-silva",
           "position": "Forward",
           "captain": true,
-          "score": 52.5,
+          "score": 51.9,
           "status": "REVIEWING",
-          "kickoff": "2026-10-31T15:00:00Z"
+          "kickoff": "2026-11-08T14:00:00Z"
         },
         {
           "name": "Hugo Álvarez",
@@ -139,7 +139,7 @@
           "captain": false,
           "score": 35,
           "status": "REVIEWING",
-          "kickoff": "2026-10-31T15:15:00Z"
+          "kickoff": "2026-11-05T20:00:00Z"
         }
       ],
       "scored": 2
@@ -194,8 +194,8 @@
   "odds": {
     "configured": true,
     "month": "2026-10",
-    "used": 150,
-    "remaining": 350
+    "used": 151,
+    "remaining": 349
   },
   "control": {
     "paused": false,
@@ -240,7 +240,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-11-01T17:30:00Z"
           },
           {
@@ -269,7 +269,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-31T17:30:00Z"
           },
           {
@@ -298,7 +298,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-11-02T20:00:00Z"
           },
           {
@@ -327,11 +327,11 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-11-01T13:00:00Z"
           },
           {
-            "actual": 35,
+            "actual": 34.6,
             "scoreStatus": "REVIEWING",
             "teamSlug": "ipswich-town-ipswich-suffolk",
             "name": "Emersonn",
@@ -356,14 +356,14 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-31T15:00:00Z"
           }
         ],
         "projected": 220.17,
-        "scoredSoFar": 35,
+        "scoredSoFar": 34.6,
         "played": 1,
-        "expectedFinal": 257.41
+        "expectedFinal": 257.01
       },
       "poolStrength": {
         "strong": 0,
@@ -381,7 +381,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 260
         },
         {
@@ -417,48 +417,48 @@
           "rarity": "common"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 260,
       "current": [
         {
           "name": "Matías Dituro",
           "captain": false,
-          "locked": false,
+          "locked": true,
           "nextGame": "2026-11-01T17:30:00Z"
         },
         {
           "name": "Josip Stanišić",
           "captain": false,
-          "locked": false,
+          "locked": true,
           "nextGame": "2026-10-31T17:30:00Z"
         },
         {
           "name": "Mario Soriano",
           "captain": true,
-          "locked": false,
+          "locked": true,
           "nextGame": "2026-11-02T20:00:00Z"
         },
         {
           "name": "Félix Correia",
           "captain": false,
-          "locked": false,
+          "locked": true,
           "nextGame": "2026-11-01T13:00:00Z"
         },
         {
           "name": "Emersonn",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-31T15:00:00Z"
+          "locked": true,
+          "nextGame": "2026-11-08T14:00:00Z"
         }
       ],
       "plan": {
         "clearsTarget": false,
-        "projected": 184.95,
-        "lock": "2026-10-31T15:15:00Z",
-        "shortfall": 75.1,
+        "projected": 185.71,
+        "lock": "2026-10-31T20:00:00Z",
+        "shortfall": 74.3,
         "tradedPointsForTime": 0,
-        "captain": "pablo-ramon-parra",
-        "captainPoints": 18.98,
+        "captain": "hugo-alvarez-antunez",
+        "captainPoints": 19,
         "withinReach": false,
         "enteredProjected": 220.17,
         "five": [
@@ -499,6 +499,45 @@
             "marketFactor": 0.877,
             "lockedAt": null,
             "expected": 53.94,
+            "blocked": null
+          },
+          {
+            "id": "ComposeTeamBenchCard:71f81db6-1cb2-4004-a8e3-f9a1daf64837",
+            "player": "Hugo Álvarez",
+            "slug": "hugo-alvarez-antunez",
+            "position": "FW",
+            "average": 48,
+            "bonus": 1,
+            "starterPct": null,
+            "startRate": 0.7,
+            "oddsKnown": false,
+            "onGameSheet": false,
+            "reliability": null,
+            "formL5": 54,
+            "picture": "https://assets.sorare.com/cardsamplepicture/804d0d7e-3616-4daf-825f-f9dcd604edc8/picture/tinified-fceb4299817c1017593b39b9027ec33f.png",
+            "rarity": "common",
+            "gameId": "Game:25e0adbb-97a1-4172-9acd-a195dca12819",
+            "kickoff": "2026-11-05T20:00:00Z",
+            "team": "RC Celta",
+            "teamSlug": "celta-de-vigo-vigo",
+            "opponent": "Royal Union Saint-Gilloise",
+            "opponentCode": "USG",
+            "code": "CEL",
+            "rank": 9,
+            "opponentRank": 3,
+            "home": true,
+            "competition": "UEFA Europa League",
+            "intl": false,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "mismatch": false,
+            "pWin": 0.448,
+            "pLose": 0.286,
+            "oddsBooks": 19,
+            "marketFactor": 1.014,
+            "lockedAt": null,
+            "expected": 38,
             "blocked": null
           },
           {
@@ -602,7 +641,7 @@
             "opponentCode": "FCB",
             "code": "ALA",
             "rank": 7,
-            "opponentRank": 1,
+            "opponentRank": 2,
             "home": false,
             "competition": "Primera División",
             "intl": false,
@@ -616,45 +655,6 @@
             "marketFactor": 0.889,
             "lockedAt": null,
             "expected": 37.23,
-            "blocked": null
-          },
-          {
-            "id": "ComposeTeamBenchCard:71f81db6-1cb2-4004-a8e3-f9a1daf64837",
-            "player": "Hugo Álvarez",
-            "slug": "hugo-alvarez-antunez",
-            "position": "FW",
-            "average": 48,
-            "bonus": 1,
-            "starterPct": null,
-            "startRate": 0.7,
-            "oddsKnown": false,
-            "onGameSheet": true,
-            "reliability": null,
-            "formL5": 54,
-            "picture": "https://assets.sorare.com/cardsamplepicture/804d0d7e-3616-4daf-825f-f9dcd604edc8/picture/tinified-fceb4299817c1017593b39b9027ec33f.png",
-            "rarity": "common",
-            "gameId": "Game:0962d891-189b-487e-a661-5ad4de7694f9",
-            "kickoff": "2026-10-31T15:15:00Z",
-            "team": "RC Celta",
-            "teamSlug": "celta-de-vigo-vigo",
-            "opponent": "Rayo Vallecano",
-            "opponentCode": "RAY",
-            "code": "CEL",
-            "rank": 9,
-            "opponentRank": 17,
-            "home": false,
-            "competition": "Primera División",
-            "intl": false,
-            "oppRank": null,
-            "ownRank": null,
-            "oppFactor": null,
-            "mismatch": false,
-            "pWin": 0.313,
-            "pLose": 0.393,
-            "oddsBooks": 20,
-            "marketFactor": 0.99,
-            "lockedAt": null,
-            "expected": 37.1,
             "blocked": null
           }
         ]
@@ -697,6 +697,45 @@
           "marketFactor": 0.877,
           "lockedAt": null,
           "expected": 53.94,
+          "blocked": null
+        },
+        {
+          "id": "ComposeTeamBenchCard:71f81db6-1cb2-4004-a8e3-f9a1daf64837",
+          "player": "Hugo Álvarez",
+          "slug": "hugo-alvarez-antunez",
+          "position": "FW",
+          "average": 48,
+          "bonus": 1,
+          "starterPct": null,
+          "startRate": 0.7,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 54,
+          "picture": "https://assets.sorare.com/cardsamplepicture/804d0d7e-3616-4daf-825f-f9dcd604edc8/picture/tinified-fceb4299817c1017593b39b9027ec33f.png",
+          "rarity": "common",
+          "gameId": "Game:25e0adbb-97a1-4172-9acd-a195dca12819",
+          "kickoff": "2026-11-05T20:00:00Z",
+          "team": "RC Celta",
+          "teamSlug": "celta-de-vigo-vigo",
+          "opponent": "Royal Union Saint-Gilloise",
+          "opponentCode": "USG",
+          "code": "CEL",
+          "rank": 9,
+          "opponentRank": 3,
+          "home": true,
+          "competition": "UEFA Europa League",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.448,
+          "pLose": 0.286,
+          "oddsBooks": 19,
+          "marketFactor": 1.014,
+          "lockedAt": null,
+          "expected": 38,
           "blocked": null
         },
         {
@@ -800,7 +839,7 @@
           "opponentCode": "FCB",
           "code": "ALA",
           "rank": 7,
-          "opponentRank": 1,
+          "opponentRank": 2,
           "home": false,
           "competition": "Primera División",
           "intl": false,
@@ -815,52 +854,13 @@
           "lockedAt": null,
           "expected": 37.23,
           "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:71f81db6-1cb2-4004-a8e3-f9a1daf64837",
-          "player": "Hugo Álvarez",
-          "slug": "hugo-alvarez-antunez",
-          "position": "FW",
-          "average": 48,
-          "bonus": 1,
-          "starterPct": null,
-          "startRate": 0.7,
-          "oddsKnown": false,
-          "onGameSheet": true,
-          "reliability": null,
-          "formL5": 54,
-          "picture": "https://assets.sorare.com/cardsamplepicture/804d0d7e-3616-4daf-825f-f9dcd604edc8/picture/tinified-fceb4299817c1017593b39b9027ec33f.png",
-          "rarity": "common",
-          "gameId": "Game:0962d891-189b-487e-a661-5ad4de7694f9",
-          "kickoff": "2026-10-31T15:15:00Z",
-          "team": "RC Celta",
-          "teamSlug": "celta-de-vigo-vigo",
-          "opponent": "Rayo Vallecano",
-          "opponentCode": "RAY",
-          "code": "CEL",
-          "rank": 9,
-          "opponentRank": 17,
-          "home": false,
-          "competition": "Primera División",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.313,
-          "pLose": 0.393,
-          "oddsBooks": 20,
-          "marketFactor": 0.99,
-          "lockedAt": null,
-          "expected": 37.1,
-          "blocked": null
         }
       ],
-      "projected": 147.8
+      "projected": 148.6
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 114 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 566 so far.",
+      "status": "Locked and playing. 113 scored so far, 2 of 5 played. The squad's top three lineups together need 700; the squad has 568 so far.",
       "tone": "good",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": true,
@@ -954,7 +954,7 @@
             "kickoff": "2026-10-31T17:30:00Z"
           },
           {
-            "actual": 52.5,
+            "actual": 51.9,
             "scoreStatus": "REVIEWING",
             "teamSlug": "ipswich-town-ipswich-suffolk",
             "name": "Emersonn",
@@ -979,7 +979,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-31T15:00:00Z"
           },
           {
@@ -1008,14 +1008,14 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-10-31T15:15:00Z"
           }
         ],
         "projected": 171,
-        "scoredSoFar": 113.75,
+        "scoredSoFar": 112.85,
         "played": 2,
-        "expectedFinal": 218.39
+        "expectedFinal": 217.49
       },
       "poolStrength": {
         "strong": 0,
@@ -1025,7 +1025,7 @@
       "squad": {
         "lineupsIn": 6,
         "needed": 3,
-        "scoreSoFar": 565.62
+        "scoreSoFar": 568.14
       },
       "level": 0,
       "lives": null,
@@ -1034,7 +1034,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 700
         },
         {
@@ -1066,7 +1066,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 700,
       "current": [
         {
@@ -1090,14 +1090,14 @@
         {
           "name": "Emersonn",
           "captain": true,
-          "locked": false,
-          "nextGame": "2026-10-31T15:00:00Z"
+          "locked": true,
+          "nextGame": "2026-11-08T14:00:00Z"
         },
         {
           "name": "Hugo Álvarez",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-10-31T15:15:00Z"
+          "locked": true,
+          "nextGame": "2026-11-05T20:00:00Z"
         }
       ],
       "plan": null,
@@ -1147,31 +1147,6 @@
   ],
   "fixtures": [
     {
-      "kickoff": "2026-10-31T15:15:00Z",
-      "competition": "Primera División",
-      "team": "RC Celta",
-      "code": "CEL",
-      "rank": 9,
-      "opponent": "Rayo Vallecano",
-      "opponentCode": "RAY",
-      "opponentRank": 17,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.313,
-      "pLose": 0.393,
-      "oppFactor": null,
-      "home": false,
-      "players": [
-        "Hugo Álvarez"
-      ],
-      "points": 37.1,
-      "bestStarter": null,
-      "surfaces": [
-        "my set"
-      ]
-    },
-    {
       "kickoff": "2026-10-31T17:30:00Z",
       "competition": "Bundesliga",
       "team": "FC Bayern München",
@@ -1204,7 +1179,7 @@
       "rank": 7,
       "opponent": "FC Barcelona",
       "opponentCode": "FCB",
-      "opponentRank": 1,
+      "opponentRank": 2,
       "intl": false,
       "ownRank": null,
       "oppRank": null,
@@ -1267,6 +1242,31 @@
         "Anthony Lopes"
       ],
       "points": 53.9,
+      "bestStarter": null,
+      "surfaces": [
+        "my set"
+      ]
+    },
+    {
+      "kickoff": "2026-11-05T20:00:00Z",
+      "competition": "UEFA Europa League",
+      "team": "RC Celta",
+      "code": "CEL",
+      "rank": 9,
+      "opponent": "Royal Union Saint-Gilloise",
+      "opponentCode": "USG",
+      "opponentRank": 3,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.448,
+      "pLose": 0.286,
+      "oppFactor": null,
+      "home": true,
+      "players": [
+        "Hugo Álvarez"
+      ],
+      "points": 38,
       "bestStarter": null,
       "surfaces": [
         "my set"
