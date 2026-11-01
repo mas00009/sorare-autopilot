@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T14:53:18.585Z",
+  "generatedAt": "2026-11-01T15:23:48.403Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-11-01T13:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793537427099,
-    "reason": "last run 123m ago, next due in 57m"
+    "reason": "last run 153m ago, next due in 27m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 348.11,
+      "squadScore": 359.14,
       "lineupId": "Tasks::TaskLineup:109f349c-1d98-494c-ba32-9050b76fee68",
       "state": "READY",
-      "score": 178.05,
+      "score": 181.11,
       "finished": false,
       "cleared": false,
       "players": [
@@ -57,9 +57,9 @@
           "slug": "sergio-canales-madrazo",
           "position": "Midfielder",
           "captain": false,
-          "score": 35,
+          "score": 34.1,
           "status": "REVIEWING",
-          "kickoff": "2026-11-01T15:15:00Z"
+          "kickoff": "2026-11-07T13:00:00Z"
         },
         {
           "name": "Félix Correia",
@@ -67,7 +67,7 @@
           "position": "Forward",
           "captain": true,
           "score": 104.55,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-11-06T20:00:00Z"
         },
         {
@@ -75,9 +75,9 @@
           "slug": "ivan-martin-nunez",
           "position": "Midfielder",
           "captain": false,
-          "score": 38.5,
+          "score": 42.46,
           "status": "REVIEWING",
-          "kickoff": "2026-11-01T15:15:00Z"
+          "kickoff": "2026-11-07T13:00:00Z"
         }
       ],
       "scored": 3
@@ -86,7 +86,7 @@
       "surface": "my set",
       "level": 0,
       "target": 260,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -129,7 +129,7 @@
           "position": "Forward",
           "captain": false,
           "score": 69.7,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-11-06T20:00:00Z"
         },
         {
@@ -365,7 +365,7 @@
           },
           {
             "actual": 69.7,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "sevilla-sevilla-1890",
             "name": "Félix Correia",
             "player": "Félix Correia",
@@ -443,7 +443,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 260
         },
         {
@@ -479,7 +479,7 @@
           "rarity": "common"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 260,
       "current": [
         {
@@ -624,7 +624,7 @@
             "opponent": "RC Celta",
             "opponentCode": "CEL",
             "code": "LEV",
-            "rank": 17,
+            "rank": 18,
             "opponentRank": 9,
             "home": false,
             "competition": "Primera División",
@@ -663,8 +663,8 @@
             "opponent": "CA Osasuna",
             "opponentCode": "OSA",
             "code": "DEP",
-            "rank": 12,
-            "opponentRank": 14,
+            "rank": 13,
+            "opponentRank": 15,
             "home": true,
             "competition": "Primera División",
             "intl": false,
@@ -822,7 +822,7 @@
           "opponent": "RC Celta",
           "opponentCode": "CEL",
           "code": "LEV",
-          "rank": 17,
+          "rank": 18,
           "opponentRank": 9,
           "home": false,
           "competition": "Primera División",
@@ -861,8 +861,8 @@
           "opponent": "CA Osasuna",
           "opponentCode": "OSA",
           "code": "DEP",
-          "rank": 12,
-          "opponentRank": 14,
+          "rank": 13,
+          "opponentRank": 15,
           "home": true,
           "competition": "Primera División",
           "intl": false,
@@ -918,11 +918,11 @@
           "blocked": null
         }
       ],
-      "projected": 233.8
+      "projected": 234.9
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 230 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 348 so far.",
+      "status": "Locked and playing. 233 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 359 so far.",
       "tone": "good",
       "lockAt": "2026-11-01T13:00:00Z",
       "isSquad": true,
@@ -987,7 +987,7 @@
             "kickoff": "2026-11-01T17:30:00Z"
           },
           {
-            "actual": 35,
+            "actual": 34.1,
             "scoreStatus": "REVIEWING",
             "teamSlug": "racing-santander-santander",
             "name": "Canales",
@@ -1012,12 +1012,12 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-11-01T15:15:00Z"
           },
           {
             "actual": 104.55,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "sevilla-sevilla-1890",
             "name": "Félix Correia",
             "player": "Félix Correia",
@@ -1045,7 +1045,7 @@
             "kickoff": "2026-11-01T13:00:00Z"
           },
           {
-            "actual": 38.5,
+            "actual": 42.46,
             "scoreStatus": "REVIEWING",
             "teamSlug": "racing-santander-santander",
             "name": "Iván Martín",
@@ -1070,14 +1070,14 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-11-01T15:15:00Z"
           }
         ],
         "projected": 191.16,
-        "scoredSoFar": 230.32,
+        "scoredSoFar": 233.38,
         "played": 3,
-        "expectedFinal": 320.89
+        "expectedFinal": 323.95
       },
       "poolStrength": {
         "strong": 0,
@@ -1087,7 +1087,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 348.11
+        "scoreSoFar": 359.14
       },
       "level": 1,
       "lives": null,
@@ -1146,8 +1146,8 @@
         {
           "name": "Canales",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-11-01T15:15:00Z"
+          "locked": true,
+          "nextGame": "2026-11-07T13:00:00Z"
         },
         {
           "name": "Félix Correia",
@@ -1158,8 +1158,8 @@
         {
           "name": "Iván Martín",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-11-01T15:15:00Z"
+          "locked": true,
+          "nextGame": "2026-11-07T13:00:00Z"
         }
       ],
       "plan": null,
@@ -1240,10 +1240,10 @@
       "competition": "Primera División",
       "team": "Real Club Deportivo de La Coruña",
       "code": "DEP",
-      "rank": 12,
+      "rank": 13,
       "opponent": "CA Osasuna",
       "opponentCode": "OSA",
-      "opponentRank": 14,
+      "opponentRank": 15,
       "intl": false,
       "ownRank": null,
       "oppRank": null,
@@ -1315,7 +1315,7 @@
       "competition": "Primera División",
       "team": "Levante UD",
       "code": "LEV",
-      "rank": 17,
+      "rank": 18,
       "opponent": "RC Celta",
       "opponentCode": "CEL",
       "opponentRank": 9,
