@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T11:54:44.280Z",
+  "generatedAt": "2026-11-01T12:09:05.172Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-11-01T13:00:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1793534009882,
-    "reason": "last run 1m ago, next due in 4m (lock in 65m)"
+    "lastRunAt": 1793534868698,
+    "reason": "last run 1m ago, next due in 4m (lock in 51m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -27,10 +27,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 0,
+      "squadScore": 159.25,
       "lineupId": "Tasks::TaskLineup:109f349c-1d98-494c-ba32-9050b76fee68",
       "state": "READY",
-      "score": 0,
+      "score": 52.5,
       "finished": false,
       "cleared": false,
       "players": [
@@ -66,8 +66,8 @@
           "slug": "felix-alexandre-andrade-sanches-correia",
           "position": "Forward",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 52.5,
+          "status": "REVIEWING",
           "kickoff": "2026-11-01T13:00:00Z"
         },
         {
@@ -80,7 +80,7 @@
           "kickoff": "2026-11-01T15:15:00Z"
         }
       ],
-      "scored": 0
+      "scored": 1
     },
     {
       "surface": "my set",
@@ -92,7 +92,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:202f0490-8644-477e-8376-892923bb82b6",
       "state": "READY",
-      "score": 81.58,
+      "score": 116.58,
       "finished": false,
       "cleared": false,
       "players": [
@@ -128,8 +128,8 @@
           "slug": "felix-alexandre-andrade-sanches-correia",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 35,
+          "status": "REVIEWING",
           "kickoff": "2026-11-01T13:00:00Z"
         },
         {
@@ -142,7 +142,7 @@
           "kickoff": "2026-11-08T14:00:00Z"
         }
       ],
-      "scored": 2
+      "scored": 3
     },
     {
       "surface": "team set (Loadshift)",
@@ -270,8 +270,8 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 82 scored so far, 2 of 5 played. On course for about 269; needs 260 (9 over).",
-      "tone": "good",
+      "status": "Locked and playing. 117 scored so far, 3 of 5 played. On course for about 259; needs 260 (1 short).",
+      "tone": "warn",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": false,
       "entered": {
@@ -364,8 +364,8 @@
             "kickoff": "2026-11-02T20:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 35,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "sevilla-sevilla-1890",
             "name": "Félix Correia",
             "player": "Félix Correia",
@@ -423,9 +423,9 @@
           }
         ],
         "projected": 220.17,
-        "scoredSoFar": 81.59,
-        "played": 2,
-        "expectedFinal": 268.94
+        "scoredSoFar": 116.59,
+        "played": 3,
+        "expectedFinal": 259.04
       },
       "poolStrength": {
         "strong": 1,
@@ -922,7 +922,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Team entered, locks Mon 12:00 am Sydney. The squad's top three lineups together need 980; this one is expected to add about 191.",
+      "status": "Locked and playing. 79 scored so far, 1 of 5 played. The squad's top three lineups together need 980; the squad has 159 so far.",
       "tone": "good",
       "lockAt": "2026-11-01T13:00:00Z",
       "isSquad": true,
@@ -1016,8 +1016,8 @@
             "kickoff": "2026-11-01T15:15:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 52.5,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "sevilla-sevilla-1890",
             "name": "Félix Correia",
             "player": "Félix Correia",
@@ -1075,9 +1075,9 @@
           }
         ],
         "projected": 191.16,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 230.31
+        "scoredSoFar": 78.75,
+        "played": 1,
+        "expectedFinal": 241.65
       },
       "poolStrength": {
         "strong": 0,
@@ -1087,7 +1087,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 0
+        "scoreSoFar": 159.25
       },
       "level": 1,
       "lives": null,
@@ -1213,7 +1213,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 42,
           "picture": "https://assets.sorare.com/cardsamplepicture/b4cd64ef-8ef2-436f-b857-f7f10bed8391/picture/tinified-a5116110a4209535a34acd406d8dc9c7.png",
