@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T13:21:44.380Z",
+  "generatedAt": "2026-11-01T13:52:16.754Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-11-01T13:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793537427099,
-    "reason": "last run 31m ago, next due in 149m"
+    "reason": "last run 62m ago, next due in 118m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 160.385,
+      "squadScore": 236.275,
       "lineupId": "Tasks::TaskLineup:109f349c-1d98-494c-ba32-9050b76fee68",
       "state": "READY",
-      "score": 52.2,
+      "score": 96.75,
       "finished": false,
       "cleared": false,
       "players": [
@@ -66,7 +66,7 @@
           "slug": "felix-alexandre-andrade-sanches-correia",
           "position": "Forward",
           "captain": true,
-          "score": 52.2,
+          "score": 96.75,
           "status": "REVIEWING",
           "kickoff": "2026-11-06T20:00:00Z"
         },
@@ -92,7 +92,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:202f0490-8644-477e-8376-892923bb82b6",
       "state": "READY",
-      "score": 116.38,
+      "score": 146.08,
       "finished": false,
       "cleared": false,
       "players": [
@@ -128,7 +128,7 @@
           "slug": "felix-alexandre-andrade-sanches-correia",
           "position": "Forward",
           "captain": false,
-          "score": 34.8,
+          "score": 64.5,
           "status": "REVIEWING",
           "kickoff": "2026-11-06T20:00:00Z"
         },
@@ -270,8 +270,8 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 116 scored so far, 3 of 5 played. On course for about 259; needs 260 (1 short).",
-      "tone": "warn",
+      "status": "Locked and playing. 146 scored so far, 3 of 5 played. On course for about 289; needs 260 (29 over).",
+      "tone": "good",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": false,
       "entered": {
@@ -364,7 +364,7 @@
             "kickoff": "2026-11-02T20:00:00Z"
           },
           {
-            "actual": 34.8,
+            "actual": 64.5,
             "scoreStatus": "REVIEWING",
             "teamSlug": "sevilla-sevilla-1890",
             "name": "Félix Correia",
@@ -423,9 +423,9 @@
           }
         ],
         "projected": 220.17,
-        "scoredSoFar": 116.39,
+        "scoredSoFar": 146.09,
         "played": 3,
-        "expectedFinal": 258.84
+        "expectedFinal": 288.54
       },
       "poolStrength": {
         "strong": 1,
@@ -922,7 +922,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 78 scored so far, 1 of 5 played. The squad's top three lineups together need 980; the squad has 160 so far.",
+      "status": "Locked and playing. 145 scored so far, 1 of 5 played. The squad's top three lineups together need 980; the squad has 236 so far.",
       "tone": "good",
       "lockAt": "2026-11-01T13:00:00Z",
       "isSquad": true,
@@ -1016,7 +1016,7 @@
             "kickoff": "2026-11-01T15:15:00Z"
           },
           {
-            "actual": 52.2,
+            "actual": 96.75,
             "scoreStatus": "REVIEWING",
             "teamSlug": "sevilla-sevilla-1890",
             "name": "Félix Correia",
@@ -1075,9 +1075,9 @@
           }
         ],
         "projected": 191.16,
-        "scoredSoFar": 78.3,
+        "scoredSoFar": 145.13,
         "played": 1,
-        "expectedFinal": 241.2
+        "expectedFinal": 308.02
       },
       "poolStrength": {
         "strong": 0,
@@ -1087,7 +1087,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 160.385
+        "scoreSoFar": 236.275
       },
       "level": 1,
       "lives": null,
