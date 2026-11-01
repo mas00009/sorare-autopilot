@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T07:04:46.348Z",
+  "generatedAt": "2026-11-01T07:35:25.172Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-11-01T13:00:00Z",
     "cadenceMin": 60,
     "lastRunAt": 1793516611981,
-    "reason": "last run 1m ago, next due in 59m (lock in 355m)"
+    "reason": "last run 32m ago, next due in 28m (lock in 325m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -248,9 +248,9 @@
       {
         "title": "Collect Big 3 LaLiga",
         "gems": 5,
-        "progress": 13,
+        "progress": 15,
         "target": 15,
-        "remaining": 2,
+        "remaining": 0,
         "competition": "LALIGA EA Sports",
         "group": "glitch-laliga",
         "teams": [
