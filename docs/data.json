@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T09:11:06.531Z",
+  "generatedAt": "2026-11-01T09:41:42.470Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-11-01T13:00:00Z",
     "cadenceMin": 60,
     "lastRunAt": 1793524198877,
-    "reason": "last run 1m ago, next due in 59m (lock in 229m)"
+    "reason": "last run 32m ago, next due in 28m (lock in 198m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -26,7 +26,7 @@
       "target": 980,
       "stepState": "LINEUP_SET",
       "collaborative": true,
-      "squadLineups": 2,
+      "squadLineups": 4,
       "squadScore": 0,
       "lineupId": "Tasks::TaskLineup:109f349c-1d98-494c-ba32-9050b76fee68",
       "state": "READY",
@@ -248,7 +248,7 @@
       {
         "title": "Collect Spanish players in LaLiga",
         "gems": 5,
-        "progress": 73,
+        "progress": 74,
         "target": 73,
         "remaining": 0,
         "competition": "LALIGA EA Sports",
@@ -1096,7 +1096,7 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 2,
+        "lineupsIn": 4,
         "needed": 3,
         "scoreSoFar": 0
       },
