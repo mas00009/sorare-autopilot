@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T18:36:04.051Z",
+  "generatedAt": "2026-11-01T19:07:29.763Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-11-01T16:15:00Z",
     "cadenceMin": 180,
-    "lastRunAt": 1793548951751,
-    "reason": "last run 154m ago, next due in 26m"
+    "lastRunAt": 1793560010127,
+    "reason": "last run 1m ago, next due in 179m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 753.75,
+      "squadScore": 852.46,
       "lineupId": "Tasks::TaskLineup:109f349c-1d98-494c-ba32-9050b76fee68",
       "state": "READY",
-      "score": 282.57,
+      "score": 298.86,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "matias-ezequiel-dituro",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 38.01,
+          "score": 45.36,
           "status": "REVIEWING",
           "kickoff": "2026-11-08T13:00:00Z"
         },
@@ -48,7 +48,7 @@
           "slug": "aboubacar-sangare-traore",
           "position": "Defender",
           "captain": false,
-          "score": 47.86,
+          "score": 56.8,
           "status": "REVIEWING",
           "kickoff": "2026-11-08T13:00:00Z"
         },
@@ -92,7 +92,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:202f0490-8644-477e-8376-892923bb82b6",
       "state": "READY",
-      "score": 189.29,
+      "score": 196.64,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,7 +101,7 @@
           "slug": "matias-ezequiel-dituro",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 38.01,
+          "score": 45.36,
           "status": "REVIEWING",
           "kickoff": "2026-11-08T13:00:00Z"
         },
@@ -270,14 +270,14 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 189 scored so far, 4 of 5 played. On course for about 276; needs 260 (16 over).",
+      "status": "Locked and playing. 197 scored so far, 4 of 5 played. On course for about 284; needs 260 (24 over).",
       "tone": "good",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": 38.01,
+            "actual": 45.36,
             "scoreStatus": "REVIEWING",
             "teamSlug": "elche-elche",
             "name": "Matías Dituro",
@@ -423,9 +423,9 @@
           }
         ],
         "projected": 220.17,
-        "scoredSoFar": 189.3,
+        "scoredSoFar": 196.65,
         "played": 4,
-        "expectedFinal": 276.21
+        "expectedFinal": 283.56
       },
       "poolStrength": {
         "strong": 1,
@@ -690,7 +690,7 @@
             "starterPct": null,
             "startRate": 0.7,
             "oddsKnown": false,
-            "onGameSheet": false,
+            "onGameSheet": true,
             "reliability": null,
             "formL5": 49,
             "picture": "https://assets.sorare.com/cardsamplepicture/297a5287-1589-4e3b-8c47-22431d2edfc6/picture/tinified-0a00aec1e7057e48b8fc2a4c4ba4a79e.png",
@@ -888,7 +888,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 49,
           "picture": "https://assets.sorare.com/cardsamplepicture/297a5287-1589-4e3b-8c47-22431d2edfc6/picture/tinified-0a00aec1e7057e48b8fc2a4c4ba4a79e.png",
@@ -922,14 +922,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 335 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 754 so far.",
+      "status": "Locked and playing. 351 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 852 so far.",
       "tone": "good",
       "lockAt": "2026-11-01T13:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 38.01,
+            "actual": 45.36,
             "scoreStatus": "REVIEWING",
             "teamSlug": "elche-elche",
             "name": "Matías Dituro",
@@ -958,7 +958,7 @@
             "kickoff": "2026-11-01T17:30:00Z"
           },
           {
-            "actual": 47.86,
+            "actual": 56.8,
             "scoreStatus": "REVIEWING",
             "teamSlug": "elche-elche",
             "name": "Buba Sangaré",
@@ -1075,9 +1075,9 @@
           }
         ],
         "projected": 191.16,
-        "scoredSoFar": 334.84,
+        "scoredSoFar": 351.13,
         "played": 5,
-        "expectedFinal": 334.84
+        "expectedFinal": 351.13
       },
       "poolStrength": {
         "strong": 0,
@@ -1087,7 +1087,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 753.75
+        "scoreSoFar": 852.46
       },
       "level": 1,
       "lives": null,
@@ -1174,7 +1174,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 49,
           "picture": "https://assets.sorare.com/cardsamplepicture/297a5287-1589-4e3b-8c47-22431d2edfc6/picture/tinified-0a00aec1e7057e48b8fc2a4c4ba4a79e.png",
