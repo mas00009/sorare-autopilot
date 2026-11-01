@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-01T07:35:25.172Z",
+  "generatedAt": "2026-11-01T08:08:01.239Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
     "essence": 535,
-    "gems": 0
+    "gems": 5
   },
   "schedule": {
     "nextLock": "2026-11-01T13:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1793516611981,
-    "reason": "last run 32m ago, next due in 28m (lock in 325m)"
+    "lastRunAt": 1793520402138,
+    "reason": "last run 1m ago, next due in 59m (lock in 292m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -208,7 +208,7 @@
     }
   ],
   "gems": {
-    "balance": 0,
+    "balance": 5,
     "level": 0,
     "ladder": [
       {
@@ -244,29 +244,14 @@
         "current": false
       }
     ],
-    "collections": [
-      {
-        "title": "Collect Big 3 LaLiga",
-        "gems": 5,
-        "progress": 15,
-        "target": 15,
-        "remaining": 0,
-        "competition": "LALIGA EA Sports",
-        "group": "glitch-laliga",
-        "teams": [
-          "Real Madrid",
-          "FC Barcelona",
-          "Atlético de Madrid"
-        ]
-      }
-    ],
+    "collections": [],
     "preferredPack": {
       "group": "LaLiga Packs",
       "slug": "divination-divination-laliga-bronze-laliga"
     },
     "ladderGemsAhead": 40,
     "ladderCashAhead": 1100,
-    "collectionGemsOpen": 5
+    "collectionGemsOpen": 0
   },
   "odds": {
     "configured": true,
