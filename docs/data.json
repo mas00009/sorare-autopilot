@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T17:04:35.606Z",
+  "generatedAt": "2026-11-01T17:35:04.922Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-11-01T16:15:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793548951751,
-    "reason": "last run 62m ago, next due in 118m"
+    "reason": "last run 93m ago, next due in 87m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 671.79,
+      "squadScore": 687.3,
       "lineupId": "Tasks::TaskLineup:109f349c-1d98-494c-ba32-9050b76fee68",
       "state": "READY",
-      "score": 266.95,
+      "score": 268.45,
       "finished": false,
       "cleared": false,
       "players": [
@@ -41,7 +41,7 @@
           "captain": false,
           "score": 36.75,
           "status": "REVIEWING",
-          "kickoff": "2026-11-01T17:30:00Z"
+          "kickoff": "2026-11-08T13:00:00Z"
         },
         {
           "name": "Buba Sangaré",
@@ -50,15 +50,15 @@
           "captain": false,
           "score": 35,
           "status": "REVIEWING",
-          "kickoff": "2026-11-01T17:30:00Z"
+          "kickoff": "2026-11-08T13:00:00Z"
         },
         {
           "name": "Canales",
           "slug": "sergio-canales-madrazo",
           "position": "Midfielder",
           "captain": false,
-          "score": 39.5,
-          "status": "REVIEWING",
+          "score": 41,
+          "status": "FINAL",
           "kickoff": "2026-11-07T13:00:00Z"
         },
         {
@@ -76,7 +76,7 @@
           "position": "Midfielder",
           "captain": false,
           "score": 51.15,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-11-07T13:00:00Z"
         }
       ],
@@ -86,7 +86,7 @@
       "surface": "my set",
       "level": 0,
       "target": 260,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
@@ -103,7 +103,7 @@
           "captain": false,
           "score": 36.75,
           "status": "REVIEWING",
-          "kickoff": "2026-11-01T17:30:00Z"
+          "kickoff": "2026-11-08T13:00:00Z"
         },
         {
           "name": "Josip Stanišić",
@@ -443,7 +443,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 260
         },
         {
@@ -479,14 +479,14 @@
           "rarity": "common"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 260,
       "current": [
         {
           "name": "Matías Dituro",
           "captain": false,
           "locked": true,
-          "nextGame": "2026-11-01T17:30:00Z"
+          "nextGame": "2026-11-08T13:00:00Z"
         },
         {
           "name": "Josip Stanišić",
@@ -922,7 +922,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 319 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 672 so far.",
+      "status": "Locked and playing. 321 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 687 so far.",
       "tone": "good",
       "lockAt": "2026-11-01T13:00:00Z",
       "isSquad": true,
@@ -954,7 +954,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-11-01T17:30:00Z"
           },
           {
@@ -983,12 +983,12 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-11-01T17:30:00Z"
           },
           {
-            "actual": 39.5,
-            "scoreStatus": "REVIEWING",
+            "actual": 41,
+            "scoreStatus": "FINAL",
             "teamSlug": "racing-santander-santander",
             "name": "Canales",
             "player": "Canales",
@@ -1046,7 +1046,7 @@
           },
           {
             "actual": 51.15,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "racing-santander-santander",
             "name": "Iván Martín",
             "player": "Iván Martín",
@@ -1075,9 +1075,9 @@
           }
         ],
         "projected": 191.16,
-        "scoredSoFar": 319.22,
+        "scoredSoFar": 320.72,
         "played": 5,
-        "expectedFinal": 319.22
+        "expectedFinal": 320.72
       },
       "poolStrength": {
         "strong": 0,
@@ -1087,7 +1087,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 671.79
+        "scoreSoFar": 687.3
       },
       "level": 1,
       "lives": null,
@@ -1134,14 +1134,14 @@
         {
           "name": "Matías Dituro",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-11-01T17:30:00Z"
+          "locked": true,
+          "nextGame": "2026-11-08T13:00:00Z"
         },
         {
           "name": "Buba Sangaré",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-11-01T17:30:00Z"
+          "locked": true,
+          "nextGame": "2026-11-08T13:00:00Z"
         },
         {
           "name": "Canales",
