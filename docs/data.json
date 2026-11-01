@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T19:07:29.763Z",
+  "generatedAt": "2026-11-01T19:37:59.483Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-11-01T16:15:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793560010127,
-    "reason": "last run 1m ago, next due in 179m"
+    "reason": "last run 31m ago, next due in 149m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -24,13 +24,13 @@
       "surface": "team set (Loadshift)",
       "level": 1,
       "target": 980,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 852.46,
+      "squadScore": 863.52,
       "lineupId": "Tasks::TaskLineup:109f349c-1d98-494c-ba32-9050b76fee68",
       "state": "READY",
-      "score": 298.86,
+      "score": 304.32,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,8 +39,8 @@
           "slug": "matias-ezequiel-dituro",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 45.36,
-          "status": "REVIEWING",
+          "score": 50.82,
+          "status": "FINAL",
           "kickoff": "2026-11-08T13:00:00Z"
         },
         {
@@ -49,7 +49,7 @@
           "position": "Defender",
           "captain": false,
           "score": 56.8,
-          "status": "REVIEWING",
+          "status": "FINAL",
           "kickoff": "2026-11-08T13:00:00Z"
         },
         {
@@ -86,13 +86,13 @@
       "surface": "my set",
       "level": 0,
       "target": 260,
-      "stepState": "LIVE",
+      "stepState": "LINEUP_SET",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:202f0490-8644-477e-8376-892923bb82b6",
       "state": "READY",
-      "score": 196.64,
+      "score": 202.1,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,8 +101,8 @@
           "slug": "matias-ezequiel-dituro",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 45.36,
-          "status": "REVIEWING",
+          "score": 50.82,
+          "status": "FINAL",
           "kickoff": "2026-11-08T13:00:00Z"
         },
         {
@@ -270,15 +270,15 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 197 scored so far, 4 of 5 played. On course for about 284; needs 260 (24 over).",
+      "status": "Locked and playing. 202 scored so far, 4 of 5 played. On course for about 289; needs 260 (29 over).",
       "tone": "good",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": 45.36,
-            "scoreStatus": "REVIEWING",
+            "actual": 50.82,
+            "scoreStatus": "FINAL",
             "teamSlug": "elche-elche",
             "name": "Matías Dituro",
             "player": "Matías Dituro",
@@ -423,9 +423,9 @@
           }
         ],
         "projected": 220.17,
-        "scoredSoFar": 196.65,
+        "scoredSoFar": 202.11,
         "played": 4,
-        "expectedFinal": 283.56
+        "expectedFinal": 289.02
       },
       "poolStrength": {
         "strong": 1,
@@ -443,7 +443,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 260
         },
         {
@@ -479,7 +479,7 @@
           "rarity": "common"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 260,
       "current": [
         {
@@ -922,15 +922,15 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 351 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 852 so far.",
+      "status": "Locked and playing. 357 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 864 so far.",
       "tone": "good",
       "lockAt": "2026-11-01T13:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 45.36,
-            "scoreStatus": "REVIEWING",
+            "actual": 50.82,
+            "scoreStatus": "FINAL",
             "teamSlug": "elche-elche",
             "name": "Matías Dituro",
             "player": "Matías Dituro",
@@ -959,7 +959,7 @@
           },
           {
             "actual": 56.8,
-            "scoreStatus": "REVIEWING",
+            "scoreStatus": "FINAL",
             "teamSlug": "elche-elche",
             "name": "Buba Sangaré",
             "player": "Buba Sangaré",
@@ -1075,9 +1075,9 @@
           }
         ],
         "projected": 191.16,
-        "scoredSoFar": 351.13,
+        "scoredSoFar": 356.59,
         "played": 5,
-        "expectedFinal": 351.13
+        "expectedFinal": 356.59
       },
       "poolStrength": {
         "strong": 0,
@@ -1087,7 +1087,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 852.46
+        "scoreSoFar": 863.52
       },
       "level": 1,
       "lives": null,
@@ -1101,7 +1101,7 @@
         },
         {
           "level": 1,
-          "state": "LIVE",
+          "state": "LINEUP_SET",
           "target": 980
         },
         {
@@ -1128,7 +1128,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LIVE",
+      "state": "LINEUP_SET",
       "target": 980,
       "current": [
         {
