@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T16:34:03.964Z",
+  "generatedAt": "2026-11-01T17:04:35.606Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-11-01T16:15:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793548951751,
-    "reason": "last run 32m ago, next due in 148m"
+    "reason": "last run 62m ago, next due in 118m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 642.97,
+      "squadScore": 671.79,
       "lineupId": "Tasks::TaskLineup:109f349c-1d98-494c-ba32-9050b76fee68",
       "state": "READY",
-      "score": 262,
+      "score": 266.95,
       "finished": false,
       "cleared": false,
       "players": [
@@ -57,7 +57,7 @@
           "slug": "sergio-canales-madrazo",
           "position": "Midfielder",
           "captain": false,
-          "score": 36.2,
+          "score": 39.5,
           "status": "REVIEWING",
           "kickoff": "2026-11-07T13:00:00Z"
         },
@@ -75,7 +75,7 @@
           "slug": "ivan-martin-nunez",
           "position": "Midfielder",
           "captain": false,
-          "score": 49.5,
+          "score": 51.15,
           "status": "REVIEWING",
           "kickoff": "2026-11-07T13:00:00Z"
         }
@@ -922,7 +922,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 314 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 643 so far.",
+      "status": "Locked and playing. 319 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 672 so far.",
       "tone": "good",
       "lockAt": "2026-11-01T13:00:00Z",
       "isSquad": true,
@@ -987,7 +987,7 @@
             "kickoff": "2026-11-01T17:30:00Z"
           },
           {
-            "actual": 36.2,
+            "actual": 39.5,
             "scoreStatus": "REVIEWING",
             "teamSlug": "racing-santander-santander",
             "name": "Canales",
@@ -1045,7 +1045,7 @@
             "kickoff": "2026-11-01T13:00:00Z"
           },
           {
-            "actual": 49.5,
+            "actual": 51.15,
             "scoreStatus": "REVIEWING",
             "teamSlug": "racing-santander-santander",
             "name": "Iván Martín",
@@ -1075,9 +1075,9 @@
           }
         ],
         "projected": 191.16,
-        "scoredSoFar": 314.27,
+        "scoredSoFar": 319.22,
         "played": 5,
-        "expectedFinal": 314.27
+        "expectedFinal": 319.22
       },
       "poolStrength": {
         "strong": 0,
@@ -1087,7 +1087,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 642.97
+        "scoreSoFar": 671.79
       },
       "level": 1,
       "lives": null,
