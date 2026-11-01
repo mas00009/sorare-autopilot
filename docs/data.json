@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-01T08:38:40.045Z",
+  "generatedAt": "2026-11-01T09:11:06.531Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 535,
+    "essence": 285,
     "gems": 5
   },
   "schedule": {
     "nextLock": "2026-11-01T13:00:00Z",
     "cadenceMin": 60,
-    "lastRunAt": 1793520402138,
-    "reason": "last run 32m ago, next due in 28m (lock in 261m)"
+    "lastRunAt": 1793524198877,
+    "reason": "last run 1m ago, next due in 59m (lock in 229m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -244,14 +244,25 @@
         "current": false
       }
     ],
-    "collections": [],
+    "collections": [
+      {
+        "title": "Collect Spanish players in LaLiga",
+        "gems": 5,
+        "progress": 73,
+        "target": 73,
+        "remaining": 0,
+        "competition": "LALIGA EA Sports",
+        "group": "glitch-laliga",
+        "teams": []
+      }
+    ],
     "preferredPack": {
       "group": "LaLiga Packs",
       "slug": "divination-divination-laliga-bronze-laliga"
     },
     "ladderGemsAhead": 40,
     "ladderCashAhead": 1100,
-    "collectionGemsOpen": 0
+    "collectionGemsOpen": 5
   },
   "odds": {
     "configured": true,
@@ -1204,7 +1215,7 @@
           "blocked": null
         },
         {
-          "id": "ComposeTeamBenchCard:bd3d1473-2c83-4095-86cf-405f80f33726",
+          "id": "ComposeTeamBenchCard:a9aa851f-73b0-4158-878f-bd6470a35bed",
           "player": "Francho Serrano",
           "slug": "francho-serrano-gracia",
           "position": "MD",
