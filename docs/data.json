@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-01T09:41:42.470Z",
+  "generatedAt": "2026-11-01T09:53:54.653Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
     "essence": 285,
-    "gems": 5
+    "gems": 10
   },
   "schedule": {
     "nextLock": "2026-11-01T13:00:00Z",
-    "cadenceMin": 60,
-    "lastRunAt": 1793524198877,
-    "reason": "last run 32m ago, next due in 28m (lock in 198m)"
+    "cadenceMin": 15,
+    "lastRunAt": 1793526758528,
+    "reason": "last run 1m ago, next due in 14m (lock in 186m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -208,7 +208,7 @@
     }
   ],
   "gems": {
-    "balance": 5,
+    "balance": 10,
     "level": 0,
     "ladder": [
       {
@@ -244,25 +244,14 @@
         "current": false
       }
     ],
-    "collections": [
-      {
-        "title": "Collect Spanish players in LaLiga",
-        "gems": 5,
-        "progress": 74,
-        "target": 73,
-        "remaining": 0,
-        "competition": "LALIGA EA Sports",
-        "group": "glitch-laliga",
-        "teams": []
-      }
-    ],
+    "collections": [],
     "preferredPack": {
       "group": "LaLiga Packs",
       "slug": "divination-divination-laliga-bronze-laliga"
     },
     "ladderGemsAhead": 40,
     "ladderCashAhead": 1100,
-    "collectionGemsOpen": 5
+    "collectionGemsOpen": 0
   },
   "odds": {
     "configured": true,
