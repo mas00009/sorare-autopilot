@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T13:52:16.754Z",
+  "generatedAt": "2026-11-01T14:22:47.954Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-11-01T13:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793537427099,
-    "reason": "last run 62m ago, next due in 118m"
+    "reason": "last run 92m ago, next due in 88m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 236.275,
+      "squadScore": 353.86,
       "lineupId": "Tasks::TaskLineup:109f349c-1d98-494c-ba32-9050b76fee68",
       "state": "READY",
-      "score": 96.75,
+      "score": 170.7,
       "finished": false,
       "cleared": false,
       "players": [
@@ -57,8 +57,8 @@
           "slug": "sergio-canales-madrazo",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 35,
+          "status": "REVIEWING",
           "kickoff": "2026-11-01T15:15:00Z"
         },
         {
@@ -66,7 +66,7 @@
           "slug": "felix-alexandre-andrade-sanches-correia",
           "position": "Forward",
           "captain": true,
-          "score": 96.75,
+          "score": 97.2,
           "status": "REVIEWING",
           "kickoff": "2026-11-06T20:00:00Z"
         },
@@ -75,12 +75,12 @@
           "slug": "ivan-martin-nunez",
           "position": "Midfielder",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 38.5,
+          "status": "REVIEWING",
           "kickoff": "2026-11-01T15:15:00Z"
         }
       ],
-      "scored": 1
+      "scored": 3
     },
     {
       "surface": "my set",
@@ -92,7 +92,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:202f0490-8644-477e-8376-892923bb82b6",
       "state": "READY",
-      "score": 146.08,
+      "score": 146.38,
       "finished": false,
       "cleared": false,
       "players": [
@@ -128,7 +128,7 @@
           "slug": "felix-alexandre-andrade-sanches-correia",
           "position": "Forward",
           "captain": false,
-          "score": 64.5,
+          "score": 64.8,
           "status": "REVIEWING",
           "kickoff": "2026-11-06T20:00:00Z"
         },
@@ -364,7 +364,7 @@
             "kickoff": "2026-11-02T20:00:00Z"
           },
           {
-            "actual": 64.5,
+            "actual": 64.8,
             "scoreStatus": "REVIEWING",
             "teamSlug": "sevilla-sevilla-1890",
             "name": "Félix Correia",
@@ -423,9 +423,9 @@
           }
         ],
         "projected": 220.17,
-        "scoredSoFar": 146.09,
+        "scoredSoFar": 146.39,
         "played": 3,
-        "expectedFinal": 288.54
+        "expectedFinal": 288.84
       },
       "poolStrength": {
         "strong": 1,
@@ -922,7 +922,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 145 scored so far, 1 of 5 played. The squad's top three lineups together need 980; the squad has 236 so far.",
+      "status": "Locked and playing. 219 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 354 so far.",
       "tone": "good",
       "lockAt": "2026-11-01T13:00:00Z",
       "isSquad": true,
@@ -987,8 +987,8 @@
             "kickoff": "2026-11-01T17:30:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 35,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "racing-santander-santander",
             "name": "Canales",
             "player": "Canales",
@@ -1016,7 +1016,7 @@
             "kickoff": "2026-11-01T15:15:00Z"
           },
           {
-            "actual": 96.75,
+            "actual": 97.2,
             "scoreStatus": "REVIEWING",
             "teamSlug": "sevilla-sevilla-1890",
             "name": "Félix Correia",
@@ -1045,8 +1045,8 @@
             "kickoff": "2026-11-01T13:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 38.5,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "racing-santander-santander",
             "name": "Iván Martín",
             "player": "Iván Martín",
@@ -1075,9 +1075,9 @@
           }
         ],
         "projected": 191.16,
-        "scoredSoFar": 145.13,
-        "played": 1,
-        "expectedFinal": 308.02
+        "scoredSoFar": 219.3,
+        "played": 3,
+        "expectedFinal": 309.87
       },
       "poolStrength": {
         "strong": 0,
@@ -1087,7 +1087,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 236.275
+        "scoreSoFar": 353.86
       },
       "level": 1,
       "lives": null,
