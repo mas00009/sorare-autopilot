@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-01T12:50:53.154Z",
+  "generatedAt": "2026-11-01T13:21:44.380Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 285,
+    "essence": 556,
     "gems": 10
   },
   "schedule": {
     "nextLock": "2026-11-01T13:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793537427099,
-    "reason": "last run 0m ago, next due in 180m (lock in 9m)"
+    "reason": "last run 31m ago, next due in 149m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -24,13 +24,13 @@
       "surface": "team set (Loadshift)",
       "level": 1,
       "target": 980,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 159.25,
+      "squadScore": 160.385,
       "lineupId": "Tasks::TaskLineup:109f349c-1d98-494c-ba32-9050b76fee68",
       "state": "READY",
-      "score": 52.5,
+      "score": 52.2,
       "finished": false,
       "cleared": false,
       "players": [
@@ -66,9 +66,9 @@
           "slug": "felix-alexandre-andrade-sanches-correia",
           "position": "Forward",
           "captain": true,
-          "score": 52.5,
+          "score": 52.2,
           "status": "REVIEWING",
-          "kickoff": "2026-11-01T13:00:00Z"
+          "kickoff": "2026-11-06T20:00:00Z"
         },
         {
           "name": "Iván Martín",
@@ -86,13 +86,13 @@
       "surface": "my set",
       "level": 0,
       "target": 260,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:202f0490-8644-477e-8376-892923bb82b6",
       "state": "READY",
-      "score": 116.58,
+      "score": 116.38,
       "finished": false,
       "cleared": false,
       "players": [
@@ -128,9 +128,9 @@
           "slug": "felix-alexandre-andrade-sanches-correia",
           "position": "Forward",
           "captain": false,
-          "score": 35,
+          "score": 34.8,
           "status": "REVIEWING",
-          "kickoff": "2026-11-01T13:00:00Z"
+          "kickoff": "2026-11-06T20:00:00Z"
         },
         {
           "name": "Emersonn",
@@ -256,8 +256,8 @@
   "odds": {
     "configured": true,
     "month": "2026-11",
-    "used": 158,
-    "remaining": 342
+    "used": 1,
+    "remaining": 499
   },
   "control": {
     "paused": false,
@@ -270,7 +270,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 117 scored so far, 3 of 5 played. On course for about 259; needs 260 (1 short).",
+      "status": "Locked and playing. 116 scored so far, 3 of 5 played. On course for about 259; needs 260 (1 short).",
       "tone": "warn",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": false,
@@ -364,7 +364,7 @@
             "kickoff": "2026-11-02T20:00:00Z"
           },
           {
-            "actual": 35,
+            "actual": 34.8,
             "scoreStatus": "REVIEWING",
             "teamSlug": "sevilla-sevilla-1890",
             "name": "Félix Correia",
@@ -423,9 +423,9 @@
           }
         ],
         "projected": 220.17,
-        "scoredSoFar": 116.59,
+        "scoredSoFar": 116.39,
         "played": 3,
-        "expectedFinal": 259.04
+        "expectedFinal": 258.84
       },
       "poolStrength": {
         "strong": 1,
@@ -443,7 +443,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 260
         },
         {
@@ -479,7 +479,7 @@
           "rarity": "common"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 260,
       "current": [
         {
@@ -504,7 +504,7 @@
           "name": "Félix Correia",
           "captain": false,
           "locked": true,
-          "nextGame": "2026-11-01T13:00:00Z"
+          "nextGame": "2026-11-06T20:00:00Z"
         },
         {
           "name": "Emersonn",
@@ -918,11 +918,11 @@
           "blocked": null
         }
       ],
-      "projected": 239.5
+      "projected": 233.8
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 79 scored so far, 1 of 5 played. The squad's top three lineups together need 980; the squad has 159 so far.",
+      "status": "Locked and playing. 78 scored so far, 1 of 5 played. The squad's top three lineups together need 980; the squad has 160 so far.",
       "tone": "good",
       "lockAt": "2026-11-01T13:00:00Z",
       "isSquad": true,
@@ -1016,7 +1016,7 @@
             "kickoff": "2026-11-01T15:15:00Z"
           },
           {
-            "actual": 52.5,
+            "actual": 52.2,
             "scoreStatus": "REVIEWING",
             "teamSlug": "sevilla-sevilla-1890",
             "name": "Félix Correia",
@@ -1041,7 +1041,7 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-11-01T13:00:00Z"
           },
           {
@@ -1075,9 +1075,9 @@
           }
         ],
         "projected": 191.16,
-        "scoredSoFar": 78.75,
+        "scoredSoFar": 78.3,
         "played": 1,
-        "expectedFinal": 241.65
+        "expectedFinal": 241.2
       },
       "poolStrength": {
         "strong": 0,
@@ -1087,7 +1087,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 159.25
+        "scoreSoFar": 160.385
       },
       "level": 1,
       "lives": null,
@@ -1101,7 +1101,7 @@
         },
         {
           "level": 1,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 980
         },
         {
@@ -1128,7 +1128,7 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 980,
       "current": [
         {
@@ -1152,8 +1152,8 @@
         {
           "name": "Félix Correia",
           "captain": true,
-          "locked": false,
-          "nextGame": "2026-11-01T13:00:00Z"
+          "locked": true,
+          "nextGame": "2026-11-06T20:00:00Z"
         },
         {
           "name": "Iván Martín",
@@ -1202,76 +1202,12 @@
           "lockedAt": null,
           "expected": 36.66,
           "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:a9aa851f-73b0-4158-878f-bd6470a35bed",
-          "player": "Francho Serrano",
-          "slug": "francho-serrano-gracia",
-          "position": "MD",
-          "average": 41,
-          "bonus": 1,
-          "starterPct": null,
-          "startRate": 0.7,
-          "oddsKnown": false,
-          "onGameSheet": true,
-          "reliability": null,
-          "formL5": 42,
-          "picture": "https://assets.sorare.com/cardsamplepicture/b4cd64ef-8ef2-436f-b857-f7f10bed8391/picture/tinified-a5116110a4209535a34acd406d8dc9c7.png",
-          "rarity": "common",
-          "gameId": "Game:c1f6e413-5ca0-4ba8-bacb-431a5f675e2c",
-          "kickoff": "2026-11-01T13:00:00Z",
-          "team": "Getafe CF",
-          "teamSlug": "getafe-getafe-madrid",
-          "opponent": "Sevilla FC",
-          "opponentCode": "SEV",
-          "code": "GET",
-          "rank": 18,
-          "opponentRank": 6,
-          "home": true,
-          "competition": "Primera División",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.296,
-          "pLose": 0.386,
-          "oddsBooks": 21,
-          "marketFactor": 0.988,
-          "lockedAt": null,
-          "expected": 31.57,
-          "blocked": null
         }
       ],
-      "projected": 68.2
+      "projected": 36.7
     }
   ],
   "fixtures": [
-    {
-      "kickoff": "2026-11-01T13:00:00Z",
-      "competition": "Primera División",
-      "team": "Getafe CF",
-      "code": "GET",
-      "rank": 18,
-      "opponent": "Sevilla FC",
-      "opponentCode": "SEV",
-      "opponentRank": 6,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.296,
-      "pLose": 0.386,
-      "oppFactor": null,
-      "home": true,
-      "players": [
-        "Francho Serrano"
-      ],
-      "points": 31.6,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    },
     {
       "kickoff": "2026-11-01T20:00:00Z",
       "competition": "Primera División",
