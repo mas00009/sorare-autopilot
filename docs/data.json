@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T17:35:04.922Z",
+  "generatedAt": "2026-11-01T18:05:34.494Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-11-01T16:15:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793548951751,
-    "reason": "last run 93m ago, next due in 87m"
+    "reason": "last run 123m ago, next due in 57m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 5,
-      "squadScore": 687.3,
+      "squadScore": 716.375,
       "lineupId": "Tasks::TaskLineup:109f349c-1d98-494c-ba32-9050b76fee68",
       "state": "READY",
-      "score": 268.45,
+      "score": 276.59,
       "finished": false,
       "cleared": false,
       "players": [
@@ -39,7 +39,7 @@
           "slug": "matias-ezequiel-dituro",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 36.75,
+          "score": 37.7,
           "status": "REVIEWING",
           "kickoff": "2026-11-08T13:00:00Z"
         },
@@ -48,7 +48,7 @@
           "slug": "aboubacar-sangare-traore",
           "position": "Defender",
           "captain": false,
-          "score": 35,
+          "score": 42.2,
           "status": "REVIEWING",
           "kickoff": "2026-11-08T13:00:00Z"
         },
@@ -92,7 +92,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:202f0490-8644-477e-8376-892923bb82b6",
       "state": "READY",
-      "score": 188.03,
+      "score": 188.98,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,7 +101,7 @@
           "slug": "matias-ezequiel-dituro",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 36.75,
+          "score": 37.7,
           "status": "REVIEWING",
           "kickoff": "2026-11-08T13:00:00Z"
         },
@@ -270,14 +270,14 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 188 scored so far, 4 of 5 played. On course for about 275; needs 260 (15 over).",
+      "status": "Locked and playing. 189 scored so far, 4 of 5 played. On course for about 276; needs 260 (16 over).",
       "tone": "good",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": false,
       "entered": {
         "five": [
           {
-            "actual": 36.75,
+            "actual": 37.7,
             "scoreStatus": "REVIEWING",
             "teamSlug": "elche-elche",
             "name": "Matías Dituro",
@@ -423,9 +423,9 @@
           }
         ],
         "projected": 220.17,
-        "scoredSoFar": 188.04,
+        "scoredSoFar": 188.99,
         "played": 4,
-        "expectedFinal": 274.95
+        "expectedFinal": 275.9
       },
       "poolStrength": {
         "strong": 1,
@@ -922,14 +922,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 321 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 687 so far.",
+      "status": "Locked and playing. 329 scored so far, 5 of 5 played. The squad's top three lineups together need 980; the squad has 716 so far.",
       "tone": "good",
       "lockAt": "2026-11-01T13:00:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 36.75,
+            "actual": 37.7,
             "scoreStatus": "REVIEWING",
             "teamSlug": "elche-elche",
             "name": "Matías Dituro",
@@ -958,7 +958,7 @@
             "kickoff": "2026-11-01T17:30:00Z"
           },
           {
-            "actual": 35,
+            "actual": 42.2,
             "scoreStatus": "REVIEWING",
             "teamSlug": "elche-elche",
             "name": "Buba Sangaré",
@@ -1075,9 +1075,9 @@
           }
         ],
         "projected": 191.16,
-        "scoredSoFar": 320.72,
+        "scoredSoFar": 328.88,
         "played": 5,
-        "expectedFinal": 320.72
+        "expectedFinal": 328.88
       },
       "poolStrength": {
         "strong": 0,
@@ -1087,7 +1087,7 @@
       "squad": {
         "lineupsIn": 5,
         "needed": 3,
-        "scoreSoFar": 687.3
+        "scoreSoFar": 716.375
       },
       "level": 1,
       "lives": null,
