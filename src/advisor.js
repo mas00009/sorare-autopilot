@@ -361,7 +361,7 @@ function attentionSection(views, extraLines = []) {
     }
   }
   if (!widgets.length) widgets.push({ decoratedText: { text: `✅ ${font(COLOUR.fit, '<b>Nothing Needs You</b>')}`, wrapText: true } });
-  return { header: '1 · Needs Your Attention', widgets };
+  return { header: 'Needs Your Attention', widgets };
 }
 
 function lineupSection(n, v) {
@@ -369,7 +369,7 @@ function lineupSection(n, v) {
   const name = boardName(v);
   // No team lineup in: recommend one (owner, 2 Nov 2026), only if it can be entered.
   if (v.b.surface.startsWith('team') && !v.live) {
-    const head = { header: `${n} · ${name} · Level ${v.b.level}` };
+    const head = { header: `${name} · Level ${v.b.level}` };
     if (v.step.state === 'PRE_MATCHDAY_LOCKED') {
       return { ...head, widgets: [{ textParagraph: { text: `Not open yet - opens ${v.opensAt ? when(v.opensAt) : 'at the next matchday'}. A recommended five will be here once it opens.` } }] };
     }
@@ -381,14 +381,19 @@ function lineupSection(n, v) {
       cardGrid(v.aiPick.chosen.map((x) => ({ name: `${x.player.split(' ').pop()} ${STAR(x.tier)}`, pic: v.picOf.get(x.slug), caption: `${Math.round(x.expected)} · ${shortTime(x.kickoff)}` }))),
     ] };
   }
-  if (!v.live) return { header: `${n} · ${name} · Level ${v.b.level}`, widgets: [summaryLine(v), { textParagraph: { text: 'No lineup in yet - see the AI pick below.' } }] };
+  if (!v.live) return { header: `${name} · Level ${v.b.level}`, widgets: [summaryLine(v), { textParagraph: { text: 'No lineup in yet - see the AI pick below.' } }] };
   // A locked lineup's pending GTD is noise - nothing can be changed. It is
   // only mentioned once decided (cleared or ruled out), as late news.
   const fyi = [];
   const squadRows = v.squad ? [{ decoratedText: { topLabel: `SQUAD TOP 3 vs ${v.squad.target} · ${v.squad.toPlay} player(s) still to play`,
     text: v.squad.lineups.slice(0, 5).map((l, i) => `${i < 3 ? '<b>' : ''}${i + 1}. ${l.who}${l.mine ? ' (you)' : ''}: ${Math.round(l.live)} now → ~${Math.round(l.proj)}${i < 3 ? '</b>' : ''}`).join('<br>'), wrapText: true } }] : [];
   // Team set: one line, the squad's top three against the target (owner: "super simple").
-  if (v.squad && v.live) return { header: `${n} · ${name} · Level ${v.b.level}`, widgets: [summaryLine(v)] };
+  if (v.squad && v.live) {
+    // One line, no heading (owner): name and level lead the status.
+    const line = summaryLine(v);
+    line.decoratedText.text = `<b>${name} · Level ${v.b.level}</b> · ${line.decoratedText.text}`;
+    return { widgets: [line] };
+  }
 
   // Status on the left, the key on the right, one line (owner, 2 Nov 2026).
   const statusRow = { columns: { columnItems: [
@@ -396,7 +401,7 @@ function lineupSection(n, v) {
     { horizontalSizeStyle: 'FILL_MINIMUM_SPACE', horizontalAlignment: 'END', verticalAlignment: 'CENTER',
       widgets: [{ textParagraph: { text: font(COLOUR.locked, '✅ Final · 🔵 Live · ⏳ To Play · ❌ DNP') } }] },
   ] } };
-  return { header: `${n} · ${name} · Level ${v.b.level}`, widgets: [statusRow, ...squadRows, ...fyi, cardGrid(v.current.map((c) => {
+  return { header: `${name} · Level ${v.b.level}`, widgets: [statusRow, ...squadRows, ...fyi, cardGrid(v.current.map((c) => {
     const st = playState(c);
     const icon = st === 'upcoming' && v.editable && c.injury ? dot(c.injury) : STATE_ICON[st];
     // Two lines only: name, then icon + number + time (an icon beside a long
@@ -416,7 +421,7 @@ function worthSection(views) {
     topLabel: `${r.name.split(' ').pop()} · ${STAR(r.tier)} · ${shortTime(r.next)}`, text, wrapText: false } });
   const col = (title, list, fmt) => ({ horizontalSizeStyle: 'FILL_AVAILABLE_SPACE', horizontalAlignment: 'START', verticalAlignment: 'TOP',
     widgets: [{ textParagraph: { text: `<b>${title}</b>` } }, ...(list.length ? list.map(fmt) : [{ textParagraph: { text: 'None today' } }])] });
-  return { header: '4 · Worth a Look', widgets: [{ columns: { columnItems: [
+  return { header: 'Worth a Look', widgets: [{ columns: { columnItems: [
     col('🔥 Hot', hot, (r) => item(r, `${font(COLOUR.hot, `<b>${Math.round(r.l5)}</b>`)} vs ${Math.round(r.l15)} · Proj <b>${Math.round(r.proj)}</b>`)),
     col('💎 Value', value, (r) => item(r, `Proj <b>${Math.round(r.proj)}</b> · ${font(COLOUR.fit, `<b>${(r.proj / starsOf(r.tier)).toFixed(1)}</b>/★`)}`)),
   ] } }] };
@@ -444,7 +449,7 @@ function aiPickSection(views) {
       wrapText: true } });
     widgets.push(cardGrid(v.aiPick.chosen.map((x) => ({ name: `${x.player.split(' ').pop()} ${STAR(x.tier)}`, pic: v.picOf.get(x.slug), caption: `${Math.round(x.expected)} · ${shortTime(x.kickoff)}` }))));
   }
-  return { header: '5 · AI Pick', widgets };
+  return { header: 'AI Pick', widgets };
 }
 
 function dailyCard(views, dateLine, nextAt, extraAttention = []) {
