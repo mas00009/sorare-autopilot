@@ -650,8 +650,15 @@ export async function advise({ force = false, dryRun = false } = {}) {
   // Next plan: checks before each open lineup's lock, and tomorrow's
   // briefing from the earliest tip-off still ahead on Kobe's bench.
   const offsets = [120, 60, 30, 12];
-  const nextPlan = [...new Set(locks.flatMap((l) => offsets.map((m) => new Date(Date.parse(l) - m * 60e3).toISOString())))]
-    .filter((t) => Date.parse(t) > now).sort();
+  // Also before the tip-off of any undecided (GTD) player in a LOCKED lineup,
+  // so "cleared to play" or "ruled out" arrives as soon as it is called.
+  const gtdTips = ok.filter((v) => v.live && !v.editable)
+    .flatMap((v) => v.current.filter((c) => c.injury && playState(c) === 'upcoming' && c.next).map((c) => c.next));
+  const tipOffsets = [90, 45, 20, 5];
+  const nextPlan = [...new Set([
+    ...locks.flatMap((l) => offsets.map((m) => new Date(Date.parse(l) - m * 60e3).toISOString())),
+    ...gtdTips.flatMap((t) => tipOffsets.map((m) => new Date(Date.parse(t) - m * 60e3).toISOString())),
+  ])].filter((t) => Date.parse(t) > now).sort();
   const tips = ok.flatMap((v) => v.benchRows.map((r) => r.next)).filter((t) => t && Date.parse(t) > now).sort();
   const firstTomorrow = tips.find((t) => sydDay(Date.parse(t)) !== today) ?? null;
   const briefNext = firstTomorrow ? new Date(Date.parse(firstTomorrow) - 150 * 60e3).toISOString() : null;
