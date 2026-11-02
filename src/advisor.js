@@ -65,7 +65,41 @@ async function projections(slugs) {
 
 const statusOf = (inj) => (inj ? `${inj.status ?? 'injured'}${inj.kind ? ` (${inj.kind})` : ''}` : 'fit');
 
+/**
+ * The squad board: its target is the squad's TOP THREE lineups combined, not
+ * Kobe's own. Every squad lineup is projected to the end - points already in
+ * for players who have played (FINAL / REVIEWING), Sorare's projection for
+ * players still to come, whichever is higher for a player mid-game - and the
+ * best three are added up against the target.
+ */
+async function squadView(stepId, me) {
+  const d = await gql(`query($id:String!){ currentUser { step(id:$id) { ... on SquadStep { target squadLeaderboardLineups(top: 15) { ranking lineup { id ... on TaskLineupInterface { score user { nickname } taskAppearances { score scoreStatus anyPlayer { slug } } } } } } } } }`, { id: stepId });
+  const rows = d.currentUser?.step?.squadLeaderboardLineups ?? [];
+  const P = await projections(rows.flatMap((r) => (r.lineup?.taskAppearances ?? []).map((a) => a.anyPlayer?.slug)));
+  const lineups = rows.map((r) => {
+    let live = 0, proj = 0, toPlay = 0;
+    for (const a of r.lineup?.taskAppearances ?? []) {
+      const done = /FINAL|REVIEWING/.test(a.scoreStatus ?? '');
+      const sp = P.get(a.anyPlayer?.slug)?.proj ?? 0;
+      live += a.score ?? 0;
+      if (done) proj += a.score ?? 0; else { toPlay += 1; proj += Math.max(a.score ?? 0, sp); }
+    }
+    return { who: r.lineup?.user?.nickname ?? '?', live, proj, toPlay, mine: r.lineup?.user?.nickname === me };
+  });
+  const byProj = [...lineups].sort((a, b) => b.proj - a.proj);
+  const byLive = [...lineups].sort((a, b) => b.live - a.live);
+  const top3 = byProj.slice(0, 3);
+  return {
+    target: d.currentUser?.step?.target ?? null, count: lineups.length,
+    liveTop3: byLive.slice(0, 3).reduce((n, l) => n + l.live, 0),
+    projTop3: top3.reduce((n, l) => n + l.proj, 0),
+    toPlay: top3.reduce((n, l) => n + l.toPlay, 0),
+    myRank: byProj.findIndex((l) => l.mine) + 1, mineInTop3: top3.some((l) => l.mine), lineups: byProj,
+  };
+}
+
 /** Everything the advice needs for one board. */
+let NICK = null;
 async function boardView(b) {
   const step = await fetchStep(b.stepId);
   const live = liveLineupOf(step);
@@ -103,7 +137,7 @@ async function boardView(b) {
     const slug = a.anyPlayer?.slug;
     const p = P.get(slug) ?? {};
     return { slug, name: p.name ?? a.anyPlayer?.displayName, tier: p.tier, proj: p.proj, injury: p.injury, next: p.next,
-      news: p.news, pic: a.pictureUrl ?? null };
+      news: p.news, pic: a.pictureUrl ?? null, score: a.score ?? null, scoreStatus: a.scoreStatus ?? null, gameAt: a.game?.date ?? null };
   });
   const benchRows = bench.map((n) => {
     const p = P.get(n.player?.slug) ?? {};
@@ -122,7 +156,8 @@ async function boardView(b) {
   const aiPick = pickLineup(aiPool, opts);
   const SD = 25;
   const passChance = (proj) => { const z = (proj - step.target) / SD; return Math.round(100 * (0.5 * (1 + Math.tanh(0.7978845608 * (z + 0.044715 * z ** 3))))); };
-  return { b, step, live, editable, lockAt, current, benchRows, best, cap: opts.starsCap, picOf, newsOf: (slug) => P.get(slug)?.news ?? null,
+  const squad = b.surface.startsWith('team') ? await squadView(b.stepId, NICK).catch(() => null) : null;
+  return { b, step, live, editable, lockAt, current, benchRows, best, cap: opts.starsCap, picOf, newsOf: (slug) => P.get(slug)?.news ?? null, squad,
     aiPick, aiSecond: !!live && live.updatable === false, passChance };
 }
 
@@ -218,7 +253,36 @@ const swapsOf = (v) => {
   if (v.live && gain < Math.max(5, curProjOf(v) * 0.03)) return null;   // not worth the bother
   return { ins, outs, gain, best: v.best.chosen };
 };
+/** Where a lineup player stands right now: done, live, did not play, or still to play. */
+function playState(c) {
+  const st = String(c.scoreStatus ?? '').toUpperCase();
+  if (/DID_NOT_PLAY|DNP|NOT_PLAYED/.test(st)) return 'dnp';
+  if (/FINAL|REVIEWING/.test(st)) return 'done';
+  if (/PLAYING|LIVE|ONGOING|STARTED/.test(st) || (c.score > 0 && !/PENDING|SCHEDULED/.test(st))) return 'live';
+  return 'upcoming';
+}
+const STATE_LABEL = { done: '✅ Final', live: '🔴 Live', dnp: '❌ DNP', upcoming: '⏳ To play' };
+/** Points banked plus what is still to come, for one lineup. */
+const liveProj = (v) => v.current.reduce((n, c) => {
+  const s2 = playState(c);
+  return n + (s2 === 'done' || s2 === 'dnp' ? (c.score ?? 0) : s2 === 'live' ? Math.max(c.score ?? 0, c.proj ?? 0) : (c.proj ?? 0));
+}, 0);
+const banked = (v) => v.current.reduce((n, c) => n + (playState(c) === 'upcoming' ? 0 : (c.score ?? 0)), 0);
+const captionOf = (c) => {
+  const s2 = playState(c);
+  if (s2 === 'done') return `✅ ${Math.round(c.score ?? 0)} final`;
+  if (s2 === 'dnp') return '❌ DNP · 0';
+  if (s2 === 'live') return `🔴 ${Math.round(c.score ?? 0)} live`;
+  return `⏳ ~${c.proj != null ? Math.round(c.proj) : '?'} · ${when(c.next).replace(/^\w+ /, '')}`;
+};
+
 const dot = (inj) => (!inj ? '🟢' : /GTD|QUESTION|DOUBT|PROB/i.test(inj.status ?? '') ? '🟠' : '🔴');
+
+function summaryLine(v) {
+  const w = glanceSection([v]).widgets[0];
+  const { topLabel, ...rest } = w.decoratedText;   // the section heading already names the board
+  return { decoratedText: rest };
+}
 
 function glanceSection(views) {
   const widgets = views.map((v) => {
@@ -227,8 +291,24 @@ function glanceSection(views) {
     const state = !v.live ? `${font(COLOUR.open, '<b>No lineup</b>')}`
       : v.editable ? `🔓 ${font(COLOUR.open, '<b>Open</b>')} · locks ${when(v.lockAt)}`
       : `🔒 ${font(COLOUR.locked, '<b>Locked</b>')}`;
-    const proj = v.live ? ` · proj <b>${Math.round(curProjOf(v))}</b> / ${v.step.target}` : ` · needs ${v.step.target}`;
-    const flag = issues ? ` · ${font(COLOUR.GTD, `<b>${issues} to watch</b>`)}` : sw ? ` · ${font(COLOUR.open, '<b>swap suggested</b>')}` : ` · ${font(COLOUR.fit, 'all good')}`;
+    const sq = v.squad;
+    let proj, flag;
+    if (sq) {
+      const short = sq.target - sq.projTop3;
+      proj = ` · squad top 3: <b>${Math.round(sq.liveTop3)}</b> scored, ~<b>${Math.round(sq.projTop3)}</b> projected / ${sq.target}`;
+      flag = short <= 0 ? ` · ${font(COLOUR.fit, '<b>on course</b>')}`
+        : sq.toPlay === 0 ? ` · ${font(COLOUR.OUT, `<b>short by ${Math.round(short)}, all games done</b>`)}`
+        : ` · ${font(COLOUR.GTD, `<b>~${Math.round(short)} short, ${sq.toPlay} still to play</b>`)}`;
+    } else {
+      const lp = v.live ? liveProj(v) : null;
+      const left = v.current.filter((c) => playState(c) === 'upcoming' || playState(c) === 'live').length;
+      proj = v.live ? ` · <b>${Math.round(banked(v))}</b> scored, ~<b>${Math.round(lp)}</b> projected / ${v.step.target}${left ? ` · ${left} still to play` : ' · all games done'}` : ` · needs ${v.step.target}`;
+      const short = v.live ? v.step.target - lp : 0;
+      flag = issues ? ` · ${font(COLOUR.GTD, `<b>${issues} to watch</b>`)}`
+        : sw ? ` · ${font(COLOUR.open, '<b>swap suggested</b>')}`
+        : v.live && short > 0 ? ` · ${font(left ? COLOUR.GTD : COLOUR.OUT, `<b>~${Math.round(short)} short</b>`)}`
+        : ` · ${font(COLOUR.fit, 'on course')}`;
+    }
     return { decoratedText: { topLabel: `${boardName(v).toUpperCase()} · LEVEL ${v.b.level}`, text: state + proj + flag, wrapText: true } };
   });
   return { header: '1 · At a glance', widgets };
@@ -237,7 +317,9 @@ function glanceSection(views) {
 function attentionSection(views, extraLines = []) {
   const widgets = extraLines.map((t) => ({ textParagraph: { text: t } }));
   for (const v of views) {
-    for (const c of flagged(v)) widgets.push(playerRow(c, { full: true }));
+    // Only what can still be acted on: a locked lineup's injuries are FYI,
+    // shown under that lineup instead.
+    if (v.editable || !v.live) for (const c of flagged(v)) widgets.push(playerRow(c, { full: true }));
     const sw = swapsOf(v);
     if (sw) {
       widgets.push({ decoratedText: {
@@ -248,16 +330,21 @@ function attentionSection(views, extraLines = []) {
       widgets.push(cardGrid(sw.best.map((c) => ({ name: c.player, pic: v.picOf.get(c.slug), caption: `${Math.round(c.expected)} · ${when(v.benchRows.find((r) => r.slug === c.slug)?.next)}` }))));
     }
   }
-  if (!widgets.length) widgets.push({ decoratedText: { text: `✅ ${font(COLOUR.fit, '<b>Nothing needs you</b>')} - every player is fit and no better five is available.`, wrapText: true } });
-  return { header: '2 · Needs your attention', widgets };
+  if (!widgets.length) widgets.push({ decoratedText: { text: `✅ ${font(COLOUR.fit, '<b>Nothing needs you</b>')} - nothing you can change would help right now.`, wrapText: true } });
+  return { header: '1 · Needs your attention', widgets };
 }
 
 function lineupSection(n, v) {
   if (!v) return { header: `${n} · Lineup`, widgets: [{ textParagraph: { text: 'No board.' } }] };
   const name = boardName(v);
-  if (!v.live) return { header: `${n} · ${name}`, widgets: [{ textParagraph: { text: 'No lineup in yet - see the suggested five above.' } }] };
-  return { header: `${n} · ${name}`, widgets: [cardGrid(v.current.map((c) => ({ name: `${dot(c.injury)} ${c.name.split(' ').pop()}`, pic: c.pic,
-    caption: `${c.proj != null ? Math.round(c.proj) : '?'} · ${when(c.next).replace(/^\w+ /, '')}` })))] };
+  if (!v.live) return { header: `${n} · ${name} · level ${v.b.level}`, widgets: [summaryLine(v), { textParagraph: { text: 'No lineup in yet - see the suggested five above.' } }] };
+  const fyi = !v.editable ? flagged(v).filter((c) => playState(c) === 'upcoming').map((c) => playerRow(c, { full: true })) : [];
+  if (fyi.length) fyi.unshift({ textParagraph: { text: font(COLOUR.locked, 'FYI - locked, nothing to change:') } });
+  const squadRows = v.squad ? [{ decoratedText: { topLabel: `SQUAD TOP 3 vs ${v.squad.target} · ${v.squad.toPlay} player(s) still to play`,
+    text: v.squad.lineups.slice(0, 5).map((l, i) => `${i < 3 ? '<b>' : ''}${i + 1}. ${l.who}${l.mine ? ' (you)' : ''}: ${Math.round(l.live)} now → ~${Math.round(l.proj)}${i < 3 ? '</b>' : ''}`).join('<br>'), wrapText: true } }] : [];
+  return { header: `${n} · ${name} · level ${v.b.level}`, widgets: [summaryLine(v), ...squadRows, ...fyi, cardGrid(v.current.map((c) => ({ name: `${playState(c) === 'upcoming' ? dot(c.injury) + ' ' : ''}${c.name.split(' ').pop()}`, pic: c.pic,
+    caption: captionOf(c) }))),
+    { textParagraph: { text: font(COLOUR.locked, '✅ final · 🔴 live (points so far) · ⏳ still to play (projection · tip-off) · ❌ did not play') } }] };
 }
 
 function worthSection(views) {
@@ -274,7 +361,7 @@ function worthSection(views) {
     ...value.map((r) => row(r, `💎 proj <b>${Math.round(r.proj)}</b> · ${font(COLOUR.fit, `<b>${(r.proj / starsOf(r.tier)).toFixed(1)}</b> per star`)}`)),
   ];
   if (!widgets.length) widgets.push({ textParagraph: { text: 'Nobody new stands out today.' } });
-  return { header: '6 · Worth a look  (🔥 hot · 💎 value)', widgets };
+  return { header: '4 · Worth a look  (🔥 hot · 💎 value)', widgets };
 }
 
 const footer = (nextAt) => ({ widgets: [{ textParagraph: { text: font(COLOUR.locked, `Next check ${nextAt ? when(nextAt) : 'before the next lock'} · updates post here only when something changes · suggestions only, nothing is changed`) } }] });
@@ -283,7 +370,12 @@ function aiPickSection(views) {
   const widgets = [];
   for (const v of views) {
     const squad = v.b.surface.startsWith('team');
-    if (squad && v.live) { widgets.push({ textParagraph: { text: `<b>Team set:</b> your squad lineup is in - the team set takes one lineup, and its ${v.step.target} target is the squad's top three combined.` } }); continue; }
+    if (squad && v.live) {
+      const sq = v.squad;
+      const where = sq ? (sq.mineInTop3 ? `Yours is <b>#${sq.myRank}</b> of ${sq.count} - in the top three that counts.` : `Yours is #${sq.myRank} of ${sq.count} - outside the top three, so it adds nothing unless it climbs.`) : '';
+      widgets.push({ textParagraph: { text: `<b>Team set:</b> your squad lineup is in (one per member). ${where}` } });
+      continue;
+    }
     if (!v.aiPick?.ok) { widgets.push({ textParagraph: { text: `<b>${boardName(v)}:</b> not enough playable cards for a five right now.` } }); continue; }
     const proj = v.aiPick.chosen.reduce((n, c) => n + c.expected, 0);
     const chance = v.passChance(proj);
@@ -294,19 +386,24 @@ function aiPickSection(views) {
       wrapText: true } });
     widgets.push(cardGrid(v.aiPick.chosen.map((x) => ({ name: x.player.split(' ').pop(), pic: v.picOf.get(x.slug), caption: `${Math.round(x.expected)} · ${STAR(x.tier)}` }))));
   }
-  return { header: '3 · AI pick  (most likely to pass)', widgets };
+  return { header: '5 · AI pick  (most likely to pass)', widgets };
 }
 
 function dailyCard(views, dateLine, nextAt, extraAttention = []) {
   const mine = views.find((v) => !v.b.surface.startsWith('team'));
   const team = views.find((v) => v.b.surface.startsWith('team'));
   return card('daily', '🏀 Kobe NBA · Daily briefing', dateLine, [
-    glanceSection(views), attentionSection(views, extraAttention), aiPickSection(views),
-    lineupSection(4, mine), lineupSection(5, team), worthSection(views), footer(nextAt),
+    attentionSection(views, extraAttention.filter((l) => l.actionable).map((l) => l.line)),
+    lineupSection(2, mine), lineupSection(3, team),
+    ...fyiSection(extraAttention.filter((l) => !l.actionable).map((l) => l.line)),
+    worthSection(views), aiPickSection(views), footer(nextAt),
   ]);
 }
+const fyiSection = (lines) => (lines.length ? [{ header: 'News on locked lineups (FYI)', widgets: lines.map((t) => ({ textParagraph: { text: t } })) }] : []);
 function updateCard(views, dateLine, lines, nextAt, title = '🏀 Kobe NBA · Update') {
-  return card('update', title, dateLine, [glanceSection(views), attentionSection(views, lines), footer(nextAt)]);
+  const act = lines.filter((l) => l.actionable).map((l) => l.line);
+  const info = lines.filter((l) => !l.actionable).map((l) => l.line);
+  return card('update', title, dateLine, [...(act.length ? [attentionSection(views, act)] : []), ...fyiSection(info), footer(nextAt)]);
 }
 
 const card = (id, title, subtitle, sections) => [{ cardId: id, card: { header: { title, subtitle }, sections } }];
@@ -384,6 +481,7 @@ export async function advise({ force = false, dryRun = false } = {}) {
   if (!force && !briefingDue && !planned && !stale) return { skipped: true };
 
   const { boards, nickname } = await resolveBoards();
+  NICK = nickname;
   const views = [];
   for (const b of boards) { try { views.push(await boardView(b)); } catch (err) { views.push({ b, error: err.message }); } }
   const ok = views.filter((v) => !v.error);
@@ -417,14 +515,14 @@ export async function advise({ force = false, dryRun = false } = {}) {
     } else if (where && w.newsDate && w.newsDate !== prev.newsDate) {
       line = `📰 New update on <b>${w.name}</b> - in your ${where}${w.editable ? `, locks ${when(w.lockAt)}` : ' (locked)'}.`;
     }
-    if (line) alertRows.push({ line, row: w.row });
+    if (line) alertRows.push({ line, row: w.row, actionable: !w.inLineup || !!w.editable });
   }
-  const lines = alertRows.map((a) => a.line);
+  const lines = alertRows.map((a) => ({ line: a.line, actionable: a.actionable }));
   if (briefingDue || force) {
     messages[0].cards = dailyCard(ok, dateLine, nextAt, lines);
-    if (lines.length) messages[0].text += `\n\nLate news\n${lines.map((l) => l.replace(/<[^>]+>/g, '')).join('\n')}`;
+    if (lines.length) messages[0].text += `\n\nLate news\n${lines.map((l) => l.line.replace(/<[^>]+>/g, '')).join('\n')}`;
   } else if (lines.length) {
-    messages.push({ text: ['🏀 Kobe NBA - update', ...lines.map((l) => l.replace(/<[^>]+>/g, ''))].join('\n'), cards: updateCard(ok, dateLine, lines, nextAt) });
+    messages.push({ text: ['🏀 Kobe NBA - update', ...lines.map((l) => l.line.replace(/<[^>]+>/g, ''))].join('\n'), cards: updateCard(ok, dateLine, lines, nextAt) });
   }
 
   // One reminder per open lineup, about an hour before it locks, only if a
@@ -440,7 +538,7 @@ export async function advise({ force = false, dryRun = false } = {}) {
       reminded[v.lockAt] = true;
       if (best > cur * 1.05) {
         messages.push({ text: `⏰ Kobe NBA - locks in ${Math.round(mins)} min\n\n${describeBoard(v)}`,
-          cards: updateCard(ok, dateLine, [`⏰ <b>${boardName(v)}</b> locks in <b>${Math.round(mins)} min</b> and a better five is available.`], nextAt, `🏀 Kobe NBA · Locks in ${Math.round(mins)} min`) });
+          cards: updateCard(ok, dateLine, [{ line: `⏰ <b>${boardName(v)}</b> locks in <b>${Math.round(mins)} min</b> and a better five is available.`, actionable: true }], nextAt, `🏀 Kobe NBA · Locks in ${Math.round(mins)} min`) });
       }
     }
   }
