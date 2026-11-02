@@ -205,16 +205,20 @@ export function bigPulls(entry) {
  *   2. SMTP - blocked here, but kept in case the block is ever lifted
  *   3. Outbox - queued for the scheduled task to pick up
  */
-export async function deliver(subject, body, { html = null, env = process.env } = {}) {
-  // Google Chat first (owner, 2 Nov 2026: he misses email). Email only while
-  // no Sorare space exists yet, or if posting to Chat fails.
+export async function deliver(subject, body, { html = null, env = process.env, email = false } = {}) {
+  // Owner, 2 Nov 2026: everything goes to the Sorare Chat space; the ONLY
+  // email is Kobe winning gems (callers pass email: true for that alone).
+  let chatRes = { sent: false, reason: 'no Chat space' };
   try {
     const { postChat, chatSpace } = await import('./chat.js');
-    if (chatSpace()) {
-      const res = await postChat(`*${subject}*\n\n${body}`);
-      if (res.sent) return res;
-    }
-  } catch { /* fall through to email */ }
+    if (chatSpace()) chatRes = await postChat(`*${subject}*\n\n${body}`);
+  } catch (err) { chatRes = { sent: false, reason: err.message }; }
+  if (!email) {
+    if (chatRes.sent) return chatRes;
+    // No email fallback: keep it in the outbox log so nothing is lost.
+    const q = await queueMail(subject, body);
+    return { sent: false, queued: true, via: 'outbox (chat failed, no email by rule)', file: q.file, reason: chatRes.reason };
+  }
   const to = env.REPORT_TO;
   if (to) {
     try {
@@ -244,13 +248,14 @@ export async function drainOutbox(env = process.env) {
   const out = { sent: 0, left: 0 };
   let files = [];
   try { files = (await fs.readdir(OUTBOX)).filter((f) => f.endsWith('.txt')); } catch { return out; }
-  if (!files.length || !env.REPORT_TO) return out;
-  const gmail = await import('./gmail.js');
+  if (!files.length) return out;
+  const { postChat } = await import('./chat.js');
   for (const f of files) {
     const raw = await fs.readFile(path.join(OUTBOX, f), 'utf8');
     const m = raw.match(/^Subject: (.*)\n\n([\s\S]*)$/);
     if (!m) { out.left += 1; continue; }
-    const res = await gmail.send({ to: env.REPORT_TO, subject: m[1], body: m[2] }).catch(() => ({ sent: false }));
+    // Retried into Chat - email is reserved for Kobe's gem wins.
+    const res = await postChat(`*${m[1]}*\n\n${m[2]}`).catch(() => ({ sent: false }));
     if (res.sent) { await fs.unlink(path.join(OUTBOX, f)); out.sent += 1; } else out.left += 1;
   }
   return out;

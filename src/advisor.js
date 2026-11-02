@@ -436,8 +436,9 @@ function worthSection(views) {
   const game = (r) => `${shortTime(r.next)}${r.opp ? ` ${r.home ? 'vs' : '@'} ${nick(r.opp)}` : ''}`;
   const item = (r, text) => ({ decoratedText: {
     topLabel: `${r.name}${r.team ? ` / ${nick(r.team)}` : ''} · ${STAR(r.tier)}`, text: `${text} · ${game(r)}`, wrapText: true } });
-  // Heading and its list in ONE column, both centred, so they line up.
-  const col = (title, list, fmt) => ({ horizontalSizeStyle: 'FILL_AVAILABLE_SPACE', horizontalAlignment: 'CENTER', verticalAlignment: 'TOP',
+  // Heading and its list in ONE column, both left-aligned: Chat always draws
+  // these rows from the left, so a centred heading never lines up with them.
+  const col = (title, list, fmt) => ({ horizontalSizeStyle: 'FILL_AVAILABLE_SPACE', horizontalAlignment: 'START', verticalAlignment: 'TOP',
     widgets: [{ textParagraph: { text: `<b>${title}</b>` } }, ...(list.length ? list.map(fmt) : [{ textParagraph: { text: 'None today' } }])] });
   return { widgets: [{ columns: { columnItems: [
     col('🔥 Hot', hot, (r) => item(r, `${font(COLOUR.hot, `<b>${Math.round(r.l5)}</b>`)} (${Math.round(r.l15)} usual) · Proj <b>${Math.round(r.proj)}</b>`)),

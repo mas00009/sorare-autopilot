@@ -243,7 +243,8 @@ async function report(r) {
           ...(entry.stepClaims ?? []).map((c) => c.surface ?? c.name ?? 'a ladder step')].filter(Boolean);
         const res = await rep.deliver(`Sorare ${who}: football won you ${gemsWon} gems`,
           `${who} won ${gemsWon} gems from football.\n\nNow holding ${total(r.gemsEnd)} gems.\n` +
-          (what.length ? `\nFrom: ${[...new Set(what)].join(', ')}\n` : ''));
+          (what.length ? `\nFrom: ${[...new Set(what)].join(', ')}\n` : ''),
+          { email: !!process.env.SORARE_ACCOUNT });   // the one email: Kobe winning gems
         console.log(`  gems won: +${gemsWon} - ${res.sent ? 'emailed' : res.queued ? 'queued' : 'not sent'}`);
       }
 
