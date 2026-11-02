@@ -399,7 +399,7 @@ function lineupSection(n, v) {
   const statusRow = { columns: { columnItems: [
     { horizontalSizeStyle: 'FILL_AVAILABLE_SPACE', horizontalAlignment: 'START', verticalAlignment: 'CENTER', widgets: [summaryLine(v)] },
     { horizontalSizeStyle: 'FILL_MINIMUM_SPACE', horizontalAlignment: 'END', verticalAlignment: 'CENTER',
-      widgets: [{ textParagraph: { text: font(COLOUR.locked, '✅ Final · 🔵 Live · ⏳ To Play · ❌ DNP') } }] },
+      widgets: [{ textParagraph: { text: font(COLOUR.locked, '✅Final 🔵Live ⏳To Play ❌DNP') } }] },
   ] } };
   return { header: `${name} · Level ${v.b.level}`, widgets: [statusRow, ...squadRows, ...fyi, cardGrid(v.current.map((c) => {
     const st = playState(c);
