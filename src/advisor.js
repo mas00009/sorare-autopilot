@@ -390,14 +390,19 @@ function lineupSection(n, v) {
   // Team set: one line, the squad's top three against the target (owner: "super simple").
   if (v.squad && v.live) return { header: `${n} · ${name} · Level ${v.b.level}`, widgets: [summaryLine(v)] };
 
-  return { header: `${n} · ${name} · Level ${v.b.level}`, widgets: [summaryLine(v), ...squadRows, ...fyi, cardGrid(v.current.map((c) => {
+  // Status on the left, the key on the right, one line (owner, 2 Nov 2026).
+  const statusRow = { columns: { columnItems: [
+    { horizontalSizeStyle: 'FILL_AVAILABLE_SPACE', horizontalAlignment: 'START', verticalAlignment: 'CENTER', widgets: [summaryLine(v)] },
+    { horizontalSizeStyle: 'FILL_MINIMUM_SPACE', horizontalAlignment: 'END', verticalAlignment: 'CENTER',
+      widgets: [{ textParagraph: { text: font(COLOUR.locked, '✅ Final · 🔵 Live · ⏳ To Play · ❌ DNP') } }] },
+  ] } };
+  return { header: `${n} · ${name} · Level ${v.b.level}`, widgets: [statusRow, ...squadRows, ...fyi, cardGrid(v.current.map((c) => {
     const st = playState(c);
     const icon = st === 'upcoming' && v.editable && c.injury ? dot(c.injury) : STATE_ICON[st];
     // Two lines only: name, then icon + number + time (an icon beside a long
     // name like Wembanyama pushed it onto three).
     return { name: c.name.split(' ').pop(), pic: c.pic, caption: `${icon} ${captionOf(c)}` };
-  })),
-    { textParagraph: { text: font(COLOUR.locked, '✅ Final · 🔵 Live · ⏳ To Play · ❌ DNP') } }] };
+  }))] };
 }
 
 function worthSection(views) {
