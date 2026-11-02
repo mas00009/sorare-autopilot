@@ -411,6 +411,45 @@ function existingForLock(step) {
   return step?.myLineups?.[0]?.taskAppearances ?? null;
 }
 
+/**
+ * A second lineup on the same level (owner, 2 Nov 2026: "you can put in
+ * multiple lineups"). The Sorare app offers "Add team now" while a lineup is
+ * waiting; the level passes as soon as ANY of them reaches the target, and
+ * each one uses a life. So: with two or more lives unused (one always kept
+ * back), enter a second five from the cards not already in play, if it has a
+ * fair shot. Personal ladder only - the squad board takes one lineup.
+ */
+async function maybeExtraLineup({ dryRun, options, board }) {
+  if (!board?.lives || board.surface !== 'my set') return null;
+  if ((board.lives.left ?? 0) < 2) return null;
+  const step = await fetchStep(board.stepId);
+  if (!['LINEUP_SET', 'PLAYABLE'].includes(step?.state)) return null;
+  const live = (step.myLineups ?? []).filter((l) => !SPENT_LINEUP.has(l.aasmState));
+  if (live.length !== 1) return null;                 // none yet (the main pass enters it) or already two
+  const bench = await fetchBench(board.stepId);       // excludes cards already in a lineup
+  if (bench.length < 5) return null;
+  const starsRule = (step.displayedTypedRules ?? []).find((r) => r.__typename === 'So5AverageScoresRule' && r.averageType === 'STARS');
+  const sportOpts = SPORT === 'NBA' ? { ...NBA_OPTIONS, ...(starsRule?.max ? { starsCap: starsRule.max } : {}) } : {};
+  const target = step.target ?? null;
+  const picked = pickAcrossWindow(bench, {
+    ...options, ...sportOpts, target, reach: reachFor(target),
+    ...(step.engineConfiguration?.captain != null ? { captainBonus: step.engineConfiguration.captain } : {}),
+  });
+  if (!picked.ok) return { surface: 'my set (2nd lineup)', skipped: true, reason: picked.reason };
+  if (target && picked.projected < target - reachFor(target)) {
+    return { surface: 'my set (2nd lineup)', skipped: true, action: 'waiting-for-target',
+      reason: `A second five from the spare cards projects ${picked.projected} against ${target} - not worth a life yet.` };
+  }
+  if (!dryRun) await submitLineup(board.stepId, picked, {});
+  return {
+    surface: 'my set (2nd lineup)', stepId: board.stepId, target,
+    action: dryRun ? 'would-submit' : 'submitted',
+    reason: `Second lineup on this level from spare cards, projects ${picked.projected} - the level passes if either team gets there.`,
+    lineup: picked.chosen, captain: picked.captain, projected: picked.projected,
+    inPlay: picked.chosen.map((c) => ({ name: c.player, slug: c.slug, pos: c.position, exp: c.expected, opp: c.opponent ?? null, home: c.home ?? null })),
+  };
+}
+
 export async function runLineup({ dryRun = false, options = {}, stepId = null, surface = null } = {}) {
   if (!stepId) {
     const r = await resolveLiveStep();
@@ -1141,6 +1180,8 @@ export async function pass({ dryRun = false, options = {} } = {}) {
     else for (const b of boards) {
       try {
         report.lineups.push(await runLineup({ dryRun, options, stepId: b.stepId, surface: b.surface }));
+        const extra = await maybeExtraLineup({ dryRun, options, board: b });
+        if (extra) report.lineups.push(extra);
       } catch (err) {
         report.lineups.push({ surface: b.surface, stepId: b.stepId, skipped: true, reason: err.message });
       }
