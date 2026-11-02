@@ -11,6 +11,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { createRequire } from 'node:module';
 
 const run = promisify(execFile);
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
@@ -50,5 +51,28 @@ export async function postChat(text) {
     return { sent: true, via: 'chat' };
   } catch (err) {
     return { sent: false, reason: `chat: ${err.stderr?.trim() || err.message}` };
+  }
+}
+
+/**
+ * Post a Chat card (cardsV2): player pictures, colour, sections. Uses the
+ * Claude app's own service account, the same identity notify.js posts as.
+ * `text` is the plain fallback shown in notifications.
+ */
+export async function postCard(cardsV2, text = '') {
+  const space = chatSpace();
+  if (!space) return { sent: false, reason: 'no Chat space configured' };
+  try {
+    const gdir = path.join(os.homedir(), 'gchat-agent');
+    const require = createRequire(path.join(gdir, 'package.json'));
+    const { GoogleAuth } = require('google-auth-library');
+    const cfg = JSON.parse(fs.readFileSync(path.join(gdir, 'config.json'), 'utf8'));
+    const keyFile = path.resolve(gdir, cfg.serviceAccountKey || 'secrets/service-account.json');
+    const auth = new GoogleAuth({ keyFile, scopes: ['https://www.googleapis.com/auth/chat.bot'] });
+    const client = await auth.getClient();
+    await client.request({ url: `https://chat.googleapis.com/v1/${space}/messages`, method: 'POST', data: { text, cardsV2 } });
+    return { sent: true, via: 'chat-card' };
+  } catch (err) {
+    return { sent: false, reason: `chat card: ${err.response?.data ? JSON.stringify(err.response.data).slice(0, 300) : err.message}` };
   }
 }

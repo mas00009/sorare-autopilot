@@ -343,7 +343,7 @@ const main = async () => {
     const { advise } = await import('./advisor.js');
     const r = await advise({ force: flag('force'), dryRun: flag('dry') });
     if (r.skipped) { console.log(`Kobe NBA advisor: not due${r.reason ? ` (${r.reason})` : ''}`); return; }
-    for (const m of r.messages) console.log(`\n${m}`);
+    for (const m of r.messages) console.log(`\n${typeof m === 'string' ? m : m.text}`);
     if (r.sent) console.log(`\n${r.sent.map((x) => (x.sent ? 'posted to Chat' : `not posted: ${x.reason}`)).join('; ')}`);
     return;
   }
