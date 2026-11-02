@@ -420,8 +420,10 @@ function worthSection(views) {
   const item = (r, text) => ({ decoratedText: { ...(r.pic ? { startIcon: { iconUrl: r.pic, altText: r.name } } : {}),
     topLabel: `${r.name.split(' ').pop()} · ${STAR(r.tier)} · ${shortTime(r.next)}`, text, wrapText: false } });
   const col = (title, list, fmt) => ({ horizontalSizeStyle: 'FILL_AVAILABLE_SPACE', horizontalAlignment: 'START', verticalAlignment: 'TOP',
-    widgets: [{ textParagraph: { text: `<b>${title}</b>` } }, ...(list.length ? list.map(fmt) : [{ textParagraph: { text: 'None today' } }])] });
-  return { widgets: [{ columns: { columnItems: [
+    widgets: list.length ? list.map(fmt) : [{ textParagraph: { text: 'None today' } }] });
+  const titleCol = (t) => ({ horizontalSizeStyle: 'FILL_AVAILABLE_SPACE', horizontalAlignment: 'CENTER', verticalAlignment: 'CENTER',
+    widgets: [{ textParagraph: { text: `<b>${t}</b>` } }] });
+  return { widgets: [{ columns: { columnItems: [titleCol('🔥 Hot'), titleCol('💎 Value')] } }, { columns: { columnItems: [
     col('🔥 Hot', hot, (r) => item(r, `${font(COLOUR.hot, `<b>${Math.round(r.l5)}</b>`)} vs ${Math.round(r.l15)} · Proj <b>${Math.round(r.proj)}</b>`)),
     col('💎 Value', value, (r) => item(r, `Proj <b>${Math.round(r.proj)}</b> · ${font(COLOUR.fit, `<b>${(r.proj / starsOf(r.tier)).toFixed(1)}</b>/★`)}`)),
   ] } }] };
