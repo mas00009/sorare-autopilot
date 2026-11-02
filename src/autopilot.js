@@ -905,6 +905,7 @@ export async function runMissions({ dryRun = false, claimNow = false } = {}) {
   for (const t of [
     ...(u.dailies ?? []),
     ...(u.weeklies ?? []),
+    ...(u.seasonals ?? []),
     ...(u.setPlayTasks ?? []),
     ...(u.featuredTasks ?? []),
     ...collectSteps,

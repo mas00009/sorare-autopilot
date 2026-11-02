@@ -195,6 +195,10 @@ export const Q_MISSIONS = `
         ... on DailyActionTask { liveScore scoreToReach }
       }
       weeklies: tasks(periodicity: WEEKLY, sport: $sport) { id name title description aasmState }
+      # Collection missions (Collect Shiny Cards, the gem collections ...) are
+      # SEASONAL and live only here. Missing them left a completed NBA one
+      # unclaimed on 2 Nov 2026 - and gem collections pay out through these.
+      seasonals: tasks(periodicity: SEASONAL, sport: $sport) { id name title description aasmState }
       setCollectionsTaskTracks(sport: $sport, first: 25) {
         ${TASK_FIELDS}
         ... on TasksTrack { currentStep { ${TASK_FIELDS} } }
