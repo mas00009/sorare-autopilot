@@ -253,7 +253,7 @@ function listSections(views) {
 // Always these sections, in this order, each with an explicit empty state:
 //   1 At a glance   2 Needs your attention   3 My set   4 Team set   5 Worth a look
 
-const boardName = (v) => (v.b.surface.startsWith('team') ? 'Team set' : 'My set');
+const boardName = (v) => (v.b.surface.startsWith('team') ? 'Team Set' : 'My Set');
 const curProjOf = (v) => v.current.reduce((n, c) => n + (c.proj ?? 0), 0);
 const flagged = (v) => v.current.filter((c) => c.injury);
 const swapsOf = (v) => {
@@ -299,9 +299,9 @@ const liveProj = (v) => v.current.reduce((n, c) => {
 const banked = (v) => v.current.reduce((n, c) => n + (playState(c) === 'upcoming' ? 0 : (c.score ?? 0)), 0);
 const captionOf = (c) => {
   const s2 = playState(c);
-  if (s2 === 'done') return `${Math.round(c.score ?? 0)} final`;
-  if (s2 === 'dnp') return 'DNP · 0';
-  if (s2 === 'live') return `${Math.round(c.score ?? 0)} so far`;
+  if (s2 === 'done') return `${Math.round(c.score ?? 0)} Final`;
+  if (s2 === 'dnp') return 'DNP';
+  if (s2 === 'live') return `${Math.round(c.score ?? 0)} Live`;
   return `${c.proj != null ? Math.round(c.proj) : '?'} · ${shortTime(c.next)}`;
 };
 
@@ -317,27 +317,27 @@ function glanceSection(views) {
   const widgets = views.map((v) => {
     const issues = v.editable || !v.live ? flagged(v).length : 0;   // locked: nothing to watch
     const sw = swapsOf(v);
-    const state = !v.live ? `${font(COLOUR.open, '<b>No lineup</b>')}`
-      : v.editable ? `🔓 ${font(COLOUR.open, '<b>Open</b>')} · locks ${when(v.lockAt)}`
+    const state = !v.live ? `${font(COLOUR.open, '<b>No Lineup</b>')}`
+      : v.editable ? `🔓 ${font(COLOUR.open, '<b>Open</b>')} · Locks ${when(v.lockAt)}`
       : `🔒 ${font(COLOUR.locked, '<b>Locked</b>')}`;
     const sq = v.squad;
     let proj, flag;
     if (sq) {
       const short = sq.target - sq.projTop3;
-      proj = ` · squad top 3: ~<b>${Math.round(sq.projTop3)}</b> projected / ${sq.target} (${Math.round(sq.liveTop3)} scored so far)`;
-      flag = short <= 0 ? ` · ${font(COLOUR.fit, '<b>on course</b>')}`
-        : sq.toPlay === 0 ? ` · ${font(COLOUR.OUT, `<b>short by ${Math.round(short)}, all games done</b>`)}`
-        : ` · ${font(COLOUR.GTD, `<b>~${Math.round(short)} short, ${sq.toPlay} still to play</b>`)}`;
+      proj = ` · Squad Top 3 <b>~${Math.round(sq.projTop3)}</b> / ${sq.target}`;
+      flag = short <= 0 ? ` · ${font(COLOUR.fit, '<b>On Course</b>')}`
+        : sq.toPlay === 0 ? ` · ${font(COLOUR.OUT, `<b>Short ${Math.round(short)}</b>`)}`
+        : ` · ${font(COLOUR.GTD, `<b>~${Math.round(short)} Short</b>`)}`;
     } else {
       const lp = v.live ? liveProj(v) : null;
       const left = v.current.filter((c) => playState(c) === 'upcoming' || playState(c) === 'live').length;
-      proj = v.live ? ` · <b>${Math.round(banked(v))}</b> scored, ~<b>${Math.round(lp)}</b> projected / ${v.step.target}${left ? ` · ${left} still to play` : ' · all games done'}` : ` · needs ${v.step.target}`;
+      proj = v.live ? ` · <b>~${Math.round(lp)}</b> / ${v.step.target}` : ` · Needs ${v.step.target}`;
       const short = v.live ? v.step.target - lp : 0;
-      flag = issues ? ` · ${font(COLOUR.GTD, `<b>${issues} to watch</b>`)}`
-        : sw ? ` · ${font(COLOUR.open, '<b>swap suggested</b>')}`
+      flag = issues ? ` · ${font(COLOUR.GTD, `<b>${issues} to Watch</b>`)}`
+        : sw ? ` · ${font(COLOUR.open, '<b>Swap Suggested</b>')}`
         : !v.live ? ''
-        : short > 0 ? ` · ${font(left ? COLOUR.GTD : COLOUR.OUT, `<b>~${Math.round(short)} short</b>`)}`
-        : ` · ${font(COLOUR.fit, 'on course')}`;
+        : short > 0 ? ` · ${font(left ? COLOUR.GTD : COLOUR.OUT, `<b>~${Math.round(short)} Short</b>`)}`
+        : ` · ${font(COLOUR.fit, '<b>On Course</b>')}`;
     }
     return { decoratedText: { topLabel: `${boardName(v).toUpperCase()} · LEVEL ${v.b.level}`, text: state + proj + flag, wrapText: true } };
   });
@@ -360,8 +360,8 @@ function attentionSection(views, extraLines = []) {
       widgets.push(cardGrid(sw.best.map((c) => ({ name: `${c.player.split(' ').pop()} ${STAR(c.tier)}`, pic: v.picOf.get(c.slug), caption: `${Math.round(c.expected)} · ${shortTime(c.kickoff)}` }))));
     }
   }
-  if (!widgets.length) widgets.push({ decoratedText: { text: `✅ ${font(COLOUR.fit, '<b>Nothing needs you</b>')}`, wrapText: true } });
-  return { header: '1 · Needs your attention', widgets };
+  if (!widgets.length) widgets.push({ decoratedText: { text: `✅ ${font(COLOUR.fit, '<b>Nothing Needs You</b>')}`, wrapText: true } });
+  return { header: '1 · Needs Your Attention', widgets };
 }
 
 function lineupSection(n, v) {
@@ -369,7 +369,7 @@ function lineupSection(n, v) {
   const name = boardName(v);
   // No team lineup in: recommend one (owner, 2 Nov 2026), only if it can be entered.
   if (v.b.surface.startsWith('team') && !v.live) {
-    const head = { header: `${n} · ${name} · level ${v.b.level}` };
+    const head = { header: `${n} · ${name} · Level ${v.b.level}` };
     if (v.step.state === 'PRE_MATCHDAY_LOCKED') {
       return { ...head, widgets: [{ textParagraph: { text: `Not open yet - opens ${v.opensAt ? when(v.opensAt) : 'at the next matchday'}. A recommended five will be here once it opens.` } }] };
     }
@@ -381,21 +381,23 @@ function lineupSection(n, v) {
       cardGrid(v.aiPick.chosen.map((x) => ({ name: `${x.player.split(' ').pop()} ${STAR(x.tier)}`, pic: v.picOf.get(x.slug), caption: `${Math.round(x.expected)} · ${shortTime(x.kickoff)}` }))),
     ] };
   }
-  if (!v.live) return { header: `${n} · ${name} · level ${v.b.level}`, widgets: [summaryLine(v), { textParagraph: { text: 'No lineup in yet - see the AI pick below.' } }] };
+  if (!v.live) return { header: `${n} · ${name} · Level ${v.b.level}`, widgets: [summaryLine(v), { textParagraph: { text: 'No lineup in yet - see the AI pick below.' } }] };
   // A locked lineup's pending GTD is noise - nothing can be changed. It is
   // only mentioned once decided (cleared or ruled out), as late news.
   const fyi = [];
   const squadRows = v.squad ? [{ decoratedText: { topLabel: `SQUAD TOP 3 vs ${v.squad.target} · ${v.squad.toPlay} player(s) still to play`,
     text: v.squad.lineups.slice(0, 5).map((l, i) => `${i < 3 ? '<b>' : ''}${i + 1}. ${l.who}${l.mine ? ' (you)' : ''}: ${Math.round(l.live)} now → ~${Math.round(l.proj)}${i < 3 ? '</b>' : ''}`).join('<br>'), wrapText: true } }] : [];
   // Team set: one line, the squad's top three against the target (owner: "super simple").
-  if (v.squad && v.live) return { header: `${n} · ${name} · level ${v.b.level}`, widgets: [summaryLine(v)] };
+  if (v.squad && v.live) return { header: `${n} · ${name} · Level ${v.b.level}`, widgets: [summaryLine(v)] };
 
-  return { header: `${n} · ${name} · level ${v.b.level}`, widgets: [summaryLine(v), ...squadRows, ...fyi, cardGrid(v.current.map((c) => {
+  return { header: `${n} · ${name} · Level ${v.b.level}`, widgets: [summaryLine(v), ...squadRows, ...fyi, cardGrid(v.current.map((c) => {
     const st = playState(c);
     const icon = st === 'upcoming' && v.editable && c.injury ? dot(c.injury) : STATE_ICON[st];
-    return { name: `${icon} ${c.name.split(' ').pop()}`, pic: c.pic, caption: captionOf(c) };
+    // Two lines only: name, then icon + number + time (an icon beside a long
+    // name like Wembanyama pushed it onto three).
+    return { name: c.name.split(' ').pop(), pic: c.pic, caption: `${icon} ${captionOf(c)}` };
   })),
-    { textParagraph: { text: font(COLOUR.locked, '✅ final · 🔵 live, points so far · ⏳ to play, projection · tip-off · ❌ did not play') } }] };
+    { textParagraph: { text: font(COLOUR.locked, '✅ Final · 🔵 Live · ⏳ To Play · ❌ DNP') } }] };
 }
 
 function worthSection(views) {
@@ -403,16 +405,16 @@ function worthSection(views) {
   const rows = new Map();
   for (const v of views) for (const r of v.benchRows) if (!r.injury && r.proj != null && !inLineups.has(r.slug)) rows.set(r.slug, r);
   const all = [...rows.values()];
-  const hot = all.filter((r) => r.l5 && r.l15 && r.l5 >= r.l15 + 5).sort((a, b) => (b.l5 - b.l15) - (a.l5 - a.l15)).slice(0, 3);
-  const value = all.filter((r) => !hot.includes(r)).sort((a, b) => b.proj / starsOf(b.tier) - a.proj / starsOf(a.tier)).slice(0, 3);
-  const row = (r, text) => ({ decoratedText: { ...(r.pic ? { startIcon: { iconUrl: r.pic, altText: r.name } } : {}),
-    topLabel: `${r.name} · ${STAR(r.tier)} · plays ${when(r.next)}`, text, wrapText: true } });
-  const widgets = [
-    ...hot.map((r) => row(r, `🔥 ${font(COLOUR.hot, `<b>${Math.round(r.l5)}</b>`)} lately vs ${Math.round(r.l15)} usual · proj <b>${Math.round(r.proj)}</b>`)),
-    ...value.map((r) => row(r, `💎 proj <b>${Math.round(r.proj)}</b> · ${font(COLOUR.fit, `<b>${(r.proj / starsOf(r.tier)).toFixed(1)}</b> per star`)}`)),
-  ];
-  if (!widgets.length) widgets.push({ textParagraph: { text: 'Nobody new stands out today.' } });
-  return { header: '4 · Worth a look  (🔥 hot · 💎 value)', widgets };
+  const hot = all.filter((r) => r.l5 && r.l15 && r.l5 >= r.l15 + 5).sort((a, b) => (b.l5 - b.l15) - (a.l5 - a.l15)).slice(0, 6);
+  const value = all.filter((r) => !hot.includes(r)).sort((a, b) => b.proj / starsOf(b.tier) - a.proj / starsOf(a.tier)).slice(0, 6);
+  const item = (r, text) => ({ decoratedText: { ...(r.pic ? { startIcon: { iconUrl: r.pic, altText: r.name } } : {}),
+    topLabel: `${r.name.split(' ').pop()} · ${STAR(r.tier)} · ${shortTime(r.next)}`, text, wrapText: false } });
+  const col = (title, list, fmt) => ({ horizontalSizeStyle: 'FILL_AVAILABLE_SPACE', horizontalAlignment: 'START', verticalAlignment: 'TOP',
+    widgets: [{ textParagraph: { text: `<b>${title}</b>` } }, ...(list.length ? list.map(fmt) : [{ textParagraph: { text: 'None today' } }])] });
+  return { header: '4 · Worth a Look', widgets: [{ columns: { columnItems: [
+    col('🔥 Hot', hot, (r) => item(r, `${font(COLOUR.hot, `<b>${Math.round(r.l5)}</b>`)} vs ${Math.round(r.l15)} · Proj <b>${Math.round(r.proj)}</b>`)),
+    col('💎 Value', value, (r) => item(r, `Proj <b>${Math.round(r.proj)}</b> · ${font(COLOUR.fit, `<b>${(r.proj / starsOf(r.tier)).toFixed(1)}</b>/★`)}`)),
+  ] } }] };
 }
 
 const footer = (nextAt) => ({ widgets: [{ textParagraph: { text: font(COLOUR.locked, `Next check ${nextAt ? when(nextAt) : 'before the next lock'} · updates post here only when something changes · suggestions only, nothing is changed`) } }] });
@@ -426,24 +428,24 @@ function aiPickSection(views) {
     const chance = v.passChance(proj);
     // Owner, 2 Nov 2026: only ever suggest a team with a 70%+ chance to pass.
     if (chance < 70) {
-      widgets.push({ textParagraph: { text: `No team with a 70%+ chance to pass right now - the best Kobe can enter is ${font(COLOUR.GTD, `<b>${chance}%</b>`)} (proj ${Math.round(proj)} vs ${v.step.target}). Not worth a life yet.` } });
+      widgets.push({ textParagraph: { text: `No team at 70%+ yet · Best ${font(COLOUR.GTD, `<b>${chance}%</b>`)}` } });
       continue;
     }
     const c = chance >= 50 ? COLOUR.fit : chance >= 25 ? COLOUR.GTD : COLOUR.OUT;
     const lockAt = v.aiPick.chosen.map((x) => x.kickoff).filter(Boolean).sort()[0];
     widgets.push({ decoratedText: {
-      topLabel: `${v.aiSecond ? 'A second team for "Add team now"' : 'Best five to pass'} · needs ${v.step.target} · enter before ${when(lockAt)}`,
-      text: `proj <b>${Math.round(proj)}</b> · ${font(c, `<b>${chance}% chance to pass</b>`)} · ${v.aiPick.chosen.reduce((n, x) => n + starsOf(x.tier), 0)}★ of ${v.cap}`,
+      topLabel: `${v.aiSecond ? 'Second team ("Add Team Now")' : 'Best five'} · Enter before ${when(lockAt)}`,
+      text: `${font(c, `<b>${chance}% to pass</b>`)} · Proj <b>${Math.round(proj)}</b> / ${v.step.target} · ${v.aiPick.chosen.reduce((n, x) => n + starsOf(x.tier), 0)}★ of ${v.cap}`,
       wrapText: true } });
     widgets.push(cardGrid(v.aiPick.chosen.map((x) => ({ name: `${x.player.split(' ').pop()} ${STAR(x.tier)}`, pic: v.picOf.get(x.slug), caption: `${Math.round(x.expected)} · ${shortTime(x.kickoff)}` }))));
   }
-  return { header: '5 · AI pick  (most likely to pass)', widgets };
+  return { header: '5 · AI Pick', widgets };
 }
 
 function dailyCard(views, dateLine, nextAt, extraAttention = []) {
   const mine = views.find((v) => !v.b.surface.startsWith('team'));
   const team = views.find((v) => v.b.surface.startsWith('team'));
-  return card('daily', '🏀 Kobe NBA · Daily briefing', dateLine, [
+  return card('daily', '🏀 Kobe NBA · Daily Briefing', dateLine, [
     attentionSection(views, extraAttention.filter((l) => l.actionable).map((l) => l.line)),
     lineupSection(2, mine), lineupSection(3, team),
     ...fyiSection(extraAttention.filter((l) => !l.actionable).map((l) => l.line)),
