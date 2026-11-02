@@ -288,7 +288,7 @@ const STATE_LABEL = { done: '✅ Final', live: '🔵 Live', dnp: '❌ DNP', upco
 const shortTime = (iso) => {
   if (!iso) return '?';
   const t = new Date(iso).toLocaleTimeString('en-AU', { hour: 'numeric', minute: '2-digit', timeZone: SYD }).replace(/\s/g, '').toLowerCase();
-  return t.replace(':00', '');
+  return t.replace(':00', '').replace(/m$/, '');   // 12:30p / 1p - never wraps under a card
 };
 const STATE_ICON = { done: '✅', live: '🔵', dnp: '❌', upcoming: '⏳' };
 /** Points banked plus what is still to come, for one lineup. */
@@ -424,6 +424,11 @@ function aiPickSection(views) {
     if (!v.aiPick?.ok) { widgets.push({ textParagraph: { text: 'Not enough cards with games still to come for a five right now - check back after tonight\'s games.' } }); continue; }
     const proj = v.aiPick.chosen.reduce((n, c) => n + c.expected, 0);
     const chance = v.passChance(proj);
+    // Owner, 2 Nov 2026: only ever suggest a team with a 70%+ chance to pass.
+    if (chance < 70) {
+      widgets.push({ textParagraph: { text: `No team with a 70%+ chance to pass right now - the best Kobe can enter is ${font(COLOUR.GTD, `<b>${chance}%</b>`)} (proj ${Math.round(proj)} vs ${v.step.target}). Not worth a life yet.` } });
+      continue;
+    }
     const c = chance >= 50 ? COLOUR.fit : chance >= 25 ? COLOUR.GTD : COLOUR.OUT;
     const lockAt = v.aiPick.chosen.map((x) => x.kickoff).filter(Boolean).sort()[0];
     widgets.push({ decoratedText: {
@@ -452,7 +457,8 @@ function updateCard(views, dateLine, lines, nextAt, title = '🏀 Kobe NBA · Up
   return card('update', title, dateLine, [...(act.length ? [attentionSection(views, act)] : []), ...fyiSection(info)]);
 }
 
-const card = (id, title, subtitle, sections) => [{ cardId: id, card: { header: { title, subtitle }, sections } }];
+// One header line: title and date together (owner: "make it all 1 line").
+const card = (id, title, subtitle, sections) => [{ cardId: id, card: { header: { title: subtitle ? `${title} · ${subtitle}` : title }, sections } }];
 
 function describeBoard(v) {
   const L = [];
@@ -534,7 +540,7 @@ export async function advise({ force = false, dryRun = false } = {}) {
   const locks = ok.filter((v) => v.editable && v.lockAt).map((v) => v.lockAt).sort();
 
   const messages = [];
-  const dateLine = new Date(now).toLocaleDateString('en-AU', { weekday: 'long', day: 'numeric', month: 'short', timeZone: SYD });
+  const dateLine = new Date(now).toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short', timeZone: SYD });
   const nextAt = (st.advisorPlan ?? []).find((t) => Date.parse(t) > now) ?? null;
   if (briefingDue || force) {
     messages.push({
