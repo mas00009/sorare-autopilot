@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T18:36:16.055Z",
+  "generatedAt": "2026-11-02T18:55:18.843Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-11-02T19:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1793644505944,
-    "reason": "last run 1m ago, next due in 4m (lock in 69m)"
+    "lastRunAt": 1793645656746,
+    "reason": "last run 1m ago, next due in 4m (lock in 50m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -89,10 +89,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 0,
+      "squadScore": 194.25,
       "lineupId": "Tasks::TaskLineup:b195cfc4-e42a-4880-84ac-11af55bc74e3",
       "state": "READY",
-      "score": 0,
+      "score": 35,
       "finished": false,
       "cleared": false,
       "players": [
@@ -128,8 +128,8 @@
           "slug": "souleymane-faye",
           "position": "Forward",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 35,
+          "status": "REVIEWING",
           "kickoff": "2026-11-02T19:45:00Z"
         },
         {
@@ -142,7 +142,7 @@
           "kickoff": "2026-11-02T20:00:00Z"
         }
       ],
-      "scored": 0
+      "scored": 1
     }
   ],
   "gems": {
@@ -870,7 +870,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Team entered, locks Tue 06:45 am Sydney. The squad's top three lineups together need 700; this one is expected to add about 100.",
+      "status": "Locked and playing. 35 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 194 so far.",
       "tone": "good",
       "lockAt": "2026-11-02T19:45:00Z",
       "isSquad": true,
@@ -964,8 +964,8 @@
             "kickoff": "2026-11-02T19:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 35,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "lorient-ploemeur",
             "name": "Souleymane Faye",
             "player": "Souleymane Faye",
@@ -1023,9 +1023,9 @@
           }
         ],
         "projected": 99.66,
-        "scoredSoFar": 0,
-        "played": 0,
-        "expectedFinal": 120.06
+        "scoredSoFar": 35,
+        "played": 1,
+        "expectedFinal": 145.55
       },
       "poolStrength": {
         "strong": 0,
@@ -1035,7 +1035,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 0
+        "scoreSoFar": 194.25
       },
       "level": 0,
       "lives": null,
