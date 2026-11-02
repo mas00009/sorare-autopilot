@@ -407,7 +407,7 @@ function lineupSection(n, v) {
   // Status on the left, the key on the right, one line (owner, 2 Nov 2026).
   const statusRow = { columns: { columnItems: [
     { horizontalSizeStyle: 'FILL_AVAILABLE_SPACE', horizontalAlignment: 'START', verticalAlignment: 'CENTER', widgets: [summaryLine(v)] },
-    { horizontalSizeStyle: 'FILL_MINIMUM_SPACE', horizontalAlignment: 'END', verticalAlignment: 'CENTER',
+    { horizontalSizeStyle: 'FILL_AVAILABLE_SPACE', horizontalAlignment: 'END', verticalAlignment: 'CENTER',
       widgets: [{ textParagraph: { text: font(COLOUR.locked, '✅Final 🔵Live ⏳To Play ❓GTD ❌Out') } }] },
   ] } };
   return { header: `${name} · Level ${v.b.level}`, widgets: [statusRow, ...squadRows, ...fyi, cardGrid(v.current.map((c) => {
