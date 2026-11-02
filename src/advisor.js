@@ -73,13 +73,14 @@ const statusOf = (inj) => (inj ? `${inj.status ?? 'injured'}${inj.kind ? ` (${in
  * best three are added up against the target.
  */
 async function squadView(stepId, me) {
-  const d = await gql(`query($id:String!){ currentUser { step(id:$id) { ... on SquadStep { target squadLeaderboardLineups(top: 15) { ranking lineup { id ... on TaskLineupInterface { score user { nickname } taskAppearances { score scoreStatus anyPlayer { slug } } } } } } } } }`, { id: stepId });
+  const d = await gql(`query($id:String!){ currentUser { step(id:$id) { ... on SquadStep { target squadLeaderboardLineups(top: 15) { ranking lineup { id ... on TaskLineupInterface { score user { nickname } taskAppearances { score scoreStatus anyPlayer { slug } game { ... on GameOfBasketball { statusTyped } } } } } } } } } }`, { id: stepId });
   const rows = d.currentUser?.step?.squadLeaderboardLineups ?? [];
   const P = await projections(rows.flatMap((r) => (r.lineup?.taskAppearances ?? []).map((a) => a.anyPlayer?.slug)));
   const lineups = rows.map((r) => {
     let live = 0, proj = 0, toPlay = 0;
     for (const a of r.lineup?.taskAppearances ?? []) {
-      const done = /FINAL|REVIEWING/.test(a.scoreStatus ?? '');
+      const done = playState({ gameState: a.game?.statusTyped, scoreStatus: a.scoreStatus, score: a.score }) === 'done'
+        || playState({ gameState: a.game?.statusTyped, scoreStatus: a.scoreStatus, score: a.score }) === 'dnp';
       const sp = P.get(a.anyPlayer?.slug)?.proj ?? 0;
       live += a.score ?? 0;
       if (done) proj += a.score ?? 0; else { toPlay += 1; proj += Math.max(a.score ?? 0, sp); }
@@ -137,7 +138,8 @@ async function boardView(b) {
     const slug = a.anyPlayer?.slug;
     const p = P.get(slug) ?? {};
     return { slug, name: p.name ?? a.anyPlayer?.displayName, tier: p.tier, proj: p.proj, injury: p.injury, next: p.next,
-      news: p.news, pic: a.pictureUrl ?? null, score: a.score ?? null, scoreStatus: a.scoreStatus ?? null, gameAt: a.game?.date ?? null };
+      news: p.news, pic: a.pictureUrl ?? null, score: a.score ?? null, scoreStatus: a.scoreStatus ?? null, gameAt: a.game?.date ?? null,
+      gameState: a.game?.statusTyped ?? null };
   });
   const benchRows = bench.map((n) => {
     const p = P.get(n.player?.slug) ?? {};
@@ -262,10 +264,19 @@ const swapsOf = (v) => {
 };
 /** Where a lineup player stands right now: done, live, did not play, or still to play. */
 function playState(c) {
+  // The game's own state decides. Sorare's scoreStatus reads REVIEWING while
+  // a game is still on (2 Nov: Kessler showed "final" mid Lakers game).
+  const g = String(c.gameState ?? '').toLowerCase();
   const st = String(c.scoreStatus ?? '').toUpperCase();
-  if (/DID_NOT_PLAY|DNP|NOT_PLAYED/.test(st)) return 'dnp';
-  if (/FINAL|REVIEWING/.test(st)) return 'done';
-  if (/PLAYING|LIVE|ONGOING|STARTED/.test(st) || (c.score > 0 && !/PENDING|SCHEDULED/.test(st))) return 'live';
+  if (g === 'playing' || g === 'live' || g === 'halftime') return 'live';
+  if (g === 'scheduled' || g === 'postponed') return 'upcoming';
+  if (g === 'played' || g === 'final' || g === 'ended') {
+    if (/DID_NOT_PLAY|DNP|NOT_PLAYED/.test(st) || (c.score ?? 0) === 0 && st === 'FINAL') return (c.score ?? 0) === 0 ? 'dnp' : 'done';
+    return 'done';
+  }
+  // No game state: fall back on the score status, treating REVIEWING as live.
+  if (st === 'FINAL') return 'done';
+  if (st === 'REVIEWING' || (c.score > 0 && st !== 'PENDING')) return 'live';
   return 'upcoming';
 }
 const STATE_LABEL = { done: '✅ Final', live: '🔴 Live', dnp: '❌ DNP', upcoming: '⏳ To play' };
@@ -302,7 +313,7 @@ function glanceSection(views) {
     let proj, flag;
     if (sq) {
       const short = sq.target - sq.projTop3;
-      proj = ` · squad top 3: <b>${Math.round(sq.liveTop3)}</b> scored, ~<b>${Math.round(sq.projTop3)}</b> projected / ${sq.target}`;
+      proj = ` · squad top 3: ~<b>${Math.round(sq.projTop3)}</b> projected / ${sq.target} (${Math.round(sq.liveTop3)} scored so far)`;
       flag = short <= 0 ? ` · ${font(COLOUR.fit, '<b>on course</b>')}`
         : sq.toPlay === 0 ? ` · ${font(COLOUR.OUT, `<b>short by ${Math.round(short)}, all games done</b>`)}`
         : ` · ${font(COLOUR.GTD, `<b>~${Math.round(short)} short, ${sq.toPlay} still to play</b>`)}`;
@@ -350,6 +361,8 @@ function lineupSection(n, v) {
   const fyi = [];
   const squadRows = v.squad ? [{ decoratedText: { topLabel: `SQUAD TOP 3 vs ${v.squad.target} · ${v.squad.toPlay} player(s) still to play`,
     text: v.squad.lineups.slice(0, 5).map((l, i) => `${i < 3 ? '<b>' : ''}${i + 1}. ${l.who}${l.mine ? ' (you)' : ''}: ${Math.round(l.live)} now → ~${Math.round(l.proj)}${i < 3 ? '</b>' : ''}`).join('<br>'), wrapText: true } }] : [];
+  // Team set: one line, the squad's top three against the target (owner: "super simple").
+  if (v.squad) return { header: `${n} · ${name} · level ${v.b.level}`, widgets: [summaryLine(v)] };
   return { header: `${n} · ${name} · level ${v.b.level}`, widgets: [summaryLine(v), ...squadRows, ...fyi, cardGrid(v.current.map((c) => ({ name: `${playState(c) === 'upcoming' && v.editable ? dot(c.injury) + ' ' : ''}${c.name.split(' ').pop()}`, pic: c.pic,
     caption: captionOf(c) }))),
     { textParagraph: { text: font(COLOUR.locked, '✅ final · 🔴 live (points so far) · ⏳ still to play (projection · tip-off) · ❌ did not play') } }] };

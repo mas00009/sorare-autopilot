@@ -88,6 +88,9 @@ export const Q_STEP = `
                   homeTeam { ... on TeamInterface { slug name } }
                   awayTeam { ... on TeamInterface { slug name } }
                 }
+                # NBA: the game's own state. scoreStatus reads REVIEWING while
+                # a game is still being played, so it cannot say "finished".
+                ... on GameOfBasketball { id date statusTyped }
               }
               anyCard { slug }
               anyPlayer {
