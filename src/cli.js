@@ -144,6 +144,14 @@ async function report(r) {
     console.log(`\nStarter pack: ${r.starter.claimed ? `claimed for ${r.starter.set} - ${r.starter.cards.join(', ')}` : r.starter.reason}`);
   }
 
+  if (r.gemPacks) {
+    const g = r.gemPacks;
+    console.log('\nNBA gem packs (earned gems only)');
+    if (g.bought.length) console.log(`    bought ${g.bought.length} gold pack(s): ${g.cards.join(', ')}`);
+    else console.log(`    ${g.reason}`);
+    if (g.budgetAfter != null) console.log(`    budget left: ${g.budgetAfter} gems`);
+  }
+
   if (r.nbaWheel) {
     const w = r.nbaWheel;
     console.log('\nNBA wheel');
@@ -222,7 +230,13 @@ async function report(r) {
       // Football is off the mail (owner, 2 Nov 2026). A football run speaks
       // up for one thing only: gems won during this pass.
       const total = (g) => (g ?? []).reduce((n, b) => n + (b.amount ?? 0), 0);
-      const gemsWon = total(r.gemsEnd) - total(r.gems);
+      const gemsSpent = (r.gemPacks?.bought ?? []).filter((x) => !x.dryRun).reduce((n, x) => n + (x.price ?? 0), 0);
+      const gemsWon = total(r.gemsEnd) - total(r.gems) + gemsSpent;
+      // Mas's earned gems fund the NBA gold packs; Kobe's are the owner's.
+      if (r.gemsEnd && gemsWon > 0 && !process.env.SORARE_ACCOUNT) {
+        const { creditEarned } = await import('./gembudget.js');
+        await creditEarned(gemsWon, rep.FOOTBALL_RUN ? 'football' : 'nba');
+      }
       if (rep.FOOTBALL_RUN && r.gemsEnd && gemsWon > 0) {
         const who = r.nickname ?? (process.env.SORARE_ACCOUNT ? 'Kobe' : 'Mas');
         const what = [...(entry.claimed ?? []).map((c) => (typeof c === 'string' ? c : c.name)),

@@ -557,6 +557,16 @@ export function digestHtml(date, entries, snapshot = null) {
     d.spent ? `Spent <b>${num(d.spent)}</b> essence on packs today${pulls ? `, which pulled: ${pulls}.` : '.'}` : 'No essence spent today.',
     claims.length ? `Claimed: ${claims.map(esc).join('; ')}.` : 'Nothing was ready to claim.',
   ];
+  // The earned-gem budget: what the bot may spend on NBA gold packs.
+  if (SENDS_DIGEST) {
+    try {
+      const b = JSON.parse(readFileSync(path.join(ROOT, 'state', 'gem-budget.json'), 'utf8'));
+      const left = Math.max(0, (b.earned ?? 0) - (b.spent ?? 0));
+      moneyLines.push(`Gem budget for NBA gold packs: <b>${left}</b> (earned ${b.earned ?? 0} since 2 Nov, spent ${b.spent ?? 0}). Gems held before 2 Nov are never spent.`);
+    } catch {
+      moneyLines.push('Gem budget for NBA gold packs: <b>0</b>. It fills only with gems Mas earns from 2 Nov; gems held before then are never spent.');
+    }
+  }
   const gemsNote = snap?.gems ? `${snap.gems.ladderGemsAhead + snap.gems.collectionGemsOpen} more gems are in reach: ${snap.gems.ladderGemsAhead} on the ladder and ${snap.gems.collectionGemsOpen} from collections${snap.gems.collections?.length ? ` (${snap.gems.collections.map((c) => `${c.progress}/${c.target}`).join(', ')})` : ''}.` : '';
   const errors = [...new Set(d.errors.map(String))].slice(0, 6);
 

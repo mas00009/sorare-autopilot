@@ -123,6 +123,24 @@ export function assertMutationAllowed(name, { env = process.env } = {}) {
 }
 
 /**
+ * The ONE way gems may be spent (owner, 2 Nov 2026): on Mas's NBA side only,
+ * only gems Mas has earned since that date (the budget), and only on an NBA
+ * pack priced in COMMON_GEM. Everything else still goes through
+ * assertCostAllowed, which refuses gems outright. Kobe's gems are the
+ * owner's own and can never be spent here.
+ */
+export function assertNbaGemSpend({ currency, amount, sport, account, budget, packSlug }) {
+  if (currency !== 'COMMON_GEM') throw new GuardrailError(`Gem spend path called for ${currency}.`, { reason: 'not-gems' });
+  if (sport !== 'NBA') throw new GuardrailError('Gems may only be spent on the NBA side.', { reason: 'gem-sport' });
+  if (account) throw new GuardrailError('Gems may only be spent on the main account (Mas).', { reason: 'gem-account' });
+  if (!/nba/i.test(packSlug ?? '')) throw new GuardrailError(`Refusing to spend gems on a non-NBA pack (${packSlug}).`, { reason: 'gem-pack' });
+  if (!(amount > 0) || amount > budget) {
+    throw new GuardrailError(`Refusing to spend ${amount} gems with only ${budget} earned gems in the budget.`, { reason: 'gem-budget' });
+  }
+  return true;
+}
+
+/**
  * Called before entering anything with a price attached.
  * `cost` is { currency: InGameCurrency, amount: number }.
  */

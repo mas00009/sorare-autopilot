@@ -1264,6 +1264,15 @@ export async function pass({ dryRun = false, options = {} } = {}) {
     if (cycle) await writeState({ claimCycle: cycle });
   }
   const seenCycle = await dailyCycleId().catch(() => null);
+  // Mas's NBA run: spend the gems Mas has EARNED (never the ones it held
+  // before 2 Nov 2026) on NBA gold packs, toward NBA level 4's $100.
+  if (SPORT === 'NBA' && !process.env.SORARE_ACCOUNT && options.packs !== false) {
+    try {
+      const { spendOnNbaPacks } = await import('./gembudget.js');
+      report.gemPacks = await spendOnNbaPacks({ dryRun, sport: SPORT, account: process.env.SORARE_ACCOUNT ?? '' });
+    } catch (err) { report.gemPacks = { bought: [], reason: `gem packs: ${err.message}` }; }
+  }
+
   // Gems at the end of the pass. The balance is shared by every sport on the
   // account, but each sport's pass runs on its own, so a rise between the
   // start and the end of THIS pass was won here.
