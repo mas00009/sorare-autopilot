@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T20:34:34.267Z",
+  "generatedAt": "2026-11-02T21:05:48.944Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-11-02T19:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793647760519,
-    "reason": "last run 65m ago, next due in 115m"
+    "reason": "last run 96m ago, next due in 84m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:202f0490-8644-477e-8376-892923bb82b6",
       "state": "READY",
-      "score": 271.25,
+      "score": 281,
       "finished": false,
       "cleared": false,
       "players": [
@@ -57,7 +57,7 @@
           "slug": "mario-soriano-carreno",
           "position": "Midfielder",
           "captain": true,
-          "score": 69.15,
+          "score": 78.9,
           "status": "REVIEWING",
           "kickoff": "2026-11-07T15:15:00Z"
         },
@@ -89,19 +89,19 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 628.024,
+      "squadScore": 715.232,
       "lineupId": "Tasks::TaskLineup:b195cfc4-e42a-4880-84ac-11af55bc74e3",
       "state": "READY",
-      "score": 172.77,
+      "score": 143.49,
       "finished": false,
-      "cleared": false,
+      "cleared": true,
       "players": [
         {
           "name": "Leo Román",
           "slug": "leonardo-roman-riquelme",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 41.2,
+          "score": 18.3,
           "status": "REVIEWING",
           "kickoff": "2026-11-07T15:15:00Z"
         },
@@ -110,7 +110,7 @@
           "slug": "giacomo-quagliata",
           "position": "Defender",
           "captain": true,
-          "score": 58.53,
+          "score": 57.57,
           "status": "REVIEWING",
           "kickoff": "2026-11-07T15:15:00Z"
         },
@@ -128,7 +128,7 @@
           "slug": "souleymane-faye",
           "position": "Forward",
           "captain": false,
-          "score": 43.4,
+          "score": 38.2,
           "status": "REVIEWING",
           "kickoff": "2026-11-08T16:15:00Z"
         },
@@ -137,7 +137,7 @@
           "slug": "fabian-lukas-schar",
           "position": "Defender",
           "captain": false,
-          "score": 29.64,
+          "score": 29.42,
           "status": "REVIEWING",
           "kickoff": "2026-11-07T15:00:00Z"
         }
@@ -208,7 +208,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 306 scored so far, 5 of 5 played. On course for about 306; needs 260 (46 over).",
+      "status": "Locked and playing. 320 scored so far, 5 of 5 played. On course for about 320; needs 260 (60 over).",
       "tone": "good",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": false,
@@ -273,7 +273,7 @@
             "kickoff": "2026-10-31T17:30:00Z"
           },
           {
-            "actual": 69.15,
+            "actual": 78.9,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Mario Soriano",
@@ -361,9 +361,9 @@
           }
         ],
         "projected": 220.17,
-        "scoredSoFar": 305.83,
+        "scoredSoFar": 320.46,
         "played": 5,
-        "expectedFinal": 305.83
+        "expectedFinal": 320.46
       },
       "poolStrength": {
         "strong": 1,
@@ -870,14 +870,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 202 scored so far, 4 of 5 played. The squad's top three lineups together need 700; the squad has 628 so far.",
+      "status": "Locked and playing. 172 scored so far, 4 of 5 played. The squad's top three lineups together need 700; the squad has 715 so far.",
       "tone": "good",
       "lockAt": "2026-11-02T19:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 41.2,
+            "actual": 18.3,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Leo Román",
@@ -906,7 +906,7 @@
             "kickoff": "2026-11-02T20:00:00Z"
           },
           {
-            "actual": 58.53,
+            "actual": 57.57,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Giacomo Quagliata",
@@ -964,7 +964,7 @@
             "kickoff": "2026-11-02T19:45:00Z"
           },
           {
-            "actual": 43.4,
+            "actual": 38.2,
             "scoreStatus": "REVIEWING",
             "teamSlug": "lorient-ploemeur",
             "name": "Souleymane Faye",
@@ -993,7 +993,7 @@
             "kickoff": "2026-11-02T19:45:00Z"
           },
           {
-            "actual": 29.64,
+            "actual": 29.42,
             "scoreStatus": "REVIEWING",
             "teamSlug": "newcastle-united-newcastle-upon-tyne",
             "name": "Fabian Schar",
@@ -1023,9 +1023,9 @@
           }
         ],
         "projected": 99.66,
-        "scoredSoFar": 202.04,
+        "scoredSoFar": 172.28,
         "played": 4,
-        "expectedFinal": 212.4
+        "expectedFinal": 182.64
       },
       "poolStrength": {
         "strong": 0,
@@ -1035,7 +1035,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 628.024
+        "scoreSoFar": 715.232
       },
       "level": 0,
       "lives": null,
