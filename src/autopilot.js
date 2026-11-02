@@ -1264,6 +1264,10 @@ export async function pass({ dryRun = false, options = {} } = {}) {
     if (cycle) await writeState({ claimCycle: cycle });
   }
   const seenCycle = await dailyCycleId().catch(() => null);
+  // Gems at the end of the pass. The balance is shared by every sport on the
+  // account, but each sport's pass runs on its own, so a rise between the
+  // start and the end of THIS pass was won here.
+  try { report.gemsEnd = (await readBalances()).gems; } catch { /* the start figure stands */ }
   await writeState({ lastRunAt: Date.now(), ...(seenCycle ? { seenCycle } : {}) });
   report.finishedAt = new Date().toISOString();
   return report;

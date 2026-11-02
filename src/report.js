@@ -24,6 +24,22 @@ const DIR = path.join(ROOT, 'state', 'reports');
 export const OUTBOX = path.join(ROOT, 'state', 'outbox');
 
 /**
+ * Each run keeps its own day journal, so the three runs (Mas football, Kobe
+ * football, Mas NBA) no longer write into one file and one mail.
+ * Mas football keeps the original names so its history stays readable.
+ */
+const RUN_PREFIX = (() => {
+  const nba = String(process.env.SORARE_SPORT ?? '').toUpperCase() === 'NBA';
+  const acct = (process.env.SORARE_ACCOUNT ?? '').replace(/[^a-z0-9_-]/gi, '');
+  if (nba) return acct ? `nba-${acct}-` : 'nbamas-';
+  return acct ? `${acct}-` : '';
+})();
+/** The daily mail is the NBA report from Mas's NBA run, and only that run sends it. */
+export const SENDS_DIGEST = RUN_PREFIX === 'nbamas-';
+/** Football is off the mail; a football run only speaks up when it wins gems. */
+export const FOOTBALL_RUN = !String(process.env.SORARE_SPORT ?? '').toUpperCase().startsWith('NBA');
+
+/**
  * Queue a message for delivery.
  *
  * Outbound SMTP is blocked on this network (ports 25/465/587 all refused), so
@@ -171,7 +187,7 @@ export async function journal(report) {
     pulls: (report.packs?.opened ?? []).flatMap((o) => o.cards ?? []),
     errors: [report.lineupError, report.missionsError, ...(report.missions?.errors ?? [])].filter(Boolean),
   };
-  await fs.appendFile(path.join(DIR, `${today()}.jsonl`), `${JSON.stringify(entry)}\n`, 'utf8');
+  await fs.appendFile(path.join(DIR, `${RUN_PREFIX}${today()}.jsonl`), `${JSON.stringify(entry)}\n`, 'utf8');
   return entry;
 }
 
@@ -243,7 +259,7 @@ export async function alertBigPull(cards) {
 
 async function readDay(date) {
   try {
-    const raw = await fs.readFile(path.join(DIR, `${date}.jsonl`), 'utf8');
+    const raw = await fs.readFile(path.join(DIR, `${RUN_PREFIX}${date}.jsonl`), 'utf8');
     return raw.trim().split('\n').filter(Boolean).map((l) => JSON.parse(l));
   } catch { return []; }
 }
@@ -299,6 +315,7 @@ export function nbaDay(date) {
     }
   } catch {}
   for (const r of rows) if (r.account && !names.includes(r.account)) names.push(r.account);
+  if (!rows.length) return [];   // the wheel is off since 30 Oct 2026; no rows, no section
   return names.map((account) => {
     const mine = rows.filter((r) => r.account === account);
     const won = mine.flatMap((r) => r.won ?? []);
@@ -387,6 +404,7 @@ export function digest(date, entries) {
  * same day cannot send it twice.
  */
 export async function maybeSendDigest(now = new Date()) {
+  if (!SENDS_DIGEST) return { sent: false, reason: 'already sent' };   // only Mas's NBA run mails
   const y = new Date(now.getTime() - 86_400_000);
   const date = today(y);
   const marker = path.join(DIR, `.sent-${date}`);
@@ -395,10 +413,14 @@ export async function maybeSendDigest(now = new Date()) {
   const entries = await readDay(date);
   if (!entries.length) return { sent: false, reason: 'no activity to report' };
 
+  // The boards come from a fresh NBA snapshot; the football dashboard file
+  // (docs/data.json) is football's and is left alone.
+  let snap = null;
+  try { snap = await (await import('./dashboard.js')).build({ write: false }); } catch { /* entries still carry the facts */ }
   const res = await deliver(
-    `Sorare Autopilot - daily report ${date}`,
+    `Sorare NBA - daily report ${date}`,
     digest(date, entries),
-    { html: digestHtml(date, entries) },
+    { html: digestHtml(date, entries, snap ?? { surfaces: [] }) },
   );
   if (res.sent || res.queued) await fs.writeFile(marker, '', 'utf8');
   return { ...res, date };
@@ -535,7 +557,7 @@ export function digestHtml(date, entries, snapshot = null) {
     d.spent ? `Spent <b>${num(d.spent)}</b> essence on packs today${pulls ? `, which pulled: ${pulls}.` : '.'}` : 'No essence spent today.',
     claims.length ? `Claimed: ${claims.map(esc).join('; ')}.` : 'Nothing was ready to claim.',
   ];
-  const gemsNote = snap?.gems ? `${snap.gems.ladderGemsAhead + snap.gems.collectionGemsOpen} more gems are in reach: ${snap.gems.ladderGemsAhead} on the ladder and ${snap.gems.collectionGemsOpen} from the LaLiga collections${snap.gems.collections?.length ? ` (${snap.gems.collections.map((c) => `${c.progress}/${c.target}`).join(', ')})` : ''}.` : '';
+  const gemsNote = snap?.gems ? `${snap.gems.ladderGemsAhead + snap.gems.collectionGemsOpen} more gems are in reach: ${snap.gems.ladderGemsAhead} on the ladder and ${snap.gems.collectionGemsOpen} from collections${snap.gems.collections?.length ? ` (${snap.gems.collections.map((c) => `${c.progress}/${c.target}`).join(', ')})` : ''}.` : '';
   const errors = [...new Set(d.errors.map(String))].slice(0, 6);
 
   return `<!doctype html><html><head><meta charset="utf-8">
@@ -545,7 +567,7 @@ export function digestHtml(date, entries, snapshot = null) {
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;max-width:100%;background:#ffffff;border-radius:16px;overflow:hidden;border:1px solid ${C.line}">
   <tr><td style="background:#11141f;padding:20px 26px">
     <img src="${SITE}img/wordmark.png" alt="Sorare Autopilot" width="190" style="display:block;width:190px;height:auto;border:0">
-    <div style="font:500 13px/1.4 ${F};color:#8b95ad;padding-top:8px">${esc(pretty)}</div></td></tr>
+    <div style="font:500 13px/1.4 ${F};color:#8b95ad;padding-top:8px">${SENDS_DIGEST ? 'NBA &middot; ' : ''}${esc(pretty)}</div></td></tr>
   ${loginWarnings().map((w) => `<tr><td style="padding:18px 26px 0"><div style="padding:12px 14px;border-radius:10px;background:#fdecef;border-left:4px solid ${C.stop}">
     ${P(`<b style="color:${C.stop}">${esc(w.account)}: login ${w.expired ? 'has run out' : 'runs out'} ${esc(w.when)}.</b> ${w.expired ? 'The bot has stopped on this account.' : 'The bot stops on this account then.'} Sign in again in a terminal:`)}
     <div style="font:600 12px/1.5 Menlo,monospace;color:${C.ink};padding-top:6px">${esc(w.command)}</div></div></td></tr>`).join('')}
@@ -558,7 +580,7 @@ export function digestHtml(date, entries, snapshot = null) {
   </td></tr>
   ${errors.length ? `<tr><td style="padding:22px 26px 0">${H('Problems')}${errors.map((e) => P(`<span style="color:${C.stop}">${esc(e)}</span>`, 'padding:2px 0')).join('')}</td></tr>` : ''}
   <tr><td style="padding:24px 26px 26px">
-    <a href="${SITE}" style="display:inline-block;background:${C.v};color:#ffffff;text-decoration:none;padding:11px 20px;border-radius:9px;font:700 14px/1 ${F}">Open the dashboard</a></td></tr>
+    ${SENDS_DIGEST ? '' : `<a href="${SITE}" style="display:inline-block;background:${C.v};color:#ffffff;text-decoration:none;padding:11px 20px;border-radius:9px;font:700 14px/1 ${F}">Open the dashboard</a>`}</td></tr>
 </table></td></tr></table></body></html>`;
 }
 

@@ -219,7 +219,21 @@ async function report(r) {
       const rep = await import('./report.js');
       const entry = await rep.journal(r);
 
-      const big = rep.bigPulls(entry);
+      // Football is off the mail (owner, 2 Nov 2026). A football run speaks
+      // up for one thing only: gems won during this pass.
+      const total = (g) => (g ?? []).reduce((n, b) => n + (b.amount ?? 0), 0);
+      const gemsWon = total(r.gemsEnd) - total(r.gems);
+      if (rep.FOOTBALL_RUN && r.gemsEnd && gemsWon > 0) {
+        const who = r.nickname ?? (process.env.SORARE_ACCOUNT ? 'Kobe' : 'Mas');
+        const what = [...(entry.claimed ?? []).map((c) => (typeof c === 'string' ? c : c.name)),
+          ...(entry.stepClaims ?? []).map((c) => c.surface ?? c.name ?? 'a ladder step')].filter(Boolean);
+        const res = await rep.deliver(`Sorare ${who}: football won you ${gemsWon} gems`,
+          `${who} won ${gemsWon} gems from football.\n\nNow holding ${total(r.gemsEnd)} gems.\n` +
+          (what.length ? `\nFrom: ${[...new Set(what)].join(', ')}\n` : ''));
+        console.log(`  gems won: +${gemsWon} - ${res.sent ? 'emailed' : res.queued ? 'queued' : 'not sent'}`);
+      }
+
+      const big = rep.FOOTBALL_RUN ? [] : rep.bigPulls(entry);
       if (big.length) {
         const res = await rep.alertBigPull(big);
         console.log(`  alert: ${big.map((c) => `${c.name} ${c.stars}*`).join(', ')} - ${res.sent ? 'emailed' : res.queued ? 'queued for delivery' : `not sent (${res.reason})`}`);
@@ -230,6 +244,8 @@ async function report(r) {
         const { readState, writeState } = await import('./client.js');
         const st2 = await readState();
         const h = await rep.trackHealth(entry, st2, writeState);
+        // Kobe sends nothing but gem wins; failure alerts come from Mas's runs.
+        if (process.env.SORARE_ACCOUNT) { h.alert = false; h.recovered = false; }
         if (h.alert) {
           await rep.deliver(
             `Sorare Autopilot FAILING - ${h.streak} passes in a row`,

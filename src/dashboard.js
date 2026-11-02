@@ -17,7 +17,7 @@ import { decide } from './schedule.js';
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const OUT = path.join(ROOT, 'docs', 'data.json');
 
-export async function build() {
+export async function build({ write = true } = {}) {
   const st = await readState();
   const [bal, ess, { boards, squad, nickname }] = await Promise.all([
     readBalances().catch(() => null),
@@ -222,6 +222,7 @@ export async function build() {
     unchanged = meaningful(prev) === meaningful(data);
   } catch { /* no previous file */ }
 
+  if (!write) return data;
   if (unchanged) return { ...data, unchanged: true };
 
   await fs.mkdir(path.dirname(OUT), { recursive: true });

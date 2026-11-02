@@ -85,6 +85,8 @@ async function journal(row) {
 }
 
 async function alert(subject, lines) {
+  // Football is off the mail (owner, 2 Nov 2026); the journal keeps the record.
+  if (String(process.env.SORARE_SPORT ?? 'FOOTBALL').toUpperCase() !== 'NBA') return;
   try {
     const { deliver } = await import('./report.js');
     await deliver(subject, lines.join('\n'));
