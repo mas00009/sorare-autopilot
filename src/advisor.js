@@ -293,7 +293,7 @@ function summaryLine(v) {
 
 function glanceSection(views) {
   const widgets = views.map((v) => {
-    const issues = flagged(v).length;
+    const issues = v.editable || !v.live ? flagged(v).length : 0;   // locked: nothing to watch
     const sw = swapsOf(v);
     const state = !v.live ? `${font(COLOUR.open, '<b>No lineup</b>')}`
       : v.editable ? `🔓 ${font(COLOUR.open, '<b>Open</b>')} · locks ${when(v.lockAt)}`
@@ -345,11 +345,12 @@ function lineupSection(n, v) {
   if (!v) return { header: `${n} · Lineup`, widgets: [{ textParagraph: { text: 'No board.' } }] };
   const name = boardName(v);
   if (!v.live) return { header: `${n} · ${name} · level ${v.b.level}`, widgets: [summaryLine(v), { textParagraph: { text: 'No lineup in yet - see the suggested five above.' } }] };
-  const fyi = !v.editable ? flagged(v).filter((c) => playState(c) === 'upcoming').map((c) => playerRow(c, { full: true })) : [];
-  if (fyi.length) fyi.unshift({ textParagraph: { text: font(COLOUR.locked, 'FYI - locked, nothing to change:') } });
+  // A locked lineup's pending GTD is noise - nothing can be changed. It is
+  // only mentioned once decided (cleared or ruled out), as late news.
+  const fyi = [];
   const squadRows = v.squad ? [{ decoratedText: { topLabel: `SQUAD TOP 3 vs ${v.squad.target} · ${v.squad.toPlay} player(s) still to play`,
     text: v.squad.lineups.slice(0, 5).map((l, i) => `${i < 3 ? '<b>' : ''}${i + 1}. ${l.who}${l.mine ? ' (you)' : ''}: ${Math.round(l.live)} now → ~${Math.round(l.proj)}${i < 3 ? '</b>' : ''}`).join('<br>'), wrapText: true } }] : [];
-  return { header: `${n} · ${name} · level ${v.b.level}`, widgets: [summaryLine(v), ...squadRows, ...fyi, cardGrid(v.current.map((c) => ({ name: `${playState(c) === 'upcoming' ? dot(c.injury) + ' ' : ''}${c.name.split(' ').pop()}`, pic: c.pic,
+  return { header: `${n} · ${name} · level ${v.b.level}`, widgets: [summaryLine(v), ...squadRows, ...fyi, cardGrid(v.current.map((c) => ({ name: `${playState(c) === 'upcoming' && v.editable ? dot(c.injury) + ' ' : ''}${c.name.split(' ').pop()}`, pic: c.pic,
     caption: captionOf(c) }))),
     { textParagraph: { text: font(COLOUR.locked, '✅ final · 🔴 live (points so far) · ⏳ still to play (projection · tip-off) · ❌ did not play') } }] };
 }
@@ -510,12 +511,17 @@ export async function advise({ force = false, dryRun = false } = {}) {
     const where = w.inLineup ? (w.inLineup.startsWith('team') ? 'team set' : 'set') : null;
     const lock = w.editable ? `, which locks ${when(w.lockAt)} - consider a swap` : ' (locked - for your information)';
     let line = null;
+    const lockedHere = where && !w.editable;
     if (prev.status !== w.status) {
-      if (where && w.status !== 'fit') line = `⚠️ <b>${w.name}</b> is now ${w.status} - in your ${where}${lock}.`;
+      if (lockedHere) {
+        // Locked: only the decision matters - cleared, or ruled out.
+        if (w.status === 'fit') line = `✅ <b>${w.name}</b> is cleared to play - in your ${where}.`;
+        else if (/^OUT/i.test(w.status)) line = `🔴 <b>${w.name}</b> is ruled out - your ${where} loses his points.`;
+      } else if (where && w.status !== 'fit') line = `⚠️ <b>${w.name}</b> is now ${w.status} - in your ${where}${lock}.`;
       else if (where && w.status === 'fit') line = `✅ <b>${w.name}</b> is cleared to play (was ${prev.status}) - in your ${where}.`;
       else if (!where && w.status === 'fit') line = `🟢 <b>${w.name}</b> is available again (was ${prev.status}) - worth a look if a lineup is still open.`;
-    } else if (where && w.newsDate && w.newsDate !== prev.newsDate) {
-      line = `📰 New update on <b>${w.name}</b> - in your ${where}${w.editable ? `, locks ${when(w.lockAt)}` : ' (locked)'}.`;
+    } else if (where && w.editable && w.newsDate && w.newsDate !== prev.newsDate) {
+      line = `📰 New update on <b>${w.name}</b> - in your ${where}, locks ${when(w.lockAt)}.`;
     }
     if (line) alertRows.push({ line, row: w.row, actionable: !w.inLineup || !!w.editable });
   }
