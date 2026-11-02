@@ -408,13 +408,13 @@ function lineupSection(n, v) {
   const statusRow = { columns: { columnItems: [
     { horizontalSizeStyle: 'FILL_AVAILABLE_SPACE', horizontalAlignment: 'START', verticalAlignment: 'CENTER', widgets: [summaryLine(v)] },
     { horizontalSizeStyle: 'FILL_MINIMUM_SPACE', horizontalAlignment: 'END', verticalAlignment: 'CENTER',
-      widgets: [{ textParagraph: { text: font(COLOUR.locked, '✅Final 🔵Live ⏳To Play 🟠GTD ❌Out') } }] },
+      widgets: [{ textParagraph: { text: font(COLOUR.locked, '✅Final 🔵Live ⏳To Play ❓GTD ❌Out') } }] },
   ] } };
   return { header: `${name} · Level ${v.b.level}`, widgets: [statusRow, ...squadRows, ...fyi, cardGrid(v.current.map((c) => {
     const st = playState(c);
-    // Undecided players get their own icon, locked or not (owner): 🟠 GTD,
+    // Undecided players get their own icon, locked or not (owner): ❓ GTD,
     // ❌ when ruled out. It is a status, not a call to action.
-    const icon = st === 'upcoming' && c.injury ? (/GTD|QUESTION|DOUBT|PROB/i.test(c.injury.status ?? '') ? '🟠' : '❌') : STATE_ICON[st];
+    const icon = st === 'upcoming' && c.injury ? (/GTD|QUESTION|DOUBT|PROB/i.test(c.injury.status ?? '') ? '❓' : '❌') : STATE_ICON[st];
     // Two lines only: name, then icon + number + time (an icon beside a long
     // name like Wembanyama pushed it onto three).
     return { name: c.name.split(' ').pop(), pic: c.pic, caption: `${icon} ${captionOf(c)}` };
