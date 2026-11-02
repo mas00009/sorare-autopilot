@@ -421,7 +421,7 @@ function worthSection(views) {
     topLabel: `${r.name.split(' ').pop()} · ${STAR(r.tier)} · ${shortTime(r.next)}`, text, wrapText: false } });
   const col = (title, list, fmt) => ({ horizontalSizeStyle: 'FILL_AVAILABLE_SPACE', horizontalAlignment: 'START', verticalAlignment: 'TOP',
     widgets: [{ textParagraph: { text: `<b>${title}</b>` } }, ...(list.length ? list.map(fmt) : [{ textParagraph: { text: 'None today' } }])] });
-  return { header: 'Worth a Look', widgets: [{ columns: { columnItems: [
+  return { widgets: [{ columns: { columnItems: [
     col('🔥 Hot', hot, (r) => item(r, `${font(COLOUR.hot, `<b>${Math.round(r.l5)}</b>`)} vs ${Math.round(r.l15)} · Proj <b>${Math.round(r.proj)}</b>`)),
     col('💎 Value', value, (r) => item(r, `Proj <b>${Math.round(r.proj)}</b> · ${font(COLOUR.fit, `<b>${(r.proj / starsOf(r.tier)).toFixed(1)}</b>/★`)}`)),
   ] } }] };
@@ -436,9 +436,9 @@ function aiPickSection(views) {
     if (!v.aiPick?.ok) { widgets.push({ textParagraph: { text: 'Not enough cards with games still to come for a five right now - check back after tonight\'s games.' } }); continue; }
     const proj = v.aiPick.chosen.reduce((n, c) => n + c.expected, 0);
     const chance = v.passChance(proj);
-    // Owner, 2 Nov 2026: only ever suggest a team with a 70%+ chance to pass.
-    if (chance < 70) {
-      widgets.push({ textParagraph: { text: `No team at 70%+ yet · Best ${font(COLOUR.GTD, `<b>${chance}%</b>`)}` } });
+    // Owner, 2 Nov 2026: only suggest a team with a 60%+ chance to pass.
+    if (chance < 60) {
+      widgets.push({ textParagraph: { text: `No team at 60%+ yet · Best ${font(COLOUR.GTD, `<b>${chance}%</b>`)}` } });
       continue;
     }
     const c = chance >= 50 ? COLOUR.fit : chance >= 25 ? COLOUR.GTD : COLOUR.OUT;
