@@ -433,17 +433,20 @@ function worthSection(views) {
     for (const x of two) if (t.endsWith(x)) return x;
     return t.split(' ').pop();
   };
-  const game = (r) => `${shortTime(r.next)}${r.opp ? ` ${r.home ? 'vs' : '@'} ${nick(r.opp)}` : ''}`;
+  // The owner's format: "Projected 21 - 12:30pm @ Grizzlies".
+  const fullTime = (iso) => (iso ? new Date(iso).toLocaleTimeString('en-AU', { hour: 'numeric', minute: '2-digit', timeZone: SYD }).replace(/\s/g, '').toLowerCase().replace(':00', '') : '?');
+  const game = (r) => `${fullTime(r.next)}${r.opp ? ` ${r.home ? 'vs' : '@'} ${nick(r.opp)}` : ''}`;
   const item = (r, text) => ({ decoratedText: {
     // One line, same font, kept short enough to fit.
-    topLabel: `${r.name}${r.team ? ` / ${nick(r.team)}` : ''} · ${STAR(r.tier)}`, text: `${text} · ${game(r)}`, wrapText: true } });
+    topLabel: `${r.name}${r.team ? ` / ${nick(r.team)}` : ''} · ${STAR(r.tier)}`, text: `${text} - ${game(r)}`, wrapText: true } });
   // Heading and its list in ONE column, both left-aligned: Chat always draws
   // these rows from the left, so a centred heading never lines up with them.
   const col = (title, list, fmt) => ({ horizontalSizeStyle: 'FILL_AVAILABLE_SPACE', horizontalAlignment: 'START', verticalAlignment: 'TOP',
     widgets: [{ textParagraph: { text: `<b>${title}</b>` } }, ...(list.length ? list.map(fmt) : [{ textParagraph: { text: 'None today' } }])] });
   return { widgets: [{ columns: { columnItems: [
-    col('🔥 Hot', hot, (r) => item(r, `${font(COLOUR.hot, `<b>${Math.round(r.l5)}</b>`)} (${Math.round(r.l15)}) · Proj <b>${Math.round(r.proj)}</b>`)),
-    col('💎 Value', value, (r) => item(r, `Proj <b>${Math.round(r.proj)}</b> · ${font(COLOUR.fit, `<b>${(r.proj / starsOf(r.tier)).toFixed(1)}</b>/★`)}`)),
+    // Just what he might score (owner): the projection and the game.
+    col('🔥 Hot', hot, (r) => item(r, `Projected ${font(COLOUR.hot, `<b>${Math.round(r.proj)}</b>`)}`)),
+    col('💎 Value', value, (r) => item(r, `Projected ${font(COLOUR.fit, `<b>${Math.round(r.proj)}</b>`)}`)),
   ] } }] };
 }
 
