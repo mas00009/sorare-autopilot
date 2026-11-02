@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T18:55:18.843Z",
+  "generatedAt": "2026-11-02T19:02:24.870Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-11-02T19:45:00Z",
     "cadenceMin": 5,
-    "lastRunAt": 1793645656746,
-    "reason": "last run 1m ago, next due in 4m (lock in 50m)"
+    "lastRunAt": 1793646077558,
+    "reason": "last run 1m ago, next due in 4m (lock in 43m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -30,7 +30,7 @@
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:202f0490-8644-477e-8376-892923bb82b6",
       "state": "READY",
-      "score": 202.1,
+      "score": 254.6,
       "finished": false,
       "cleared": false,
       "players": [
@@ -57,8 +57,8 @@
           "slug": "mario-soriano-carreno",
           "position": "Midfielder",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 52.5,
+          "status": "REVIEWING",
           "kickoff": "2026-11-02T20:00:00Z"
         },
         {
@@ -80,7 +80,7 @@
           "kickoff": "2026-11-08T14:00:00Z"
         }
       ],
-      "scored": 4
+      "scored": 5
     },
     {
       "surface": "team set (Loadshift)",
@@ -89,10 +89,10 @@
       "stepState": "LINEUP_SET",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 194.25,
+      "squadScore": 547.75,
       "lineupId": "Tasks::TaskLineup:b195cfc4-e42a-4880-84ac-11af55bc74e3",
       "state": "READY",
-      "score": 35,
+      "score": 157.5,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,8 +101,8 @@
           "slug": "leonardo-roman-riquelme",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 35,
+          "status": "REVIEWING",
           "kickoff": "2026-11-02T20:00:00Z"
         },
         {
@@ -110,8 +110,8 @@
           "slug": "giacomo-quagliata",
           "position": "Defender",
           "captain": true,
-          "score": 0,
-          "status": "PENDING",
+          "score": 52.5,
+          "status": "REVIEWING",
           "kickoff": "2026-11-02T20:00:00Z"
         },
         {
@@ -137,12 +137,12 @@
           "slug": "fabian-lukas-schar",
           "position": "Defender",
           "captain": false,
-          "score": 0,
-          "status": "PENDING",
+          "score": 35,
+          "status": "REVIEWING",
           "kickoff": "2026-11-02T20:00:00Z"
         }
       ],
-      "scored": 1
+      "scored": 4
     }
   ],
   "gems": {
@@ -208,7 +208,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 202 scored so far, 4 of 5 played. On course for about 289; needs 260 (29 over).",
+      "status": "Locked and playing. 281 scored so far, 5 of 5 played. On course for about 281; needs 260 (21 over).",
       "tone": "good",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": false,
@@ -273,8 +273,8 @@
             "kickoff": "2026-10-31T17:30:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 52.5,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Mario Soriano",
             "player": "Mario Soriano",
@@ -361,9 +361,9 @@
           }
         ],
         "projected": 220.17,
-        "scoredSoFar": 202.11,
-        "played": 4,
-        "expectedFinal": 289.02
+        "scoredSoFar": 280.86,
+        "played": 5,
+        "expectedFinal": 280.86
       },
       "poolStrength": {
         "strong": 1,
@@ -870,15 +870,15 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 35 scored so far, 1 of 5 played. The squad's top three lineups together need 700; the squad has 194 so far.",
+      "status": "Locked and playing. 184 scored so far, 4 of 5 played. The squad's top three lineups together need 700; the squad has 548 so far.",
       "tone": "good",
       "lockAt": "2026-11-02T19:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 35,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Leo Román",
             "player": "Leo Román",
@@ -906,8 +906,8 @@
             "kickoff": "2026-11-02T20:00:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 52.5,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Giacomo Quagliata",
             "player": "Giacomo Quagliata",
@@ -993,8 +993,8 @@
             "kickoff": "2026-11-02T19:45:00Z"
           },
           {
-            "actual": null,
-            "scoreStatus": "PENDING",
+            "actual": 35,
+            "scoreStatus": "REVIEWING",
             "teamSlug": "newcastle-united-newcastle-upon-tyne",
             "name": "Fabian Schar",
             "player": "Fabian Schar",
@@ -1023,9 +1023,9 @@
           }
         ],
         "projected": 99.66,
-        "scoredSoFar": 35,
-        "played": 1,
-        "expectedFinal": 145.55
+        "scoredSoFar": 183.75,
+        "played": 4,
+        "expectedFinal": 194.11
       },
       "poolStrength": {
         "strong": 0,
@@ -1035,7 +1035,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 194.25
+        "scoreSoFar": 547.75
       },
       "level": 0,
       "lives": null,
@@ -1123,7 +1123,7 @@
           "starterPct": null,
           "startRate": 0.9,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 64,
           "picture": "https://assets.sorare.com/cardsamplepicture/72c85777-2115-4366-992c-425f58ea6f39/picture/tinified-9b53b12903f24486bb9aeaa82ffefb7b.png",
@@ -1163,7 +1163,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 44,
           "picture": "https://assets.sorare.com/cardsamplepicture/fc6925be-70ce-4000-be09-2e27dad76c90/picture/tinified-dc6b72c2a36e0440483e34c44f7f5f63.png",
