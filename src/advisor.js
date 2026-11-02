@@ -152,7 +152,14 @@ async function boardView(b) {
   // and locked, the pick is a second team from the cards not in it ("Add
   // team now" in the app); otherwise it is the best five overall.
   const inUse = new Set(apps.map((a) => a.anyPlayer?.slug));
-  const aiPool = (v_locked => v_locked ? bench.filter((n) => !inUse.has(n.player?.slug)) : pool)(!!live && live.updatable === false).map(withProj);
+  // Only a team that can still be entered: every player's game must start
+  // at least 20 minutes from now, because a lineup locks at its first tip-off.
+  const startsLater = (n) => {
+    const t = n.player?.anyFutureGameStats?.[0]?.anyGame?.date;
+    return !!t && Date.parse(t) > Date.now() + 20 * 60e3 && !(n.lockedAt && Date.parse(n.lockedAt) <= Date.now());
+  };
+  const aiPool = (v_locked => v_locked ? bench.filter((n) => !inUse.has(n.player?.slug)) : pool)(!!live && live.updatable === false)
+    .filter(startsLater).map(withProj);
   const aiPick = pickLineup(aiPool, opts);
   const SD = 25;
   const passChance = (proj) => { const z = (proj - step.target) / SD; return Math.round(100 * (0.5 * (1 + Math.tanh(0.7978845608 * (z + 0.044715 * z ** 3))))); };
@@ -368,23 +375,18 @@ const footer = (nextAt) => ({ widgets: [{ textParagraph: { text: font(COLOUR.loc
 
 function aiPickSection(views) {
   const widgets = [];
-  for (const v of views) {
-    const squad = v.b.surface.startsWith('team');
-    if (squad && v.live) {
-      const sq = v.squad;
-      const where = sq ? (sq.mineInTop3 ? `Yours is <b>#${sq.myRank}</b> of ${sq.count} - in the top three that counts.` : `Yours is #${sq.myRank} of ${sq.count} - outside the top three, so it adds nothing unless it climbs.`) : '';
-      widgets.push({ textParagraph: { text: `<b>Team set:</b> your squad lineup is in (one per member). ${where}` } });
-      continue;
-    }
-    if (!v.aiPick?.ok) { widgets.push({ textParagraph: { text: `<b>${boardName(v)}:</b> not enough playable cards for a five right now.` } }); continue; }
+  // Solo only (owner, 2 Nov 2026): no squad suggestions.
+  for (const v of views.filter((x) => !x.b.surface.startsWith('team'))) {
+    if (!v.aiPick?.ok) { widgets.push({ textParagraph: { text: 'Not enough cards with games still to come for a five right now - check back after tonight\'s games.' } }); continue; }
     const proj = v.aiPick.chosen.reduce((n, c) => n + c.expected, 0);
     const chance = v.passChance(proj);
     const c = chance >= 50 ? COLOUR.fit : chance >= 25 ? COLOUR.GTD : COLOUR.OUT;
+    const lockAt = v.aiPick.chosen.map((x) => x.kickoff).filter(Boolean).sort()[0];
     widgets.push({ decoratedText: {
-      topLabel: `${boardName(v)} · ${v.aiSecond ? 'a second team for "Add team now"' : 'best five to pass'} · needs ${v.step.target}`,
+      topLabel: `${v.aiSecond ? 'A second team for "Add team now"' : 'Best five to pass'} · needs ${v.step.target} · enter before ${when(lockAt)}`,
       text: `proj <b>${Math.round(proj)}</b> · ${font(c, `<b>${chance}% chance to pass</b>`)} · ${v.aiPick.chosen.reduce((n, x) => n + starsOf(x.tier), 0)}★ of ${v.cap}`,
       wrapText: true } });
-    widgets.push(cardGrid(v.aiPick.chosen.map((x) => ({ name: x.player.split(' ').pop(), pic: v.picOf.get(x.slug), caption: `${Math.round(x.expected)} · ${STAR(x.tier)}` }))));
+    widgets.push(cardGrid(v.aiPick.chosen.map((x) => ({ name: x.player.split(' ').pop(), pic: v.picOf.get(x.slug), caption: `~${Math.round(x.expected)} · ${STAR(x.tier)} · ${when(x.kickoff).replace(/^\w+ /, '')}` }))));
   }
   return { header: '5 · AI pick  (most likely to pass)', widgets };
 }
