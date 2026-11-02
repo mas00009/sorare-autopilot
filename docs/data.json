@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-02T07:33:57.748Z",
+  "generatedAt": "2026-11-02T08:06:28.206Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 556,
+    "essence": 306,
     "gems": 10
   },
   "schedule": {
     "nextLock": "2026-11-02T19:45:00Z",
-    "cadenceMin": 180,
-    "lastRunAt": 1793602892403,
-    "reason": "last run 32m ago, next due in 148m (lock in 731m)"
+    "cadenceMin": 60,
+    "lastRunAt": 1793606719548,
+    "reason": "last run 1m ago, next due in 59m (lock in 699m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -81,6 +81,68 @@
         }
       ],
       "scored": 4
+    },
+    {
+      "surface": "team set (Loadshift)",
+      "level": 0,
+      "target": 700,
+      "stepState": "LINEUP_SET",
+      "collaborative": true,
+      "squadLineups": 1,
+      "squadScore": 0,
+      "lineupId": "Tasks::TaskLineup:b195cfc4-e42a-4880-84ac-11af55bc74e3",
+      "state": "READY",
+      "score": 0,
+      "finished": false,
+      "cleared": false,
+      "players": [
+        {
+          "name": "Leo Román",
+          "slug": "leonardo-roman-riquelme",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-11-02T20:00:00Z"
+        },
+        {
+          "name": "Giacomo Quagliata",
+          "slug": "giacomo-quagliata",
+          "position": "Defender",
+          "captain": true,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-11-02T20:00:00Z"
+        },
+        {
+          "name": "Mamady Diambou",
+          "slug": "mamady-diambou",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-11-02T19:45:00Z"
+        },
+        {
+          "name": "Souleymane Faye",
+          "slug": "souleymane-faye",
+          "position": "Forward",
+          "captain": false,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-11-02T19:45:00Z"
+        },
+        {
+          "name": "Fabian Schar",
+          "slug": "fabian-lukas-schar",
+          "position": "Defender",
+          "captain": false,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-11-02T20:00:00Z"
+        }
+      ],
+      "scored": 0
     }
   ],
   "gems": {
@@ -808,18 +870,170 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "No eligible cards for this step yet.",
-      "tone": "neutral",
-      "lockAt": null,
+      "status": "Team entered, locks Tue 06:45 am Sydney. The squad's top three lineups together need 700; this one is expected to add about 100.",
+      "tone": "good",
+      "lockAt": "2026-11-02T19:45:00Z",
       "isSquad": true,
-      "entered": null,
+      "entered": {
+        "five": [
+          {
+            "actual": null,
+            "scoreStatus": "PENDING",
+            "teamSlug": "deportivo-la-coruna-a-coruna",
+            "name": "Leo Román",
+            "player": "Leo Román",
+            "slug": "leonardo-roman-riquelme",
+            "pos": "GK",
+            "position": "GK",
+            "pic": "https://assets.sorare.com/cardsamplepicture/dfad1250-ba2e-4070-a73b-2e724ca30903/picture/tinified-53dcb0122c20d78aae75d530a5acbe6b.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/dfad1250-ba2e-4070-a73b-2e724ca30903/picture/tinified-53dcb0122c20d78aae75d530a5acbe6b.png",
+            "captain": false,
+            "exp": 38.25,
+            "expected": 38.25,
+            "opp": "CA Osasuna",
+            "opponent": "CA Osasuna",
+            "home": true,
+            "average": 39,
+            "formL5": 35,
+            "intl": false,
+            "pWin": 0.44,
+            "pLose": 0.269,
+            "marketFactor": 1.034,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "locked": false,
+            "kickoff": "2026-11-02T20:00:00Z"
+          },
+          {
+            "actual": null,
+            "scoreStatus": "PENDING",
+            "teamSlug": "deportivo-la-coruna-a-coruna",
+            "name": "Giacomo Quagliata",
+            "player": "Giacomo Quagliata",
+            "slug": "giacomo-quagliata",
+            "pos": "DF",
+            "position": "DF",
+            "pic": "https://assets.sorare.com/cardsamplepicture/cf666b51-7342-4d27-aaf2-2adfcbed24cb/picture/tinified-ec153cab552d83e1ee24530dd20836aa.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/cf666b51-7342-4d27-aaf2-2adfcbed24cb/picture/tinified-ec153cab552d83e1ee24530dd20836aa.png",
+            "captain": true,
+            "exp": 36.25,
+            "expected": 36.25,
+            "opp": "CA Osasuna",
+            "opponent": "CA Osasuna",
+            "home": true,
+            "average": 39,
+            "formL5": 37,
+            "intl": false,
+            "pWin": 0.44,
+            "pLose": 0.269,
+            "marketFactor": 1.02,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "locked": false,
+            "kickoff": "2026-11-02T20:00:00Z"
+          },
+          {
+            "actual": null,
+            "scoreStatus": "PENDING",
+            "teamSlug": "brest-brest",
+            "name": "Mamady Diambou",
+            "player": "Mamady Diambou",
+            "slug": "mamady-diambou",
+            "pos": "MD",
+            "position": "MD",
+            "pic": "https://assets.sorare.com/cardsamplepicture/626a1384-de48-4725-ae5a-04a83b5bb256/picture/tinified-8851b7a8ba9c6229bfa93666132d67c1.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/626a1384-de48-4725-ae5a-04a83b5bb256/picture/tinified-8851b7a8ba9c6229bfa93666132d67c1.png",
+            "captain": false,
+            "exp": 10.36,
+            "expected": 10.36,
+            "opp": "FC Lorient",
+            "opponent": "FC Lorient",
+            "home": false,
+            "average": 47,
+            "formL5": 36,
+            "intl": false,
+            "pWin": 0.32,
+            "pLose": 0.388,
+            "marketFactor": 0.99,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "locked": false,
+            "kickoff": "2026-11-02T19:45:00Z"
+          },
+          {
+            "actual": null,
+            "scoreStatus": "PENDING",
+            "teamSlug": "lorient-ploemeur",
+            "name": "Souleymane Faye",
+            "player": "Souleymane Faye",
+            "slug": "souleymane-faye",
+            "pos": "FW",
+            "position": "FW",
+            "pic": "https://assets.sorare.com/cardsamplepicture/ab1f8865-99e6-4bd5-a54f-412867cb277c/picture/tinified-2f0253a4d661285547689e9540ca9005.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/ab1f8865-99e6-4bd5-a54f-412867cb277c/picture/tinified-2f0253a4d661285547689e9540ca9005.png",
+            "captain": false,
+            "exp": 9.52,
+            "expected": 9.52,
+            "opp": "Stade Brestois 29",
+            "opponent": "Stade Brestois 29",
+            "home": true,
+            "average": 39,
+            "formL5": 40,
+            "intl": false,
+            "pWin": 0.388,
+            "pLose": 0.32,
+            "marketFactor": 1.004,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "locked": false,
+            "kickoff": "2026-11-02T19:45:00Z"
+          },
+          {
+            "actual": null,
+            "scoreStatus": "PENDING",
+            "teamSlug": "newcastle-united-newcastle-upon-tyne",
+            "name": "Fabian Schar",
+            "player": "Fabian Schar",
+            "slug": "fabian-lukas-schar",
+            "pos": "DF",
+            "position": "DF",
+            "pic": "https://assets.sorare.com/cardsamplepicture/da2a2b83-0d88-4328-8de4-33b5bb016ca2/picture/tinified-baebf1ac3e8221cdfa5f7f342b6d3136.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/da2a2b83-0d88-4328-8de4-33b5bb016ca2/picture/tinified-baebf1ac3e8221cdfa5f7f342b6d3136.png",
+            "captain": false,
+            "exp": 7.56,
+            "expected": 7.56,
+            "opp": "Everton FC",
+            "opponent": "Everton FC",
+            "home": true,
+            "average": 41,
+            "formL5": 47,
+            "intl": false,
+            "pWin": 0.417,
+            "pLose": 0.314,
+            "marketFactor": 1.011,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "locked": false,
+            "kickoff": "2026-11-02T20:00:00Z"
+          }
+        ],
+        "projected": 99.66,
+        "scoredSoFar": 0,
+        "played": 0,
+        "expectedFinal": 120.06
+      },
       "poolStrength": {
         "strong": 0,
         "needed": 5
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 0,
+        "lineupsIn": 1,
         "needed": 3,
         "scoreSoFar": 0
       },
@@ -830,7 +1044,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "PLAYABLE",
+          "state": "LINEUP_SET",
           "target": 700
         },
         {
@@ -862,9 +1076,40 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "PLAYABLE",
+      "state": "LINEUP_SET",
       "target": 700,
-      "current": [],
+      "current": [
+        {
+          "name": "Leo Román",
+          "captain": false,
+          "locked": false,
+          "nextGame": "2026-11-02T20:00:00Z"
+        },
+        {
+          "name": "Giacomo Quagliata",
+          "captain": true,
+          "locked": false,
+          "nextGame": "2026-11-02T20:00:00Z"
+        },
+        {
+          "name": "Mamady Diambou",
+          "captain": false,
+          "locked": false,
+          "nextGame": "2026-11-02T19:45:00Z"
+        },
+        {
+          "name": "Souleymane Faye",
+          "captain": false,
+          "locked": false,
+          "nextGame": "2026-11-02T19:45:00Z"
+        },
+        {
+          "name": "Fabian Schar",
+          "captain": false,
+          "locked": false,
+          "nextGame": "2026-11-02T20:00:00Z"
+        }
+      ],
       "plan": null,
       "candidates": [
         {
@@ -946,89 +1191,9 @@
           "lockedAt": null,
           "expected": 39.19,
           "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:c56fe736-a128-41b8-ae55-9c1407a5112f",
-          "player": "Leo Román",
-          "slug": "leonardo-roman-riquelme",
-          "tier": "ROSTER",
-          "position": "GK",
-          "average": 39,
-          "bonus": 1,
-          "starterPct": null,
-          "startRate": 1,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 35,
-          "picture": "https://assets.sorare.com/cardsamplepicture/dfad1250-ba2e-4070-a73b-2e724ca30903/picture/tinified-53dcb0122c20d78aae75d530a5acbe6b.png",
-          "rarity": "common",
-          "gameId": "Game:0610d24e-2b42-42b9-b907-b9ae2e3b96fc",
-          "kickoff": "2026-11-02T20:00:00Z",
-          "team": "Real Club Deportivo de La Coruña",
-          "teamSlug": "deportivo-la-coruna-a-coruna",
-          "opponent": "CA Osasuna",
-          "opponentCode": "OSA",
-          "code": "DEP",
-          "rank": 13,
-          "opponentRank": 15,
-          "home": true,
-          "competition": "Primera División",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.44,
-          "pLose": 0.269,
-          "oddsBooks": 20,
-          "marketFactor": 1.034,
-          "lockedAt": null,
-          "expected": 38.25,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:acb89189-a480-45f1-9718-96c113b5bee9",
-          "player": "Giacomo Quagliata",
-          "slug": "giacomo-quagliata",
-          "tier": "ROSTER",
-          "position": "DF",
-          "average": 39,
-          "bonus": 1,
-          "starterPct": null,
-          "startRate": 0.9,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 37,
-          "picture": "https://assets.sorare.com/cardsamplepicture/cf666b51-7342-4d27-aaf2-2adfcbed24cb/picture/tinified-ec153cab552d83e1ee24530dd20836aa.png",
-          "rarity": "common",
-          "gameId": "Game:0610d24e-2b42-42b9-b907-b9ae2e3b96fc",
-          "kickoff": "2026-11-02T20:00:00Z",
-          "team": "Real Club Deportivo de La Coruña",
-          "teamSlug": "deportivo-la-coruna-a-coruna",
-          "opponent": "CA Osasuna",
-          "opponentCode": "OSA",
-          "code": "DEP",
-          "rank": 13,
-          "opponentRank": 15,
-          "home": true,
-          "competition": "Primera División",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.44,
-          "pLose": 0.269,
-          "oddsBooks": 20,
-          "marketFactor": 1.02,
-          "lockedAt": null,
-          "expected": 36.25,
-          "blocked": null
         }
       ],
-      "projected": 171.6
+      "projected": 97.1
     }
   ],
   "fixtures": [
@@ -1050,11 +1215,9 @@
       "home": true,
       "players": [
         "Mario Soriano",
-        "Luismi Cruz",
-        "Leo Román",
-        "Giacomo Quagliata"
+        "Luismi Cruz"
       ],
-      "points": 171.6,
+      "points": 97.1,
       "bestStarter": null,
       "surfaces": [
         "team set (Loadshift)"
