@@ -145,7 +145,15 @@ async function boardView(b) {
     const p = P.get(n.player?.slug) ?? {};
     return { slug: n.player?.slug, name: n.player?.displayName, tier: n.player?.gameplayTier, proj: p.proj, injury: p.injury,
       l5: n.formL5, l15: n.averageScore, next: n.player?.anyFutureGameStats?.[0]?.anyGame?.date ?? null,
-      news: p.news, pic: n.pictureUrl ?? null, team: n.player?.anyFutureGameStats?.[0]?.anyTeam?.name ?? null };
+      news: p.news, pic: n.pictureUrl ?? null, team: n.player?.anyFutureGameStats?.[0]?.anyTeam?.name ?? null,
+      ...(() => {
+        const g = n.player?.anyFutureGameStats?.[0];
+        const mine = g?.anyTeam?.slug;
+        const home = g?.anyGame?.homeTeam, away = g?.anyGame?.awayTeam;
+        if (!home || !away) return {};
+        const isHome = home.slug === mine;
+        return { opp: (isHome ? away : home).name ?? null, home: isHome };
+      })() };
   });
   const picOf = new Map([...mine, ...bench].map((n) => [n.player?.slug, n.pictureUrl]));
   // AI pick: the five most likely to PASS this level. With ~9 points of
@@ -425,13 +433,14 @@ function worthSection(views) {
     for (const x of two) if (t.endsWith(x)) return x;
     return t.split(' ').pop();
   };
+  const game = (r) => `${shortTime(r.next)}${r.opp ? ` ${r.home ? 'vs' : '@'} ${nick(r.opp)}` : ''}`;
   const item = (r, text) => ({ decoratedText: {
-    topLabel: `${r.name}${r.team ? ` / ${nick(r.team)}` : ''} · ${STAR(r.tier)}`, text: `${text} · ${shortTime(r.next)}`, wrapText: false } });
+    topLabel: `${r.name}${r.team ? ` / ${nick(r.team)}` : ''} · ${STAR(r.tier)}`, text: `${text} · ${game(r)}`, wrapText: true } });
   // Heading and its list in ONE column, both centred, so they line up.
   const col = (title, list, fmt) => ({ horizontalSizeStyle: 'FILL_AVAILABLE_SPACE', horizontalAlignment: 'CENTER', verticalAlignment: 'TOP',
     widgets: [{ textParagraph: { text: `<b>${title}</b>` } }, ...(list.length ? list.map(fmt) : [{ textParagraph: { text: 'None today' } }])] });
   return { widgets: [{ columns: { columnItems: [
-    col('🔥 Hot', hot, (r) => item(r, `${font(COLOUR.hot, `<b>${Math.round(r.l5)}</b>`)} vs ${Math.round(r.l15)} · Proj <b>${Math.round(r.proj)}</b>`)),
+    col('🔥 Hot', hot, (r) => item(r, `${font(COLOUR.hot, `<b>${Math.round(r.l5)}</b>`)} (${Math.round(r.l15)} usual) · Proj <b>${Math.round(r.proj)}</b>`)),
     col('💎 Value', value, (r) => item(r, `Proj <b>${Math.round(r.proj)}</b> · ${font(COLOUR.fit, `<b>${(r.proj / starsOf(r.tier)).toFixed(1)}</b>/★`)}`)),
   ] } }] };
 }
