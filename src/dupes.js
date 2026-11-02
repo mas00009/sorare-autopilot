@@ -18,18 +18,19 @@
  * one copy keeps every collection's progress (checked on the first drop).
  */
 import { gql } from './client.js';
+import { SPORT } from './sport.js';
 
-const PROTECTED_TIERS = new Set(['STAR', 'GOAT']);   // 4-star, 5-star
+const PROTECTED_TIERS = new Set(['STAR', 'STAR_PLUS', 'GOAT']);   // 4-star and up (NBA has half-star tiers)
 const BATCH = 20;
 
-const Q_CARDS = `query Cards($after: String) { currentUser { cards(sport: FOOTBALL, first: 100, after: $after) {
+const Q_CARDS = `query Cards($after: String, $sport: Sport) { currentUser { cards(sport: $sport, first: 100, after: $after) {
   pageInfo { hasNextPage endCursor }
   nodes { slug rarityTyped seasonYear cardEditionName xp sealed anyPositions
-    anyPlayer { slug displayName ... on Player { gameplayTier averageScore(type: LAST_FIFTEEN_SO5_AVERAGE_SCORE) } }
+    anyPlayer { slug displayName ... on Player { gameplayTier averageScore(type: LAST_FIFTEEN_SO5_AVERAGE_SCORE) } ... on NBAPlayer { gameplayTier } }
     activeTaskAppearances { __typename }
   } } } }`;
 
-const Q_PRICES = `query Prices($slugs: [String!]) { currentUser { cards(sport: FOOTBALL, first: 100, slugs: $slugs) {
+const Q_PRICES = `query Prices($slugs: [String!], $sport: Sport) { currentUser { cards(sport: $sport, first: 100, slugs: $slugs) {
   nodes { slug signedDropCardPrice { price signedPrice } } } } }`;
 
 const M_DROP = `mutation Drop($input: dropAndAddCardsInput!) {
@@ -39,7 +40,7 @@ async function allCards() {
   const out = [];
   let after = null;
   do {
-    const d = await gql(Q_CARDS, { after });
+    const d = await gql(Q_CARDS, { after, sport: SPORT });
     const c = d.currentUser.cards;
     out.push(...c.nodes);
     after = c.pageInfo.hasNextPage ? c.pageInfo.endCursor : null;
@@ -53,7 +54,7 @@ export function keepCount(card) {
   const avg = p.averageScore ?? 0;
   const keeper = /^goalkeeper$/i.test(card.anyPositions?.[0] ?? '');
   if (keeper && avg >= 40) return 2;
-  if (p.gameplayTier === 'IMPACT' || avg >= 55) return 2;
+  if (p.gameplayTier === 'IMPACT' || p.gameplayTier === 'IMPACT_PLUS' || avg >= 55) return 2;
   return 1;
 }
 
@@ -86,7 +87,7 @@ export async function dropDuplicates({ dryRun = false } = {}) {
   for (let i = 0; i < drop.length; i += BATCH) {
     const slugs = drop.slice(i, i + BATCH).map((c) => c.slug);
     // Prices are signed and expire, so fetch them right before each batch.
-    const p = await gql(Q_PRICES, { slugs });
+    const p = await gql(Q_PRICES, { slugs, sport: SPORT });
     const priced = (p.currentUser.cards.nodes ?? []).filter((n) => n.signedDropCardPrice?.signedPrice);
     if (dryRun) { out.essence += priced.reduce((s, n) => s + n.signedDropCardPrice.price, 0); continue; }
     const r = await gql(M_DROP, { input: { droppedCards: priced.map((n) => ({ cardSlug: n.slug, signedPrice: n.signedDropCardPrice.signedPrice })) } },

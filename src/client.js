@@ -16,6 +16,13 @@ const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 // never shares a token or a single setting with the main one.
 const ACCOUNT = (process.env.SORARE_ACCOUNT ?? '').replace(/[^a-z0-9_-]/gi, '');
 const STATE = path.join(ROOT, 'state', ACCOUNT ? `tokens-${ACCOUNT}.json` : 'tokens.json');
+// The NBA side keeps its own schedule, snapshots and pack cycle in its own
+// file, and shares only the login with football. Without this the two sports
+// would overwrite each other's lineup memory and clock every pass.
+const SPORT_STATE = String(process.env.SORARE_SPORT ?? '').toUpperCase() === 'NBA'
+  ? path.join(ROOT, 'state', ACCOUNT ? `state-nba-${ACCOUNT}.json` : 'state-nba.json')
+  : null;
+const AUTH_KEYS = new Set(['jwt', 'jwtAud', 'jwtExpiresAt', 'accessToken', 'refreshToken', 'expiresAt', 'nickname']);
 
 const GQL_URL = 'https://api.sorare.com/graphql';
 const TOKEN_URL = 'https://api.sorare.com/oauth/token';
@@ -31,19 +38,34 @@ async function pace() {
   lastCall = Date.now();
 }
 
+async function readFileJson(file) {
+  try { return JSON.parse(await fs.readFile(file, 'utf8')); } catch { return {}; }
+}
+
 async function readState() {
-  try {
-    return JSON.parse(await fs.readFile(STATE, 'utf8'));
-  } catch {
-    return {};
-  }
+  const base = await readFileJson(STATE);
+  if (!SPORT_STATE) return base;
+  const own = await readFileJson(SPORT_STATE);
+  const auth = Object.fromEntries(Object.entries(base).filter(([k]) => AUTH_KEYS.has(k)));
+  return { ...own, ...auth };
+}
+
+async function writeJson(file, obj) {
+  await fs.mkdir(path.dirname(file), { recursive: true });
+  await fs.writeFile(file, JSON.stringify(obj, null, 2), { mode: 0o600 });
 }
 
 async function writeState(patch) {
-  const next = { ...(await readState()), ...patch };
-  await fs.mkdir(path.dirname(STATE), { recursive: true });
-  await fs.writeFile(STATE, JSON.stringify(next, null, 2), { mode: 0o600 });
-  return next;
+  if (!SPORT_STATE) {
+    const next = { ...(await readFileJson(STATE)), ...patch };
+    await writeJson(STATE, next);
+    return next;
+  }
+  const authPatch = Object.fromEntries(Object.entries(patch).filter(([k]) => AUTH_KEYS.has(k)));
+  const ownPatch = Object.fromEntries(Object.entries(patch).filter(([k]) => !AUTH_KEYS.has(k)));
+  if (Object.keys(authPatch).length) await writeJson(STATE, { ...(await readFileJson(STATE)), ...authPatch });
+  if (Object.keys(ownPatch).length) await writeJson(SPORT_STATE, { ...(await readFileJson(SPORT_STATE)), ...ownPatch });
+  return readState();
 }
 
 export async function getAccessToken({ force = false } = {}) {

@@ -36,11 +36,11 @@ async function dailyCycleId() {
   return d.currentUser?.dailyRunTask?.id ?? null;
 }
 
-const SPORT = 'FOOTBALL';
+import { SPORT } from './sport.js';
 
 /** GameplayTier values that count as "3-star or better". */
-export const GOOD_TIERS = new Set(['IMPACT', 'STAR', 'GOAT']);
-export const TIER_STARS = { DNP: 0, ROSTER: 2, IMPACT: 3, STAR: 4, GOAT: 5 };
+export const GOOD_TIERS = new Set(['IMPACT', 'IMPACT_PLUS', 'STAR', 'STAR_PLUS', 'GOAT']);
+export const TIER_STARS = { DNP: 0, DNP_PLUS: 1, ROSTER: 2, ROSTER_PLUS: 2, IMPACT: 3, IMPACT_PLUS: 3, STAR: 4, STAR_PLUS: 4, GOAT: 5 };
 
 export const PACK_DEFAULTS = {
   /** Never spend essence below this. Set by the account owner. */

@@ -18,7 +18,7 @@
 import { gql } from './client.js';
 import { TIER_STARS } from './essence.js';
 
-const SPORT = 'FOOTBALL';
+import { SPORT } from './sport.js';
 
 /** `currentUser.task(id:)` wants the bare uuid, not the prefixed global id. */
 const bare = (id) => String(id).replace(/^Tasks::Task:/, '');

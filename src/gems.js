@@ -22,7 +22,7 @@
  */
 import { gql } from './client.js';
 
-const SPORT = 'FOOTBALL';
+import { SPORT } from './sport.js';
 
 const Q_ROUTES = `
   query GemRoutes($sport: Sport!) {

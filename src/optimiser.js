@@ -94,7 +94,24 @@ export const DEFAULTS = {
   odds: ODDS_DEFAULTS,
 };
 
-const POS = { Goalkeeper: 'GK', Defender: 'DF', Midfielder: 'MD', Forward: 'FW' };
+const POS = { Goalkeeper: 'GK', Defender: 'DF', Midfielder: 'MD', Forward: 'FW',
+  basketball_guard: 'G', basketball_forward: 'F', basketball_center: 'C' };
+
+/**
+ * Star value of a gameplay tier, for the NBA "sum of stars" cap. NBA adds
+ * half-star tiers. Checked against the owner's own valid NBA lineup of
+ * 2 Nov 2026: STAR_PLUS + 3x IMPACT + ROSTER_PLUS = 16, accepted under a
+ * cap of 16, so the cap is inclusive.
+ */
+export const STARS = { DNP: 1, DNP_PLUS: 1.5, ROSTER: 2, ROSTER_PLUS: 2.5, IMPACT: 3, IMPACT_PLUS: 3.5, STAR: 4, STAR_PLUS: 4.5, GOAT: 5 };
+export const starsOf = (tier) => STARS[tier] ?? 2;
+
+/** The NBA Set rules: five open slots, no armband, a stars cap from the step. */
+export const NBA_OPTIONS = {
+  size: 5, require: null, flexPositions: null, captainBonus: 0,
+  oneSidePerMatch: false, maxPerGame: 3, stackMismatch: false,
+  opponent: false, odds: false, starsCap: 16,
+};
 
 export function normalisePosition(p) {
   if (!p) return null;
@@ -250,6 +267,7 @@ export function describe(node, opts = DEFAULTS) {
     id: node.id,
     player: node.player?.displayName ?? node.player?.slug,
     slug: node.player?.slug,
+    tier: node.player?.gameplayTier ?? null,
     position: normalisePosition(node.position),
     average: node.averageScore,
     bonus: node.bonus,
@@ -295,13 +313,15 @@ export function describe(node, opts = DEFAULTS) {
  * formation ever grows, swap in a proper assignment solver.
  */
 export function pickLineup(benchNodes, options = {}) {
-  const opts = { ...DEFAULTS, ...options, require: { ...DEFAULTS.require, ...(options.require ?? {}) } };
+  const opts = { ...DEFAULTS, ...options, require: options.require === null ? {} : { ...DEFAULTS.require, ...(options.require ?? {}) } };
 
   const all = benchNodes.map((n) => describe(n, opts));
   const rank = (c) => c.expected * (c.oddsKnown ? 1 : opts.unknownOddsTrust);
   const usable = all
     .filter((c) => !c.blocked && c.expected > 0)
     .sort((a, b) => rank(b) - rank(a));
+
+  if (opts.starsCap) return pickUnderStarsCap(all, usable, rank, opts);
 
   const chosen = [];
   const perGame = new Map();
@@ -427,8 +447,48 @@ export function toAppearances(picked) {
   return orderForSlots(picked.chosen).map((c, i) => ({
     index: i,
     composeTeamBenchObjectId: c.id,
-    captain: c.id === picked.captain.id,
+    captain: !!picked.captain && c.id === picked.captain.id,
   }));
+}
+
+/**
+ * NBA: the best `size` cards whose stars add up to no more than the cap.
+ * A plain greedy pick blows the cap with stars; this is a small knapsack in
+ * half-star units over the strongest 60 candidates, one card per player.
+ */
+function pickUnderStarsCap(all, usable, rank, opts) {
+  const cand = [];
+  const seen = new Set();
+  for (const c of usable) { if (seen.has(c.slug)) continue; seen.add(c.slug); cand.push(c); if (cand.length >= 60) break; }
+  const W = Math.round(opts.starsCap * 2);
+  const K = opts.size;
+  // best[k][w] = { v, picks } choosing k cards with total half-stars w
+  let best = Array.from({ length: K + 1 }, () => new Array(W + 1).fill(null));
+  best[0][0] = { v: 0, picks: [] };
+  for (const c of cand) {
+    const w = Math.round(starsOf(c.tier) * 2);
+    const next = best.map((row) => row.slice());
+    for (let k = 0; k < K; k++) {
+      for (let s = 0; s + w <= W; s++) {
+        const cur = best[k][s];
+        if (!cur) continue;
+        const v = cur.v + rank(c);
+        const tgt = next[k + 1][s + w];
+        if (!tgt || v > tgt.v) next[k + 1][s + w] = { v, picks: [...cur.picks, c] };
+      }
+    }
+    best = next;
+  }
+  const top = best[K].filter(Boolean).reduce((a, b) => (!a || b.v > a.v ? b : a), null);
+  if (!top) return { ok: false, reason: `No ${K} cards fit under the ${opts.starsCap}-star cap.`, chosen: [], pool: all };
+  const chosen = [...top.picks].sort((a, b) => b.expected - a.expected);
+  const projected = chosen.reduce((s, c) => s + c.expected, 0) * (opts.calibration ?? 1);
+  return {
+    ok: true, chosen, captain: null, captainPoints: 0,
+    projected: Number(projected.toFixed(2)),
+    stars: chosen.reduce((s, c) => s + starsOf(c.tier), 0),
+    excluded: all.filter((c) => c.blocked), pool: all,
+  };
 }
 
 /** What changed between the live lineup and a fresh pick. */

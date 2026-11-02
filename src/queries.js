@@ -49,6 +49,9 @@ export const Q_STEP = `
         # What the armband is worth on this step, from Sorare rather than a
         # constant of ours. It has read 0.5 on both boards so far.
         engineConfiguration { captain }
+        # The NBA stars cap ("sum of players' stars"), when the step has one.
+        ... on CareerStep { displayedTypedRules { __typename ... on So5AverageScoresRule { max averageType } } }
+        ... on SquadStep { displayedTypedRules { __typename ... on So5AverageScoresRule { max averageType } } }
         # A squad step is collaborative: it needs a minimum number of lineups
         # from the squad before it starts at all, and the target is the sum of
         # everyone's scores rather than one lineup's.
@@ -126,6 +129,7 @@ export const Q_BENCH = `
             player {
               slug
               displayName
+              gameplayTier
               activeInjuries { active kind status expectedEndDate }
               anyFutureGameStats(first: 1) {
                 onGameSheet

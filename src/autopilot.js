@@ -14,9 +14,9 @@ import { fixtureOdds } from './odds.js';
 import { humanTask } from './report.js';
 import { readState, writeState } from './client.js';
 import { pickLineup, pickAcrossWindow, toAppearances, diffLineup, normalisePosition,
-         describe, bonusMultiplier, DEFAULTS } from './optimiser.js';
+         describe, bonusMultiplier, DEFAULTS, NBA_OPTIONS } from './optimiser.js';
 
-const SPORT = 'FOOTBALL';
+import { SPORT } from './sport.js';
 const GEM_CURRENCIES = ['COMMON_GEM'];
 
 export async function readBalances() {
@@ -35,7 +35,7 @@ export async function readBalances() {
  */
 /** Sorare's daily cycle id - the DAILY task keeps one id per cycle. */
 export async function dailyCycleId() {
-  const d = await gql(`query { currentUser { dailyRunTask(sport: FOOTBALL) { id } } }`, {});
+  const d = await gql(`query($sport: Sport!) { currentUser { dailyRunTask(sport: $sport) { id } } }`, { sport: SPORT });
   return d.currentUser?.dailyRunTask?.id ?? null;
 }
 
@@ -69,6 +69,8 @@ export function liveLineupOf(step) {
 // calibrated projection; 56 short passed about one time in six, and burned
 // lives on L2 seven times. 40 short is about a one-in-four shot.
 export const SPREAD = 40;
+/** The same allowance as a share of the target, so NBA's smaller targets (150-300) get a fair gap. */
+export const reachFor = (target) => (target ? Math.round(SPREAD * target / 360) : SPREAD);
 
 /** Fallback when the step does not name one; see optimiser DEFAULTS. */
 const CAPTAIN_BONUS = DEFAULTS.captainBonus;
@@ -117,7 +119,7 @@ export async function fetchStep(stepId) {
   return d.currentUser?.step ?? null;
 }
 
-export async function fetchBench(stepId, { first = 50, positions = null, includeUsed = false, maxPages = 4 } = {}) {
+export async function fetchBench(stepId, { first = 50, positions = null, includeUsed = false, maxPages = SPORT === 'NBA' ? 8 : 4 } = {}) {
   const filters = {
     // Sorare's own defaults do the hard filtering for us:
     //   includeUnavailablePlayers:false -> no injured or suspended
@@ -231,8 +233,12 @@ async function withStartRates(nodes) {
         const intl = games.filter((x) => x.anyTeam?.__typename === 'NationalTeam').slice(0, 6);
         const rate = (g) => (g.length ? g.filter((x) => x.gameStarted).length / g.length : null);
         const play = (g) => (g.length ? g.filter((x) => x.playedInGame).length / g.length : null);
+        // Sorare records no "started" for NBA games, so a start rate there
+        // reads 0 for everyone and would block the whole bench. Playing
+        // time is the availability signal in basketball.
+        const nba = SPORT === 'NBA';
         RATE_CACHE.rates.set(p.slug, {
-          startRate: rate(all) ?? 0, playRate: play(all) ?? 0, games: all.length,
+          startRate: nba ? (play(all) ?? 0) : (rate(all) ?? 0), playRate: play(all) ?? 0, games: all.length,
           // Selection for country is a different decision from selection for
           // club: a first-choice club keeper can be second choice for his
           // nation. Kept separately and blended in for international fixtures.
@@ -577,12 +583,16 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
   // so the personal ladder takes the earliest team within 5% of its target.
   const RUSH_UNTIL = Date.parse(process.env.AUTOPILOT_RUSH_UNTIL ?? '2026-10-27T23:59:59+11:00');
   const rush = !collaborative && Date.now() < RUSH_UNTIL ? 0.05 : 0;
+  // NBA: five open slots, no armband, and a cap on the five players' stars.
+  const starsRule = (step?.displayedTypedRules ?? []).find((r) => r.__typename === 'So5AverageScoresRule' && r.averageType === 'STARS');
+  const sportOpts = SPORT === 'NBA' ? { ...NBA_OPTIONS, ...(starsRule?.max ? { starsCap: starsRule.max } : {}) } : {};
   const pickWith = (extra) => pickAcrossWindow(bench, {
     ...options,
+    ...sportOpts,
     ...(rush ? { rush } : {}),
     ...extra,
     target: collaborative ? null : (step?.target ?? null),
-    reach: SPREAD,
+    reach: reachFor(step?.target),
     // Sorare's own number for this step, when it gives one.
     ...(step?.engineConfiguration?.captain != null ? { captainBonus: step.engineConfiguration.captain } : {}),
   });
@@ -704,7 +714,7 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
   const enteredFinish = inPlay.map((c) => c.kickoff).filter(Boolean).sort().at(-1) ?? null;
   const finishesEarlier = !!(picked.finish && enteredFinish && picked.finish.slice(0, 10) < enteredFinish.slice(0, 10));
   const gateTarget = collaborative ? null : (step?.target ?? null);
-  const inReach = !gateTarget || picked.projected >= gateTarget - SPREAD;
+  const inReach = !gateTarget || picked.projected >= gateTarget - reachFor(gateTarget);
   if (existing && changed && dead.length === 0 && enteredProjection != null
       && picked.projected < enteredProjection * (1 + SWAP_GAIN)
       && !(finishesEarlier && inReach)) {
@@ -736,9 +746,14 @@ export async function runLineup({ dryRun = false, options = {}, stepId = null, s
   // none - a step that expires unplayed scores zero just as surely as a failed
   // one, and costs the same nothing.
   const target = collaborative ? null : (step?.target ?? null);
-  const withinReach = target && (target - picked.projected) <= SPREAD;
+  const withinReach = target && (target - picked.projected) <= reachFor(target);
 
-  if (target && picked.clearsTarget === false && !withinReach) {
+  // Level 1 (target <= 300) cannot be reset or lowered, and a burned lineup
+  // costs nothing there. Owner, 1 Nov 2026: pass it faster, enter the best five
+  // now rather than wait for a perfect pool. Higher levels still wait.
+  const LEVEL_ONE_MAX = 300;
+  const enterAnyway = target && target <= LEVEL_ONE_MAX;
+  if (target && picked.clearsTarget === false && !withinReach && !enterAnyway) {
     return {
       stepId, surface, target, dead,
       action: 'waiting-for-target',
@@ -1110,8 +1125,10 @@ export async function pass({ dryRun = false, options = {} } = {}) {
 
   // A new Set starts everyone from nothing: claim the free starter pack first.
   try {
-    const { claimFootballStarter } = await import('./starter.js');
-    report.starter = await claimFootballStarter({ dryRun });
+    if (SPORT === 'FOOTBALL') {
+      const { claimFootballStarter } = await import('./starter.js');
+      report.starter = await claimFootballStarter({ dryRun });
+    }
   } catch (err) { report.starter = { reason: `starter pack: ${err.message}` }; }
 
   try {

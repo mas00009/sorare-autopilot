@@ -27,6 +27,12 @@ NODE="$(command -v node || echo /usr/local/bin/node)"
   # Main account: the same DNP guard, for any lineup the owner set by hand.
   "$NODE" src/cli.js guard 2>&1
 
+  # Main account, NBA (owner, 2 Nov 2026: Mas is fully automated on football
+  # AND NBA). Own state file and schedule clock; never run for Kobe, whose NBA
+  # is played by hand - sport.js refuses NBA on a second account outright.
+  outnba=$(SORARE_SPORT=NBA "$NODE" src/cli.js run 2>&1)
+  echo "---- NBA (main) ----"; printf '%s\n' "$outnba"
+
   # Second account (Kobe-8-24): since 26 Oct 2026 the owner wants it fully automated on
   # soccer, same as main (lineups, missions, packs), to earn gems for the NBA launch.
   # It keeps its own state file and schedule clock, plus the DNP guard. No NBA: the
@@ -41,11 +47,13 @@ NODE="$(command -v node || echo /usr/local/bin/node)"
   # dupes.js keeps one copy of each exact card (same player, rarity, season, edition),
   # never touches a 4- or 5-star player, a card in a lineup or a sealed card.
   TODAY=$(date +%F)
-  for ACCT in main second; do
+  for ACCT in main second main-nba; do
     STAMP="$DIR/state/dupes-$ACCT.date"
     [ "$(cat "$STAMP" 2>/dev/null)" = "$TODAY" ] && continue
     if [ "$ACCT" = main ]; then
       "$NODE" src/cli.js dupes 2>&1 && echo "$TODAY" > "$STAMP"
+    elif [ "$ACCT" = main-nba ]; then
+      SORARE_SPORT=NBA "$NODE" src/cli.js dupes 2>&1 && echo "$TODAY" > "$STAMP"
     elif [ -f "$DIR/state/tokens-second.json" ]; then
       SORARE_ACCOUNT=second "$NODE" src/cli.js dupes 2>&1 && echo "$TODAY" > "$STAMP"
     fi
