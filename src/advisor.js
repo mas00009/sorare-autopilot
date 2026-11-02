@@ -283,7 +283,14 @@ function playState(c) {
   if (st === 'REVIEWING' || (c.score > 0 && st !== 'PENDING')) return 'live';
   return 'upcoming';
 }
-const STATE_LABEL = { done: '✅ Final', live: '🔴 Live', dnp: '❌ DNP', upcoming: '⏳ To play' };
+const STATE_LABEL = { done: '✅ Final', live: '🔵 Live', dnp: '❌ DNP', upcoming: '⏳ To play' };
+/** "1pm", "12:30pm" - short enough not to wrap under a card. */
+const shortTime = (iso) => {
+  if (!iso) return '?';
+  const t = new Date(iso).toLocaleTimeString('en-AU', { hour: 'numeric', minute: '2-digit', timeZone: SYD }).replace(/\s/g, '').toLowerCase();
+  return t.replace(':00', '');
+};
+const STATE_ICON = { done: '✅', live: '🔵', dnp: '❌', upcoming: '⏳' };
 /** Points banked plus what is still to come, for one lineup. */
 const liveProj = (v) => v.current.reduce((n, c) => {
   const s2 = playState(c);
@@ -292,10 +299,10 @@ const liveProj = (v) => v.current.reduce((n, c) => {
 const banked = (v) => v.current.reduce((n, c) => n + (playState(c) === 'upcoming' ? 0 : (c.score ?? 0)), 0);
 const captionOf = (c) => {
   const s2 = playState(c);
-  if (s2 === 'done') return `✅ ${Math.round(c.score ?? 0)} final`;
-  if (s2 === 'dnp') return '❌ DNP · 0';
-  if (s2 === 'live') return `🔴 ${Math.round(c.score ?? 0)} live`;
-  return `⏳ ~${c.proj != null ? Math.round(c.proj) : '?'} · ${when(c.next).replace(/^\w+ /, '')}`;
+  if (s2 === 'done') return `${Math.round(c.score ?? 0)} final`;
+  if (s2 === 'dnp') return 'DNP · 0';
+  if (s2 === 'live') return `${Math.round(c.score ?? 0)} so far`;
+  return `${c.proj != null ? Math.round(c.proj) : '?'} · ${shortTime(c.next)}`;
 };
 
 const dot = (inj) => (!inj ? '🟢' : /GTD|QUESTION|DOUBT|PROB/i.test(inj.status ?? '') ? '🟠' : '🔴');
@@ -328,7 +335,8 @@ function glanceSection(views) {
       const short = v.live ? v.step.target - lp : 0;
       flag = issues ? ` · ${font(COLOUR.GTD, `<b>${issues} to watch</b>`)}`
         : sw ? ` · ${font(COLOUR.open, '<b>swap suggested</b>')}`
-        : v.live && short > 0 ? ` · ${font(left ? COLOUR.GTD : COLOUR.OUT, `<b>~${Math.round(short)} short</b>`)}`
+        : !v.live ? ''
+        : short > 0 ? ` · ${font(left ? COLOUR.GTD : COLOUR.OUT, `<b>~${Math.round(short)} short</b>`)}`
         : ` · ${font(COLOUR.fit, 'on course')}`;
     }
     return { decoratedText: { topLabel: `${boardName(v).toUpperCase()} · LEVEL ${v.b.level}`, text: state + proj + flag, wrapText: true } };
@@ -349,24 +357,16 @@ function attentionSection(views, extraLines = []) {
         text: v.live ? `In: <b>${sw.ins.map((c) => c.player).join(', ')}</b><br>Out: ${sw.outs.map((c) => c.name).join(', ')}`
           : `<b>${sw.best.map((c) => c.player).join(', ')}</b> · proj ${Math.round(sw.best.reduce((n, c) => n + c.expected, 0))}`,
         wrapText: true } });
-      widgets.push(cardGrid(sw.best.map((c) => ({ name: c.player, pic: v.picOf.get(c.slug), caption: `${Math.round(c.expected)} · ${when(v.benchRows.find((r) => r.slug === c.slug)?.next)}` }))));
+      widgets.push(cardGrid(sw.best.map((c) => ({ name: `${c.player.split(' ').pop()} ${STAR(c.tier)}`, pic: v.picOf.get(c.slug), caption: `${Math.round(c.expected)} · ${shortTime(c.kickoff)}` }))));
     }
   }
-  if (!widgets.length) widgets.push({ decoratedText: { text: `✅ ${font(COLOUR.fit, '<b>Nothing needs you</b>')} - nothing you can change would help right now.`, wrapText: true } });
+  if (!widgets.length) widgets.push({ decoratedText: { text: `✅ ${font(COLOUR.fit, '<b>Nothing needs you</b>')}`, wrapText: true } });
   return { header: '1 · Needs your attention', widgets };
 }
 
 function lineupSection(n, v) {
   if (!v) return { header: `${n} · Lineup`, widgets: [{ textParagraph: { text: 'No board.' } }] };
   const name = boardName(v);
-  if (!v.live) return { header: `${n} · ${name} · level ${v.b.level}`, widgets: [summaryLine(v), { textParagraph: { text: 'No lineup in yet - see the suggested five above.' } }] };
-  // A locked lineup's pending GTD is noise - nothing can be changed. It is
-  // only mentioned once decided (cleared or ruled out), as late news.
-  const fyi = [];
-  const squadRows = v.squad ? [{ decoratedText: { topLabel: `SQUAD TOP 3 vs ${v.squad.target} · ${v.squad.toPlay} player(s) still to play`,
-    text: v.squad.lineups.slice(0, 5).map((l, i) => `${i < 3 ? '<b>' : ''}${i + 1}. ${l.who}${l.mine ? ' (you)' : ''}: ${Math.round(l.live)} now → ~${Math.round(l.proj)}${i < 3 ? '</b>' : ''}`).join('<br>'), wrapText: true } }] : [];
-  // Team set: one line, the squad's top three against the target (owner: "super simple").
-  if (v.squad && v.live) return { header: `${n} · ${name} · level ${v.b.level}`, widgets: [summaryLine(v)] };
   // No team lineup in: recommend one (owner, 2 Nov 2026), only if it can be entered.
   if (v.b.surface.startsWith('team') && !v.live) {
     const head = { header: `${n} · ${name} · level ${v.b.level}` };
@@ -378,12 +378,24 @@ function lineupSection(n, v) {
     const proj = v.aiPick.chosen.reduce((t, x) => t + x.expected, 0);
     return { ...head, widgets: [
       { decoratedText: { topLabel: `No lineup in · recommended five · enter before ${when(lockAt)}`, text: `${font(COLOUR.open, '<b>Put a team in</b>')} · proj <b>${Math.round(proj)}</b> toward the squad's ${v.step.target} · ${v.aiPick.chosen.reduce((t, x) => t + starsOf(x.tier), 0)}★ of ${v.cap}`, wrapText: true } },
-      cardGrid(v.aiPick.chosen.map((x) => ({ name: x.player.split(' ').pop(), pic: v.picOf.get(x.slug), caption: `~${Math.round(x.expected)} · ${STAR(x.tier)} · ${when(x.kickoff).replace(/^\w+ /, '')}` }))),
+      cardGrid(v.aiPick.chosen.map((x) => ({ name: `${x.player.split(' ').pop()} ${STAR(x.tier)}`, pic: v.picOf.get(x.slug), caption: `${Math.round(x.expected)} · ${shortTime(x.kickoff)}` }))),
     ] };
   }
-  return { header: `${n} · ${name} · level ${v.b.level}`, widgets: [summaryLine(v), ...squadRows, ...fyi, cardGrid(v.current.map((c) => ({ name: `${playState(c) === 'upcoming' && v.editable ? dot(c.injury) + ' ' : ''}${c.name.split(' ').pop()}`, pic: c.pic,
-    caption: captionOf(c) }))),
-    { textParagraph: { text: font(COLOUR.locked, '✅ final · 🔴 live (points so far) · ⏳ still to play (projection · tip-off) · ❌ did not play') } }] };
+  if (!v.live) return { header: `${n} · ${name} · level ${v.b.level}`, widgets: [summaryLine(v), { textParagraph: { text: 'No lineup in yet - see the AI pick below.' } }] };
+  // A locked lineup's pending GTD is noise - nothing can be changed. It is
+  // only mentioned once decided (cleared or ruled out), as late news.
+  const fyi = [];
+  const squadRows = v.squad ? [{ decoratedText: { topLabel: `SQUAD TOP 3 vs ${v.squad.target} · ${v.squad.toPlay} player(s) still to play`,
+    text: v.squad.lineups.slice(0, 5).map((l, i) => `${i < 3 ? '<b>' : ''}${i + 1}. ${l.who}${l.mine ? ' (you)' : ''}: ${Math.round(l.live)} now → ~${Math.round(l.proj)}${i < 3 ? '</b>' : ''}`).join('<br>'), wrapText: true } }] : [];
+  // Team set: one line, the squad's top three against the target (owner: "super simple").
+  if (v.squad && v.live) return { header: `${n} · ${name} · level ${v.b.level}`, widgets: [summaryLine(v)] };
+
+  return { header: `${n} · ${name} · level ${v.b.level}`, widgets: [summaryLine(v), ...squadRows, ...fyi, cardGrid(v.current.map((c) => {
+    const st = playState(c);
+    const icon = st === 'upcoming' && v.editable && c.injury ? dot(c.injury) : STATE_ICON[st];
+    return { name: `${icon} ${c.name.split(' ').pop()}`, pic: c.pic, caption: captionOf(c) };
+  })),
+    { textParagraph: { text: font(COLOUR.locked, '✅ final · 🔵 live, points so far · ⏳ to play, projection · tip-off · ❌ did not play') } }] };
 }
 
 function worthSection(views) {
@@ -418,7 +430,7 @@ function aiPickSection(views) {
       topLabel: `${v.aiSecond ? 'A second team for "Add team now"' : 'Best five to pass'} · needs ${v.step.target} · enter before ${when(lockAt)}`,
       text: `proj <b>${Math.round(proj)}</b> · ${font(c, `<b>${chance}% chance to pass</b>`)} · ${v.aiPick.chosen.reduce((n, x) => n + starsOf(x.tier), 0)}★ of ${v.cap}`,
       wrapText: true } });
-    widgets.push(cardGrid(v.aiPick.chosen.map((x) => ({ name: x.player.split(' ').pop(), pic: v.picOf.get(x.slug), caption: `~${Math.round(x.expected)} · ${STAR(x.tier)} · ${when(x.kickoff).replace(/^\w+ /, '')}` }))));
+    widgets.push(cardGrid(v.aiPick.chosen.map((x) => ({ name: `${x.player.split(' ').pop()} ${STAR(x.tier)}`, pic: v.picOf.get(x.slug), caption: `${Math.round(x.expected)} · ${shortTime(x.kickoff)}` }))));
   }
   return { header: '5 · AI pick  (most likely to pass)', widgets };
 }
@@ -430,14 +442,14 @@ function dailyCard(views, dateLine, nextAt, extraAttention = []) {
     attentionSection(views, extraAttention.filter((l) => l.actionable).map((l) => l.line)),
     lineupSection(2, mine), lineupSection(3, team),
     ...fyiSection(extraAttention.filter((l) => !l.actionable).map((l) => l.line)),
-    worthSection(views), aiPickSection(views), footer(nextAt),
+    worthSection(views), aiPickSection(views),
   ]);
 }
 const fyiSection = (lines) => (lines.length ? [{ header: 'News on locked lineups (FYI)', widgets: lines.map((t) => ({ textParagraph: { text: t } })) }] : []);
 function updateCard(views, dateLine, lines, nextAt, title = '🏀 Kobe NBA · Update') {
   const act = lines.filter((l) => l.actionable).map((l) => l.line);
   const info = lines.filter((l) => !l.actionable).map((l) => l.line);
-  return card('update', title, dateLine, [...(act.length ? [attentionSection(views, act)] : []), ...fyiSection(info), footer(nextAt)]);
+  return card('update', title, dateLine, [...(act.length ? [attentionSection(views, act)] : []), ...fyiSection(info)]);
 }
 
 const card = (id, title, subtitle, sections) => [{ cardId: id, card: { header: { title, subtitle }, sections } }];
@@ -586,7 +598,7 @@ export async function advise({ force = false, dryRun = false } = {}) {
   if (briefingDue || force) await logProjections(ok).catch(() => {});
   const sent = [];
   for (const m of messages) {
-    const r = await postCard(m.cards, m.text.split('\n')[0]);
+    const r = await postCard(m.cards, '');   // the card carries its own title; text above it doubled it
     sent.push(r.sent ? r : await postChat(m.text));   // plain text if a card is refused
   }
   // Next plan: checks before each open lineup's lock, and tomorrow's
