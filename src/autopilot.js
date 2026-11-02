@@ -1145,6 +1145,20 @@ export async function pass({ dryRun = false, options = {} } = {}) {
       }
     }
     if (!boards.length) report.lineups.push({ skipped: true, reason: 'Neither board has a live step.' });
+    // A team set that is not open yet opens at a known time. Aim the clock
+    // at it, so the team goes in within minutes of opening rather than at the
+    // next 3-hourly quiet-day pass.
+    try {
+      const d = await gql(`query($sport: Sport!) { currentUser { setBoard(mode: SQUAD, sport: $sport) { ... on SquadBoard { nextMatchdayAt } myCurrentStep { state } } } }`, { sport: SPORT });
+      const sb = d.currentUser?.setBoard;
+      const opens = sb?.nextMatchdayAt;
+      if (opens && sb?.myCurrentStep?.state === 'PRE_MATCHDAY_LOCKED' && Date.parse(opens) > Date.now()) {
+        const st = await readState();
+        const at = new Date(Date.parse(opens) + 5 * 60e3).toISOString();   // a few minutes after it opens
+        if (!st.nextLock || at < st.nextLock || Date.parse(st.nextLock) < Date.now()) await writeState({ nextLock: at });
+        report.teamSetOpens = opens;
+      }
+    } catch { /* the regular clock still runs */ }
   } catch (err) {
     report.lineupError = err instanceof GuardrailError ? describeSkip(err) : err.message;
   }

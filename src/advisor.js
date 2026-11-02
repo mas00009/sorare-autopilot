@@ -137,13 +137,21 @@ export async function advise({ force = false, dryRun = false } = {}) {
   if (!dryRun && !chatSpace()) return { skipped: true, reason: 'no Chat space yet' };
   const st = await readState();
   const now = Date.now();
-  const hour = sydHour(now);
   const today = sydDay(now);
-  const nearLock = st.advisorNextLock && Date.parse(st.advisorNextLock) - now < 3 * 3600e3 && Date.parse(st.advisorNextLock) > now;
-  const inWindow = hour >= 7 && hour < 15;   // NBA tips off about 10am-2:30pm Sydney
-  const sinceCheck = st.advisorCheckedAt ? (now - st.advisorCheckedAt) / 60000 : Infinity;
-  const briefingDue = st.advisorBriefed !== today && hour >= 7;
-  if (!force && !briefingDue && !((inWindow || nearLock) && sinceCheck >= 15)) return { skipped: true };
+  // Driven by the real NBA schedule, not a fixed window. The plan (built on
+  // the previous check) holds: the briefing time - about 2.5 hours before the
+  // day's first tip-off - and checks at 120 / 60 / 30 / 12 minutes before
+  // each open lineup locks, which is when injury reports and game-time calls
+  // land and a swap is still possible.
+  const plan = st.advisorPlan ?? [];
+  const last = st.advisorCheckedAt ?? 0;
+  const planned = plan.find((t) => Date.parse(t) > last && Date.parse(t) <= now);
+  const briefAt = st.advisorBriefAt ? Date.parse(st.advisorBriefAt) : null;
+  const briefingDue = st.advisorBriefed !== today && (briefAt ? now >= briefAt : sydHour(now) >= 7);
+  // A safety net: never more than 6 hours without a look, so a new lineup or
+  // a schedule change is picked up even if the plan is stale.
+  const stale = now - last > 6 * 3600e3;
+  if (!force && !briefingDue && !planned && !stale) return { skipped: true };
 
   const { boards, nickname } = await resolveBoards();
   const views = [];
@@ -175,11 +183,35 @@ export async function advise({ force = false, dryRun = false } = {}) {
   if (alerts.length && !(briefingDue || force)) messages.push(['🏀 *Kobe NBA - late news*', ...alerts].join('\n'));
   else if (alerts.length) messages[0] += `\n\n*Late news*\n${alerts.join('\n')}`;
 
+  // One reminder per open lineup, about an hour before it locks, only if a
+  // better five exists (5%+ on Sorare's projections).
+  const reminded = { ...(st.advisorReminded ?? {}) };
+  if (!(briefingDue || force)) {
+    for (const v of ok) {
+      if (!v.editable || !v.lockAt || reminded[v.lockAt]) continue;
+      const mins = (Date.parse(v.lockAt) - now) / 60000;
+      if (mins > 75 || mins < 5) continue;
+      const cur = v.current.reduce((n, c) => n + (c.proj ?? 0), 0);
+      const best = v.best.ok ? v.best.chosen.reduce((n, c) => n + c.expected, 0) : 0;
+      reminded[v.lockAt] = true;
+      if (best > cur * 1.05) messages.push(`⏰ *Kobe NBA - locks in ${Math.round(mins)} min*\n\n${describeBoard(v)}`);
+    }
+  }
+
   if (dryRun) return { messages, nickname };
   const sent = [];
   for (const m of messages) sent.push(await postChat(m));
+  // Next plan: checks before each open lineup's lock, and tomorrow's
+  // briefing from the earliest tip-off still ahead on Kobe's bench.
+  const offsets = [120, 60, 30, 12];
+  const nextPlan = [...new Set(locks.flatMap((l) => offsets.map((m) => new Date(Date.parse(l) - m * 60e3).toISOString())))]
+    .filter((t) => Date.parse(t) > now).sort();
+  const tips = ok.flatMap((v) => v.benchRows.map((r) => r.next)).filter((t) => t && Date.parse(t) > now).sort();
+  const firstTomorrow = tips.find((t) => sydDay(Date.parse(t)) !== today) ?? null;
+  const briefNext = firstTomorrow ? new Date(Date.parse(firstTomorrow) - 150 * 60e3).toISOString() : null;
   await writeState({
     advisorCheckedAt: now, advisorWatch: watch, advisorNextLock: locks[0] ?? null,
+    advisorPlan: nextPlan, advisorReminded: reminded, ...(briefNext ? { advisorBriefAt: briefNext } : {}),
     ...(briefingDue || force ? { advisorBriefed: today } : {}),
   });
   return { messages, sent, nickname };
