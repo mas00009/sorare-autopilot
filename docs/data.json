@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T20:03:17.490Z",
+  "generatedAt": "2026-11-02T20:34:34.267Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-11-02T19:45:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793647760519,
-    "reason": "last run 34m ago, next due in 146m"
+    "reason": "last run 65m ago, next due in 115m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -24,13 +24,13 @@
       "surface": "my set",
       "level": 0,
       "target": 260,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": false,
       "squadLineups": null,
       "squadScore": null,
       "lineupId": "Tasks::TaskLineup:202f0490-8644-477e-8376-892923bb82b6",
       "state": "READY",
-      "score": 254.6,
+      "score": 271.25,
       "finished": false,
       "cleared": false,
       "players": [
@@ -57,7 +57,7 @@
           "slug": "mario-soriano-carreno",
           "position": "Midfielder",
           "captain": true,
-          "score": 52.5,
+          "score": 69.15,
           "status": "REVIEWING",
           "kickoff": "2026-11-07T15:15:00Z"
         },
@@ -89,10 +89,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 4,
-      "squadScore": 562.255,
+      "squadScore": 628.024,
       "lineupId": "Tasks::TaskLineup:b195cfc4-e42a-4880-84ac-11af55bc74e3",
       "state": "READY",
-      "score": 163,
+      "score": 172.77,
       "finished": false,
       "cleared": false,
       "players": [
@@ -101,7 +101,7 @@
           "slug": "leonardo-roman-riquelme",
           "position": "Goalkeeper",
           "captain": false,
-          "score": 35,
+          "score": 41.2,
           "status": "REVIEWING",
           "kickoff": "2026-11-07T15:15:00Z"
         },
@@ -110,7 +110,7 @@
           "slug": "giacomo-quagliata",
           "position": "Defender",
           "captain": true,
-          "score": 52.5,
+          "score": 58.53,
           "status": "REVIEWING",
           "kickoff": "2026-11-07T15:15:00Z"
         },
@@ -128,7 +128,7 @@
           "slug": "souleymane-faye",
           "position": "Forward",
           "captain": false,
-          "score": 40.5,
+          "score": 43.4,
           "status": "REVIEWING",
           "kickoff": "2026-11-08T16:15:00Z"
         },
@@ -137,7 +137,7 @@
           "slug": "fabian-lukas-schar",
           "position": "Defender",
           "captain": false,
-          "score": 35,
+          "score": 29.64,
           "status": "REVIEWING",
           "kickoff": "2026-11-07T15:00:00Z"
         }
@@ -208,7 +208,7 @@
   "surfaces": [
     {
       "surface": "my set",
-      "status": "Locked and playing. 281 scored so far, 5 of 5 played. On course for about 281; needs 260 (21 over).",
+      "status": "Locked and playing. 306 scored so far, 5 of 5 played. On course for about 306; needs 260 (46 over).",
       "tone": "good",
       "lockAt": "2026-10-31T15:00:00Z",
       "isSquad": false,
@@ -273,7 +273,7 @@
             "kickoff": "2026-10-31T17:30:00Z"
           },
           {
-            "actual": 52.5,
+            "actual": 69.15,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Mario Soriano",
@@ -361,9 +361,9 @@
           }
         ],
         "projected": 220.17,
-        "scoredSoFar": 280.86,
+        "scoredSoFar": 305.83,
         "played": 5,
-        "expectedFinal": 280.86
+        "expectedFinal": 305.83
       },
       "poolStrength": {
         "strong": 1,
@@ -381,7 +381,7 @@
       "ladder": [
         {
           "level": 0,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 260
         },
         {
@@ -417,7 +417,7 @@
           "rarity": "common"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 260,
       "current": [
         {
@@ -870,14 +870,14 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 189 scored so far, 4 of 5 played. The squad's top three lineups together need 700; the squad has 562 so far.",
+      "status": "Locked and playing. 202 scored so far, 4 of 5 played. The squad's top three lineups together need 700; the squad has 628 so far.",
       "tone": "good",
       "lockAt": "2026-11-02T19:45:00Z",
       "isSquad": true,
       "entered": {
         "five": [
           {
-            "actual": 35,
+            "actual": 41.2,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Leo Román",
@@ -906,7 +906,7 @@
             "kickoff": "2026-11-02T20:00:00Z"
           },
           {
-            "actual": 52.5,
+            "actual": 58.53,
             "scoreStatus": "REVIEWING",
             "teamSlug": "deportivo-la-coruna-a-coruna",
             "name": "Giacomo Quagliata",
@@ -964,7 +964,7 @@
             "kickoff": "2026-11-02T19:45:00Z"
           },
           {
-            "actual": 40.5,
+            "actual": 43.4,
             "scoreStatus": "REVIEWING",
             "teamSlug": "lorient-ploemeur",
             "name": "Souleymane Faye",
@@ -993,7 +993,7 @@
             "kickoff": "2026-11-02T19:45:00Z"
           },
           {
-            "actual": 35,
+            "actual": 29.64,
             "scoreStatus": "REVIEWING",
             "teamSlug": "newcastle-united-newcastle-upon-tyne",
             "name": "Fabian Schar",
@@ -1023,9 +1023,9 @@
           }
         ],
         "projected": 99.66,
-        "scoredSoFar": 189.25,
+        "scoredSoFar": 202.04,
         "played": 4,
-        "expectedFinal": 199.61
+        "expectedFinal": 212.4
       },
       "poolStrength": {
         "strong": 0,
@@ -1035,7 +1035,7 @@
       "squad": {
         "lineupsIn": 4,
         "needed": 3,
-        "scoreSoFar": 562.255
+        "scoreSoFar": 628.024
       },
       "level": 0,
       "lives": null,
@@ -1111,89 +1111,8 @@
         }
       ],
       "plan": null,
-      "candidates": [
-        {
-          "id": "ComposeTeamBenchCard:4409f1ca-4568-49af-ae33-8b4033a557c3",
-          "player": "Mario Soriano",
-          "slug": "mario-soriano-carreno",
-          "tier": "IMPACT",
-          "position": "MD",
-          "average": 58,
-          "bonus": 1,
-          "starterPct": null,
-          "startRate": 0.9,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 64,
-          "picture": "https://assets.sorare.com/cardsamplepicture/72c85777-2115-4366-992c-425f58ea6f39/picture/tinified-9b53b12903f24486bb9aeaa82ffefb7b.png",
-          "rarity": "common",
-          "gameId": "Game:6219527a-6904-4019-92f4-3179fa41038c",
-          "kickoff": "2026-11-07T15:15:00Z",
-          "team": "Real Club Deportivo de La Coruña",
-          "teamSlug": "deportivo-la-coruna-a-coruna",
-          "opponent": "RCD Espanyol de Barcelona",
-          "opponentCode": "ESP",
-          "code": "DEP",
-          "rank": 13,
-          "opponentRank": 14,
-          "home": false,
-          "competition": "Primera División",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.285,
-          "pLose": 0.438,
-          "oddsBooks": 18,
-          "marketFactor": 0.982,
-          "lockedAt": null,
-          "expected": 55.98,
-          "blocked": null
-        },
-        {
-          "id": "ComposeTeamBenchCard:2a5d5120-edce-413d-ae52-d38bfb2773dd",
-          "player": "Luismi Cruz",
-          "slug": "luis-miguel-cruz-hernandez",
-          "tier": "ROSTER",
-          "position": "FW",
-          "average": 52,
-          "bonus": 1,
-          "starterPct": null,
-          "startRate": 0.7,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 44,
-          "picture": "https://assets.sorare.com/cardsamplepicture/fc6925be-70ce-4000-be09-2e27dad76c90/picture/tinified-dc6b72c2a36e0440483e34c44f7f5f63.png",
-          "rarity": "common",
-          "gameId": "Game:6219527a-6904-4019-92f4-3179fa41038c",
-          "kickoff": "2026-11-07T15:15:00Z",
-          "team": "Real Club Deportivo de La Coruña",
-          "teamSlug": "deportivo-la-coruna-a-coruna",
-          "opponent": "RCD Espanyol de Barcelona",
-          "opponentCode": "ESP",
-          "code": "DEP",
-          "rank": 13,
-          "opponentRank": 14,
-          "home": false,
-          "competition": "Primera División",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.285,
-          "pLose": 0.438,
-          "oddsBooks": 18,
-          "marketFactor": 0.983,
-          "lockedAt": null,
-          "expected": 37.98,
-          "blocked": null
-        }
-      ],
-      "projected": 94
+      "candidates": [],
+      "projected": 0
     }
   ],
   "fixtures": [
@@ -1270,32 +1189,6 @@
       "bestStarter": null,
       "surfaces": [
         "my set"
-      ]
-    },
-    {
-      "kickoff": "2026-11-07T15:15:00Z",
-      "competition": "Primera División",
-      "team": "Real Club Deportivo de La Coruña",
-      "code": "DEP",
-      "rank": 13,
-      "opponent": "RCD Espanyol de Barcelona",
-      "opponentCode": "ESP",
-      "opponentRank": 14,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.285,
-      "pLose": 0.438,
-      "oppFactor": null,
-      "home": false,
-      "players": [
-        "Mario Soriano",
-        "Luismi Cruz"
-      ],
-      "points": 94,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
       ]
     },
     {
