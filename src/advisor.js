@@ -165,8 +165,12 @@ async function boardView(b) {
   const aiPick = pickLineup(aiPool, opts);
   const SD = 25;
   const passChance = (proj) => { const z = (proj - step.target) / SD; return Math.round(100 * (0.5 * (1 + Math.tanh(0.7978845608 * (z + 0.044715 * z ** 3))))); };
-  const squad = b.surface.startsWith('team') ? await squadView(b.stepId, NICK).catch(() => null) : null;
-  return { b, step, live, editable, lockAt, current, benchRows, best, cap: opts.starsCap, picOf, newsOf: (slug) => P.get(slug)?.news ?? null, squad,
+  const squad = b.surface.startsWith('team') && live ? await squadView(b.stepId, NICK).catch(() => null) : null;
+  let opensAt = null;
+  if (b.surface.startsWith('team') && step.state === 'PRE_MATCHDAY_LOCKED') {
+    try { opensAt = (await gql(`query { currentUser { setBoard(mode: SQUAD, sport: NBA) { ... on SquadBoard { nextMatchdayAt } } } }`, {})).currentUser?.setBoard?.nextMatchdayAt ?? null; } catch {}
+  }
+  return { b, step, live, editable, lockAt, current, benchRows, best, cap: opts.starsCap, picOf, newsOf: (slug) => P.get(slug)?.news ?? null, squad, opensAt,
     aiPick, aiSecond: !!live && live.updatable === false, passChance };
 }
 
@@ -362,7 +366,21 @@ function lineupSection(n, v) {
   const squadRows = v.squad ? [{ decoratedText: { topLabel: `SQUAD TOP 3 vs ${v.squad.target} · ${v.squad.toPlay} player(s) still to play`,
     text: v.squad.lineups.slice(0, 5).map((l, i) => `${i < 3 ? '<b>' : ''}${i + 1}. ${l.who}${l.mine ? ' (you)' : ''}: ${Math.round(l.live)} now → ~${Math.round(l.proj)}${i < 3 ? '</b>' : ''}`).join('<br>'), wrapText: true } }] : [];
   // Team set: one line, the squad's top three against the target (owner: "super simple").
-  if (v.squad) return { header: `${n} · ${name} · level ${v.b.level}`, widgets: [summaryLine(v)] };
+  if (v.squad && v.live) return { header: `${n} · ${name} · level ${v.b.level}`, widgets: [summaryLine(v)] };
+  // No team lineup in: recommend one (owner, 2 Nov 2026), only if it can be entered.
+  if (v.b.surface.startsWith('team') && !v.live) {
+    const head = { header: `${n} · ${name} · level ${v.b.level}` };
+    if (v.step.state === 'PRE_MATCHDAY_LOCKED') {
+      return { ...head, widgets: [{ textParagraph: { text: `Not open yet - opens ${v.opensAt ? when(v.opensAt) : 'at the next matchday'}. A recommended five will be here once it opens.` } }] };
+    }
+    if (!v.aiPick?.ok) return { ...head, widgets: [{ textParagraph: { text: 'No lineup in, and not enough cards with games still to come for a five.' } }] };
+    const lockAt = v.aiPick.chosen.map((x) => x.kickoff).filter(Boolean).sort()[0];
+    const proj = v.aiPick.chosen.reduce((t, x) => t + x.expected, 0);
+    return { ...head, widgets: [
+      { decoratedText: { topLabel: `No lineup in · recommended five · enter before ${when(lockAt)}`, text: `${font(COLOUR.open, '<b>Put a team in</b>')} · proj <b>${Math.round(proj)}</b> toward the squad's ${v.step.target} · ${v.aiPick.chosen.reduce((t, x) => t + starsOf(x.tier), 0)}★ of ${v.cap}`, wrapText: true } },
+      cardGrid(v.aiPick.chosen.map((x) => ({ name: x.player.split(' ').pop(), pic: v.picOf.get(x.slug), caption: `~${Math.round(x.expected)} · ${STAR(x.tier)} · ${when(x.kickoff).replace(/^\w+ /, '')}` }))),
+    ] };
+  }
   return { header: `${n} · ${name} · level ${v.b.level}`, widgets: [summaryLine(v), ...squadRows, ...fyi, cardGrid(v.current.map((c) => ({ name: `${playState(c) === 'upcoming' && v.editable ? dot(c.injury) + ' ' : ''}${c.name.split(' ').pop()}`, pic: c.pic,
     caption: captionOf(c) }))),
     { textParagraph: { text: font(COLOUR.locked, '✅ final · 🔴 live (points so far) · ⏳ still to play (projection · tip-off) · ❌ did not play') } }] };
