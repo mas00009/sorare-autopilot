@@ -145,7 +145,7 @@ async function boardView(b) {
     const p = P.get(n.player?.slug) ?? {};
     return { slug: n.player?.slug, name: n.player?.displayName, tier: n.player?.gameplayTier, proj: p.proj, injury: p.injury,
       l5: n.formL5, l15: n.averageScore, next: n.player?.anyFutureGameStats?.[0]?.anyGame?.date ?? null,
-      news: p.news, pic: n.pictureUrl ?? null };
+      news: p.news, pic: n.pictureUrl ?? null, team: n.player?.anyFutureGameStats?.[0]?.anyTeam?.name ?? null };
   });
   const picOf = new Map([...mine, ...bench].map((n) => [n.player?.slug, n.pictureUrl]));
   // AI pick: the five most likely to PASS this level. With ~9 points of
@@ -417,13 +417,20 @@ function worthSection(views) {
   const all = [...rows.values()];
   const hot = all.filter((r) => r.l5 && r.l15 && r.l5 >= r.l15 + 5).sort((a, b) => (b.l5 - b.l15) - (a.l5 - a.l15)).slice(0, 6);
   const value = all.filter((r) => !hot.includes(r)).sort((a, b) => b.proj / starsOf(b.tier) - a.proj / starsOf(a.tier)).slice(0, 6);
-  const item = (r, text) => ({ decoratedText: { ...(r.pic ? { startIcon: { iconUrl: r.pic, altText: r.name } } : {}),
-    topLabel: `${r.name.split(' ').pop()} · ${STAR(r.tier)} · ${shortTime(r.next)}`, text, wrapText: false } });
-  const col = (title, list, fmt) => ({ horizontalSizeStyle: 'FILL_AVAILABLE_SPACE', horizontalAlignment: 'START', verticalAlignment: 'TOP',
-    widgets: list.length ? list.map(fmt) : [{ textParagraph: { text: 'None today' } }] });
-  const titleCol = (t) => ({ horizontalSizeStyle: 'FILL_AVAILABLE_SPACE', horizontalAlignment: 'CENTER', verticalAlignment: 'CENTER',
-    widgets: [{ textParagraph: { text: `<b>${t}</b>` } }] });
-  return { widgets: [{ columns: { columnItems: [titleCol('🔥 Hot'), titleCol('💎 Value')] } }, { columns: { columnItems: [
+  // Full name and team instead of a picture (owner): "Jaxson Hayes / Jazz · 1.5★".
+  const nick = (team) => {
+    if (!team) return '';
+    const t = team.replace(/^Los Angeles /, 'LA ');
+    const two = ['Trail Blazers'];
+    for (const x of two) if (t.endsWith(x)) return x;
+    return t.split(' ').pop();
+  };
+  const item = (r, text) => ({ decoratedText: {
+    topLabel: `${r.name}${r.team ? ` / ${nick(r.team)}` : ''} · ${STAR(r.tier)}`, text: `${text} · ${shortTime(r.next)}`, wrapText: false } });
+  // Heading and its list in ONE column, both centred, so they line up.
+  const col = (title, list, fmt) => ({ horizontalSizeStyle: 'FILL_AVAILABLE_SPACE', horizontalAlignment: 'CENTER', verticalAlignment: 'TOP',
+    widgets: [{ textParagraph: { text: `<b>${title}</b>` } }, ...(list.length ? list.map(fmt) : [{ textParagraph: { text: 'None today' } }])] });
+  return { widgets: [{ columns: { columnItems: [
     col('🔥 Hot', hot, (r) => item(r, `${font(COLOUR.hot, `<b>${Math.round(r.l5)}</b>`)} vs ${Math.round(r.l15)} · Proj <b>${Math.round(r.proj)}</b>`)),
     col('💎 Value', value, (r) => item(r, `Proj <b>${Math.round(r.proj)}</b> · ${font(COLOUR.fit, `<b>${(r.proj / starsOf(r.tier)).toFixed(1)}</b>/★`)}`)),
   ] } }] };
@@ -450,6 +457,10 @@ function aiPickSection(views) {
       text: `${font(c, `<b>${chance}% to pass</b>`)} · Proj <b>${Math.round(proj)}</b> / ${v.step.target} · ${v.aiPick.chosen.reduce((n, x) => n + starsOf(x.tier), 0)}★ of ${v.cap}`,
       wrapText: true } });
     widgets.push(cardGrid(v.aiPick.chosen.map((x) => ({ name: `${x.player.split(' ').pop()} ${STAR(x.tier)}`, pic: v.picOf.get(x.slug), caption: `${Math.round(x.expected)} · ${shortTime(x.kickoff)}` }))));
+  }
+  // Nothing to suggest: one line, no heading (owner).
+  if (widgets.length === 1 && widgets[0].textParagraph && /No team at/.test(widgets[0].textParagraph.text)) {
+    return { widgets: [{ textParagraph: { text: `<b>AI Pick</b> · ${widgets[0].textParagraph.text}` } }] };
   }
   return { header: 'AI Pick', widgets };
 }
