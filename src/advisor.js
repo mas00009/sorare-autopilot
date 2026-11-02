@@ -374,6 +374,17 @@ function attentionSection(views, extraLines = []) {
 }
 
 function lineupSection(n, v) {
+  // A finished level is the news: passed with a reward waiting, or missed.
+  const nameNow = boardName(v);
+  const rewardText = (v.step.rewardConfigs ?? []).map((r) => r.currency === 'COMMON_GEM' ? `${r.amount} gems`
+    : r.__typename === 'CardPacksRewardConfig' ? `a ${r.cardPack?.cardsCount ?? ''}-card pack`.replace('a -card', 'a card')
+    : r.quantity ? `${r.quantity} essence` : r.amount && r.currency ? `${r.amount} ${String(r.currency).toLowerCase()}` : null).filter(Boolean).join(' + ');
+  if (['CLAIMABLE', 'SUCCESSFUL'].includes(v.step.state)) {
+    return { widgets: [{ decoratedText: { text: `<b>${nameNow} · Level ${v.b.level}</b> · 🏆 ${font(COLOUR.fit, '<b>Passed</b>')} · ${rewardText ? `${rewardText} ready to claim` : 'Reward ready to claim'}`, wrapText: true } }] };
+  }
+  if (v.step.state === 'FAILED') {
+    return { widgets: [{ decoratedText: { text: `<b>${nameNow} · Level ${v.b.level}</b> · ${font(COLOUR.OUT, '<b>Missed</b>')} · the ladder restarts`, wrapText: true } }] };
+  }
   if (!v) return { header: `${n} · Lineup`, widgets: [{ textParagraph: { text: 'No board.' } }] };
   const name = boardName(v);
   // No team lineup in: recommend one (owner, 2 Nov 2026), only if it can be entered.
@@ -617,6 +628,15 @@ export async function advise({ force = false, dryRun = false } = {}) {
     }
     if (line) alertRows.push({ line, row: w.row, actionable: !w.inLineup || !!w.editable });
   }
+  // A level passing (or failing) is news too: claim the reward / ladder restarts.
+  const boardStates = Object.fromEntries(ok.map((v) => [v.b.surface, `${v.b.level}:${v.step.state}`]));
+  for (const v of ok) {
+    const was = (st.advisorBoardStates ?? {})[v.b.surface];
+    const nowSt = boardStates[v.b.surface];
+    if (!was || was === nowSt) continue;
+    if (['CLAIMABLE', 'SUCCESSFUL'].includes(v.step.state)) alertRows.push({ line: `🏆 <b>${boardName(v)} level ${v.b.level} passed</b> - reward ready to claim in the app.`, actionable: true });
+    else if (v.step.state === 'FAILED') alertRows.push({ line: `<b>${boardName(v)} level ${v.b.level} missed</b> - the ladder restarts.`, actionable: false });
+  }
   const lines = alertRows.map((a) => ({ line: a.line, actionable: a.actionable }));
   if (briefingDue || force) {
     messages[0].cards = dailyCard(ok, dateLine, nextAt, lines);
@@ -667,7 +687,7 @@ export async function advise({ force = false, dryRun = false } = {}) {
   const briefNext = firstTomorrow ? new Date(Date.parse(firstTomorrow) - 150 * 60e3).toISOString() : null;
   await writeState({
     advisorCheckedAt: now, advisorWatch: Object.fromEntries(Object.entries(watch).map(([k, w]) => { const { row, ...rest } = w; return [k, rest]; })), advisorNextLock: locks[0] ?? null,
-    advisorPlan: nextPlan, advisorReminded: reminded, ...(briefNext ? { advisorBriefAt: briefNext } : {}),
+    advisorPlan: nextPlan, advisorReminded: reminded, advisorBoardStates: boardStates, ...(briefNext ? { advisorBriefAt: briefNext } : {}),
     ...(briefingDue || force ? { advisorBriefed: today } : {}),
   });
   return { messages, sent, nickname };
