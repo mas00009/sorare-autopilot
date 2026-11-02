@@ -144,6 +144,11 @@ export function requireEnv(name) {
  * Mutations must declare their name so the guardrail can vet them.
  */
 export async function gql(query, variables = {}, { mutationName = null, retries = MAX_RETRIES } = {}) {
+  // Read-only mode: the Kobe NBA advisor suggests, it never changes anything.
+  // Any mutation - named or not - is refused before it leaves the machine.
+  if (process.env.SORARE_READONLY === '1' && (mutationName || /^\s*mutation\b/i.test(query))) {
+    throw new Error(`Read-only mode: refusing ${mutationName ?? 'a mutation'}.`);
+  }
   if (mutationName) assertMutationAllowed(mutationName);
 
   const { token, aud } = await getAuth();

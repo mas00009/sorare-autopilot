@@ -337,6 +337,17 @@ const main = async () => {
     return;
   }
 
+  // Kobe NBA suggestions to Google Chat. Read-only by construction.
+  if (cmd === 'advise') {
+    process.env.SORARE_READONLY = '1';
+    const { advise } = await import('./advisor.js');
+    const r = await advise({ force: flag('force'), dryRun: flag('dry') });
+    if (r.skipped) { console.log(`Kobe NBA advisor: not due${r.reason ? ` (${r.reason})` : ''}`); return; }
+    for (const m of r.messages) console.log(`\n${m}`);
+    if (r.sent) console.log(`\n${r.sent.map((x) => (x.sent ? 'posted to Chat' : `not posted: ${x.reason}`)).join('; ')}`);
+    return;
+  }
+
   if (cmd === 'signin') {
     const { signIn } = await import('./signin.js');
     return signIn();

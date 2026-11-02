@@ -206,6 +206,15 @@ export function bigPulls(entry) {
  *   3. Outbox - queued for the scheduled task to pick up
  */
 export async function deliver(subject, body, { html = null, env = process.env } = {}) {
+  // Google Chat first (owner, 2 Nov 2026: he misses email). Email only while
+  // no Sorare space exists yet, or if posting to Chat fails.
+  try {
+    const { postChat, chatSpace } = await import('./chat.js');
+    if (chatSpace()) {
+      const res = await postChat(`*${subject}*\n\n${body}`);
+      if (res.sent) return res;
+    }
+  } catch { /* fall through to email */ }
   const to = env.REPORT_TO;
   if (to) {
     try {

@@ -8,7 +8,10 @@
 export const SPORT = String(process.env.SORARE_SPORT ?? 'FOOTBALL').toUpperCase() === 'NBA' ? 'NBA' : 'FOOTBALL';
 export const IS_NBA = SPORT === 'NBA';
 
-if (IS_NBA && (process.env.SORARE_ACCOUNT ?? '') !== '') {
+// Kobe's NBA may be READ (for the owner's suggestions in Google Chat) but
+// never changed: only allowed with SORARE_READONLY=1, which client.js turns
+// into a refusal of every mutation.
+if (IS_NBA && (process.env.SORARE_ACCOUNT ?? '') !== '' && process.env.SORARE_READONLY !== '1') {
   // Hard stop: Kobe's NBA is the owner's own.
   throw new Error('NBA automation is for the main account only - refusing to run NBA on a second account.');
 }
