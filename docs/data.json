@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T00:39:30.892Z",
+  "generatedAt": "2026-11-03T01:10:26.878Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-11-03T07:05:00.000Z",
     "cadenceMin": 60,
     "lastRunAt": 1793666365886,
-    "reason": "last run 0m ago, next due in 60m (lock in 385m)"
+    "reason": "last run 31m ago, next due in 29m (lock in 355m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -194,8 +194,8 @@
   "odds": {
     "configured": true,
     "month": "2026-11",
-    "used": 8,
-    "remaining": 492
+    "used": 15,
+    "remaining": 485
   },
   "control": {
     "paused": false,
