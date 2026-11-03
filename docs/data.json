@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T20:21:11.071Z",
+  "generatedAt": "2026-11-03T20:52:02.165Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-11-03T20:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793735406516,
-    "reason": "last run 31m ago, next due in 149m"
+    "reason": "last run 62m ago, next due in 118m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -27,10 +27,10 @@
       "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 2,
-      "squadScore": 257.68,
+      "squadScore": 297.07,
       "lineupId": "Tasks::TaskLineup:d1f45acd-6a0e-48fa-9a62-6f663dee66a5",
       "state": "READY",
-      "score": 120.72,
+      "score": 134.86,
       "finished": false,
       "cleared": false,
       "players": [
@@ -48,7 +48,7 @@
           "slug": "david-hancko",
           "position": "Defender",
           "captain": true,
-          "score": 66.06,
+          "score": 71.76,
           "status": "REVIEWING",
           "kickoff": "2026-11-08T20:00:00Z"
         },
@@ -66,7 +66,7 @@
           "slug": "alejandro-baena-rodriguez",
           "position": "Forward",
           "captain": false,
-          "score": 32.6,
+          "score": 34.7,
           "status": "REVIEWING",
           "kickoff": "2026-11-08T20:00:00Z"
         },
@@ -75,7 +75,7 @@
           "slug": "alexander-freeman",
           "position": "Defender",
           "captain": false,
-          "score": 22.06,
+          "score": 28.4,
           "status": "REVIEWING",
           "kickoff": "2026-11-08T17:30:00Z"
         }
@@ -367,7 +367,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 154 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 258 so far.",
+      "status": "Locked and playing. 171 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 297 so far.",
       "tone": "good",
       "lockAt": "2026-11-03T20:00:00Z",
       "isSquad": true,
@@ -403,7 +403,7 @@
             "kickoff": "2026-11-03T20:00:00Z"
           },
           {
-            "actual": 66.06,
+            "actual": 71.76,
             "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Dávid Hancko",
@@ -461,7 +461,7 @@
             "kickoff": "2026-11-03T20:00:00Z"
           },
           {
-            "actual": 32.6,
+            "actual": 34.7,
             "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Álex Baena",
@@ -490,7 +490,7 @@
             "kickoff": "2026-11-03T20:00:00Z"
           },
           {
-            "actual": 22.06,
+            "actual": 28.4,
             "scoreStatus": "REVIEWING",
             "teamSlug": "villarreal-villarreal",
             "name": "Alex Freeman",
@@ -520,9 +520,9 @@
           }
         ],
         "projected": 148.65,
-        "scoredSoFar": 153.75,
+        "scoredSoFar": 170.74,
         "played": 3,
-        "expectedFinal": 169.29
+        "expectedFinal": 186.28
       },
       "poolStrength": {
         "strong": 0,
@@ -532,7 +532,7 @@
       "squad": {
         "lineupsIn": 2,
         "needed": 3,
-        "scoreSoFar": 257.68
+        "scoreSoFar": 297.07
       },
       "level": 1,
       "lives": null,
