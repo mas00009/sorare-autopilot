@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T06:33:58.099Z",
+  "generatedAt": "2026-11-03T07:03:46.676Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -8,9 +8,9 @@
   },
   "schedule": {
     "nextLock": "2026-11-03T07:05:00.000Z",
-    "cadenceMin": 5,
-    "lastRunAt": 1793687611935,
-    "reason": "last run 0m ago, next due in 5m (lock in 31m)"
+    "cadenceMin": 180,
+    "lastRunAt": 1793689322598,
+    "reason": "last run 2m ago, next due in 178m (lock in 1m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -305,18 +305,18 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Not open for entry yet. A team goes in the moment it opens.",
+      "status": "No eligible cards for this step yet.",
       "tone": "neutral",
       "lockAt": null,
       "isSquad": true,
       "entered": null,
       "poolStrength": {
-        "strong": 0,
+        "strong": 1,
         "needed": 5
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 0,
+        "lineupsIn": 1,
         "needed": 3,
         "scoreSoFar": 0
       },
@@ -332,7 +332,7 @@
         },
         {
           "level": 1,
-          "state": "PRE_MATCHDAY_LOCKED",
+          "state": "PLAYABLE",
           "target": 980
         },
         {
@@ -359,13 +359,80 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "PRE_MATCHDAY_LOCKED",
+      "state": "PLAYABLE",
       "target": 980,
       "current": [],
       "plan": null,
-      "candidates": [],
-      "projected": 0
+      "candidates": [
+        {
+          "id": "ComposeTeamBenchCard:b7738191-0236-4c71-8417-96aa6aea12cf",
+          "player": "Álex Baena",
+          "slug": "alejandro-baena-rodriguez",
+          "tier": "STAR",
+          "position": "FW",
+          "average": 60,
+          "bonus": 1,
+          "starterPct": null,
+          "startRate": 0.7,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 60,
+          "picture": "https://assets.sorare.com/cardsamplepicture/ce59d6f5-9b38-4dfe-8fd1-2cf6f089e3b8/picture/tinified-8fcc90b568673417d5f71d94234227dd.png",
+          "rarity": "common",
+          "gameId": "Game:ba340b8d-1b44-4bb0-9f71-83db41a2093e",
+          "kickoff": "2026-11-03T20:00:00Z",
+          "team": "Atlético de Madrid",
+          "teamSlug": "atletico-madrid-madrid",
+          "opponent": "FC Bayern München",
+          "opponentCode": "BAY",
+          "code": "ATM",
+          "rank": 2,
+          "opponentRank": 1,
+          "home": true,
+          "competition": "UEFA Champions League",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.353,
+          "pLose": 0.402,
+          "oddsBooks": 22,
+          "marketFactor": 0.993,
+          "lockedAt": null,
+          "expected": 47.99,
+          "blocked": null
+        }
+      ],
+      "projected": 48
     }
   ],
-  "fixtures": []
+  "fixtures": [
+    {
+      "kickoff": "2026-11-03T20:00:00Z",
+      "competition": "UEFA Champions League",
+      "team": "Atlético de Madrid",
+      "code": "ATM",
+      "rank": 2,
+      "opponent": "FC Bayern München",
+      "opponentCode": "BAY",
+      "opponentRank": 1,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.353,
+      "pLose": 0.402,
+      "oppFactor": null,
+      "home": true,
+      "players": [
+        "Álex Baena"
+      ],
+      "points": 48,
+      "bestStarter": null,
+      "surfaces": [
+        "team set (Loadshift)"
+      ]
+    }
+  ]
 }
