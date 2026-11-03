@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T19:50:16.929Z",
+  "generatedAt": "2026-11-03T20:21:11.071Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -10,7 +10,7 @@
     "nextLock": "2026-11-03T20:00:00Z",
     "cadenceMin": 180,
     "lastRunAt": 1793735406516,
-    "reason": "last run 0m ago, next due in 180m (lock in 10m)"
+    "reason": "last run 31m ago, next due in 149m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -24,13 +24,13 @@
       "surface": "team set (Loadshift)",
       "level": 1,
       "target": 980,
-      "stepState": "LINEUP_SET",
+      "stepState": "LIVE",
       "collaborative": true,
       "squadLineups": 2,
-      "squadScore": 308.75,
+      "squadScore": 257.68,
       "lineupId": "Tasks::TaskLineup:d1f45acd-6a0e-48fa-9a62-6f663dee66a5",
       "state": "READY",
-      "score": 122.5,
+      "score": 120.72,
       "finished": false,
       "cleared": false,
       "players": [
@@ -40,17 +40,17 @@
           "position": "Goalkeeper",
           "captain": false,
           "score": 0,
-          "status": "PENDING",
-          "kickoff": "2026-11-03T20:00:00Z"
+          "status": "REVIEWING",
+          "kickoff": "2026-11-08T14:00:00Z"
         },
         {
           "name": "Dávid Hancko",
           "slug": "david-hancko",
           "position": "Defender",
           "captain": true,
-          "score": 52.5,
+          "score": 66.06,
           "status": "REVIEWING",
-          "kickoff": "2026-11-03T20:00:00Z"
+          "kickoff": "2026-11-08T20:00:00Z"
         },
         {
           "name": "Gavi",
@@ -58,26 +58,26 @@
           "position": "Midfielder",
           "captain": false,
           "score": 0,
-          "status": "PENDING",
-          "kickoff": "2026-11-03T20:00:00Z"
+          "status": "REVIEWING",
+          "kickoff": "2026-11-08T20:00:00Z"
         },
         {
           "name": "Álex Baena",
           "slug": "alejandro-baena-rodriguez",
           "position": "Forward",
           "captain": false,
-          "score": 35,
+          "score": 32.6,
           "status": "REVIEWING",
-          "kickoff": "2026-11-03T20:00:00Z"
+          "kickoff": "2026-11-08T20:00:00Z"
         },
         {
           "name": "Alex Freeman",
           "slug": "alexander-freeman",
           "position": "Defender",
           "captain": false,
-          "score": 35,
+          "score": 22.06,
           "status": "REVIEWING",
-          "kickoff": "2026-11-03T20:00:00Z"
+          "kickoff": "2026-11-08T17:30:00Z"
         }
       ],
       "scored": 3
@@ -112,7 +112,7 @@
           "captain": false,
           "score": 45.89,
           "status": "FINAL",
-          "kickoff": "2026-11-03T20:00:00Z"
+          "kickoff": "2026-11-07T14:30:00Z"
         },
         {
           "name": "Mario Soriano",
@@ -340,7 +340,7 @@
           "name": "Josip Stanišić",
           "captain": false,
           "locked": true,
-          "nextGame": "2026-11-03T20:00:00Z"
+          "nextGame": "2026-11-07T14:30:00Z"
         },
         {
           "name": "Mario Soriano",
@@ -367,7 +367,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Locked and playing. 149 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 309 so far.",
+      "status": "Locked and playing. 154 scored so far, 3 of 5 played. The squad's top three lineups together need 980; the squad has 258 so far.",
       "tone": "good",
       "lockAt": "2026-11-03T20:00:00Z",
       "isSquad": true,
@@ -375,7 +375,7 @@
         "five": [
           {
             "actual": null,
-            "scoreStatus": "PENDING",
+            "scoreStatus": "REVIEWING",
             "teamSlug": "lille-villeneuve-d-ascq",
             "name": "Orlando Gill",
             "player": "Orlando Gill",
@@ -399,11 +399,11 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-11-03T20:00:00Z"
           },
           {
-            "actual": 52.5,
+            "actual": 66.06,
             "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Dávid Hancko",
@@ -428,12 +428,12 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-11-03T20:00:00Z"
           },
           {
             "actual": null,
-            "scoreStatus": "PENDING",
+            "scoreStatus": "REVIEWING",
             "teamSlug": "barcelona-barcelona",
             "name": "Gavi",
             "player": "Gavi",
@@ -457,11 +457,11 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-11-03T20:00:00Z"
           },
           {
-            "actual": 35,
+            "actual": 32.6,
             "scoreStatus": "REVIEWING",
             "teamSlug": "atletico-madrid-madrid",
             "name": "Álex Baena",
@@ -486,11 +486,11 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-11-03T20:00:00Z"
           },
           {
-            "actual": 35,
+            "actual": 22.06,
             "scoreStatus": "REVIEWING",
             "teamSlug": "villarreal-villarreal",
             "name": "Alex Freeman",
@@ -515,14 +515,14 @@
             "oppRank": null,
             "ownRank": null,
             "oppFactor": null,
-            "locked": false,
+            "locked": true,
             "kickoff": "2026-11-03T20:00:00Z"
           }
         ],
         "projected": 148.65,
-        "scoredSoFar": 148.75,
+        "scoredSoFar": 153.75,
         "played": 3,
-        "expectedFinal": 164.29
+        "expectedFinal": 169.29
       },
       "poolStrength": {
         "strong": 0,
@@ -532,7 +532,7 @@
       "squad": {
         "lineupsIn": 2,
         "needed": 3,
-        "scoreSoFar": 308.75
+        "scoreSoFar": 257.68
       },
       "level": 1,
       "lives": null,
@@ -546,7 +546,7 @@
         },
         {
           "level": 1,
-          "state": "LINEUP_SET",
+          "state": "LIVE",
           "target": 980
         },
         {
@@ -573,38 +573,38 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "LINEUP_SET",
+      "state": "LIVE",
       "target": 980,
       "current": [
         {
           "name": "Orlando Gill",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-11-03T20:00:00Z"
+          "locked": true,
+          "nextGame": "2026-11-08T14:00:00Z"
         },
         {
           "name": "Dávid Hancko",
           "captain": true,
-          "locked": false,
-          "nextGame": "2026-11-03T20:00:00Z"
+          "locked": true,
+          "nextGame": "2026-11-08T20:00:00Z"
         },
         {
           "name": "Gavi",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-11-03T20:00:00Z"
+          "locked": true,
+          "nextGame": "2026-11-08T20:00:00Z"
         },
         {
           "name": "Álex Baena",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-11-03T20:00:00Z"
+          "locked": true,
+          "nextGame": "2026-11-08T20:00:00Z"
         },
         {
           "name": "Alex Freeman",
           "captain": false,
-          "locked": false,
-          "nextGame": "2026-11-03T20:00:00Z"
+          "locked": true,
+          "nextGame": "2026-11-08T17:30:00Z"
         }
       ],
       "plan": null,
