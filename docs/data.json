@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-03T09:38:39.064Z",
+  "generatedAt": "2026-11-03T10:05:13.286Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
-    "essence": 96,
+    "essence": 596,
     "gems": 10
   },
   "schedule": {
-    "nextLock": "2026-11-03T07:05:00.000Z",
-    "cadenceMin": 180,
-    "lastRunAt": 1793689322598,
-    "reason": "last run 157m ago, next due in 23m"
+    "nextLock": "2026-11-03T20:00:00Z",
+    "cadenceMin": 60,
+    "lastRunAt": 1793700280219,
+    "reason": "last run 1m ago, next due in 59m (lock in 595m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -20,6 +20,68 @@
     "failStreak": 0
   },
   "results": [
+    {
+      "surface": "team set (Loadshift)",
+      "level": 1,
+      "target": 980,
+      "stepState": "LINEUP_SET",
+      "collaborative": true,
+      "squadLineups": 2,
+      "squadScore": 0,
+      "lineupId": "Tasks::TaskLineup:d1f45acd-6a0e-48fa-9a62-6f663dee66a5",
+      "state": "READY",
+      "score": 0,
+      "finished": false,
+      "cleared": false,
+      "players": [
+        {
+          "name": "Orlando Gill",
+          "slug": "orlando-gill",
+          "position": "Goalkeeper",
+          "captain": false,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-11-03T20:00:00Z"
+        },
+        {
+          "name": "Dávid Hancko",
+          "slug": "david-hancko",
+          "position": "Defender",
+          "captain": true,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-11-03T20:00:00Z"
+        },
+        {
+          "name": "Gavi",
+          "slug": "pablo-martin-paez-gavira",
+          "position": "Midfielder",
+          "captain": false,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-11-03T20:00:00Z"
+        },
+        {
+          "name": "Álex Baena",
+          "slug": "alejandro-baena-rodriguez",
+          "position": "Forward",
+          "captain": false,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-11-03T20:00:00Z"
+        },
+        {
+          "name": "Alex Freeman",
+          "slug": "alexander-freeman",
+          "position": "Defender",
+          "captain": false,
+          "score": 0,
+          "status": "PENDING",
+          "kickoff": "2026-11-03T20:00:00Z"
+        }
+      ],
+      "scored": 0
+    },
     {
       "surface": "my set",
       "level": 0,
@@ -305,18 +367,170 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "No eligible cards for this step yet.",
-      "tone": "neutral",
-      "lockAt": null,
+      "status": "Team entered, locks Wed 07:00 am Sydney. The squad's top three lineups together need 980; this one is expected to add about 149.",
+      "tone": "good",
+      "lockAt": "2026-11-03T20:00:00Z",
       "isSquad": true,
-      "entered": null,
+      "entered": {
+        "five": [
+          {
+            "actual": null,
+            "scoreStatus": "PENDING",
+            "teamSlug": "lille-villeneuve-d-ascq",
+            "name": "Orlando Gill",
+            "player": "Orlando Gill",
+            "slug": "orlando-gill",
+            "pos": "GK",
+            "position": "GK",
+            "pic": "https://assets.sorare.com/cardsamplepicture/da9d2c6a-7c7c-48f0-bd5d-553ceaf43d06/picture/tinified-8129e572d42f95748937b52846a0012b.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/da9d2c6a-7c7c-48f0-bd5d-553ceaf43d06/picture/tinified-8129e572d42f95748937b52846a0012b.png",
+            "captain": false,
+            "exp": 4.07,
+            "expected": 4.07,
+            "opp": "FK Bodø / Glimt",
+            "opponent": "FK Bodø / Glimt",
+            "home": false,
+            "average": 43,
+            "formL5": 44,
+            "intl": false,
+            "pWin": 0.243,
+            "pLose": 0.522,
+            "marketFactor": 0.936,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "locked": false,
+            "kickoff": "2026-11-03T20:00:00Z"
+          },
+          {
+            "actual": null,
+            "scoreStatus": "PENDING",
+            "teamSlug": "atletico-madrid-madrid",
+            "name": "Dávid Hancko",
+            "player": "Dávid Hancko",
+            "slug": "david-hancko",
+            "pos": "DF",
+            "position": "DF",
+            "pic": "https://assets.sorare.com/cardsamplepicture/54689a91-5894-4ae1-a046-e0d2e8b2ed15/picture/tinified-e0ed4e715aef3b8967b508287b6ca69e.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/54689a91-5894-4ae1-a046-e0d2e8b2ed15/picture/tinified-e0ed4e715aef3b8967b508287b6ca69e.png",
+            "captain": true,
+            "exp": 52.15,
+            "expected": 52.15,
+            "opp": "FC Bayern München",
+            "opponent": "FC Bayern München",
+            "home": true,
+            "average": 60,
+            "formL5": 61,
+            "intl": false,
+            "pWin": 0.353,
+            "pLose": 0.402,
+            "marketFactor": 0.991,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "locked": false,
+            "kickoff": "2026-11-03T20:00:00Z"
+          },
+          {
+            "actual": null,
+            "scoreStatus": "PENDING",
+            "teamSlug": "barcelona-barcelona",
+            "name": "Gavi",
+            "player": "Gavi",
+            "slug": "pablo-martin-paez-gavira",
+            "pos": "MD",
+            "position": "MD",
+            "pic": "https://assets.sorare.com/cardsamplepicture/9c001b78-6f3a-4455-ac06-101343e99398/picture/tinified-b054afc34f5da40e6b5772aa008bddd1.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/9c001b78-6f3a-4455-ac06-101343e99398/picture/tinified-b054afc34f5da40e6b5772aa008bddd1.png",
+            "captain": false,
+            "exp": 11.47,
+            "expected": 11.47,
+            "opp": "Aston Villa FC",
+            "opponent": "Aston Villa FC",
+            "home": true,
+            "average": 39,
+            "formL5": 39,
+            "intl": false,
+            "pWin": 0.767,
+            "pLose": 0.1,
+            "marketFactor": 1.07,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "locked": false,
+            "kickoff": "2026-11-03T20:00:00Z"
+          },
+          {
+            "actual": null,
+            "scoreStatus": "PENDING",
+            "teamSlug": "atletico-madrid-madrid",
+            "name": "Álex Baena",
+            "player": "Álex Baena",
+            "slug": "alejandro-baena-rodriguez",
+            "pos": "FW",
+            "position": "FW",
+            "pic": "https://assets.sorare.com/cardsamplepicture/ce59d6f5-9b38-4dfe-8fd1-2cf6f089e3b8/picture/tinified-8fcc90b568673417d5f71d94234227dd.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/ce59d6f5-9b38-4dfe-8fd1-2cf6f089e3b8/picture/tinified-8fcc90b568673417d5f71d94234227dd.png",
+            "captain": false,
+            "exp": 47.99,
+            "expected": 47.99,
+            "opp": "FC Bayern München",
+            "opponent": "FC Bayern München",
+            "home": true,
+            "average": 60,
+            "formL5": 60,
+            "intl": false,
+            "pWin": 0.353,
+            "pLose": 0.402,
+            "marketFactor": 0.993,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "locked": false,
+            "kickoff": "2026-11-03T20:00:00Z"
+          },
+          {
+            "actual": null,
+            "scoreStatus": "PENDING",
+            "teamSlug": "villarreal-villarreal",
+            "name": "Alex Freeman",
+            "player": "Alex Freeman",
+            "slug": "alexander-freeman",
+            "pos": "DF",
+            "position": "DF",
+            "pic": "https://assets.sorare.com/cardsamplepicture/bc15c126-9e8c-4ff9-b2a2-6d73568aa477/picture/tinified-4b4cc63124e28f633e219843007d2545.png",
+            "picture": "https://assets.sorare.com/cardsamplepicture/bc15c126-9e8c-4ff9-b2a2-6d73568aa477/picture/tinified-4b4cc63124e28f633e219843007d2545.png",
+            "captain": false,
+            "exp": 37.35,
+            "expected": 37.35,
+            "opp": "Paris Saint-Germain",
+            "opponent": "Paris Saint-Germain",
+            "home": true,
+            "average": 56,
+            "formL5": 61,
+            "intl": false,
+            "pWin": 0.2,
+            "pLose": 0.591,
+            "marketFactor": 0.946,
+            "oppRank": null,
+            "ownRank": null,
+            "oppFactor": null,
+            "locked": false,
+            "kickoff": "2026-11-03T20:00:00Z"
+          }
+        ],
+        "projected": 148.65,
+        "scoredSoFar": 0,
+        "played": 0,
+        "expectedFinal": 179.1
+      },
       "poolStrength": {
-        "strong": 1,
+        "strong": 0,
         "needed": 5
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 1,
+        "lineupsIn": 2,
         "needed": 3,
         "scoreSoFar": 0
       },
@@ -332,7 +546,7 @@
         },
         {
           "level": 1,
-          "state": "PLAYABLE",
+          "state": "LINEUP_SET",
           "target": 980
         },
         {
@@ -359,80 +573,44 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "PLAYABLE",
+      "state": "LINEUP_SET",
       "target": 980,
-      "current": [],
-      "plan": null,
-      "candidates": [
+      "current": [
         {
-          "id": "ComposeTeamBenchCard:b7738191-0236-4c71-8417-96aa6aea12cf",
-          "player": "Álex Baena",
-          "slug": "alejandro-baena-rodriguez",
-          "tier": "STAR",
-          "position": "FW",
-          "average": 60,
-          "bonus": 1,
-          "starterPct": null,
-          "startRate": 0.7,
-          "oddsKnown": false,
-          "onGameSheet": false,
-          "reliability": null,
-          "formL5": 60,
-          "picture": "https://assets.sorare.com/cardsamplepicture/ce59d6f5-9b38-4dfe-8fd1-2cf6f089e3b8/picture/tinified-8fcc90b568673417d5f71d94234227dd.png",
-          "rarity": "common",
-          "gameId": "Game:ba340b8d-1b44-4bb0-9f71-83db41a2093e",
-          "kickoff": "2026-11-03T20:00:00Z",
-          "team": "Atlético de Madrid",
-          "teamSlug": "atletico-madrid-madrid",
-          "opponent": "FC Bayern München",
-          "opponentCode": "BAY",
-          "code": "ATM",
-          "rank": 2,
-          "opponentRank": 1,
-          "home": true,
-          "competition": "UEFA Champions League",
-          "intl": false,
-          "oppRank": null,
-          "ownRank": null,
-          "oppFactor": null,
-          "mismatch": false,
-          "pWin": 0.353,
-          "pLose": 0.402,
-          "oddsBooks": 22,
-          "marketFactor": 0.993,
-          "lockedAt": null,
-          "expected": 47.99,
-          "blocked": null
+          "name": "Orlando Gill",
+          "captain": false,
+          "locked": false,
+          "nextGame": "2026-11-03T20:00:00Z"
+        },
+        {
+          "name": "Dávid Hancko",
+          "captain": true,
+          "locked": false,
+          "nextGame": "2026-11-03T20:00:00Z"
+        },
+        {
+          "name": "Gavi",
+          "captain": false,
+          "locked": false,
+          "nextGame": "2026-11-03T20:00:00Z"
+        },
+        {
+          "name": "Álex Baena",
+          "captain": false,
+          "locked": false,
+          "nextGame": "2026-11-03T20:00:00Z"
+        },
+        {
+          "name": "Alex Freeman",
+          "captain": false,
+          "locked": false,
+          "nextGame": "2026-11-03T20:00:00Z"
         }
       ],
-      "projected": 48
+      "plan": null,
+      "candidates": [],
+      "projected": 0
     }
   ],
-  "fixtures": [
-    {
-      "kickoff": "2026-11-03T20:00:00Z",
-      "competition": "UEFA Champions League",
-      "team": "Atlético de Madrid",
-      "code": "ATM",
-      "rank": 2,
-      "opponent": "FC Bayern München",
-      "opponentCode": "BAY",
-      "opponentRank": 1,
-      "intl": false,
-      "ownRank": null,
-      "oppRank": null,
-      "pWin": 0.353,
-      "pLose": 0.402,
-      "oppFactor": null,
-      "home": true,
-      "players": [
-        "Álex Baena"
-      ],
-      "points": 48,
-      "bestStarter": null,
-      "surfaces": [
-        "team set (Loadshift)"
-      ]
-    }
-  ]
+  "fixtures": []
 }
