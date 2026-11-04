@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T21:51:14.114Z",
+  "generatedAt": "2026-11-04T22:18:39.957Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -7,10 +7,10 @@
     "gems": 10
   },
   "schedule": {
-    "nextLock": "2026-11-04T07:05:00.000Z",
-    "cadenceMin": 180,
-    "lastRunAt": 1793819639545,
-    "reason": "last run 157m ago, next due in 23m"
+    "nextLock": "2026-11-05T07:05:00.000Z",
+    "cadenceMin": 60,
+    "lastRunAt": 1793830714111,
+    "reason": "last run 0m ago, next due in 60m (lock in 526m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -78,68 +78,6 @@
           "score": 35.7,
           "status": "FINAL",
           "kickoff": "2026-11-08T14:00:00Z"
-        }
-      ],
-      "scored": 5
-    },
-    {
-      "surface": "team set (Loadshift)",
-      "level": 0,
-      "target": 700,
-      "stepState": "CLAIMED",
-      "collaborative": true,
-      "squadLineups": 4,
-      "squadScore": 816.928,
-      "lineupId": "Tasks::TaskLineup:b195cfc4-e42a-4880-84ac-11af55bc74e3",
-      "state": "SUCCESSFUL",
-      "score": 191.99,
-      "finished": true,
-      "cleared": true,
-      "players": [
-        {
-          "name": "Leo Román",
-          "slug": "leonardo-roman-riquelme",
-          "position": "Goalkeeper",
-          "captain": false,
-          "score": 19,
-          "status": "FINAL",
-          "kickoff": "2026-11-07T15:15:00Z"
-        },
-        {
-          "name": "Giacomo Quagliata",
-          "slug": "giacomo-quagliata",
-          "position": "Defender",
-          "captain": true,
-          "score": 61.14,
-          "status": "FINAL",
-          "kickoff": "2026-11-07T15:15:00Z"
-        },
-        {
-          "name": "Mamady Diambou",
-          "slug": "mamady-diambou",
-          "position": "Midfielder",
-          "captain": false,
-          "score": 37.28,
-          "status": "FINAL",
-          "kickoff": "2026-11-08T16:15:00Z"
-        },
-        {
-          "name": "Souleymane Faye",
-          "slug": "souleymane-faye",
-          "position": "Forward",
-          "captain": false,
-          "score": 38.4,
-          "status": "FINAL",
-          "kickoff": "2026-11-08T16:15:00Z"
-        },
-        {
-          "name": "Fabian Schar",
-          "slug": "fabian-lukas-schar",
-          "position": "Defender",
-          "captain": false,
-          "score": 36.18,
-          "status": "FINAL",
-          "kickoff": "2026-11-07T15:00:00Z"
         }
       ],
       "scored": 5
@@ -316,23 +254,23 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 3,
+        "lineupsIn": 0,
         "needed": 3,
-        "scoreSoFar": 906.53
+        "scoreSoFar": 0
       },
-      "level": 1,
+      "level": 0,
       "lives": null,
       "totalLevels": 5,
-      "levelsDone": 1,
+      "levelsDone": 0,
       "ladder": [
         {
           "level": 0,
-          "state": "CLAIMED",
+          "state": "PRE_MATCHDAY_LOCKED",
           "target": 700
         },
         {
           "level": 1,
-          "state": "PRE_MATCHDAY_LOCKED",
+          "state": "LOCKED",
           "target": 980
         },
         {
@@ -360,7 +298,7 @@
         }
       ],
       "state": "PRE_MATCHDAY_LOCKED",
-      "target": 980,
+      "target": 700,
       "current": [],
       "plan": null,
       "candidates": [],
