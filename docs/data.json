@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T05:06:25.595Z",
+  "generatedAt": "2026-11-04T05:40:41.931Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-11-04T07:05:00.000Z",
     "cadenceMin": 15,
-    "lastRunAt": 1793768732649,
-    "reason": "last run 1m ago, next due in 14m (lock in 119m)"
+    "lastRunAt": 1793770762953,
+    "reason": "last run 1m ago, next due in 14m (lock in 84m)"
   },
   "packs": {
     "lastThreeStar": "Sivera",
