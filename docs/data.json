@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T18:53:23.809Z",
+  "generatedAt": "2026-11-04T19:14:41.722Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -9,8 +9,8 @@
   "schedule": {
     "nextLock": "2026-11-04T07:05:00.000Z",
     "cadenceMin": 180,
-    "lastRunAt": 1793808782419,
-    "reason": "last run 160m ago, next due in 20m"
+    "lastRunAt": 1793819639545,
+    "reason": "last run 1m ago, next due in 179m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -316,9 +316,9 @@
       },
       "collaborative": true,
       "squad": {
-        "lineupsIn": 2,
+        "lineupsIn": 3,
         "needed": 3,
-        "scoreSoFar": 179.93
+        "scoreSoFar": 558.49
       },
       "level": 1,
       "lives": null,
@@ -375,7 +375,7 @@
           "starterPct": null,
           "startRate": 0.7,
           "oddsKnown": false,
-          "onGameSheet": false,
+          "onGameSheet": true,
           "reliability": null,
           "formL5": 50,
           "picture": "https://assets.sorare.com/cardsamplepicture/edfdba30-3d96-4d0f-9022-13e2684cba48/picture/tinified-dcbef151dc183efbed12a117a59d98f2.png",
