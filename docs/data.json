@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T06:30:14.272Z",
+  "generatedAt": "2026-11-04T07:06:33.675Z",
   "account": "Mas0009",
   "squad": "Loadshift",
   "balances": {
@@ -8,9 +8,9 @@
   },
   "schedule": {
     "nextLock": "2026-11-04T07:05:00.000Z",
-    "cadenceMin": 5,
-    "lastRunAt": 1793773761210,
-    "reason": "last run 1m ago, next due in 4m (lock in 35m)"
+    "cadenceMin": 180,
+    "lastRunAt": 1793775761916,
+    "reason": "last run 4m ago, next due in 176m"
   },
   "packs": {
     "lastThreeStar": "Sivera",
@@ -305,7 +305,7 @@
     },
     {
       "surface": "team set (Loadshift)",
-      "status": "Not open for entry yet. A team goes in the moment it opens.",
+      "status": "No eligible cards for this step yet.",
       "tone": "neutral",
       "lockAt": null,
       "isSquad": true,
@@ -332,7 +332,7 @@
         },
         {
           "level": 1,
-          "state": "PRE_MATCHDAY_LOCKED",
+          "state": "PLAYABLE",
           "target": 980
         },
         {
@@ -359,13 +359,80 @@
           "currency": "COMMON_ESSENCE"
         }
       ],
-      "state": "PRE_MATCHDAY_LOCKED",
+      "state": "PLAYABLE",
       "target": 980,
       "current": [],
       "plan": null,
-      "candidates": [],
-      "projected": 0
+      "candidates": [
+        {
+          "id": "ComposeTeamBenchCard:f279cb4b-4cd6-4215-bf72-bf60a3b71871",
+          "player": "Amadou Haïdara",
+          "slug": "amadou-haidara",
+          "tier": "ROSTER",
+          "position": "MD",
+          "average": 45,
+          "bonus": 1,
+          "starterPct": null,
+          "startRate": 0.7,
+          "oddsKnown": false,
+          "onGameSheet": false,
+          "reliability": null,
+          "formL5": 50,
+          "picture": "https://assets.sorare.com/cardsamplepicture/edfdba30-3d96-4d0f-9022-13e2684cba48/picture/tinified-dcbef151dc183efbed12a117a59d98f2.png",
+          "rarity": "common",
+          "gameId": "Game:c2431665-ef05-4c66-a0b1-93aa8f22ea73",
+          "kickoff": "2026-11-04T20:00:00Z",
+          "team": "RC Lens",
+          "teamSlug": "lens-avion",
+          "opponent": "Calcio Como",
+          "opponentCode": "COM",
+          "code": "RCL",
+          "rank": 9,
+          "opponentRank": 4,
+          "home": true,
+          "competition": "UEFA Champions League",
+          "intl": false,
+          "oppRank": null,
+          "ownRank": null,
+          "oppFactor": null,
+          "mismatch": false,
+          "pWin": 0.303,
+          "pLose": 0.451,
+          "oddsBooks": 22,
+          "marketFactor": 0.982,
+          "lockedAt": null,
+          "expected": 37.56,
+          "blocked": null
+        }
+      ],
+      "projected": 37.6
     }
   ],
-  "fixtures": []
+  "fixtures": [
+    {
+      "kickoff": "2026-11-04T20:00:00Z",
+      "competition": "UEFA Champions League",
+      "team": "RC Lens",
+      "code": "RCL",
+      "rank": 9,
+      "opponent": "Calcio Como",
+      "opponentCode": "COM",
+      "opponentRank": 4,
+      "intl": false,
+      "ownRank": null,
+      "oppRank": null,
+      "pWin": 0.303,
+      "pLose": 0.451,
+      "oppFactor": null,
+      "home": true,
+      "players": [
+        "Amadou Haïdara"
+      ],
+      "points": 37.6,
+      "bestStarter": null,
+      "surfaces": [
+        "team set (Loadshift)"
+      ]
+    }
+  ]
 }
